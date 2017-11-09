@@ -1,0 +1,1637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>account/operations/firewallRules.js - Documentation</title>
+    <meta name="viewport" content="initial-scale=.75">
+    <script src="../../scripts/prettify/prettify.js"></script>
+    <script src="../../scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="../../styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="../../styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><span><a href="../../index.html">Home</a> <span class="github-short">| <a href="https://github.com/azure/azure-sdk-for-node.git">GitHub</a></span></span></h2><h3>Classes</h3><ul><li><a href="Account.html">Account</a><ul class='methods'><li data-type='method'><a href="Account.html#beginCreate">beginCreate</a></li><li data-type='method'><a href="Account.html#beginCreateWithHttpOperationResponse">beginCreateWithHttpOperationResponse</a></li><li data-type='method'><a href="Account.html#beginDeleteMethod">beginDeleteMethod</a></li><li data-type='method'><a href="Account.html#beginDeleteMethodWithHttpOperationResponse">beginDeleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="Account.html#beginUpdate">beginUpdate</a></li><li data-type='method'><a href="Account.html#beginUpdateWithHttpOperationResponse">beginUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="Account.html#create">create</a></li><li data-type='method'><a href="Account.html#createWithHttpOperationResponse">createWithHttpOperationResponse</a></li><li data-type='method'><a href="Account.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="Account.html#deleteMethodWithHttpOperationResponse">deleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="Account.html#enableKeyVault">enableKeyVault</a></li><li data-type='method'><a href="Account.html#enableKeyVaultWithHttpOperationResponse">enableKeyVaultWithHttpOperationResponse</a></li><li data-type='method'><a href="Account.html#get">get</a></li><li data-type='method'><a href="Account.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="Account.html#list">list</a></li><li data-type='method'><a href="Account.html#listByResourceGroup">listByResourceGroup</a></li><li data-type='method'><a href="Account.html#listByResourceGroupNext">listByResourceGroupNext</a></li><li data-type='method'><a href="Account.html#listByResourceGroupNextWithHttpOperationResponse">listByResourceGroupNextWithHttpOperationResponse</a></li><li data-type='method'><a href="Account.html#listByResourceGroupWithHttpOperationResponse">listByResourceGroupWithHttpOperationResponse</a></li><li data-type='method'><a href="Account.html#listNext">listNext</a></li><li data-type='method'><a href="Account.html#listNextWithHttpOperationResponse">listNextWithHttpOperationResponse</a></li><li data-type='method'><a href="Account.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li><li data-type='method'><a href="Account.html#update">update</a></li><li data-type='method'><a href="Account.html#updateWithHttpOperationResponse">updateWithHttpOperationResponse</a></li></ul></li><li><a href="AclStatus.html">AclStatus</a><ul class='methods'><li data-type='method'><a href="AclStatus.html#mapper">mapper</a></li></ul></li><li><a href="AclStatusResult.html">AclStatusResult</a><ul class='methods'><li data-type='method'><a href="AclStatusResult.html#mapper">mapper</a></li></ul></li><li><a href="AdlsAccessControlException.html">AdlsAccessControlException</a><ul class='methods'><li data-type='method'><a href="AdlsAccessControlException.html#mapper">mapper</a></li></ul></li><li><a href="AdlsBadOffsetException.html">AdlsBadOffsetException</a><ul class='methods'><li data-type='method'><a href="AdlsBadOffsetException.html#mapper">mapper</a></li></ul></li><li><a href="AdlsError.html">AdlsError</a><ul class='methods'><li data-type='method'><a href="AdlsError.html#mapper">mapper</a></li></ul></li><li><a href="AdlsFileAlreadyExistsException.html">AdlsFileAlreadyExistsException</a><ul class='methods'><li data-type='method'><a href="AdlsFileAlreadyExistsException.html#mapper">mapper</a></li></ul></li><li><a href="AdlsFileNotFoundException.html">AdlsFileNotFoundException</a><ul class='methods'><li data-type='method'><a href="AdlsFileNotFoundException.html#mapper">mapper</a></li></ul></li><li><a href="AdlsIllegalArgumentException.html">AdlsIllegalArgumentException</a><ul class='methods'><li data-type='method'><a href="AdlsIllegalArgumentException.html#mapper">mapper</a></li></ul></li><li><a href="AdlsIOException.html">AdlsIOException</a><ul class='methods'><li data-type='method'><a href="AdlsIOException.html#mapper">mapper</a></li></ul></li><li><a href="AdlsRemoteException.html">AdlsRemoteException</a><ul class='methods'><li data-type='method'><a href="AdlsRemoteException.html#mapper">mapper</a></li></ul></li><li><a href="AdlsRuntimeException.html">AdlsRuntimeException</a><ul class='methods'><li data-type='method'><a href="AdlsRuntimeException.html#mapper">mapper</a></li></ul></li><li><a href="AdlsSecurityException.html">AdlsSecurityException</a><ul class='methods'><li data-type='method'><a href="AdlsSecurityException.html#mapper">mapper</a></li></ul></li><li><a href="AdlsThrottledException.html">AdlsThrottledException</a><ul class='methods'><li data-type='method'><a href="AdlsThrottledException.html#mapper">mapper</a></li></ul></li><li><a href="AdlsUnsupportedOperationException.html">AdlsUnsupportedOperationException</a><ul class='methods'><li data-type='method'><a href="AdlsUnsupportedOperationException.html#mapper">mapper</a></li></ul></li><li><a href="ContentSummary.html">ContentSummary</a><ul class='methods'><li data-type='method'><a href="ContentSummary.html#mapper">mapper</a></li></ul></li><li><a href="ContentSummaryResult.html">ContentSummaryResult</a><ul class='methods'><li data-type='method'><a href="ContentSummaryResult.html#mapper">mapper</a></li></ul></li><li><a href="DataLakeStoreAccount.html">DataLakeStoreAccount</a><ul class='methods'><li data-type='method'><a href="DataLakeStoreAccount.html#mapper">mapper</a></li></ul></li><li><a href="DataLakeStoreAccountBasic.html">DataLakeStoreAccountBasic</a><ul class='methods'><li data-type='method'><a href="DataLakeStoreAccountBasic.html#mapper">mapper</a></li></ul></li><li><a href="DataLakeStoreAccountListResult.html">DataLakeStoreAccountListResult</a><ul class='methods'><li data-type='method'><a href="DataLakeStoreAccountListResult.html#mapper">mapper</a></li></ul></li><li><a href="DataLakeStoreAccountManagementClient.html">DataLakeStoreAccountManagementClient</a></li><li><a href="DataLakeStoreAccountUpdateParameters.html">DataLakeStoreAccountUpdateParameters</a><ul class='methods'><li data-type='method'><a href="DataLakeStoreAccountUpdateParameters.html#mapper">mapper</a></li></ul></li><li><a href="DataLakeStoreFileSystemManagementClient.html">DataLakeStoreFileSystemManagementClient</a></li><li><a href="DataLakeStoreFirewallRuleListResult.html">DataLakeStoreFirewallRuleListResult</a><ul class='methods'><li data-type='method'><a href="DataLakeStoreFirewallRuleListResult.html#mapper">mapper</a></li></ul></li><li><a href="DataLakeStoreTrustedIdProviderListResult.html">DataLakeStoreTrustedIdProviderListResult</a><ul class='methods'><li data-type='method'><a href="DataLakeStoreTrustedIdProviderListResult.html#mapper">mapper</a></li></ul></li><li><a href="EncryptionConfig.html">EncryptionConfig</a><ul class='methods'><li data-type='method'><a href="EncryptionConfig.html#mapper">mapper</a></li></ul></li><li><a href="EncryptionIdentity.html">EncryptionIdentity</a><ul class='methods'><li data-type='method'><a href="EncryptionIdentity.html#mapper">mapper</a></li></ul></li><li><a href="ErrorDetails.html">ErrorDetails</a><ul class='methods'><li data-type='method'><a href="ErrorDetails.html#mapper">mapper</a></li></ul></li><li><a href="FileOperationResult.html">FileOperationResult</a><ul class='methods'><li data-type='method'><a href="FileOperationResult.html#mapper">mapper</a></li></ul></li><li><a href="FileStatuses.html">FileStatuses</a><ul class='methods'><li data-type='method'><a href="FileStatuses.html#mapper">mapper</a></li></ul></li><li><a href="FileStatusesResult.html">FileStatusesResult</a><ul class='methods'><li data-type='method'><a href="FileStatusesResult.html#mapper">mapper</a></li></ul></li><li><a href="FileStatusProperties.html">FileStatusProperties</a><ul class='methods'><li data-type='method'><a href="FileStatusProperties.html#mapper">mapper</a></li></ul></li><li><a href="FileStatusResult.html">FileStatusResult</a><ul class='methods'><li data-type='method'><a href="FileStatusResult.html#mapper">mapper</a></li></ul></li><li><a href="FileSystem.html">FileSystem</a><ul class='methods'><li data-type='method'><a href="FileSystem.html#append">append</a></li><li data-type='method'><a href="FileSystem.html#appendWithHttpOperationResponse">appendWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#checkAccess">checkAccess</a></li><li data-type='method'><a href="FileSystem.html#checkAccessWithHttpOperationResponse">checkAccessWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#concat">concat</a></li><li data-type='method'><a href="FileSystem.html#concatWithHttpOperationResponse">concatWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#concurrentAppend">concurrentAppend</a></li><li data-type='method'><a href="FileSystem.html#concurrentAppendWithHttpOperationResponse">concurrentAppendWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#create">create</a></li><li data-type='method'><a href="FileSystem.html#createWithHttpOperationResponse">createWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="FileSystem.html#deleteMethodWithHttpOperationResponse">deleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#getAclStatus">getAclStatus</a></li><li data-type='method'><a href="FileSystem.html#getAclStatusWithHttpOperationResponse">getAclStatusWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#getContentSummary">getContentSummary</a></li><li data-type='method'><a href="FileSystem.html#getContentSummaryWithHttpOperationResponse">getContentSummaryWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#getFileStatus">getFileStatus</a></li><li data-type='method'><a href="FileSystem.html#getFileStatusWithHttpOperationResponse">getFileStatusWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#listFileStatus">listFileStatus</a></li><li data-type='method'><a href="FileSystem.html#listFileStatusWithHttpOperationResponse">listFileStatusWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#mkdirs">mkdirs</a></li><li data-type='method'><a href="FileSystem.html#mkdirsWithHttpOperationResponse">mkdirsWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#modifyAclEntries">modifyAclEntries</a></li><li data-type='method'><a href="FileSystem.html#modifyAclEntriesWithHttpOperationResponse">modifyAclEntriesWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#msConcat">msConcat</a></li><li data-type='method'><a href="FileSystem.html#msConcatWithHttpOperationResponse">msConcatWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#open">open</a></li><li data-type='method'><a href="FileSystem.html#openWithHttpOperationResponse">openWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#removeAcl">removeAcl</a></li><li data-type='method'><a href="FileSystem.html#removeAclEntries">removeAclEntries</a></li><li data-type='method'><a href="FileSystem.html#removeAclEntriesWithHttpOperationResponse">removeAclEntriesWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#removeAclWithHttpOperationResponse">removeAclWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#removeDefaultAcl">removeDefaultAcl</a></li><li data-type='method'><a href="FileSystem.html#removeDefaultAclWithHttpOperationResponse">removeDefaultAclWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#rename">rename</a></li><li data-type='method'><a href="FileSystem.html#renameWithHttpOperationResponse">renameWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#setAcl">setAcl</a></li><li data-type='method'><a href="FileSystem.html#setAclWithHttpOperationResponse">setAclWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#setFileExpiry">setFileExpiry</a></li><li data-type='method'><a href="FileSystem.html#setFileExpiryWithHttpOperationResponse">setFileExpiryWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#setOwner">setOwner</a></li><li data-type='method'><a href="FileSystem.html#setOwnerWithHttpOperationResponse">setOwnerWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#setPermission">setPermission</a></li><li data-type='method'><a href="FileSystem.html#setPermissionWithHttpOperationResponse">setPermissionWithHttpOperationResponse</a></li></ul></li><li><a href="FirewallRule.html">FirewallRule</a><ul class='methods'><li data-type='method'><a href="FirewallRule.html#mapper">mapper</a></li></ul></li><li><a href="FirewallRules.html">FirewallRules</a><ul class='methods'><li data-type='method'><a href="FirewallRules.html#createOrUpdate">createOrUpdate</a></li><li data-type='method'><a href="FirewallRules.html#createOrUpdateWithHttpOperationResponse">createOrUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="FirewallRules.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="FirewallRules.html#deleteMethodWithHttpOperationResponse">deleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="FirewallRules.html#get">get</a></li><li data-type='method'><a href="FirewallRules.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="FirewallRules.html#listByAccount">listByAccount</a></li><li data-type='method'><a href="FirewallRules.html#listByAccountNext">listByAccountNext</a></li><li data-type='method'><a href="FirewallRules.html#listByAccountNextWithHttpOperationResponse">listByAccountNextWithHttpOperationResponse</a></li><li data-type='method'><a href="FirewallRules.html#listByAccountWithHttpOperationResponse">listByAccountWithHttpOperationResponse</a></li><li data-type='method'><a href="FirewallRules.html#update">update</a></li><li data-type='method'><a href="FirewallRules.html#updateWithHttpOperationResponse">updateWithHttpOperationResponse</a></li></ul></li><li><a href="KeyVaultMetaInfo.html">KeyVaultMetaInfo</a><ul class='methods'><li data-type='method'><a href="KeyVaultMetaInfo.html#mapper">mapper</a></li></ul></li><li><a href="Resource.html">Resource</a><ul class='methods'><li data-type='method'><a href="Resource.html#mapper">mapper</a></li></ul></li><li><a href="SubResource.html">SubResource</a><ul class='methods'><li data-type='method'><a href="SubResource.html#mapper">mapper</a></li></ul></li><li><a href="TrustedIdProvider.html">TrustedIdProvider</a><ul class='methods'><li data-type='method'><a href="TrustedIdProvider.html#mapper">mapper</a></li></ul></li><li><a href="TrustedIdProviders.html">TrustedIdProviders</a><ul class='methods'><li data-type='method'><a href="TrustedIdProviders.html#createOrUpdate">createOrUpdate</a></li><li data-type='method'><a href="TrustedIdProviders.html#createOrUpdateWithHttpOperationResponse">createOrUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="TrustedIdProviders.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="TrustedIdProviders.html#deleteMethodWithHttpOperationResponse">deleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="TrustedIdProviders.html#get">get</a></li><li data-type='method'><a href="TrustedIdProviders.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="TrustedIdProviders.html#listByAccount">listByAccount</a></li><li data-type='method'><a href="TrustedIdProviders.html#listByAccountNext">listByAccountNext</a></li><li data-type='method'><a href="TrustedIdProviders.html#listByAccountNextWithHttpOperationResponse">listByAccountNextWithHttpOperationResponse</a></li><li data-type='method'><a href="TrustedIdProviders.html#listByAccountWithHttpOperationResponse">listByAccountWithHttpOperationResponse</a></li><li data-type='method'><a href="TrustedIdProviders.html#update">update</a></li><li data-type='method'><a href="TrustedIdProviders.html#updateWithHttpOperationResponse">updateWithHttpOperationResponse</a></li></ul></li><li><a href="UpdateEncryptionConfig.html">UpdateEncryptionConfig</a><ul class='methods'><li data-type='method'><a href="UpdateEncryptionConfig.html#mapper">mapper</a></li></ul></li><li><a href="UpdateFirewallRuleParameters.html">UpdateFirewallRuleParameters</a><ul class='methods'><li data-type='method'><a href="UpdateFirewallRuleParameters.html#mapper">mapper</a></li></ul></li><li><a href="UpdateKeyVaultMetaInfo.html">UpdateKeyVaultMetaInfo</a><ul class='methods'><li data-type='method'><a href="UpdateKeyVaultMetaInfo.html#mapper">mapper</a></li></ul></li><li><a href="UpdateTrustedIdProviderParameters.html">UpdateTrustedIdProviderParameters</a><ul class='methods'><li data-type='method'><a href="UpdateTrustedIdProviderParameters.html#mapper">mapper</a></li></ul></li></ul><h3>Global</h3><ul><li><a href="global.html#_append">_append</a></li><li><a href="global.html#_beginCreate">_beginCreate</a></li><li><a href="global.html#_beginDeleteMethod">_beginDeleteMethod</a></li><li><a href="global.html#_beginUpdate">_beginUpdate</a></li><li><a href="global.html#_checkAccess">_checkAccess</a></li><li><a href="global.html#_concat">_concat</a></li><li><a href="global.html#_concurrentAppend">_concurrentAppend</a></li><li><a href="global.html#_create">_create</a></li><li><a href="global.html#_createOrUpdate">_createOrUpdate</a></li><li><a href="global.html#_deleteMethod">_deleteMethod</a></li><li><a href="global.html#_enableKeyVault">_enableKeyVault</a></li><li><a href="global.html#_get">_get</a></li><li><a href="global.html#_getAclStatus">_getAclStatus</a></li><li><a href="global.html#_getContentSummary">_getContentSummary</a></li><li><a href="global.html#_getFileStatus">_getFileStatus</a></li><li><a href="global.html#_list">_list</a></li><li><a href="global.html#_listByAccount">_listByAccount</a></li><li><a href="global.html#_listByAccountNext">_listByAccountNext</a></li><li><a href="global.html#_listByResourceGroup">_listByResourceGroup</a></li><li><a href="global.html#_listByResourceGroupNext">_listByResourceGroupNext</a></li><li><a href="global.html#_listFileStatus">_listFileStatus</a></li><li><a href="global.html#_listNext">_listNext</a></li><li><a href="global.html#_mkdirs">_mkdirs</a></li><li><a href="global.html#_modifyAclEntries">_modifyAclEntries</a></li><li><a href="global.html#_msConcat">_msConcat</a></li><li><a href="global.html#_open">_open</a></li><li><a href="global.html#_removeAcl">_removeAcl</a></li><li><a href="global.html#_removeAclEntries">_removeAclEntries</a></li><li><a href="global.html#_removeDefaultAcl">_removeDefaultAcl</a></li><li><a href="global.html#_rename">_rename</a></li><li><a href="global.html#_setAcl">_setAcl</a></li><li><a href="global.html#_setFileExpiry">_setFileExpiry</a></li><li><a href="global.html#_setOwner">_setOwner</a></li><li><a href="global.html#_setPermission">_setPermission</a></li><li><a href="global.html#_update">_update</a></li><li><a href="global.html#accountId">accountId</a></li><li><a href="global.html#aclBit">aclBit</a></li><li><a href="global.html#encryptionKeyVersion">encryptionKeyVersion</a></li><li><a href="global.html#endIpAddress">endIpAddress</a></li><li><a href="global.html#exception">exception</a></li><li><a href="global.html#fileStatus">fileStatus</a></li><li><a href="global.html#firewallAllowAzureIps">firewallAllowAzureIps</a></li><li><a href="global.html#idProvider">idProvider</a></li><li><a href="global.html#nextLink">nextLink</a></li><li><a href="global.html#operationResult">operationResult</a></li><li><a href="global.html#spaceConsumed">spaceConsumed</a></li><li><a href="global.html#stickyBit">stickyBit</a></li><li><a href="global.html#tags">tags</a></li><li><a href="global.html#target">target</a></li><li><a href="global.html#tenantId">tenantId</a></li><li><a href="global.html#type">type</a></li></ul>
+</nav>
+
+<div id="main">
+    
+      <a class="github-banner" href="https://github.com/azure/azure-sdk-for-node.git"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+    
+    
+    <h1 class="page-title">account/operations/firewallRules.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/*
+ * Copyright (c) Microsoft Corporation. All rights reserved.
+ * Licensed under the MIT License. See License.txt in the project root for
+ * license information.
+ *
+ * Code generated by Microsoft (R) AutoRest Code Generator.
+ * Changes may cause incorrect behavior and will be lost if the code is
+ * regenerated.
+ */
+
+'use strict';
+
+const msRest = require('ms-rest');
+const msRestAzure = require('ms-rest-azure');
+const WebResource = msRest.WebResource;
+
+/**
+ * Creates or updates the specified firewall rule. During update, the firewall
+ * rule with the specified name will be replaced with this new firewall rule.
+ *
+ * @param {string} resourceGroupName The name of the Azure resource group that
+ * contains the Data Lake Store account.
+ *
+ * @param {string} accountName The name of the Data Lake Store account to add
+ * or replace the firewall rule.
+ *
+ * @param {string} firewallRuleName The name of the firewall rule to create or
+ * update.
+ *
+ * @param {object} parameters Parameters supplied to create or update the
+ * firewall rule.
+ *
+ * @param {string} parameters.startIpAddress the start IP address for the
+ * firewall rule. This can be either ipv4 or ipv6. Start and End should be in
+ * the same protocol.
+ *
+ * @param {string} parameters.endIpAddress the end IP address for the firewall
+ * rule. This can be either ipv4 or ipv6. Start and End should be in the same
+ * protocol.
+ *
+ * @param {string} [parameters.name] Resource name
+ *
+ * @param {object} [options] Optional Parameters.
+ *
+ * @param {object} [options.customHeaders] Headers that will be added to the
+ * request
+ *
+ * @param {function} callback - The callback.
+ *
+ * @returns {function} callback(err, result, request, response)
+ *
+ *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+ *
+ *                      {object} [result]   - The deserialized result object if an error did not occur.
+ *                      See {@link FirewallRule} for more information.
+ *
+ *                      {object} [request]  - The HTTP Request object if an error did not occur.
+ *
+ *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+ */
+function _createOrUpdate(resourceGroupName, accountName, firewallRuleName, parameters, options, callback) {
+   /* jshint validthis: true */
+  let client = this.client;
+  if(!callback &amp;&amp; typeof options === 'function') {
+    callback = options;
+    options = null;
+  }
+  if (!callback) {
+    throw new Error('callback cannot be null.');
+  }
+  // Validate
+  try {
+    if (resourceGroupName === null || resourceGroupName === undefined || typeof resourceGroupName.valueOf() !== 'string') {
+      throw new Error('resourceGroupName cannot be null or undefined and it must be of type string.');
+    }
+    if (accountName === null || accountName === undefined || typeof accountName.valueOf() !== 'string') {
+      throw new Error('accountName cannot be null or undefined and it must be of type string.');
+    }
+    if (firewallRuleName === null || firewallRuleName === undefined || typeof firewallRuleName.valueOf() !== 'string') {
+      throw new Error('firewallRuleName cannot be null or undefined and it must be of type string.');
+    }
+    if (parameters === null || parameters === undefined) {
+      throw new Error('parameters cannot be null or undefined.');
+    }
+    if (this.client.apiVersion === null || this.client.apiVersion === undefined || typeof this.client.apiVersion.valueOf() !== 'string') {
+      throw new Error('this.client.apiVersion cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.subscriptionId === null || this.client.subscriptionId === undefined || typeof this.client.subscriptionId.valueOf() !== 'string') {
+      throw new Error('this.client.subscriptionId cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.acceptLanguage !== null &amp;&amp; this.client.acceptLanguage !== undefined &amp;&amp; typeof this.client.acceptLanguage.valueOf() !== 'string') {
+      throw new Error('this.client.acceptLanguage must be of type string.');
+    }
+  } catch (error) {
+    return callback(error);
+  }
+
+  // Construct URL
+  let baseUrl = this.client.baseUri;
+  let requestUrl = baseUrl + (baseUrl.endsWith('/') ? '' : '/') + 'subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataLakeStore/accounts/{accountName}/firewallRules/{firewallRuleName}';
+  requestUrl = requestUrl.replace('{resourceGroupName}', encodeURIComponent(resourceGroupName));
+  requestUrl = requestUrl.replace('{accountName}', encodeURIComponent(accountName));
+  requestUrl = requestUrl.replace('{firewallRuleName}', encodeURIComponent(firewallRuleName));
+  requestUrl = requestUrl.replace('{subscriptionId}', encodeURIComponent(this.client.subscriptionId));
+  let queryParameters = [];
+  queryParameters.push('api-version=' + encodeURIComponent(this.client.apiVersion));
+  if (queryParameters.length > 0) {
+    requestUrl += '?' + queryParameters.join('&amp;');
+  }
+
+  // Create HTTP transport objects
+  let httpRequest = new WebResource();
+  httpRequest.method = 'PUT';
+  httpRequest.url = requestUrl;
+  httpRequest.headers = {};
+  // Set Headers
+  httpRequest.headers['Content-Type'] = 'application/json; charset=utf-8';
+  if (this.client.generateClientRequestId) {
+      httpRequest.headers['x-ms-client-request-id'] = msRestAzure.generateUuid();
+  }
+  if (this.client.acceptLanguage !== undefined &amp;&amp; this.client.acceptLanguage !== null) {
+    httpRequest.headers['accept-language'] = this.client.acceptLanguage;
+  }
+  if(options) {
+    for(let headerName in options['customHeaders']) {
+      if (options['customHeaders'].hasOwnProperty(headerName)) {
+        httpRequest.headers[headerName] = options['customHeaders'][headerName];
+      }
+    }
+  }
+  // Serialize Request
+  let requestContent = null;
+  let requestModel = null;
+  try {
+    if (parameters !== null &amp;&amp; parameters !== undefined) {
+      let requestModelMapper = new client.models['FirewallRule']().mapper();
+      requestModel = client.serialize(requestModelMapper, parameters, 'parameters');
+      requestContent = JSON.stringify(requestModel);
+    }
+  } catch (error) {
+    let serializationError = new Error(`Error "${error.message}" occurred in serializing the ` +
+        `payload - ${JSON.stringify(parameters, null, 2)}.`);
+    return callback(serializationError);
+  }
+  httpRequest.body = requestContent;
+  // Send Request
+  return client.pipeline(httpRequest, (err, response, responseBody) => {
+    if (err) {
+      return callback(err);
+    }
+    let statusCode = response.statusCode;
+    if (statusCode !== 200) {
+      let error = new Error(responseBody);
+      error.statusCode = response.statusCode;
+      error.request = msRest.stripRequest(httpRequest);
+      error.response = msRest.stripResponse(response);
+      if (responseBody === '') responseBody = null;
+      let parsedErrorResponse;
+      try {
+        parsedErrorResponse = JSON.parse(responseBody);
+        if (parsedErrorResponse) {
+          if (parsedErrorResponse.error) parsedErrorResponse = parsedErrorResponse.error;
+          if (parsedErrorResponse.code) error.code = parsedErrorResponse.code;
+          if (parsedErrorResponse.message) error.message = parsedErrorResponse.message;
+        }
+        if (parsedErrorResponse !== null &amp;&amp; parsedErrorResponse !== undefined) {
+          let resultMapper = new client.models['CloudError']().mapper();
+          error.body = client.deserialize(resultMapper, parsedErrorResponse, 'error.body');
+        }
+      } catch (defaultError) {
+        error.message = `Error "${defaultError.message}" occurred in deserializing the responseBody ` +
+                         `- "${responseBody}" for the default response.`;
+        return callback(error);
+      }
+      return callback(error);
+    }
+    // Create Result
+    let result = null;
+    if (responseBody === '') responseBody = null;
+    // Deserialize Response
+    if (statusCode === 200) {
+      let parsedResponse = null;
+      try {
+        parsedResponse = JSON.parse(responseBody);
+        result = JSON.parse(responseBody);
+        if (parsedResponse !== null &amp;&amp; parsedResponse !== undefined) {
+          let resultMapper = new client.models['FirewallRule']().mapper();
+          result = client.deserialize(resultMapper, parsedResponse, 'result');
+        }
+      } catch (error) {
+        let deserializationError = new Error(`Error ${error} occurred in deserializing the responseBody - ${responseBody}`);
+        deserializationError.request = msRest.stripRequest(httpRequest);
+        deserializationError.response = msRest.stripResponse(response);
+        return callback(deserializationError);
+      }
+    }
+
+    return callback(null, result, httpRequest, response);
+  });
+}
+
+/**
+ * Updates the specified firewall rule.
+ *
+ * @param {string} resourceGroupName The name of the Azure resource group that
+ * contains the Data Lake Store account.
+ *
+ * @param {string} accountName The name of the Data Lake Store account to which
+ * to update the firewall rule.
+ *
+ * @param {string} firewallRuleName The name of the firewall rule to update.
+ *
+ * @param {object} [options] Optional Parameters.
+ *
+ * @param {object} [options.parameters] Parameters supplied to update the
+ * firewall rule.
+ *
+ * @param {string} [options.parameters.startIpAddress] the start IP address for
+ * the firewall rule. This can be either ipv4 or ipv6. Start and End should be
+ * in the same protocol.
+ *
+ * @param {string} [options.parameters.endIpAddress] the end IP address for the
+ * firewall rule. This can be either ipv4 or ipv6. Start and End should be in
+ * the same protocol.
+ *
+ * @param {object} [options.customHeaders] Headers that will be added to the
+ * request
+ *
+ * @param {function} callback - The callback.
+ *
+ * @returns {function} callback(err, result, request, response)
+ *
+ *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+ *
+ *                      {object} [result]   - The deserialized result object if an error did not occur.
+ *                      See {@link FirewallRule} for more information.
+ *
+ *                      {object} [request]  - The HTTP Request object if an error did not occur.
+ *
+ *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+ */
+function _update(resourceGroupName, accountName, firewallRuleName, options, callback) {
+   /* jshint validthis: true */
+  let client = this.client;
+  if(!callback &amp;&amp; typeof options === 'function') {
+    callback = options;
+    options = null;
+  }
+  if (!callback) {
+    throw new Error('callback cannot be null.');
+  }
+  let parameters = (options &amp;&amp; options.parameters !== undefined) ? options.parameters : undefined;
+  // Validate
+  try {
+    if (resourceGroupName === null || resourceGroupName === undefined || typeof resourceGroupName.valueOf() !== 'string') {
+      throw new Error('resourceGroupName cannot be null or undefined and it must be of type string.');
+    }
+    if (accountName === null || accountName === undefined || typeof accountName.valueOf() !== 'string') {
+      throw new Error('accountName cannot be null or undefined and it must be of type string.');
+    }
+    if (firewallRuleName === null || firewallRuleName === undefined || typeof firewallRuleName.valueOf() !== 'string') {
+      throw new Error('firewallRuleName cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.apiVersion === null || this.client.apiVersion === undefined || typeof this.client.apiVersion.valueOf() !== 'string') {
+      throw new Error('this.client.apiVersion cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.subscriptionId === null || this.client.subscriptionId === undefined || typeof this.client.subscriptionId.valueOf() !== 'string') {
+      throw new Error('this.client.subscriptionId cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.acceptLanguage !== null &amp;&amp; this.client.acceptLanguage !== undefined &amp;&amp; typeof this.client.acceptLanguage.valueOf() !== 'string') {
+      throw new Error('this.client.acceptLanguage must be of type string.');
+    }
+  } catch (error) {
+    return callback(error);
+  }
+
+  // Construct URL
+  let baseUrl = this.client.baseUri;
+  let requestUrl = baseUrl + (baseUrl.endsWith('/') ? '' : '/') + 'subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataLakeStore/accounts/{accountName}/firewallRules/{firewallRuleName}';
+  requestUrl = requestUrl.replace('{resourceGroupName}', encodeURIComponent(resourceGroupName));
+  requestUrl = requestUrl.replace('{accountName}', encodeURIComponent(accountName));
+  requestUrl = requestUrl.replace('{firewallRuleName}', encodeURIComponent(firewallRuleName));
+  requestUrl = requestUrl.replace('{subscriptionId}', encodeURIComponent(this.client.subscriptionId));
+  let queryParameters = [];
+  queryParameters.push('api-version=' + encodeURIComponent(this.client.apiVersion));
+  if (queryParameters.length > 0) {
+    requestUrl += '?' + queryParameters.join('&amp;');
+  }
+
+  // Create HTTP transport objects
+  let httpRequest = new WebResource();
+  httpRequest.method = 'PATCH';
+  httpRequest.url = requestUrl;
+  httpRequest.headers = {};
+  // Set Headers
+  httpRequest.headers['Content-Type'] = 'application/json; charset=utf-8';
+  if (this.client.generateClientRequestId) {
+      httpRequest.headers['x-ms-client-request-id'] = msRestAzure.generateUuid();
+  }
+  if (this.client.acceptLanguage !== undefined &amp;&amp; this.client.acceptLanguage !== null) {
+    httpRequest.headers['accept-language'] = this.client.acceptLanguage;
+  }
+  if(options) {
+    for(let headerName in options['customHeaders']) {
+      if (options['customHeaders'].hasOwnProperty(headerName)) {
+        httpRequest.headers[headerName] = options['customHeaders'][headerName];
+      }
+    }
+  }
+  // Serialize Request
+  let requestContent = null;
+  let requestModel = null;
+  try {
+    if (parameters !== null &amp;&amp; parameters !== undefined) {
+      let requestModelMapper = new client.models['UpdateFirewallRuleParameters']().mapper();
+      requestModel = client.serialize(requestModelMapper, parameters, 'parameters');
+      requestContent = JSON.stringify(requestModel);
+    }
+  } catch (error) {
+    let serializationError = new Error(`Error "${error.message}" occurred in serializing the ` +
+        `payload - ${JSON.stringify(parameters, null, 2)}.`);
+    return callback(serializationError);
+  }
+  httpRequest.body = requestContent;
+  // Send Request
+  return client.pipeline(httpRequest, (err, response, responseBody) => {
+    if (err) {
+      return callback(err);
+    }
+    let statusCode = response.statusCode;
+    if (statusCode !== 200) {
+      let error = new Error(responseBody);
+      error.statusCode = response.statusCode;
+      error.request = msRest.stripRequest(httpRequest);
+      error.response = msRest.stripResponse(response);
+      if (responseBody === '') responseBody = null;
+      let parsedErrorResponse;
+      try {
+        parsedErrorResponse = JSON.parse(responseBody);
+        if (parsedErrorResponse) {
+          if (parsedErrorResponse.error) parsedErrorResponse = parsedErrorResponse.error;
+          if (parsedErrorResponse.code) error.code = parsedErrorResponse.code;
+          if (parsedErrorResponse.message) error.message = parsedErrorResponse.message;
+        }
+        if (parsedErrorResponse !== null &amp;&amp; parsedErrorResponse !== undefined) {
+          let resultMapper = new client.models['CloudError']().mapper();
+          error.body = client.deserialize(resultMapper, parsedErrorResponse, 'error.body');
+        }
+      } catch (defaultError) {
+        error.message = `Error "${defaultError.message}" occurred in deserializing the responseBody ` +
+                         `- "${responseBody}" for the default response.`;
+        return callback(error);
+      }
+      return callback(error);
+    }
+    // Create Result
+    let result = null;
+    if (responseBody === '') responseBody = null;
+    // Deserialize Response
+    if (statusCode === 200) {
+      let parsedResponse = null;
+      try {
+        parsedResponse = JSON.parse(responseBody);
+        result = JSON.parse(responseBody);
+        if (parsedResponse !== null &amp;&amp; parsedResponse !== undefined) {
+          let resultMapper = new client.models['FirewallRule']().mapper();
+          result = client.deserialize(resultMapper, parsedResponse, 'result');
+        }
+      } catch (error) {
+        let deserializationError = new Error(`Error ${error} occurred in deserializing the responseBody - ${responseBody}`);
+        deserializationError.request = msRest.stripRequest(httpRequest);
+        deserializationError.response = msRest.stripResponse(response);
+        return callback(deserializationError);
+      }
+    }
+
+    return callback(null, result, httpRequest, response);
+  });
+}
+
+/**
+ * Deletes the specified firewall rule from the specified Data Lake Store
+ * account
+ *
+ * @param {string} resourceGroupName The name of the Azure resource group that
+ * contains the Data Lake Store account.
+ *
+ * @param {string} accountName The name of the Data Lake Store account from
+ * which to delete the firewall rule.
+ *
+ * @param {string} firewallRuleName The name of the firewall rule to delete.
+ *
+ * @param {object} [options] Optional Parameters.
+ *
+ * @param {object} [options.customHeaders] Headers that will be added to the
+ * request
+ *
+ * @param {function} callback - The callback.
+ *
+ * @returns {function} callback(err, result, request, response)
+ *
+ *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+ *
+ *                      {null} [result]   - The deserialized result object if an error did not occur.
+ *
+ *                      {object} [request]  - The HTTP Request object if an error did not occur.
+ *
+ *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+ */
+function _deleteMethod(resourceGroupName, accountName, firewallRuleName, options, callback) {
+   /* jshint validthis: true */
+  let client = this.client;
+  if(!callback &amp;&amp; typeof options === 'function') {
+    callback = options;
+    options = null;
+  }
+  if (!callback) {
+    throw new Error('callback cannot be null.');
+  }
+  // Validate
+  try {
+    if (resourceGroupName === null || resourceGroupName === undefined || typeof resourceGroupName.valueOf() !== 'string') {
+      throw new Error('resourceGroupName cannot be null or undefined and it must be of type string.');
+    }
+    if (accountName === null || accountName === undefined || typeof accountName.valueOf() !== 'string') {
+      throw new Error('accountName cannot be null or undefined and it must be of type string.');
+    }
+    if (firewallRuleName === null || firewallRuleName === undefined || typeof firewallRuleName.valueOf() !== 'string') {
+      throw new Error('firewallRuleName cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.apiVersion === null || this.client.apiVersion === undefined || typeof this.client.apiVersion.valueOf() !== 'string') {
+      throw new Error('this.client.apiVersion cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.subscriptionId === null || this.client.subscriptionId === undefined || typeof this.client.subscriptionId.valueOf() !== 'string') {
+      throw new Error('this.client.subscriptionId cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.acceptLanguage !== null &amp;&amp; this.client.acceptLanguage !== undefined &amp;&amp; typeof this.client.acceptLanguage.valueOf() !== 'string') {
+      throw new Error('this.client.acceptLanguage must be of type string.');
+    }
+  } catch (error) {
+    return callback(error);
+  }
+
+  // Construct URL
+  let baseUrl = this.client.baseUri;
+  let requestUrl = baseUrl + (baseUrl.endsWith('/') ? '' : '/') + 'subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataLakeStore/accounts/{accountName}/firewallRules/{firewallRuleName}';
+  requestUrl = requestUrl.replace('{resourceGroupName}', encodeURIComponent(resourceGroupName));
+  requestUrl = requestUrl.replace('{accountName}', encodeURIComponent(accountName));
+  requestUrl = requestUrl.replace('{firewallRuleName}', encodeURIComponent(firewallRuleName));
+  requestUrl = requestUrl.replace('{subscriptionId}', encodeURIComponent(this.client.subscriptionId));
+  let queryParameters = [];
+  queryParameters.push('api-version=' + encodeURIComponent(this.client.apiVersion));
+  if (queryParameters.length > 0) {
+    requestUrl += '?' + queryParameters.join('&amp;');
+  }
+
+  // Create HTTP transport objects
+  let httpRequest = new WebResource();
+  httpRequest.method = 'DELETE';
+  httpRequest.url = requestUrl;
+  httpRequest.headers = {};
+  // Set Headers
+  httpRequest.headers['Content-Type'] = 'application/json; charset=utf-8';
+  if (this.client.generateClientRequestId) {
+      httpRequest.headers['x-ms-client-request-id'] = msRestAzure.generateUuid();
+  }
+  if (this.client.acceptLanguage !== undefined &amp;&amp; this.client.acceptLanguage !== null) {
+    httpRequest.headers['accept-language'] = this.client.acceptLanguage;
+  }
+  if(options) {
+    for(let headerName in options['customHeaders']) {
+      if (options['customHeaders'].hasOwnProperty(headerName)) {
+        httpRequest.headers[headerName] = options['customHeaders'][headerName];
+      }
+    }
+  }
+  httpRequest.body = null;
+  // Send Request
+  return client.pipeline(httpRequest, (err, response, responseBody) => {
+    if (err) {
+      return callback(err);
+    }
+    let statusCode = response.statusCode;
+    if (statusCode !== 200 &amp;&amp; statusCode !== 204) {
+      let error = new Error(responseBody);
+      error.statusCode = response.statusCode;
+      error.request = msRest.stripRequest(httpRequest);
+      error.response = msRest.stripResponse(response);
+      if (responseBody === '') responseBody = null;
+      let parsedErrorResponse;
+      try {
+        parsedErrorResponse = JSON.parse(responseBody);
+        if (parsedErrorResponse) {
+          if (parsedErrorResponse.error) parsedErrorResponse = parsedErrorResponse.error;
+          if (parsedErrorResponse.code) error.code = parsedErrorResponse.code;
+          if (parsedErrorResponse.message) error.message = parsedErrorResponse.message;
+        }
+        if (parsedErrorResponse !== null &amp;&amp; parsedErrorResponse !== undefined) {
+          let resultMapper = new client.models['CloudError']().mapper();
+          error.body = client.deserialize(resultMapper, parsedErrorResponse, 'error.body');
+        }
+      } catch (defaultError) {
+        error.message = `Error "${defaultError.message}" occurred in deserializing the responseBody ` +
+                         `- "${responseBody}" for the default response.`;
+        return callback(error);
+      }
+      return callback(error);
+    }
+    // Create Result
+    let result = null;
+    if (responseBody === '') responseBody = null;
+
+    return callback(null, result, httpRequest, response);
+  });
+}
+
+/**
+ * Gets the specified Data Lake Store firewall rule.
+ *
+ * @param {string} resourceGroupName The name of the Azure resource group that
+ * contains the Data Lake Store account.
+ *
+ * @param {string} accountName The name of the Data Lake Store account from
+ * which to get the firewall rule.
+ *
+ * @param {string} firewallRuleName The name of the firewall rule to retrieve.
+ *
+ * @param {object} [options] Optional Parameters.
+ *
+ * @param {object} [options.customHeaders] Headers that will be added to the
+ * request
+ *
+ * @param {function} callback - The callback.
+ *
+ * @returns {function} callback(err, result, request, response)
+ *
+ *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+ *
+ *                      {object} [result]   - The deserialized result object if an error did not occur.
+ *                      See {@link FirewallRule} for more information.
+ *
+ *                      {object} [request]  - The HTTP Request object if an error did not occur.
+ *
+ *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+ */
+function _get(resourceGroupName, accountName, firewallRuleName, options, callback) {
+   /* jshint validthis: true */
+  let client = this.client;
+  if(!callback &amp;&amp; typeof options === 'function') {
+    callback = options;
+    options = null;
+  }
+  if (!callback) {
+    throw new Error('callback cannot be null.');
+  }
+  // Validate
+  try {
+    if (resourceGroupName === null || resourceGroupName === undefined || typeof resourceGroupName.valueOf() !== 'string') {
+      throw new Error('resourceGroupName cannot be null or undefined and it must be of type string.');
+    }
+    if (accountName === null || accountName === undefined || typeof accountName.valueOf() !== 'string') {
+      throw new Error('accountName cannot be null or undefined and it must be of type string.');
+    }
+    if (firewallRuleName === null || firewallRuleName === undefined || typeof firewallRuleName.valueOf() !== 'string') {
+      throw new Error('firewallRuleName cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.apiVersion === null || this.client.apiVersion === undefined || typeof this.client.apiVersion.valueOf() !== 'string') {
+      throw new Error('this.client.apiVersion cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.subscriptionId === null || this.client.subscriptionId === undefined || typeof this.client.subscriptionId.valueOf() !== 'string') {
+      throw new Error('this.client.subscriptionId cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.acceptLanguage !== null &amp;&amp; this.client.acceptLanguage !== undefined &amp;&amp; typeof this.client.acceptLanguage.valueOf() !== 'string') {
+      throw new Error('this.client.acceptLanguage must be of type string.');
+    }
+  } catch (error) {
+    return callback(error);
+  }
+
+  // Construct URL
+  let baseUrl = this.client.baseUri;
+  let requestUrl = baseUrl + (baseUrl.endsWith('/') ? '' : '/') + 'subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataLakeStore/accounts/{accountName}/firewallRules/{firewallRuleName}';
+  requestUrl = requestUrl.replace('{resourceGroupName}', encodeURIComponent(resourceGroupName));
+  requestUrl = requestUrl.replace('{accountName}', encodeURIComponent(accountName));
+  requestUrl = requestUrl.replace('{firewallRuleName}', encodeURIComponent(firewallRuleName));
+  requestUrl = requestUrl.replace('{subscriptionId}', encodeURIComponent(this.client.subscriptionId));
+  let queryParameters = [];
+  queryParameters.push('api-version=' + encodeURIComponent(this.client.apiVersion));
+  if (queryParameters.length > 0) {
+    requestUrl += '?' + queryParameters.join('&amp;');
+  }
+
+  // Create HTTP transport objects
+  let httpRequest = new WebResource();
+  httpRequest.method = 'GET';
+  httpRequest.url = requestUrl;
+  httpRequest.headers = {};
+  // Set Headers
+  httpRequest.headers['Content-Type'] = 'application/json; charset=utf-8';
+  if (this.client.generateClientRequestId) {
+      httpRequest.headers['x-ms-client-request-id'] = msRestAzure.generateUuid();
+  }
+  if (this.client.acceptLanguage !== undefined &amp;&amp; this.client.acceptLanguage !== null) {
+    httpRequest.headers['accept-language'] = this.client.acceptLanguage;
+  }
+  if(options) {
+    for(let headerName in options['customHeaders']) {
+      if (options['customHeaders'].hasOwnProperty(headerName)) {
+        httpRequest.headers[headerName] = options['customHeaders'][headerName];
+      }
+    }
+  }
+  httpRequest.body = null;
+  // Send Request
+  return client.pipeline(httpRequest, (err, response, responseBody) => {
+    if (err) {
+      return callback(err);
+    }
+    let statusCode = response.statusCode;
+    if (statusCode !== 200) {
+      let error = new Error(responseBody);
+      error.statusCode = response.statusCode;
+      error.request = msRest.stripRequest(httpRequest);
+      error.response = msRest.stripResponse(response);
+      if (responseBody === '') responseBody = null;
+      let parsedErrorResponse;
+      try {
+        parsedErrorResponse = JSON.parse(responseBody);
+        if (parsedErrorResponse) {
+          if (parsedErrorResponse.error) parsedErrorResponse = parsedErrorResponse.error;
+          if (parsedErrorResponse.code) error.code = parsedErrorResponse.code;
+          if (parsedErrorResponse.message) error.message = parsedErrorResponse.message;
+        }
+        if (parsedErrorResponse !== null &amp;&amp; parsedErrorResponse !== undefined) {
+          let resultMapper = new client.models['CloudError']().mapper();
+          error.body = client.deserialize(resultMapper, parsedErrorResponse, 'error.body');
+        }
+      } catch (defaultError) {
+        error.message = `Error "${defaultError.message}" occurred in deserializing the responseBody ` +
+                         `- "${responseBody}" for the default response.`;
+        return callback(error);
+      }
+      return callback(error);
+    }
+    // Create Result
+    let result = null;
+    if (responseBody === '') responseBody = null;
+    // Deserialize Response
+    if (statusCode === 200) {
+      let parsedResponse = null;
+      try {
+        parsedResponse = JSON.parse(responseBody);
+        result = JSON.parse(responseBody);
+        if (parsedResponse !== null &amp;&amp; parsedResponse !== undefined) {
+          let resultMapper = new client.models['FirewallRule']().mapper();
+          result = client.deserialize(resultMapper, parsedResponse, 'result');
+        }
+      } catch (error) {
+        let deserializationError = new Error(`Error ${error} occurred in deserializing the responseBody - ${responseBody}`);
+        deserializationError.request = msRest.stripRequest(httpRequest);
+        deserializationError.response = msRest.stripResponse(response);
+        return callback(deserializationError);
+      }
+    }
+
+    return callback(null, result, httpRequest, response);
+  });
+}
+
+/**
+ * Lists the Data Lake Store firewall rules within the specified Data Lake
+ * Store account.
+ *
+ * @param {string} resourceGroupName The name of the Azure resource group that
+ * contains the Data Lake Store account.
+ *
+ * @param {string} accountName The name of the Data Lake Store account from
+ * which to get the firewall rules.
+ *
+ * @param {object} [options] Optional Parameters.
+ *
+ * @param {object} [options.customHeaders] Headers that will be added to the
+ * request
+ *
+ * @param {function} callback - The callback.
+ *
+ * @returns {function} callback(err, result, request, response)
+ *
+ *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+ *
+ *                      {object} [result]   - The deserialized result object if an error did not occur.
+ *                      See {@link DataLakeStoreFirewallRuleListResult} for
+ *                      more information.
+ *
+ *                      {object} [request]  - The HTTP Request object if an error did not occur.
+ *
+ *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+ */
+function _listByAccount(resourceGroupName, accountName, options, callback) {
+   /* jshint validthis: true */
+  let client = this.client;
+  if(!callback &amp;&amp; typeof options === 'function') {
+    callback = options;
+    options = null;
+  }
+  if (!callback) {
+    throw new Error('callback cannot be null.');
+  }
+  // Validate
+  try {
+    if (resourceGroupName === null || resourceGroupName === undefined || typeof resourceGroupName.valueOf() !== 'string') {
+      throw new Error('resourceGroupName cannot be null or undefined and it must be of type string.');
+    }
+    if (accountName === null || accountName === undefined || typeof accountName.valueOf() !== 'string') {
+      throw new Error('accountName cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.apiVersion === null || this.client.apiVersion === undefined || typeof this.client.apiVersion.valueOf() !== 'string') {
+      throw new Error('this.client.apiVersion cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.subscriptionId === null || this.client.subscriptionId === undefined || typeof this.client.subscriptionId.valueOf() !== 'string') {
+      throw new Error('this.client.subscriptionId cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.acceptLanguage !== null &amp;&amp; this.client.acceptLanguage !== undefined &amp;&amp; typeof this.client.acceptLanguage.valueOf() !== 'string') {
+      throw new Error('this.client.acceptLanguage must be of type string.');
+    }
+  } catch (error) {
+    return callback(error);
+  }
+
+  // Construct URL
+  let baseUrl = this.client.baseUri;
+  let requestUrl = baseUrl + (baseUrl.endsWith('/') ? '' : '/') + 'subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataLakeStore/accounts/{accountName}/firewallRules';
+  requestUrl = requestUrl.replace('{resourceGroupName}', encodeURIComponent(resourceGroupName));
+  requestUrl = requestUrl.replace('{accountName}', encodeURIComponent(accountName));
+  requestUrl = requestUrl.replace('{subscriptionId}', encodeURIComponent(this.client.subscriptionId));
+  let queryParameters = [];
+  queryParameters.push('api-version=' + encodeURIComponent(this.client.apiVersion));
+  if (queryParameters.length > 0) {
+    requestUrl += '?' + queryParameters.join('&amp;');
+  }
+
+  // Create HTTP transport objects
+  let httpRequest = new WebResource();
+  httpRequest.method = 'GET';
+  httpRequest.url = requestUrl;
+  httpRequest.headers = {};
+  // Set Headers
+  httpRequest.headers['Content-Type'] = 'application/json; charset=utf-8';
+  if (this.client.generateClientRequestId) {
+      httpRequest.headers['x-ms-client-request-id'] = msRestAzure.generateUuid();
+  }
+  if (this.client.acceptLanguage !== undefined &amp;&amp; this.client.acceptLanguage !== null) {
+    httpRequest.headers['accept-language'] = this.client.acceptLanguage;
+  }
+  if(options) {
+    for(let headerName in options['customHeaders']) {
+      if (options['customHeaders'].hasOwnProperty(headerName)) {
+        httpRequest.headers[headerName] = options['customHeaders'][headerName];
+      }
+    }
+  }
+  httpRequest.body = null;
+  // Send Request
+  return client.pipeline(httpRequest, (err, response, responseBody) => {
+    if (err) {
+      return callback(err);
+    }
+    let statusCode = response.statusCode;
+    if (statusCode !== 200) {
+      let error = new Error(responseBody);
+      error.statusCode = response.statusCode;
+      error.request = msRest.stripRequest(httpRequest);
+      error.response = msRest.stripResponse(response);
+      if (responseBody === '') responseBody = null;
+      let parsedErrorResponse;
+      try {
+        parsedErrorResponse = JSON.parse(responseBody);
+        if (parsedErrorResponse) {
+          if (parsedErrorResponse.error) parsedErrorResponse = parsedErrorResponse.error;
+          if (parsedErrorResponse.code) error.code = parsedErrorResponse.code;
+          if (parsedErrorResponse.message) error.message = parsedErrorResponse.message;
+        }
+        if (parsedErrorResponse !== null &amp;&amp; parsedErrorResponse !== undefined) {
+          let resultMapper = new client.models['CloudError']().mapper();
+          error.body = client.deserialize(resultMapper, parsedErrorResponse, 'error.body');
+        }
+      } catch (defaultError) {
+        error.message = `Error "${defaultError.message}" occurred in deserializing the responseBody ` +
+                         `- "${responseBody}" for the default response.`;
+        return callback(error);
+      }
+      return callback(error);
+    }
+    // Create Result
+    let result = null;
+    if (responseBody === '') responseBody = null;
+    // Deserialize Response
+    if (statusCode === 200) {
+      let parsedResponse = null;
+      try {
+        parsedResponse = JSON.parse(responseBody);
+        result = JSON.parse(responseBody);
+        if (parsedResponse !== null &amp;&amp; parsedResponse !== undefined) {
+          let resultMapper = new client.models['DataLakeStoreFirewallRuleListResult']().mapper();
+          result = client.deserialize(resultMapper, parsedResponse, 'result');
+        }
+      } catch (error) {
+        let deserializationError = new Error(`Error ${error} occurred in deserializing the responseBody - ${responseBody}`);
+        deserializationError.request = msRest.stripRequest(httpRequest);
+        deserializationError.response = msRest.stripResponse(response);
+        return callback(deserializationError);
+      }
+    }
+
+    return callback(null, result, httpRequest, response);
+  });
+}
+
+/**
+ * Lists the Data Lake Store firewall rules within the specified Data Lake
+ * Store account.
+ *
+ * @param {string} nextPageLink The NextLink from the previous successful call
+ * to List operation.
+ *
+ * @param {object} [options] Optional Parameters.
+ *
+ * @param {object} [options.customHeaders] Headers that will be added to the
+ * request
+ *
+ * @param {function} callback - The callback.
+ *
+ * @returns {function} callback(err, result, request, response)
+ *
+ *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+ *
+ *                      {object} [result]   - The deserialized result object if an error did not occur.
+ *                      See {@link DataLakeStoreFirewallRuleListResult} for
+ *                      more information.
+ *
+ *                      {object} [request]  - The HTTP Request object if an error did not occur.
+ *
+ *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+ */
+function _listByAccountNext(nextPageLink, options, callback) {
+   /* jshint validthis: true */
+  let client = this.client;
+  if(!callback &amp;&amp; typeof options === 'function') {
+    callback = options;
+    options = null;
+  }
+  if (!callback) {
+    throw new Error('callback cannot be null.');
+  }
+  // Validate
+  try {
+    if (nextPageLink === null || nextPageLink === undefined || typeof nextPageLink.valueOf() !== 'string') {
+      throw new Error('nextPageLink cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.acceptLanguage !== null &amp;&amp; this.client.acceptLanguage !== undefined &amp;&amp; typeof this.client.acceptLanguage.valueOf() !== 'string') {
+      throw new Error('this.client.acceptLanguage must be of type string.');
+    }
+  } catch (error) {
+    return callback(error);
+  }
+
+  // Construct URL
+  let requestUrl = '{nextLink}';
+  requestUrl = requestUrl.replace('{nextLink}', nextPageLink);
+
+  // Create HTTP transport objects
+  let httpRequest = new WebResource();
+  httpRequest.method = 'GET';
+  httpRequest.url = requestUrl;
+  httpRequest.headers = {};
+  // Set Headers
+  httpRequest.headers['Content-Type'] = 'application/json; charset=utf-8';
+  if (this.client.generateClientRequestId) {
+      httpRequest.headers['x-ms-client-request-id'] = msRestAzure.generateUuid();
+  }
+  if (this.client.acceptLanguage !== undefined &amp;&amp; this.client.acceptLanguage !== null) {
+    httpRequest.headers['accept-language'] = this.client.acceptLanguage;
+  }
+  if(options) {
+    for(let headerName in options['customHeaders']) {
+      if (options['customHeaders'].hasOwnProperty(headerName)) {
+        httpRequest.headers[headerName] = options['customHeaders'][headerName];
+      }
+    }
+  }
+  httpRequest.body = null;
+  // Send Request
+  return client.pipeline(httpRequest, (err, response, responseBody) => {
+    if (err) {
+      return callback(err);
+    }
+    let statusCode = response.statusCode;
+    if (statusCode !== 200) {
+      let error = new Error(responseBody);
+      error.statusCode = response.statusCode;
+      error.request = msRest.stripRequest(httpRequest);
+      error.response = msRest.stripResponse(response);
+      if (responseBody === '') responseBody = null;
+      let parsedErrorResponse;
+      try {
+        parsedErrorResponse = JSON.parse(responseBody);
+        if (parsedErrorResponse) {
+          if (parsedErrorResponse.error) parsedErrorResponse = parsedErrorResponse.error;
+          if (parsedErrorResponse.code) error.code = parsedErrorResponse.code;
+          if (parsedErrorResponse.message) error.message = parsedErrorResponse.message;
+        }
+        if (parsedErrorResponse !== null &amp;&amp; parsedErrorResponse !== undefined) {
+          let resultMapper = new client.models['CloudError']().mapper();
+          error.body = client.deserialize(resultMapper, parsedErrorResponse, 'error.body');
+        }
+      } catch (defaultError) {
+        error.message = `Error "${defaultError.message}" occurred in deserializing the responseBody ` +
+                         `- "${responseBody}" for the default response.`;
+        return callback(error);
+      }
+      return callback(error);
+    }
+    // Create Result
+    let result = null;
+    if (responseBody === '') responseBody = null;
+    // Deserialize Response
+    if (statusCode === 200) {
+      let parsedResponse = null;
+      try {
+        parsedResponse = JSON.parse(responseBody);
+        result = JSON.parse(responseBody);
+        if (parsedResponse !== null &amp;&amp; parsedResponse !== undefined) {
+          let resultMapper = new client.models['DataLakeStoreFirewallRuleListResult']().mapper();
+          result = client.deserialize(resultMapper, parsedResponse, 'result');
+        }
+      } catch (error) {
+        let deserializationError = new Error(`Error ${error} occurred in deserializing the responseBody - ${responseBody}`);
+        deserializationError.request = msRest.stripRequest(httpRequest);
+        deserializationError.response = msRest.stripResponse(response);
+        return callback(deserializationError);
+      }
+    }
+
+    return callback(null, result, httpRequest, response);
+  });
+}
+
+/** Class representing a FirewallRules. */
+class FirewallRules {
+  /**
+   * Create a FirewallRules.
+   * @param {DataLakeStoreAccountManagementClient} client Reference to the service client.
+   */
+  constructor(client) {
+    this.client = client;
+    this._createOrUpdate = _createOrUpdate;
+    this._update = _update;
+    this._deleteMethod = _deleteMethod;
+    this._get = _get;
+    this._listByAccount = _listByAccount;
+    this._listByAccountNext = _listByAccountNext;
+  }
+
+  /**
+   * Creates or updates the specified firewall rule. During update, the firewall
+   * rule with the specified name will be replaced with this new firewall rule.
+   *
+   * @param {string} resourceGroupName The name of the Azure resource group that
+   * contains the Data Lake Store account.
+   *
+   * @param {string} accountName The name of the Data Lake Store account to add
+   * or replace the firewall rule.
+   *
+   * @param {string} firewallRuleName The name of the firewall rule to create or
+   * update.
+   *
+   * @param {object} parameters Parameters supplied to create or update the
+   * firewall rule.
+   *
+   * @param {string} parameters.startIpAddress the start IP address for the
+   * firewall rule. This can be either ipv4 or ipv6. Start and End should be in
+   * the same protocol.
+   *
+   * @param {string} parameters.endIpAddress the end IP address for the firewall
+   * rule. This can be either ipv4 or ipv6. Start and End should be in the same
+   * protocol.
+   *
+   * @param {string} [parameters.name] Resource name
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @returns {Promise} A promise is returned
+   *
+   * @resolve {HttpOperationResponse&lt;FirewallRule>} - The deserialized result object.
+   *
+   * @reject {Error} - The error object.
+   */
+  createOrUpdateWithHttpOperationResponse(resourceGroupName, accountName, firewallRuleName, parameters, options) {
+    let client = this.client;
+    let self = this;
+    return new Promise((resolve, reject) => {
+      self._createOrUpdate(resourceGroupName, accountName, firewallRuleName, parameters, options, (err, result, request, response) => {
+        let httpOperationResponse = new msRest.HttpOperationResponse(request, response);
+        httpOperationResponse.body = result;
+        if (err) { reject(err); }
+        else { resolve(httpOperationResponse); }
+        return;
+      });
+    });
+  }
+
+  /**
+   * Creates or updates the specified firewall rule. During update, the firewall
+   * rule with the specified name will be replaced with this new firewall rule.
+   *
+   * @param {string} resourceGroupName The name of the Azure resource group that
+   * contains the Data Lake Store account.
+   *
+   * @param {string} accountName The name of the Data Lake Store account to add
+   * or replace the firewall rule.
+   *
+   * @param {string} firewallRuleName The name of the firewall rule to create or
+   * update.
+   *
+   * @param {object} parameters Parameters supplied to create or update the
+   * firewall rule.
+   *
+   * @param {string} parameters.startIpAddress the start IP address for the
+   * firewall rule. This can be either ipv4 or ipv6. Start and End should be in
+   * the same protocol.
+   *
+   * @param {string} parameters.endIpAddress the end IP address for the firewall
+   * rule. This can be either ipv4 or ipv6. Start and End should be in the same
+   * protocol.
+   *
+   * @param {string} [parameters.name] Resource name
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @param {function} [optionalCallback] - The optional callback.
+   *
+   * @returns {function|Promise} If a callback was passed as the last parameter
+   * then it returns the callback else returns a Promise.
+   *
+   * {Promise} A promise is returned
+   *
+   *                      @resolve {FirewallRule} - The deserialized result object.
+   *
+   *                      @reject {Error} - The error object.
+   *
+   * {function} optionalCallback(err, result, request, response)
+   *
+   *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+   *
+   *                      {object} [result]   - The deserialized result object if an error did not occur.
+   *                      See {@link FirewallRule} for more information.
+   *
+   *                      {object} [request]  - The HTTP Request object if an error did not occur.
+   *
+   *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+   */
+  createOrUpdate(resourceGroupName, accountName, firewallRuleName, parameters, options, optionalCallback) {
+    let client = this.client;
+    let self = this;
+    if (!optionalCallback &amp;&amp; typeof options === 'function') {
+      optionalCallback = options;
+      options = null;
+    }
+    if (!optionalCallback) {
+      return new Promise((resolve, reject) => {
+        self._createOrUpdate(resourceGroupName, accountName, firewallRuleName, parameters, options, (err, result, request, response) => {
+          if (err) { reject(err); }
+          else { resolve(result); }
+          return;
+        });
+      });
+    } else {
+      return self._createOrUpdate(resourceGroupName, accountName, firewallRuleName, parameters, options, optionalCallback);
+    }
+  }
+
+  /**
+   * Updates the specified firewall rule.
+   *
+   * @param {string} resourceGroupName The name of the Azure resource group that
+   * contains the Data Lake Store account.
+   *
+   * @param {string} accountName The name of the Data Lake Store account to which
+   * to update the firewall rule.
+   *
+   * @param {string} firewallRuleName The name of the firewall rule to update.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.parameters] Parameters supplied to update the
+   * firewall rule.
+   *
+   * @param {string} [options.parameters.startIpAddress] the start IP address for
+   * the firewall rule. This can be either ipv4 or ipv6. Start and End should be
+   * in the same protocol.
+   *
+   * @param {string} [options.parameters.endIpAddress] the end IP address for the
+   * firewall rule. This can be either ipv4 or ipv6. Start and End should be in
+   * the same protocol.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @returns {Promise} A promise is returned
+   *
+   * @resolve {HttpOperationResponse&lt;FirewallRule>} - The deserialized result object.
+   *
+   * @reject {Error} - The error object.
+   */
+  updateWithHttpOperationResponse(resourceGroupName, accountName, firewallRuleName, options) {
+    let client = this.client;
+    let self = this;
+    return new Promise((resolve, reject) => {
+      self._update(resourceGroupName, accountName, firewallRuleName, options, (err, result, request, response) => {
+        let httpOperationResponse = new msRest.HttpOperationResponse(request, response);
+        httpOperationResponse.body = result;
+        if (err) { reject(err); }
+        else { resolve(httpOperationResponse); }
+        return;
+      });
+    });
+  }
+
+  /**
+   * Updates the specified firewall rule.
+   *
+   * @param {string} resourceGroupName The name of the Azure resource group that
+   * contains the Data Lake Store account.
+   *
+   * @param {string} accountName The name of the Data Lake Store account to which
+   * to update the firewall rule.
+   *
+   * @param {string} firewallRuleName The name of the firewall rule to update.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.parameters] Parameters supplied to update the
+   * firewall rule.
+   *
+   * @param {string} [options.parameters.startIpAddress] the start IP address for
+   * the firewall rule. This can be either ipv4 or ipv6. Start and End should be
+   * in the same protocol.
+   *
+   * @param {string} [options.parameters.endIpAddress] the end IP address for the
+   * firewall rule. This can be either ipv4 or ipv6. Start and End should be in
+   * the same protocol.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @param {function} [optionalCallback] - The optional callback.
+   *
+   * @returns {function|Promise} If a callback was passed as the last parameter
+   * then it returns the callback else returns a Promise.
+   *
+   * {Promise} A promise is returned
+   *
+   *                      @resolve {FirewallRule} - The deserialized result object.
+   *
+   *                      @reject {Error} - The error object.
+   *
+   * {function} optionalCallback(err, result, request, response)
+   *
+   *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+   *
+   *                      {object} [result]   - The deserialized result object if an error did not occur.
+   *                      See {@link FirewallRule} for more information.
+   *
+   *                      {object} [request]  - The HTTP Request object if an error did not occur.
+   *
+   *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+   */
+  update(resourceGroupName, accountName, firewallRuleName, options, optionalCallback) {
+    let client = this.client;
+    let self = this;
+    if (!optionalCallback &amp;&amp; typeof options === 'function') {
+      optionalCallback = options;
+      options = null;
+    }
+    if (!optionalCallback) {
+      return new Promise((resolve, reject) => {
+        self._update(resourceGroupName, accountName, firewallRuleName, options, (err, result, request, response) => {
+          if (err) { reject(err); }
+          else { resolve(result); }
+          return;
+        });
+      });
+    } else {
+      return self._update(resourceGroupName, accountName, firewallRuleName, options, optionalCallback);
+    }
+  }
+
+  /**
+   * Deletes the specified firewall rule from the specified Data Lake Store
+   * account
+   *
+   * @param {string} resourceGroupName The name of the Azure resource group that
+   * contains the Data Lake Store account.
+   *
+   * @param {string} accountName The name of the Data Lake Store account from
+   * which to delete the firewall rule.
+   *
+   * @param {string} firewallRuleName The name of the firewall rule to delete.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @returns {Promise} A promise is returned
+   *
+   * @resolve {HttpOperationResponse&lt;null>} - The deserialized result object.
+   *
+   * @reject {Error} - The error object.
+   */
+  deleteMethodWithHttpOperationResponse(resourceGroupName, accountName, firewallRuleName, options) {
+    let client = this.client;
+    let self = this;
+    return new Promise((resolve, reject) => {
+      self._deleteMethod(resourceGroupName, accountName, firewallRuleName, options, (err, result, request, response) => {
+        let httpOperationResponse = new msRest.HttpOperationResponse(request, response);
+        httpOperationResponse.body = result;
+        if (err) { reject(err); }
+        else { resolve(httpOperationResponse); }
+        return;
+      });
+    });
+  }
+
+  /**
+   * Deletes the specified firewall rule from the specified Data Lake Store
+   * account
+   *
+   * @param {string} resourceGroupName The name of the Azure resource group that
+   * contains the Data Lake Store account.
+   *
+   * @param {string} accountName The name of the Data Lake Store account from
+   * which to delete the firewall rule.
+   *
+   * @param {string} firewallRuleName The name of the firewall rule to delete.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @param {function} [optionalCallback] - The optional callback.
+   *
+   * @returns {function|Promise} If a callback was passed as the last parameter
+   * then it returns the callback else returns a Promise.
+   *
+   * {Promise} A promise is returned
+   *
+   *                      @resolve {null} - The deserialized result object.
+   *
+   *                      @reject {Error} - The error object.
+   *
+   * {function} optionalCallback(err, result, request, response)
+   *
+   *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+   *
+   *                      {null} [result]   - The deserialized result object if an error did not occur.
+   *
+   *                      {object} [request]  - The HTTP Request object if an error did not occur.
+   *
+   *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+   */
+  deleteMethod(resourceGroupName, accountName, firewallRuleName, options, optionalCallback) {
+    let client = this.client;
+    let self = this;
+    if (!optionalCallback &amp;&amp; typeof options === 'function') {
+      optionalCallback = options;
+      options = null;
+    }
+    if (!optionalCallback) {
+      return new Promise((resolve, reject) => {
+        self._deleteMethod(resourceGroupName, accountName, firewallRuleName, options, (err, result, request, response) => {
+          if (err) { reject(err); }
+          else { resolve(result); }
+          return;
+        });
+      });
+    } else {
+      return self._deleteMethod(resourceGroupName, accountName, firewallRuleName, options, optionalCallback);
+    }
+  }
+
+  /**
+   * Gets the specified Data Lake Store firewall rule.
+   *
+   * @param {string} resourceGroupName The name of the Azure resource group that
+   * contains the Data Lake Store account.
+   *
+   * @param {string} accountName The name of the Data Lake Store account from
+   * which to get the firewall rule.
+   *
+   * @param {string} firewallRuleName The name of the firewall rule to retrieve.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @returns {Promise} A promise is returned
+   *
+   * @resolve {HttpOperationResponse&lt;FirewallRule>} - The deserialized result object.
+   *
+   * @reject {Error} - The error object.
+   */
+  getWithHttpOperationResponse(resourceGroupName, accountName, firewallRuleName, options) {
+    let client = this.client;
+    let self = this;
+    return new Promise((resolve, reject) => {
+      self._get(resourceGroupName, accountName, firewallRuleName, options, (err, result, request, response) => {
+        let httpOperationResponse = new msRest.HttpOperationResponse(request, response);
+        httpOperationResponse.body = result;
+        if (err) { reject(err); }
+        else { resolve(httpOperationResponse); }
+        return;
+      });
+    });
+  }
+
+  /**
+   * Gets the specified Data Lake Store firewall rule.
+   *
+   * @param {string} resourceGroupName The name of the Azure resource group that
+   * contains the Data Lake Store account.
+   *
+   * @param {string} accountName The name of the Data Lake Store account from
+   * which to get the firewall rule.
+   *
+   * @param {string} firewallRuleName The name of the firewall rule to retrieve.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @param {function} [optionalCallback] - The optional callback.
+   *
+   * @returns {function|Promise} If a callback was passed as the last parameter
+   * then it returns the callback else returns a Promise.
+   *
+   * {Promise} A promise is returned
+   *
+   *                      @resolve {FirewallRule} - The deserialized result object.
+   *
+   *                      @reject {Error} - The error object.
+   *
+   * {function} optionalCallback(err, result, request, response)
+   *
+   *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+   *
+   *                      {object} [result]   - The deserialized result object if an error did not occur.
+   *                      See {@link FirewallRule} for more information.
+   *
+   *                      {object} [request]  - The HTTP Request object if an error did not occur.
+   *
+   *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+   */
+  get(resourceGroupName, accountName, firewallRuleName, options, optionalCallback) {
+    let client = this.client;
+    let self = this;
+    if (!optionalCallback &amp;&amp; typeof options === 'function') {
+      optionalCallback = options;
+      options = null;
+    }
+    if (!optionalCallback) {
+      return new Promise((resolve, reject) => {
+        self._get(resourceGroupName, accountName, firewallRuleName, options, (err, result, request, response) => {
+          if (err) { reject(err); }
+          else { resolve(result); }
+          return;
+        });
+      });
+    } else {
+      return self._get(resourceGroupName, accountName, firewallRuleName, options, optionalCallback);
+    }
+  }
+
+  /**
+   * Lists the Data Lake Store firewall rules within the specified Data Lake
+   * Store account.
+   *
+   * @param {string} resourceGroupName The name of the Azure resource group that
+   * contains the Data Lake Store account.
+   *
+   * @param {string} accountName The name of the Data Lake Store account from
+   * which to get the firewall rules.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @returns {Promise} A promise is returned
+   *
+   * @resolve {HttpOperationResponse&lt;DataLakeStoreFirewallRuleListResult>} - The deserialized result object.
+   *
+   * @reject {Error} - The error object.
+   */
+  listByAccountWithHttpOperationResponse(resourceGroupName, accountName, options) {
+    let client = this.client;
+    let self = this;
+    return new Promise((resolve, reject) => {
+      self._listByAccount(resourceGroupName, accountName, options, (err, result, request, response) => {
+        let httpOperationResponse = new msRest.HttpOperationResponse(request, response);
+        httpOperationResponse.body = result;
+        if (err) { reject(err); }
+        else { resolve(httpOperationResponse); }
+        return;
+      });
+    });
+  }
+
+  /**
+   * Lists the Data Lake Store firewall rules within the specified Data Lake
+   * Store account.
+   *
+   * @param {string} resourceGroupName The name of the Azure resource group that
+   * contains the Data Lake Store account.
+   *
+   * @param {string} accountName The name of the Data Lake Store account from
+   * which to get the firewall rules.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @param {function} [optionalCallback] - The optional callback.
+   *
+   * @returns {function|Promise} If a callback was passed as the last parameter
+   * then it returns the callback else returns a Promise.
+   *
+   * {Promise} A promise is returned
+   *
+   *                      @resolve {DataLakeStoreFirewallRuleListResult} - The deserialized result object.
+   *
+   *                      @reject {Error} - The error object.
+   *
+   * {function} optionalCallback(err, result, request, response)
+   *
+   *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+   *
+   *                      {object} [result]   - The deserialized result object if an error did not occur.
+   *                      See {@link DataLakeStoreFirewallRuleListResult} for
+   *                      more information.
+   *
+   *                      {object} [request]  - The HTTP Request object if an error did not occur.
+   *
+   *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+   */
+  listByAccount(resourceGroupName, accountName, options, optionalCallback) {
+    let client = this.client;
+    let self = this;
+    if (!optionalCallback &amp;&amp; typeof options === 'function') {
+      optionalCallback = options;
+      options = null;
+    }
+    if (!optionalCallback) {
+      return new Promise((resolve, reject) => {
+        self._listByAccount(resourceGroupName, accountName, options, (err, result, request, response) => {
+          if (err) { reject(err); }
+          else { resolve(result); }
+          return;
+        });
+      });
+    } else {
+      return self._listByAccount(resourceGroupName, accountName, options, optionalCallback);
+    }
+  }
+
+  /**
+   * Lists the Data Lake Store firewall rules within the specified Data Lake
+   * Store account.
+   *
+   * @param {string} nextPageLink The NextLink from the previous successful call
+   * to List operation.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @returns {Promise} A promise is returned
+   *
+   * @resolve {HttpOperationResponse&lt;DataLakeStoreFirewallRuleListResult>} - The deserialized result object.
+   *
+   * @reject {Error} - The error object.
+   */
+  listByAccountNextWithHttpOperationResponse(nextPageLink, options) {
+    let client = this.client;
+    let self = this;
+    return new Promise((resolve, reject) => {
+      self._listByAccountNext(nextPageLink, options, (err, result, request, response) => {
+        let httpOperationResponse = new msRest.HttpOperationResponse(request, response);
+        httpOperationResponse.body = result;
+        if (err) { reject(err); }
+        else { resolve(httpOperationResponse); }
+        return;
+      });
+    });
+  }
+
+  /**
+   * Lists the Data Lake Store firewall rules within the specified Data Lake
+   * Store account.
+   *
+   * @param {string} nextPageLink The NextLink from the previous successful call
+   * to List operation.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @param {function} [optionalCallback] - The optional callback.
+   *
+   * @returns {function|Promise} If a callback was passed as the last parameter
+   * then it returns the callback else returns a Promise.
+   *
+   * {Promise} A promise is returned
+   *
+   *                      @resolve {DataLakeStoreFirewallRuleListResult} - The deserialized result object.
+   *
+   *                      @reject {Error} - The error object.
+   *
+   * {function} optionalCallback(err, result, request, response)
+   *
+   *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+   *
+   *                      {object} [result]   - The deserialized result object if an error did not occur.
+   *                      See {@link DataLakeStoreFirewallRuleListResult} for
+   *                      more information.
+   *
+   *                      {object} [request]  - The HTTP Request object if an error did not occur.
+   *
+   *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+   */
+  listByAccountNext(nextPageLink, options, optionalCallback) {
+    let client = this.client;
+    let self = this;
+    if (!optionalCallback &amp;&amp; typeof options === 'function') {
+      optionalCallback = options;
+      options = null;
+    }
+    if (!optionalCallback) {
+      return new Promise((resolve, reject) => {
+        self._listByAccountNext(nextPageLink, options, (err, result, request, response) => {
+          if (err) { reject(err); }
+          else { resolve(result); }
+          return;
+        });
+      });
+    } else {
+      return self._listByAccountNext(nextPageLink, options, optionalCallback);
+    }
+  }
+
+}
+
+module.exports = FirewallRules;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Thu Nov 09 2017 11:14:45 GMT-0800 (PST) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="../../scripts/linenumber.js"></script>
+</body>
+</html>

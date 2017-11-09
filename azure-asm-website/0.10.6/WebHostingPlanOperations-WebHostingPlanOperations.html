@@ -1,0 +1,1989 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WebHostingPlanOperations - Documentation</title>
+    <meta name="viewport" content="initial-scale=.75">
+    <script src="../../scripts/prettify/prettify.js"></script>
+    <script src="../../scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="../../styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="../../styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><span><a href="../../index.html">Home</a> <span class="github-short">| <a href="https://github.com/azure/azure-sdk-for-node.git">GitHub</a></span></span></h2><h3>Classes</h3><ul><li><a href="BasicAuthenticationCloudCredentials.html">BasicAuthenticationCloudCredentials</a><ul class='methods'><li data-type='method'><a href="BasicAuthenticationCloudCredentials.html#signRequest">signRequest</a></li></ul></li><li><a href="CommandsOperations-CommandsOperations.html">CommandsOperations</a><ul class='methods'><li data-type='method'><a href="CommandsOperations-CommandsOperations.html#invoke">invoke</a></li></ul></li><li><a href="ContinuousWebJobOperations-ContinuousWebJobOperations.html">ContinuousWebJobOperations</a><ul class='methods'><li data-type='method'><a href="ContinuousWebJobOperations-ContinuousWebJobOperations.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="ContinuousWebJobOperations-ContinuousWebJobOperations.html#get">get</a></li><li data-type='method'><a href="ContinuousWebJobOperations-ContinuousWebJobOperations.html#getSettings">getSettings</a></li><li data-type='method'><a href="ContinuousWebJobOperations-ContinuousWebJobOperations.html#list">list</a></li><li data-type='method'><a href="ContinuousWebJobOperations-ContinuousWebJobOperations.html#setSettings">setSettings</a></li><li data-type='method'><a href="ContinuousWebJobOperations-ContinuousWebJobOperations.html#start">start</a></li><li data-type='method'><a href="ContinuousWebJobOperations-ContinuousWebJobOperations.html#stop">stop</a></li><li data-type='method'><a href="ContinuousWebJobOperations-ContinuousWebJobOperations.html#uploadFile">uploadFile</a></li><li data-type='method'><a href="ContinuousWebJobOperations-ContinuousWebJobOperations.html#uploadZip">uploadZip</a></li></ul></li><li><a href="DeploymentOperations-DeploymentOperations.html">DeploymentOperations</a><ul class='methods'><li data-type='method'><a href="DeploymentOperations-DeploymentOperations.html#get">get</a></li><li data-type='method'><a href="DeploymentOperations-DeploymentOperations.html#getLog">getLog</a></li><li data-type='method'><a href="DeploymentOperations-DeploymentOperations.html#list">list</a></li><li data-type='method'><a href="DeploymentOperations-DeploymentOperations.html#listLogs">listLogs</a></li><li data-type='method'><a href="DeploymentOperations-DeploymentOperations.html#redeploy">redeploy</a></li></ul></li><li><a href="DiagnosticOperations-DiagnosticOperations.html">DiagnosticOperations</a><ul class='methods'><li data-type='method'><a href="DiagnosticOperations-DiagnosticOperations.html#getSettings">getSettings</a></li><li data-type='method'><a href="DiagnosticOperations-DiagnosticOperations.html#updateSettings">updateSettings</a></li></ul></li><li><a href="RepositoryOperations-RepositoryOperations.html">RepositoryOperations</a><ul class='methods'><li data-type='method'><a href="RepositoryOperations-RepositoryOperations.html#deleteMethod">deleteMethod</a></li></ul></li><li><a href="ScmService.html">ScmService</a><ul class='methods'><li data-type='method'><a href="ScmService.html#getDumpToStream">getDumpToStream</a></li><li data-type='method'><a href="ScmService.html#getLogStream">getLogStream</a></li></ul></li><li><a href="SettingsOperations-SettingsOperations.html">SettingsOperations</a><ul class='methods'><li data-type='method'><a href="SettingsOperations-SettingsOperations.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="SettingsOperations-SettingsOperations.html#get">get</a></li><li data-type='method'><a href="SettingsOperations-SettingsOperations.html#list">list</a></li><li data-type='method'><a href="SettingsOperations-SettingsOperations.html#update">update</a></li></ul></li><li><a href="TriggeredWebJobOperations-TriggeredWebJobOperations.html">TriggeredWebJobOperations</a><ul class='methods'><li data-type='method'><a href="TriggeredWebJobOperations-TriggeredWebJobOperations.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="TriggeredWebJobOperations-TriggeredWebJobOperations.html#get">get</a></li><li data-type='method'><a href="TriggeredWebJobOperations-TriggeredWebJobOperations.html#getRun">getRun</a></li><li data-type='method'><a href="TriggeredWebJobOperations-TriggeredWebJobOperations.html#getSettings">getSettings</a></li><li data-type='method'><a href="TriggeredWebJobOperations-TriggeredWebJobOperations.html#list">list</a></li><li data-type='method'><a href="TriggeredWebJobOperations-TriggeredWebJobOperations.html#listRuns">listRuns</a></li><li data-type='method'><a href="TriggeredWebJobOperations-TriggeredWebJobOperations.html#run">run</a></li><li data-type='method'><a href="TriggeredWebJobOperations-TriggeredWebJobOperations.html#setSettings">setSettings</a></li><li data-type='method'><a href="TriggeredWebJobOperations-TriggeredWebJobOperations.html#uploadFile">uploadFile</a></li><li data-type='method'><a href="TriggeredWebJobOperations-TriggeredWebJobOperations.html#uploadZip">uploadZip</a></li></ul></li><li><a href="WebHostingPlanOperations-WebHostingPlanOperations.html">WebHostingPlanOperations</a><ul class='methods'><li data-type='method'><a href="WebHostingPlanOperations-WebHostingPlanOperations.html#create">create</a></li><li data-type='method'><a href="WebHostingPlanOperations-WebHostingPlanOperations.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="WebHostingPlanOperations-WebHostingPlanOperations.html#get">get</a></li><li data-type='method'><a href="WebHostingPlanOperations-WebHostingPlanOperations.html#getHistoricalUsageMetrics">getHistoricalUsageMetrics</a></li><li data-type='method'><a href="WebHostingPlanOperations-WebHostingPlanOperations.html#list">list</a></li><li data-type='method'><a href="WebHostingPlanOperations-WebHostingPlanOperations.html#update">update</a></li></ul></li><li><a href="WebSiteExtensionsClient-WebSiteExtensionsClient.html">WebSiteExtensionsClient</a></li><li><a href="WebSiteManagementClient-WebSiteManagementClient.html">WebSiteManagementClient</a><ul class='methods'><li data-type='method'><a href="WebSiteManagementClient-WebSiteManagementClient.html#getOperationStatus">getOperationStatus</a></li><li data-type='method'><a href="WebSiteManagementClient-WebSiteManagementClient.html#registerSubscription">registerSubscription</a></li><li data-type='method'><a href="WebSiteManagementClient-WebSiteManagementClient.html#unregisterSubscription">unregisterSubscription</a></li></ul></li><li><a href="WebsiteManagementService.html">WebsiteManagementService</a><ul class='methods'><li data-type='method'><a href="WebsiteManagementService.html#createPublishingUser">createPublishingUser</a></li><li data-type='method'><a href="WebsiteManagementService.html#createServerFarm">createServerFarm</a></li><li data-type='method'><a href="WebsiteManagementService.html#createSite">createSite</a></li><li data-type='method'><a href="WebsiteManagementService.html#createSiteRepository">createSiteRepository</a></li><li data-type='method'><a href="WebsiteManagementService.html#deleteSite">deleteSite</a></li><li data-type='method'><a href="WebsiteManagementService.html#deleteSiteRepository">deleteSiteRepository</a></li><li data-type='method'><a href="WebsiteManagementService.html#getServerFarm">getServerFarm</a></li><li data-type='method'><a href="WebsiteManagementService.html#getSite">getSite</a></li><li data-type='method'><a href="WebsiteManagementService.html#getSiteConfiguration">getSiteConfiguration</a></li><li data-type='method'><a href="WebsiteManagementService.html#listDNSSuffix">listDNSSuffix</a></li><li data-type='method'><a href="WebsiteManagementService.html#listGeoRegions">listGeoRegions</a></li><li data-type='method'><a href="WebsiteManagementService.html#listPublishingUsers">listPublishingUsers</a></li><li data-type='method'><a href="WebsiteManagementService.html#listSites">listSites</a></li><li data-type='method'><a href="WebsiteManagementService.html#listWebspaces">listWebspaces</a></li><li data-type='method'><a href="WebsiteManagementService.html#syncSiteRepository">syncSiteRepository</a></li><li data-type='method'><a href="WebsiteManagementService.html#updateServerFarm">updateServerFarm</a></li><li data-type='method'><a href="WebsiteManagementService.html#updateSite">updateSite</a></li><li data-type='method'><a href="WebsiteManagementService.html#updateSiteConfiguration">updateSiteConfiguration</a></li></ul></li><li><a href="WebSiteOperations-WebSiteOperations.html">WebSiteOperations</a><ul class='methods'><li data-type='method'><a href="WebSiteOperations-WebSiteOperations.html#applySlotConfiguration">applySlotConfiguration</a></li><li data-type='method'><a href="WebSiteOperations-WebSiteOperations.html#backup">backup</a></li><li data-type='method'><a href="WebSiteOperations-WebSiteOperations.html#beginSwappingSlots">beginSwappingSlots</a></li><li data-type='method'><a href="WebSiteOperations-WebSiteOperations.html#create">create</a></li><li data-type='method'><a href="WebSiteOperations-WebSiteOperations.html#createHybridConnection">createHybridConnection</a></li><li data-type='method'><a href="WebSiteOperations-WebSiteOperations.html#createRepository">createRepository</a></li><li data-type='method'><a href="WebSiteOperations-WebSiteOperations.html#deleteHybridConnection">deleteHybridConnection</a></li><li data-type='method'><a href="WebSiteOperations-WebSiteOperations.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="WebSiteOperations-WebSiteOperations.html#deleteRepository">deleteRepository</a></li><li data-type='method'><a href="WebSiteOperations-WebSiteOperations.html#discover">discover</a></li><li data-type='method'><a href="WebSiteOperations-WebSiteOperations.html#generatePassword">generatePassword</a></li><li data-type='method'><a href="WebSiteOperations-WebSiteOperations.html#get">get</a></li><li data-type='method'><a href="WebSiteOperations-WebSiteOperations.html#getBackupConfiguration">getBackupConfiguration</a></li><li data-type='method'><a href="WebSiteOperations-WebSiteOperations.html#getConfiguration">getConfiguration</a></li><li data-type='method'><a href="WebSiteOperations-WebSiteOperations.html#getHistoricalUsageMetrics">getHistoricalUsageMetrics</a></li><li data-type='method'><a href="WebSiteOperations-WebSiteOperations.html#getHybridConnection">getHybridConnection</a></li><li data-type='method'><a href="WebSiteOperations-WebSiteOperations.html#getInstanceIds">getInstanceIds</a></li><li data-type='method'><a href="WebSiteOperations-WebSiteOperations.html#getPublishProfile">getPublishProfile</a></li><li data-type='method'><a href="WebSiteOperations-WebSiteOperations.html#getRepository">getRepository</a></li><li data-type='method'><a href="WebSiteOperations-WebSiteOperations.html#getSlotConfigNames">getSlotConfigNames</a></li><li data-type='method'><a href="WebSiteOperations-WebSiteOperations.html#getUsageMetrics">getUsageMetrics</a></li><li data-type='method'><a href="WebSiteOperations-WebSiteOperations.html#isHostnameAvailable">isHostnameAvailable</a></li><li data-type='method'><a href="WebSiteOperations-WebSiteOperations.html#listBackups">listBackups</a></li><li data-type='method'><a href="WebSiteOperations-WebSiteOperations.html#listHybridConnections">listHybridConnections</a></li><li data-type='method'><a href="WebSiteOperations-WebSiteOperations.html#resetSlotConfiguration">resetSlotConfiguration</a></li><li data-type='method'><a href="WebSiteOperations-WebSiteOperations.html#restart">restart</a></li><li data-type='method'><a href="WebSiteOperations-WebSiteOperations.html#restore">restore</a></li><li data-type='method'><a href="WebSiteOperations-WebSiteOperations.html#swapSlots">swapSlots</a></li><li data-type='method'><a href="WebSiteOperations-WebSiteOperations.html#syncRepository">syncRepository</a></li><li data-type='method'><a href="WebSiteOperations-WebSiteOperations.html#update">update</a></li><li data-type='method'><a href="WebSiteOperations-WebSiteOperations.html#updateBackupConfiguration">updateBackupConfiguration</a></li><li data-type='method'><a href="WebSiteOperations-WebSiteOperations.html#updateConfiguration">updateConfiguration</a></li><li data-type='method'><a href="WebSiteOperations-WebSiteOperations.html#updateHybridConnection">updateHybridConnection</a></li><li data-type='method'><a href="WebSiteOperations-WebSiteOperations.html#updateSlotConfigNames">updateSlotConfigNames</a></li></ul></li><li><a href="WebSpaceOperations-WebSpaceOperations.html">WebSpaceOperations</a><ul class='methods'><li data-type='method'><a href="WebSpaceOperations-WebSpaceOperations.html#createPublishingUser">createPublishingUser</a></li><li data-type='method'><a href="WebSpaceOperations-WebSpaceOperations.html#get">get</a></li><li data-type='method'><a href="WebSpaceOperations-WebSpaceOperations.html#getDnsSuffix">getDnsSuffix</a></li><li data-type='method'><a href="WebSpaceOperations-WebSpaceOperations.html#list">list</a></li><li data-type='method'><a href="WebSpaceOperations-WebSpaceOperations.html#listGeoRegions">listGeoRegions</a></li><li data-type='method'><a href="WebSpaceOperations-WebSpaceOperations.html#listPublishingUsers">listPublishingUsers</a></li><li data-type='method'><a href="WebSpaceOperations-WebSpaceOperations.html#listWebSites">listWebSites</a></li></ul></li></ul><h3>Global</h3><ul><li><a href="global.html#createBasicAuthenticationCloudCredentials">createBasicAuthenticationCloudCredentials</a></li><li><a href="global.html#createCertificateCloudCredentials">createCertificateCloudCredentials</a></li><li><a href="global.html#createScmService">createScmService</a></li><li><a href="global.html#createWebSiteExtensionsClient">createWebSiteExtensionsClient</a></li><li><a href="global.html#createWebSiteManagementClient">createWebSiteManagementClient</a></li><li><a href="global.html#createWebsiteManagementService">createWebsiteManagementService</a></li></ul>
+</nav>
+
+<div id="main">
+    
+      <a class="github-banner" href="https://github.com/azure/azure-sdk-for-node.git"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+    
+    
+    <h1 class="page-title">WebHostingPlanOperations</h1>
+    
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2>
+        WebHostingPlanOperations
+        </h2>
+        
+            <div class="class-description"><p>Operations for managing web hosting plans beneath your subscription.<br><strong>NOTE</strong>: An instance of this class is automatically created for an<br>instance of the [WebSiteManagementClient] {@link<br>WebSiteManagementClient~WebSiteManagementClient}.<br>See [webHostingPlans] {@link<br>WebSiteManagementClient~WebSiteManagementClient#webHostingPlans}.<br>Initializes a new instance of the WebHostingPlanOperations class.</p></div>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+
+    
+    <h2>Constructor</h2>
+    
+
+    <h4 class="name" id="WebHostingPlanOperations"><span class="type-signature"></span>new WebHostingPlanOperations<span class="signature">(client)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>client</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">WebSiteManagementClient</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Reference to the service client.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="webSiteManagementClient.js.html">webSiteManagementClient.js</a>, <a href="webSiteManagementClient.js.html#line536">line 536</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    </div>
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    <h4 class="name" id="create"><span class="type-signature"></span>create<span class="signature">(webSpaceName, parameters, callback)</span><span class="type-signature"> &rarr; {Stream}</span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>Creates a new Web Hosting Plan.  (see<br>http://azure.microsoft.com/en-us/documentation/articles/azure-web-sites-web-hosting-plans-in-depth-overview/<br>for more information)</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>webSpaceName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The name of the web space.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>parameters</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">WebHostingPlanCreateParameters</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Web Hosting Plan<br>Parameters.</p>
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>name</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Name of the Web hosting plan.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>numberOfWorkers</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>The requested number of<br>workers.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>sKU</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">SkuOptions</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>SKU of the Web hosting plan.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>workerSize</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">WorkerSizeOptions</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>The worker size.<br>Possible values are Small, Medium, and Large. For JSON, the equivalents<br>are 0 = Small, 1 = Medium, and 2 = Large.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>adminSiteName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>The admin site. The admin site<br>is used to deploy site extensions or contents shared by all site in the<br>plan.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="webSiteManagementClient.js.html">webSiteManagementClient.js</a>, <a href="webSiteManagementClient.js.html#line569">line 569</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>The response stream.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Stream</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="deleteMethod"><span class="type-signature"></span>deleteMethod<span class="signature">(webSpaceName, webHostingPlanName, callback)</span><span class="type-signature"> &rarr; {Stream}</span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>Deletes a Web Hosting Plan  (see<br>http://azure.microsoft.com/en-us/documentation/articles/azure-web-sites-web-hosting-plans-in-depth-overview/<br>for more information)</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>webSpaceName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The name of the web space.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>webHostingPlanName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The name of the web hosting plan.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="webSiteManagementClient.js.html">webSiteManagementClient.js</a>, <a href="webSiteManagementClient.js.html#line738">line 738</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>The response stream.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Stream</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="get"><span class="type-signature"></span>get<span class="signature">(webSpaceName, webHostingPlanName, callback)</span><span class="type-signature"> &rarr; {Stream}</span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>Gets details of an existing Web Hosting Plan  (see<br>http://azure.microsoft.com/en-us/documentation/articles/azure-web-sites-web-hosting-plans-in-depth-overview/<br>for more information)</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>webSpaceName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The name of the web space.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>webHostingPlanName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The name of the web hosting plan.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="webSiteManagementClient.js.html">webSiteManagementClient.js</a>, <a href="webSiteManagementClient.js.html#line818">line 818</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>The response stream.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Stream</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getHistoricalUsageMetrics"><span class="type-signature"></span>getHistoricalUsageMetrics<span class="signature">(webSpaceName, webHostingPlanName, parameters, callback)</span><span class="type-signature"> &rarr; {Stream}</span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>You can retrieve historical usage metrics for a site by issuing an HTTP<br>GET request.  (see<br>http://msdn.microsoft.com/en-us/library/windowsazure/dn166964.aspx for<br>more information)</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>webSpaceName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The name of the web space.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>webHostingPlanName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The name of the web hosting plan.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>parameters</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">WebHostingPlanGetHistoricalUsageMetricsParameters</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Parameters supplied to the Get Historical Usage Metrics Web hosting plan<br>operation.</p>
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>metricNames</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Specifies a comma-separated list<br>of the names of the metrics to return. If the names parameter is not<br>specified, then all available metrics are returned.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>startTime</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">date</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>The starting time of the metrics to<br>return. If this parameter is not specified, the beginning of the current<br>hour is used.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>endTime</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">date</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>The ending time of the metrics to<br>return. If this parameter is not specified, the current time is used.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>timeGrain</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>The grain at which the metrics are<br>returned. Supported values are PT1M (minute), PT1H (hour), P1D (day).</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>includeInstanceBreakdown</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Flag which<br>specifies if the metrics for each machine instance should be included.<br>For sites that run on more than one machine this could be useful to<br>identify a bad machine.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="webSiteManagementClient.js.html">webSiteManagementClient.js</a>, <a href="webSiteManagementClient.js.html#line970">line 970</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>The response stream.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Stream</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="list"><span class="type-signature"></span>list<span class="signature">(webSpaceName, callback)</span><span class="type-signature"> &rarr; {Stream}</span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>You can list the web spaces under the current subscription by issuing a<br>GET request.  (see<br>http://msdn.microsoft.com/en-us/library/windowsazure/dn166961.aspx for<br>more information)</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>webSpaceName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The name of the web space.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="webSiteManagementClient.js.html">webSiteManagementClient.js</a>, <a href="webSiteManagementClient.js.html#line1214">line 1214</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>The response stream.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Stream</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="update"><span class="type-signature"></span>update<span class="signature">(webSpaceName, webHostingPlanName, parameters, callback)</span><span class="type-signature"> &rarr; {Stream}</span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>Updates an existing Web Hosting Plan.  (see<br>http://azure.microsoft.com/en-us/documentation/articles/azure-web-sites-web-hosting-plans-in-depth-overview/<br>for more information)</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>webSpaceName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The name of the web space.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>webHostingPlanName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The name of the web hosting plan.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>parameters</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">WebHostingPlanUpdateParameters</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Parameters supplied to<br>the Update Web Hosting Plan operation.</p>
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>numberOfWorkers</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>The requested number of<br>workers.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>sKU</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">SkuOptions</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>SKU of the Web hosting plan.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>workerSize</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">WorkerSizeOptions</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>The worker size.<br>Possible values are Small, Medium, and Large. For JSON, the equivalents<br>are 0 = Small, 1 = Medium, and 2 = Large.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>adminSiteName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>The admin site. The admin site<br>is used to deploy site extensions or contents shared by all site in the<br>plan.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="webSiteManagementClient.js.html">webSiteManagementClient.js</a>, <a href="webSiteManagementClient.js.html#line1357">line 1357</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>The response stream.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Stream</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Thu Nov 09 2017 11:16:38 GMT-0800 (PST) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="../../scripts/linenumber.js"></script>
+</body>
+</html>

@@ -1,0 +1,2656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>operations/groups.js - Documentation</title>
+    <meta name="viewport" content="initial-scale=.75">
+    <script src="../../scripts/prettify/prettify.js"></script>
+    <script src="../../scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="../../styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="../../styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><span><a href="../../index.html">Home</a> <span class="github-short">| <a href="https://github.com/azure/azure-sdk-for-node.git">GitHub</a></span></span></h2><h3>Classes</h3><ul><li><a href="AADObject.html">AADObject</a><ul class='methods'><li data-type='method'><a href="AADObject.html#mapper">mapper</a></li></ul></li><li><a href="ADGroup.html">ADGroup</a><ul class='methods'><li data-type='method'><a href="ADGroup.html#mapper">mapper</a></li></ul></li><li><a href="Application.html">Application</a><ul class='methods'><li data-type='method'><a href="Application.html#mapper">mapper</a></li></ul></li><li><a href="ApplicationCreateParameters.html">ApplicationCreateParameters</a><ul class='methods'><li data-type='method'><a href="ApplicationCreateParameters.html#mapper">mapper</a></li></ul></li><li><a href="ApplicationListResult.html">ApplicationListResult</a><ul class='methods'><li data-type='method'><a href="ApplicationListResult.html#mapper">mapper</a></li></ul></li><li><a href="Applications.html">Applications</a><ul class='methods'><li data-type='method'><a href="Applications.html#create">create</a></li><li data-type='method'><a href="Applications.html#createWithHttpOperationResponse">createWithHttpOperationResponse</a></li><li data-type='method'><a href="Applications.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="Applications.html#deleteMethodWithHttpOperationResponse">deleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="Applications.html#get">get</a></li><li data-type='method'><a href="Applications.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="Applications.html#list">list</a></li><li data-type='method'><a href="Applications.html#listKeyCredentials">listKeyCredentials</a></li><li data-type='method'><a href="Applications.html#listKeyCredentialsWithHttpOperationResponse">listKeyCredentialsWithHttpOperationResponse</a></li><li data-type='method'><a href="Applications.html#listNext">listNext</a></li><li data-type='method'><a href="Applications.html#listNextWithHttpOperationResponse">listNextWithHttpOperationResponse</a></li><li data-type='method'><a href="Applications.html#listPasswordCredentials">listPasswordCredentials</a></li><li data-type='method'><a href="Applications.html#listPasswordCredentialsWithHttpOperationResponse">listPasswordCredentialsWithHttpOperationResponse</a></li><li data-type='method'><a href="Applications.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li><li data-type='method'><a href="Applications.html#patch">patch</a></li><li data-type='method'><a href="Applications.html#patchWithHttpOperationResponse">patchWithHttpOperationResponse</a></li><li data-type='method'><a href="Applications.html#updateKeyCredentials">updateKeyCredentials</a></li><li data-type='method'><a href="Applications.html#updateKeyCredentialsWithHttpOperationResponse">updateKeyCredentialsWithHttpOperationResponse</a></li><li data-type='method'><a href="Applications.html#updatePasswordCredentials">updatePasswordCredentials</a></li><li data-type='method'><a href="Applications.html#updatePasswordCredentialsWithHttpOperationResponse">updatePasswordCredentialsWithHttpOperationResponse</a></li></ul></li><li><a href="ApplicationUpdateParameters.html">ApplicationUpdateParameters</a><ul class='methods'><li data-type='method'><a href="ApplicationUpdateParameters.html#mapper">mapper</a></li></ul></li><li><a href="CheckGroupMembershipParameters.html">CheckGroupMembershipParameters</a><ul class='methods'><li data-type='method'><a href="CheckGroupMembershipParameters.html#mapper">mapper</a></li></ul></li><li><a href="CheckGroupMembershipResult.html">CheckGroupMembershipResult</a><ul class='methods'><li data-type='method'><a href="CheckGroupMembershipResult.html#mapper">mapper</a></li></ul></li><li><a href="Domain.html">Domain</a><ul class='methods'><li data-type='method'><a href="Domain.html#mapper">mapper</a></li></ul></li><li><a href="DomainListResult.html">DomainListResult</a><ul class='methods'><li data-type='method'><a href="DomainListResult.html#mapper">mapper</a></li></ul></li><li><a href="Domains.html">Domains</a><ul class='methods'><li data-type='method'><a href="Domains.html#get">get</a></li><li data-type='method'><a href="Domains.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="Domains.html#list">list</a></li><li data-type='method'><a href="Domains.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li></ul></li><li><a href="GetObjectsParameters.html">GetObjectsParameters</a><ul class='methods'><li data-type='method'><a href="GetObjectsParameters.html#mapper">mapper</a></li></ul></li><li><a href="GetObjectsResult.html">GetObjectsResult</a><ul class='methods'><li data-type='method'><a href="GetObjectsResult.html#mapper">mapper</a></li></ul></li><li><a href="GraphError.html">GraphError</a><ul class='methods'><li data-type='method'><a href="GraphError.html#mapper">mapper</a></li></ul></li><li><a href="GraphRbacManagementClient.html">GraphRbacManagementClient</a></li><li><a href="GroupAddMemberParameters.html">GroupAddMemberParameters</a><ul class='methods'><li data-type='method'><a href="GroupAddMemberParameters.html#mapper">mapper</a></li></ul></li><li><a href="GroupCreateParameters.html">GroupCreateParameters</a><ul class='methods'><li data-type='method'><a href="GroupCreateParameters.html#mapper">mapper</a></li></ul></li><li><a href="GroupGetMemberGroupsParameters.html">GroupGetMemberGroupsParameters</a><ul class='methods'><li data-type='method'><a href="GroupGetMemberGroupsParameters.html#mapper">mapper</a></li></ul></li><li><a href="GroupGetMemberGroupsResult.html">GroupGetMemberGroupsResult</a><ul class='methods'><li data-type='method'><a href="GroupGetMemberGroupsResult.html#mapper">mapper</a></li></ul></li><li><a href="GroupListResult.html">GroupListResult</a><ul class='methods'><li data-type='method'><a href="GroupListResult.html#mapper">mapper</a></li></ul></li><li><a href="Groups.html">Groups</a><ul class='methods'><li data-type='method'><a href="Groups.html#addMember">addMember</a></li><li data-type='method'><a href="Groups.html#addMemberWithHttpOperationResponse">addMemberWithHttpOperationResponse</a></li><li data-type='method'><a href="Groups.html#create">create</a></li><li data-type='method'><a href="Groups.html#createWithHttpOperationResponse">createWithHttpOperationResponse</a></li><li data-type='method'><a href="Groups.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="Groups.html#deleteMethodWithHttpOperationResponse">deleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="Groups.html#get">get</a></li><li data-type='method'><a href="Groups.html#getGroupMembers">getGroupMembers</a></li><li data-type='method'><a href="Groups.html#getGroupMembersNext">getGroupMembersNext</a></li><li data-type='method'><a href="Groups.html#getGroupMembersNextWithHttpOperationResponse">getGroupMembersNextWithHttpOperationResponse</a></li><li data-type='method'><a href="Groups.html#getGroupMembersWithHttpOperationResponse">getGroupMembersWithHttpOperationResponse</a></li><li data-type='method'><a href="Groups.html#getMemberGroups">getMemberGroups</a></li><li data-type='method'><a href="Groups.html#getMemberGroupsWithHttpOperationResponse">getMemberGroupsWithHttpOperationResponse</a></li><li data-type='method'><a href="Groups.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="Groups.html#isMemberOf">isMemberOf</a></li><li data-type='method'><a href="Groups.html#isMemberOfWithHttpOperationResponse">isMemberOfWithHttpOperationResponse</a></li><li data-type='method'><a href="Groups.html#list">list</a></li><li data-type='method'><a href="Groups.html#listNext">listNext</a></li><li data-type='method'><a href="Groups.html#listNextWithHttpOperationResponse">listNextWithHttpOperationResponse</a></li><li data-type='method'><a href="Groups.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li><li data-type='method'><a href="Groups.html#removeMember">removeMember</a></li><li data-type='method'><a href="Groups.html#removeMemberWithHttpOperationResponse">removeMemberWithHttpOperationResponse</a></li></ul></li><li><a href="KeyCredential.html">KeyCredential</a><ul class='methods'><li data-type='method'><a href="KeyCredential.html#mapper">mapper</a></li></ul></li><li><a href="KeyCredentialListResult.html">KeyCredentialListResult</a><ul class='methods'><li data-type='method'><a href="KeyCredentialListResult.html#mapper">mapper</a></li></ul></li><li><a href="KeyCredentialsUpdateParameters.html">KeyCredentialsUpdateParameters</a><ul class='methods'><li data-type='method'><a href="KeyCredentialsUpdateParameters.html#mapper">mapper</a></li></ul></li><li><a href="Objects.html">Objects</a><ul class='methods'><li data-type='method'><a href="Objects.html#getCurrentUser">getCurrentUser</a></li><li data-type='method'><a href="Objects.html#getCurrentUserWithHttpOperationResponse">getCurrentUserWithHttpOperationResponse</a></li><li data-type='method'><a href="Objects.html#getObjectsByObjectIds">getObjectsByObjectIds</a></li><li data-type='method'><a href="Objects.html#getObjectsByObjectIdsNext">getObjectsByObjectIdsNext</a></li><li data-type='method'><a href="Objects.html#getObjectsByObjectIdsNextWithHttpOperationResponse">getObjectsByObjectIdsNextWithHttpOperationResponse</a></li><li data-type='method'><a href="Objects.html#getObjectsByObjectIdsWithHttpOperationResponse">getObjectsByObjectIdsWithHttpOperationResponse</a></li></ul></li><li><a href="PasswordCredential.html">PasswordCredential</a><ul class='methods'><li data-type='method'><a href="PasswordCredential.html#mapper">mapper</a></li></ul></li><li><a href="PasswordCredentialListResult.html">PasswordCredentialListResult</a><ul class='methods'><li data-type='method'><a href="PasswordCredentialListResult.html#mapper">mapper</a></li></ul></li><li><a href="PasswordCredentialsUpdateParameters.html">PasswordCredentialsUpdateParameters</a><ul class='methods'><li data-type='method'><a href="PasswordCredentialsUpdateParameters.html#mapper">mapper</a></li></ul></li><li><a href="PasswordProfile.html">PasswordProfile</a><ul class='methods'><li data-type='method'><a href="PasswordProfile.html#mapper">mapper</a></li></ul></li><li><a href="RequiredResourceAccess.html">RequiredResourceAccess</a><ul class='methods'><li data-type='method'><a href="RequiredResourceAccess.html#mapper">mapper</a></li></ul></li><li><a href="ResourceAccess.html">ResourceAccess</a><ul class='methods'><li data-type='method'><a href="ResourceAccess.html#mapper">mapper</a></li></ul></li><li><a href="ServicePrincipal.html">ServicePrincipal</a><ul class='methods'><li data-type='method'><a href="ServicePrincipal.html#mapper">mapper</a></li></ul></li><li><a href="ServicePrincipalCreateParameters.html">ServicePrincipalCreateParameters</a><ul class='methods'><li data-type='method'><a href="ServicePrincipalCreateParameters.html#mapper">mapper</a></li></ul></li><li><a href="ServicePrincipalListResult.html">ServicePrincipalListResult</a><ul class='methods'><li data-type='method'><a href="ServicePrincipalListResult.html#mapper">mapper</a></li></ul></li><li><a href="ServicePrincipals.html">ServicePrincipals</a><ul class='methods'><li data-type='method'><a href="ServicePrincipals.html#create">create</a></li><li data-type='method'><a href="ServicePrincipals.html#createWithHttpOperationResponse">createWithHttpOperationResponse</a></li><li data-type='method'><a href="ServicePrincipals.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="ServicePrincipals.html#deleteMethodWithHttpOperationResponse">deleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="ServicePrincipals.html#get">get</a></li><li data-type='method'><a href="ServicePrincipals.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="ServicePrincipals.html#list">list</a></li><li data-type='method'><a href="ServicePrincipals.html#listKeyCredentials">listKeyCredentials</a></li><li data-type='method'><a href="ServicePrincipals.html#listKeyCredentialsWithHttpOperationResponse">listKeyCredentialsWithHttpOperationResponse</a></li><li data-type='method'><a href="ServicePrincipals.html#listNext">listNext</a></li><li data-type='method'><a href="ServicePrincipals.html#listNextWithHttpOperationResponse">listNextWithHttpOperationResponse</a></li><li data-type='method'><a href="ServicePrincipals.html#listPasswordCredentials">listPasswordCredentials</a></li><li data-type='method'><a href="ServicePrincipals.html#listPasswordCredentialsWithHttpOperationResponse">listPasswordCredentialsWithHttpOperationResponse</a></li><li data-type='method'><a href="ServicePrincipals.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li><li data-type='method'><a href="ServicePrincipals.html#updateKeyCredentials">updateKeyCredentials</a></li><li data-type='method'><a href="ServicePrincipals.html#updateKeyCredentialsWithHttpOperationResponse">updateKeyCredentialsWithHttpOperationResponse</a></li><li data-type='method'><a href="ServicePrincipals.html#updatePasswordCredentials">updatePasswordCredentials</a></li><li data-type='method'><a href="ServicePrincipals.html#updatePasswordCredentialsWithHttpOperationResponse">updatePasswordCredentialsWithHttpOperationResponse</a></li></ul></li><li><a href="SignInName.html">SignInName</a><ul class='methods'><li data-type='method'><a href="SignInName.html#mapper">mapper</a></li></ul></li><li><a href="User.html">User</a><ul class='methods'><li data-type='method'><a href="User.html#mapper">mapper</a></li></ul></li><li><a href="UserBase.html">UserBase</a><ul class='methods'><li data-type='method'><a href="UserBase.html#mapper">mapper</a></li></ul></li><li><a href="UserCreateParameters.html">UserCreateParameters</a><ul class='methods'><li data-type='method'><a href="UserCreateParameters.html#mapper">mapper</a></li></ul></li><li><a href="UserGetMemberGroupsParameters.html">UserGetMemberGroupsParameters</a><ul class='methods'><li data-type='method'><a href="UserGetMemberGroupsParameters.html#mapper">mapper</a></li></ul></li><li><a href="UserGetMemberGroupsResult.html">UserGetMemberGroupsResult</a><ul class='methods'><li data-type='method'><a href="UserGetMemberGroupsResult.html#mapper">mapper</a></li></ul></li><li><a href="UserListResult.html">UserListResult</a><ul class='methods'><li data-type='method'><a href="UserListResult.html#mapper">mapper</a></li></ul></li><li><a href="Users.html">Users</a><ul class='methods'><li data-type='method'><a href="Users.html#create">create</a></li><li data-type='method'><a href="Users.html#createWithHttpOperationResponse">createWithHttpOperationResponse</a></li><li data-type='method'><a href="Users.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="Users.html#deleteMethodWithHttpOperationResponse">deleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="Users.html#get">get</a></li><li data-type='method'><a href="Users.html#getMemberGroups">getMemberGroups</a></li><li data-type='method'><a href="Users.html#getMemberGroupsWithHttpOperationResponse">getMemberGroupsWithHttpOperationResponse</a></li><li data-type='method'><a href="Users.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="Users.html#list">list</a></li><li data-type='method'><a href="Users.html#listNext">listNext</a></li><li data-type='method'><a href="Users.html#listNextWithHttpOperationResponse">listNextWithHttpOperationResponse</a></li><li data-type='method'><a href="Users.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li><li data-type='method'><a href="Users.html#update">update</a></li><li data-type='method'><a href="Users.html#updateWithHttpOperationResponse">updateWithHttpOperationResponse</a></li></ul></li><li><a href="UserUpdateParameters.html">UserUpdateParameters</a><ul class='methods'><li data-type='method'><a href="UserUpdateParameters.html#mapper">mapper</a></li></ul></li></ul><h3>Global</h3><ul><li><a href="global.html#_addMember">_addMember</a></li><li><a href="global.html#_create">_create</a></li><li><a href="global.html#_deleteMethod">_deleteMethod</a></li><li><a href="global.html#_get">_get</a></li><li><a href="global.html#_getCurrentUser">_getCurrentUser</a></li><li><a href="global.html#_getGroupMembers">_getGroupMembers</a></li><li><a href="global.html#_getGroupMembersNext">_getGroupMembersNext</a></li><li><a href="global.html#_getMemberGroups">_getMemberGroups</a></li><li><a href="global.html#_getObjectsByObjectIds">_getObjectsByObjectIds</a></li><li><a href="global.html#_getObjectsByObjectIdsNext">_getObjectsByObjectIdsNext</a></li><li><a href="global.html#_isMemberOf">_isMemberOf</a></li><li><a href="global.html#_list">_list</a></li><li><a href="global.html#_listKeyCredentials">_listKeyCredentials</a></li><li><a href="global.html#_listNext">_listNext</a></li><li><a href="global.html#_listPasswordCredentials">_listPasswordCredentials</a></li><li><a href="global.html#_patch">_patch</a></li><li><a href="global.html#_removeMember">_removeMember</a></li><li><a href="global.html#_update">_update</a></li><li><a href="global.html#_updateKeyCredentials">_updateKeyCredentials</a></li><li><a href="global.html#_updatePasswordCredentials">_updatePasswordCredentials</a></li><li><a href="global.html#forceChangePasswordNextLogin">forceChangePasswordNextLogin</a></li><li><a href="global.html#homepage">homepage</a></li><li><a href="global.html#includeDirectoryObjectReferences">includeDirectoryObjectReferences</a></li><li><a href="global.html#mail">mail</a></li><li><a href="global.html#mailNickname">mailNickname</a></li><li><a href="global.html#memberId">memberId</a></li><li><a href="global.html#message">message</a></li><li><a href="global.html#name">name</a></li><li><a href="global.html#oauth2AllowImplicitFlow">oauth2AllowImplicitFlow</a></li><li><a href="global.html#odatanextLink">odatanextLink</a></li><li><a href="global.html#passwordCredentials">passwordCredentials</a></li><li><a href="global.html#requiredResourceAccess">requiredResourceAccess</a></li><li><a href="global.html#resourceAppId">resourceAppId</a></li><li><a href="global.html#securityEnabledOnly">securityEnabledOnly</a></li><li><a href="global.html#servicePrincipalNames">servicePrincipalNames</a></li><li><a href="global.html#signInNames">signInNames</a></li><li><a href="global.html#type">type</a></li><li><a href="global.html#url">url</a></li><li><a href="global.html#userType">userType</a></li><li><a href="global.html#value">value</a></li></ul>
+</nav>
+
+<div id="main">
+    
+      <a class="github-banner" href="https://github.com/azure/azure-sdk-for-node.git"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+    
+    
+    <h1 class="page-title">operations/groups.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/*
+ * Copyright (c) Microsoft Corporation. All rights reserved.
+ * Licensed under the MIT License. See License.txt in the project root for
+ * license information.
+ *
+ * Code generated by Microsoft (R) AutoRest Code Generator.
+ * Changes may cause incorrect behavior and will be lost if the code is
+ * regenerated.
+ */
+
+'use strict';
+
+const msRest = require('ms-rest');
+const msRestAzure = require('ms-rest-azure');
+const WebResource = msRest.WebResource;
+
+/**
+ * Checks whether the specified user, group, contact, or service principal is a
+ * direct or transitive member of the specified group.
+ *
+ * @param {object} parameters The check group membership parameters.
+ *
+ * @param {string} parameters.groupId The object ID of the group to check.
+ *
+ * @param {string} parameters.memberId The object ID of the contact, group,
+ * user, or service principal to check for membership in the specified group.
+ *
+ * @param {object} [options] Optional Parameters.
+ *
+ * @param {object} [options.customHeaders] Headers that will be added to the
+ * request
+ *
+ * @param {function} callback - The callback.
+ *
+ * @returns {function} callback(err, result, request, response)
+ *
+ *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+ *
+ *                      {object} [result]   - The deserialized result object if an error did not occur.
+ *                      See {@link CheckGroupMembershipResult} for more
+ *                      information.
+ *
+ *                      {object} [request]  - The HTTP Request object if an error did not occur.
+ *
+ *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+ */
+function _isMemberOf(parameters, options, callback) {
+   /* jshint validthis: true */
+  let client = this.client;
+  if(!callback &amp;&amp; typeof options === 'function') {
+    callback = options;
+    options = null;
+  }
+  if (!callback) {
+    throw new Error('callback cannot be null.');
+  }
+  // Validate
+  try {
+    if (parameters === null || parameters === undefined) {
+      throw new Error('parameters cannot be null or undefined.');
+    }
+    if (this.client.apiVersion === null || this.client.apiVersion === undefined || typeof this.client.apiVersion.valueOf() !== 'string') {
+      throw new Error('this.client.apiVersion cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.tenantID === null || this.client.tenantID === undefined || typeof this.client.tenantID.valueOf() !== 'string') {
+      throw new Error('this.client.tenantID cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.acceptLanguage !== null &amp;&amp; this.client.acceptLanguage !== undefined &amp;&amp; typeof this.client.acceptLanguage.valueOf() !== 'string') {
+      throw new Error('this.client.acceptLanguage must be of type string.');
+    }
+  } catch (error) {
+    return callback(error);
+  }
+
+  // Construct URL
+  let baseUrl = this.client.baseUri;
+  let requestUrl = baseUrl + (baseUrl.endsWith('/') ? '' : '/') + '{tenantID}/isMemberOf';
+  requestUrl = requestUrl.replace('{tenantID}', encodeURIComponent(this.client.tenantID));
+  let queryParameters = [];
+  queryParameters.push('api-version=' + encodeURIComponent(this.client.apiVersion));
+  if (queryParameters.length > 0) {
+    requestUrl += '?' + queryParameters.join('&amp;');
+  }
+
+  // Create HTTP transport objects
+  let httpRequest = new WebResource();
+  httpRequest.method = 'POST';
+  httpRequest.url = requestUrl;
+  httpRequest.headers = {};
+  // Set Headers
+  httpRequest.headers['Content-Type'] = 'application/json; charset=utf-8';
+  if (this.client.generateClientRequestId) {
+      httpRequest.headers['x-ms-client-request-id'] = msRestAzure.generateUuid();
+  }
+  if (this.client.acceptLanguage !== undefined &amp;&amp; this.client.acceptLanguage !== null) {
+    httpRequest.headers['accept-language'] = this.client.acceptLanguage;
+  }
+  if(options) {
+    for(let headerName in options['customHeaders']) {
+      if (options['customHeaders'].hasOwnProperty(headerName)) {
+        httpRequest.headers[headerName] = options['customHeaders'][headerName];
+      }
+    }
+  }
+  // Serialize Request
+  let requestContent = null;
+  let requestModel = null;
+  try {
+    if (parameters !== null &amp;&amp; parameters !== undefined) {
+      let requestModelMapper = new client.models['CheckGroupMembershipParameters']().mapper();
+      requestModel = client.serialize(requestModelMapper, parameters, 'parameters');
+      requestContent = JSON.stringify(requestModel);
+    }
+  } catch (error) {
+    let serializationError = new Error(`Error "${error.message}" occurred in serializing the ` +
+        `payload - ${JSON.stringify(parameters, null, 2)}.`);
+    return callback(serializationError);
+  }
+  httpRequest.body = requestContent;
+  // Send Request
+  return client.pipeline(httpRequest, (err, response, responseBody) => {
+    if (err) {
+      return callback(err);
+    }
+    let statusCode = response.statusCode;
+    if (statusCode !== 200) {
+      let error = new Error(responseBody);
+      error.statusCode = response.statusCode;
+      error.request = msRest.stripRequest(httpRequest);
+      error.response = msRest.stripResponse(response);
+      if (responseBody === '') responseBody = null;
+      let parsedErrorResponse;
+      try {
+        parsedErrorResponse = JSON.parse(responseBody);
+        if (parsedErrorResponse) {
+          let internalError = null;
+          if (parsedErrorResponse.error) internalError = parsedErrorResponse.error;
+          error.code = internalError ? internalError.code : parsedErrorResponse.code;
+          error.message = internalError ? internalError.message : parsedErrorResponse.message;
+        }
+        if (parsedErrorResponse !== null &amp;&amp; parsedErrorResponse !== undefined) {
+          let resultMapper = new client.models['GraphError']().mapper();
+          error.body = client.deserialize(resultMapper, parsedErrorResponse, 'error.body');
+        }
+      } catch (defaultError) {
+        error.message = `Error "${defaultError.message}" occurred in deserializing the responseBody ` +
+                         `- "${responseBody}" for the default response.`;
+        return callback(error);
+      }
+      return callback(error);
+    }
+    // Create Result
+    let result = null;
+    if (responseBody === '') responseBody = null;
+    // Deserialize Response
+    if (statusCode === 200) {
+      let parsedResponse = null;
+      try {
+        parsedResponse = JSON.parse(responseBody);
+        result = JSON.parse(responseBody);
+        if (parsedResponse !== null &amp;&amp; parsedResponse !== undefined) {
+          let resultMapper = new client.models['CheckGroupMembershipResult']().mapper();
+          result = client.deserialize(resultMapper, parsedResponse, 'result');
+        }
+      } catch (error) {
+        let deserializationError = new Error(`Error ${error} occurred in deserializing the responseBody - ${responseBody}`);
+        deserializationError.request = msRest.stripRequest(httpRequest);
+        deserializationError.response = msRest.stripResponse(response);
+        return callback(deserializationError);
+      }
+    }
+
+    return callback(null, result, httpRequest, response);
+  });
+}
+
+/**
+ * Remove a member from a group.
+ *
+ * @param {string} groupObjectId The object ID of the group from which to
+ * remove the member.
+ *
+ * @param {string} memberObjectId Member object id
+ *
+ * @param {object} [options] Optional Parameters.
+ *
+ * @param {object} [options.customHeaders] Headers that will be added to the
+ * request
+ *
+ * @param {function} callback - The callback.
+ *
+ * @returns {function} callback(err, result, request, response)
+ *
+ *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+ *
+ *                      {null} [result]   - The deserialized result object if an error did not occur.
+ *
+ *                      {object} [request]  - The HTTP Request object if an error did not occur.
+ *
+ *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+ */
+function _removeMember(groupObjectId, memberObjectId, options, callback) {
+   /* jshint validthis: true */
+  let client = this.client;
+  if(!callback &amp;&amp; typeof options === 'function') {
+    callback = options;
+    options = null;
+  }
+  if (!callback) {
+    throw new Error('callback cannot be null.');
+  }
+  // Validate
+  try {
+    if (groupObjectId === null || groupObjectId === undefined || typeof groupObjectId.valueOf() !== 'string') {
+      throw new Error('groupObjectId cannot be null or undefined and it must be of type string.');
+    }
+    if (memberObjectId === null || memberObjectId === undefined || typeof memberObjectId.valueOf() !== 'string') {
+      throw new Error('memberObjectId cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.apiVersion === null || this.client.apiVersion === undefined || typeof this.client.apiVersion.valueOf() !== 'string') {
+      throw new Error('this.client.apiVersion cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.tenantID === null || this.client.tenantID === undefined || typeof this.client.tenantID.valueOf() !== 'string') {
+      throw new Error('this.client.tenantID cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.acceptLanguage !== null &amp;&amp; this.client.acceptLanguage !== undefined &amp;&amp; typeof this.client.acceptLanguage.valueOf() !== 'string') {
+      throw new Error('this.client.acceptLanguage must be of type string.');
+    }
+  } catch (error) {
+    return callback(error);
+  }
+
+  // Construct URL
+  let baseUrl = this.client.baseUri;
+  let requestUrl = baseUrl + (baseUrl.endsWith('/') ? '' : '/') + '{tenantID}/groups/{groupObjectId}/$links/members/{memberObjectId}';
+  requestUrl = requestUrl.replace('{groupObjectId}', groupObjectId);
+  requestUrl = requestUrl.replace('{memberObjectId}', memberObjectId);
+  requestUrl = requestUrl.replace('{tenantID}', encodeURIComponent(this.client.tenantID));
+  let queryParameters = [];
+  queryParameters.push('api-version=' + encodeURIComponent(this.client.apiVersion));
+  if (queryParameters.length > 0) {
+    requestUrl += '?' + queryParameters.join('&amp;');
+  }
+
+  // Create HTTP transport objects
+  let httpRequest = new WebResource();
+  httpRequest.method = 'DELETE';
+  httpRequest.url = requestUrl;
+  httpRequest.headers = {};
+  // Set Headers
+  httpRequest.headers['Content-Type'] = 'application/json; charset=utf-8';
+  if (this.client.generateClientRequestId) {
+      httpRequest.headers['x-ms-client-request-id'] = msRestAzure.generateUuid();
+  }
+  if (this.client.acceptLanguage !== undefined &amp;&amp; this.client.acceptLanguage !== null) {
+    httpRequest.headers['accept-language'] = this.client.acceptLanguage;
+  }
+  if(options) {
+    for(let headerName in options['customHeaders']) {
+      if (options['customHeaders'].hasOwnProperty(headerName)) {
+        httpRequest.headers[headerName] = options['customHeaders'][headerName];
+      }
+    }
+  }
+  httpRequest.body = null;
+  // Send Request
+  return client.pipeline(httpRequest, (err, response, responseBody) => {
+    if (err) {
+      return callback(err);
+    }
+    let statusCode = response.statusCode;
+    if (statusCode !== 204) {
+      let error = new Error(responseBody);
+      error.statusCode = response.statusCode;
+      error.request = msRest.stripRequest(httpRequest);
+      error.response = msRest.stripResponse(response);
+      if (responseBody === '') responseBody = null;
+      let parsedErrorResponse;
+      try {
+        parsedErrorResponse = JSON.parse(responseBody);
+        if (parsedErrorResponse) {
+          let internalError = null;
+          if (parsedErrorResponse.error) internalError = parsedErrorResponse.error;
+          error.code = internalError ? internalError.code : parsedErrorResponse.code;
+          error.message = internalError ? internalError.message : parsedErrorResponse.message;
+        }
+        if (parsedErrorResponse !== null &amp;&amp; parsedErrorResponse !== undefined) {
+          let resultMapper = new client.models['GraphError']().mapper();
+          error.body = client.deserialize(resultMapper, parsedErrorResponse, 'error.body');
+        }
+      } catch (defaultError) {
+        error.message = `Error "${defaultError.message}" occurred in deserializing the responseBody ` +
+                         `- "${responseBody}" for the default response.`;
+        return callback(error);
+      }
+      return callback(error);
+    }
+    // Create Result
+    let result = null;
+    if (responseBody === '') responseBody = null;
+
+    return callback(null, result, httpRequest, response);
+  });
+}
+
+/**
+ * Add a member to a group.
+ *
+ * @param {string} groupObjectId The object ID of the group to which to add the
+ * member.
+ *
+ * @param {string} url A member object URL, such as
+ * "https://graph.windows.net/0b1f9851-1bf0-433f-aec3-cb9272f093dc/directoryObjects/f260bbc4-c254-447b-94cf-293b5ec434dd",
+ * where "0b1f9851-1bf0-433f-aec3-cb9272f093dc" is the tenantId and
+ * "f260bbc4-c254-447b-94cf-293b5ec434dd" is the objectId of the member (user,
+ * application, servicePrincipal, group) to be added.
+ *
+ * @param {object} [options] Optional Parameters.
+ *
+ * @param {object} [options.customHeaders] Headers that will be added to the
+ * request
+ *
+ * @param {function} callback - The callback.
+ *
+ * @returns {function} callback(err, result, request, response)
+ *
+ *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+ *
+ *                      {null} [result]   - The deserialized result object if an error did not occur.
+ *
+ *                      {object} [request]  - The HTTP Request object if an error did not occur.
+ *
+ *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+ */
+function _addMember(groupObjectId, url, options, callback) {
+   /* jshint validthis: true */
+  let client = this.client;
+  if(!callback &amp;&amp; typeof options === 'function') {
+    callback = options;
+    options = null;
+  }
+  if (!callback) {
+    throw new Error('callback cannot be null.');
+  }
+  // Validate
+  try {
+    if (groupObjectId === null || groupObjectId === undefined || typeof groupObjectId.valueOf() !== 'string') {
+      throw new Error('groupObjectId cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.apiVersion === null || this.client.apiVersion === undefined || typeof this.client.apiVersion.valueOf() !== 'string') {
+      throw new Error('this.client.apiVersion cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.tenantID === null || this.client.tenantID === undefined || typeof this.client.tenantID.valueOf() !== 'string') {
+      throw new Error('this.client.tenantID cannot be null or undefined and it must be of type string.');
+    }
+    if (url === null || url === undefined || typeof url.valueOf() !== 'string') {
+      throw new Error('url cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.acceptLanguage !== null &amp;&amp; this.client.acceptLanguage !== undefined &amp;&amp; typeof this.client.acceptLanguage.valueOf() !== 'string') {
+      throw new Error('this.client.acceptLanguage must be of type string.');
+    }
+  } catch (error) {
+    return callback(error);
+  }
+  let parameters;
+  if (url !== null &amp;&amp; url !== undefined) {
+    parameters = new client.models['GroupAddMemberParameters']();
+    parameters.url = url;
+  }
+
+  // Construct URL
+  let baseUrl = this.client.baseUri;
+  let requestUrl = baseUrl + (baseUrl.endsWith('/') ? '' : '/') + '{tenantID}/groups/{groupObjectId}/$links/members';
+  requestUrl = requestUrl.replace('{groupObjectId}', groupObjectId);
+  requestUrl = requestUrl.replace('{tenantID}', encodeURIComponent(this.client.tenantID));
+  let queryParameters = [];
+  queryParameters.push('api-version=' + encodeURIComponent(this.client.apiVersion));
+  if (queryParameters.length > 0) {
+    requestUrl += '?' + queryParameters.join('&amp;');
+  }
+
+  // Create HTTP transport objects
+  let httpRequest = new WebResource();
+  httpRequest.method = 'POST';
+  httpRequest.url = requestUrl;
+  httpRequest.headers = {};
+  // Set Headers
+  httpRequest.headers['Content-Type'] = 'application/json; charset=utf-8';
+  if (this.client.generateClientRequestId) {
+      httpRequest.headers['x-ms-client-request-id'] = msRestAzure.generateUuid();
+  }
+  if (this.client.acceptLanguage !== undefined &amp;&amp; this.client.acceptLanguage !== null) {
+    httpRequest.headers['accept-language'] = this.client.acceptLanguage;
+  }
+  if(options) {
+    for(let headerName in options['customHeaders']) {
+      if (options['customHeaders'].hasOwnProperty(headerName)) {
+        httpRequest.headers[headerName] = options['customHeaders'][headerName];
+      }
+    }
+  }
+  // Serialize Request
+  let requestContent = null;
+  let requestModel = null;
+  try {
+    if (parameters !== null &amp;&amp; parameters !== undefined) {
+      let requestModelMapper = new client.models['GroupAddMemberParameters']().mapper();
+      requestModel = client.serialize(requestModelMapper, parameters, 'parameters');
+      requestContent = JSON.stringify(requestModel);
+    }
+  } catch (error) {
+    let serializationError = new Error(`Error "${error.message}" occurred in serializing the ` +
+        `payload - ${JSON.stringify(parameters, null, 2)}.`);
+    return callback(serializationError);
+  }
+  httpRequest.body = requestContent;
+  // Send Request
+  return client.pipeline(httpRequest, (err, response, responseBody) => {
+    if (err) {
+      return callback(err);
+    }
+    let statusCode = response.statusCode;
+    if (statusCode !== 204) {
+      let error = new Error(responseBody);
+      error.statusCode = response.statusCode;
+      error.request = msRest.stripRequest(httpRequest);
+      error.response = msRest.stripResponse(response);
+      if (responseBody === '') responseBody = null;
+      let parsedErrorResponse;
+      try {
+        parsedErrorResponse = JSON.parse(responseBody);
+        if (parsedErrorResponse) {
+          let internalError = null;
+          if (parsedErrorResponse.error) internalError = parsedErrorResponse.error;
+          error.code = internalError ? internalError.code : parsedErrorResponse.code;
+          error.message = internalError ? internalError.message : parsedErrorResponse.message;
+        }
+        if (parsedErrorResponse !== null &amp;&amp; parsedErrorResponse !== undefined) {
+          let resultMapper = new client.models['GraphError']().mapper();
+          error.body = client.deserialize(resultMapper, parsedErrorResponse, 'error.body');
+        }
+      } catch (defaultError) {
+        error.message = `Error "${defaultError.message}" occurred in deserializing the responseBody ` +
+                         `- "${responseBody}" for the default response.`;
+        return callback(error);
+      }
+      return callback(error);
+    }
+    // Create Result
+    let result = null;
+    if (responseBody === '') responseBody = null;
+
+    return callback(null, result, httpRequest, response);
+  });
+}
+
+/**
+ * Delete a group from the directory.
+ *
+ * @param {string} groupObjectId The object ID of the group to delete.
+ *
+ * @param {object} [options] Optional Parameters.
+ *
+ * @param {object} [options.customHeaders] Headers that will be added to the
+ * request
+ *
+ * @param {function} callback - The callback.
+ *
+ * @returns {function} callback(err, result, request, response)
+ *
+ *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+ *
+ *                      {null} [result]   - The deserialized result object if an error did not occur.
+ *
+ *                      {object} [request]  - The HTTP Request object if an error did not occur.
+ *
+ *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+ */
+function _deleteMethod(groupObjectId, options, callback) {
+   /* jshint validthis: true */
+  let client = this.client;
+  if(!callback &amp;&amp; typeof options === 'function') {
+    callback = options;
+    options = null;
+  }
+  if (!callback) {
+    throw new Error('callback cannot be null.');
+  }
+  // Validate
+  try {
+    if (groupObjectId === null || groupObjectId === undefined || typeof groupObjectId.valueOf() !== 'string') {
+      throw new Error('groupObjectId cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.apiVersion === null || this.client.apiVersion === undefined || typeof this.client.apiVersion.valueOf() !== 'string') {
+      throw new Error('this.client.apiVersion cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.tenantID === null || this.client.tenantID === undefined || typeof this.client.tenantID.valueOf() !== 'string') {
+      throw new Error('this.client.tenantID cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.acceptLanguage !== null &amp;&amp; this.client.acceptLanguage !== undefined &amp;&amp; typeof this.client.acceptLanguage.valueOf() !== 'string') {
+      throw new Error('this.client.acceptLanguage must be of type string.');
+    }
+  } catch (error) {
+    return callback(error);
+  }
+
+  // Construct URL
+  let baseUrl = this.client.baseUri;
+  let requestUrl = baseUrl + (baseUrl.endsWith('/') ? '' : '/') + '{tenantID}/groups/{groupObjectId}';
+  requestUrl = requestUrl.replace('{groupObjectId}', groupObjectId);
+  requestUrl = requestUrl.replace('{tenantID}', encodeURIComponent(this.client.tenantID));
+  let queryParameters = [];
+  queryParameters.push('api-version=' + encodeURIComponent(this.client.apiVersion));
+  if (queryParameters.length > 0) {
+    requestUrl += '?' + queryParameters.join('&amp;');
+  }
+
+  // Create HTTP transport objects
+  let httpRequest = new WebResource();
+  httpRequest.method = 'DELETE';
+  httpRequest.url = requestUrl;
+  httpRequest.headers = {};
+  // Set Headers
+  httpRequest.headers['Content-Type'] = 'application/json; charset=utf-8';
+  if (this.client.generateClientRequestId) {
+      httpRequest.headers['x-ms-client-request-id'] = msRestAzure.generateUuid();
+  }
+  if (this.client.acceptLanguage !== undefined &amp;&amp; this.client.acceptLanguage !== null) {
+    httpRequest.headers['accept-language'] = this.client.acceptLanguage;
+  }
+  if(options) {
+    for(let headerName in options['customHeaders']) {
+      if (options['customHeaders'].hasOwnProperty(headerName)) {
+        httpRequest.headers[headerName] = options['customHeaders'][headerName];
+      }
+    }
+  }
+  httpRequest.body = null;
+  // Send Request
+  return client.pipeline(httpRequest, (err, response, responseBody) => {
+    if (err) {
+      return callback(err);
+    }
+    let statusCode = response.statusCode;
+    if (statusCode !== 204) {
+      let error = new Error(responseBody);
+      error.statusCode = response.statusCode;
+      error.request = msRest.stripRequest(httpRequest);
+      error.response = msRest.stripResponse(response);
+      if (responseBody === '') responseBody = null;
+      let parsedErrorResponse;
+      try {
+        parsedErrorResponse = JSON.parse(responseBody);
+        if (parsedErrorResponse) {
+          let internalError = null;
+          if (parsedErrorResponse.error) internalError = parsedErrorResponse.error;
+          error.code = internalError ? internalError.code : parsedErrorResponse.code;
+          error.message = internalError ? internalError.message : parsedErrorResponse.message;
+        }
+        if (parsedErrorResponse !== null &amp;&amp; parsedErrorResponse !== undefined) {
+          let resultMapper = new client.models['GraphError']().mapper();
+          error.body = client.deserialize(resultMapper, parsedErrorResponse, 'error.body');
+        }
+      } catch (defaultError) {
+        error.message = `Error "${defaultError.message}" occurred in deserializing the responseBody ` +
+                         `- "${responseBody}" for the default response.`;
+        return callback(error);
+      }
+      return callback(error);
+    }
+    // Create Result
+    let result = null;
+    if (responseBody === '') responseBody = null;
+
+    return callback(null, result, httpRequest, response);
+  });
+}
+
+/**
+ * Create a group in the directory.
+ *
+ * @param {object} parameters The parameters for the group to create.
+ *
+ * @param {string} parameters.displayName Group display name
+ *
+ * @param {string} parameters.mailNickname Mail nickname
+ *
+ * @param {object} [options] Optional Parameters.
+ *
+ * @param {object} [options.customHeaders] Headers that will be added to the
+ * request
+ *
+ * @param {function} callback - The callback.
+ *
+ * @returns {function} callback(err, result, request, response)
+ *
+ *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+ *
+ *                      {object} [result]   - The deserialized result object if an error did not occur.
+ *                      See {@link ADGroup} for more information.
+ *
+ *                      {object} [request]  - The HTTP Request object if an error did not occur.
+ *
+ *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+ */
+function _create(parameters, options, callback) {
+   /* jshint validthis: true */
+  let client = this.client;
+  if(!callback &amp;&amp; typeof options === 'function') {
+    callback = options;
+    options = null;
+  }
+  if (!callback) {
+    throw new Error('callback cannot be null.');
+  }
+  if (parameters === null || parameters === undefined)
+  {
+    parameters = {};
+  }
+  // Validate
+  try {
+    if (parameters === null || parameters === undefined) {
+      throw new Error('parameters cannot be null or undefined.');
+    }
+    if (this.client.apiVersion === null || this.client.apiVersion === undefined || typeof this.client.apiVersion.valueOf() !== 'string') {
+      throw new Error('this.client.apiVersion cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.tenantID === null || this.client.tenantID === undefined || typeof this.client.tenantID.valueOf() !== 'string') {
+      throw new Error('this.client.tenantID cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.acceptLanguage !== null &amp;&amp; this.client.acceptLanguage !== undefined &amp;&amp; typeof this.client.acceptLanguage.valueOf() !== 'string') {
+      throw new Error('this.client.acceptLanguage must be of type string.');
+    }
+  } catch (error) {
+    return callback(error);
+  }
+
+  // Construct URL
+  let baseUrl = this.client.baseUri;
+  let requestUrl = baseUrl + (baseUrl.endsWith('/') ? '' : '/') + '{tenantID}/groups';
+  requestUrl = requestUrl.replace('{tenantID}', encodeURIComponent(this.client.tenantID));
+  let queryParameters = [];
+  queryParameters.push('api-version=' + encodeURIComponent(this.client.apiVersion));
+  if (queryParameters.length > 0) {
+    requestUrl += '?' + queryParameters.join('&amp;');
+  }
+
+  // Create HTTP transport objects
+  let httpRequest = new WebResource();
+  httpRequest.method = 'POST';
+  httpRequest.url = requestUrl;
+  httpRequest.headers = {};
+  // Set Headers
+  httpRequest.headers['Content-Type'] = 'application/json; charset=utf-8';
+  if (this.client.generateClientRequestId) {
+      httpRequest.headers['x-ms-client-request-id'] = msRestAzure.generateUuid();
+  }
+  if (this.client.acceptLanguage !== undefined &amp;&amp; this.client.acceptLanguage !== null) {
+    httpRequest.headers['accept-language'] = this.client.acceptLanguage;
+  }
+  if(options) {
+    for(let headerName in options['customHeaders']) {
+      if (options['customHeaders'].hasOwnProperty(headerName)) {
+        httpRequest.headers[headerName] = options['customHeaders'][headerName];
+      }
+    }
+  }
+  // Serialize Request
+  let requestContent = null;
+  let requestModel = null;
+  try {
+    if (parameters !== null &amp;&amp; parameters !== undefined) {
+      let requestModelMapper = new client.models['GroupCreateParameters']().mapper();
+      requestModel = client.serialize(requestModelMapper, parameters, 'parameters');
+      requestContent = JSON.stringify(requestModel);
+    }
+  } catch (error) {
+    let serializationError = new Error(`Error "${error.message}" occurred in serializing the ` +
+        `payload - ${JSON.stringify(parameters, null, 2)}.`);
+    return callback(serializationError);
+  }
+  httpRequest.body = requestContent;
+  // Send Request
+  return client.pipeline(httpRequest, (err, response, responseBody) => {
+    if (err) {
+      return callback(err);
+    }
+    let statusCode = response.statusCode;
+    if (statusCode !== 201) {
+      let error = new Error(responseBody);
+      error.statusCode = response.statusCode;
+      error.request = msRest.stripRequest(httpRequest);
+      error.response = msRest.stripResponse(response);
+      if (responseBody === '') responseBody = null;
+      let parsedErrorResponse;
+      try {
+        parsedErrorResponse = JSON.parse(responseBody);
+        if (parsedErrorResponse) {
+          let internalError = null;
+          if (parsedErrorResponse.error) internalError = parsedErrorResponse.error;
+          error.code = internalError ? internalError.code : parsedErrorResponse.code;
+          error.message = internalError ? internalError.message : parsedErrorResponse.message;
+        }
+        if (parsedErrorResponse !== null &amp;&amp; parsedErrorResponse !== undefined) {
+          let resultMapper = new client.models['GraphError']().mapper();
+          error.body = client.deserialize(resultMapper, parsedErrorResponse, 'error.body');
+        }
+      } catch (defaultError) {
+        error.message = `Error "${defaultError.message}" occurred in deserializing the responseBody ` +
+                         `- "${responseBody}" for the default response.`;
+        return callback(error);
+      }
+      return callback(error);
+    }
+    // Create Result
+    let result = null;
+    if (responseBody === '') responseBody = null;
+    // Deserialize Response
+    if (statusCode === 201) {
+      let parsedResponse = null;
+      try {
+        parsedResponse = JSON.parse(responseBody);
+        result = JSON.parse(responseBody);
+        if (parsedResponse !== null &amp;&amp; parsedResponse !== undefined) {
+          let resultMapper = new client.models['ADGroup']().mapper();
+          result = client.deserialize(resultMapper, parsedResponse, 'result');
+        }
+      } catch (error) {
+        let deserializationError = new Error(`Error ${error} occurred in deserializing the responseBody - ${responseBody}`);
+        deserializationError.request = msRest.stripRequest(httpRequest);
+        deserializationError.response = msRest.stripResponse(response);
+        return callback(deserializationError);
+      }
+    }
+
+    return callback(null, result, httpRequest, response);
+  });
+}
+
+/**
+ * Gets list of groups for the current tenant.
+ *
+ * @param {object} [options] Optional Parameters.
+ *
+ * @param {string} [options.filter] The filter to apply to the operation.
+ *
+ * @param {object} [options.customHeaders] Headers that will be added to the
+ * request
+ *
+ * @param {function} callback - The callback.
+ *
+ * @returns {function} callback(err, result, request, response)
+ *
+ *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+ *
+ *                      {object} [result]   - The deserialized result object if an error did not occur.
+ *                      See {@link GroupListResult} for more information.
+ *
+ *                      {object} [request]  - The HTTP Request object if an error did not occur.
+ *
+ *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+ */
+function _list(options, callback) {
+   /* jshint validthis: true */
+  let client = this.client;
+  if(!callback &amp;&amp; typeof options === 'function') {
+    callback = options;
+    options = null;
+  }
+  if (!callback) {
+    throw new Error('callback cannot be null.');
+  }
+  let filter = (options &amp;&amp; options.filter !== undefined) ? options.filter : undefined;
+  // Validate
+  try {
+    if (filter !== null &amp;&amp; filter !== undefined &amp;&amp; typeof filter.valueOf() !== 'string') {
+      throw new Error('filter must be of type string.');
+    }
+    if (this.client.apiVersion === null || this.client.apiVersion === undefined || typeof this.client.apiVersion.valueOf() !== 'string') {
+      throw new Error('this.client.apiVersion cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.tenantID === null || this.client.tenantID === undefined || typeof this.client.tenantID.valueOf() !== 'string') {
+      throw new Error('this.client.tenantID cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.acceptLanguage !== null &amp;&amp; this.client.acceptLanguage !== undefined &amp;&amp; typeof this.client.acceptLanguage.valueOf() !== 'string') {
+      throw new Error('this.client.acceptLanguage must be of type string.');
+    }
+  } catch (error) {
+    return callback(error);
+  }
+
+  // Construct URL
+  let baseUrl = this.client.baseUri;
+  let requestUrl = baseUrl + (baseUrl.endsWith('/') ? '' : '/') + '{tenantID}/groups';
+  requestUrl = requestUrl.replace('{tenantID}', encodeURIComponent(this.client.tenantID));
+  let queryParameters = [];
+  if (filter !== null &amp;&amp; filter !== undefined) {
+    queryParameters.push('$filter=' + encodeURIComponent(filter));
+  }
+  queryParameters.push('api-version=' + encodeURIComponent(this.client.apiVersion));
+  if (queryParameters.length > 0) {
+    requestUrl += '?' + queryParameters.join('&amp;');
+  }
+
+  // Create HTTP transport objects
+  let httpRequest = new WebResource();
+  httpRequest.method = 'GET';
+  httpRequest.url = requestUrl;
+  httpRequest.headers = {};
+  // Set Headers
+  httpRequest.headers['Content-Type'] = 'application/json; charset=utf-8';
+  if (this.client.generateClientRequestId) {
+      httpRequest.headers['x-ms-client-request-id'] = msRestAzure.generateUuid();
+  }
+  if (this.client.acceptLanguage !== undefined &amp;&amp; this.client.acceptLanguage !== null) {
+    httpRequest.headers['accept-language'] = this.client.acceptLanguage;
+  }
+  if(options) {
+    for(let headerName in options['customHeaders']) {
+      if (options['customHeaders'].hasOwnProperty(headerName)) {
+        httpRequest.headers[headerName] = options['customHeaders'][headerName];
+      }
+    }
+  }
+  httpRequest.body = null;
+  // Send Request
+  return client.pipeline(httpRequest, (err, response, responseBody) => {
+    if (err) {
+      return callback(err);
+    }
+    let statusCode = response.statusCode;
+    if (statusCode !== 200) {
+      let error = new Error(responseBody);
+      error.statusCode = response.statusCode;
+      error.request = msRest.stripRequest(httpRequest);
+      error.response = msRest.stripResponse(response);
+      if (responseBody === '') responseBody = null;
+      let parsedErrorResponse;
+      try {
+        parsedErrorResponse = JSON.parse(responseBody);
+        if (parsedErrorResponse) {
+          let internalError = null;
+          if (parsedErrorResponse.error) internalError = parsedErrorResponse.error;
+          error.code = internalError ? internalError.code : parsedErrorResponse.code;
+          error.message = internalError ? internalError.message : parsedErrorResponse.message;
+        }
+        if (parsedErrorResponse !== null &amp;&amp; parsedErrorResponse !== undefined) {
+          let resultMapper = new client.models['GraphError']().mapper();
+          error.body = client.deserialize(resultMapper, parsedErrorResponse, 'error.body');
+        }
+      } catch (defaultError) {
+        error.message = `Error "${defaultError.message}" occurred in deserializing the responseBody ` +
+                         `- "${responseBody}" for the default response.`;
+        return callback(error);
+      }
+      return callback(error);
+    }
+    // Create Result
+    let result = null;
+    if (responseBody === '') responseBody = null;
+    // Deserialize Response
+    if (statusCode === 200) {
+      let parsedResponse = null;
+      try {
+        parsedResponse = JSON.parse(responseBody);
+        result = JSON.parse(responseBody);
+        if (parsedResponse !== null &amp;&amp; parsedResponse !== undefined) {
+          let resultMapper = new client.models['GroupListResult']().mapper();
+          result = client.deserialize(resultMapper, parsedResponse, 'result');
+        }
+      } catch (error) {
+        let deserializationError = new Error(`Error ${error} occurred in deserializing the responseBody - ${responseBody}`);
+        deserializationError.request = msRest.stripRequest(httpRequest);
+        deserializationError.response = msRest.stripResponse(response);
+        return callback(deserializationError);
+      }
+    }
+
+    return callback(null, result, httpRequest, response);
+  });
+}
+
+/**
+ * Gets the members of a group.
+ *
+ * @param {string} objectId The object ID of the group whose members should be
+ * retrieved.
+ *
+ * @param {object} [options] Optional Parameters.
+ *
+ * @param {object} [options.customHeaders] Headers that will be added to the
+ * request
+ *
+ * @param {function} callback - The callback.
+ *
+ * @returns {function} callback(err, result, request, response)
+ *
+ *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+ *
+ *                      {object} [result]   - The deserialized result object if an error did not occur.
+ *                      See {@link GetObjectsResult} for more information.
+ *
+ *                      {object} [request]  - The HTTP Request object if an error did not occur.
+ *
+ *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+ */
+function _getGroupMembers(objectId, options, callback) {
+   /* jshint validthis: true */
+  let client = this.client;
+  if(!callback &amp;&amp; typeof options === 'function') {
+    callback = options;
+    options = null;
+  }
+  if (!callback) {
+    throw new Error('callback cannot be null.');
+  }
+  // Validate
+  try {
+    if (objectId === null || objectId === undefined || typeof objectId.valueOf() !== 'string') {
+      throw new Error('objectId cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.apiVersion === null || this.client.apiVersion === undefined || typeof this.client.apiVersion.valueOf() !== 'string') {
+      throw new Error('this.client.apiVersion cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.tenantID === null || this.client.tenantID === undefined || typeof this.client.tenantID.valueOf() !== 'string') {
+      throw new Error('this.client.tenantID cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.acceptLanguage !== null &amp;&amp; this.client.acceptLanguage !== undefined &amp;&amp; typeof this.client.acceptLanguage.valueOf() !== 'string') {
+      throw new Error('this.client.acceptLanguage must be of type string.');
+    }
+  } catch (error) {
+    return callback(error);
+  }
+
+  // Construct URL
+  let baseUrl = this.client.baseUri;
+  let requestUrl = baseUrl + (baseUrl.endsWith('/') ? '' : '/') + '{tenantID}/groups/{objectId}/members';
+  requestUrl = requestUrl.replace('{objectId}', objectId);
+  requestUrl = requestUrl.replace('{tenantID}', encodeURIComponent(this.client.tenantID));
+  let queryParameters = [];
+  queryParameters.push('api-version=' + encodeURIComponent(this.client.apiVersion));
+  if (queryParameters.length > 0) {
+    requestUrl += '?' + queryParameters.join('&amp;');
+  }
+
+  // Create HTTP transport objects
+  let httpRequest = new WebResource();
+  httpRequest.method = 'GET';
+  httpRequest.url = requestUrl;
+  httpRequest.headers = {};
+  // Set Headers
+  httpRequest.headers['Content-Type'] = 'application/json; charset=utf-8';
+  if (this.client.generateClientRequestId) {
+      httpRequest.headers['x-ms-client-request-id'] = msRestAzure.generateUuid();
+  }
+  if (this.client.acceptLanguage !== undefined &amp;&amp; this.client.acceptLanguage !== null) {
+    httpRequest.headers['accept-language'] = this.client.acceptLanguage;
+  }
+  if(options) {
+    for(let headerName in options['customHeaders']) {
+      if (options['customHeaders'].hasOwnProperty(headerName)) {
+        httpRequest.headers[headerName] = options['customHeaders'][headerName];
+      }
+    }
+  }
+  httpRequest.body = null;
+  // Send Request
+  return client.pipeline(httpRequest, (err, response, responseBody) => {
+    if (err) {
+      return callback(err);
+    }
+    let statusCode = response.statusCode;
+    if (statusCode !== 200) {
+      let error = new Error(responseBody);
+      error.statusCode = response.statusCode;
+      error.request = msRest.stripRequest(httpRequest);
+      error.response = msRest.stripResponse(response);
+      if (responseBody === '') responseBody = null;
+      let parsedErrorResponse;
+      try {
+        parsedErrorResponse = JSON.parse(responseBody);
+        if (parsedErrorResponse) {
+          let internalError = null;
+          if (parsedErrorResponse.error) internalError = parsedErrorResponse.error;
+          error.code = internalError ? internalError.code : parsedErrorResponse.code;
+          error.message = internalError ? internalError.message : parsedErrorResponse.message;
+        }
+        if (parsedErrorResponse !== null &amp;&amp; parsedErrorResponse !== undefined) {
+          let resultMapper = new client.models['GraphError']().mapper();
+          error.body = client.deserialize(resultMapper, parsedErrorResponse, 'error.body');
+        }
+      } catch (defaultError) {
+        error.message = `Error "${defaultError.message}" occurred in deserializing the responseBody ` +
+                         `- "${responseBody}" for the default response.`;
+        return callback(error);
+      }
+      return callback(error);
+    }
+    // Create Result
+    let result = null;
+    if (responseBody === '') responseBody = null;
+    // Deserialize Response
+    if (statusCode === 200) {
+      let parsedResponse = null;
+      try {
+        parsedResponse = JSON.parse(responseBody);
+        result = JSON.parse(responseBody);
+        if (parsedResponse !== null &amp;&amp; parsedResponse !== undefined) {
+          let resultMapper = new client.models['GetObjectsResult']().mapper();
+          result = client.deserialize(resultMapper, parsedResponse, 'result');
+        }
+      } catch (error) {
+        let deserializationError = new Error(`Error ${error} occurred in deserializing the responseBody - ${responseBody}`);
+        deserializationError.request = msRest.stripRequest(httpRequest);
+        deserializationError.response = msRest.stripResponse(response);
+        return callback(deserializationError);
+      }
+    }
+
+    return callback(null, result, httpRequest, response);
+  });
+}
+
+/**
+ * Gets group information from the directory.
+ *
+ * @param {string} objectId The object ID of the user for which to get group
+ * information.
+ *
+ * @param {object} [options] Optional Parameters.
+ *
+ * @param {object} [options.customHeaders] Headers that will be added to the
+ * request
+ *
+ * @param {function} callback - The callback.
+ *
+ * @returns {function} callback(err, result, request, response)
+ *
+ *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+ *
+ *                      {object} [result]   - The deserialized result object if an error did not occur.
+ *                      See {@link ADGroup} for more information.
+ *
+ *                      {object} [request]  - The HTTP Request object if an error did not occur.
+ *
+ *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+ */
+function _get(objectId, options, callback) {
+   /* jshint validthis: true */
+  let client = this.client;
+  if(!callback &amp;&amp; typeof options === 'function') {
+    callback = options;
+    options = null;
+  }
+  if (!callback) {
+    throw new Error('callback cannot be null.');
+  }
+  // Validate
+  try {
+    if (objectId === null || objectId === undefined || typeof objectId.valueOf() !== 'string') {
+      throw new Error('objectId cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.apiVersion === null || this.client.apiVersion === undefined || typeof this.client.apiVersion.valueOf() !== 'string') {
+      throw new Error('this.client.apiVersion cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.tenantID === null || this.client.tenantID === undefined || typeof this.client.tenantID.valueOf() !== 'string') {
+      throw new Error('this.client.tenantID cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.acceptLanguage !== null &amp;&amp; this.client.acceptLanguage !== undefined &amp;&amp; typeof this.client.acceptLanguage.valueOf() !== 'string') {
+      throw new Error('this.client.acceptLanguage must be of type string.');
+    }
+  } catch (error) {
+    return callback(error);
+  }
+
+  // Construct URL
+  let baseUrl = this.client.baseUri;
+  let requestUrl = baseUrl + (baseUrl.endsWith('/') ? '' : '/') + '{tenantID}/groups/{objectId}';
+  requestUrl = requestUrl.replace('{objectId}', objectId);
+  requestUrl = requestUrl.replace('{tenantID}', encodeURIComponent(this.client.tenantID));
+  let queryParameters = [];
+  queryParameters.push('api-version=' + encodeURIComponent(this.client.apiVersion));
+  if (queryParameters.length > 0) {
+    requestUrl += '?' + queryParameters.join('&amp;');
+  }
+
+  // Create HTTP transport objects
+  let httpRequest = new WebResource();
+  httpRequest.method = 'GET';
+  httpRequest.url = requestUrl;
+  httpRequest.headers = {};
+  // Set Headers
+  httpRequest.headers['Content-Type'] = 'application/json; charset=utf-8';
+  if (this.client.generateClientRequestId) {
+      httpRequest.headers['x-ms-client-request-id'] = msRestAzure.generateUuid();
+  }
+  if (this.client.acceptLanguage !== undefined &amp;&amp; this.client.acceptLanguage !== null) {
+    httpRequest.headers['accept-language'] = this.client.acceptLanguage;
+  }
+  if(options) {
+    for(let headerName in options['customHeaders']) {
+      if (options['customHeaders'].hasOwnProperty(headerName)) {
+        httpRequest.headers[headerName] = options['customHeaders'][headerName];
+      }
+    }
+  }
+  httpRequest.body = null;
+  // Send Request
+  return client.pipeline(httpRequest, (err, response, responseBody) => {
+    if (err) {
+      return callback(err);
+    }
+    let statusCode = response.statusCode;
+    if (statusCode !== 200) {
+      let error = new Error(responseBody);
+      error.statusCode = response.statusCode;
+      error.request = msRest.stripRequest(httpRequest);
+      error.response = msRest.stripResponse(response);
+      if (responseBody === '') responseBody = null;
+      let parsedErrorResponse;
+      try {
+        parsedErrorResponse = JSON.parse(responseBody);
+        if (parsedErrorResponse) {
+          let internalError = null;
+          if (parsedErrorResponse.error) internalError = parsedErrorResponse.error;
+          error.code = internalError ? internalError.code : parsedErrorResponse.code;
+          error.message = internalError ? internalError.message : parsedErrorResponse.message;
+        }
+        if (parsedErrorResponse !== null &amp;&amp; parsedErrorResponse !== undefined) {
+          let resultMapper = new client.models['GraphError']().mapper();
+          error.body = client.deserialize(resultMapper, parsedErrorResponse, 'error.body');
+        }
+      } catch (defaultError) {
+        error.message = `Error "${defaultError.message}" occurred in deserializing the responseBody ` +
+                         `- "${responseBody}" for the default response.`;
+        return callback(error);
+      }
+      return callback(error);
+    }
+    // Create Result
+    let result = null;
+    if (responseBody === '') responseBody = null;
+    // Deserialize Response
+    if (statusCode === 200) {
+      let parsedResponse = null;
+      try {
+        parsedResponse = JSON.parse(responseBody);
+        result = JSON.parse(responseBody);
+        if (parsedResponse !== null &amp;&amp; parsedResponse !== undefined) {
+          let resultMapper = new client.models['ADGroup']().mapper();
+          result = client.deserialize(resultMapper, parsedResponse, 'result');
+        }
+      } catch (error) {
+        let deserializationError = new Error(`Error ${error} occurred in deserializing the responseBody - ${responseBody}`);
+        deserializationError.request = msRest.stripRequest(httpRequest);
+        deserializationError.response = msRest.stripResponse(response);
+        return callback(deserializationError);
+      }
+    }
+
+    return callback(null, result, httpRequest, response);
+  });
+}
+
+/**
+ * Gets a collection of object IDs of groups of which the specified group is a
+ * member.
+ *
+ * @param {string} objectId The object ID of the group for which to get group
+ * membership.
+ *
+ * @param {boolean} securityEnabledOnly If true, only membership in
+ * security-enabled groups should be checked. Otherwise, membership in all
+ * groups should be checked.
+ *
+ * @param {object} [options] Optional Parameters.
+ *
+ * @param {object} [options.customHeaders] Headers that will be added to the
+ * request
+ *
+ * @param {function} callback - The callback.
+ *
+ * @returns {function} callback(err, result, request, response)
+ *
+ *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+ *
+ *                      {object} [result]   - The deserialized result object if an error did not occur.
+ *                      See {@link GroupGetMemberGroupsResult} for more
+ *                      information.
+ *
+ *                      {object} [request]  - The HTTP Request object if an error did not occur.
+ *
+ *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+ */
+function _getMemberGroups(objectId, securityEnabledOnly, options, callback) {
+   /* jshint validthis: true */
+  let client = this.client;
+  if(!callback &amp;&amp; typeof options === 'function') {
+    callback = options;
+    options = null;
+  }
+  if (!callback) {
+    throw new Error('callback cannot be null.');
+  }
+  // Validate
+  try {
+    if (objectId === null || objectId === undefined || typeof objectId.valueOf() !== 'string') {
+      throw new Error('objectId cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.apiVersion === null || this.client.apiVersion === undefined || typeof this.client.apiVersion.valueOf() !== 'string') {
+      throw new Error('this.client.apiVersion cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.tenantID === null || this.client.tenantID === undefined || typeof this.client.tenantID.valueOf() !== 'string') {
+      throw new Error('this.client.tenantID cannot be null or undefined and it must be of type string.');
+    }
+    if (securityEnabledOnly === null || securityEnabledOnly === undefined || typeof securityEnabledOnly !== 'boolean') {
+      throw new Error('securityEnabledOnly cannot be null or undefined and it must be of type boolean.');
+    }
+    if (this.client.acceptLanguage !== null &amp;&amp; this.client.acceptLanguage !== undefined &amp;&amp; typeof this.client.acceptLanguage.valueOf() !== 'string') {
+      throw new Error('this.client.acceptLanguage must be of type string.');
+    }
+  } catch (error) {
+    return callback(error);
+  }
+  let parameters;
+  if (securityEnabledOnly !== null &amp;&amp; securityEnabledOnly !== undefined) {
+    parameters = new client.models['GroupGetMemberGroupsParameters']();
+    parameters.securityEnabledOnly = securityEnabledOnly;
+  }
+
+  // Construct URL
+  let baseUrl = this.client.baseUri;
+  let requestUrl = baseUrl + (baseUrl.endsWith('/') ? '' : '/') + '{tenantID}/groups/{objectId}/getMemberGroups';
+  requestUrl = requestUrl.replace('{objectId}', objectId);
+  requestUrl = requestUrl.replace('{tenantID}', encodeURIComponent(this.client.tenantID));
+  let queryParameters = [];
+  queryParameters.push('api-version=' + encodeURIComponent(this.client.apiVersion));
+  if (queryParameters.length > 0) {
+    requestUrl += '?' + queryParameters.join('&amp;');
+  }
+
+  // Create HTTP transport objects
+  let httpRequest = new WebResource();
+  httpRequest.method = 'POST';
+  httpRequest.url = requestUrl;
+  httpRequest.headers = {};
+  // Set Headers
+  httpRequest.headers['Content-Type'] = 'application/json; charset=utf-8';
+  if (this.client.generateClientRequestId) {
+      httpRequest.headers['x-ms-client-request-id'] = msRestAzure.generateUuid();
+  }
+  if (this.client.acceptLanguage !== undefined &amp;&amp; this.client.acceptLanguage !== null) {
+    httpRequest.headers['accept-language'] = this.client.acceptLanguage;
+  }
+  if(options) {
+    for(let headerName in options['customHeaders']) {
+      if (options['customHeaders'].hasOwnProperty(headerName)) {
+        httpRequest.headers[headerName] = options['customHeaders'][headerName];
+      }
+    }
+  }
+  // Serialize Request
+  let requestContent = null;
+  let requestModel = null;
+  try {
+    if (parameters !== null &amp;&amp; parameters !== undefined) {
+      let requestModelMapper = new client.models['GroupGetMemberGroupsParameters']().mapper();
+      requestModel = client.serialize(requestModelMapper, parameters, 'parameters');
+      requestContent = JSON.stringify(requestModel);
+    }
+  } catch (error) {
+    let serializationError = new Error(`Error "${error.message}" occurred in serializing the ` +
+        `payload - ${JSON.stringify(parameters, null, 2)}.`);
+    return callback(serializationError);
+  }
+  httpRequest.body = requestContent;
+  // Send Request
+  return client.pipeline(httpRequest, (err, response, responseBody) => {
+    if (err) {
+      return callback(err);
+    }
+    let statusCode = response.statusCode;
+    if (statusCode !== 200) {
+      let error = new Error(responseBody);
+      error.statusCode = response.statusCode;
+      error.request = msRest.stripRequest(httpRequest);
+      error.response = msRest.stripResponse(response);
+      if (responseBody === '') responseBody = null;
+      let parsedErrorResponse;
+      try {
+        parsedErrorResponse = JSON.parse(responseBody);
+        if (parsedErrorResponse) {
+          let internalError = null;
+          if (parsedErrorResponse.error) internalError = parsedErrorResponse.error;
+          error.code = internalError ? internalError.code : parsedErrorResponse.code;
+          error.message = internalError ? internalError.message : parsedErrorResponse.message;
+        }
+        if (parsedErrorResponse !== null &amp;&amp; parsedErrorResponse !== undefined) {
+          let resultMapper = new client.models['GraphError']().mapper();
+          error.body = client.deserialize(resultMapper, parsedErrorResponse, 'error.body');
+        }
+      } catch (defaultError) {
+        error.message = `Error "${defaultError.message}" occurred in deserializing the responseBody ` +
+                         `- "${responseBody}" for the default response.`;
+        return callback(error);
+      }
+      return callback(error);
+    }
+    // Create Result
+    let result = null;
+    if (responseBody === '') responseBody = null;
+    // Deserialize Response
+    if (statusCode === 200) {
+      let parsedResponse = null;
+      try {
+        parsedResponse = JSON.parse(responseBody);
+        result = JSON.parse(responseBody);
+        if (parsedResponse !== null &amp;&amp; parsedResponse !== undefined) {
+          let resultMapper = new client.models['GroupGetMemberGroupsResult']().mapper();
+          result = client.deserialize(resultMapper, parsedResponse, 'result');
+        }
+      } catch (error) {
+        let deserializationError = new Error(`Error ${error} occurred in deserializing the responseBody - ${responseBody}`);
+        deserializationError.request = msRest.stripRequest(httpRequest);
+        deserializationError.response = msRest.stripResponse(response);
+        return callback(deserializationError);
+      }
+    }
+
+    return callback(null, result, httpRequest, response);
+  });
+}
+
+/**
+ * Gets a list of groups for the current tenant.
+ *
+ * @param {string} nextLink Next link for the list operation.
+ *
+ * @param {object} [options] Optional Parameters.
+ *
+ * @param {object} [options.customHeaders] Headers that will be added to the
+ * request
+ *
+ * @param {function} callback - The callback.
+ *
+ * @returns {function} callback(err, result, request, response)
+ *
+ *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+ *
+ *                      {object} [result]   - The deserialized result object if an error did not occur.
+ *                      See {@link GroupListResult} for more information.
+ *
+ *                      {object} [request]  - The HTTP Request object if an error did not occur.
+ *
+ *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+ */
+function _listNext(nextLink, options, callback) {
+   /* jshint validthis: true */
+  let client = this.client;
+  if(!callback &amp;&amp; typeof options === 'function') {
+    callback = options;
+    options = null;
+  }
+  if (!callback) {
+    throw new Error('callback cannot be null.');
+  }
+  // Validate
+  try {
+    if (nextLink === null || nextLink === undefined || typeof nextLink.valueOf() !== 'string') {
+      throw new Error('nextLink cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.apiVersion === null || this.client.apiVersion === undefined || typeof this.client.apiVersion.valueOf() !== 'string') {
+      throw new Error('this.client.apiVersion cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.tenantID === null || this.client.tenantID === undefined || typeof this.client.tenantID.valueOf() !== 'string') {
+      throw new Error('this.client.tenantID cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.acceptLanguage !== null &amp;&amp; this.client.acceptLanguage !== undefined &amp;&amp; typeof this.client.acceptLanguage.valueOf() !== 'string') {
+      throw new Error('this.client.acceptLanguage must be of type string.');
+    }
+  } catch (error) {
+    return callback(error);
+  }
+
+  // Construct URL
+  let baseUrl = this.client.baseUri;
+  let requestUrl = baseUrl + (baseUrl.endsWith('/') ? '' : '/') + '{tenantID}/{nextLink}';
+  requestUrl = requestUrl.replace('{nextLink}', nextLink);
+  requestUrl = requestUrl.replace('{tenantID}', encodeURIComponent(this.client.tenantID));
+  let queryParameters = [];
+  queryParameters.push('api-version=' + encodeURIComponent(this.client.apiVersion));
+  if (queryParameters.length > 0) {
+    requestUrl += (requestUrl.indexOf('?') !== -1 ? '&amp;' : '?') + queryParameters.join('&amp;');
+  }
+
+  // Create HTTP transport objects
+  let httpRequest = new WebResource();
+  httpRequest.method = 'GET';
+  httpRequest.url = requestUrl;
+  httpRequest.headers = {};
+  // Set Headers
+  httpRequest.headers['Content-Type'] = 'application/json; charset=utf-8';
+  if (this.client.generateClientRequestId) {
+      httpRequest.headers['x-ms-client-request-id'] = msRestAzure.generateUuid();
+  }
+  if (this.client.acceptLanguage !== undefined &amp;&amp; this.client.acceptLanguage !== null) {
+    httpRequest.headers['accept-language'] = this.client.acceptLanguage;
+  }
+  if(options) {
+    for(let headerName in options['customHeaders']) {
+      if (options['customHeaders'].hasOwnProperty(headerName)) {
+        httpRequest.headers[headerName] = options['customHeaders'][headerName];
+      }
+    }
+  }
+  httpRequest.body = null;
+  // Send Request
+  return client.pipeline(httpRequest, (err, response, responseBody) => {
+    if (err) {
+      return callback(err);
+    }
+    let statusCode = response.statusCode;
+    if (statusCode !== 200) {
+      let error = new Error(responseBody);
+      error.statusCode = response.statusCode;
+      error.request = msRest.stripRequest(httpRequest);
+      error.response = msRest.stripResponse(response);
+      if (responseBody === '') responseBody = null;
+      let parsedErrorResponse;
+      try {
+        parsedErrorResponse = JSON.parse(responseBody);
+        if (parsedErrorResponse) {
+          let internalError = null;
+          if (parsedErrorResponse.error) internalError = parsedErrorResponse.error;
+          error.code = internalError ? internalError.code : parsedErrorResponse.code;
+          error.message = internalError ? internalError.message : parsedErrorResponse.message;
+        }
+        if (parsedErrorResponse !== null &amp;&amp; parsedErrorResponse !== undefined) {
+          let resultMapper = new client.models['GraphError']().mapper();
+          error.body = client.deserialize(resultMapper, parsedErrorResponse, 'error.body');
+        }
+      } catch (defaultError) {
+        error.message = `Error "${defaultError.message}" occurred in deserializing the responseBody ` +
+                         `- "${responseBody}" for the default response.`;
+        return callback(error);
+      }
+      return callback(error);
+    }
+    // Create Result
+    let result = null;
+    if (responseBody === '') responseBody = null;
+    // Deserialize Response
+    if (statusCode === 200) {
+      let parsedResponse = null;
+      try {
+        parsedResponse = JSON.parse(responseBody);
+        result = JSON.parse(responseBody);
+        if (parsedResponse !== null &amp;&amp; parsedResponse !== undefined) {
+          let resultMapper = new client.models['GroupListResult']().mapper();
+          result = client.deserialize(resultMapper, parsedResponse, 'result');
+        }
+      } catch (error) {
+        let deserializationError = new Error(`Error ${error} occurred in deserializing the responseBody - ${responseBody}`);
+        deserializationError.request = msRest.stripRequest(httpRequest);
+        deserializationError.response = msRest.stripResponse(response);
+        return callback(deserializationError);
+      }
+    }
+
+    return callback(null, result, httpRequest, response);
+  });
+}
+
+/**
+ * Gets the members of a group.
+ *
+ * @param {string} nextLink Next link for the list operation.
+ *
+ * @param {object} [options] Optional Parameters.
+ *
+ * @param {object} [options.customHeaders] Headers that will be added to the
+ * request
+ *
+ * @param {function} callback - The callback.
+ *
+ * @returns {function} callback(err, result, request, response)
+ *
+ *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+ *
+ *                      {object} [result]   - The deserialized result object if an error did not occur.
+ *                      See {@link GetObjectsResult} for more information.
+ *
+ *                      {object} [request]  - The HTTP Request object if an error did not occur.
+ *
+ *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+ */
+function _getGroupMembersNext(nextLink, options, callback) {
+   /* jshint validthis: true */
+  let client = this.client;
+  if(!callback &amp;&amp; typeof options === 'function') {
+    callback = options;
+    options = null;
+  }
+  if (!callback) {
+    throw new Error('callback cannot be null.');
+  }
+  // Validate
+  try {
+    if (nextLink === null || nextLink === undefined || typeof nextLink.valueOf() !== 'string') {
+      throw new Error('nextLink cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.apiVersion === null || this.client.apiVersion === undefined || typeof this.client.apiVersion.valueOf() !== 'string') {
+      throw new Error('this.client.apiVersion cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.tenantID === null || this.client.tenantID === undefined || typeof this.client.tenantID.valueOf() !== 'string') {
+      throw new Error('this.client.tenantID cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.acceptLanguage !== null &amp;&amp; this.client.acceptLanguage !== undefined &amp;&amp; typeof this.client.acceptLanguage.valueOf() !== 'string') {
+      throw new Error('this.client.acceptLanguage must be of type string.');
+    }
+  } catch (error) {
+    return callback(error);
+  }
+
+  // Construct URL
+  let baseUrl = this.client.baseUri;
+  let requestUrl = baseUrl + (baseUrl.endsWith('/') ? '' : '/') + '{tenantID}/{nextLink}';
+  requestUrl = requestUrl.replace('{nextLink}', nextLink);
+  requestUrl = requestUrl.replace('{tenantID}', encodeURIComponent(this.client.tenantID));
+  let queryParameters = [];
+  queryParameters.push('api-version=' + encodeURIComponent(this.client.apiVersion));
+  if (queryParameters.length > 0) {
+    requestUrl += (requestUrl.indexOf('?') !== -1 ? '&amp;' : '?') + queryParameters.join('&amp;');
+  }
+
+  // Create HTTP transport objects
+  let httpRequest = new WebResource();
+  httpRequest.method = 'GET';
+  httpRequest.url = requestUrl;
+  httpRequest.headers = {};
+  // Set Headers
+  httpRequest.headers['Content-Type'] = 'application/json; charset=utf-8';
+  if (this.client.generateClientRequestId) {
+      httpRequest.headers['x-ms-client-request-id'] = msRestAzure.generateUuid();
+  }
+  if (this.client.acceptLanguage !== undefined &amp;&amp; this.client.acceptLanguage !== null) {
+    httpRequest.headers['accept-language'] = this.client.acceptLanguage;
+  }
+  if(options) {
+    for(let headerName in options['customHeaders']) {
+      if (options['customHeaders'].hasOwnProperty(headerName)) {
+        httpRequest.headers[headerName] = options['customHeaders'][headerName];
+      }
+    }
+  }
+  httpRequest.body = null;
+  // Send Request
+  return client.pipeline(httpRequest, (err, response, responseBody) => {
+    if (err) {
+      return callback(err);
+    }
+    let statusCode = response.statusCode;
+    if (statusCode !== 200) {
+      let error = new Error(responseBody);
+      error.statusCode = response.statusCode;
+      error.request = msRest.stripRequest(httpRequest);
+      error.response = msRest.stripResponse(response);
+      if (responseBody === '') responseBody = null;
+      let parsedErrorResponse;
+      try {
+        parsedErrorResponse = JSON.parse(responseBody);
+        if (parsedErrorResponse) {
+          let internalError = null;
+          if (parsedErrorResponse.error) internalError = parsedErrorResponse.error;
+          error.code = internalError ? internalError.code : parsedErrorResponse.code;
+          error.message = internalError ? internalError.message : parsedErrorResponse.message;
+        }
+        if (parsedErrorResponse !== null &amp;&amp; parsedErrorResponse !== undefined) {
+          let resultMapper = new client.models['GraphError']().mapper();
+          error.body = client.deserialize(resultMapper, parsedErrorResponse, 'error.body');
+        }
+      } catch (defaultError) {
+        error.message = `Error "${defaultError.message}" occurred in deserializing the responseBody ` +
+                         `- "${responseBody}" for the default response.`;
+        return callback(error);
+      }
+      return callback(error);
+    }
+    // Create Result
+    let result = null;
+    if (responseBody === '') responseBody = null;
+    // Deserialize Response
+    if (statusCode === 200) {
+      let parsedResponse = null;
+      try {
+        parsedResponse = JSON.parse(responseBody);
+        result = JSON.parse(responseBody);
+        if (parsedResponse !== null &amp;&amp; parsedResponse !== undefined) {
+          let resultMapper = new client.models['GetObjectsResult']().mapper();
+          result = client.deserialize(resultMapper, parsedResponse, 'result');
+        }
+      } catch (error) {
+        let deserializationError = new Error(`Error ${error} occurred in deserializing the responseBody - ${responseBody}`);
+        deserializationError.request = msRest.stripRequest(httpRequest);
+        deserializationError.response = msRest.stripResponse(response);
+        return callback(deserializationError);
+      }
+    }
+
+    return callback(null, result, httpRequest, response);
+  });
+}
+
+/** Class representing a Groups. */
+class Groups {
+  /**
+   * Create a Groups.
+   * @param {GraphRbacManagementClient} client Reference to the service client.
+   */
+  constructor(client) {
+    this.client = client;
+    this._isMemberOf = _isMemberOf;
+    this._removeMember = _removeMember;
+    this._addMember = _addMember;
+    this._deleteMethod = _deleteMethod;
+    this._create = _create;
+    this._list = _list;
+    this._getGroupMembers = _getGroupMembers;
+    this._get = _get;
+    this._getMemberGroups = _getMemberGroups;
+    this._listNext = _listNext;
+    this._getGroupMembersNext = _getGroupMembersNext;
+  }
+
+  /**
+   * Checks whether the specified user, group, contact, or service principal is a
+   * direct or transitive member of the specified group.
+   *
+   * @param {object} parameters The check group membership parameters.
+   *
+   * @param {string} parameters.groupId The object ID of the group to check.
+   *
+   * @param {string} parameters.memberId The object ID of the contact, group,
+   * user, or service principal to check for membership in the specified group.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @returns {Promise} A promise is returned
+   *
+   * @resolve {HttpOperationResponse&lt;CheckGroupMembershipResult>} - The deserialized result object.
+   *
+   * @reject {Error} - The error object.
+   */
+  isMemberOfWithHttpOperationResponse(parameters, options) {
+    let client = this.client;
+    let self = this;
+    return new Promise((resolve, reject) => {
+      self._isMemberOf(parameters, options, (err, result, request, response) => {
+        let httpOperationResponse = new msRest.HttpOperationResponse(request, response);
+        httpOperationResponse.body = result;
+        if (err) { reject(err); }
+        else { resolve(httpOperationResponse); }
+        return;
+      });
+    });
+  }
+
+  /**
+   * Checks whether the specified user, group, contact, or service principal is a
+   * direct or transitive member of the specified group.
+   *
+   * @param {object} parameters The check group membership parameters.
+   *
+   * @param {string} parameters.groupId The object ID of the group to check.
+   *
+   * @param {string} parameters.memberId The object ID of the contact, group,
+   * user, or service principal to check for membership in the specified group.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @param {function} [optionalCallback] - The optional callback.
+   *
+   * @returns {function|Promise} If a callback was passed as the last parameter
+   * then it returns the callback else returns a Promise.
+   *
+   * {Promise} A promise is returned
+   *
+   *                      @resolve {CheckGroupMembershipResult} - The deserialized result object.
+   *
+   *                      @reject {Error} - The error object.
+   *
+   * {function} optionalCallback(err, result, request, response)
+   *
+   *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+   *
+   *                      {object} [result]   - The deserialized result object if an error did not occur.
+   *                      See {@link CheckGroupMembershipResult} for more
+   *                      information.
+   *
+   *                      {object} [request]  - The HTTP Request object if an error did not occur.
+   *
+   *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+   */
+  isMemberOf(parameters, options, optionalCallback) {
+    let client = this.client;
+    let self = this;
+    if (!optionalCallback &amp;&amp; typeof options === 'function') {
+      optionalCallback = options;
+      options = null;
+    }
+    if (!optionalCallback) {
+      return new Promise((resolve, reject) => {
+        self._isMemberOf(parameters, options, (err, result, request, response) => {
+          if (err) { reject(err); }
+          else { resolve(result); }
+          return;
+        });
+      });
+    } else {
+      return self._isMemberOf(parameters, options, optionalCallback);
+    }
+  }
+
+  /**
+   * Remove a member from a group.
+   *
+   * @param {string} groupObjectId The object ID of the group from which to
+   * remove the member.
+   *
+   * @param {string} memberObjectId Member object id
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @returns {Promise} A promise is returned
+   *
+   * @resolve {HttpOperationResponse&lt;null>} - The deserialized result object.
+   *
+   * @reject {Error} - The error object.
+   */
+  removeMemberWithHttpOperationResponse(groupObjectId, memberObjectId, options) {
+    let client = this.client;
+    let self = this;
+    return new Promise((resolve, reject) => {
+      self._removeMember(groupObjectId, memberObjectId, options, (err, result, request, response) => {
+        let httpOperationResponse = new msRest.HttpOperationResponse(request, response);
+        httpOperationResponse.body = result;
+        if (err) { reject(err); }
+        else { resolve(httpOperationResponse); }
+        return;
+      });
+    });
+  }
+
+  /**
+   * Remove a member from a group.
+   *
+   * @param {string} groupObjectId The object ID of the group from which to
+   * remove the member.
+   *
+   * @param {string} memberObjectId Member object id
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @param {function} [optionalCallback] - The optional callback.
+   *
+   * @returns {function|Promise} If a callback was passed as the last parameter
+   * then it returns the callback else returns a Promise.
+   *
+   * {Promise} A promise is returned
+   *
+   *                      @resolve {null} - The deserialized result object.
+   *
+   *                      @reject {Error} - The error object.
+   *
+   * {function} optionalCallback(err, result, request, response)
+   *
+   *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+   *
+   *                      {null} [result]   - The deserialized result object if an error did not occur.
+   *
+   *                      {object} [request]  - The HTTP Request object if an error did not occur.
+   *
+   *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+   */
+  removeMember(groupObjectId, memberObjectId, options, optionalCallback) {
+    let client = this.client;
+    let self = this;
+    if (!optionalCallback &amp;&amp; typeof options === 'function') {
+      optionalCallback = options;
+      options = null;
+    }
+    if (!optionalCallback) {
+      return new Promise((resolve, reject) => {
+        self._removeMember(groupObjectId, memberObjectId, options, (err, result, request, response) => {
+          if (err) { reject(err); }
+          else { resolve(result); }
+          return;
+        });
+      });
+    } else {
+      return self._removeMember(groupObjectId, memberObjectId, options, optionalCallback);
+    }
+  }
+
+  /**
+   * Add a member to a group.
+   *
+   * @param {string} groupObjectId The object ID of the group to which to add the
+   * member.
+   *
+   * @param {string} url A member object URL, such as
+   * "https://graph.windows.net/0b1f9851-1bf0-433f-aec3-cb9272f093dc/directoryObjects/f260bbc4-c254-447b-94cf-293b5ec434dd",
+   * where "0b1f9851-1bf0-433f-aec3-cb9272f093dc" is the tenantId and
+   * "f260bbc4-c254-447b-94cf-293b5ec434dd" is the objectId of the member (user,
+   * application, servicePrincipal, group) to be added.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @returns {Promise} A promise is returned
+   *
+   * @resolve {HttpOperationResponse&lt;null>} - The deserialized result object.
+   *
+   * @reject {Error} - The error object.
+   */
+  addMemberWithHttpOperationResponse(groupObjectId, url, options) {
+    let client = this.client;
+    let self = this;
+    return new Promise((resolve, reject) => {
+      self._addMember(groupObjectId, url, options, (err, result, request, response) => {
+        let httpOperationResponse = new msRest.HttpOperationResponse(request, response);
+        httpOperationResponse.body = result;
+        if (err) { reject(err); }
+        else { resolve(httpOperationResponse); }
+        return;
+      });
+    });
+  }
+
+  /**
+   * Add a member to a group.
+   *
+   * @param {string} groupObjectId The object ID of the group to which to add the
+   * member.
+   *
+   * @param {string} url A member object URL, such as
+   * "https://graph.windows.net/0b1f9851-1bf0-433f-aec3-cb9272f093dc/directoryObjects/f260bbc4-c254-447b-94cf-293b5ec434dd",
+   * where "0b1f9851-1bf0-433f-aec3-cb9272f093dc" is the tenantId and
+   * "f260bbc4-c254-447b-94cf-293b5ec434dd" is the objectId of the member (user,
+   * application, servicePrincipal, group) to be added.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @param {function} [optionalCallback] - The optional callback.
+   *
+   * @returns {function|Promise} If a callback was passed as the last parameter
+   * then it returns the callback else returns a Promise.
+   *
+   * {Promise} A promise is returned
+   *
+   *                      @resolve {null} - The deserialized result object.
+   *
+   *                      @reject {Error} - The error object.
+   *
+   * {function} optionalCallback(err, result, request, response)
+   *
+   *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+   *
+   *                      {null} [result]   - The deserialized result object if an error did not occur.
+   *
+   *                      {object} [request]  - The HTTP Request object if an error did not occur.
+   *
+   *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+   */
+  addMember(groupObjectId, url, options, optionalCallback) {
+    let client = this.client;
+    let self = this;
+    if (!optionalCallback &amp;&amp; typeof options === 'function') {
+      optionalCallback = options;
+      options = null;
+    }
+    if (!optionalCallback) {
+      return new Promise((resolve, reject) => {
+        self._addMember(groupObjectId, url, options, (err, result, request, response) => {
+          if (err) { reject(err); }
+          else { resolve(result); }
+          return;
+        });
+      });
+    } else {
+      return self._addMember(groupObjectId, url, options, optionalCallback);
+    }
+  }
+
+  /**
+   * Delete a group from the directory.
+   *
+   * @param {string} groupObjectId The object ID of the group to delete.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @returns {Promise} A promise is returned
+   *
+   * @resolve {HttpOperationResponse&lt;null>} - The deserialized result object.
+   *
+   * @reject {Error} - The error object.
+   */
+  deleteMethodWithHttpOperationResponse(groupObjectId, options) {
+    let client = this.client;
+    let self = this;
+    return new Promise((resolve, reject) => {
+      self._deleteMethod(groupObjectId, options, (err, result, request, response) => {
+        let httpOperationResponse = new msRest.HttpOperationResponse(request, response);
+        httpOperationResponse.body = result;
+        if (err) { reject(err); }
+        else { resolve(httpOperationResponse); }
+        return;
+      });
+    });
+  }
+
+  /**
+   * Delete a group from the directory.
+   *
+   * @param {string} groupObjectId The object ID of the group to delete.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @param {function} [optionalCallback] - The optional callback.
+   *
+   * @returns {function|Promise} If a callback was passed as the last parameter
+   * then it returns the callback else returns a Promise.
+   *
+   * {Promise} A promise is returned
+   *
+   *                      @resolve {null} - The deserialized result object.
+   *
+   *                      @reject {Error} - The error object.
+   *
+   * {function} optionalCallback(err, result, request, response)
+   *
+   *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+   *
+   *                      {null} [result]   - The deserialized result object if an error did not occur.
+   *
+   *                      {object} [request]  - The HTTP Request object if an error did not occur.
+   *
+   *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+   */
+  deleteMethod(groupObjectId, options, optionalCallback) {
+    let client = this.client;
+    let self = this;
+    if (!optionalCallback &amp;&amp; typeof options === 'function') {
+      optionalCallback = options;
+      options = null;
+    }
+    if (!optionalCallback) {
+      return new Promise((resolve, reject) => {
+        self._deleteMethod(groupObjectId, options, (err, result, request, response) => {
+          if (err) { reject(err); }
+          else { resolve(result); }
+          return;
+        });
+      });
+    } else {
+      return self._deleteMethod(groupObjectId, options, optionalCallback);
+    }
+  }
+
+  /**
+   * Create a group in the directory.
+   *
+   * @param {object} parameters The parameters for the group to create.
+   *
+   * @param {string} parameters.displayName Group display name
+   *
+   * @param {string} parameters.mailNickname Mail nickname
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @returns {Promise} A promise is returned
+   *
+   * @resolve {HttpOperationResponse&lt;ADGroup>} - The deserialized result object.
+   *
+   * @reject {Error} - The error object.
+   */
+  createWithHttpOperationResponse(parameters, options) {
+    let client = this.client;
+    let self = this;
+    return new Promise((resolve, reject) => {
+      self._create(parameters, options, (err, result, request, response) => {
+        let httpOperationResponse = new msRest.HttpOperationResponse(request, response);
+        httpOperationResponse.body = result;
+        if (err) { reject(err); }
+        else { resolve(httpOperationResponse); }
+        return;
+      });
+    });
+  }
+
+  /**
+   * Create a group in the directory.
+   *
+   * @param {object} parameters The parameters for the group to create.
+   *
+   * @param {string} parameters.displayName Group display name
+   *
+   * @param {string} parameters.mailNickname Mail nickname
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @param {function} [optionalCallback] - The optional callback.
+   *
+   * @returns {function|Promise} If a callback was passed as the last parameter
+   * then it returns the callback else returns a Promise.
+   *
+   * {Promise} A promise is returned
+   *
+   *                      @resolve {ADGroup} - The deserialized result object.
+   *
+   *                      @reject {Error} - The error object.
+   *
+   * {function} optionalCallback(err, result, request, response)
+   *
+   *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+   *
+   *                      {object} [result]   - The deserialized result object if an error did not occur.
+   *                      See {@link ADGroup} for more information.
+   *
+   *                      {object} [request]  - The HTTP Request object if an error did not occur.
+   *
+   *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+   */
+  create(parameters, options, optionalCallback) {
+    let client = this.client;
+    let self = this;
+    if (!optionalCallback &amp;&amp; typeof options === 'function') {
+      optionalCallback = options;
+      options = null;
+    }
+    if (!optionalCallback) {
+      return new Promise((resolve, reject) => {
+        self._create(parameters, options, (err, result, request, response) => {
+          if (err) { reject(err); }
+          else { resolve(result); }
+          return;
+        });
+      });
+    } else {
+      return self._create(parameters, options, optionalCallback);
+    }
+  }
+
+  /**
+   * Gets list of groups for the current tenant.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {string} [options.filter] The filter to apply to the operation.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @returns {Promise} A promise is returned
+   *
+   * @resolve {HttpOperationResponse&lt;GroupListResult>} - The deserialized result object.
+   *
+   * @reject {Error} - The error object.
+   */
+  listWithHttpOperationResponse(options) {
+    let client = this.client;
+    let self = this;
+    return new Promise((resolve, reject) => {
+      self._list(options, (err, result, request, response) => {
+        let httpOperationResponse = new msRest.HttpOperationResponse(request, response);
+        httpOperationResponse.body = result;
+        if (err) { reject(err); }
+        else { resolve(httpOperationResponse); }
+        return;
+      });
+    });
+  }
+
+  /**
+   * Gets list of groups for the current tenant.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {string} [options.filter] The filter to apply to the operation.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @param {function} [optionalCallback] - The optional callback.
+   *
+   * @returns {function|Promise} If a callback was passed as the last parameter
+   * then it returns the callback else returns a Promise.
+   *
+   * {Promise} A promise is returned
+   *
+   *                      @resolve {GroupListResult} - The deserialized result object.
+   *
+   *                      @reject {Error} - The error object.
+   *
+   * {function} optionalCallback(err, result, request, response)
+   *
+   *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+   *
+   *                      {object} [result]   - The deserialized result object if an error did not occur.
+   *                      See {@link GroupListResult} for more information.
+   *
+   *                      {object} [request]  - The HTTP Request object if an error did not occur.
+   *
+   *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+   */
+  list(options, optionalCallback) {
+    let client = this.client;
+    let self = this;
+    if (!optionalCallback &amp;&amp; typeof options === 'function') {
+      optionalCallback = options;
+      options = null;
+    }
+    if (!optionalCallback) {
+      return new Promise((resolve, reject) => {
+        self._list(options, (err, result, request, response) => {
+          if (err) { reject(err); }
+          else { resolve(result); }
+          return;
+        });
+      });
+    } else {
+      return self._list(options, optionalCallback);
+    }
+  }
+
+  /**
+   * Gets the members of a group.
+   *
+   * @param {string} objectId The object ID of the group whose members should be
+   * retrieved.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @returns {Promise} A promise is returned
+   *
+   * @resolve {HttpOperationResponse&lt;GetObjectsResult>} - The deserialized result object.
+   *
+   * @reject {Error} - The error object.
+   */
+  getGroupMembersWithHttpOperationResponse(objectId, options) {
+    let client = this.client;
+    let self = this;
+    return new Promise((resolve, reject) => {
+      self._getGroupMembers(objectId, options, (err, result, request, response) => {
+        let httpOperationResponse = new msRest.HttpOperationResponse(request, response);
+        httpOperationResponse.body = result;
+        if (err) { reject(err); }
+        else { resolve(httpOperationResponse); }
+        return;
+      });
+    });
+  }
+
+  /**
+   * Gets the members of a group.
+   *
+   * @param {string} objectId The object ID of the group whose members should be
+   * retrieved.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @param {function} [optionalCallback] - The optional callback.
+   *
+   * @returns {function|Promise} If a callback was passed as the last parameter
+   * then it returns the callback else returns a Promise.
+   *
+   * {Promise} A promise is returned
+   *
+   *                      @resolve {GetObjectsResult} - The deserialized result object.
+   *
+   *                      @reject {Error} - The error object.
+   *
+   * {function} optionalCallback(err, result, request, response)
+   *
+   *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+   *
+   *                      {object} [result]   - The deserialized result object if an error did not occur.
+   *                      See {@link GetObjectsResult} for more information.
+   *
+   *                      {object} [request]  - The HTTP Request object if an error did not occur.
+   *
+   *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+   */
+  getGroupMembers(objectId, options, optionalCallback) {
+    let client = this.client;
+    let self = this;
+    if (!optionalCallback &amp;&amp; typeof options === 'function') {
+      optionalCallback = options;
+      options = null;
+    }
+    if (!optionalCallback) {
+      return new Promise((resolve, reject) => {
+        self._getGroupMembers(objectId, options, (err, result, request, response) => {
+          if (err) { reject(err); }
+          else { resolve(result); }
+          return;
+        });
+      });
+    } else {
+      return self._getGroupMembers(objectId, options, optionalCallback);
+    }
+  }
+
+  /**
+   * Gets group information from the directory.
+   *
+   * @param {string} objectId The object ID of the user for which to get group
+   * information.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @returns {Promise} A promise is returned
+   *
+   * @resolve {HttpOperationResponse&lt;ADGroup>} - The deserialized result object.
+   *
+   * @reject {Error} - The error object.
+   */
+  getWithHttpOperationResponse(objectId, options) {
+    let client = this.client;
+    let self = this;
+    return new Promise((resolve, reject) => {
+      self._get(objectId, options, (err, result, request, response) => {
+        let httpOperationResponse = new msRest.HttpOperationResponse(request, response);
+        httpOperationResponse.body = result;
+        if (err) { reject(err); }
+        else { resolve(httpOperationResponse); }
+        return;
+      });
+    });
+  }
+
+  /**
+   * Gets group information from the directory.
+   *
+   * @param {string} objectId The object ID of the user for which to get group
+   * information.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @param {function} [optionalCallback] - The optional callback.
+   *
+   * @returns {function|Promise} If a callback was passed as the last parameter
+   * then it returns the callback else returns a Promise.
+   *
+   * {Promise} A promise is returned
+   *
+   *                      @resolve {ADGroup} - The deserialized result object.
+   *
+   *                      @reject {Error} - The error object.
+   *
+   * {function} optionalCallback(err, result, request, response)
+   *
+   *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+   *
+   *                      {object} [result]   - The deserialized result object if an error did not occur.
+   *                      See {@link ADGroup} for more information.
+   *
+   *                      {object} [request]  - The HTTP Request object if an error did not occur.
+   *
+   *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+   */
+  get(objectId, options, optionalCallback) {
+    let client = this.client;
+    let self = this;
+    if (!optionalCallback &amp;&amp; typeof options === 'function') {
+      optionalCallback = options;
+      options = null;
+    }
+    if (!optionalCallback) {
+      return new Promise((resolve, reject) => {
+        self._get(objectId, options, (err, result, request, response) => {
+          if (err) { reject(err); }
+          else { resolve(result); }
+          return;
+        });
+      });
+    } else {
+      return self._get(objectId, options, optionalCallback);
+    }
+  }
+
+  /**
+   * Gets a collection of object IDs of groups of which the specified group is a
+   * member.
+   *
+   * @param {string} objectId The object ID of the group for which to get group
+   * membership.
+   *
+   * @param {boolean} securityEnabledOnly If true, only membership in
+   * security-enabled groups should be checked. Otherwise, membership in all
+   * groups should be checked.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @returns {Promise} A promise is returned
+   *
+   * @resolve {HttpOperationResponse&lt;GroupGetMemberGroupsResult>} - The deserialized result object.
+   *
+   * @reject {Error} - The error object.
+   */
+  getMemberGroupsWithHttpOperationResponse(objectId, securityEnabledOnly, options) {
+    let client = this.client;
+    let self = this;
+    return new Promise((resolve, reject) => {
+      self._getMemberGroups(objectId, securityEnabledOnly, options, (err, result, request, response) => {
+        let httpOperationResponse = new msRest.HttpOperationResponse(request, response);
+        httpOperationResponse.body = result;
+        if (err) { reject(err); }
+        else { resolve(httpOperationResponse); }
+        return;
+      });
+    });
+  }
+
+  /**
+   * Gets a collection of object IDs of groups of which the specified group is a
+   * member.
+   *
+   * @param {string} objectId The object ID of the group for which to get group
+   * membership.
+   *
+   * @param {boolean} securityEnabledOnly If true, only membership in
+   * security-enabled groups should be checked. Otherwise, membership in all
+   * groups should be checked.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @param {function} [optionalCallback] - The optional callback.
+   *
+   * @returns {function|Promise} If a callback was passed as the last parameter
+   * then it returns the callback else returns a Promise.
+   *
+   * {Promise} A promise is returned
+   *
+   *                      @resolve {GroupGetMemberGroupsResult} - The deserialized result object.
+   *
+   *                      @reject {Error} - The error object.
+   *
+   * {function} optionalCallback(err, result, request, response)
+   *
+   *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+   *
+   *                      {object} [result]   - The deserialized result object if an error did not occur.
+   *                      See {@link GroupGetMemberGroupsResult} for more
+   *                      information.
+   *
+   *                      {object} [request]  - The HTTP Request object if an error did not occur.
+   *
+   *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+   */
+  getMemberGroups(objectId, securityEnabledOnly, options, optionalCallback) {
+    let client = this.client;
+    let self = this;
+    if (!optionalCallback &amp;&amp; typeof options === 'function') {
+      optionalCallback = options;
+      options = null;
+    }
+    if (!optionalCallback) {
+      return new Promise((resolve, reject) => {
+        self._getMemberGroups(objectId, securityEnabledOnly, options, (err, result, request, response) => {
+          if (err) { reject(err); }
+          else { resolve(result); }
+          return;
+        });
+      });
+    } else {
+      return self._getMemberGroups(objectId, securityEnabledOnly, options, optionalCallback);
+    }
+  }
+
+  /**
+   * Gets a list of groups for the current tenant.
+   *
+   * @param {string} nextLink Next link for the list operation.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @returns {Promise} A promise is returned
+   *
+   * @resolve {HttpOperationResponse&lt;GroupListResult>} - The deserialized result object.
+   *
+   * @reject {Error} - The error object.
+   */
+  listNextWithHttpOperationResponse(nextLink, options) {
+    let client = this.client;
+    let self = this;
+    return new Promise((resolve, reject) => {
+      self._listNext(nextLink, options, (err, result, request, response) => {
+        let httpOperationResponse = new msRest.HttpOperationResponse(request, response);
+        httpOperationResponse.body = result;
+        if (err) { reject(err); }
+        else { resolve(httpOperationResponse); }
+        return;
+      });
+    });
+  }
+
+  /**
+   * Gets a list of groups for the current tenant.
+   *
+   * @param {string} nextLink Next link for the list operation.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @param {function} [optionalCallback] - The optional callback.
+   *
+   * @returns {function|Promise} If a callback was passed as the last parameter
+   * then it returns the callback else returns a Promise.
+   *
+   * {Promise} A promise is returned
+   *
+   *                      @resolve {GroupListResult} - The deserialized result object.
+   *
+   *                      @reject {Error} - The error object.
+   *
+   * {function} optionalCallback(err, result, request, response)
+   *
+   *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+   *
+   *                      {object} [result]   - The deserialized result object if an error did not occur.
+   *                      See {@link GroupListResult} for more information.
+   *
+   *                      {object} [request]  - The HTTP Request object if an error did not occur.
+   *
+   *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+   */
+  listNext(nextLink, options, optionalCallback) {
+    let client = this.client;
+    let self = this;
+    if (!optionalCallback &amp;&amp; typeof options === 'function') {
+      optionalCallback = options;
+      options = null;
+    }
+    if (!optionalCallback) {
+      return new Promise((resolve, reject) => {
+        self._listNext(nextLink, options, (err, result, request, response) => {
+          if (err) { reject(err); }
+          else { resolve(result); }
+          return;
+        });
+      });
+    } else {
+      return self._listNext(nextLink, options, optionalCallback);
+    }
+  }
+
+  /**
+   * Gets the members of a group.
+   *
+   * @param {string} nextLink Next link for the list operation.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @returns {Promise} A promise is returned
+   *
+   * @resolve {HttpOperationResponse&lt;GetObjectsResult>} - The deserialized result object.
+   *
+   * @reject {Error} - The error object.
+   */
+  getGroupMembersNextWithHttpOperationResponse(nextLink, options) {
+    let client = this.client;
+    let self = this;
+    return new Promise((resolve, reject) => {
+      self._getGroupMembersNext(nextLink, options, (err, result, request, response) => {
+        let httpOperationResponse = new msRest.HttpOperationResponse(request, response);
+        httpOperationResponse.body = result;
+        if (err) { reject(err); }
+        else { resolve(httpOperationResponse); }
+        return;
+      });
+    });
+  }
+
+  /**
+   * Gets the members of a group.
+   *
+   * @param {string} nextLink Next link for the list operation.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @param {function} [optionalCallback] - The optional callback.
+   *
+   * @returns {function|Promise} If a callback was passed as the last parameter
+   * then it returns the callback else returns a Promise.
+   *
+   * {Promise} A promise is returned
+   *
+   *                      @resolve {GetObjectsResult} - The deserialized result object.
+   *
+   *                      @reject {Error} - The error object.
+   *
+   * {function} optionalCallback(err, result, request, response)
+   *
+   *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+   *
+   *                      {object} [result]   - The deserialized result object if an error did not occur.
+   *                      See {@link GetObjectsResult} for more information.
+   *
+   *                      {object} [request]  - The HTTP Request object if an error did not occur.
+   *
+   *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+   */
+  getGroupMembersNext(nextLink, options, optionalCallback) {
+    let client = this.client;
+    let self = this;
+    if (!optionalCallback &amp;&amp; typeof options === 'function') {
+      optionalCallback = options;
+      options = null;
+    }
+    if (!optionalCallback) {
+      return new Promise((resolve, reject) => {
+        self._getGroupMembersNext(nextLink, options, (err, result, request, response) => {
+          if (err) { reject(err); }
+          else { resolve(result); }
+          return;
+        });
+      });
+    } else {
+      return self._getGroupMembersNext(nextLink, options, optionalCallback);
+    }
+  }
+
+}
+
+module.exports = Groups;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Thu Nov 09 2017 11:15:04 GMT-0800 (PST) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="../../scripts/linenumber.js"></script>
+</body>
+</html>

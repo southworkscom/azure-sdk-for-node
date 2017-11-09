@@ -1,0 +1,1597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>operations/service.js - Documentation</title>
+    <meta name="viewport" content="initial-scale=.75">
+    <script src="../../scripts/prettify/prettify.js"></script>
+    <script src="../../scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="../../styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="../../styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><span><a href="../../index.html">Home</a> <span class="github-short">| <a href="https://github.com/azure/azure-sdk-for-node.git">GitHub</a></span></span></h2><h3>Classes</h3><ul><li><a href="Application.html">Application</a><ul class='methods'><li data-type='method'><a href="Application.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="Application.html#deleteMethodWithHttpOperationResponse">deleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="Application.html#get">get</a></li><li data-type='method'><a href="Application.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="Application.html#list">list</a></li><li data-type='method'><a href="Application.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li><li data-type='method'><a href="Application.html#patch">patch</a></li><li data-type='method'><a href="Application.html#patchWithHttpOperationResponse">patchWithHttpOperationResponse</a></li><li data-type='method'><a href="Application.html#put">put</a></li><li data-type='method'><a href="Application.html#putWithHttpOperationResponse">putWithHttpOperationResponse</a></li></ul></li><li><a href="ApplicationHealthPolicy.html">ApplicationHealthPolicy</a><ul class='methods'><li data-type='method'><a href="ApplicationHealthPolicy.html#mapper">mapper</a></li></ul></li><li><a href="ApplicationMetricDescription.html">ApplicationMetricDescription</a><ul class='methods'><li data-type='method'><a href="ApplicationMetricDescription.html#mapper">mapper</a></li></ul></li><li><a href="ApplicationParameter.html">ApplicationParameter</a><ul class='methods'><li data-type='method'><a href="ApplicationParameter.html#mapper">mapper</a></li></ul></li><li><a href="ApplicationResource.html">ApplicationResource</a><ul class='methods'><li data-type='method'><a href="ApplicationResource.html#mapper">mapper</a></li></ul></li><li><a href="ApplicationResourceList.html">ApplicationResourceList</a><ul class='methods'><li data-type='method'><a href="ApplicationResourceList.html#mapper">mapper</a></li></ul></li><li><a href="ApplicationResourceUpdate.html">ApplicationResourceUpdate</a><ul class='methods'><li data-type='method'><a href="ApplicationResourceUpdate.html#mapper">mapper</a></li></ul></li><li><a href="ApplicationType.html">ApplicationType</a><ul class='methods'><li data-type='method'><a href="ApplicationType.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="ApplicationType.html#deleteMethodWithHttpOperationResponse">deleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="ApplicationType.html#get">get</a></li><li data-type='method'><a href="ApplicationType.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="ApplicationType.html#list">list</a></li><li data-type='method'><a href="ApplicationType.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li><li data-type='method'><a href="ApplicationType.html#patch">patch</a></li><li data-type='method'><a href="ApplicationType.html#patchWithHttpOperationResponse">patchWithHttpOperationResponse</a></li><li data-type='method'><a href="ApplicationType.html#put">put</a></li><li data-type='method'><a href="ApplicationType.html#putWithHttpOperationResponse">putWithHttpOperationResponse</a></li></ul></li><li><a href="ApplicationTypeResource.html">ApplicationTypeResource</a><ul class='methods'><li data-type='method'><a href="ApplicationTypeResource.html#mapper">mapper</a></li></ul></li><li><a href="ApplicationTypeResourceList.html">ApplicationTypeResourceList</a><ul class='methods'><li data-type='method'><a href="ApplicationTypeResourceList.html#mapper">mapper</a></li></ul></li><li><a href="ApplicationUpgradePolicy.html">ApplicationUpgradePolicy</a><ul class='methods'><li data-type='method'><a href="ApplicationUpgradePolicy.html#mapper">mapper</a></li></ul></li><li><a href="AvailableOperationDisplay.html">AvailableOperationDisplay</a><ul class='methods'><li data-type='method'><a href="AvailableOperationDisplay.html#mapper">mapper</a></li></ul></li><li><a href="AzureActiveDirectory.html">AzureActiveDirectory</a><ul class='methods'><li data-type='method'><a href="AzureActiveDirectory.html#mapper">mapper</a></li></ul></li><li><a href="CertificateDescription.html">CertificateDescription</a><ul class='methods'><li data-type='method'><a href="CertificateDescription.html#mapper">mapper</a></li></ul></li><li><a href="ClientCertificateCommonName.html">ClientCertificateCommonName</a><ul class='methods'><li data-type='method'><a href="ClientCertificateCommonName.html#mapper">mapper</a></li></ul></li><li><a href="ClientCertificateThumbprint.html">ClientCertificateThumbprint</a><ul class='methods'><li data-type='method'><a href="ClientCertificateThumbprint.html#mapper">mapper</a></li></ul></li><li><a href="Cluster.html">Cluster</a><ul class='methods'><li data-type='method'><a href="Cluster.html#mapper">mapper</a></li></ul></li><li><a href="ClusterCodeVersionsListResult.html">ClusterCodeVersionsListResult</a><ul class='methods'><li data-type='method'><a href="ClusterCodeVersionsListResult.html#mapper">mapper</a></li></ul></li><li><a href="ClusterCodeVersionsResult.html">ClusterCodeVersionsResult</a><ul class='methods'><li data-type='method'><a href="ClusterCodeVersionsResult.html#mapper">mapper</a></li></ul></li><li><a href="ClusterHealthPolicy.html">ClusterHealthPolicy</a><ul class='methods'><li data-type='method'><a href="ClusterHealthPolicy.html#mapper">mapper</a></li></ul></li><li><a href="ClusterListResult.html">ClusterListResult</a><ul class='methods'><li data-type='method'><a href="ClusterListResult.html#mapper">mapper</a></li></ul></li><li><a href="Clusters.html">Clusters</a><ul class='methods'><li data-type='method'><a href="Clusters.html#beginCreate">beginCreate</a></li><li data-type='method'><a href="Clusters.html#beginCreateWithHttpOperationResponse">beginCreateWithHttpOperationResponse</a></li><li data-type='method'><a href="Clusters.html#beginUpdate">beginUpdate</a></li><li data-type='method'><a href="Clusters.html#beginUpdateWithHttpOperationResponse">beginUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="Clusters.html#create">create</a></li><li data-type='method'><a href="Clusters.html#createWithHttpOperationResponse">createWithHttpOperationResponse</a></li><li data-type='method'><a href="Clusters.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="Clusters.html#deleteMethodWithHttpOperationResponse">deleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="Clusters.html#get">get</a></li><li data-type='method'><a href="Clusters.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="Clusters.html#list">list</a></li><li data-type='method'><a href="Clusters.html#listByResourceGroup">listByResourceGroup</a></li><li data-type='method'><a href="Clusters.html#listByResourceGroupWithHttpOperationResponse">listByResourceGroupWithHttpOperationResponse</a></li><li data-type='method'><a href="Clusters.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li><li data-type='method'><a href="Clusters.html#update">update</a></li><li data-type='method'><a href="Clusters.html#updateWithHttpOperationResponse">updateWithHttpOperationResponse</a></li></ul></li><li><a href="ClusterUpdateParameters.html">ClusterUpdateParameters</a><ul class='methods'><li data-type='method'><a href="ClusterUpdateParameters.html#mapper">mapper</a></li></ul></li><li><a href="ClusterUpgradeDeltaHealthPolicy.html">ClusterUpgradeDeltaHealthPolicy</a><ul class='methods'><li data-type='method'><a href="ClusterUpgradeDeltaHealthPolicy.html#mapper">mapper</a></li></ul></li><li><a href="ClusterUpgradePolicy.html">ClusterUpgradePolicy</a><ul class='methods'><li data-type='method'><a href="ClusterUpgradePolicy.html#mapper">mapper</a></li></ul></li><li><a href="ClusterVersionDetails.html">ClusterVersionDetails</a><ul class='methods'><li data-type='method'><a href="ClusterVersionDetails.html#mapper">mapper</a></li></ul></li><li><a href="ClusterVersions.html">ClusterVersions</a><ul class='methods'><li data-type='method'><a href="ClusterVersions.html#get">get</a></li><li data-type='method'><a href="ClusterVersions.html#getByEnvironment">getByEnvironment</a></li><li data-type='method'><a href="ClusterVersions.html#getByEnvironmentWithHttpOperationResponse">getByEnvironmentWithHttpOperationResponse</a></li><li data-type='method'><a href="ClusterVersions.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="ClusterVersions.html#list">list</a></li><li data-type='method'><a href="ClusterVersions.html#listByEnvironment">listByEnvironment</a></li><li data-type='method'><a href="ClusterVersions.html#listByEnvironmentWithHttpOperationResponse">listByEnvironmentWithHttpOperationResponse</a></li><li data-type='method'><a href="ClusterVersions.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li></ul></li><li><a href="DiagnosticsStorageAccountConfig.html">DiagnosticsStorageAccountConfig</a><ul class='methods'><li data-type='method'><a href="DiagnosticsStorageAccountConfig.html#mapper">mapper</a></li></ul></li><li><a href="EndpointRangeDescription.html">EndpointRangeDescription</a><ul class='methods'><li data-type='method'><a href="EndpointRangeDescription.html#mapper">mapper</a></li></ul></li><li><a href="ErrorModel.html">ErrorModel</a><ul class='methods'><li data-type='method'><a href="ErrorModel.html#mapper">mapper</a></li></ul></li><li><a href="NamedPartitionSchemeDescription.html">NamedPartitionSchemeDescription</a><ul class='methods'><li data-type='method'><a href="NamedPartitionSchemeDescription.html#mapper">mapper</a></li></ul></li><li><a href="NodeTypeDescription.html">NodeTypeDescription</a><ul class='methods'><li data-type='method'><a href="NodeTypeDescription.html#mapper">mapper</a></li></ul></li><li><a href="OperationListResult.html">OperationListResult</a><ul class='methods'><li data-type='method'><a href="OperationListResult.html#mapper">mapper</a></li></ul></li><li><a href="OperationResult.html">OperationResult</a><ul class='methods'><li data-type='method'><a href="OperationResult.html#mapper">mapper</a></li></ul></li><li><a href="Operations.html">Operations</a><ul class='methods'><li data-type='method'><a href="Operations.html#list">list</a></li><li data-type='method'><a href="Operations.html#listNext">listNext</a></li><li data-type='method'><a href="Operations.html#listNextWithHttpOperationResponse">listNextWithHttpOperationResponse</a></li><li data-type='method'><a href="Operations.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li></ul></li><li><a href="PartitionSchemeDescription.html">PartitionSchemeDescription</a><ul class='methods'><li data-type='method'><a href="PartitionSchemeDescription.html#mapper">mapper</a></li></ul></li><li><a href="ProxyResource.html">ProxyResource</a><ul class='methods'><li data-type='method'><a href="ProxyResource.html#mapper">mapper</a></li></ul></li><li><a href="Resource.html">Resource</a><ul class='methods'><li data-type='method'><a href="Resource.html#mapper">mapper</a></li></ul></li><li><a href="RollingUpgradeMonitoringPolicy.html">RollingUpgradeMonitoringPolicy</a><ul class='methods'><li data-type='method'><a href="RollingUpgradeMonitoringPolicy.html#mapper">mapper</a></li></ul></li><li><a href="Service.html">Service</a><ul class='methods'><li data-type='method'><a href="Service.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="Service.html#deleteMethodWithHttpOperationResponse">deleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="Service.html#get">get</a></li><li data-type='method'><a href="Service.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="Service.html#list">list</a></li><li data-type='method'><a href="Service.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li><li data-type='method'><a href="Service.html#patch">patch</a></li><li data-type='method'><a href="Service.html#patchWithHttpOperationResponse">patchWithHttpOperationResponse</a></li><li data-type='method'><a href="Service.html#put">put</a></li><li data-type='method'><a href="Service.html#putWithHttpOperationResponse">putWithHttpOperationResponse</a></li></ul></li><li><a href="ServiceCorrelationDescription.html">ServiceCorrelationDescription</a><ul class='methods'><li data-type='method'><a href="ServiceCorrelationDescription.html#mapper">mapper</a></li></ul></li><li><a href="ServiceFabricManagementClient.html">ServiceFabricManagementClient</a></li><li><a href="ServiceLoadMetricDescription.html">ServiceLoadMetricDescription</a><ul class='methods'><li data-type='method'><a href="ServiceLoadMetricDescription.html#mapper">mapper</a></li></ul></li><li><a href="ServicePlacementPolicyDescription.html">ServicePlacementPolicyDescription</a><ul class='methods'><li data-type='method'><a href="ServicePlacementPolicyDescription.html#mapper">mapper</a></li></ul></li><li><a href="ServiceProperties.html">ServiceProperties</a><ul class='methods'><li data-type='method'><a href="ServiceProperties.html#mapper">mapper</a></li></ul></li><li><a href="ServicePropertiesBase.html">ServicePropertiesBase</a><ul class='methods'><li data-type='method'><a href="ServicePropertiesBase.html#mapper">mapper</a></li></ul></li><li><a href="ServiceResource.html">ServiceResource</a><ul class='methods'><li data-type='method'><a href="ServiceResource.html#mapper">mapper</a></li></ul></li><li><a href="ServiceResourceList.html">ServiceResourceList</a><ul class='methods'><li data-type='method'><a href="ServiceResourceList.html#mapper">mapper</a></li></ul></li><li><a href="ServiceResourceUpdate.html">ServiceResourceUpdate</a><ul class='methods'><li data-type='method'><a href="ServiceResourceUpdate.html#mapper">mapper</a></li></ul></li><li><a href="ServiceTypeDeltaHealthPolicy.html">ServiceTypeDeltaHealthPolicy</a><ul class='methods'><li data-type='method'><a href="ServiceTypeDeltaHealthPolicy.html#mapper">mapper</a></li></ul></li><li><a href="ServiceTypeHealthPolicy.html">ServiceTypeHealthPolicy</a><ul class='methods'><li data-type='method'><a href="ServiceTypeHealthPolicy.html#mapper">mapper</a></li></ul></li><li><a href="ServiceTypeHealthPolicyMapItem.html">ServiceTypeHealthPolicyMapItem</a><ul class='methods'><li data-type='method'><a href="ServiceTypeHealthPolicyMapItem.html#mapper">mapper</a></li></ul></li><li><a href="ServiceUpdateProperties.html">ServiceUpdateProperties</a><ul class='methods'><li data-type='method'><a href="ServiceUpdateProperties.html#mapper">mapper</a></li></ul></li><li><a href="SettingsParameterDescription.html">SettingsParameterDescription</a><ul class='methods'><li data-type='method'><a href="SettingsParameterDescription.html#mapper">mapper</a></li></ul></li><li><a href="SettingsSectionDescription.html">SettingsSectionDescription</a><ul class='methods'><li data-type='method'><a href="SettingsSectionDescription.html#mapper">mapper</a></li></ul></li><li><a href="SingletonPartitionSchemeDescription.html">SingletonPartitionSchemeDescription</a><ul class='methods'><li data-type='method'><a href="SingletonPartitionSchemeDescription.html#mapper">mapper</a></li></ul></li><li><a href="StatefulService.html">StatefulService</a><ul class='methods'><li data-type='method'><a href="StatefulService.html#mapper">mapper</a></li></ul></li><li><a href="StatefulServiceUpdate.html">StatefulServiceUpdate</a><ul class='methods'><li data-type='method'><a href="StatefulServiceUpdate.html#mapper">mapper</a></li></ul></li><li><a href="StatelessService.html">StatelessService</a><ul class='methods'><li data-type='method'><a href="StatelessService.html#mapper">mapper</a></li></ul></li><li><a href="StatelessServiceUpdate.html">StatelessServiceUpdate</a><ul class='methods'><li data-type='method'><a href="StatelessServiceUpdate.html#mapper">mapper</a></li></ul></li><li><a href="UniformInt64RangePartitionSchemeDescription.html">UniformInt64RangePartitionSchemeDescription</a><ul class='methods'><li data-type='method'><a href="UniformInt64RangePartitionSchemeDescription.html#mapper">mapper</a></li></ul></li><li><a href="Version.html">Version</a><ul class='methods'><li data-type='method'><a href="Version.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="Version.html#deleteMethodWithHttpOperationResponse">deleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="Version.html#get">get</a></li><li data-type='method'><a href="Version.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="Version.html#list">list</a></li><li data-type='method'><a href="Version.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li><li data-type='method'><a href="Version.html#patch">patch</a></li><li data-type='method'><a href="Version.html#patchWithHttpOperationResponse">patchWithHttpOperationResponse</a></li><li data-type='method'><a href="Version.html#put">put</a></li><li data-type='method'><a href="Version.html#putWithHttpOperationResponse">putWithHttpOperationResponse</a></li></ul></li><li><a href="VersionResource.html">VersionResource</a><ul class='methods'><li data-type='method'><a href="VersionResource.html#mapper">mapper</a></li></ul></li><li><a href="VersionResourceList.html">VersionResourceList</a><ul class='methods'><li data-type='method'><a href="VersionResourceList.html#mapper">mapper</a></li></ul></li></ul><h3>Global</h3><ul><li><a href="global.html#_beginCreate">_beginCreate</a></li><li><a href="global.html#_beginUpdate">_beginUpdate</a></li><li><a href="global.html#_create">_create</a></li><li><a href="global.html#_deleteMethod">_deleteMethod</a></li><li><a href="global.html#_get">_get</a></li><li><a href="global.html#_getByEnvironment">_getByEnvironment</a></li><li><a href="global.html#_list">_list</a></li><li><a href="global.html#_listByEnvironment">_listByEnvironment</a></li><li><a href="global.html#_listByResourceGroup">_listByResourceGroup</a></li><li><a href="global.html#_listNext">_listNext</a></li><li><a href="global.html#_patch">_patch</a></li><li><a href="global.html#_put">_put</a></li><li><a href="global.html#_update">_update</a></li><li><a href="global.html#addOnFeatures">addOnFeatures</a></li><li><a href="global.html#certificateIssuerThumbprint">certificateIssuerThumbprint</a></li><li><a href="global.html#certificateThumbprint">certificateThumbprint</a></li><li><a href="global.html#clientApplication">clientApplication</a></li><li><a href="global.html#defaultLoad">defaultLoad</a></li><li><a href="global.html#defaultMoveCost">defaultMoveCost</a></li><li><a href="global.html#defaultParameterList">defaultParameterList</a></li><li><a href="global.html#description">description</a></li><li><a href="global.html#endPort">endPort</a></li><li><a href="global.html#environment">environment</a></li><li><a href="global.html#highKey">highKey</a></li><li><a href="global.html#instanceCount">instanceCount</a></li><li><a href="global.html#location">location</a></li><li><a href="global.html#maxPercentDeltaUnhealthyApplications">maxPercentDeltaUnhealthyApplications</a></li><li><a href="global.html#maxPercentDeltaUnhealthyServices">maxPercentDeltaUnhealthyServices</a></li><li><a href="global.html#maxPercentUnhealthyApplications">maxPercentUnhealthyApplications</a></li><li><a href="global.html#maxPercentUnhealthyServices">maxPercentUnhealthyServices</a></li><li><a href="global.html#message">message</a></li><li><a href="global.html#metrics">metrics</a></li><li><a href="global.html#names">names</a></li><li><a href="global.html#nextLink">nextLink</a></li><li><a href="global.html#parameters">parameters</a></li><li><a href="global.html#partitionScheme">partitionScheme</a></li><li><a href="global.html#provisioningState">provisioningState</a></li><li><a href="global.html#reverseProxyEndpointPort">reverseProxyEndpointPort</a></li><li><a href="global.html#serviceName">serviceName</a></li><li><a href="global.html#serviceResourceType">serviceResourceType</a></li><li><a href="global.html#serviceTypeHealthPolicyMap">serviceTypeHealthPolicyMap</a></li><li><a href="global.html#standByReplicaKeepDuration">standByReplicaKeepDuration</a></li><li><a href="global.html#tableEndpoint">tableEndpoint</a></li><li><a href="global.html#tags">tags</a></li><li><a href="global.html#totalApplicationCapacity">totalApplicationCapacity</a></li><li><a href="global.html#type">type</a></li><li><a href="global.html#typeName">typeName</a></li><li><a href="global.html#upgradeDomainTimeout">upgradeDomainTimeout</a></li><li><a href="global.html#value">value</a></li><li><a href="global.html#x509StoreName">x509StoreName</a></li></ul>
+</nav>
+
+<div id="main">
+    
+      <a class="github-banner" href="https://github.com/azure/azure-sdk-for-node.git"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+    
+    
+    <h1 class="page-title">operations/service.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/*
+ * Copyright (c) Microsoft Corporation. All rights reserved.
+ * Licensed under the MIT License. See License.txt in the project root for
+ * license information.
+ *
+ * Code generated by Microsoft (R) AutoRest Code Generator.
+ * Changes may cause incorrect behavior and will be lost if the code is
+ * regenerated.
+ */
+
+'use strict';
+
+const msRest = require('ms-rest');
+const msRestAzure = require('ms-rest-azure');
+const WebResource = msRest.WebResource;
+
+/**
+ * Returns a service resource with the specified name.
+ *
+ * @param {string} resourceGroupName The name of the resource group.
+ *
+ * @param {string} clusterName The name of the cluster resource
+ *
+ * @param {string} applicationName The name of the application resource.
+ *
+ * @param {string} serviceName The name of the service resource in the format
+ * of {applicationName}~{serviceName}.
+ *
+ * @param {object} [options] Optional Parameters.
+ *
+ * @param {object} [options.customHeaders] Headers that will be added to the
+ * request
+ *
+ * @param {function} callback - The callback.
+ *
+ * @returns {function} callback(err, result, request, response)
+ *
+ *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+ *
+ *                      {object} [result]   - The deserialized result object if an error did not occur.
+ *                      See {@link ServiceResource} for more information.
+ *
+ *                      {object} [request]  - The HTTP Request object if an error did not occur.
+ *
+ *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+ */
+function _get(resourceGroupName, clusterName, applicationName, serviceName, options, callback) {
+   /* jshint validthis: true */
+  let client = this.client;
+  if(!callback &amp;&amp; typeof options === 'function') {
+    callback = options;
+    options = null;
+  }
+  if (!callback) {
+    throw new Error('callback cannot be null.');
+  }
+  // Validate
+  try {
+    if (this.client.subscriptionId === null || this.client.subscriptionId === undefined || typeof this.client.subscriptionId.valueOf() !== 'string') {
+      throw new Error('this.client.subscriptionId cannot be null or undefined and it must be of type string.');
+    }
+    if (resourceGroupName === null || resourceGroupName === undefined || typeof resourceGroupName.valueOf() !== 'string') {
+      throw new Error('resourceGroupName cannot be null or undefined and it must be of type string.');
+    }
+    if (clusterName === null || clusterName === undefined || typeof clusterName.valueOf() !== 'string') {
+      throw new Error('clusterName cannot be null or undefined and it must be of type string.');
+    }
+    if (applicationName === null || applicationName === undefined || typeof applicationName.valueOf() !== 'string') {
+      throw new Error('applicationName cannot be null or undefined and it must be of type string.');
+    }
+    if (serviceName === null || serviceName === undefined || typeof serviceName.valueOf() !== 'string') {
+      throw new Error('serviceName cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.apiVersion === null || this.client.apiVersion === undefined || typeof this.client.apiVersion.valueOf() !== 'string') {
+      throw new Error('this.client.apiVersion cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.acceptLanguage !== null &amp;&amp; this.client.acceptLanguage !== undefined &amp;&amp; typeof this.client.acceptLanguage.valueOf() !== 'string') {
+      throw new Error('this.client.acceptLanguage must be of type string.');
+    }
+  } catch (error) {
+    return callback(error);
+  }
+
+  // Construct URL
+  let baseUrl = this.client.baseUri;
+  let requestUrl = baseUrl + (baseUrl.endsWith('/') ? '' : '/') + 'subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ServiceFabric/clusters/{clusterName}/applications/{applicationName}/services/{serviceName}';
+  requestUrl = requestUrl.replace('{subscriptionId}', encodeURIComponent(this.client.subscriptionId));
+  requestUrl = requestUrl.replace('{resourceGroupName}', encodeURIComponent(resourceGroupName));
+  requestUrl = requestUrl.replace('{clusterName}', encodeURIComponent(clusterName));
+  requestUrl = requestUrl.replace('{applicationName}', encodeURIComponent(applicationName));
+  requestUrl = requestUrl.replace('{serviceName}', encodeURIComponent(serviceName));
+  let queryParameters = [];
+  queryParameters.push('api-version=' + encodeURIComponent(this.client.apiVersion));
+  if (queryParameters.length > 0) {
+    requestUrl += '?' + queryParameters.join('&amp;');
+  }
+
+  // Create HTTP transport objects
+  let httpRequest = new WebResource();
+  httpRequest.method = 'GET';
+  httpRequest.url = requestUrl;
+  httpRequest.headers = {};
+  // Set Headers
+  httpRequest.headers['Content-Type'] = 'application/json; charset=utf-8';
+  if (this.client.generateClientRequestId) {
+      httpRequest.headers['x-ms-client-request-id'] = msRestAzure.generateUuid();
+  }
+  if (this.client.acceptLanguage !== undefined &amp;&amp; this.client.acceptLanguage !== null) {
+    httpRequest.headers['accept-language'] = this.client.acceptLanguage;
+  }
+  if(options) {
+    for(let headerName in options['customHeaders']) {
+      if (options['customHeaders'].hasOwnProperty(headerName)) {
+        httpRequest.headers[headerName] = options['customHeaders'][headerName];
+      }
+    }
+  }
+  httpRequest.body = null;
+  // Send Request
+  return client.pipeline(httpRequest, (err, response, responseBody) => {
+    if (err) {
+      return callback(err);
+    }
+    let statusCode = response.statusCode;
+    if (statusCode !== 200) {
+      let error = new Error(responseBody);
+      error.statusCode = response.statusCode;
+      error.request = msRest.stripRequest(httpRequest);
+      error.response = msRest.stripResponse(response);
+      if (responseBody === '') responseBody = null;
+      let parsedErrorResponse;
+      try {
+        parsedErrorResponse = JSON.parse(responseBody);
+        if (parsedErrorResponse) {
+          let internalError = null;
+          if (parsedErrorResponse.error) internalError = parsedErrorResponse.error;
+          error.code = internalError ? internalError.code : parsedErrorResponse.code;
+          error.message = internalError ? internalError.message : parsedErrorResponse.message;
+        }
+        if (parsedErrorResponse !== null &amp;&amp; parsedErrorResponse !== undefined) {
+          let resultMapper = new client.models['ErrorModel']().mapper();
+          error.body = client.deserialize(resultMapper, parsedErrorResponse, 'error.body');
+        }
+      } catch (defaultError) {
+        error.message = `Error "${defaultError.message}" occurred in deserializing the responseBody ` +
+                         `- "${responseBody}" for the default response.`;
+        return callback(error);
+      }
+      return callback(error);
+    }
+    // Create Result
+    let result = null;
+    if (responseBody === '') responseBody = null;
+    // Deserialize Response
+    if (statusCode === 200) {
+      let parsedResponse = null;
+      try {
+        parsedResponse = JSON.parse(responseBody);
+        result = JSON.parse(responseBody);
+        if (parsedResponse !== null &amp;&amp; parsedResponse !== undefined) {
+          let resultMapper = new client.models['ServiceResource']().mapper();
+          result = client.deserialize(resultMapper, parsedResponse, 'result');
+        }
+      } catch (error) {
+        let deserializationError = new Error(`Error ${error} occurred in deserializing the responseBody - ${responseBody}`);
+        deserializationError.request = msRest.stripRequest(httpRequest);
+        deserializationError.response = msRest.stripResponse(response);
+        return callback(deserializationError);
+      }
+    }
+
+    return callback(null, result, httpRequest, response);
+  });
+}
+
+/**
+ * Creates or updates a service resource with the specified name.
+ *
+ * @param {string} resourceGroupName The name of the resource group.
+ *
+ * @param {string} clusterName The name of the cluster resource
+ *
+ * @param {string} applicationName The name of the application resource.
+ *
+ * @param {string} serviceName The name of the service resource in the format
+ * of {applicationName}~{serviceName}.
+ *
+ * @param {object} parameters The service resource.
+ *
+ * @param {string} [parameters.placementConstraints] The placement constraints
+ * as a string. Placement constraints are boolean expressions on node
+ * properties and allow for restricting a service to particular nodes based on
+ * the service requirements. For example, to place a service on nodes where
+ * NodeType is blue specify the following: "NodeColor == blue)".
+ *
+ * @param {array} [parameters.correlationScheme]
+ *
+ * @param {array} [parameters.serviceLoadMetrics]
+ *
+ * @param {array} [parameters.servicePlacementPolicies]
+ *
+ * @param {string} [parameters.defaultMoveCost] Possible values include:
+ * 'Zero', 'Low', 'Medium', 'High'
+ *
+ * @param {string} [parameters.serviceKind] Possible values include: 'Invalid',
+ * 'Stateless', 'Stateful'
+ *
+ * @param {string} [parameters.serviceTypeName] The name of the service type
+ *
+ * @param {object} [parameters.partitionDescription]
+ *
+ * @param {string} parameters.partitionDescription.partitionScheme Polymorphic
+ * Discriminator
+ *
+ * @param {string} parameters.serviceResourceType Polymorphic Discriminator
+ *
+ * @param {string} parameters.location Resource location.
+ *
+ * @param {object} [options] Optional Parameters.
+ *
+ * @param {object} [options.customHeaders] Headers that will be added to the
+ * request
+ *
+ * @param {function} callback - The callback.
+ *
+ * @returns {function} callback(err, result, request, response)
+ *
+ *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+ *
+ *                      {object} [result]   - The deserialized result object if an error did not occur.
+ *                      See {@link ServiceResource} for more information.
+ *
+ *                      {object} [request]  - The HTTP Request object if an error did not occur.
+ *
+ *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+ */
+function _put(resourceGroupName, clusterName, applicationName, serviceName, parameters, options, callback) {
+   /* jshint validthis: true */
+  let client = this.client;
+  if(!callback &amp;&amp; typeof options === 'function') {
+    callback = options;
+    options = null;
+  }
+  if (!callback) {
+    throw new Error('callback cannot be null.');
+  }
+  // Validate
+  try {
+    if (this.client.subscriptionId === null || this.client.subscriptionId === undefined || typeof this.client.subscriptionId.valueOf() !== 'string') {
+      throw new Error('this.client.subscriptionId cannot be null or undefined and it must be of type string.');
+    }
+    if (resourceGroupName === null || resourceGroupName === undefined || typeof resourceGroupName.valueOf() !== 'string') {
+      throw new Error('resourceGroupName cannot be null or undefined and it must be of type string.');
+    }
+    if (clusterName === null || clusterName === undefined || typeof clusterName.valueOf() !== 'string') {
+      throw new Error('clusterName cannot be null or undefined and it must be of type string.');
+    }
+    if (applicationName === null || applicationName === undefined || typeof applicationName.valueOf() !== 'string') {
+      throw new Error('applicationName cannot be null or undefined and it must be of type string.');
+    }
+    if (serviceName === null || serviceName === undefined || typeof serviceName.valueOf() !== 'string') {
+      throw new Error('serviceName cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.apiVersion === null || this.client.apiVersion === undefined || typeof this.client.apiVersion.valueOf() !== 'string') {
+      throw new Error('this.client.apiVersion cannot be null or undefined and it must be of type string.');
+    }
+    if (parameters === null || parameters === undefined) {
+      throw new Error('parameters cannot be null or undefined.');
+    }
+    if (this.client.acceptLanguage !== null &amp;&amp; this.client.acceptLanguage !== undefined &amp;&amp; typeof this.client.acceptLanguage.valueOf() !== 'string') {
+      throw new Error('this.client.acceptLanguage must be of type string.');
+    }
+  } catch (error) {
+    return callback(error);
+  }
+
+  // Construct URL
+  let baseUrl = this.client.baseUri;
+  let requestUrl = baseUrl + (baseUrl.endsWith('/') ? '' : '/') + 'subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ServiceFabric/clusters/{clusterName}/applications/{applicationName}/services/{serviceName}';
+  requestUrl = requestUrl.replace('{subscriptionId}', encodeURIComponent(this.client.subscriptionId));
+  requestUrl = requestUrl.replace('{resourceGroupName}', encodeURIComponent(resourceGroupName));
+  requestUrl = requestUrl.replace('{clusterName}', encodeURIComponent(clusterName));
+  requestUrl = requestUrl.replace('{applicationName}', encodeURIComponent(applicationName));
+  requestUrl = requestUrl.replace('{serviceName}', encodeURIComponent(serviceName));
+  let queryParameters = [];
+  queryParameters.push('api-version=' + encodeURIComponent(this.client.apiVersion));
+  if (queryParameters.length > 0) {
+    requestUrl += '?' + queryParameters.join('&amp;');
+  }
+
+  // Create HTTP transport objects
+  let httpRequest = new WebResource();
+  httpRequest.method = 'PUT';
+  httpRequest.url = requestUrl;
+  httpRequest.headers = {};
+  // Set Headers
+  httpRequest.headers['Content-Type'] = 'application/json; charset=utf-8';
+  if (this.client.generateClientRequestId) {
+      httpRequest.headers['x-ms-client-request-id'] = msRestAzure.generateUuid();
+  }
+  if (this.client.acceptLanguage !== undefined &amp;&amp; this.client.acceptLanguage !== null) {
+    httpRequest.headers['accept-language'] = this.client.acceptLanguage;
+  }
+  if(options) {
+    for(let headerName in options['customHeaders']) {
+      if (options['customHeaders'].hasOwnProperty(headerName)) {
+        httpRequest.headers[headerName] = options['customHeaders'][headerName];
+      }
+    }
+  }
+  // Serialize Request
+  let requestContent = null;
+  let requestModel = null;
+  try {
+    if (parameters !== null &amp;&amp; parameters !== undefined) {
+      let requestModelMapper = new client.models['ServiceResource']().mapper();
+      requestModel = client.serialize(requestModelMapper, parameters, 'parameters');
+      requestContent = JSON.stringify(requestModel);
+    }
+  } catch (error) {
+    let serializationError = new Error(`Error "${error.message}" occurred in serializing the ` +
+        `payload - ${JSON.stringify(parameters, null, 2)}.`);
+    return callback(serializationError);
+  }
+  httpRequest.body = requestContent;
+  // Send Request
+  return client.pipeline(httpRequest, (err, response, responseBody) => {
+    if (err) {
+      return callback(err);
+    }
+    let statusCode = response.statusCode;
+    if (statusCode !== 200 &amp;&amp; statusCode !== 201 &amp;&amp; statusCode !== 202) {
+      let error = new Error(responseBody);
+      error.statusCode = response.statusCode;
+      error.request = msRest.stripRequest(httpRequest);
+      error.response = msRest.stripResponse(response);
+      if (responseBody === '') responseBody = null;
+      let parsedErrorResponse;
+      try {
+        parsedErrorResponse = JSON.parse(responseBody);
+        if (parsedErrorResponse) {
+          let internalError = null;
+          if (parsedErrorResponse.error) internalError = parsedErrorResponse.error;
+          error.code = internalError ? internalError.code : parsedErrorResponse.code;
+          error.message = internalError ? internalError.message : parsedErrorResponse.message;
+        }
+        if (parsedErrorResponse !== null &amp;&amp; parsedErrorResponse !== undefined) {
+          let resultMapper = new client.models['ErrorModel']().mapper();
+          error.body = client.deserialize(resultMapper, parsedErrorResponse, 'error.body');
+        }
+      } catch (defaultError) {
+        error.message = `Error "${defaultError.message}" occurred in deserializing the responseBody ` +
+                         `- "${responseBody}" for the default response.`;
+        return callback(error);
+      }
+      return callback(error);
+    }
+    // Create Result
+    let result = null;
+    if (responseBody === '') responseBody = null;
+    // Deserialize Response
+    if (statusCode === 200) {
+      let parsedResponse = null;
+      try {
+        parsedResponse = JSON.parse(responseBody);
+        result = JSON.parse(responseBody);
+        if (parsedResponse !== null &amp;&amp; parsedResponse !== undefined) {
+          let resultMapper = new client.models['ServiceResource']().mapper();
+          result = client.deserialize(resultMapper, parsedResponse, 'result');
+        }
+      } catch (error) {
+        let deserializationError = new Error(`Error ${error} occurred in deserializing the responseBody - ${responseBody}`);
+        deserializationError.request = msRest.stripRequest(httpRequest);
+        deserializationError.response = msRest.stripResponse(response);
+        return callback(deserializationError);
+      }
+    }
+    // Deserialize Response
+    if (statusCode === 201) {
+      let parsedResponse = null;
+      try {
+        parsedResponse = JSON.parse(responseBody);
+        result = JSON.parse(responseBody);
+        if (parsedResponse !== null &amp;&amp; parsedResponse !== undefined) {
+          let resultMapper = new client.models['ServiceResource']().mapper();
+          result = client.deserialize(resultMapper, parsedResponse, 'result');
+        }
+      } catch (error) {
+        let deserializationError1 = new Error(`Error ${error} occurred in deserializing the responseBody - ${responseBody}`);
+        deserializationError1.request = msRest.stripRequest(httpRequest);
+        deserializationError1.response = msRest.stripResponse(response);
+        return callback(deserializationError1);
+      }
+    }
+    // Deserialize Response
+    if (statusCode === 202) {
+      let parsedResponse = null;
+      try {
+        parsedResponse = JSON.parse(responseBody);
+        result = JSON.parse(responseBody);
+        if (parsedResponse !== null &amp;&amp; parsedResponse !== undefined) {
+          let resultMapper = new client.models['ServiceResource']().mapper();
+          result = client.deserialize(resultMapper, parsedResponse, 'result');
+        }
+      } catch (error) {
+        let deserializationError2 = new Error(`Error ${error} occurred in deserializing the responseBody - ${responseBody}`);
+        deserializationError2.request = msRest.stripRequest(httpRequest);
+        deserializationError2.response = msRest.stripResponse(response);
+        return callback(deserializationError2);
+      }
+    }
+
+    return callback(null, result, httpRequest, response);
+  });
+}
+
+/**
+ * Updates a service resource with the specified name.
+ *
+ * @param {string} resourceGroupName The name of the resource group.
+ *
+ * @param {string} clusterName The name of the cluster resource
+ *
+ * @param {string} applicationName The name of the application resource.
+ *
+ * @param {string} serviceName The name of the service resource in the format
+ * of {applicationName}~{serviceName}.
+ *
+ * @param {object} parameters The service resource for patch operations.
+ *
+ * @param {string} [parameters.placementConstraints] The placement constraints
+ * as a string. Placement constraints are boolean expressions on node
+ * properties and allow for restricting a service to particular nodes based on
+ * the service requirements. For example, to place a service on nodes where
+ * NodeType is blue specify the following: "NodeColor == blue)".
+ *
+ * @param {array} [parameters.correlationScheme]
+ *
+ * @param {array} [parameters.serviceLoadMetrics]
+ *
+ * @param {array} [parameters.servicePlacementPolicies]
+ *
+ * @param {string} [parameters.defaultMoveCost] Possible values include:
+ * 'Zero', 'Low', 'Medium', 'High'
+ *
+ * @param {string} parameters.serviceResourceType Polymorphic Discriminator
+ *
+ * @param {string} parameters.location Resource location.
+ *
+ * @param {object} [options] Optional Parameters.
+ *
+ * @param {object} [options.customHeaders] Headers that will be added to the
+ * request
+ *
+ * @param {function} callback - The callback.
+ *
+ * @returns {function} callback(err, result, request, response)
+ *
+ *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+ *
+ *                      {object} [result]   - The deserialized result object if an error did not occur.
+ *                      See {@link ServiceResourceUpdate} for more information.
+ *
+ *                      {object} [request]  - The HTTP Request object if an error did not occur.
+ *
+ *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+ */
+function _patch(resourceGroupName, clusterName, applicationName, serviceName, parameters, options, callback) {
+   /* jshint validthis: true */
+  let client = this.client;
+  if(!callback &amp;&amp; typeof options === 'function') {
+    callback = options;
+    options = null;
+  }
+  if (!callback) {
+    throw new Error('callback cannot be null.');
+  }
+  // Validate
+  try {
+    if (this.client.subscriptionId === null || this.client.subscriptionId === undefined || typeof this.client.subscriptionId.valueOf() !== 'string') {
+      throw new Error('this.client.subscriptionId cannot be null or undefined and it must be of type string.');
+    }
+    if (resourceGroupName === null || resourceGroupName === undefined || typeof resourceGroupName.valueOf() !== 'string') {
+      throw new Error('resourceGroupName cannot be null or undefined and it must be of type string.');
+    }
+    if (clusterName === null || clusterName === undefined || typeof clusterName.valueOf() !== 'string') {
+      throw new Error('clusterName cannot be null or undefined and it must be of type string.');
+    }
+    if (applicationName === null || applicationName === undefined || typeof applicationName.valueOf() !== 'string') {
+      throw new Error('applicationName cannot be null or undefined and it must be of type string.');
+    }
+    if (serviceName === null || serviceName === undefined || typeof serviceName.valueOf() !== 'string') {
+      throw new Error('serviceName cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.apiVersion === null || this.client.apiVersion === undefined || typeof this.client.apiVersion.valueOf() !== 'string') {
+      throw new Error('this.client.apiVersion cannot be null or undefined and it must be of type string.');
+    }
+    if (parameters === null || parameters === undefined) {
+      throw new Error('parameters cannot be null or undefined.');
+    }
+    if (this.client.acceptLanguage !== null &amp;&amp; this.client.acceptLanguage !== undefined &amp;&amp; typeof this.client.acceptLanguage.valueOf() !== 'string') {
+      throw new Error('this.client.acceptLanguage must be of type string.');
+    }
+  } catch (error) {
+    return callback(error);
+  }
+
+  // Construct URL
+  let baseUrl = this.client.baseUri;
+  let requestUrl = baseUrl + (baseUrl.endsWith('/') ? '' : '/') + 'subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ServiceFabric/clusters/{clusterName}/applications/{applicationName}/services/{serviceName}';
+  requestUrl = requestUrl.replace('{subscriptionId}', encodeURIComponent(this.client.subscriptionId));
+  requestUrl = requestUrl.replace('{resourceGroupName}', encodeURIComponent(resourceGroupName));
+  requestUrl = requestUrl.replace('{clusterName}', encodeURIComponent(clusterName));
+  requestUrl = requestUrl.replace('{applicationName}', encodeURIComponent(applicationName));
+  requestUrl = requestUrl.replace('{serviceName}', encodeURIComponent(serviceName));
+  let queryParameters = [];
+  queryParameters.push('api-version=' + encodeURIComponent(this.client.apiVersion));
+  if (queryParameters.length > 0) {
+    requestUrl += '?' + queryParameters.join('&amp;');
+  }
+
+  // Create HTTP transport objects
+  let httpRequest = new WebResource();
+  httpRequest.method = 'PATCH';
+  httpRequest.url = requestUrl;
+  httpRequest.headers = {};
+  // Set Headers
+  httpRequest.headers['Content-Type'] = 'application/json; charset=utf-8';
+  if (this.client.generateClientRequestId) {
+      httpRequest.headers['x-ms-client-request-id'] = msRestAzure.generateUuid();
+  }
+  if (this.client.acceptLanguage !== undefined &amp;&amp; this.client.acceptLanguage !== null) {
+    httpRequest.headers['accept-language'] = this.client.acceptLanguage;
+  }
+  if(options) {
+    for(let headerName in options['customHeaders']) {
+      if (options['customHeaders'].hasOwnProperty(headerName)) {
+        httpRequest.headers[headerName] = options['customHeaders'][headerName];
+      }
+    }
+  }
+  // Serialize Request
+  let requestContent = null;
+  let requestModel = null;
+  try {
+    if (parameters !== null &amp;&amp; parameters !== undefined) {
+      let requestModelMapper = new client.models['ServiceResourceUpdate']().mapper();
+      requestModel = client.serialize(requestModelMapper, parameters, 'parameters');
+      requestContent = JSON.stringify(requestModel);
+    }
+  } catch (error) {
+    let serializationError = new Error(`Error "${error.message}" occurred in serializing the ` +
+        `payload - ${JSON.stringify(parameters, null, 2)}.`);
+    return callback(serializationError);
+  }
+  httpRequest.body = requestContent;
+  // Send Request
+  return client.pipeline(httpRequest, (err, response, responseBody) => {
+    if (err) {
+      return callback(err);
+    }
+    let statusCode = response.statusCode;
+    if (statusCode !== 200 &amp;&amp; statusCode !== 201 &amp;&amp; statusCode !== 202) {
+      let error = new Error(responseBody);
+      error.statusCode = response.statusCode;
+      error.request = msRest.stripRequest(httpRequest);
+      error.response = msRest.stripResponse(response);
+      if (responseBody === '') responseBody = null;
+      let parsedErrorResponse;
+      try {
+        parsedErrorResponse = JSON.parse(responseBody);
+        if (parsedErrorResponse) {
+          let internalError = null;
+          if (parsedErrorResponse.error) internalError = parsedErrorResponse.error;
+          error.code = internalError ? internalError.code : parsedErrorResponse.code;
+          error.message = internalError ? internalError.message : parsedErrorResponse.message;
+        }
+        if (parsedErrorResponse !== null &amp;&amp; parsedErrorResponse !== undefined) {
+          let resultMapper = new client.models['ErrorModel']().mapper();
+          error.body = client.deserialize(resultMapper, parsedErrorResponse, 'error.body');
+        }
+      } catch (defaultError) {
+        error.message = `Error "${defaultError.message}" occurred in deserializing the responseBody ` +
+                         `- "${responseBody}" for the default response.`;
+        return callback(error);
+      }
+      return callback(error);
+    }
+    // Create Result
+    let result = null;
+    if (responseBody === '') responseBody = null;
+    // Deserialize Response
+    if (statusCode === 200) {
+      let parsedResponse = null;
+      try {
+        parsedResponse = JSON.parse(responseBody);
+        result = JSON.parse(responseBody);
+        if (parsedResponse !== null &amp;&amp; parsedResponse !== undefined) {
+          let resultMapper = new client.models['ServiceResourceUpdate']().mapper();
+          result = client.deserialize(resultMapper, parsedResponse, 'result');
+        }
+      } catch (error) {
+        let deserializationError = new Error(`Error ${error} occurred in deserializing the responseBody - ${responseBody}`);
+        deserializationError.request = msRest.stripRequest(httpRequest);
+        deserializationError.response = msRest.stripResponse(response);
+        return callback(deserializationError);
+      }
+    }
+    // Deserialize Response
+    if (statusCode === 201) {
+      let parsedResponse = null;
+      try {
+        parsedResponse = JSON.parse(responseBody);
+        result = JSON.parse(responseBody);
+        if (parsedResponse !== null &amp;&amp; parsedResponse !== undefined) {
+          let resultMapper = new client.models['ServiceResourceUpdate']().mapper();
+          result = client.deserialize(resultMapper, parsedResponse, 'result');
+        }
+      } catch (error) {
+        let deserializationError1 = new Error(`Error ${error} occurred in deserializing the responseBody - ${responseBody}`);
+        deserializationError1.request = msRest.stripRequest(httpRequest);
+        deserializationError1.response = msRest.stripResponse(response);
+        return callback(deserializationError1);
+      }
+    }
+    // Deserialize Response
+    if (statusCode === 202) {
+      let parsedResponse = null;
+      try {
+        parsedResponse = JSON.parse(responseBody);
+        result = JSON.parse(responseBody);
+        if (parsedResponse !== null &amp;&amp; parsedResponse !== undefined) {
+          let resultMapper = new client.models['ServiceResourceUpdate']().mapper();
+          result = client.deserialize(resultMapper, parsedResponse, 'result');
+        }
+      } catch (error) {
+        let deserializationError2 = new Error(`Error ${error} occurred in deserializing the responseBody - ${responseBody}`);
+        deserializationError2.request = msRest.stripRequest(httpRequest);
+        deserializationError2.response = msRest.stripResponse(response);
+        return callback(deserializationError2);
+      }
+    }
+
+    return callback(null, result, httpRequest, response);
+  });
+}
+
+/**
+ * Deletes a service resource with the specified name.
+ *
+ * @param {string} resourceGroupName The name of the resource group.
+ *
+ * @param {string} clusterName The name of the cluster resource
+ *
+ * @param {string} applicationName The name of the application resource.
+ *
+ * @param {string} serviceName The name of the service resource in the format
+ * of {applicationName}~{serviceName}.
+ *
+ * @param {object} [options] Optional Parameters.
+ *
+ * @param {object} [options.customHeaders] Headers that will be added to the
+ * request
+ *
+ * @param {function} callback - The callback.
+ *
+ * @returns {function} callback(err, result, request, response)
+ *
+ *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+ *
+ *                      {null} [result]   - The deserialized result object if an error did not occur.
+ *
+ *                      {object} [request]  - The HTTP Request object if an error did not occur.
+ *
+ *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+ */
+function _deleteMethod(resourceGroupName, clusterName, applicationName, serviceName, options, callback) {
+   /* jshint validthis: true */
+  let client = this.client;
+  if(!callback &amp;&amp; typeof options === 'function') {
+    callback = options;
+    options = null;
+  }
+  if (!callback) {
+    throw new Error('callback cannot be null.');
+  }
+  // Validate
+  try {
+    if (this.client.subscriptionId === null || this.client.subscriptionId === undefined || typeof this.client.subscriptionId.valueOf() !== 'string') {
+      throw new Error('this.client.subscriptionId cannot be null or undefined and it must be of type string.');
+    }
+    if (resourceGroupName === null || resourceGroupName === undefined || typeof resourceGroupName.valueOf() !== 'string') {
+      throw new Error('resourceGroupName cannot be null or undefined and it must be of type string.');
+    }
+    if (clusterName === null || clusterName === undefined || typeof clusterName.valueOf() !== 'string') {
+      throw new Error('clusterName cannot be null or undefined and it must be of type string.');
+    }
+    if (applicationName === null || applicationName === undefined || typeof applicationName.valueOf() !== 'string') {
+      throw new Error('applicationName cannot be null or undefined and it must be of type string.');
+    }
+    if (serviceName === null || serviceName === undefined || typeof serviceName.valueOf() !== 'string') {
+      throw new Error('serviceName cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.apiVersion === null || this.client.apiVersion === undefined || typeof this.client.apiVersion.valueOf() !== 'string') {
+      throw new Error('this.client.apiVersion cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.acceptLanguage !== null &amp;&amp; this.client.acceptLanguage !== undefined &amp;&amp; typeof this.client.acceptLanguage.valueOf() !== 'string') {
+      throw new Error('this.client.acceptLanguage must be of type string.');
+    }
+  } catch (error) {
+    return callback(error);
+  }
+
+  // Construct URL
+  let baseUrl = this.client.baseUri;
+  let requestUrl = baseUrl + (baseUrl.endsWith('/') ? '' : '/') + 'subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ServiceFabric/clusters/{clusterName}/applications/{applicationName}/services/{serviceName}';
+  requestUrl = requestUrl.replace('{subscriptionId}', encodeURIComponent(this.client.subscriptionId));
+  requestUrl = requestUrl.replace('{resourceGroupName}', encodeURIComponent(resourceGroupName));
+  requestUrl = requestUrl.replace('{clusterName}', encodeURIComponent(clusterName));
+  requestUrl = requestUrl.replace('{applicationName}', encodeURIComponent(applicationName));
+  requestUrl = requestUrl.replace('{serviceName}', encodeURIComponent(serviceName));
+  let queryParameters = [];
+  queryParameters.push('api-version=' + encodeURIComponent(this.client.apiVersion));
+  if (queryParameters.length > 0) {
+    requestUrl += '?' + queryParameters.join('&amp;');
+  }
+
+  // Create HTTP transport objects
+  let httpRequest = new WebResource();
+  httpRequest.method = 'DELETE';
+  httpRequest.url = requestUrl;
+  httpRequest.headers = {};
+  // Set Headers
+  httpRequest.headers['Content-Type'] = 'application/json; charset=utf-8';
+  if (this.client.generateClientRequestId) {
+      httpRequest.headers['x-ms-client-request-id'] = msRestAzure.generateUuid();
+  }
+  if (this.client.acceptLanguage !== undefined &amp;&amp; this.client.acceptLanguage !== null) {
+    httpRequest.headers['accept-language'] = this.client.acceptLanguage;
+  }
+  if(options) {
+    for(let headerName in options['customHeaders']) {
+      if (options['customHeaders'].hasOwnProperty(headerName)) {
+        httpRequest.headers[headerName] = options['customHeaders'][headerName];
+      }
+    }
+  }
+  httpRequest.body = null;
+  // Send Request
+  return client.pipeline(httpRequest, (err, response, responseBody) => {
+    if (err) {
+      return callback(err);
+    }
+    let statusCode = response.statusCode;
+    if (statusCode !== 200 &amp;&amp; statusCode !== 202 &amp;&amp; statusCode !== 204) {
+      let error = new Error(responseBody);
+      error.statusCode = response.statusCode;
+      error.request = msRest.stripRequest(httpRequest);
+      error.response = msRest.stripResponse(response);
+      if (responseBody === '') responseBody = null;
+      let parsedErrorResponse;
+      try {
+        parsedErrorResponse = JSON.parse(responseBody);
+        if (parsedErrorResponse) {
+          let internalError = null;
+          if (parsedErrorResponse.error) internalError = parsedErrorResponse.error;
+          error.code = internalError ? internalError.code : parsedErrorResponse.code;
+          error.message = internalError ? internalError.message : parsedErrorResponse.message;
+        }
+        if (parsedErrorResponse !== null &amp;&amp; parsedErrorResponse !== undefined) {
+          let resultMapper = new client.models['ErrorModel']().mapper();
+          error.body = client.deserialize(resultMapper, parsedErrorResponse, 'error.body');
+        }
+      } catch (defaultError) {
+        error.message = `Error "${defaultError.message}" occurred in deserializing the responseBody ` +
+                         `- "${responseBody}" for the default response.`;
+        return callback(error);
+      }
+      return callback(error);
+    }
+    // Create Result
+    let result = null;
+    if (responseBody === '') responseBody = null;
+
+    return callback(null, result, httpRequest, response);
+  });
+}
+
+/**
+ * Returns all service resources in the specified application.
+ *
+ * @param {string} resourceGroupName The name of the resource group.
+ *
+ * @param {string} clusterName The name of the cluster resource
+ *
+ * @param {string} applicationName The name of the application resource.
+ *
+ * @param {object} [options] Optional Parameters.
+ *
+ * @param {object} [options.customHeaders] Headers that will be added to the
+ * request
+ *
+ * @param {function} callback - The callback.
+ *
+ * @returns {function} callback(err, result, request, response)
+ *
+ *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+ *
+ *                      {object} [result]   - The deserialized result object if an error did not occur.
+ *                      See {@link ServiceResourceList} for more information.
+ *
+ *                      {object} [request]  - The HTTP Request object if an error did not occur.
+ *
+ *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+ */
+function _list(resourceGroupName, clusterName, applicationName, options, callback) {
+   /* jshint validthis: true */
+  let client = this.client;
+  if(!callback &amp;&amp; typeof options === 'function') {
+    callback = options;
+    options = null;
+  }
+  if (!callback) {
+    throw new Error('callback cannot be null.');
+  }
+  // Validate
+  try {
+    if (this.client.subscriptionId === null || this.client.subscriptionId === undefined || typeof this.client.subscriptionId.valueOf() !== 'string') {
+      throw new Error('this.client.subscriptionId cannot be null or undefined and it must be of type string.');
+    }
+    if (resourceGroupName === null || resourceGroupName === undefined || typeof resourceGroupName.valueOf() !== 'string') {
+      throw new Error('resourceGroupName cannot be null or undefined and it must be of type string.');
+    }
+    if (clusterName === null || clusterName === undefined || typeof clusterName.valueOf() !== 'string') {
+      throw new Error('clusterName cannot be null or undefined and it must be of type string.');
+    }
+    if (applicationName === null || applicationName === undefined || typeof applicationName.valueOf() !== 'string') {
+      throw new Error('applicationName cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.apiVersion === null || this.client.apiVersion === undefined || typeof this.client.apiVersion.valueOf() !== 'string') {
+      throw new Error('this.client.apiVersion cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.acceptLanguage !== null &amp;&amp; this.client.acceptLanguage !== undefined &amp;&amp; typeof this.client.acceptLanguage.valueOf() !== 'string') {
+      throw new Error('this.client.acceptLanguage must be of type string.');
+    }
+  } catch (error) {
+    return callback(error);
+  }
+
+  // Construct URL
+  let baseUrl = this.client.baseUri;
+  let requestUrl = baseUrl + (baseUrl.endsWith('/') ? '' : '/') + 'subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ServiceFabric/clusters/{clusterName}/applications/{applicationName}/services';
+  requestUrl = requestUrl.replace('{subscriptionId}', encodeURIComponent(this.client.subscriptionId));
+  requestUrl = requestUrl.replace('{resourceGroupName}', encodeURIComponent(resourceGroupName));
+  requestUrl = requestUrl.replace('{clusterName}', encodeURIComponent(clusterName));
+  requestUrl = requestUrl.replace('{applicationName}', encodeURIComponent(applicationName));
+  let queryParameters = [];
+  queryParameters.push('api-version=' + encodeURIComponent(this.client.apiVersion));
+  if (queryParameters.length > 0) {
+    requestUrl += '?' + queryParameters.join('&amp;');
+  }
+
+  // Create HTTP transport objects
+  let httpRequest = new WebResource();
+  httpRequest.method = 'GET';
+  httpRequest.url = requestUrl;
+  httpRequest.headers = {};
+  // Set Headers
+  httpRequest.headers['Content-Type'] = 'application/json; charset=utf-8';
+  if (this.client.generateClientRequestId) {
+      httpRequest.headers['x-ms-client-request-id'] = msRestAzure.generateUuid();
+  }
+  if (this.client.acceptLanguage !== undefined &amp;&amp; this.client.acceptLanguage !== null) {
+    httpRequest.headers['accept-language'] = this.client.acceptLanguage;
+  }
+  if(options) {
+    for(let headerName in options['customHeaders']) {
+      if (options['customHeaders'].hasOwnProperty(headerName)) {
+        httpRequest.headers[headerName] = options['customHeaders'][headerName];
+      }
+    }
+  }
+  httpRequest.body = null;
+  // Send Request
+  return client.pipeline(httpRequest, (err, response, responseBody) => {
+    if (err) {
+      return callback(err);
+    }
+    let statusCode = response.statusCode;
+    if (statusCode !== 200) {
+      let error = new Error(responseBody);
+      error.statusCode = response.statusCode;
+      error.request = msRest.stripRequest(httpRequest);
+      error.response = msRest.stripResponse(response);
+      if (responseBody === '') responseBody = null;
+      let parsedErrorResponse;
+      try {
+        parsedErrorResponse = JSON.parse(responseBody);
+        if (parsedErrorResponse) {
+          let internalError = null;
+          if (parsedErrorResponse.error) internalError = parsedErrorResponse.error;
+          error.code = internalError ? internalError.code : parsedErrorResponse.code;
+          error.message = internalError ? internalError.message : parsedErrorResponse.message;
+        }
+        if (parsedErrorResponse !== null &amp;&amp; parsedErrorResponse !== undefined) {
+          let resultMapper = new client.models['ErrorModel']().mapper();
+          error.body = client.deserialize(resultMapper, parsedErrorResponse, 'error.body');
+        }
+      } catch (defaultError) {
+        error.message = `Error "${defaultError.message}" occurred in deserializing the responseBody ` +
+                         `- "${responseBody}" for the default response.`;
+        return callback(error);
+      }
+      return callback(error);
+    }
+    // Create Result
+    let result = null;
+    if (responseBody === '') responseBody = null;
+    // Deserialize Response
+    if (statusCode === 200) {
+      let parsedResponse = null;
+      try {
+        parsedResponse = JSON.parse(responseBody);
+        result = JSON.parse(responseBody);
+        if (parsedResponse !== null &amp;&amp; parsedResponse !== undefined) {
+          let resultMapper = new client.models['ServiceResourceList']().mapper();
+          result = client.deserialize(resultMapper, parsedResponse, 'result');
+        }
+      } catch (error) {
+        let deserializationError = new Error(`Error ${error} occurred in deserializing the responseBody - ${responseBody}`);
+        deserializationError.request = msRest.stripRequest(httpRequest);
+        deserializationError.response = msRest.stripResponse(response);
+        return callback(deserializationError);
+      }
+    }
+
+    return callback(null, result, httpRequest, response);
+  });
+}
+
+/** Class representing a Service. */
+class Service {
+  /**
+   * Create a Service.
+   * @param {ServiceFabricManagementClient} client Reference to the service client.
+   */
+  constructor(client) {
+    this.client = client;
+    this._get = _get;
+    this._put = _put;
+    this._patch = _patch;
+    this._deleteMethod = _deleteMethod;
+    this._list = _list;
+  }
+
+  /**
+   * Returns a service resource with the specified name.
+   *
+   * @param {string} resourceGroupName The name of the resource group.
+   *
+   * @param {string} clusterName The name of the cluster resource
+   *
+   * @param {string} applicationName The name of the application resource.
+   *
+   * @param {string} serviceName The name of the service resource in the format
+   * of {applicationName}~{serviceName}.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @returns {Promise} A promise is returned
+   *
+   * @resolve {HttpOperationResponse&lt;ServiceResource>} - The deserialized result object.
+   *
+   * @reject {Error} - The error object.
+   */
+  getWithHttpOperationResponse(resourceGroupName, clusterName, applicationName, serviceName, options) {
+    let client = this.client;
+    let self = this;
+    return new Promise((resolve, reject) => {
+      self._get(resourceGroupName, clusterName, applicationName, serviceName, options, (err, result, request, response) => {
+        let httpOperationResponse = new msRest.HttpOperationResponse(request, response);
+        httpOperationResponse.body = result;
+        if (err) { reject(err); }
+        else { resolve(httpOperationResponse); }
+        return;
+      });
+    });
+  }
+
+  /**
+   * Returns a service resource with the specified name.
+   *
+   * @param {string} resourceGroupName The name of the resource group.
+   *
+   * @param {string} clusterName The name of the cluster resource
+   *
+   * @param {string} applicationName The name of the application resource.
+   *
+   * @param {string} serviceName The name of the service resource in the format
+   * of {applicationName}~{serviceName}.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @param {function} [optionalCallback] - The optional callback.
+   *
+   * @returns {function|Promise} If a callback was passed as the last parameter
+   * then it returns the callback else returns a Promise.
+   *
+   * {Promise} A promise is returned
+   *
+   *                      @resolve {ServiceResource} - The deserialized result object.
+   *
+   *                      @reject {Error} - The error object.
+   *
+   * {function} optionalCallback(err, result, request, response)
+   *
+   *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+   *
+   *                      {object} [result]   - The deserialized result object if an error did not occur.
+   *                      See {@link ServiceResource} for more information.
+   *
+   *                      {object} [request]  - The HTTP Request object if an error did not occur.
+   *
+   *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+   */
+  get(resourceGroupName, clusterName, applicationName, serviceName, options, optionalCallback) {
+    let client = this.client;
+    let self = this;
+    if (!optionalCallback &amp;&amp; typeof options === 'function') {
+      optionalCallback = options;
+      options = null;
+    }
+    if (!optionalCallback) {
+      return new Promise((resolve, reject) => {
+        self._get(resourceGroupName, clusterName, applicationName, serviceName, options, (err, result, request, response) => {
+          if (err) { reject(err); }
+          else { resolve(result); }
+          return;
+        });
+      });
+    } else {
+      return self._get(resourceGroupName, clusterName, applicationName, serviceName, options, optionalCallback);
+    }
+  }
+
+  /**
+   * Creates or updates a service resource with the specified name.
+   *
+   * @param {string} resourceGroupName The name of the resource group.
+   *
+   * @param {string} clusterName The name of the cluster resource
+   *
+   * @param {string} applicationName The name of the application resource.
+   *
+   * @param {string} serviceName The name of the service resource in the format
+   * of {applicationName}~{serviceName}.
+   *
+   * @param {object} parameters The service resource.
+   *
+   * @param {string} [parameters.placementConstraints] The placement constraints
+   * as a string. Placement constraints are boolean expressions on node
+   * properties and allow for restricting a service to particular nodes based on
+   * the service requirements. For example, to place a service on nodes where
+   * NodeType is blue specify the following: "NodeColor == blue)".
+   *
+   * @param {array} [parameters.correlationScheme]
+   *
+   * @param {array} [parameters.serviceLoadMetrics]
+   *
+   * @param {array} [parameters.servicePlacementPolicies]
+   *
+   * @param {string} [parameters.defaultMoveCost] Possible values include:
+   * 'Zero', 'Low', 'Medium', 'High'
+   *
+   * @param {string} [parameters.serviceKind] Possible values include: 'Invalid',
+   * 'Stateless', 'Stateful'
+   *
+   * @param {string} [parameters.serviceTypeName] The name of the service type
+   *
+   * @param {object} [parameters.partitionDescription]
+   *
+   * @param {string} parameters.partitionDescription.partitionScheme Polymorphic
+   * Discriminator
+   *
+   * @param {string} parameters.serviceResourceType Polymorphic Discriminator
+   *
+   * @param {string} parameters.location Resource location.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @returns {Promise} A promise is returned
+   *
+   * @resolve {HttpOperationResponse&lt;ServiceResource>} - The deserialized result object.
+   *
+   * @reject {Error} - The error object.
+   */
+  putWithHttpOperationResponse(resourceGroupName, clusterName, applicationName, serviceName, parameters, options) {
+    let client = this.client;
+    let self = this;
+    return new Promise((resolve, reject) => {
+      self._put(resourceGroupName, clusterName, applicationName, serviceName, parameters, options, (err, result, request, response) => {
+        let httpOperationResponse = new msRest.HttpOperationResponse(request, response);
+        httpOperationResponse.body = result;
+        if (err) { reject(err); }
+        else { resolve(httpOperationResponse); }
+        return;
+      });
+    });
+  }
+
+  /**
+   * Creates or updates a service resource with the specified name.
+   *
+   * @param {string} resourceGroupName The name of the resource group.
+   *
+   * @param {string} clusterName The name of the cluster resource
+   *
+   * @param {string} applicationName The name of the application resource.
+   *
+   * @param {string} serviceName The name of the service resource in the format
+   * of {applicationName}~{serviceName}.
+   *
+   * @param {object} parameters The service resource.
+   *
+   * @param {string} [parameters.placementConstraints] The placement constraints
+   * as a string. Placement constraints are boolean expressions on node
+   * properties and allow for restricting a service to particular nodes based on
+   * the service requirements. For example, to place a service on nodes where
+   * NodeType is blue specify the following: "NodeColor == blue)".
+   *
+   * @param {array} [parameters.correlationScheme]
+   *
+   * @param {array} [parameters.serviceLoadMetrics]
+   *
+   * @param {array} [parameters.servicePlacementPolicies]
+   *
+   * @param {string} [parameters.defaultMoveCost] Possible values include:
+   * 'Zero', 'Low', 'Medium', 'High'
+   *
+   * @param {string} [parameters.serviceKind] Possible values include: 'Invalid',
+   * 'Stateless', 'Stateful'
+   *
+   * @param {string} [parameters.serviceTypeName] The name of the service type
+   *
+   * @param {object} [parameters.partitionDescription]
+   *
+   * @param {string} parameters.partitionDescription.partitionScheme Polymorphic
+   * Discriminator
+   *
+   * @param {string} parameters.serviceResourceType Polymorphic Discriminator
+   *
+   * @param {string} parameters.location Resource location.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @param {function} [optionalCallback] - The optional callback.
+   *
+   * @returns {function|Promise} If a callback was passed as the last parameter
+   * then it returns the callback else returns a Promise.
+   *
+   * {Promise} A promise is returned
+   *
+   *                      @resolve {ServiceResource} - The deserialized result object.
+   *
+   *                      @reject {Error} - The error object.
+   *
+   * {function} optionalCallback(err, result, request, response)
+   *
+   *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+   *
+   *                      {object} [result]   - The deserialized result object if an error did not occur.
+   *                      See {@link ServiceResource} for more information.
+   *
+   *                      {object} [request]  - The HTTP Request object if an error did not occur.
+   *
+   *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+   */
+  put(resourceGroupName, clusterName, applicationName, serviceName, parameters, options, optionalCallback) {
+    let client = this.client;
+    let self = this;
+    if (!optionalCallback &amp;&amp; typeof options === 'function') {
+      optionalCallback = options;
+      options = null;
+    }
+    if (!optionalCallback) {
+      return new Promise((resolve, reject) => {
+        self._put(resourceGroupName, clusterName, applicationName, serviceName, parameters, options, (err, result, request, response) => {
+          if (err) { reject(err); }
+          else { resolve(result); }
+          return;
+        });
+      });
+    } else {
+      return self._put(resourceGroupName, clusterName, applicationName, serviceName, parameters, options, optionalCallback);
+    }
+  }
+
+  /**
+   * Updates a service resource with the specified name.
+   *
+   * @param {string} resourceGroupName The name of the resource group.
+   *
+   * @param {string} clusterName The name of the cluster resource
+   *
+   * @param {string} applicationName The name of the application resource.
+   *
+   * @param {string} serviceName The name of the service resource in the format
+   * of {applicationName}~{serviceName}.
+   *
+   * @param {object} parameters The service resource for patch operations.
+   *
+   * @param {string} [parameters.placementConstraints] The placement constraints
+   * as a string. Placement constraints are boolean expressions on node
+   * properties and allow for restricting a service to particular nodes based on
+   * the service requirements. For example, to place a service on nodes where
+   * NodeType is blue specify the following: "NodeColor == blue)".
+   *
+   * @param {array} [parameters.correlationScheme]
+   *
+   * @param {array} [parameters.serviceLoadMetrics]
+   *
+   * @param {array} [parameters.servicePlacementPolicies]
+   *
+   * @param {string} [parameters.defaultMoveCost] Possible values include:
+   * 'Zero', 'Low', 'Medium', 'High'
+   *
+   * @param {string} parameters.serviceResourceType Polymorphic Discriminator
+   *
+   * @param {string} parameters.location Resource location.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @returns {Promise} A promise is returned
+   *
+   * @resolve {HttpOperationResponse&lt;ServiceResourceUpdate>} - The deserialized result object.
+   *
+   * @reject {Error} - The error object.
+   */
+  patchWithHttpOperationResponse(resourceGroupName, clusterName, applicationName, serviceName, parameters, options) {
+    let client = this.client;
+    let self = this;
+    return new Promise((resolve, reject) => {
+      self._patch(resourceGroupName, clusterName, applicationName, serviceName, parameters, options, (err, result, request, response) => {
+        let httpOperationResponse = new msRest.HttpOperationResponse(request, response);
+        httpOperationResponse.body = result;
+        if (err) { reject(err); }
+        else { resolve(httpOperationResponse); }
+        return;
+      });
+    });
+  }
+
+  /**
+   * Updates a service resource with the specified name.
+   *
+   * @param {string} resourceGroupName The name of the resource group.
+   *
+   * @param {string} clusterName The name of the cluster resource
+   *
+   * @param {string} applicationName The name of the application resource.
+   *
+   * @param {string} serviceName The name of the service resource in the format
+   * of {applicationName}~{serviceName}.
+   *
+   * @param {object} parameters The service resource for patch operations.
+   *
+   * @param {string} [parameters.placementConstraints] The placement constraints
+   * as a string. Placement constraints are boolean expressions on node
+   * properties and allow for restricting a service to particular nodes based on
+   * the service requirements. For example, to place a service on nodes where
+   * NodeType is blue specify the following: "NodeColor == blue)".
+   *
+   * @param {array} [parameters.correlationScheme]
+   *
+   * @param {array} [parameters.serviceLoadMetrics]
+   *
+   * @param {array} [parameters.servicePlacementPolicies]
+   *
+   * @param {string} [parameters.defaultMoveCost] Possible values include:
+   * 'Zero', 'Low', 'Medium', 'High'
+   *
+   * @param {string} parameters.serviceResourceType Polymorphic Discriminator
+   *
+   * @param {string} parameters.location Resource location.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @param {function} [optionalCallback] - The optional callback.
+   *
+   * @returns {function|Promise} If a callback was passed as the last parameter
+   * then it returns the callback else returns a Promise.
+   *
+   * {Promise} A promise is returned
+   *
+   *                      @resolve {ServiceResourceUpdate} - The deserialized result object.
+   *
+   *                      @reject {Error} - The error object.
+   *
+   * {function} optionalCallback(err, result, request, response)
+   *
+   *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+   *
+   *                      {object} [result]   - The deserialized result object if an error did not occur.
+   *                      See {@link ServiceResourceUpdate} for more information.
+   *
+   *                      {object} [request]  - The HTTP Request object if an error did not occur.
+   *
+   *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+   */
+  patch(resourceGroupName, clusterName, applicationName, serviceName, parameters, options, optionalCallback) {
+    let client = this.client;
+    let self = this;
+    if (!optionalCallback &amp;&amp; typeof options === 'function') {
+      optionalCallback = options;
+      options = null;
+    }
+    if (!optionalCallback) {
+      return new Promise((resolve, reject) => {
+        self._patch(resourceGroupName, clusterName, applicationName, serviceName, parameters, options, (err, result, request, response) => {
+          if (err) { reject(err); }
+          else { resolve(result); }
+          return;
+        });
+      });
+    } else {
+      return self._patch(resourceGroupName, clusterName, applicationName, serviceName, parameters, options, optionalCallback);
+    }
+  }
+
+  /**
+   * Deletes a service resource with the specified name.
+   *
+   * @param {string} resourceGroupName The name of the resource group.
+   *
+   * @param {string} clusterName The name of the cluster resource
+   *
+   * @param {string} applicationName The name of the application resource.
+   *
+   * @param {string} serviceName The name of the service resource in the format
+   * of {applicationName}~{serviceName}.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @returns {Promise} A promise is returned
+   *
+   * @resolve {HttpOperationResponse&lt;null>} - The deserialized result object.
+   *
+   * @reject {Error} - The error object.
+   */
+  deleteMethodWithHttpOperationResponse(resourceGroupName, clusterName, applicationName, serviceName, options) {
+    let client = this.client;
+    let self = this;
+    return new Promise((resolve, reject) => {
+      self._deleteMethod(resourceGroupName, clusterName, applicationName, serviceName, options, (err, result, request, response) => {
+        let httpOperationResponse = new msRest.HttpOperationResponse(request, response);
+        httpOperationResponse.body = result;
+        if (err) { reject(err); }
+        else { resolve(httpOperationResponse); }
+        return;
+      });
+    });
+  }
+
+  /**
+   * Deletes a service resource with the specified name.
+   *
+   * @param {string} resourceGroupName The name of the resource group.
+   *
+   * @param {string} clusterName The name of the cluster resource
+   *
+   * @param {string} applicationName The name of the application resource.
+   *
+   * @param {string} serviceName The name of the service resource in the format
+   * of {applicationName}~{serviceName}.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @param {function} [optionalCallback] - The optional callback.
+   *
+   * @returns {function|Promise} If a callback was passed as the last parameter
+   * then it returns the callback else returns a Promise.
+   *
+   * {Promise} A promise is returned
+   *
+   *                      @resolve {null} - The deserialized result object.
+   *
+   *                      @reject {Error} - The error object.
+   *
+   * {function} optionalCallback(err, result, request, response)
+   *
+   *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+   *
+   *                      {null} [result]   - The deserialized result object if an error did not occur.
+   *
+   *                      {object} [request]  - The HTTP Request object if an error did not occur.
+   *
+   *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+   */
+  deleteMethod(resourceGroupName, clusterName, applicationName, serviceName, options, optionalCallback) {
+    let client = this.client;
+    let self = this;
+    if (!optionalCallback &amp;&amp; typeof options === 'function') {
+      optionalCallback = options;
+      options = null;
+    }
+    if (!optionalCallback) {
+      return new Promise((resolve, reject) => {
+        self._deleteMethod(resourceGroupName, clusterName, applicationName, serviceName, options, (err, result, request, response) => {
+          if (err) { reject(err); }
+          else { resolve(result); }
+          return;
+        });
+      });
+    } else {
+      return self._deleteMethod(resourceGroupName, clusterName, applicationName, serviceName, options, optionalCallback);
+    }
+  }
+
+  /**
+   * Returns all service resources in the specified application.
+   *
+   * @param {string} resourceGroupName The name of the resource group.
+   *
+   * @param {string} clusterName The name of the cluster resource
+   *
+   * @param {string} applicationName The name of the application resource.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @returns {Promise} A promise is returned
+   *
+   * @resolve {HttpOperationResponse&lt;ServiceResourceList>} - The deserialized result object.
+   *
+   * @reject {Error} - The error object.
+   */
+  listWithHttpOperationResponse(resourceGroupName, clusterName, applicationName, options) {
+    let client = this.client;
+    let self = this;
+    return new Promise((resolve, reject) => {
+      self._list(resourceGroupName, clusterName, applicationName, options, (err, result, request, response) => {
+        let httpOperationResponse = new msRest.HttpOperationResponse(request, response);
+        httpOperationResponse.body = result;
+        if (err) { reject(err); }
+        else { resolve(httpOperationResponse); }
+        return;
+      });
+    });
+  }
+
+  /**
+   * Returns all service resources in the specified application.
+   *
+   * @param {string} resourceGroupName The name of the resource group.
+   *
+   * @param {string} clusterName The name of the cluster resource
+   *
+   * @param {string} applicationName The name of the application resource.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @param {function} [optionalCallback] - The optional callback.
+   *
+   * @returns {function|Promise} If a callback was passed as the last parameter
+   * then it returns the callback else returns a Promise.
+   *
+   * {Promise} A promise is returned
+   *
+   *                      @resolve {ServiceResourceList} - The deserialized result object.
+   *
+   *                      @reject {Error} - The error object.
+   *
+   * {function} optionalCallback(err, result, request, response)
+   *
+   *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+   *
+   *                      {object} [result]   - The deserialized result object if an error did not occur.
+   *                      See {@link ServiceResourceList} for more information.
+   *
+   *                      {object} [request]  - The HTTP Request object if an error did not occur.
+   *
+   *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+   */
+  list(resourceGroupName, clusterName, applicationName, options, optionalCallback) {
+    let client = this.client;
+    let self = this;
+    if (!optionalCallback &amp;&amp; typeof options === 'function') {
+      optionalCallback = options;
+      options = null;
+    }
+    if (!optionalCallback) {
+      return new Promise((resolve, reject) => {
+        self._list(resourceGroupName, clusterName, applicationName, options, (err, result, request, response) => {
+          if (err) { reject(err); }
+          else { resolve(result); }
+          return;
+        });
+      });
+    } else {
+      return self._list(resourceGroupName, clusterName, applicationName, options, optionalCallback);
+    }
+  }
+
+}
+
+module.exports = Service;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Thu Nov 09 2017 11:16:16 GMT-0800 (PST) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="../../scripts/linenumber.js"></script>
+</body>
+</html>

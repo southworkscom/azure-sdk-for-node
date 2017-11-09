@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>account/models/firewallRule.js - Documentation</title>
+    <meta name="viewport" content="initial-scale=.75">
+    <script src="../../scripts/prettify/prettify.js"></script>
+    <script src="../../scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="../../styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="../../styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><span><a href="../../index.html">Home</a> <span class="github-short">| <a href="https://github.com/azure/azure-sdk-for-node.git">GitHub</a></span></span></h2><h3>Classes</h3><ul><li><a href="Account.html">Account</a><ul class='methods'><li data-type='method'><a href="Account.html#beginCreate">beginCreate</a></li><li data-type='method'><a href="Account.html#beginCreateWithHttpOperationResponse">beginCreateWithHttpOperationResponse</a></li><li data-type='method'><a href="Account.html#beginDeleteMethod">beginDeleteMethod</a></li><li data-type='method'><a href="Account.html#beginDeleteMethodWithHttpOperationResponse">beginDeleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="Account.html#beginUpdate">beginUpdate</a></li><li data-type='method'><a href="Account.html#beginUpdateWithHttpOperationResponse">beginUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="Account.html#create">create</a></li><li data-type='method'><a href="Account.html#createWithHttpOperationResponse">createWithHttpOperationResponse</a></li><li data-type='method'><a href="Account.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="Account.html#deleteMethodWithHttpOperationResponse">deleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="Account.html#enableKeyVault">enableKeyVault</a></li><li data-type='method'><a href="Account.html#enableKeyVaultWithHttpOperationResponse">enableKeyVaultWithHttpOperationResponse</a></li><li data-type='method'><a href="Account.html#get">get</a></li><li data-type='method'><a href="Account.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="Account.html#list">list</a></li><li data-type='method'><a href="Account.html#listByResourceGroup">listByResourceGroup</a></li><li data-type='method'><a href="Account.html#listByResourceGroupNext">listByResourceGroupNext</a></li><li data-type='method'><a href="Account.html#listByResourceGroupNextWithHttpOperationResponse">listByResourceGroupNextWithHttpOperationResponse</a></li><li data-type='method'><a href="Account.html#listByResourceGroupWithHttpOperationResponse">listByResourceGroupWithHttpOperationResponse</a></li><li data-type='method'><a href="Account.html#listNext">listNext</a></li><li data-type='method'><a href="Account.html#listNextWithHttpOperationResponse">listNextWithHttpOperationResponse</a></li><li data-type='method'><a href="Account.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li><li data-type='method'><a href="Account.html#update">update</a></li><li data-type='method'><a href="Account.html#updateWithHttpOperationResponse">updateWithHttpOperationResponse</a></li></ul></li><li><a href="AclStatus.html">AclStatus</a><ul class='methods'><li data-type='method'><a href="AclStatus.html#mapper">mapper</a></li></ul></li><li><a href="AclStatusResult.html">AclStatusResult</a><ul class='methods'><li data-type='method'><a href="AclStatusResult.html#mapper">mapper</a></li></ul></li><li><a href="AdlsAccessControlException.html">AdlsAccessControlException</a><ul class='methods'><li data-type='method'><a href="AdlsAccessControlException.html#mapper">mapper</a></li></ul></li><li><a href="AdlsBadOffsetException.html">AdlsBadOffsetException</a><ul class='methods'><li data-type='method'><a href="AdlsBadOffsetException.html#mapper">mapper</a></li></ul></li><li><a href="AdlsError.html">AdlsError</a><ul class='methods'><li data-type='method'><a href="AdlsError.html#mapper">mapper</a></li></ul></li><li><a href="AdlsFileAlreadyExistsException.html">AdlsFileAlreadyExistsException</a><ul class='methods'><li data-type='method'><a href="AdlsFileAlreadyExistsException.html#mapper">mapper</a></li></ul></li><li><a href="AdlsFileNotFoundException.html">AdlsFileNotFoundException</a><ul class='methods'><li data-type='method'><a href="AdlsFileNotFoundException.html#mapper">mapper</a></li></ul></li><li><a href="AdlsIllegalArgumentException.html">AdlsIllegalArgumentException</a><ul class='methods'><li data-type='method'><a href="AdlsIllegalArgumentException.html#mapper">mapper</a></li></ul></li><li><a href="AdlsIOException.html">AdlsIOException</a><ul class='methods'><li data-type='method'><a href="AdlsIOException.html#mapper">mapper</a></li></ul></li><li><a href="AdlsRemoteException.html">AdlsRemoteException</a><ul class='methods'><li data-type='method'><a href="AdlsRemoteException.html#mapper">mapper</a></li></ul></li><li><a href="AdlsRuntimeException.html">AdlsRuntimeException</a><ul class='methods'><li data-type='method'><a href="AdlsRuntimeException.html#mapper">mapper</a></li></ul></li><li><a href="AdlsSecurityException.html">AdlsSecurityException</a><ul class='methods'><li data-type='method'><a href="AdlsSecurityException.html#mapper">mapper</a></li></ul></li><li><a href="AdlsThrottledException.html">AdlsThrottledException</a><ul class='methods'><li data-type='method'><a href="AdlsThrottledException.html#mapper">mapper</a></li></ul></li><li><a href="AdlsUnsupportedOperationException.html">AdlsUnsupportedOperationException</a><ul class='methods'><li data-type='method'><a href="AdlsUnsupportedOperationException.html#mapper">mapper</a></li></ul></li><li><a href="ContentSummary.html">ContentSummary</a><ul class='methods'><li data-type='method'><a href="ContentSummary.html#mapper">mapper</a></li></ul></li><li><a href="ContentSummaryResult.html">ContentSummaryResult</a><ul class='methods'><li data-type='method'><a href="ContentSummaryResult.html#mapper">mapper</a></li></ul></li><li><a href="DataLakeStoreAccount.html">DataLakeStoreAccount</a><ul class='methods'><li data-type='method'><a href="DataLakeStoreAccount.html#mapper">mapper</a></li></ul></li><li><a href="DataLakeStoreAccountBasic.html">DataLakeStoreAccountBasic</a><ul class='methods'><li data-type='method'><a href="DataLakeStoreAccountBasic.html#mapper">mapper</a></li></ul></li><li><a href="DataLakeStoreAccountListResult.html">DataLakeStoreAccountListResult</a><ul class='methods'><li data-type='method'><a href="DataLakeStoreAccountListResult.html#mapper">mapper</a></li></ul></li><li><a href="DataLakeStoreAccountManagementClient.html">DataLakeStoreAccountManagementClient</a></li><li><a href="DataLakeStoreAccountUpdateParameters.html">DataLakeStoreAccountUpdateParameters</a><ul class='methods'><li data-type='method'><a href="DataLakeStoreAccountUpdateParameters.html#mapper">mapper</a></li></ul></li><li><a href="DataLakeStoreFileSystemManagementClient.html">DataLakeStoreFileSystemManagementClient</a></li><li><a href="DataLakeStoreFirewallRuleListResult.html">DataLakeStoreFirewallRuleListResult</a><ul class='methods'><li data-type='method'><a href="DataLakeStoreFirewallRuleListResult.html#mapper">mapper</a></li></ul></li><li><a href="DataLakeStoreTrustedIdProviderListResult.html">DataLakeStoreTrustedIdProviderListResult</a><ul class='methods'><li data-type='method'><a href="DataLakeStoreTrustedIdProviderListResult.html#mapper">mapper</a></li></ul></li><li><a href="EncryptionConfig.html">EncryptionConfig</a><ul class='methods'><li data-type='method'><a href="EncryptionConfig.html#mapper">mapper</a></li></ul></li><li><a href="EncryptionIdentity.html">EncryptionIdentity</a><ul class='methods'><li data-type='method'><a href="EncryptionIdentity.html#mapper">mapper</a></li></ul></li><li><a href="ErrorDetails.html">ErrorDetails</a><ul class='methods'><li data-type='method'><a href="ErrorDetails.html#mapper">mapper</a></li></ul></li><li><a href="FileOperationResult.html">FileOperationResult</a><ul class='methods'><li data-type='method'><a href="FileOperationResult.html#mapper">mapper</a></li></ul></li><li><a href="FileStatuses.html">FileStatuses</a><ul class='methods'><li data-type='method'><a href="FileStatuses.html#mapper">mapper</a></li></ul></li><li><a href="FileStatusesResult.html">FileStatusesResult</a><ul class='methods'><li data-type='method'><a href="FileStatusesResult.html#mapper">mapper</a></li></ul></li><li><a href="FileStatusProperties.html">FileStatusProperties</a><ul class='methods'><li data-type='method'><a href="FileStatusProperties.html#mapper">mapper</a></li></ul></li><li><a href="FileStatusResult.html">FileStatusResult</a><ul class='methods'><li data-type='method'><a href="FileStatusResult.html#mapper">mapper</a></li></ul></li><li><a href="FileSystem.html">FileSystem</a><ul class='methods'><li data-type='method'><a href="FileSystem.html#append">append</a></li><li data-type='method'><a href="FileSystem.html#appendWithHttpOperationResponse">appendWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#checkAccess">checkAccess</a></li><li data-type='method'><a href="FileSystem.html#checkAccessWithHttpOperationResponse">checkAccessWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#concat">concat</a></li><li data-type='method'><a href="FileSystem.html#concatWithHttpOperationResponse">concatWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#concurrentAppend">concurrentAppend</a></li><li data-type='method'><a href="FileSystem.html#concurrentAppendWithHttpOperationResponse">concurrentAppendWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#create">create</a></li><li data-type='method'><a href="FileSystem.html#createWithHttpOperationResponse">createWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="FileSystem.html#deleteMethodWithHttpOperationResponse">deleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#getAclStatus">getAclStatus</a></li><li data-type='method'><a href="FileSystem.html#getAclStatusWithHttpOperationResponse">getAclStatusWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#getContentSummary">getContentSummary</a></li><li data-type='method'><a href="FileSystem.html#getContentSummaryWithHttpOperationResponse">getContentSummaryWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#getFileStatus">getFileStatus</a></li><li data-type='method'><a href="FileSystem.html#getFileStatusWithHttpOperationResponse">getFileStatusWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#listFileStatus">listFileStatus</a></li><li data-type='method'><a href="FileSystem.html#listFileStatusWithHttpOperationResponse">listFileStatusWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#mkdirs">mkdirs</a></li><li data-type='method'><a href="FileSystem.html#mkdirsWithHttpOperationResponse">mkdirsWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#modifyAclEntries">modifyAclEntries</a></li><li data-type='method'><a href="FileSystem.html#modifyAclEntriesWithHttpOperationResponse">modifyAclEntriesWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#msConcat">msConcat</a></li><li data-type='method'><a href="FileSystem.html#msConcatWithHttpOperationResponse">msConcatWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#open">open</a></li><li data-type='method'><a href="FileSystem.html#openWithHttpOperationResponse">openWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#removeAcl">removeAcl</a></li><li data-type='method'><a href="FileSystem.html#removeAclEntries">removeAclEntries</a></li><li data-type='method'><a href="FileSystem.html#removeAclEntriesWithHttpOperationResponse">removeAclEntriesWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#removeAclWithHttpOperationResponse">removeAclWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#removeDefaultAcl">removeDefaultAcl</a></li><li data-type='method'><a href="FileSystem.html#removeDefaultAclWithHttpOperationResponse">removeDefaultAclWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#rename">rename</a></li><li data-type='method'><a href="FileSystem.html#renameWithHttpOperationResponse">renameWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#setAcl">setAcl</a></li><li data-type='method'><a href="FileSystem.html#setAclWithHttpOperationResponse">setAclWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#setFileExpiry">setFileExpiry</a></li><li data-type='method'><a href="FileSystem.html#setFileExpiryWithHttpOperationResponse">setFileExpiryWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#setOwner">setOwner</a></li><li data-type='method'><a href="FileSystem.html#setOwnerWithHttpOperationResponse">setOwnerWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#setPermission">setPermission</a></li><li data-type='method'><a href="FileSystem.html#setPermissionWithHttpOperationResponse">setPermissionWithHttpOperationResponse</a></li></ul></li><li><a href="FirewallRule.html">FirewallRule</a><ul class='methods'><li data-type='method'><a href="FirewallRule.html#mapper">mapper</a></li></ul></li><li><a href="FirewallRules.html">FirewallRules</a><ul class='methods'><li data-type='method'><a href="FirewallRules.html#createOrUpdate">createOrUpdate</a></li><li data-type='method'><a href="FirewallRules.html#createOrUpdateWithHttpOperationResponse">createOrUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="FirewallRules.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="FirewallRules.html#deleteMethodWithHttpOperationResponse">deleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="FirewallRules.html#get">get</a></li><li data-type='method'><a href="FirewallRules.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="FirewallRules.html#listByAccount">listByAccount</a></li><li data-type='method'><a href="FirewallRules.html#listByAccountNext">listByAccountNext</a></li><li data-type='method'><a href="FirewallRules.html#listByAccountNextWithHttpOperationResponse">listByAccountNextWithHttpOperationResponse</a></li><li data-type='method'><a href="FirewallRules.html#listByAccountWithHttpOperationResponse">listByAccountWithHttpOperationResponse</a></li><li data-type='method'><a href="FirewallRules.html#update">update</a></li><li data-type='method'><a href="FirewallRules.html#updateWithHttpOperationResponse">updateWithHttpOperationResponse</a></li></ul></li><li><a href="KeyVaultMetaInfo.html">KeyVaultMetaInfo</a><ul class='methods'><li data-type='method'><a href="KeyVaultMetaInfo.html#mapper">mapper</a></li></ul></li><li><a href="Resource.html">Resource</a><ul class='methods'><li data-type='method'><a href="Resource.html#mapper">mapper</a></li></ul></li><li><a href="SubResource.html">SubResource</a><ul class='methods'><li data-type='method'><a href="SubResource.html#mapper">mapper</a></li></ul></li><li><a href="TrustedIdProvider.html">TrustedIdProvider</a><ul class='methods'><li data-type='method'><a href="TrustedIdProvider.html#mapper">mapper</a></li></ul></li><li><a href="TrustedIdProviders.html">TrustedIdProviders</a><ul class='methods'><li data-type='method'><a href="TrustedIdProviders.html#createOrUpdate">createOrUpdate</a></li><li data-type='method'><a href="TrustedIdProviders.html#createOrUpdateWithHttpOperationResponse">createOrUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="TrustedIdProviders.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="TrustedIdProviders.html#deleteMethodWithHttpOperationResponse">deleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="TrustedIdProviders.html#get">get</a></li><li data-type='method'><a href="TrustedIdProviders.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="TrustedIdProviders.html#listByAccount">listByAccount</a></li><li data-type='method'><a href="TrustedIdProviders.html#listByAccountNext">listByAccountNext</a></li><li data-type='method'><a href="TrustedIdProviders.html#listByAccountNextWithHttpOperationResponse">listByAccountNextWithHttpOperationResponse</a></li><li data-type='method'><a href="TrustedIdProviders.html#listByAccountWithHttpOperationResponse">listByAccountWithHttpOperationResponse</a></li><li data-type='method'><a href="TrustedIdProviders.html#update">update</a></li><li data-type='method'><a href="TrustedIdProviders.html#updateWithHttpOperationResponse">updateWithHttpOperationResponse</a></li></ul></li><li><a href="UpdateEncryptionConfig.html">UpdateEncryptionConfig</a><ul class='methods'><li data-type='method'><a href="UpdateEncryptionConfig.html#mapper">mapper</a></li></ul></li><li><a href="UpdateFirewallRuleParameters.html">UpdateFirewallRuleParameters</a><ul class='methods'><li data-type='method'><a href="UpdateFirewallRuleParameters.html#mapper">mapper</a></li></ul></li><li><a href="UpdateKeyVaultMetaInfo.html">UpdateKeyVaultMetaInfo</a><ul class='methods'><li data-type='method'><a href="UpdateKeyVaultMetaInfo.html#mapper">mapper</a></li></ul></li><li><a href="UpdateTrustedIdProviderParameters.html">UpdateTrustedIdProviderParameters</a><ul class='methods'><li data-type='method'><a href="UpdateTrustedIdProviderParameters.html#mapper">mapper</a></li></ul></li></ul><h3>Global</h3><ul><li><a href="global.html#_append">_append</a></li><li><a href="global.html#_beginCreate">_beginCreate</a></li><li><a href="global.html#_beginDeleteMethod">_beginDeleteMethod</a></li><li><a href="global.html#_beginUpdate">_beginUpdate</a></li><li><a href="global.html#_checkAccess">_checkAccess</a></li><li><a href="global.html#_concat">_concat</a></li><li><a href="global.html#_concurrentAppend">_concurrentAppend</a></li><li><a href="global.html#_create">_create</a></li><li><a href="global.html#_createOrUpdate">_createOrUpdate</a></li><li><a href="global.html#_deleteMethod">_deleteMethod</a></li><li><a href="global.html#_enableKeyVault">_enableKeyVault</a></li><li><a href="global.html#_get">_get</a></li><li><a href="global.html#_getAclStatus">_getAclStatus</a></li><li><a href="global.html#_getContentSummary">_getContentSummary</a></li><li><a href="global.html#_getFileStatus">_getFileStatus</a></li><li><a href="global.html#_list">_list</a></li><li><a href="global.html#_listByAccount">_listByAccount</a></li><li><a href="global.html#_listByAccountNext">_listByAccountNext</a></li><li><a href="global.html#_listByResourceGroup">_listByResourceGroup</a></li><li><a href="global.html#_listByResourceGroupNext">_listByResourceGroupNext</a></li><li><a href="global.html#_listFileStatus">_listFileStatus</a></li><li><a href="global.html#_listNext">_listNext</a></li><li><a href="global.html#_mkdirs">_mkdirs</a></li><li><a href="global.html#_modifyAclEntries">_modifyAclEntries</a></li><li><a href="global.html#_msConcat">_msConcat</a></li><li><a href="global.html#_open">_open</a></li><li><a href="global.html#_removeAcl">_removeAcl</a></li><li><a href="global.html#_removeAclEntries">_removeAclEntries</a></li><li><a href="global.html#_removeDefaultAcl">_removeDefaultAcl</a></li><li><a href="global.html#_rename">_rename</a></li><li><a href="global.html#_setAcl">_setAcl</a></li><li><a href="global.html#_setFileExpiry">_setFileExpiry</a></li><li><a href="global.html#_setOwner">_setOwner</a></li><li><a href="global.html#_setPermission">_setPermission</a></li><li><a href="global.html#_update">_update</a></li><li><a href="global.html#accountId">accountId</a></li><li><a href="global.html#aclBit">aclBit</a></li><li><a href="global.html#encryptionKeyVersion">encryptionKeyVersion</a></li><li><a href="global.html#endIpAddress">endIpAddress</a></li><li><a href="global.html#exception">exception</a></li><li><a href="global.html#fileStatus">fileStatus</a></li><li><a href="global.html#firewallAllowAzureIps">firewallAllowAzureIps</a></li><li><a href="global.html#idProvider">idProvider</a></li><li><a href="global.html#nextLink">nextLink</a></li><li><a href="global.html#operationResult">operationResult</a></li><li><a href="global.html#spaceConsumed">spaceConsumed</a></li><li><a href="global.html#stickyBit">stickyBit</a></li><li><a href="global.html#tags">tags</a></li><li><a href="global.html#target">target</a></li><li><a href="global.html#tenantId">tenantId</a></li><li><a href="global.html#type">type</a></li></ul>
+</nav>
+
+<div id="main">
+    
+      <a class="github-banner" href="https://github.com/azure/azure-sdk-for-node.git"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+    
+    
+    <h1 class="page-title">account/models/firewallRule.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/*
+ * Copyright (c) Microsoft Corporation. All rights reserved.
+ * Licensed under the MIT License. See License.txt in the project root for
+ * license information.
+ *
+ * Code generated by Microsoft (R) AutoRest Code Generator.
+ * Changes may cause incorrect behavior and will be lost if the code is
+ * regenerated.
+ */
+
+'use strict';
+
+const models = require('./index');
+
+/**
+ * Data Lake Store firewall rule information
+ *
+ * @extends models['SubResource']
+ */
+class FirewallRule extends models['SubResource'] {
+  /**
+   * Create a FirewallRule.
+   * @member {string} startIpAddress the start IP address for the firewall
+   * rule. This can be either ipv4 or ipv6. Start and End should be in the same
+   * protocol.
+   * @member {string} endIpAddress the end IP address for the firewall rule.
+   * This can be either ipv4 or ipv6. Start and End should be in the same
+   * protocol.
+   */
+  constructor() {
+    super();
+  }
+
+  /**
+   * Defines the metadata of FirewallRule
+   *
+   * @returns {object} metadata of FirewallRule
+   *
+   */
+  mapper() {
+    return {
+      required: false,
+      serializedName: 'FirewallRule',
+      type: {
+        name: 'Composite',
+        className: 'FirewallRule',
+        modelProperties: {
+          id: {
+            required: false,
+            readOnly: true,
+            serializedName: 'id',
+            type: {
+              name: 'String'
+            }
+          },
+          name: {
+            required: false,
+            serializedName: 'name',
+            type: {
+              name: 'String'
+            }
+          },
+          type: {
+            required: false,
+            readOnly: true,
+            serializedName: 'type',
+            type: {
+              name: 'String'
+            }
+          },
+          startIpAddress: {
+            required: true,
+            serializedName: 'properties.startIpAddress',
+            type: {
+              name: 'String'
+            }
+          },
+          endIpAddress: {
+            required: true,
+            serializedName: 'properties.endIpAddress',
+            type: {
+              name: 'String'
+            }
+          }
+        }
+      }
+    };
+  }
+}
+
+module.exports = FirewallRule;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Thu Nov 09 2017 11:14:45 GMT-0800 (PST) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="../../scripts/linenumber.js"></script>
+</body>
+</html>

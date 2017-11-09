@@ -1,0 +1,3527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>account/operations/account.js - Documentation</title>
+    <meta name="viewport" content="initial-scale=.75">
+    <script src="../../scripts/prettify/prettify.js"></script>
+    <script src="../../scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="../../styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="../../styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><span><a href="../../index.html">Home</a> <span class="github-short">| <a href="https://github.com/azure/azure-sdk-for-node.git">GitHub</a></span></span></h2><h3>Classes</h3><ul><li><a href="Account.html">Account</a><ul class='methods'><li data-type='method'><a href="Account.html#beginCreate">beginCreate</a></li><li data-type='method'><a href="Account.html#beginCreateWithHttpOperationResponse">beginCreateWithHttpOperationResponse</a></li><li data-type='method'><a href="Account.html#beginDeleteMethod">beginDeleteMethod</a></li><li data-type='method'><a href="Account.html#beginDeleteMethodWithHttpOperationResponse">beginDeleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="Account.html#beginUpdate">beginUpdate</a></li><li data-type='method'><a href="Account.html#beginUpdateWithHttpOperationResponse">beginUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="Account.html#create">create</a></li><li data-type='method'><a href="Account.html#createWithHttpOperationResponse">createWithHttpOperationResponse</a></li><li data-type='method'><a href="Account.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="Account.html#deleteMethodWithHttpOperationResponse">deleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="Account.html#enableKeyVault">enableKeyVault</a></li><li data-type='method'><a href="Account.html#enableKeyVaultWithHttpOperationResponse">enableKeyVaultWithHttpOperationResponse</a></li><li data-type='method'><a href="Account.html#get">get</a></li><li data-type='method'><a href="Account.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="Account.html#list">list</a></li><li data-type='method'><a href="Account.html#listByResourceGroup">listByResourceGroup</a></li><li data-type='method'><a href="Account.html#listByResourceGroupNext">listByResourceGroupNext</a></li><li data-type='method'><a href="Account.html#listByResourceGroupNextWithHttpOperationResponse">listByResourceGroupNextWithHttpOperationResponse</a></li><li data-type='method'><a href="Account.html#listByResourceGroupWithHttpOperationResponse">listByResourceGroupWithHttpOperationResponse</a></li><li data-type='method'><a href="Account.html#listNext">listNext</a></li><li data-type='method'><a href="Account.html#listNextWithHttpOperationResponse">listNextWithHttpOperationResponse</a></li><li data-type='method'><a href="Account.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li><li data-type='method'><a href="Account.html#update">update</a></li><li data-type='method'><a href="Account.html#updateWithHttpOperationResponse">updateWithHttpOperationResponse</a></li></ul></li><li><a href="AclStatus.html">AclStatus</a><ul class='methods'><li data-type='method'><a href="AclStatus.html#mapper">mapper</a></li></ul></li><li><a href="AclStatusResult.html">AclStatusResult</a><ul class='methods'><li data-type='method'><a href="AclStatusResult.html#mapper">mapper</a></li></ul></li><li><a href="AdlsAccessControlException.html">AdlsAccessControlException</a><ul class='methods'><li data-type='method'><a href="AdlsAccessControlException.html#mapper">mapper</a></li></ul></li><li><a href="AdlsBadOffsetException.html">AdlsBadOffsetException</a><ul class='methods'><li data-type='method'><a href="AdlsBadOffsetException.html#mapper">mapper</a></li></ul></li><li><a href="AdlsError.html">AdlsError</a><ul class='methods'><li data-type='method'><a href="AdlsError.html#mapper">mapper</a></li></ul></li><li><a href="AdlsFileAlreadyExistsException.html">AdlsFileAlreadyExistsException</a><ul class='methods'><li data-type='method'><a href="AdlsFileAlreadyExistsException.html#mapper">mapper</a></li></ul></li><li><a href="AdlsFileNotFoundException.html">AdlsFileNotFoundException</a><ul class='methods'><li data-type='method'><a href="AdlsFileNotFoundException.html#mapper">mapper</a></li></ul></li><li><a href="AdlsIllegalArgumentException.html">AdlsIllegalArgumentException</a><ul class='methods'><li data-type='method'><a href="AdlsIllegalArgumentException.html#mapper">mapper</a></li></ul></li><li><a href="AdlsIOException.html">AdlsIOException</a><ul class='methods'><li data-type='method'><a href="AdlsIOException.html#mapper">mapper</a></li></ul></li><li><a href="AdlsRemoteException.html">AdlsRemoteException</a><ul class='methods'><li data-type='method'><a href="AdlsRemoteException.html#mapper">mapper</a></li></ul></li><li><a href="AdlsRuntimeException.html">AdlsRuntimeException</a><ul class='methods'><li data-type='method'><a href="AdlsRuntimeException.html#mapper">mapper</a></li></ul></li><li><a href="AdlsSecurityException.html">AdlsSecurityException</a><ul class='methods'><li data-type='method'><a href="AdlsSecurityException.html#mapper">mapper</a></li></ul></li><li><a href="AdlsThrottledException.html">AdlsThrottledException</a><ul class='methods'><li data-type='method'><a href="AdlsThrottledException.html#mapper">mapper</a></li></ul></li><li><a href="AdlsUnsupportedOperationException.html">AdlsUnsupportedOperationException</a><ul class='methods'><li data-type='method'><a href="AdlsUnsupportedOperationException.html#mapper">mapper</a></li></ul></li><li><a href="ContentSummary.html">ContentSummary</a><ul class='methods'><li data-type='method'><a href="ContentSummary.html#mapper">mapper</a></li></ul></li><li><a href="ContentSummaryResult.html">ContentSummaryResult</a><ul class='methods'><li data-type='method'><a href="ContentSummaryResult.html#mapper">mapper</a></li></ul></li><li><a href="DataLakeStoreAccount.html">DataLakeStoreAccount</a><ul class='methods'><li data-type='method'><a href="DataLakeStoreAccount.html#mapper">mapper</a></li></ul></li><li><a href="DataLakeStoreAccountBasic.html">DataLakeStoreAccountBasic</a><ul class='methods'><li data-type='method'><a href="DataLakeStoreAccountBasic.html#mapper">mapper</a></li></ul></li><li><a href="DataLakeStoreAccountListResult.html">DataLakeStoreAccountListResult</a><ul class='methods'><li data-type='method'><a href="DataLakeStoreAccountListResult.html#mapper">mapper</a></li></ul></li><li><a href="DataLakeStoreAccountManagementClient.html">DataLakeStoreAccountManagementClient</a></li><li><a href="DataLakeStoreAccountUpdateParameters.html">DataLakeStoreAccountUpdateParameters</a><ul class='methods'><li data-type='method'><a href="DataLakeStoreAccountUpdateParameters.html#mapper">mapper</a></li></ul></li><li><a href="DataLakeStoreFileSystemManagementClient.html">DataLakeStoreFileSystemManagementClient</a></li><li><a href="DataLakeStoreFirewallRuleListResult.html">DataLakeStoreFirewallRuleListResult</a><ul class='methods'><li data-type='method'><a href="DataLakeStoreFirewallRuleListResult.html#mapper">mapper</a></li></ul></li><li><a href="DataLakeStoreTrustedIdProviderListResult.html">DataLakeStoreTrustedIdProviderListResult</a><ul class='methods'><li data-type='method'><a href="DataLakeStoreTrustedIdProviderListResult.html#mapper">mapper</a></li></ul></li><li><a href="EncryptionConfig.html">EncryptionConfig</a><ul class='methods'><li data-type='method'><a href="EncryptionConfig.html#mapper">mapper</a></li></ul></li><li><a href="EncryptionIdentity.html">EncryptionIdentity</a><ul class='methods'><li data-type='method'><a href="EncryptionIdentity.html#mapper">mapper</a></li></ul></li><li><a href="ErrorDetails.html">ErrorDetails</a><ul class='methods'><li data-type='method'><a href="ErrorDetails.html#mapper">mapper</a></li></ul></li><li><a href="FileOperationResult.html">FileOperationResult</a><ul class='methods'><li data-type='method'><a href="FileOperationResult.html#mapper">mapper</a></li></ul></li><li><a href="FileStatuses.html">FileStatuses</a><ul class='methods'><li data-type='method'><a href="FileStatuses.html#mapper">mapper</a></li></ul></li><li><a href="FileStatusesResult.html">FileStatusesResult</a><ul class='methods'><li data-type='method'><a href="FileStatusesResult.html#mapper">mapper</a></li></ul></li><li><a href="FileStatusProperties.html">FileStatusProperties</a><ul class='methods'><li data-type='method'><a href="FileStatusProperties.html#mapper">mapper</a></li></ul></li><li><a href="FileStatusResult.html">FileStatusResult</a><ul class='methods'><li data-type='method'><a href="FileStatusResult.html#mapper">mapper</a></li></ul></li><li><a href="FileSystem.html">FileSystem</a><ul class='methods'><li data-type='method'><a href="FileSystem.html#append">append</a></li><li data-type='method'><a href="FileSystem.html#appendWithHttpOperationResponse">appendWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#checkAccess">checkAccess</a></li><li data-type='method'><a href="FileSystem.html#checkAccessWithHttpOperationResponse">checkAccessWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#concat">concat</a></li><li data-type='method'><a href="FileSystem.html#concatWithHttpOperationResponse">concatWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#concurrentAppend">concurrentAppend</a></li><li data-type='method'><a href="FileSystem.html#concurrentAppendWithHttpOperationResponse">concurrentAppendWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#create">create</a></li><li data-type='method'><a href="FileSystem.html#createWithHttpOperationResponse">createWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="FileSystem.html#deleteMethodWithHttpOperationResponse">deleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#getAclStatus">getAclStatus</a></li><li data-type='method'><a href="FileSystem.html#getAclStatusWithHttpOperationResponse">getAclStatusWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#getContentSummary">getContentSummary</a></li><li data-type='method'><a href="FileSystem.html#getContentSummaryWithHttpOperationResponse">getContentSummaryWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#getFileStatus">getFileStatus</a></li><li data-type='method'><a href="FileSystem.html#getFileStatusWithHttpOperationResponse">getFileStatusWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#listFileStatus">listFileStatus</a></li><li data-type='method'><a href="FileSystem.html#listFileStatusWithHttpOperationResponse">listFileStatusWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#mkdirs">mkdirs</a></li><li data-type='method'><a href="FileSystem.html#mkdirsWithHttpOperationResponse">mkdirsWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#modifyAclEntries">modifyAclEntries</a></li><li data-type='method'><a href="FileSystem.html#modifyAclEntriesWithHttpOperationResponse">modifyAclEntriesWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#msConcat">msConcat</a></li><li data-type='method'><a href="FileSystem.html#msConcatWithHttpOperationResponse">msConcatWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#open">open</a></li><li data-type='method'><a href="FileSystem.html#openWithHttpOperationResponse">openWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#removeAcl">removeAcl</a></li><li data-type='method'><a href="FileSystem.html#removeAclEntries">removeAclEntries</a></li><li data-type='method'><a href="FileSystem.html#removeAclEntriesWithHttpOperationResponse">removeAclEntriesWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#removeAclWithHttpOperationResponse">removeAclWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#removeDefaultAcl">removeDefaultAcl</a></li><li data-type='method'><a href="FileSystem.html#removeDefaultAclWithHttpOperationResponse">removeDefaultAclWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#rename">rename</a></li><li data-type='method'><a href="FileSystem.html#renameWithHttpOperationResponse">renameWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#setAcl">setAcl</a></li><li data-type='method'><a href="FileSystem.html#setAclWithHttpOperationResponse">setAclWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#setFileExpiry">setFileExpiry</a></li><li data-type='method'><a href="FileSystem.html#setFileExpiryWithHttpOperationResponse">setFileExpiryWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#setOwner">setOwner</a></li><li data-type='method'><a href="FileSystem.html#setOwnerWithHttpOperationResponse">setOwnerWithHttpOperationResponse</a></li><li data-type='method'><a href="FileSystem.html#setPermission">setPermission</a></li><li data-type='method'><a href="FileSystem.html#setPermissionWithHttpOperationResponse">setPermissionWithHttpOperationResponse</a></li></ul></li><li><a href="FirewallRule.html">FirewallRule</a><ul class='methods'><li data-type='method'><a href="FirewallRule.html#mapper">mapper</a></li></ul></li><li><a href="FirewallRules.html">FirewallRules</a><ul class='methods'><li data-type='method'><a href="FirewallRules.html#createOrUpdate">createOrUpdate</a></li><li data-type='method'><a href="FirewallRules.html#createOrUpdateWithHttpOperationResponse">createOrUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="FirewallRules.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="FirewallRules.html#deleteMethodWithHttpOperationResponse">deleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="FirewallRules.html#get">get</a></li><li data-type='method'><a href="FirewallRules.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="FirewallRules.html#listByAccount">listByAccount</a></li><li data-type='method'><a href="FirewallRules.html#listByAccountNext">listByAccountNext</a></li><li data-type='method'><a href="FirewallRules.html#listByAccountNextWithHttpOperationResponse">listByAccountNextWithHttpOperationResponse</a></li><li data-type='method'><a href="FirewallRules.html#listByAccountWithHttpOperationResponse">listByAccountWithHttpOperationResponse</a></li><li data-type='method'><a href="FirewallRules.html#update">update</a></li><li data-type='method'><a href="FirewallRules.html#updateWithHttpOperationResponse">updateWithHttpOperationResponse</a></li></ul></li><li><a href="KeyVaultMetaInfo.html">KeyVaultMetaInfo</a><ul class='methods'><li data-type='method'><a href="KeyVaultMetaInfo.html#mapper">mapper</a></li></ul></li><li><a href="Resource.html">Resource</a><ul class='methods'><li data-type='method'><a href="Resource.html#mapper">mapper</a></li></ul></li><li><a href="SubResource.html">SubResource</a><ul class='methods'><li data-type='method'><a href="SubResource.html#mapper">mapper</a></li></ul></li><li><a href="TrustedIdProvider.html">TrustedIdProvider</a><ul class='methods'><li data-type='method'><a href="TrustedIdProvider.html#mapper">mapper</a></li></ul></li><li><a href="TrustedIdProviders.html">TrustedIdProviders</a><ul class='methods'><li data-type='method'><a href="TrustedIdProviders.html#createOrUpdate">createOrUpdate</a></li><li data-type='method'><a href="TrustedIdProviders.html#createOrUpdateWithHttpOperationResponse">createOrUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="TrustedIdProviders.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="TrustedIdProviders.html#deleteMethodWithHttpOperationResponse">deleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="TrustedIdProviders.html#get">get</a></li><li data-type='method'><a href="TrustedIdProviders.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="TrustedIdProviders.html#listByAccount">listByAccount</a></li><li data-type='method'><a href="TrustedIdProviders.html#listByAccountNext">listByAccountNext</a></li><li data-type='method'><a href="TrustedIdProviders.html#listByAccountNextWithHttpOperationResponse">listByAccountNextWithHttpOperationResponse</a></li><li data-type='method'><a href="TrustedIdProviders.html#listByAccountWithHttpOperationResponse">listByAccountWithHttpOperationResponse</a></li><li data-type='method'><a href="TrustedIdProviders.html#update">update</a></li><li data-type='method'><a href="TrustedIdProviders.html#updateWithHttpOperationResponse">updateWithHttpOperationResponse</a></li></ul></li><li><a href="UpdateEncryptionConfig.html">UpdateEncryptionConfig</a><ul class='methods'><li data-type='method'><a href="UpdateEncryptionConfig.html#mapper">mapper</a></li></ul></li><li><a href="UpdateFirewallRuleParameters.html">UpdateFirewallRuleParameters</a><ul class='methods'><li data-type='method'><a href="UpdateFirewallRuleParameters.html#mapper">mapper</a></li></ul></li><li><a href="UpdateKeyVaultMetaInfo.html">UpdateKeyVaultMetaInfo</a><ul class='methods'><li data-type='method'><a href="UpdateKeyVaultMetaInfo.html#mapper">mapper</a></li></ul></li><li><a href="UpdateTrustedIdProviderParameters.html">UpdateTrustedIdProviderParameters</a><ul class='methods'><li data-type='method'><a href="UpdateTrustedIdProviderParameters.html#mapper">mapper</a></li></ul></li></ul><h3>Global</h3><ul><li><a href="global.html#_append">_append</a></li><li><a href="global.html#_beginCreate">_beginCreate</a></li><li><a href="global.html#_beginDeleteMethod">_beginDeleteMethod</a></li><li><a href="global.html#_beginUpdate">_beginUpdate</a></li><li><a href="global.html#_checkAccess">_checkAccess</a></li><li><a href="global.html#_concat">_concat</a></li><li><a href="global.html#_concurrentAppend">_concurrentAppend</a></li><li><a href="global.html#_create">_create</a></li><li><a href="global.html#_createOrUpdate">_createOrUpdate</a></li><li><a href="global.html#_deleteMethod">_deleteMethod</a></li><li><a href="global.html#_enableKeyVault">_enableKeyVault</a></li><li><a href="global.html#_get">_get</a></li><li><a href="global.html#_getAclStatus">_getAclStatus</a></li><li><a href="global.html#_getContentSummary">_getContentSummary</a></li><li><a href="global.html#_getFileStatus">_getFileStatus</a></li><li><a href="global.html#_list">_list</a></li><li><a href="global.html#_listByAccount">_listByAccount</a></li><li><a href="global.html#_listByAccountNext">_listByAccountNext</a></li><li><a href="global.html#_listByResourceGroup">_listByResourceGroup</a></li><li><a href="global.html#_listByResourceGroupNext">_listByResourceGroupNext</a></li><li><a href="global.html#_listFileStatus">_listFileStatus</a></li><li><a href="global.html#_listNext">_listNext</a></li><li><a href="global.html#_mkdirs">_mkdirs</a></li><li><a href="global.html#_modifyAclEntries">_modifyAclEntries</a></li><li><a href="global.html#_msConcat">_msConcat</a></li><li><a href="global.html#_open">_open</a></li><li><a href="global.html#_removeAcl">_removeAcl</a></li><li><a href="global.html#_removeAclEntries">_removeAclEntries</a></li><li><a href="global.html#_removeDefaultAcl">_removeDefaultAcl</a></li><li><a href="global.html#_rename">_rename</a></li><li><a href="global.html#_setAcl">_setAcl</a></li><li><a href="global.html#_setFileExpiry">_setFileExpiry</a></li><li><a href="global.html#_setOwner">_setOwner</a></li><li><a href="global.html#_setPermission">_setPermission</a></li><li><a href="global.html#_update">_update</a></li><li><a href="global.html#accountId">accountId</a></li><li><a href="global.html#aclBit">aclBit</a></li><li><a href="global.html#encryptionKeyVersion">encryptionKeyVersion</a></li><li><a href="global.html#endIpAddress">endIpAddress</a></li><li><a href="global.html#exception">exception</a></li><li><a href="global.html#fileStatus">fileStatus</a></li><li><a href="global.html#firewallAllowAzureIps">firewallAllowAzureIps</a></li><li><a href="global.html#idProvider">idProvider</a></li><li><a href="global.html#nextLink">nextLink</a></li><li><a href="global.html#operationResult">operationResult</a></li><li><a href="global.html#spaceConsumed">spaceConsumed</a></li><li><a href="global.html#stickyBit">stickyBit</a></li><li><a href="global.html#tags">tags</a></li><li><a href="global.html#target">target</a></li><li><a href="global.html#tenantId">tenantId</a></li><li><a href="global.html#type">type</a></li></ul>
+</nav>
+
+<div id="main">
+    
+      <a class="github-banner" href="https://github.com/azure/azure-sdk-for-node.git"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+    
+    
+    <h1 class="page-title">account/operations/account.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/*
+ * Copyright (c) Microsoft Corporation. All rights reserved.
+ * Licensed under the MIT License. See License.txt in the project root for
+ * license information.
+ *
+ * Code generated by Microsoft (R) AutoRest Code Generator.
+ * Changes may cause incorrect behavior and will be lost if the code is
+ * regenerated.
+ */
+
+'use strict';
+
+const msRest = require('ms-rest');
+const msRestAzure = require('ms-rest-azure');
+const WebResource = msRest.WebResource;
+
+
+/**
+ * Creates the specified Data Lake Store account.
+ *
+ * @param {string} resourceGroupName The name of the Azure resource group that
+ * contains the Data Lake Store account.
+ *
+ * @param {string} name The name of the Data Lake Store account to create.
+ *
+ * @param {object} parameters Parameters supplied to create the Data Lake Store
+ * account.
+ *
+ * @param {object} [parameters.identity] The Key Vault encryption identity, if
+ * any.
+ *
+ * @param {string} [parameters.encryptionState] The current state of encryption
+ * for this Data Lake store account. Possible values include: 'Enabled',
+ * 'Disabled'
+ *
+ * @param {object} [parameters.encryptionConfig] The Key Vault encryption
+ * configuration.
+ *
+ * @param {string} parameters.encryptionConfig.type The type of encryption
+ * configuration being used. Currently the only supported types are
+ * 'UserManaged' and 'ServiceManaged'. Possible values include: 'UserManaged',
+ * 'ServiceManaged'
+ *
+ * @param {object} [parameters.encryptionConfig.keyVaultMetaInfo] The Key Vault
+ * information for connecting to user managed encryption keys.
+ *
+ * @param {string}
+ * parameters.encryptionConfig.keyVaultMetaInfo.keyVaultResourceId The resource
+ * identifier for the user managed Key Vault being used to encrypt.
+ *
+ * @param {string}
+ * parameters.encryptionConfig.keyVaultMetaInfo.encryptionKeyName The name of
+ * the user managed encryption key.
+ *
+ * @param {string}
+ * parameters.encryptionConfig.keyVaultMetaInfo.encryptionKeyVersion The
+ * version of the user managed encryption key.
+ *
+ * @param {string} [parameters.firewallState] The current state of the IP
+ * address firewall for this Data Lake store account. Possible values include:
+ * 'Enabled', 'Disabled'
+ *
+ * @param {array} [parameters.firewallRules] The list of firewall rules
+ * associated with this Data Lake store account.
+ *
+ * @param {string} [parameters.trustedIdProviderState] The current state of the
+ * trusted identity provider feature for this Data Lake store account. Possible
+ * values include: 'Enabled', 'Disabled'
+ *
+ * @param {array} [parameters.trustedIdProviders] The list of trusted identity
+ * providers associated with this Data Lake store account.
+ *
+ * @param {string} [parameters.defaultGroup] the default owner group for all
+ * new folders and files created in the Data Lake Store account.
+ *
+ * @param {string} [parameters.newTier] the commitment tier to use for next
+ * month. Possible values include: 'Consumption', 'Commitment_1TB',
+ * 'Commitment_10TB', 'Commitment_100TB', 'Commitment_500TB', 'Commitment_1PB',
+ * 'Commitment_5PB'
+ *
+ * @param {string} [parameters.firewallAllowAzureIps] The current state of
+ * allowing or disallowing IPs originating within Azure through the firewall.
+ * If the firewall is disabled, this is not enforced. Possible values include:
+ * 'Enabled', 'Disabled'
+ *
+ * @param {string} parameters.location Resource location
+ *
+ * @param {object} [parameters.tags] Resource tags
+ *
+ * @param {object} [options] Optional Parameters.
+ *
+ * @param {object} [options.customHeaders] Headers that will be added to the
+ * request
+ *
+ * @param {function} callback - The callback.
+ *
+ * @returns {function} callback(err, result, request, response)
+ *
+ *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+ *
+ *                      {object} [result]   - The deserialized result object if an error did not occur.
+ *                      See {@link DataLakeStoreAccount} for more information.
+ *
+ *                      {object} [request]  - The HTTP Request object if an error did not occur.
+ *
+ *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+ */
+function _create(resourceGroupName, name, parameters, options, callback) {
+   /* jshint validthis: true */
+  let client = this.client;
+  if(!callback &amp;&amp; typeof options === 'function') {
+    callback = options;
+    options = null;
+  }
+
+  if (!callback) {
+    throw new Error('callback cannot be null.');
+  }
+
+  // Send request
+  this.beginCreate(resourceGroupName, name, parameters, options, (err, parsedResult, httpRequest, response) => {
+    if (err) return callback(err);
+
+    let initialResult = new msRest.HttpOperationResponse();
+    initialResult.request = httpRequest;
+    initialResult.response = response;
+    initialResult.body = response.body;
+    client.getLongRunningOperationResult(initialResult, options, (err, pollingResult) => {
+      if (err) return callback(err);
+
+      // Create Result
+      let result = null;
+
+      httpRequest = pollingResult.request;
+      response = pollingResult.response;
+      let responseBody = pollingResult.body;
+      if (responseBody === '') responseBody = null;
+
+      // Deserialize Response
+      let parsedResponse = null;
+      try {
+        parsedResponse = JSON.parse(responseBody);
+        result = JSON.parse(responseBody);
+        if (parsedResponse !== null &amp;&amp; parsedResponse !== undefined) {
+          let resultMapper = new client.models['DataLakeStoreAccount']().mapper();
+          result = client.deserialize(resultMapper, parsedResponse, 'result');
+        }
+      } catch (error) {
+        let deserializationError = new Error(`Error ${error} occurred in deserializing the responseBody - ${responseBody}`);
+        deserializationError.request = msRest.stripRequest(httpRequest);
+        deserializationError.response = msRest.stripResponse(response);
+        return callback(deserializationError);
+      }
+
+      return callback(null, result, httpRequest, response);
+    });
+  });
+}
+
+
+/**
+ * Updates the specified Data Lake Store account information.
+ *
+ * @param {string} resourceGroupName The name of the Azure resource group that
+ * contains the Data Lake Store account.
+ *
+ * @param {string} name The name of the Data Lake Store account to update.
+ *
+ * @param {object} parameters Parameters supplied to update the Data Lake Store
+ * account.
+ *
+ * @param {object} [parameters.tags] Resource tags
+ *
+ * @param {string} [parameters.firewallState] The current state of the IP
+ * address firewall for this Data Lake store account. Disabling the firewall
+ * does not remove existing rules, they will just be ignored until the firewall
+ * is re-enabled. Possible values include: 'Enabled', 'Disabled'
+ *
+ * @param {string} [parameters.trustedIdProviderState] The current state of the
+ * trusted identity provider feature for this Data Lake store account.
+ * Disabling trusted identity provider functionality does not remove the
+ * providers, they will just be ignored until this feature is re-enabled.
+ * Possible values include: 'Enabled', 'Disabled'
+ *
+ * @param {string} [parameters.defaultGroup] the default owner group for all
+ * new folders and files created in the Data Lake Store account.
+ *
+ * @param {string} [parameters.newTier] the commitment tier to use for next
+ * month. Possible values include: 'Consumption', 'Commitment_1TB',
+ * 'Commitment_10TB', 'Commitment_100TB', 'Commitment_500TB', 'Commitment_1PB',
+ * 'Commitment_5PB'
+ *
+ * @param {string} [parameters.firewallAllowAzureIps] The current state of
+ * allowing or disallowing IPs originating within Azure through the firewall.
+ * If the firewall is disabled, this is not enforced. Possible values include:
+ * 'Enabled', 'Disabled'
+ *
+ * @param {object} [parameters.encryptionConfig] Used for rotation of user
+ * managed Key Vault keys. Can only be used to rotate a user managed encryption
+ * Key Vault key.
+ *
+ * @param {object} [parameters.encryptionConfig.keyVaultMetaInfo] The updated
+ * Key Vault key to use in user managed key rotation.
+ *
+ * @param {string}
+ * [parameters.encryptionConfig.keyVaultMetaInfo.encryptionKeyVersion] The
+ * version of the user managed encryption key to update through a key rotation.
+ *
+ * @param {object} [options] Optional Parameters.
+ *
+ * @param {object} [options.customHeaders] Headers that will be added to the
+ * request
+ *
+ * @param {function} callback - The callback.
+ *
+ * @returns {function} callback(err, result, request, response)
+ *
+ *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+ *
+ *                      {object} [result]   - The deserialized result object if an error did not occur.
+ *                      See {@link DataLakeStoreAccount} for more information.
+ *
+ *                      {object} [request]  - The HTTP Request object if an error did not occur.
+ *
+ *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+ */
+function _update(resourceGroupName, name, parameters, options, callback) {
+   /* jshint validthis: true */
+  let client = this.client;
+  if(!callback &amp;&amp; typeof options === 'function') {
+    callback = options;
+    options = null;
+  }
+
+  if (!callback) {
+    throw new Error('callback cannot be null.');
+  }
+
+  // Send request
+  this.beginUpdate(resourceGroupName, name, parameters, options, (err, parsedResult, httpRequest, response) => {
+    if (err) return callback(err);
+
+    let initialResult = new msRest.HttpOperationResponse();
+    initialResult.request = httpRequest;
+    initialResult.response = response;
+    initialResult.body = response.body;
+    client.getLongRunningOperationResult(initialResult, options, (err, pollingResult) => {
+      if (err) return callback(err);
+
+      // Create Result
+      let result = null;
+
+      httpRequest = pollingResult.request;
+      response = pollingResult.response;
+      let responseBody = pollingResult.body;
+      if (responseBody === '') responseBody = null;
+
+      // Deserialize Response
+      let parsedResponse = null;
+      try {
+        parsedResponse = JSON.parse(responseBody);
+        result = JSON.parse(responseBody);
+        if (parsedResponse !== null &amp;&amp; parsedResponse !== undefined) {
+          let resultMapper = new client.models['DataLakeStoreAccount']().mapper();
+          result = client.deserialize(resultMapper, parsedResponse, 'result');
+        }
+      } catch (error) {
+        let deserializationError = new Error(`Error ${error} occurred in deserializing the responseBody - ${responseBody}`);
+        deserializationError.request = msRest.stripRequest(httpRequest);
+        deserializationError.response = msRest.stripResponse(response);
+        return callback(deserializationError);
+      }
+
+      return callback(null, result, httpRequest, response);
+    });
+  });
+}
+
+
+/**
+ * Deletes the specified Data Lake Store account.
+ *
+ * @param {string} resourceGroupName The name of the Azure resource group that
+ * contains the Data Lake Store account.
+ *
+ * @param {string} name The name of the Data Lake Store account to delete.
+ *
+ * @param {object} [options] Optional Parameters.
+ *
+ * @param {object} [options.customHeaders] Headers that will be added to the
+ * request
+ *
+ * @param {function} callback - The callback.
+ *
+ * @returns {function} callback(err, result, request, response)
+ *
+ *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+ *
+ *                      {null} [result]   - The deserialized result object if an error did not occur.
+ *
+ *                      {object} [request]  - The HTTP Request object if an error did not occur.
+ *
+ *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+ */
+function _deleteMethod(resourceGroupName, name, options, callback) {
+   /* jshint validthis: true */
+  let client = this.client;
+  if(!callback &amp;&amp; typeof options === 'function') {
+    callback = options;
+    options = null;
+  }
+
+  if (!callback) {
+    throw new Error('callback cannot be null.');
+  }
+
+  // Send request
+  this.beginDeleteMethod(resourceGroupName, name, options, (err, parsedResult, httpRequest, response) => {
+    if (err) return callback(err);
+
+    let initialResult = new msRest.HttpOperationResponse();
+    initialResult.request = httpRequest;
+    initialResult.response = response;
+    initialResult.body = response.body;
+    client.getLongRunningOperationResult(initialResult, options, (err, pollingResult) => {
+      if (err) return callback(err);
+
+      // Create Result
+      let result = null;
+
+      httpRequest = pollingResult.request;
+      response = pollingResult.response;
+      let responseBody = pollingResult.body;
+      if (responseBody === '') responseBody = null;
+
+      // Deserialize Response
+
+      return callback(null, result, httpRequest, response);
+    });
+  });
+}
+
+/**
+ * Gets the specified Data Lake Store account.
+ *
+ * @param {string} resourceGroupName The name of the Azure resource group that
+ * contains the Data Lake Store account.
+ *
+ * @param {string} name The name of the Data Lake Store account to retrieve.
+ *
+ * @param {object} [options] Optional Parameters.
+ *
+ * @param {object} [options.customHeaders] Headers that will be added to the
+ * request
+ *
+ * @param {function} callback - The callback.
+ *
+ * @returns {function} callback(err, result, request, response)
+ *
+ *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+ *
+ *                      {object} [result]   - The deserialized result object if an error did not occur.
+ *                      See {@link DataLakeStoreAccount} for more information.
+ *
+ *                      {object} [request]  - The HTTP Request object if an error did not occur.
+ *
+ *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+ */
+function _get(resourceGroupName, name, options, callback) {
+   /* jshint validthis: true */
+  let client = this.client;
+  if(!callback &amp;&amp; typeof options === 'function') {
+    callback = options;
+    options = null;
+  }
+  if (!callback) {
+    throw new Error('callback cannot be null.');
+  }
+  // Validate
+  try {
+    if (resourceGroupName === null || resourceGroupName === undefined || typeof resourceGroupName.valueOf() !== 'string') {
+      throw new Error('resourceGroupName cannot be null or undefined and it must be of type string.');
+    }
+    if (name === null || name === undefined || typeof name.valueOf() !== 'string') {
+      throw new Error('name cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.apiVersion === null || this.client.apiVersion === undefined || typeof this.client.apiVersion.valueOf() !== 'string') {
+      throw new Error('this.client.apiVersion cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.subscriptionId === null || this.client.subscriptionId === undefined || typeof this.client.subscriptionId.valueOf() !== 'string') {
+      throw new Error('this.client.subscriptionId cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.acceptLanguage !== null &amp;&amp; this.client.acceptLanguage !== undefined &amp;&amp; typeof this.client.acceptLanguage.valueOf() !== 'string') {
+      throw new Error('this.client.acceptLanguage must be of type string.');
+    }
+  } catch (error) {
+    return callback(error);
+  }
+
+  // Construct URL
+  let baseUrl = this.client.baseUri;
+  let requestUrl = baseUrl + (baseUrl.endsWith('/') ? '' : '/') + 'subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataLakeStore/accounts/{name}';
+  requestUrl = requestUrl.replace('{resourceGroupName}', encodeURIComponent(resourceGroupName));
+  requestUrl = requestUrl.replace('{name}', encodeURIComponent(name));
+  requestUrl = requestUrl.replace('{subscriptionId}', encodeURIComponent(this.client.subscriptionId));
+  let queryParameters = [];
+  queryParameters.push('api-version=' + encodeURIComponent(this.client.apiVersion));
+  if (queryParameters.length > 0) {
+    requestUrl += '?' + queryParameters.join('&amp;');
+  }
+
+  // Create HTTP transport objects
+  let httpRequest = new WebResource();
+  httpRequest.method = 'GET';
+  httpRequest.url = requestUrl;
+  httpRequest.headers = {};
+  // Set Headers
+  httpRequest.headers['Content-Type'] = 'application/json; charset=utf-8';
+  if (this.client.generateClientRequestId) {
+      httpRequest.headers['x-ms-client-request-id'] = msRestAzure.generateUuid();
+  }
+  if (this.client.acceptLanguage !== undefined &amp;&amp; this.client.acceptLanguage !== null) {
+    httpRequest.headers['accept-language'] = this.client.acceptLanguage;
+  }
+  if(options) {
+    for(let headerName in options['customHeaders']) {
+      if (options['customHeaders'].hasOwnProperty(headerName)) {
+        httpRequest.headers[headerName] = options['customHeaders'][headerName];
+      }
+    }
+  }
+  httpRequest.body = null;
+  // Send Request
+  return client.pipeline(httpRequest, (err, response, responseBody) => {
+    if (err) {
+      return callback(err);
+    }
+    let statusCode = response.statusCode;
+    if (statusCode !== 200) {
+      let error = new Error(responseBody);
+      error.statusCode = response.statusCode;
+      error.request = msRest.stripRequest(httpRequest);
+      error.response = msRest.stripResponse(response);
+      if (responseBody === '') responseBody = null;
+      let parsedErrorResponse;
+      try {
+        parsedErrorResponse = JSON.parse(responseBody);
+        if (parsedErrorResponse) {
+          if (parsedErrorResponse.error) parsedErrorResponse = parsedErrorResponse.error;
+          if (parsedErrorResponse.code) error.code = parsedErrorResponse.code;
+          if (parsedErrorResponse.message) error.message = parsedErrorResponse.message;
+        }
+        if (parsedErrorResponse !== null &amp;&amp; parsedErrorResponse !== undefined) {
+          let resultMapper = new client.models['CloudError']().mapper();
+          error.body = client.deserialize(resultMapper, parsedErrorResponse, 'error.body');
+        }
+      } catch (defaultError) {
+        error.message = `Error "${defaultError.message}" occurred in deserializing the responseBody ` +
+                         `- "${responseBody}" for the default response.`;
+        return callback(error);
+      }
+      return callback(error);
+    }
+    // Create Result
+    let result = null;
+    if (responseBody === '') responseBody = null;
+    // Deserialize Response
+    if (statusCode === 200) {
+      let parsedResponse = null;
+      try {
+        parsedResponse = JSON.parse(responseBody);
+        result = JSON.parse(responseBody);
+        if (parsedResponse !== null &amp;&amp; parsedResponse !== undefined) {
+          let resultMapper = new client.models['DataLakeStoreAccount']().mapper();
+          result = client.deserialize(resultMapper, parsedResponse, 'result');
+        }
+      } catch (error) {
+        let deserializationError = new Error(`Error ${error} occurred in deserializing the responseBody - ${responseBody}`);
+        deserializationError.request = msRest.stripRequest(httpRequest);
+        deserializationError.response = msRest.stripResponse(response);
+        return callback(deserializationError);
+      }
+    }
+
+    return callback(null, result, httpRequest, response);
+  });
+}
+
+/**
+ * Attempts to enable a user managed Key Vault for encryption of the specified
+ * Data Lake Store account.
+ *
+ * @param {string} resourceGroupName The name of the Azure resource group that
+ * contains the Data Lake Store account.
+ *
+ * @param {string} accountName The name of the Data Lake Store account to
+ * attempt to enable the Key Vault for.
+ *
+ * @param {object} [options] Optional Parameters.
+ *
+ * @param {object} [options.customHeaders] Headers that will be added to the
+ * request
+ *
+ * @param {function} callback - The callback.
+ *
+ * @returns {function} callback(err, result, request, response)
+ *
+ *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+ *
+ *                      {null} [result]   - The deserialized result object if an error did not occur.
+ *
+ *                      {object} [request]  - The HTTP Request object if an error did not occur.
+ *
+ *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+ */
+function _enableKeyVault(resourceGroupName, accountName, options, callback) {
+   /* jshint validthis: true */
+  let client = this.client;
+  if(!callback &amp;&amp; typeof options === 'function') {
+    callback = options;
+    options = null;
+  }
+  if (!callback) {
+    throw new Error('callback cannot be null.');
+  }
+  // Validate
+  try {
+    if (resourceGroupName === null || resourceGroupName === undefined || typeof resourceGroupName.valueOf() !== 'string') {
+      throw new Error('resourceGroupName cannot be null or undefined and it must be of type string.');
+    }
+    if (accountName === null || accountName === undefined || typeof accountName.valueOf() !== 'string') {
+      throw new Error('accountName cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.apiVersion === null || this.client.apiVersion === undefined || typeof this.client.apiVersion.valueOf() !== 'string') {
+      throw new Error('this.client.apiVersion cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.subscriptionId === null || this.client.subscriptionId === undefined || typeof this.client.subscriptionId.valueOf() !== 'string') {
+      throw new Error('this.client.subscriptionId cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.acceptLanguage !== null &amp;&amp; this.client.acceptLanguage !== undefined &amp;&amp; typeof this.client.acceptLanguage.valueOf() !== 'string') {
+      throw new Error('this.client.acceptLanguage must be of type string.');
+    }
+  } catch (error) {
+    return callback(error);
+  }
+
+  // Construct URL
+  let baseUrl = this.client.baseUri;
+  let requestUrl = baseUrl + (baseUrl.endsWith('/') ? '' : '/') + 'subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataLakeStore/accounts/{accountName}/enableKeyVault';
+  requestUrl = requestUrl.replace('{resourceGroupName}', encodeURIComponent(resourceGroupName));
+  requestUrl = requestUrl.replace('{accountName}', encodeURIComponent(accountName));
+  requestUrl = requestUrl.replace('{subscriptionId}', encodeURIComponent(this.client.subscriptionId));
+  let queryParameters = [];
+  queryParameters.push('api-version=' + encodeURIComponent(this.client.apiVersion));
+  if (queryParameters.length > 0) {
+    requestUrl += '?' + queryParameters.join('&amp;');
+  }
+
+  // Create HTTP transport objects
+  let httpRequest = new WebResource();
+  httpRequest.method = 'POST';
+  httpRequest.url = requestUrl;
+  httpRequest.headers = {};
+  // Set Headers
+  httpRequest.headers['Content-Type'] = 'application/json; charset=utf-8';
+  if (this.client.generateClientRequestId) {
+      httpRequest.headers['x-ms-client-request-id'] = msRestAzure.generateUuid();
+  }
+  if (this.client.acceptLanguage !== undefined &amp;&amp; this.client.acceptLanguage !== null) {
+    httpRequest.headers['accept-language'] = this.client.acceptLanguage;
+  }
+  if(options) {
+    for(let headerName in options['customHeaders']) {
+      if (options['customHeaders'].hasOwnProperty(headerName)) {
+        httpRequest.headers[headerName] = options['customHeaders'][headerName];
+      }
+    }
+  }
+  httpRequest.body = null;
+  // Send Request
+  return client.pipeline(httpRequest, (err, response, responseBody) => {
+    if (err) {
+      return callback(err);
+    }
+    let statusCode = response.statusCode;
+    if (statusCode !== 200) {
+      let error = new Error(responseBody);
+      error.statusCode = response.statusCode;
+      error.request = msRest.stripRequest(httpRequest);
+      error.response = msRest.stripResponse(response);
+      if (responseBody === '') responseBody = null;
+      let parsedErrorResponse;
+      try {
+        parsedErrorResponse = JSON.parse(responseBody);
+        if (parsedErrorResponse) {
+          if (parsedErrorResponse.error) parsedErrorResponse = parsedErrorResponse.error;
+          if (parsedErrorResponse.code) error.code = parsedErrorResponse.code;
+          if (parsedErrorResponse.message) error.message = parsedErrorResponse.message;
+        }
+        if (parsedErrorResponse !== null &amp;&amp; parsedErrorResponse !== undefined) {
+          let resultMapper = new client.models['CloudError']().mapper();
+          error.body = client.deserialize(resultMapper, parsedErrorResponse, 'error.body');
+        }
+      } catch (defaultError) {
+        error.message = `Error "${defaultError.message}" occurred in deserializing the responseBody ` +
+                         `- "${responseBody}" for the default response.`;
+        return callback(error);
+      }
+      return callback(error);
+    }
+    // Create Result
+    let result = null;
+    if (responseBody === '') responseBody = null;
+
+    return callback(null, result, httpRequest, response);
+  });
+}
+
+/**
+ * Lists the Data Lake Store accounts within a specific resource group. The
+ * response includes a link to the next page of results, if any.
+ *
+ * @param {string} resourceGroupName The name of the Azure resource group that
+ * contains the Data Lake Store account(s).
+ *
+ * @param {object} [options] Optional Parameters.
+ *
+ * @param {string} [options.filter] OData filter. Optional.
+ *
+ * @param {number} [options.top] The number of items to return. Optional.
+ *
+ * @param {number} [options.skip] The number of items to skip over before
+ * returning elements. Optional.
+ *
+ * @param {string} [options.select] OData Select statement. Limits the
+ * properties on each entry to just those requested, e.g.
+ * Categories?$select=CategoryName,Description. Optional.
+ *
+ * @param {string} [options.orderby] OrderBy clause. One or more
+ * comma-separated expressions with an optional "asc" (the default) or "desc"
+ * depending on the order you'd like the values sorted, e.g.
+ * Categories?$orderby=CategoryName desc. Optional.
+ *
+ * @param {boolean} [options.count] A Boolean value of true or false to request
+ * a count of the matching resources included with the resources in the
+ * response, e.g. Categories?$count=true. Optional.
+ *
+ * @param {object} [options.customHeaders] Headers that will be added to the
+ * request
+ *
+ * @param {function} callback - The callback.
+ *
+ * @returns {function} callback(err, result, request, response)
+ *
+ *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+ *
+ *                      {object} [result]   - The deserialized result object if an error did not occur.
+ *                      See {@link DataLakeStoreAccountListResult} for more
+ *                      information.
+ *
+ *                      {object} [request]  - The HTTP Request object if an error did not occur.
+ *
+ *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+ */
+function _listByResourceGroup(resourceGroupName, options, callback) {
+   /* jshint validthis: true */
+  let client = this.client;
+  if(!callback &amp;&amp; typeof options === 'function') {
+    callback = options;
+    options = null;
+  }
+  if (!callback) {
+    throw new Error('callback cannot be null.');
+  }
+  let filter = (options &amp;&amp; options.filter !== undefined) ? options.filter : undefined;
+  let top = (options &amp;&amp; options.top !== undefined) ? options.top : undefined;
+  let skip = (options &amp;&amp; options.skip !== undefined) ? options.skip : undefined;
+  let select = (options &amp;&amp; options.select !== undefined) ? options.select : undefined;
+  let orderby = (options &amp;&amp; options.orderby !== undefined) ? options.orderby : undefined;
+  let count = (options &amp;&amp; options.count !== undefined) ? options.count : undefined;
+  // Validate
+  try {
+    if (resourceGroupName === null || resourceGroupName === undefined || typeof resourceGroupName.valueOf() !== 'string') {
+      throw new Error('resourceGroupName cannot be null or undefined and it must be of type string.');
+    }
+    if (filter !== null &amp;&amp; filter !== undefined &amp;&amp; typeof filter.valueOf() !== 'string') {
+      throw new Error('filter must be of type string.');
+    }
+    if (top !== null &amp;&amp; top !== undefined &amp;&amp; typeof top !== 'number') {
+      throw new Error('top must be of type number.');
+    }
+    if (top !== null &amp;&amp; top !== undefined) {
+      if (top &lt; 1)
+      {
+        throw new Error('"top" should satisfy the constraint - "InclusiveMinimum": 1');
+      }
+    }
+    if (skip !== null &amp;&amp; skip !== undefined &amp;&amp; typeof skip !== 'number') {
+      throw new Error('skip must be of type number.');
+    }
+    if (skip !== null &amp;&amp; skip !== undefined) {
+      if (skip &lt; 1)
+      {
+        throw new Error('"skip" should satisfy the constraint - "InclusiveMinimum": 1');
+      }
+    }
+    if (select !== null &amp;&amp; select !== undefined &amp;&amp; typeof select.valueOf() !== 'string') {
+      throw new Error('select must be of type string.');
+    }
+    if (orderby !== null &amp;&amp; orderby !== undefined &amp;&amp; typeof orderby.valueOf() !== 'string') {
+      throw new Error('orderby must be of type string.');
+    }
+    if (count !== null &amp;&amp; count !== undefined &amp;&amp; typeof count !== 'boolean') {
+      throw new Error('count must be of type boolean.');
+    }
+    if (this.client.apiVersion === null || this.client.apiVersion === undefined || typeof this.client.apiVersion.valueOf() !== 'string') {
+      throw new Error('this.client.apiVersion cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.subscriptionId === null || this.client.subscriptionId === undefined || typeof this.client.subscriptionId.valueOf() !== 'string') {
+      throw new Error('this.client.subscriptionId cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.acceptLanguage !== null &amp;&amp; this.client.acceptLanguage !== undefined &amp;&amp; typeof this.client.acceptLanguage.valueOf() !== 'string') {
+      throw new Error('this.client.acceptLanguage must be of type string.');
+    }
+  } catch (error) {
+    return callback(error);
+  }
+
+  // Construct URL
+  let baseUrl = this.client.baseUri;
+  let requestUrl = baseUrl + (baseUrl.endsWith('/') ? '' : '/') + 'subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataLakeStore/accounts';
+  requestUrl = requestUrl.replace('{resourceGroupName}', encodeURIComponent(resourceGroupName));
+  requestUrl = requestUrl.replace('{subscriptionId}', encodeURIComponent(this.client.subscriptionId));
+  let queryParameters = [];
+  if (filter !== null &amp;&amp; filter !== undefined) {
+    queryParameters.push('$filter=' + encodeURIComponent(filter));
+  }
+  if (top !== null &amp;&amp; top !== undefined) {
+    queryParameters.push('$top=' + encodeURIComponent(top.toString()));
+  }
+  if (skip !== null &amp;&amp; skip !== undefined) {
+    queryParameters.push('$skip=' + encodeURIComponent(skip.toString()));
+  }
+  if (select !== null &amp;&amp; select !== undefined) {
+    queryParameters.push('$select=' + encodeURIComponent(select));
+  }
+  if (orderby !== null &amp;&amp; orderby !== undefined) {
+    queryParameters.push('$orderby=' + encodeURIComponent(orderby));
+  }
+  if (count !== null &amp;&amp; count !== undefined) {
+    queryParameters.push('$count=' + encodeURIComponent(count.toString()));
+  }
+  queryParameters.push('api-version=' + encodeURIComponent(this.client.apiVersion));
+  if (queryParameters.length > 0) {
+    requestUrl += '?' + queryParameters.join('&amp;');
+  }
+
+  // Create HTTP transport objects
+  let httpRequest = new WebResource();
+  httpRequest.method = 'GET';
+  httpRequest.url = requestUrl;
+  httpRequest.headers = {};
+  // Set Headers
+  httpRequest.headers['Content-Type'] = 'application/json; charset=utf-8';
+  if (this.client.generateClientRequestId) {
+      httpRequest.headers['x-ms-client-request-id'] = msRestAzure.generateUuid();
+  }
+  if (this.client.acceptLanguage !== undefined &amp;&amp; this.client.acceptLanguage !== null) {
+    httpRequest.headers['accept-language'] = this.client.acceptLanguage;
+  }
+  if(options) {
+    for(let headerName in options['customHeaders']) {
+      if (options['customHeaders'].hasOwnProperty(headerName)) {
+        httpRequest.headers[headerName] = options['customHeaders'][headerName];
+      }
+    }
+  }
+  httpRequest.body = null;
+  // Send Request
+  return client.pipeline(httpRequest, (err, response, responseBody) => {
+    if (err) {
+      return callback(err);
+    }
+    let statusCode = response.statusCode;
+    if (statusCode !== 200) {
+      let error = new Error(responseBody);
+      error.statusCode = response.statusCode;
+      error.request = msRest.stripRequest(httpRequest);
+      error.response = msRest.stripResponse(response);
+      if (responseBody === '') responseBody = null;
+      let parsedErrorResponse;
+      try {
+        parsedErrorResponse = JSON.parse(responseBody);
+        if (parsedErrorResponse) {
+          if (parsedErrorResponse.error) parsedErrorResponse = parsedErrorResponse.error;
+          if (parsedErrorResponse.code) error.code = parsedErrorResponse.code;
+          if (parsedErrorResponse.message) error.message = parsedErrorResponse.message;
+        }
+        if (parsedErrorResponse !== null &amp;&amp; parsedErrorResponse !== undefined) {
+          let resultMapper = new client.models['CloudError']().mapper();
+          error.body = client.deserialize(resultMapper, parsedErrorResponse, 'error.body');
+        }
+      } catch (defaultError) {
+        error.message = `Error "${defaultError.message}" occurred in deserializing the responseBody ` +
+                         `- "${responseBody}" for the default response.`;
+        return callback(error);
+      }
+      return callback(error);
+    }
+    // Create Result
+    let result = null;
+    if (responseBody === '') responseBody = null;
+    // Deserialize Response
+    if (statusCode === 200) {
+      let parsedResponse = null;
+      try {
+        parsedResponse = JSON.parse(responseBody);
+        result = JSON.parse(responseBody);
+        if (parsedResponse !== null &amp;&amp; parsedResponse !== undefined) {
+          let resultMapper = new client.models['DataLakeStoreAccountListResult']().mapper();
+          result = client.deserialize(resultMapper, parsedResponse, 'result');
+        }
+      } catch (error) {
+        let deserializationError = new Error(`Error ${error} occurred in deserializing the responseBody - ${responseBody}`);
+        deserializationError.request = msRest.stripRequest(httpRequest);
+        deserializationError.response = msRest.stripResponse(response);
+        return callback(deserializationError);
+      }
+    }
+
+    return callback(null, result, httpRequest, response);
+  });
+}
+
+/**
+ * Lists the Data Lake Store accounts within the subscription. The response
+ * includes a link to the next page of results, if any.
+ *
+ * @param {object} [options] Optional Parameters.
+ *
+ * @param {string} [options.filter] OData filter. Optional.
+ *
+ * @param {number} [options.top] The number of items to return. Optional.
+ *
+ * @param {number} [options.skip] The number of items to skip over before
+ * returning elements. Optional.
+ *
+ * @param {string} [options.select] OData Select statement. Limits the
+ * properties on each entry to just those requested, e.g.
+ * Categories?$select=CategoryName,Description. Optional.
+ *
+ * @param {string} [options.orderby] OrderBy clause. One or more
+ * comma-separated expressions with an optional "asc" (the default) or "desc"
+ * depending on the order you'd like the values sorted, e.g.
+ * Categories?$orderby=CategoryName desc. Optional.
+ *
+ * @param {boolean} [options.count] The Boolean value of true or false to
+ * request a count of the matching resources included with the resources in the
+ * response, e.g. Categories?$count=true. Optional.
+ *
+ * @param {object} [options.customHeaders] Headers that will be added to the
+ * request
+ *
+ * @param {function} callback - The callback.
+ *
+ * @returns {function} callback(err, result, request, response)
+ *
+ *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+ *
+ *                      {object} [result]   - The deserialized result object if an error did not occur.
+ *                      See {@link DataLakeStoreAccountListResult} for more
+ *                      information.
+ *
+ *                      {object} [request]  - The HTTP Request object if an error did not occur.
+ *
+ *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+ */
+function _list(options, callback) {
+   /* jshint validthis: true */
+  let client = this.client;
+  if(!callback &amp;&amp; typeof options === 'function') {
+    callback = options;
+    options = null;
+  }
+  if (!callback) {
+    throw new Error('callback cannot be null.');
+  }
+  let filter = (options &amp;&amp; options.filter !== undefined) ? options.filter : undefined;
+  let top = (options &amp;&amp; options.top !== undefined) ? options.top : undefined;
+  let skip = (options &amp;&amp; options.skip !== undefined) ? options.skip : undefined;
+  let select = (options &amp;&amp; options.select !== undefined) ? options.select : undefined;
+  let orderby = (options &amp;&amp; options.orderby !== undefined) ? options.orderby : undefined;
+  let count = (options &amp;&amp; options.count !== undefined) ? options.count : undefined;
+  // Validate
+  try {
+    if (filter !== null &amp;&amp; filter !== undefined &amp;&amp; typeof filter.valueOf() !== 'string') {
+      throw new Error('filter must be of type string.');
+    }
+    if (top !== null &amp;&amp; top !== undefined &amp;&amp; typeof top !== 'number') {
+      throw new Error('top must be of type number.');
+    }
+    if (top !== null &amp;&amp; top !== undefined) {
+      if (top &lt; 1)
+      {
+        throw new Error('"top" should satisfy the constraint - "InclusiveMinimum": 1');
+      }
+    }
+    if (skip !== null &amp;&amp; skip !== undefined &amp;&amp; typeof skip !== 'number') {
+      throw new Error('skip must be of type number.');
+    }
+    if (skip !== null &amp;&amp; skip !== undefined) {
+      if (skip &lt; 1)
+      {
+        throw new Error('"skip" should satisfy the constraint - "InclusiveMinimum": 1');
+      }
+    }
+    if (select !== null &amp;&amp; select !== undefined &amp;&amp; typeof select.valueOf() !== 'string') {
+      throw new Error('select must be of type string.');
+    }
+    if (orderby !== null &amp;&amp; orderby !== undefined &amp;&amp; typeof orderby.valueOf() !== 'string') {
+      throw new Error('orderby must be of type string.');
+    }
+    if (count !== null &amp;&amp; count !== undefined &amp;&amp; typeof count !== 'boolean') {
+      throw new Error('count must be of type boolean.');
+    }
+    if (this.client.apiVersion === null || this.client.apiVersion === undefined || typeof this.client.apiVersion.valueOf() !== 'string') {
+      throw new Error('this.client.apiVersion cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.subscriptionId === null || this.client.subscriptionId === undefined || typeof this.client.subscriptionId.valueOf() !== 'string') {
+      throw new Error('this.client.subscriptionId cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.acceptLanguage !== null &amp;&amp; this.client.acceptLanguage !== undefined &amp;&amp; typeof this.client.acceptLanguage.valueOf() !== 'string') {
+      throw new Error('this.client.acceptLanguage must be of type string.');
+    }
+  } catch (error) {
+    return callback(error);
+  }
+
+  // Construct URL
+  let baseUrl = this.client.baseUri;
+  let requestUrl = baseUrl + (baseUrl.endsWith('/') ? '' : '/') + 'subscriptions/{subscriptionId}/providers/Microsoft.DataLakeStore/accounts';
+  requestUrl = requestUrl.replace('{subscriptionId}', encodeURIComponent(this.client.subscriptionId));
+  let queryParameters = [];
+  if (filter !== null &amp;&amp; filter !== undefined) {
+    queryParameters.push('$filter=' + encodeURIComponent(filter));
+  }
+  if (top !== null &amp;&amp; top !== undefined) {
+    queryParameters.push('$top=' + encodeURIComponent(top.toString()));
+  }
+  if (skip !== null &amp;&amp; skip !== undefined) {
+    queryParameters.push('$skip=' + encodeURIComponent(skip.toString()));
+  }
+  if (select !== null &amp;&amp; select !== undefined) {
+    queryParameters.push('$select=' + encodeURIComponent(select));
+  }
+  if (orderby !== null &amp;&amp; orderby !== undefined) {
+    queryParameters.push('$orderby=' + encodeURIComponent(orderby));
+  }
+  if (count !== null &amp;&amp; count !== undefined) {
+    queryParameters.push('$count=' + encodeURIComponent(count.toString()));
+  }
+  queryParameters.push('api-version=' + encodeURIComponent(this.client.apiVersion));
+  if (queryParameters.length > 0) {
+    requestUrl += '?' + queryParameters.join('&amp;');
+  }
+
+  // Create HTTP transport objects
+  let httpRequest = new WebResource();
+  httpRequest.method = 'GET';
+  httpRequest.url = requestUrl;
+  httpRequest.headers = {};
+  // Set Headers
+  httpRequest.headers['Content-Type'] = 'application/json; charset=utf-8';
+  if (this.client.generateClientRequestId) {
+      httpRequest.headers['x-ms-client-request-id'] = msRestAzure.generateUuid();
+  }
+  if (this.client.acceptLanguage !== undefined &amp;&amp; this.client.acceptLanguage !== null) {
+    httpRequest.headers['accept-language'] = this.client.acceptLanguage;
+  }
+  if(options) {
+    for(let headerName in options['customHeaders']) {
+      if (options['customHeaders'].hasOwnProperty(headerName)) {
+        httpRequest.headers[headerName] = options['customHeaders'][headerName];
+      }
+    }
+  }
+  httpRequest.body = null;
+  // Send Request
+  return client.pipeline(httpRequest, (err, response, responseBody) => {
+    if (err) {
+      return callback(err);
+    }
+    let statusCode = response.statusCode;
+    if (statusCode !== 200) {
+      let error = new Error(responseBody);
+      error.statusCode = response.statusCode;
+      error.request = msRest.stripRequest(httpRequest);
+      error.response = msRest.stripResponse(response);
+      if (responseBody === '') responseBody = null;
+      let parsedErrorResponse;
+      try {
+        parsedErrorResponse = JSON.parse(responseBody);
+        if (parsedErrorResponse) {
+          if (parsedErrorResponse.error) parsedErrorResponse = parsedErrorResponse.error;
+          if (parsedErrorResponse.code) error.code = parsedErrorResponse.code;
+          if (parsedErrorResponse.message) error.message = parsedErrorResponse.message;
+        }
+        if (parsedErrorResponse !== null &amp;&amp; parsedErrorResponse !== undefined) {
+          let resultMapper = new client.models['CloudError']().mapper();
+          error.body = client.deserialize(resultMapper, parsedErrorResponse, 'error.body');
+        }
+      } catch (defaultError) {
+        error.message = `Error "${defaultError.message}" occurred in deserializing the responseBody ` +
+                         `- "${responseBody}" for the default response.`;
+        return callback(error);
+      }
+      return callback(error);
+    }
+    // Create Result
+    let result = null;
+    if (responseBody === '') responseBody = null;
+    // Deserialize Response
+    if (statusCode === 200) {
+      let parsedResponse = null;
+      try {
+        parsedResponse = JSON.parse(responseBody);
+        result = JSON.parse(responseBody);
+        if (parsedResponse !== null &amp;&amp; parsedResponse !== undefined) {
+          let resultMapper = new client.models['DataLakeStoreAccountListResult']().mapper();
+          result = client.deserialize(resultMapper, parsedResponse, 'result');
+        }
+      } catch (error) {
+        let deserializationError = new Error(`Error ${error} occurred in deserializing the responseBody - ${responseBody}`);
+        deserializationError.request = msRest.stripRequest(httpRequest);
+        deserializationError.response = msRest.stripResponse(response);
+        return callback(deserializationError);
+      }
+    }
+
+    return callback(null, result, httpRequest, response);
+  });
+}
+
+/**
+ * Creates the specified Data Lake Store account.
+ *
+ * @param {string} resourceGroupName The name of the Azure resource group that
+ * contains the Data Lake Store account.
+ *
+ * @param {string} name The name of the Data Lake Store account to create.
+ *
+ * @param {object} parameters Parameters supplied to create the Data Lake Store
+ * account.
+ *
+ * @param {object} [parameters.identity] The Key Vault encryption identity, if
+ * any.
+ *
+ * @param {string} [parameters.encryptionState] The current state of encryption
+ * for this Data Lake store account. Possible values include: 'Enabled',
+ * 'Disabled'
+ *
+ * @param {object} [parameters.encryptionConfig] The Key Vault encryption
+ * configuration.
+ *
+ * @param {string} parameters.encryptionConfig.type The type of encryption
+ * configuration being used. Currently the only supported types are
+ * 'UserManaged' and 'ServiceManaged'. Possible values include: 'UserManaged',
+ * 'ServiceManaged'
+ *
+ * @param {object} [parameters.encryptionConfig.keyVaultMetaInfo] The Key Vault
+ * information for connecting to user managed encryption keys.
+ *
+ * @param {string}
+ * parameters.encryptionConfig.keyVaultMetaInfo.keyVaultResourceId The resource
+ * identifier for the user managed Key Vault being used to encrypt.
+ *
+ * @param {string}
+ * parameters.encryptionConfig.keyVaultMetaInfo.encryptionKeyName The name of
+ * the user managed encryption key.
+ *
+ * @param {string}
+ * parameters.encryptionConfig.keyVaultMetaInfo.encryptionKeyVersion The
+ * version of the user managed encryption key.
+ *
+ * @param {string} [parameters.firewallState] The current state of the IP
+ * address firewall for this Data Lake store account. Possible values include:
+ * 'Enabled', 'Disabled'
+ *
+ * @param {array} [parameters.firewallRules] The list of firewall rules
+ * associated with this Data Lake store account.
+ *
+ * @param {string} [parameters.trustedIdProviderState] The current state of the
+ * trusted identity provider feature for this Data Lake store account. Possible
+ * values include: 'Enabled', 'Disabled'
+ *
+ * @param {array} [parameters.trustedIdProviders] The list of trusted identity
+ * providers associated with this Data Lake store account.
+ *
+ * @param {string} [parameters.defaultGroup] the default owner group for all
+ * new folders and files created in the Data Lake Store account.
+ *
+ * @param {string} [parameters.newTier] the commitment tier to use for next
+ * month. Possible values include: 'Consumption', 'Commitment_1TB',
+ * 'Commitment_10TB', 'Commitment_100TB', 'Commitment_500TB', 'Commitment_1PB',
+ * 'Commitment_5PB'
+ *
+ * @param {string} [parameters.firewallAllowAzureIps] The current state of
+ * allowing or disallowing IPs originating within Azure through the firewall.
+ * If the firewall is disabled, this is not enforced. Possible values include:
+ * 'Enabled', 'Disabled'
+ *
+ * @param {string} parameters.location Resource location
+ *
+ * @param {object} [parameters.tags] Resource tags
+ *
+ * @param {object} [options] Optional Parameters.
+ *
+ * @param {object} [options.customHeaders] Headers that will be added to the
+ * request
+ *
+ * @param {function} callback - The callback.
+ *
+ * @returns {function} callback(err, result, request, response)
+ *
+ *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+ *
+ *                      {object} [result]   - The deserialized result object if an error did not occur.
+ *                      See {@link DataLakeStoreAccount} for more information.
+ *
+ *                      {object} [request]  - The HTTP Request object if an error did not occur.
+ *
+ *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+ */
+function _beginCreate(resourceGroupName, name, parameters, options, callback) {
+   /* jshint validthis: true */
+  let client = this.client;
+  if(!callback &amp;&amp; typeof options === 'function') {
+    callback = options;
+    options = null;
+  }
+  if (!callback) {
+    throw new Error('callback cannot be null.');
+  }
+  if (parameters === null || parameters === undefined)
+  {
+    parameters = {};
+  }
+  // Validate
+  try {
+    if (resourceGroupName === null || resourceGroupName === undefined || typeof resourceGroupName.valueOf() !== 'string') {
+      throw new Error('resourceGroupName cannot be null or undefined and it must be of type string.');
+    }
+    if (name === null || name === undefined || typeof name.valueOf() !== 'string') {
+      throw new Error('name cannot be null or undefined and it must be of type string.');
+    }
+    if (parameters === null || parameters === undefined) {
+      throw new Error('parameters cannot be null or undefined.');
+    }
+    if (this.client.apiVersion === null || this.client.apiVersion === undefined || typeof this.client.apiVersion.valueOf() !== 'string') {
+      throw new Error('this.client.apiVersion cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.subscriptionId === null || this.client.subscriptionId === undefined || typeof this.client.subscriptionId.valueOf() !== 'string') {
+      throw new Error('this.client.subscriptionId cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.acceptLanguage !== null &amp;&amp; this.client.acceptLanguage !== undefined &amp;&amp; typeof this.client.acceptLanguage.valueOf() !== 'string') {
+      throw new Error('this.client.acceptLanguage must be of type string.');
+    }
+  } catch (error) {
+    return callback(error);
+  }
+
+  // Construct URL
+  let baseUrl = this.client.baseUri;
+  let requestUrl = baseUrl + (baseUrl.endsWith('/') ? '' : '/') + 'subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataLakeStore/accounts/{name}';
+  requestUrl = requestUrl.replace('{resourceGroupName}', encodeURIComponent(resourceGroupName));
+  requestUrl = requestUrl.replace('{name}', encodeURIComponent(name));
+  requestUrl = requestUrl.replace('{subscriptionId}', encodeURIComponent(this.client.subscriptionId));
+  let queryParameters = [];
+  queryParameters.push('api-version=' + encodeURIComponent(this.client.apiVersion));
+  if (queryParameters.length > 0) {
+    requestUrl += '?' + queryParameters.join('&amp;');
+  }
+
+  // Create HTTP transport objects
+  let httpRequest = new WebResource();
+  httpRequest.method = 'PUT';
+  httpRequest.url = requestUrl;
+  httpRequest.headers = {};
+  // Set Headers
+  httpRequest.headers['Content-Type'] = 'application/json; charset=utf-8';
+  if (this.client.generateClientRequestId) {
+      httpRequest.headers['x-ms-client-request-id'] = msRestAzure.generateUuid();
+  }
+  if (this.client.acceptLanguage !== undefined &amp;&amp; this.client.acceptLanguage !== null) {
+    httpRequest.headers['accept-language'] = this.client.acceptLanguage;
+  }
+  if(options) {
+    for(let headerName in options['customHeaders']) {
+      if (options['customHeaders'].hasOwnProperty(headerName)) {
+        httpRequest.headers[headerName] = options['customHeaders'][headerName];
+      }
+    }
+  }
+  // Serialize Request
+  let requestContent = null;
+  let requestModel = null;
+  try {
+    if (parameters !== null &amp;&amp; parameters !== undefined) {
+      let requestModelMapper = new client.models['DataLakeStoreAccount']().mapper();
+      requestModel = client.serialize(requestModelMapper, parameters, 'parameters');
+      requestContent = JSON.stringify(requestModel);
+    }
+  } catch (error) {
+    let serializationError = new Error(`Error "${error.message}" occurred in serializing the ` +
+        `payload - ${JSON.stringify(parameters, null, 2)}.`);
+    return callback(serializationError);
+  }
+  httpRequest.body = requestContent;
+  // Send Request
+  return client.pipeline(httpRequest, (err, response, responseBody) => {
+    if (err) {
+      return callback(err);
+    }
+    let statusCode = response.statusCode;
+    if (statusCode !== 200 &amp;&amp; statusCode !== 201) {
+      let error = new Error(responseBody);
+      error.statusCode = response.statusCode;
+      error.request = msRest.stripRequest(httpRequest);
+      error.response = msRest.stripResponse(response);
+      if (responseBody === '') responseBody = null;
+      let parsedErrorResponse;
+      try {
+        parsedErrorResponse = JSON.parse(responseBody);
+        if (parsedErrorResponse) {
+          if (parsedErrorResponse.error) parsedErrorResponse = parsedErrorResponse.error;
+          if (parsedErrorResponse.code) error.code = parsedErrorResponse.code;
+          if (parsedErrorResponse.message) error.message = parsedErrorResponse.message;
+        }
+        if (parsedErrorResponse !== null &amp;&amp; parsedErrorResponse !== undefined) {
+          let resultMapper = new client.models['CloudError']().mapper();
+          error.body = client.deserialize(resultMapper, parsedErrorResponse, 'error.body');
+        }
+      } catch (defaultError) {
+        error.message = `Error "${defaultError.message}" occurred in deserializing the responseBody ` +
+                         `- "${responseBody}" for the default response.`;
+        return callback(error);
+      }
+      return callback(error);
+    }
+    // Create Result
+    let result = null;
+    if (responseBody === '') responseBody = null;
+    // Deserialize Response
+    if (statusCode === 200) {
+      let parsedResponse = null;
+      try {
+        parsedResponse = JSON.parse(responseBody);
+        result = JSON.parse(responseBody);
+        if (parsedResponse !== null &amp;&amp; parsedResponse !== undefined) {
+          let resultMapper = new client.models['DataLakeStoreAccount']().mapper();
+          result = client.deserialize(resultMapper, parsedResponse, 'result');
+        }
+      } catch (error) {
+        let deserializationError = new Error(`Error ${error} occurred in deserializing the responseBody - ${responseBody}`);
+        deserializationError.request = msRest.stripRequest(httpRequest);
+        deserializationError.response = msRest.stripResponse(response);
+        return callback(deserializationError);
+      }
+    }
+    // Deserialize Response
+    if (statusCode === 201) {
+      let parsedResponse = null;
+      try {
+        parsedResponse = JSON.parse(responseBody);
+        result = JSON.parse(responseBody);
+        if (parsedResponse !== null &amp;&amp; parsedResponse !== undefined) {
+          let resultMapper = new client.models['DataLakeStoreAccount']().mapper();
+          result = client.deserialize(resultMapper, parsedResponse, 'result');
+        }
+      } catch (error) {
+        let deserializationError1 = new Error(`Error ${error} occurred in deserializing the responseBody - ${responseBody}`);
+        deserializationError1.request = msRest.stripRequest(httpRequest);
+        deserializationError1.response = msRest.stripResponse(response);
+        return callback(deserializationError1);
+      }
+    }
+
+    return callback(null, result, httpRequest, response);
+  });
+}
+
+/**
+ * Updates the specified Data Lake Store account information.
+ *
+ * @param {string} resourceGroupName The name of the Azure resource group that
+ * contains the Data Lake Store account.
+ *
+ * @param {string} name The name of the Data Lake Store account to update.
+ *
+ * @param {object} parameters Parameters supplied to update the Data Lake Store
+ * account.
+ *
+ * @param {object} [parameters.tags] Resource tags
+ *
+ * @param {string} [parameters.firewallState] The current state of the IP
+ * address firewall for this Data Lake store account. Disabling the firewall
+ * does not remove existing rules, they will just be ignored until the firewall
+ * is re-enabled. Possible values include: 'Enabled', 'Disabled'
+ *
+ * @param {string} [parameters.trustedIdProviderState] The current state of the
+ * trusted identity provider feature for this Data Lake store account.
+ * Disabling trusted identity provider functionality does not remove the
+ * providers, they will just be ignored until this feature is re-enabled.
+ * Possible values include: 'Enabled', 'Disabled'
+ *
+ * @param {string} [parameters.defaultGroup] the default owner group for all
+ * new folders and files created in the Data Lake Store account.
+ *
+ * @param {string} [parameters.newTier] the commitment tier to use for next
+ * month. Possible values include: 'Consumption', 'Commitment_1TB',
+ * 'Commitment_10TB', 'Commitment_100TB', 'Commitment_500TB', 'Commitment_1PB',
+ * 'Commitment_5PB'
+ *
+ * @param {string} [parameters.firewallAllowAzureIps] The current state of
+ * allowing or disallowing IPs originating within Azure through the firewall.
+ * If the firewall is disabled, this is not enforced. Possible values include:
+ * 'Enabled', 'Disabled'
+ *
+ * @param {object} [parameters.encryptionConfig] Used for rotation of user
+ * managed Key Vault keys. Can only be used to rotate a user managed encryption
+ * Key Vault key.
+ *
+ * @param {object} [parameters.encryptionConfig.keyVaultMetaInfo] The updated
+ * Key Vault key to use in user managed key rotation.
+ *
+ * @param {string}
+ * [parameters.encryptionConfig.keyVaultMetaInfo.encryptionKeyVersion] The
+ * version of the user managed encryption key to update through a key rotation.
+ *
+ * @param {object} [options] Optional Parameters.
+ *
+ * @param {object} [options.customHeaders] Headers that will be added to the
+ * request
+ *
+ * @param {function} callback - The callback.
+ *
+ * @returns {function} callback(err, result, request, response)
+ *
+ *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+ *
+ *                      {object} [result]   - The deserialized result object if an error did not occur.
+ *                      See {@link DataLakeStoreAccount} for more information.
+ *
+ *                      {object} [request]  - The HTTP Request object if an error did not occur.
+ *
+ *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+ */
+function _beginUpdate(resourceGroupName, name, parameters, options, callback) {
+   /* jshint validthis: true */
+  let client = this.client;
+  if(!callback &amp;&amp; typeof options === 'function') {
+    callback = options;
+    options = null;
+  }
+  if (!callback) {
+    throw new Error('callback cannot be null.');
+  }
+  // Validate
+  try {
+    if (resourceGroupName === null || resourceGroupName === undefined || typeof resourceGroupName.valueOf() !== 'string') {
+      throw new Error('resourceGroupName cannot be null or undefined and it must be of type string.');
+    }
+    if (name === null || name === undefined || typeof name.valueOf() !== 'string') {
+      throw new Error('name cannot be null or undefined and it must be of type string.');
+    }
+    if (parameters === null || parameters === undefined) {
+      throw new Error('parameters cannot be null or undefined.');
+    }
+    if (this.client.apiVersion === null || this.client.apiVersion === undefined || typeof this.client.apiVersion.valueOf() !== 'string') {
+      throw new Error('this.client.apiVersion cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.subscriptionId === null || this.client.subscriptionId === undefined || typeof this.client.subscriptionId.valueOf() !== 'string') {
+      throw new Error('this.client.subscriptionId cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.acceptLanguage !== null &amp;&amp; this.client.acceptLanguage !== undefined &amp;&amp; typeof this.client.acceptLanguage.valueOf() !== 'string') {
+      throw new Error('this.client.acceptLanguage must be of type string.');
+    }
+  } catch (error) {
+    return callback(error);
+  }
+
+  // Construct URL
+  let baseUrl = this.client.baseUri;
+  let requestUrl = baseUrl + (baseUrl.endsWith('/') ? '' : '/') + 'subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataLakeStore/accounts/{name}';
+  requestUrl = requestUrl.replace('{resourceGroupName}', encodeURIComponent(resourceGroupName));
+  requestUrl = requestUrl.replace('{name}', encodeURIComponent(name));
+  requestUrl = requestUrl.replace('{subscriptionId}', encodeURIComponent(this.client.subscriptionId));
+  let queryParameters = [];
+  queryParameters.push('api-version=' + encodeURIComponent(this.client.apiVersion));
+  if (queryParameters.length > 0) {
+    requestUrl += '?' + queryParameters.join('&amp;');
+  }
+
+  // Create HTTP transport objects
+  let httpRequest = new WebResource();
+  httpRequest.method = 'PATCH';
+  httpRequest.url = requestUrl;
+  httpRequest.headers = {};
+  // Set Headers
+  httpRequest.headers['Content-Type'] = 'application/json; charset=utf-8';
+  if (this.client.generateClientRequestId) {
+      httpRequest.headers['x-ms-client-request-id'] = msRestAzure.generateUuid();
+  }
+  if (this.client.acceptLanguage !== undefined &amp;&amp; this.client.acceptLanguage !== null) {
+    httpRequest.headers['accept-language'] = this.client.acceptLanguage;
+  }
+  if(options) {
+    for(let headerName in options['customHeaders']) {
+      if (options['customHeaders'].hasOwnProperty(headerName)) {
+        httpRequest.headers[headerName] = options['customHeaders'][headerName];
+      }
+    }
+  }
+  // Serialize Request
+  let requestContent = null;
+  let requestModel = null;
+  try {
+    if (parameters !== null &amp;&amp; parameters !== undefined) {
+      let requestModelMapper = new client.models['DataLakeStoreAccountUpdateParameters']().mapper();
+      requestModel = client.serialize(requestModelMapper, parameters, 'parameters');
+      requestContent = JSON.stringify(requestModel);
+    }
+  } catch (error) {
+    let serializationError = new Error(`Error "${error.message}" occurred in serializing the ` +
+        `payload - ${JSON.stringify(parameters, null, 2)}.`);
+    return callback(serializationError);
+  }
+  httpRequest.body = requestContent;
+  // Send Request
+  return client.pipeline(httpRequest, (err, response, responseBody) => {
+    if (err) {
+      return callback(err);
+    }
+    let statusCode = response.statusCode;
+    if (statusCode !== 200 &amp;&amp; statusCode !== 201) {
+      let error = new Error(responseBody);
+      error.statusCode = response.statusCode;
+      error.request = msRest.stripRequest(httpRequest);
+      error.response = msRest.stripResponse(response);
+      if (responseBody === '') responseBody = null;
+      let parsedErrorResponse;
+      try {
+        parsedErrorResponse = JSON.parse(responseBody);
+        if (parsedErrorResponse) {
+          if (parsedErrorResponse.error) parsedErrorResponse = parsedErrorResponse.error;
+          if (parsedErrorResponse.code) error.code = parsedErrorResponse.code;
+          if (parsedErrorResponse.message) error.message = parsedErrorResponse.message;
+        }
+        if (parsedErrorResponse !== null &amp;&amp; parsedErrorResponse !== undefined) {
+          let resultMapper = new client.models['CloudError']().mapper();
+          error.body = client.deserialize(resultMapper, parsedErrorResponse, 'error.body');
+        }
+      } catch (defaultError) {
+        error.message = `Error "${defaultError.message}" occurred in deserializing the responseBody ` +
+                         `- "${responseBody}" for the default response.`;
+        return callback(error);
+      }
+      return callback(error);
+    }
+    // Create Result
+    let result = null;
+    if (responseBody === '') responseBody = null;
+    // Deserialize Response
+    if (statusCode === 200) {
+      let parsedResponse = null;
+      try {
+        parsedResponse = JSON.parse(responseBody);
+        result = JSON.parse(responseBody);
+        if (parsedResponse !== null &amp;&amp; parsedResponse !== undefined) {
+          let resultMapper = new client.models['DataLakeStoreAccount']().mapper();
+          result = client.deserialize(resultMapper, parsedResponse, 'result');
+        }
+      } catch (error) {
+        let deserializationError = new Error(`Error ${error} occurred in deserializing the responseBody - ${responseBody}`);
+        deserializationError.request = msRest.stripRequest(httpRequest);
+        deserializationError.response = msRest.stripResponse(response);
+        return callback(deserializationError);
+      }
+    }
+    // Deserialize Response
+    if (statusCode === 201) {
+      let parsedResponse = null;
+      try {
+        parsedResponse = JSON.parse(responseBody);
+        result = JSON.parse(responseBody);
+        if (parsedResponse !== null &amp;&amp; parsedResponse !== undefined) {
+          let resultMapper = new client.models['DataLakeStoreAccount']().mapper();
+          result = client.deserialize(resultMapper, parsedResponse, 'result');
+        }
+      } catch (error) {
+        let deserializationError1 = new Error(`Error ${error} occurred in deserializing the responseBody - ${responseBody}`);
+        deserializationError1.request = msRest.stripRequest(httpRequest);
+        deserializationError1.response = msRest.stripResponse(response);
+        return callback(deserializationError1);
+      }
+    }
+
+    return callback(null, result, httpRequest, response);
+  });
+}
+
+/**
+ * Deletes the specified Data Lake Store account.
+ *
+ * @param {string} resourceGroupName The name of the Azure resource group that
+ * contains the Data Lake Store account.
+ *
+ * @param {string} name The name of the Data Lake Store account to delete.
+ *
+ * @param {object} [options] Optional Parameters.
+ *
+ * @param {object} [options.customHeaders] Headers that will be added to the
+ * request
+ *
+ * @param {function} callback - The callback.
+ *
+ * @returns {function} callback(err, result, request, response)
+ *
+ *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+ *
+ *                      {null} [result]   - The deserialized result object if an error did not occur.
+ *
+ *                      {object} [request]  - The HTTP Request object if an error did not occur.
+ *
+ *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+ */
+function _beginDeleteMethod(resourceGroupName, name, options, callback) {
+   /* jshint validthis: true */
+  let client = this.client;
+  if(!callback &amp;&amp; typeof options === 'function') {
+    callback = options;
+    options = null;
+  }
+  if (!callback) {
+    throw new Error('callback cannot be null.');
+  }
+  // Validate
+  try {
+    if (resourceGroupName === null || resourceGroupName === undefined || typeof resourceGroupName.valueOf() !== 'string') {
+      throw new Error('resourceGroupName cannot be null or undefined and it must be of type string.');
+    }
+    if (name === null || name === undefined || typeof name.valueOf() !== 'string') {
+      throw new Error('name cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.apiVersion === null || this.client.apiVersion === undefined || typeof this.client.apiVersion.valueOf() !== 'string') {
+      throw new Error('this.client.apiVersion cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.subscriptionId === null || this.client.subscriptionId === undefined || typeof this.client.subscriptionId.valueOf() !== 'string') {
+      throw new Error('this.client.subscriptionId cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.acceptLanguage !== null &amp;&amp; this.client.acceptLanguage !== undefined &amp;&amp; typeof this.client.acceptLanguage.valueOf() !== 'string') {
+      throw new Error('this.client.acceptLanguage must be of type string.');
+    }
+  } catch (error) {
+    return callback(error);
+  }
+
+  // Construct URL
+  let baseUrl = this.client.baseUri;
+  let requestUrl = baseUrl + (baseUrl.endsWith('/') ? '' : '/') + 'subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataLakeStore/accounts/{name}';
+  requestUrl = requestUrl.replace('{resourceGroupName}', encodeURIComponent(resourceGroupName));
+  requestUrl = requestUrl.replace('{name}', encodeURIComponent(name));
+  requestUrl = requestUrl.replace('{subscriptionId}', encodeURIComponent(this.client.subscriptionId));
+  let queryParameters = [];
+  queryParameters.push('api-version=' + encodeURIComponent(this.client.apiVersion));
+  if (queryParameters.length > 0) {
+    requestUrl += '?' + queryParameters.join('&amp;');
+  }
+
+  // Create HTTP transport objects
+  let httpRequest = new WebResource();
+  httpRequest.method = 'DELETE';
+  httpRequest.url = requestUrl;
+  httpRequest.headers = {};
+  // Set Headers
+  httpRequest.headers['Content-Type'] = 'application/json; charset=utf-8';
+  if (this.client.generateClientRequestId) {
+      httpRequest.headers['x-ms-client-request-id'] = msRestAzure.generateUuid();
+  }
+  if (this.client.acceptLanguage !== undefined &amp;&amp; this.client.acceptLanguage !== null) {
+    httpRequest.headers['accept-language'] = this.client.acceptLanguage;
+  }
+  if(options) {
+    for(let headerName in options['customHeaders']) {
+      if (options['customHeaders'].hasOwnProperty(headerName)) {
+        httpRequest.headers[headerName] = options['customHeaders'][headerName];
+      }
+    }
+  }
+  httpRequest.body = null;
+  // Send Request
+  return client.pipeline(httpRequest, (err, response, responseBody) => {
+    if (err) {
+      return callback(err);
+    }
+    let statusCode = response.statusCode;
+    if (statusCode !== 200 &amp;&amp; statusCode !== 202 &amp;&amp; statusCode !== 204) {
+      let error = new Error(responseBody);
+      error.statusCode = response.statusCode;
+      error.request = msRest.stripRequest(httpRequest);
+      error.response = msRest.stripResponse(response);
+      if (responseBody === '') responseBody = null;
+      let parsedErrorResponse;
+      try {
+        parsedErrorResponse = JSON.parse(responseBody);
+        if (parsedErrorResponse) {
+          if (parsedErrorResponse.error) parsedErrorResponse = parsedErrorResponse.error;
+          if (parsedErrorResponse.code) error.code = parsedErrorResponse.code;
+          if (parsedErrorResponse.message) error.message = parsedErrorResponse.message;
+        }
+        if (parsedErrorResponse !== null &amp;&amp; parsedErrorResponse !== undefined) {
+          let resultMapper = new client.models['CloudError']().mapper();
+          error.body = client.deserialize(resultMapper, parsedErrorResponse, 'error.body');
+        }
+      } catch (defaultError) {
+        error.message = `Error "${defaultError.message}" occurred in deserializing the responseBody ` +
+                         `- "${responseBody}" for the default response.`;
+        return callback(error);
+      }
+      return callback(error);
+    }
+    // Create Result
+    let result = null;
+    if (responseBody === '') responseBody = null;
+
+    return callback(null, result, httpRequest, response);
+  });
+}
+
+/**
+ * Lists the Data Lake Store accounts within a specific resource group. The
+ * response includes a link to the next page of results, if any.
+ *
+ * @param {string} nextPageLink The NextLink from the previous successful call
+ * to List operation.
+ *
+ * @param {object} [options] Optional Parameters.
+ *
+ * @param {object} [options.customHeaders] Headers that will be added to the
+ * request
+ *
+ * @param {function} callback - The callback.
+ *
+ * @returns {function} callback(err, result, request, response)
+ *
+ *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+ *
+ *                      {object} [result]   - The deserialized result object if an error did not occur.
+ *                      See {@link DataLakeStoreAccountListResult} for more
+ *                      information.
+ *
+ *                      {object} [request]  - The HTTP Request object if an error did not occur.
+ *
+ *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+ */
+function _listByResourceGroupNext(nextPageLink, options, callback) {
+   /* jshint validthis: true */
+  let client = this.client;
+  if(!callback &amp;&amp; typeof options === 'function') {
+    callback = options;
+    options = null;
+  }
+  if (!callback) {
+    throw new Error('callback cannot be null.');
+  }
+  // Validate
+  try {
+    if (nextPageLink === null || nextPageLink === undefined || typeof nextPageLink.valueOf() !== 'string') {
+      throw new Error('nextPageLink cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.acceptLanguage !== null &amp;&amp; this.client.acceptLanguage !== undefined &amp;&amp; typeof this.client.acceptLanguage.valueOf() !== 'string') {
+      throw new Error('this.client.acceptLanguage must be of type string.');
+    }
+  } catch (error) {
+    return callback(error);
+  }
+
+  // Construct URL
+  let requestUrl = '{nextLink}';
+  requestUrl = requestUrl.replace('{nextLink}', nextPageLink);
+
+  // Create HTTP transport objects
+  let httpRequest = new WebResource();
+  httpRequest.method = 'GET';
+  httpRequest.url = requestUrl;
+  httpRequest.headers = {};
+  // Set Headers
+  httpRequest.headers['Content-Type'] = 'application/json; charset=utf-8';
+  if (this.client.generateClientRequestId) {
+      httpRequest.headers['x-ms-client-request-id'] = msRestAzure.generateUuid();
+  }
+  if (this.client.acceptLanguage !== undefined &amp;&amp; this.client.acceptLanguage !== null) {
+    httpRequest.headers['accept-language'] = this.client.acceptLanguage;
+  }
+  if(options) {
+    for(let headerName in options['customHeaders']) {
+      if (options['customHeaders'].hasOwnProperty(headerName)) {
+        httpRequest.headers[headerName] = options['customHeaders'][headerName];
+      }
+    }
+  }
+  httpRequest.body = null;
+  // Send Request
+  return client.pipeline(httpRequest, (err, response, responseBody) => {
+    if (err) {
+      return callback(err);
+    }
+    let statusCode = response.statusCode;
+    if (statusCode !== 200) {
+      let error = new Error(responseBody);
+      error.statusCode = response.statusCode;
+      error.request = msRest.stripRequest(httpRequest);
+      error.response = msRest.stripResponse(response);
+      if (responseBody === '') responseBody = null;
+      let parsedErrorResponse;
+      try {
+        parsedErrorResponse = JSON.parse(responseBody);
+        if (parsedErrorResponse) {
+          if (parsedErrorResponse.error) parsedErrorResponse = parsedErrorResponse.error;
+          if (parsedErrorResponse.code) error.code = parsedErrorResponse.code;
+          if (parsedErrorResponse.message) error.message = parsedErrorResponse.message;
+        }
+        if (parsedErrorResponse !== null &amp;&amp; parsedErrorResponse !== undefined) {
+          let resultMapper = new client.models['CloudError']().mapper();
+          error.body = client.deserialize(resultMapper, parsedErrorResponse, 'error.body');
+        }
+      } catch (defaultError) {
+        error.message = `Error "${defaultError.message}" occurred in deserializing the responseBody ` +
+                         `- "${responseBody}" for the default response.`;
+        return callback(error);
+      }
+      return callback(error);
+    }
+    // Create Result
+    let result = null;
+    if (responseBody === '') responseBody = null;
+    // Deserialize Response
+    if (statusCode === 200) {
+      let parsedResponse = null;
+      try {
+        parsedResponse = JSON.parse(responseBody);
+        result = JSON.parse(responseBody);
+        if (parsedResponse !== null &amp;&amp; parsedResponse !== undefined) {
+          let resultMapper = new client.models['DataLakeStoreAccountListResult']().mapper();
+          result = client.deserialize(resultMapper, parsedResponse, 'result');
+        }
+      } catch (error) {
+        let deserializationError = new Error(`Error ${error} occurred in deserializing the responseBody - ${responseBody}`);
+        deserializationError.request = msRest.stripRequest(httpRequest);
+        deserializationError.response = msRest.stripResponse(response);
+        return callback(deserializationError);
+      }
+    }
+
+    return callback(null, result, httpRequest, response);
+  });
+}
+
+/**
+ * Lists the Data Lake Store accounts within the subscription. The response
+ * includes a link to the next page of results, if any.
+ *
+ * @param {string} nextPageLink The NextLink from the previous successful call
+ * to List operation.
+ *
+ * @param {object} [options] Optional Parameters.
+ *
+ * @param {object} [options.customHeaders] Headers that will be added to the
+ * request
+ *
+ * @param {function} callback - The callback.
+ *
+ * @returns {function} callback(err, result, request, response)
+ *
+ *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+ *
+ *                      {object} [result]   - The deserialized result object if an error did not occur.
+ *                      See {@link DataLakeStoreAccountListResult} for more
+ *                      information.
+ *
+ *                      {object} [request]  - The HTTP Request object if an error did not occur.
+ *
+ *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+ */
+function _listNext(nextPageLink, options, callback) {
+   /* jshint validthis: true */
+  let client = this.client;
+  if(!callback &amp;&amp; typeof options === 'function') {
+    callback = options;
+    options = null;
+  }
+  if (!callback) {
+    throw new Error('callback cannot be null.');
+  }
+  // Validate
+  try {
+    if (nextPageLink === null || nextPageLink === undefined || typeof nextPageLink.valueOf() !== 'string') {
+      throw new Error('nextPageLink cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.acceptLanguage !== null &amp;&amp; this.client.acceptLanguage !== undefined &amp;&amp; typeof this.client.acceptLanguage.valueOf() !== 'string') {
+      throw new Error('this.client.acceptLanguage must be of type string.');
+    }
+  } catch (error) {
+    return callback(error);
+  }
+
+  // Construct URL
+  let requestUrl = '{nextLink}';
+  requestUrl = requestUrl.replace('{nextLink}', nextPageLink);
+
+  // Create HTTP transport objects
+  let httpRequest = new WebResource();
+  httpRequest.method = 'GET';
+  httpRequest.url = requestUrl;
+  httpRequest.headers = {};
+  // Set Headers
+  httpRequest.headers['Content-Type'] = 'application/json; charset=utf-8';
+  if (this.client.generateClientRequestId) {
+      httpRequest.headers['x-ms-client-request-id'] = msRestAzure.generateUuid();
+  }
+  if (this.client.acceptLanguage !== undefined &amp;&amp; this.client.acceptLanguage !== null) {
+    httpRequest.headers['accept-language'] = this.client.acceptLanguage;
+  }
+  if(options) {
+    for(let headerName in options['customHeaders']) {
+      if (options['customHeaders'].hasOwnProperty(headerName)) {
+        httpRequest.headers[headerName] = options['customHeaders'][headerName];
+      }
+    }
+  }
+  httpRequest.body = null;
+  // Send Request
+  return client.pipeline(httpRequest, (err, response, responseBody) => {
+    if (err) {
+      return callback(err);
+    }
+    let statusCode = response.statusCode;
+    if (statusCode !== 200) {
+      let error = new Error(responseBody);
+      error.statusCode = response.statusCode;
+      error.request = msRest.stripRequest(httpRequest);
+      error.response = msRest.stripResponse(response);
+      if (responseBody === '') responseBody = null;
+      let parsedErrorResponse;
+      try {
+        parsedErrorResponse = JSON.parse(responseBody);
+        if (parsedErrorResponse) {
+          if (parsedErrorResponse.error) parsedErrorResponse = parsedErrorResponse.error;
+          if (parsedErrorResponse.code) error.code = parsedErrorResponse.code;
+          if (parsedErrorResponse.message) error.message = parsedErrorResponse.message;
+        }
+        if (parsedErrorResponse !== null &amp;&amp; parsedErrorResponse !== undefined) {
+          let resultMapper = new client.models['CloudError']().mapper();
+          error.body = client.deserialize(resultMapper, parsedErrorResponse, 'error.body');
+        }
+      } catch (defaultError) {
+        error.message = `Error "${defaultError.message}" occurred in deserializing the responseBody ` +
+                         `- "${responseBody}" for the default response.`;
+        return callback(error);
+      }
+      return callback(error);
+    }
+    // Create Result
+    let result = null;
+    if (responseBody === '') responseBody = null;
+    // Deserialize Response
+    if (statusCode === 200) {
+      let parsedResponse = null;
+      try {
+        parsedResponse = JSON.parse(responseBody);
+        result = JSON.parse(responseBody);
+        if (parsedResponse !== null &amp;&amp; parsedResponse !== undefined) {
+          let resultMapper = new client.models['DataLakeStoreAccountListResult']().mapper();
+          result = client.deserialize(resultMapper, parsedResponse, 'result');
+        }
+      } catch (error) {
+        let deserializationError = new Error(`Error ${error} occurred in deserializing the responseBody - ${responseBody}`);
+        deserializationError.request = msRest.stripRequest(httpRequest);
+        deserializationError.response = msRest.stripResponse(response);
+        return callback(deserializationError);
+      }
+    }
+
+    return callback(null, result, httpRequest, response);
+  });
+}
+
+/** Class representing a Account. */
+class Account {
+  /**
+   * Create a Account.
+   * @param {DataLakeStoreAccountManagementClient} client Reference to the service client.
+   */
+  constructor(client) {
+    this.client = client;
+    this._create = _create;
+    this._update = _update;
+    this._deleteMethod = _deleteMethod;
+    this._get = _get;
+    this._enableKeyVault = _enableKeyVault;
+    this._listByResourceGroup = _listByResourceGroup;
+    this._list = _list;
+    this._beginCreate = _beginCreate;
+    this._beginUpdate = _beginUpdate;
+    this._beginDeleteMethod = _beginDeleteMethod;
+    this._listByResourceGroupNext = _listByResourceGroupNext;
+    this._listNext = _listNext;
+  }
+
+  /**
+   * Creates the specified Data Lake Store account.
+   *
+   * @param {string} resourceGroupName The name of the Azure resource group that
+   * contains the Data Lake Store account.
+   *
+   * @param {string} name The name of the Data Lake Store account to create.
+   *
+   * @param {object} parameters Parameters supplied to create the Data Lake Store
+   * account.
+   *
+   * @param {object} [parameters.identity] The Key Vault encryption identity, if
+   * any.
+   *
+   * @param {string} [parameters.encryptionState] The current state of encryption
+   * for this Data Lake store account. Possible values include: 'Enabled',
+   * 'Disabled'
+   *
+   * @param {object} [parameters.encryptionConfig] The Key Vault encryption
+   * configuration.
+   *
+   * @param {string} parameters.encryptionConfig.type The type of encryption
+   * configuration being used. Currently the only supported types are
+   * 'UserManaged' and 'ServiceManaged'. Possible values include: 'UserManaged',
+   * 'ServiceManaged'
+   *
+   * @param {object} [parameters.encryptionConfig.keyVaultMetaInfo] The Key Vault
+   * information for connecting to user managed encryption keys.
+   *
+   * @param {string}
+   * parameters.encryptionConfig.keyVaultMetaInfo.keyVaultResourceId The resource
+   * identifier for the user managed Key Vault being used to encrypt.
+   *
+   * @param {string}
+   * parameters.encryptionConfig.keyVaultMetaInfo.encryptionKeyName The name of
+   * the user managed encryption key.
+   *
+   * @param {string}
+   * parameters.encryptionConfig.keyVaultMetaInfo.encryptionKeyVersion The
+   * version of the user managed encryption key.
+   *
+   * @param {string} [parameters.firewallState] The current state of the IP
+   * address firewall for this Data Lake store account. Possible values include:
+   * 'Enabled', 'Disabled'
+   *
+   * @param {array} [parameters.firewallRules] The list of firewall rules
+   * associated with this Data Lake store account.
+   *
+   * @param {string} [parameters.trustedIdProviderState] The current state of the
+   * trusted identity provider feature for this Data Lake store account. Possible
+   * values include: 'Enabled', 'Disabled'
+   *
+   * @param {array} [parameters.trustedIdProviders] The list of trusted identity
+   * providers associated with this Data Lake store account.
+   *
+   * @param {string} [parameters.defaultGroup] the default owner group for all
+   * new folders and files created in the Data Lake Store account.
+   *
+   * @param {string} [parameters.newTier] the commitment tier to use for next
+   * month. Possible values include: 'Consumption', 'Commitment_1TB',
+   * 'Commitment_10TB', 'Commitment_100TB', 'Commitment_500TB', 'Commitment_1PB',
+   * 'Commitment_5PB'
+   *
+   * @param {string} [parameters.firewallAllowAzureIps] The current state of
+   * allowing or disallowing IPs originating within Azure through the firewall.
+   * If the firewall is disabled, this is not enforced. Possible values include:
+   * 'Enabled', 'Disabled'
+   *
+   * @param {string} parameters.location Resource location
+   *
+   * @param {object} [parameters.tags] Resource tags
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @returns {Promise} A promise is returned
+   *
+   * @resolve {HttpOperationResponse&lt;DataLakeStoreAccount>} - The deserialized result object.
+   *
+   * @reject {Error} - The error object.
+   */
+  createWithHttpOperationResponse(resourceGroupName, name, parameters, options) {
+    let client = this.client;
+    let self = this;
+    return new Promise((resolve, reject) => {
+      self._create(resourceGroupName, name, parameters, options, (err, result, request, response) => {
+        let httpOperationResponse = new msRest.HttpOperationResponse(request, response);
+        httpOperationResponse.body = result;
+        if (err) { reject(err); }
+        else { resolve(httpOperationResponse); }
+        return;
+      });
+    });
+  }
+
+  /**
+   * Creates the specified Data Lake Store account.
+   *
+   * @param {string} resourceGroupName The name of the Azure resource group that
+   * contains the Data Lake Store account.
+   *
+   * @param {string} name The name of the Data Lake Store account to create.
+   *
+   * @param {object} parameters Parameters supplied to create the Data Lake Store
+   * account.
+   *
+   * @param {object} [parameters.identity] The Key Vault encryption identity, if
+   * any.
+   *
+   * @param {string} [parameters.encryptionState] The current state of encryption
+   * for this Data Lake store account. Possible values include: 'Enabled',
+   * 'Disabled'
+   *
+   * @param {object} [parameters.encryptionConfig] The Key Vault encryption
+   * configuration.
+   *
+   * @param {string} parameters.encryptionConfig.type The type of encryption
+   * configuration being used. Currently the only supported types are
+   * 'UserManaged' and 'ServiceManaged'. Possible values include: 'UserManaged',
+   * 'ServiceManaged'
+   *
+   * @param {object} [parameters.encryptionConfig.keyVaultMetaInfo] The Key Vault
+   * information for connecting to user managed encryption keys.
+   *
+   * @param {string}
+   * parameters.encryptionConfig.keyVaultMetaInfo.keyVaultResourceId The resource
+   * identifier for the user managed Key Vault being used to encrypt.
+   *
+   * @param {string}
+   * parameters.encryptionConfig.keyVaultMetaInfo.encryptionKeyName The name of
+   * the user managed encryption key.
+   *
+   * @param {string}
+   * parameters.encryptionConfig.keyVaultMetaInfo.encryptionKeyVersion The
+   * version of the user managed encryption key.
+   *
+   * @param {string} [parameters.firewallState] The current state of the IP
+   * address firewall for this Data Lake store account. Possible values include:
+   * 'Enabled', 'Disabled'
+   *
+   * @param {array} [parameters.firewallRules] The list of firewall rules
+   * associated with this Data Lake store account.
+   *
+   * @param {string} [parameters.trustedIdProviderState] The current state of the
+   * trusted identity provider feature for this Data Lake store account. Possible
+   * values include: 'Enabled', 'Disabled'
+   *
+   * @param {array} [parameters.trustedIdProviders] The list of trusted identity
+   * providers associated with this Data Lake store account.
+   *
+   * @param {string} [parameters.defaultGroup] the default owner group for all
+   * new folders and files created in the Data Lake Store account.
+   *
+   * @param {string} [parameters.newTier] the commitment tier to use for next
+   * month. Possible values include: 'Consumption', 'Commitment_1TB',
+   * 'Commitment_10TB', 'Commitment_100TB', 'Commitment_500TB', 'Commitment_1PB',
+   * 'Commitment_5PB'
+   *
+   * @param {string} [parameters.firewallAllowAzureIps] The current state of
+   * allowing or disallowing IPs originating within Azure through the firewall.
+   * If the firewall is disabled, this is not enforced. Possible values include:
+   * 'Enabled', 'Disabled'
+   *
+   * @param {string} parameters.location Resource location
+   *
+   * @param {object} [parameters.tags] Resource tags
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @param {function} [optionalCallback] - The optional callback.
+   *
+   * @returns {function|Promise} If a callback was passed as the last parameter
+   * then it returns the callback else returns a Promise.
+   *
+   * {Promise} A promise is returned
+   *
+   *                      @resolve {DataLakeStoreAccount} - The deserialized result object.
+   *
+   *                      @reject {Error} - The error object.
+   *
+   * {function} optionalCallback(err, result, request, response)
+   *
+   *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+   *
+   *                      {object} [result]   - The deserialized result object if an error did not occur.
+   *                      See {@link DataLakeStoreAccount} for more information.
+   *
+   *                      {object} [request]  - The HTTP Request object if an error did not occur.
+   *
+   *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+   */
+  create(resourceGroupName, name, parameters, options, optionalCallback) {
+    let client = this.client;
+    let self = this;
+    if (!optionalCallback &amp;&amp; typeof options === 'function') {
+      optionalCallback = options;
+      options = null;
+    }
+    if (!optionalCallback) {
+      return new Promise((resolve, reject) => {
+        self._create(resourceGroupName, name, parameters, options, (err, result, request, response) => {
+          if (err) { reject(err); }
+          else { resolve(result); }
+          return;
+        });
+      });
+    } else {
+      return self._create(resourceGroupName, name, parameters, options, optionalCallback);
+    }
+  }
+
+  /**
+   * Updates the specified Data Lake Store account information.
+   *
+   * @param {string} resourceGroupName The name of the Azure resource group that
+   * contains the Data Lake Store account.
+   *
+   * @param {string} name The name of the Data Lake Store account to update.
+   *
+   * @param {object} parameters Parameters supplied to update the Data Lake Store
+   * account.
+   *
+   * @param {object} [parameters.tags] Resource tags
+   *
+   * @param {string} [parameters.firewallState] The current state of the IP
+   * address firewall for this Data Lake store account. Disabling the firewall
+   * does not remove existing rules, they will just be ignored until the firewall
+   * is re-enabled. Possible values include: 'Enabled', 'Disabled'
+   *
+   * @param {string} [parameters.trustedIdProviderState] The current state of the
+   * trusted identity provider feature for this Data Lake store account.
+   * Disabling trusted identity provider functionality does not remove the
+   * providers, they will just be ignored until this feature is re-enabled.
+   * Possible values include: 'Enabled', 'Disabled'
+   *
+   * @param {string} [parameters.defaultGroup] the default owner group for all
+   * new folders and files created in the Data Lake Store account.
+   *
+   * @param {string} [parameters.newTier] the commitment tier to use for next
+   * month. Possible values include: 'Consumption', 'Commitment_1TB',
+   * 'Commitment_10TB', 'Commitment_100TB', 'Commitment_500TB', 'Commitment_1PB',
+   * 'Commitment_5PB'
+   *
+   * @param {string} [parameters.firewallAllowAzureIps] The current state of
+   * allowing or disallowing IPs originating within Azure through the firewall.
+   * If the firewall is disabled, this is not enforced. Possible values include:
+   * 'Enabled', 'Disabled'
+   *
+   * @param {object} [parameters.encryptionConfig] Used for rotation of user
+   * managed Key Vault keys. Can only be used to rotate a user managed encryption
+   * Key Vault key.
+   *
+   * @param {object} [parameters.encryptionConfig.keyVaultMetaInfo] The updated
+   * Key Vault key to use in user managed key rotation.
+   *
+   * @param {string}
+   * [parameters.encryptionConfig.keyVaultMetaInfo.encryptionKeyVersion] The
+   * version of the user managed encryption key to update through a key rotation.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @returns {Promise} A promise is returned
+   *
+   * @resolve {HttpOperationResponse&lt;DataLakeStoreAccount>} - The deserialized result object.
+   *
+   * @reject {Error} - The error object.
+   */
+  updateWithHttpOperationResponse(resourceGroupName, name, parameters, options) {
+    let client = this.client;
+    let self = this;
+    return new Promise((resolve, reject) => {
+      self._update(resourceGroupName, name, parameters, options, (err, result, request, response) => {
+        let httpOperationResponse = new msRest.HttpOperationResponse(request, response);
+        httpOperationResponse.body = result;
+        if (err) { reject(err); }
+        else { resolve(httpOperationResponse); }
+        return;
+      });
+    });
+  }
+
+  /**
+   * Updates the specified Data Lake Store account information.
+   *
+   * @param {string} resourceGroupName The name of the Azure resource group that
+   * contains the Data Lake Store account.
+   *
+   * @param {string} name The name of the Data Lake Store account to update.
+   *
+   * @param {object} parameters Parameters supplied to update the Data Lake Store
+   * account.
+   *
+   * @param {object} [parameters.tags] Resource tags
+   *
+   * @param {string} [parameters.firewallState] The current state of the IP
+   * address firewall for this Data Lake store account. Disabling the firewall
+   * does not remove existing rules, they will just be ignored until the firewall
+   * is re-enabled. Possible values include: 'Enabled', 'Disabled'
+   *
+   * @param {string} [parameters.trustedIdProviderState] The current state of the
+   * trusted identity provider feature for this Data Lake store account.
+   * Disabling trusted identity provider functionality does not remove the
+   * providers, they will just be ignored until this feature is re-enabled.
+   * Possible values include: 'Enabled', 'Disabled'
+   *
+   * @param {string} [parameters.defaultGroup] the default owner group for all
+   * new folders and files created in the Data Lake Store account.
+   *
+   * @param {string} [parameters.newTier] the commitment tier to use for next
+   * month. Possible values include: 'Consumption', 'Commitment_1TB',
+   * 'Commitment_10TB', 'Commitment_100TB', 'Commitment_500TB', 'Commitment_1PB',
+   * 'Commitment_5PB'
+   *
+   * @param {string} [parameters.firewallAllowAzureIps] The current state of
+   * allowing or disallowing IPs originating within Azure through the firewall.
+   * If the firewall is disabled, this is not enforced. Possible values include:
+   * 'Enabled', 'Disabled'
+   *
+   * @param {object} [parameters.encryptionConfig] Used for rotation of user
+   * managed Key Vault keys. Can only be used to rotate a user managed encryption
+   * Key Vault key.
+   *
+   * @param {object} [parameters.encryptionConfig.keyVaultMetaInfo] The updated
+   * Key Vault key to use in user managed key rotation.
+   *
+   * @param {string}
+   * [parameters.encryptionConfig.keyVaultMetaInfo.encryptionKeyVersion] The
+   * version of the user managed encryption key to update through a key rotation.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @param {function} [optionalCallback] - The optional callback.
+   *
+   * @returns {function|Promise} If a callback was passed as the last parameter
+   * then it returns the callback else returns a Promise.
+   *
+   * {Promise} A promise is returned
+   *
+   *                      @resolve {DataLakeStoreAccount} - The deserialized result object.
+   *
+   *                      @reject {Error} - The error object.
+   *
+   * {function} optionalCallback(err, result, request, response)
+   *
+   *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+   *
+   *                      {object} [result]   - The deserialized result object if an error did not occur.
+   *                      See {@link DataLakeStoreAccount} for more information.
+   *
+   *                      {object} [request]  - The HTTP Request object if an error did not occur.
+   *
+   *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+   */
+  update(resourceGroupName, name, parameters, options, optionalCallback) {
+    let client = this.client;
+    let self = this;
+    if (!optionalCallback &amp;&amp; typeof options === 'function') {
+      optionalCallback = options;
+      options = null;
+    }
+    if (!optionalCallback) {
+      return new Promise((resolve, reject) => {
+        self._update(resourceGroupName, name, parameters, options, (err, result, request, response) => {
+          if (err) { reject(err); }
+          else { resolve(result); }
+          return;
+        });
+      });
+    } else {
+      return self._update(resourceGroupName, name, parameters, options, optionalCallback);
+    }
+  }
+
+  /**
+   * Deletes the specified Data Lake Store account.
+   *
+   * @param {string} resourceGroupName The name of the Azure resource group that
+   * contains the Data Lake Store account.
+   *
+   * @param {string} name The name of the Data Lake Store account to delete.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @returns {Promise} A promise is returned
+   *
+   * @resolve {HttpOperationResponse&lt;null>} - The deserialized result object.
+   *
+   * @reject {Error} - The error object.
+   */
+  deleteMethodWithHttpOperationResponse(resourceGroupName, name, options) {
+    let client = this.client;
+    let self = this;
+    return new Promise((resolve, reject) => {
+      self._deleteMethod(resourceGroupName, name, options, (err, result, request, response) => {
+        let httpOperationResponse = new msRest.HttpOperationResponse(request, response);
+        httpOperationResponse.body = result;
+        if (err) { reject(err); }
+        else { resolve(httpOperationResponse); }
+        return;
+      });
+    });
+  }
+
+  /**
+   * Deletes the specified Data Lake Store account.
+   *
+   * @param {string} resourceGroupName The name of the Azure resource group that
+   * contains the Data Lake Store account.
+   *
+   * @param {string} name The name of the Data Lake Store account to delete.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @param {function} [optionalCallback] - The optional callback.
+   *
+   * @returns {function|Promise} If a callback was passed as the last parameter
+   * then it returns the callback else returns a Promise.
+   *
+   * {Promise} A promise is returned
+   *
+   *                      @resolve {null} - The deserialized result object.
+   *
+   *                      @reject {Error} - The error object.
+   *
+   * {function} optionalCallback(err, result, request, response)
+   *
+   *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+   *
+   *                      {null} [result]   - The deserialized result object if an error did not occur.
+   *
+   *                      {object} [request]  - The HTTP Request object if an error did not occur.
+   *
+   *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+   */
+  deleteMethod(resourceGroupName, name, options, optionalCallback) {
+    let client = this.client;
+    let self = this;
+    if (!optionalCallback &amp;&amp; typeof options === 'function') {
+      optionalCallback = options;
+      options = null;
+    }
+    if (!optionalCallback) {
+      return new Promise((resolve, reject) => {
+        self._deleteMethod(resourceGroupName, name, options, (err, result, request, response) => {
+          if (err) { reject(err); }
+          else { resolve(result); }
+          return;
+        });
+      });
+    } else {
+      return self._deleteMethod(resourceGroupName, name, options, optionalCallback);
+    }
+  }
+
+  /**
+   * Gets the specified Data Lake Store account.
+   *
+   * @param {string} resourceGroupName The name of the Azure resource group that
+   * contains the Data Lake Store account.
+   *
+   * @param {string} name The name of the Data Lake Store account to retrieve.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @returns {Promise} A promise is returned
+   *
+   * @resolve {HttpOperationResponse&lt;DataLakeStoreAccount>} - The deserialized result object.
+   *
+   * @reject {Error} - The error object.
+   */
+  getWithHttpOperationResponse(resourceGroupName, name, options) {
+    let client = this.client;
+    let self = this;
+    return new Promise((resolve, reject) => {
+      self._get(resourceGroupName, name, options, (err, result, request, response) => {
+        let httpOperationResponse = new msRest.HttpOperationResponse(request, response);
+        httpOperationResponse.body = result;
+        if (err) { reject(err); }
+        else { resolve(httpOperationResponse); }
+        return;
+      });
+    });
+  }
+
+  /**
+   * Gets the specified Data Lake Store account.
+   *
+   * @param {string} resourceGroupName The name of the Azure resource group that
+   * contains the Data Lake Store account.
+   *
+   * @param {string} name The name of the Data Lake Store account to retrieve.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @param {function} [optionalCallback] - The optional callback.
+   *
+   * @returns {function|Promise} If a callback was passed as the last parameter
+   * then it returns the callback else returns a Promise.
+   *
+   * {Promise} A promise is returned
+   *
+   *                      @resolve {DataLakeStoreAccount} - The deserialized result object.
+   *
+   *                      @reject {Error} - The error object.
+   *
+   * {function} optionalCallback(err, result, request, response)
+   *
+   *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+   *
+   *                      {object} [result]   - The deserialized result object if an error did not occur.
+   *                      See {@link DataLakeStoreAccount} for more information.
+   *
+   *                      {object} [request]  - The HTTP Request object if an error did not occur.
+   *
+   *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+   */
+  get(resourceGroupName, name, options, optionalCallback) {
+    let client = this.client;
+    let self = this;
+    if (!optionalCallback &amp;&amp; typeof options === 'function') {
+      optionalCallback = options;
+      options = null;
+    }
+    if (!optionalCallback) {
+      return new Promise((resolve, reject) => {
+        self._get(resourceGroupName, name, options, (err, result, request, response) => {
+          if (err) { reject(err); }
+          else { resolve(result); }
+          return;
+        });
+      });
+    } else {
+      return self._get(resourceGroupName, name, options, optionalCallback);
+    }
+  }
+
+  /**
+   * Attempts to enable a user managed Key Vault for encryption of the specified
+   * Data Lake Store account.
+   *
+   * @param {string} resourceGroupName The name of the Azure resource group that
+   * contains the Data Lake Store account.
+   *
+   * @param {string} accountName The name of the Data Lake Store account to
+   * attempt to enable the Key Vault for.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @returns {Promise} A promise is returned
+   *
+   * @resolve {HttpOperationResponse&lt;null>} - The deserialized result object.
+   *
+   * @reject {Error} - The error object.
+   */
+  enableKeyVaultWithHttpOperationResponse(resourceGroupName, accountName, options) {
+    let client = this.client;
+    let self = this;
+    return new Promise((resolve, reject) => {
+      self._enableKeyVault(resourceGroupName, accountName, options, (err, result, request, response) => {
+        let httpOperationResponse = new msRest.HttpOperationResponse(request, response);
+        httpOperationResponse.body = result;
+        if (err) { reject(err); }
+        else { resolve(httpOperationResponse); }
+        return;
+      });
+    });
+  }
+
+  /**
+   * Attempts to enable a user managed Key Vault for encryption of the specified
+   * Data Lake Store account.
+   *
+   * @param {string} resourceGroupName The name of the Azure resource group that
+   * contains the Data Lake Store account.
+   *
+   * @param {string} accountName The name of the Data Lake Store account to
+   * attempt to enable the Key Vault for.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @param {function} [optionalCallback] - The optional callback.
+   *
+   * @returns {function|Promise} If a callback was passed as the last parameter
+   * then it returns the callback else returns a Promise.
+   *
+   * {Promise} A promise is returned
+   *
+   *                      @resolve {null} - The deserialized result object.
+   *
+   *                      @reject {Error} - The error object.
+   *
+   * {function} optionalCallback(err, result, request, response)
+   *
+   *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+   *
+   *                      {null} [result]   - The deserialized result object if an error did not occur.
+   *
+   *                      {object} [request]  - The HTTP Request object if an error did not occur.
+   *
+   *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+   */
+  enableKeyVault(resourceGroupName, accountName, options, optionalCallback) {
+    let client = this.client;
+    let self = this;
+    if (!optionalCallback &amp;&amp; typeof options === 'function') {
+      optionalCallback = options;
+      options = null;
+    }
+    if (!optionalCallback) {
+      return new Promise((resolve, reject) => {
+        self._enableKeyVault(resourceGroupName, accountName, options, (err, result, request, response) => {
+          if (err) { reject(err); }
+          else { resolve(result); }
+          return;
+        });
+      });
+    } else {
+      return self._enableKeyVault(resourceGroupName, accountName, options, optionalCallback);
+    }
+  }
+
+  /**
+   * Lists the Data Lake Store accounts within a specific resource group. The
+   * response includes a link to the next page of results, if any.
+   *
+   * @param {string} resourceGroupName The name of the Azure resource group that
+   * contains the Data Lake Store account(s).
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {string} [options.filter] OData filter. Optional.
+   *
+   * @param {number} [options.top] The number of items to return. Optional.
+   *
+   * @param {number} [options.skip] The number of items to skip over before
+   * returning elements. Optional.
+   *
+   * @param {string} [options.select] OData Select statement. Limits the
+   * properties on each entry to just those requested, e.g.
+   * Categories?$select=CategoryName,Description. Optional.
+   *
+   * @param {string} [options.orderby] OrderBy clause. One or more
+   * comma-separated expressions with an optional "asc" (the default) or "desc"
+   * depending on the order you'd like the values sorted, e.g.
+   * Categories?$orderby=CategoryName desc. Optional.
+   *
+   * @param {boolean} [options.count] A Boolean value of true or false to request
+   * a count of the matching resources included with the resources in the
+   * response, e.g. Categories?$count=true. Optional.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @returns {Promise} A promise is returned
+   *
+   * @resolve {HttpOperationResponse&lt;DataLakeStoreAccountListResult>} - The deserialized result object.
+   *
+   * @reject {Error} - The error object.
+   */
+  listByResourceGroupWithHttpOperationResponse(resourceGroupName, options) {
+    let client = this.client;
+    let self = this;
+    return new Promise((resolve, reject) => {
+      self._listByResourceGroup(resourceGroupName, options, (err, result, request, response) => {
+        let httpOperationResponse = new msRest.HttpOperationResponse(request, response);
+        httpOperationResponse.body = result;
+        if (err) { reject(err); }
+        else { resolve(httpOperationResponse); }
+        return;
+      });
+    });
+  }
+
+  /**
+   * Lists the Data Lake Store accounts within a specific resource group. The
+   * response includes a link to the next page of results, if any.
+   *
+   * @param {string} resourceGroupName The name of the Azure resource group that
+   * contains the Data Lake Store account(s).
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {string} [options.filter] OData filter. Optional.
+   *
+   * @param {number} [options.top] The number of items to return. Optional.
+   *
+   * @param {number} [options.skip] The number of items to skip over before
+   * returning elements. Optional.
+   *
+   * @param {string} [options.select] OData Select statement. Limits the
+   * properties on each entry to just those requested, e.g.
+   * Categories?$select=CategoryName,Description. Optional.
+   *
+   * @param {string} [options.orderby] OrderBy clause. One or more
+   * comma-separated expressions with an optional "asc" (the default) or "desc"
+   * depending on the order you'd like the values sorted, e.g.
+   * Categories?$orderby=CategoryName desc. Optional.
+   *
+   * @param {boolean} [options.count] A Boolean value of true or false to request
+   * a count of the matching resources included with the resources in the
+   * response, e.g. Categories?$count=true. Optional.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @param {function} [optionalCallback] - The optional callback.
+   *
+   * @returns {function|Promise} If a callback was passed as the last parameter
+   * then it returns the callback else returns a Promise.
+   *
+   * {Promise} A promise is returned
+   *
+   *                      @resolve {DataLakeStoreAccountListResult} - The deserialized result object.
+   *
+   *                      @reject {Error} - The error object.
+   *
+   * {function} optionalCallback(err, result, request, response)
+   *
+   *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+   *
+   *                      {object} [result]   - The deserialized result object if an error did not occur.
+   *                      See {@link DataLakeStoreAccountListResult} for more
+   *                      information.
+   *
+   *                      {object} [request]  - The HTTP Request object if an error did not occur.
+   *
+   *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+   */
+  listByResourceGroup(resourceGroupName, options, optionalCallback) {
+    let client = this.client;
+    let self = this;
+    if (!optionalCallback &amp;&amp; typeof options === 'function') {
+      optionalCallback = options;
+      options = null;
+    }
+    if (!optionalCallback) {
+      return new Promise((resolve, reject) => {
+        self._listByResourceGroup(resourceGroupName, options, (err, result, request, response) => {
+          if (err) { reject(err); }
+          else { resolve(result); }
+          return;
+        });
+      });
+    } else {
+      return self._listByResourceGroup(resourceGroupName, options, optionalCallback);
+    }
+  }
+
+  /**
+   * Lists the Data Lake Store accounts within the subscription. The response
+   * includes a link to the next page of results, if any.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {string} [options.filter] OData filter. Optional.
+   *
+   * @param {number} [options.top] The number of items to return. Optional.
+   *
+   * @param {number} [options.skip] The number of items to skip over before
+   * returning elements. Optional.
+   *
+   * @param {string} [options.select] OData Select statement. Limits the
+   * properties on each entry to just those requested, e.g.
+   * Categories?$select=CategoryName,Description. Optional.
+   *
+   * @param {string} [options.orderby] OrderBy clause. One or more
+   * comma-separated expressions with an optional "asc" (the default) or "desc"
+   * depending on the order you'd like the values sorted, e.g.
+   * Categories?$orderby=CategoryName desc. Optional.
+   *
+   * @param {boolean} [options.count] The Boolean value of true or false to
+   * request a count of the matching resources included with the resources in the
+   * response, e.g. Categories?$count=true. Optional.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @returns {Promise} A promise is returned
+   *
+   * @resolve {HttpOperationResponse&lt;DataLakeStoreAccountListResult>} - The deserialized result object.
+   *
+   * @reject {Error} - The error object.
+   */
+  listWithHttpOperationResponse(options) {
+    let client = this.client;
+    let self = this;
+    return new Promise((resolve, reject) => {
+      self._list(options, (err, result, request, response) => {
+        let httpOperationResponse = new msRest.HttpOperationResponse(request, response);
+        httpOperationResponse.body = result;
+        if (err) { reject(err); }
+        else { resolve(httpOperationResponse); }
+        return;
+      });
+    });
+  }
+
+  /**
+   * Lists the Data Lake Store accounts within the subscription. The response
+   * includes a link to the next page of results, if any.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {string} [options.filter] OData filter. Optional.
+   *
+   * @param {number} [options.top] The number of items to return. Optional.
+   *
+   * @param {number} [options.skip] The number of items to skip over before
+   * returning elements. Optional.
+   *
+   * @param {string} [options.select] OData Select statement. Limits the
+   * properties on each entry to just those requested, e.g.
+   * Categories?$select=CategoryName,Description. Optional.
+   *
+   * @param {string} [options.orderby] OrderBy clause. One or more
+   * comma-separated expressions with an optional "asc" (the default) or "desc"
+   * depending on the order you'd like the values sorted, e.g.
+   * Categories?$orderby=CategoryName desc. Optional.
+   *
+   * @param {boolean} [options.count] The Boolean value of true or false to
+   * request a count of the matching resources included with the resources in the
+   * response, e.g. Categories?$count=true. Optional.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @param {function} [optionalCallback] - The optional callback.
+   *
+   * @returns {function|Promise} If a callback was passed as the last parameter
+   * then it returns the callback else returns a Promise.
+   *
+   * {Promise} A promise is returned
+   *
+   *                      @resolve {DataLakeStoreAccountListResult} - The deserialized result object.
+   *
+   *                      @reject {Error} - The error object.
+   *
+   * {function} optionalCallback(err, result, request, response)
+   *
+   *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+   *
+   *                      {object} [result]   - The deserialized result object if an error did not occur.
+   *                      See {@link DataLakeStoreAccountListResult} for more
+   *                      information.
+   *
+   *                      {object} [request]  - The HTTP Request object if an error did not occur.
+   *
+   *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+   */
+  list(options, optionalCallback) {
+    let client = this.client;
+    let self = this;
+    if (!optionalCallback &amp;&amp; typeof options === 'function') {
+      optionalCallback = options;
+      options = null;
+    }
+    if (!optionalCallback) {
+      return new Promise((resolve, reject) => {
+        self._list(options, (err, result, request, response) => {
+          if (err) { reject(err); }
+          else { resolve(result); }
+          return;
+        });
+      });
+    } else {
+      return self._list(options, optionalCallback);
+    }
+  }
+
+  /**
+   * Creates the specified Data Lake Store account.
+   *
+   * @param {string} resourceGroupName The name of the Azure resource group that
+   * contains the Data Lake Store account.
+   *
+   * @param {string} name The name of the Data Lake Store account to create.
+   *
+   * @param {object} parameters Parameters supplied to create the Data Lake Store
+   * account.
+   *
+   * @param {object} [parameters.identity] The Key Vault encryption identity, if
+   * any.
+   *
+   * @param {string} [parameters.encryptionState] The current state of encryption
+   * for this Data Lake store account. Possible values include: 'Enabled',
+   * 'Disabled'
+   *
+   * @param {object} [parameters.encryptionConfig] The Key Vault encryption
+   * configuration.
+   *
+   * @param {string} parameters.encryptionConfig.type The type of encryption
+   * configuration being used. Currently the only supported types are
+   * 'UserManaged' and 'ServiceManaged'. Possible values include: 'UserManaged',
+   * 'ServiceManaged'
+   *
+   * @param {object} [parameters.encryptionConfig.keyVaultMetaInfo] The Key Vault
+   * information for connecting to user managed encryption keys.
+   *
+   * @param {string}
+   * parameters.encryptionConfig.keyVaultMetaInfo.keyVaultResourceId The resource
+   * identifier for the user managed Key Vault being used to encrypt.
+   *
+   * @param {string}
+   * parameters.encryptionConfig.keyVaultMetaInfo.encryptionKeyName The name of
+   * the user managed encryption key.
+   *
+   * @param {string}
+   * parameters.encryptionConfig.keyVaultMetaInfo.encryptionKeyVersion The
+   * version of the user managed encryption key.
+   *
+   * @param {string} [parameters.firewallState] The current state of the IP
+   * address firewall for this Data Lake store account. Possible values include:
+   * 'Enabled', 'Disabled'
+   *
+   * @param {array} [parameters.firewallRules] The list of firewall rules
+   * associated with this Data Lake store account.
+   *
+   * @param {string} [parameters.trustedIdProviderState] The current state of the
+   * trusted identity provider feature for this Data Lake store account. Possible
+   * values include: 'Enabled', 'Disabled'
+   *
+   * @param {array} [parameters.trustedIdProviders] The list of trusted identity
+   * providers associated with this Data Lake store account.
+   *
+   * @param {string} [parameters.defaultGroup] the default owner group for all
+   * new folders and files created in the Data Lake Store account.
+   *
+   * @param {string} [parameters.newTier] the commitment tier to use for next
+   * month. Possible values include: 'Consumption', 'Commitment_1TB',
+   * 'Commitment_10TB', 'Commitment_100TB', 'Commitment_500TB', 'Commitment_1PB',
+   * 'Commitment_5PB'
+   *
+   * @param {string} [parameters.firewallAllowAzureIps] The current state of
+   * allowing or disallowing IPs originating within Azure through the firewall.
+   * If the firewall is disabled, this is not enforced. Possible values include:
+   * 'Enabled', 'Disabled'
+   *
+   * @param {string} parameters.location Resource location
+   *
+   * @param {object} [parameters.tags] Resource tags
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @returns {Promise} A promise is returned
+   *
+   * @resolve {HttpOperationResponse&lt;DataLakeStoreAccount>} - The deserialized result object.
+   *
+   * @reject {Error} - The error object.
+   */
+  beginCreateWithHttpOperationResponse(resourceGroupName, name, parameters, options) {
+    let client = this.client;
+    let self = this;
+    return new Promise((resolve, reject) => {
+      self._beginCreate(resourceGroupName, name, parameters, options, (err, result, request, response) => {
+        let httpOperationResponse = new msRest.HttpOperationResponse(request, response);
+        httpOperationResponse.body = result;
+        if (err) { reject(err); }
+        else { resolve(httpOperationResponse); }
+        return;
+      });
+    });
+  }
+
+  /**
+   * Creates the specified Data Lake Store account.
+   *
+   * @param {string} resourceGroupName The name of the Azure resource group that
+   * contains the Data Lake Store account.
+   *
+   * @param {string} name The name of the Data Lake Store account to create.
+   *
+   * @param {object} parameters Parameters supplied to create the Data Lake Store
+   * account.
+   *
+   * @param {object} [parameters.identity] The Key Vault encryption identity, if
+   * any.
+   *
+   * @param {string} [parameters.encryptionState] The current state of encryption
+   * for this Data Lake store account. Possible values include: 'Enabled',
+   * 'Disabled'
+   *
+   * @param {object} [parameters.encryptionConfig] The Key Vault encryption
+   * configuration.
+   *
+   * @param {string} parameters.encryptionConfig.type The type of encryption
+   * configuration being used. Currently the only supported types are
+   * 'UserManaged' and 'ServiceManaged'. Possible values include: 'UserManaged',
+   * 'ServiceManaged'
+   *
+   * @param {object} [parameters.encryptionConfig.keyVaultMetaInfo] The Key Vault
+   * information for connecting to user managed encryption keys.
+   *
+   * @param {string}
+   * parameters.encryptionConfig.keyVaultMetaInfo.keyVaultResourceId The resource
+   * identifier for the user managed Key Vault being used to encrypt.
+   *
+   * @param {string}
+   * parameters.encryptionConfig.keyVaultMetaInfo.encryptionKeyName The name of
+   * the user managed encryption key.
+   *
+   * @param {string}
+   * parameters.encryptionConfig.keyVaultMetaInfo.encryptionKeyVersion The
+   * version of the user managed encryption key.
+   *
+   * @param {string} [parameters.firewallState] The current state of the IP
+   * address firewall for this Data Lake store account. Possible values include:
+   * 'Enabled', 'Disabled'
+   *
+   * @param {array} [parameters.firewallRules] The list of firewall rules
+   * associated with this Data Lake store account.
+   *
+   * @param {string} [parameters.trustedIdProviderState] The current state of the
+   * trusted identity provider feature for this Data Lake store account. Possible
+   * values include: 'Enabled', 'Disabled'
+   *
+   * @param {array} [parameters.trustedIdProviders] The list of trusted identity
+   * providers associated with this Data Lake store account.
+   *
+   * @param {string} [parameters.defaultGroup] the default owner group for all
+   * new folders and files created in the Data Lake Store account.
+   *
+   * @param {string} [parameters.newTier] the commitment tier to use for next
+   * month. Possible values include: 'Consumption', 'Commitment_1TB',
+   * 'Commitment_10TB', 'Commitment_100TB', 'Commitment_500TB', 'Commitment_1PB',
+   * 'Commitment_5PB'
+   *
+   * @param {string} [parameters.firewallAllowAzureIps] The current state of
+   * allowing or disallowing IPs originating within Azure through the firewall.
+   * If the firewall is disabled, this is not enforced. Possible values include:
+   * 'Enabled', 'Disabled'
+   *
+   * @param {string} parameters.location Resource location
+   *
+   * @param {object} [parameters.tags] Resource tags
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @param {function} [optionalCallback] - The optional callback.
+   *
+   * @returns {function|Promise} If a callback was passed as the last parameter
+   * then it returns the callback else returns a Promise.
+   *
+   * {Promise} A promise is returned
+   *
+   *                      @resolve {DataLakeStoreAccount} - The deserialized result object.
+   *
+   *                      @reject {Error} - The error object.
+   *
+   * {function} optionalCallback(err, result, request, response)
+   *
+   *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+   *
+   *                      {object} [result]   - The deserialized result object if an error did not occur.
+   *                      See {@link DataLakeStoreAccount} for more information.
+   *
+   *                      {object} [request]  - The HTTP Request object if an error did not occur.
+   *
+   *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+   */
+  beginCreate(resourceGroupName, name, parameters, options, optionalCallback) {
+    let client = this.client;
+    let self = this;
+    if (!optionalCallback &amp;&amp; typeof options === 'function') {
+      optionalCallback = options;
+      options = null;
+    }
+    if (!optionalCallback) {
+      return new Promise((resolve, reject) => {
+        self._beginCreate(resourceGroupName, name, parameters, options, (err, result, request, response) => {
+          if (err) { reject(err); }
+          else { resolve(result); }
+          return;
+        });
+      });
+    } else {
+      return self._beginCreate(resourceGroupName, name, parameters, options, optionalCallback);
+    }
+  }
+
+  /**
+   * Updates the specified Data Lake Store account information.
+   *
+   * @param {string} resourceGroupName The name of the Azure resource group that
+   * contains the Data Lake Store account.
+   *
+   * @param {string} name The name of the Data Lake Store account to update.
+   *
+   * @param {object} parameters Parameters supplied to update the Data Lake Store
+   * account.
+   *
+   * @param {object} [parameters.tags] Resource tags
+   *
+   * @param {string} [parameters.firewallState] The current state of the IP
+   * address firewall for this Data Lake store account. Disabling the firewall
+   * does not remove existing rules, they will just be ignored until the firewall
+   * is re-enabled. Possible values include: 'Enabled', 'Disabled'
+   *
+   * @param {string} [parameters.trustedIdProviderState] The current state of the
+   * trusted identity provider feature for this Data Lake store account.
+   * Disabling trusted identity provider functionality does not remove the
+   * providers, they will just be ignored until this feature is re-enabled.
+   * Possible values include: 'Enabled', 'Disabled'
+   *
+   * @param {string} [parameters.defaultGroup] the default owner group for all
+   * new folders and files created in the Data Lake Store account.
+   *
+   * @param {string} [parameters.newTier] the commitment tier to use for next
+   * month. Possible values include: 'Consumption', 'Commitment_1TB',
+   * 'Commitment_10TB', 'Commitment_100TB', 'Commitment_500TB', 'Commitment_1PB',
+   * 'Commitment_5PB'
+   *
+   * @param {string} [parameters.firewallAllowAzureIps] The current state of
+   * allowing or disallowing IPs originating within Azure through the firewall.
+   * If the firewall is disabled, this is not enforced. Possible values include:
+   * 'Enabled', 'Disabled'
+   *
+   * @param {object} [parameters.encryptionConfig] Used for rotation of user
+   * managed Key Vault keys. Can only be used to rotate a user managed encryption
+   * Key Vault key.
+   *
+   * @param {object} [parameters.encryptionConfig.keyVaultMetaInfo] The updated
+   * Key Vault key to use in user managed key rotation.
+   *
+   * @param {string}
+   * [parameters.encryptionConfig.keyVaultMetaInfo.encryptionKeyVersion] The
+   * version of the user managed encryption key to update through a key rotation.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @returns {Promise} A promise is returned
+   *
+   * @resolve {HttpOperationResponse&lt;DataLakeStoreAccount>} - The deserialized result object.
+   *
+   * @reject {Error} - The error object.
+   */
+  beginUpdateWithHttpOperationResponse(resourceGroupName, name, parameters, options) {
+    let client = this.client;
+    let self = this;
+    return new Promise((resolve, reject) => {
+      self._beginUpdate(resourceGroupName, name, parameters, options, (err, result, request, response) => {
+        let httpOperationResponse = new msRest.HttpOperationResponse(request, response);
+        httpOperationResponse.body = result;
+        if (err) { reject(err); }
+        else { resolve(httpOperationResponse); }
+        return;
+      });
+    });
+  }
+
+  /**
+   * Updates the specified Data Lake Store account information.
+   *
+   * @param {string} resourceGroupName The name of the Azure resource group that
+   * contains the Data Lake Store account.
+   *
+   * @param {string} name The name of the Data Lake Store account to update.
+   *
+   * @param {object} parameters Parameters supplied to update the Data Lake Store
+   * account.
+   *
+   * @param {object} [parameters.tags] Resource tags
+   *
+   * @param {string} [parameters.firewallState] The current state of the IP
+   * address firewall for this Data Lake store account. Disabling the firewall
+   * does not remove existing rules, they will just be ignored until the firewall
+   * is re-enabled. Possible values include: 'Enabled', 'Disabled'
+   *
+   * @param {string} [parameters.trustedIdProviderState] The current state of the
+   * trusted identity provider feature for this Data Lake store account.
+   * Disabling trusted identity provider functionality does not remove the
+   * providers, they will just be ignored until this feature is re-enabled.
+   * Possible values include: 'Enabled', 'Disabled'
+   *
+   * @param {string} [parameters.defaultGroup] the default owner group for all
+   * new folders and files created in the Data Lake Store account.
+   *
+   * @param {string} [parameters.newTier] the commitment tier to use for next
+   * month. Possible values include: 'Consumption', 'Commitment_1TB',
+   * 'Commitment_10TB', 'Commitment_100TB', 'Commitment_500TB', 'Commitment_1PB',
+   * 'Commitment_5PB'
+   *
+   * @param {string} [parameters.firewallAllowAzureIps] The current state of
+   * allowing or disallowing IPs originating within Azure through the firewall.
+   * If the firewall is disabled, this is not enforced. Possible values include:
+   * 'Enabled', 'Disabled'
+   *
+   * @param {object} [parameters.encryptionConfig] Used for rotation of user
+   * managed Key Vault keys. Can only be used to rotate a user managed encryption
+   * Key Vault key.
+   *
+   * @param {object} [parameters.encryptionConfig.keyVaultMetaInfo] The updated
+   * Key Vault key to use in user managed key rotation.
+   *
+   * @param {string}
+   * [parameters.encryptionConfig.keyVaultMetaInfo.encryptionKeyVersion] The
+   * version of the user managed encryption key to update through a key rotation.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @param {function} [optionalCallback] - The optional callback.
+   *
+   * @returns {function|Promise} If a callback was passed as the last parameter
+   * then it returns the callback else returns a Promise.
+   *
+   * {Promise} A promise is returned
+   *
+   *                      @resolve {DataLakeStoreAccount} - The deserialized result object.
+   *
+   *                      @reject {Error} - The error object.
+   *
+   * {function} optionalCallback(err, result, request, response)
+   *
+   *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+   *
+   *                      {object} [result]   - The deserialized result object if an error did not occur.
+   *                      See {@link DataLakeStoreAccount} for more information.
+   *
+   *                      {object} [request]  - The HTTP Request object if an error did not occur.
+   *
+   *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+   */
+  beginUpdate(resourceGroupName, name, parameters, options, optionalCallback) {
+    let client = this.client;
+    let self = this;
+    if (!optionalCallback &amp;&amp; typeof options === 'function') {
+      optionalCallback = options;
+      options = null;
+    }
+    if (!optionalCallback) {
+      return new Promise((resolve, reject) => {
+        self._beginUpdate(resourceGroupName, name, parameters, options, (err, result, request, response) => {
+          if (err) { reject(err); }
+          else { resolve(result); }
+          return;
+        });
+      });
+    } else {
+      return self._beginUpdate(resourceGroupName, name, parameters, options, optionalCallback);
+    }
+  }
+
+  /**
+   * Deletes the specified Data Lake Store account.
+   *
+   * @param {string} resourceGroupName The name of the Azure resource group that
+   * contains the Data Lake Store account.
+   *
+   * @param {string} name The name of the Data Lake Store account to delete.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @returns {Promise} A promise is returned
+   *
+   * @resolve {HttpOperationResponse&lt;null>} - The deserialized result object.
+   *
+   * @reject {Error} - The error object.
+   */
+  beginDeleteMethodWithHttpOperationResponse(resourceGroupName, name, options) {
+    let client = this.client;
+    let self = this;
+    return new Promise((resolve, reject) => {
+      self._beginDeleteMethod(resourceGroupName, name, options, (err, result, request, response) => {
+        let httpOperationResponse = new msRest.HttpOperationResponse(request, response);
+        httpOperationResponse.body = result;
+        if (err) { reject(err); }
+        else { resolve(httpOperationResponse); }
+        return;
+      });
+    });
+  }
+
+  /**
+   * Deletes the specified Data Lake Store account.
+   *
+   * @param {string} resourceGroupName The name of the Azure resource group that
+   * contains the Data Lake Store account.
+   *
+   * @param {string} name The name of the Data Lake Store account to delete.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @param {function} [optionalCallback] - The optional callback.
+   *
+   * @returns {function|Promise} If a callback was passed as the last parameter
+   * then it returns the callback else returns a Promise.
+   *
+   * {Promise} A promise is returned
+   *
+   *                      @resolve {null} - The deserialized result object.
+   *
+   *                      @reject {Error} - The error object.
+   *
+   * {function} optionalCallback(err, result, request, response)
+   *
+   *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+   *
+   *                      {null} [result]   - The deserialized result object if an error did not occur.
+   *
+   *                      {object} [request]  - The HTTP Request object if an error did not occur.
+   *
+   *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+   */
+  beginDeleteMethod(resourceGroupName, name, options, optionalCallback) {
+    let client = this.client;
+    let self = this;
+    if (!optionalCallback &amp;&amp; typeof options === 'function') {
+      optionalCallback = options;
+      options = null;
+    }
+    if (!optionalCallback) {
+      return new Promise((resolve, reject) => {
+        self._beginDeleteMethod(resourceGroupName, name, options, (err, result, request, response) => {
+          if (err) { reject(err); }
+          else { resolve(result); }
+          return;
+        });
+      });
+    } else {
+      return self._beginDeleteMethod(resourceGroupName, name, options, optionalCallback);
+    }
+  }
+
+  /**
+   * Lists the Data Lake Store accounts within a specific resource group. The
+   * response includes a link to the next page of results, if any.
+   *
+   * @param {string} nextPageLink The NextLink from the previous successful call
+   * to List operation.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @returns {Promise} A promise is returned
+   *
+   * @resolve {HttpOperationResponse&lt;DataLakeStoreAccountListResult>} - The deserialized result object.
+   *
+   * @reject {Error} - The error object.
+   */
+  listByResourceGroupNextWithHttpOperationResponse(nextPageLink, options) {
+    let client = this.client;
+    let self = this;
+    return new Promise((resolve, reject) => {
+      self._listByResourceGroupNext(nextPageLink, options, (err, result, request, response) => {
+        let httpOperationResponse = new msRest.HttpOperationResponse(request, response);
+        httpOperationResponse.body = result;
+        if (err) { reject(err); }
+        else { resolve(httpOperationResponse); }
+        return;
+      });
+    });
+  }
+
+  /**
+   * Lists the Data Lake Store accounts within a specific resource group. The
+   * response includes a link to the next page of results, if any.
+   *
+   * @param {string} nextPageLink The NextLink from the previous successful call
+   * to List operation.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @param {function} [optionalCallback] - The optional callback.
+   *
+   * @returns {function|Promise} If a callback was passed as the last parameter
+   * then it returns the callback else returns a Promise.
+   *
+   * {Promise} A promise is returned
+   *
+   *                      @resolve {DataLakeStoreAccountListResult} - The deserialized result object.
+   *
+   *                      @reject {Error} - The error object.
+   *
+   * {function} optionalCallback(err, result, request, response)
+   *
+   *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+   *
+   *                      {object} [result]   - The deserialized result object if an error did not occur.
+   *                      See {@link DataLakeStoreAccountListResult} for more
+   *                      information.
+   *
+   *                      {object} [request]  - The HTTP Request object if an error did not occur.
+   *
+   *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+   */
+  listByResourceGroupNext(nextPageLink, options, optionalCallback) {
+    let client = this.client;
+    let self = this;
+    if (!optionalCallback &amp;&amp; typeof options === 'function') {
+      optionalCallback = options;
+      options = null;
+    }
+    if (!optionalCallback) {
+      return new Promise((resolve, reject) => {
+        self._listByResourceGroupNext(nextPageLink, options, (err, result, request, response) => {
+          if (err) { reject(err); }
+          else { resolve(result); }
+          return;
+        });
+      });
+    } else {
+      return self._listByResourceGroupNext(nextPageLink, options, optionalCallback);
+    }
+  }
+
+  /**
+   * Lists the Data Lake Store accounts within the subscription. The response
+   * includes a link to the next page of results, if any.
+   *
+   * @param {string} nextPageLink The NextLink from the previous successful call
+   * to List operation.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @returns {Promise} A promise is returned
+   *
+   * @resolve {HttpOperationResponse&lt;DataLakeStoreAccountListResult>} - The deserialized result object.
+   *
+   * @reject {Error} - The error object.
+   */
+  listNextWithHttpOperationResponse(nextPageLink, options) {
+    let client = this.client;
+    let self = this;
+    return new Promise((resolve, reject) => {
+      self._listNext(nextPageLink, options, (err, result, request, response) => {
+        let httpOperationResponse = new msRest.HttpOperationResponse(request, response);
+        httpOperationResponse.body = result;
+        if (err) { reject(err); }
+        else { resolve(httpOperationResponse); }
+        return;
+      });
+    });
+  }
+
+  /**
+   * Lists the Data Lake Store accounts within the subscription. The response
+   * includes a link to the next page of results, if any.
+   *
+   * @param {string} nextPageLink The NextLink from the previous successful call
+   * to List operation.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @param {function} [optionalCallback] - The optional callback.
+   *
+   * @returns {function|Promise} If a callback was passed as the last parameter
+   * then it returns the callback else returns a Promise.
+   *
+   * {Promise} A promise is returned
+   *
+   *                      @resolve {DataLakeStoreAccountListResult} - The deserialized result object.
+   *
+   *                      @reject {Error} - The error object.
+   *
+   * {function} optionalCallback(err, result, request, response)
+   *
+   *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+   *
+   *                      {object} [result]   - The deserialized result object if an error did not occur.
+   *                      See {@link DataLakeStoreAccountListResult} for more
+   *                      information.
+   *
+   *                      {object} [request]  - The HTTP Request object if an error did not occur.
+   *
+   *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+   */
+  listNext(nextPageLink, options, optionalCallback) {
+    let client = this.client;
+    let self = this;
+    if (!optionalCallback &amp;&amp; typeof options === 'function') {
+      optionalCallback = options;
+      options = null;
+    }
+    if (!optionalCallback) {
+      return new Promise((resolve, reject) => {
+        self._listNext(nextPageLink, options, (err, result, request, response) => {
+          if (err) { reject(err); }
+          else { resolve(result); }
+          return;
+        });
+      });
+    } else {
+      return self._listNext(nextPageLink, options, optionalCallback);
+    }
+  }
+
+}
+
+module.exports = Account;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Thu Nov 09 2017 11:14:45 GMT-0800 (PST) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="../../scripts/linenumber.js"></script>
+</body>
+</html>

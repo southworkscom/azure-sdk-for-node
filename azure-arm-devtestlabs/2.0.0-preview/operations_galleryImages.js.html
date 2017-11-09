@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>operations/galleryImages.js - Documentation</title>
+    <meta name="viewport" content="initial-scale=.75">
+    <script src="../../scripts/prettify/prettify.js"></script>
+    <script src="../../scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="../../styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="../../styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><span><a href="../../index.html">Home</a> <span class="github-short">| <a href="https://github.com/azure/azure-sdk-for-node.git">GitHub</a></span></span></h2><h3>Classes</h3><ul><li><a href="ApplicableSchedule.html">ApplicableSchedule</a><ul class='methods'><li data-type='method'><a href="ApplicableSchedule.html#mapper">mapper</a></li></ul></li><li><a href="ApplicableScheduleFragment.html">ApplicableScheduleFragment</a><ul class='methods'><li data-type='method'><a href="ApplicableScheduleFragment.html#mapper">mapper</a></li></ul></li><li><a href="ApplyArtifactsRequest.html">ApplyArtifactsRequest</a><ul class='methods'><li data-type='method'><a href="ApplyArtifactsRequest.html#mapper">mapper</a></li></ul></li><li><a href="ArmTemplate.html">ArmTemplate</a><ul class='methods'><li data-type='method'><a href="ArmTemplate.html#mapper">mapper</a></li></ul></li><li><a href="ArmTemplateInfo.html">ArmTemplateInfo</a><ul class='methods'><li data-type='method'><a href="ArmTemplateInfo.html#mapper">mapper</a></li></ul></li><li><a href="ArmTemplateParameterProperties.html">ArmTemplateParameterProperties</a><ul class='methods'><li data-type='method'><a href="ArmTemplateParameterProperties.html#mapper">mapper</a></li></ul></li><li><a href="ArmTemplates.html">ArmTemplates</a><ul class='methods'><li data-type='method'><a href="ArmTemplates.html#get">get</a></li><li data-type='method'><a href="ArmTemplates.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="ArmTemplates.html#list">list</a></li><li data-type='method'><a href="ArmTemplates.html#listNext">listNext</a></li><li data-type='method'><a href="ArmTemplates.html#listNextWithHttpOperationResponse">listNextWithHttpOperationResponse</a></li><li data-type='method'><a href="ArmTemplates.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li></ul></li><li><a href="Artifact.html">Artifact</a><ul class='methods'><li data-type='method'><a href="Artifact.html#mapper">mapper</a></li></ul></li><li><a href="ArtifactDeploymentStatusProperties.html">ArtifactDeploymentStatusProperties</a><ul class='methods'><li data-type='method'><a href="ArtifactDeploymentStatusProperties.html#mapper">mapper</a></li></ul></li><li><a href="ArtifactDeploymentStatusPropertiesFragment.html">ArtifactDeploymentStatusPropertiesFragment</a><ul class='methods'><li data-type='method'><a href="ArtifactDeploymentStatusPropertiesFragment.html#mapper">mapper</a></li></ul></li><li><a href="ArtifactInstallProperties.html">ArtifactInstallProperties</a><ul class='methods'><li data-type='method'><a href="ArtifactInstallProperties.html#mapper">mapper</a></li></ul></li><li><a href="ArtifactInstallPropertiesFragment.html">ArtifactInstallPropertiesFragment</a><ul class='methods'><li data-type='method'><a href="ArtifactInstallPropertiesFragment.html#mapper">mapper</a></li></ul></li><li><a href="ArtifactParameterProperties.html">ArtifactParameterProperties</a><ul class='methods'><li data-type='method'><a href="ArtifactParameterProperties.html#mapper">mapper</a></li></ul></li><li><a href="ArtifactParameterPropertiesFragment.html">ArtifactParameterPropertiesFragment</a><ul class='methods'><li data-type='method'><a href="ArtifactParameterPropertiesFragment.html#mapper">mapper</a></li></ul></li><li><a href="Artifacts.html">Artifacts</a><ul class='methods'><li data-type='method'><a href="Artifacts.html#generateArmTemplate">generateArmTemplate</a></li><li data-type='method'><a href="Artifacts.html#generateArmTemplateWithHttpOperationResponse">generateArmTemplateWithHttpOperationResponse</a></li><li data-type='method'><a href="Artifacts.html#get">get</a></li><li data-type='method'><a href="Artifacts.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="Artifacts.html#list">list</a></li><li data-type='method'><a href="Artifacts.html#listNext">listNext</a></li><li data-type='method'><a href="Artifacts.html#listNextWithHttpOperationResponse">listNextWithHttpOperationResponse</a></li><li data-type='method'><a href="Artifacts.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li></ul></li><li><a href="ArtifactSource.html">ArtifactSource</a><ul class='methods'><li data-type='method'><a href="ArtifactSource.html#mapper">mapper</a></li></ul></li><li><a href="ArtifactSourceFragment.html">ArtifactSourceFragment</a><ul class='methods'><li data-type='method'><a href="ArtifactSourceFragment.html#mapper">mapper</a></li></ul></li><li><a href="ArtifactSources.html">ArtifactSources</a><ul class='methods'><li data-type='method'><a href="ArtifactSources.html#createOrUpdate">createOrUpdate</a></li><li data-type='method'><a href="ArtifactSources.html#createOrUpdateWithHttpOperationResponse">createOrUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="ArtifactSources.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="ArtifactSources.html#deleteMethodWithHttpOperationResponse">deleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="ArtifactSources.html#get">get</a></li><li data-type='method'><a href="ArtifactSources.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="ArtifactSources.html#list">list</a></li><li data-type='method'><a href="ArtifactSources.html#listNext">listNext</a></li><li data-type='method'><a href="ArtifactSources.html#listNextWithHttpOperationResponse">listNextWithHttpOperationResponse</a></li><li data-type='method'><a href="ArtifactSources.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li><li data-type='method'><a href="ArtifactSources.html#update">update</a></li><li data-type='method'><a href="ArtifactSources.html#updateWithHttpOperationResponse">updateWithHttpOperationResponse</a></li></ul></li><li><a href="AttachDiskProperties.html">AttachDiskProperties</a><ul class='methods'><li data-type='method'><a href="AttachDiskProperties.html#mapper">mapper</a></li></ul></li><li><a href="AttachNewDataDiskOptions.html">AttachNewDataDiskOptions</a><ul class='methods'><li data-type='method'><a href="AttachNewDataDiskOptions.html#mapper">mapper</a></li></ul></li><li><a href="BulkCreationParameters.html">BulkCreationParameters</a><ul class='methods'><li data-type='method'><a href="BulkCreationParameters.html#mapper">mapper</a></li></ul></li><li><a href="ComputeDataDisk.html">ComputeDataDisk</a><ul class='methods'><li data-type='method'><a href="ComputeDataDisk.html#mapper">mapper</a></li></ul></li><li><a href="ComputeDataDiskFragment.html">ComputeDataDiskFragment</a><ul class='methods'><li data-type='method'><a href="ComputeDataDiskFragment.html#mapper">mapper</a></li></ul></li><li><a href="ComputeVmInstanceViewStatus.html">ComputeVmInstanceViewStatus</a><ul class='methods'><li data-type='method'><a href="ComputeVmInstanceViewStatus.html#mapper">mapper</a></li></ul></li><li><a href="ComputeVmInstanceViewStatusFragment.html">ComputeVmInstanceViewStatusFragment</a><ul class='methods'><li data-type='method'><a href="ComputeVmInstanceViewStatusFragment.html#mapper">mapper</a></li></ul></li><li><a href="ComputeVmProperties.html">ComputeVmProperties</a><ul class='methods'><li data-type='method'><a href="ComputeVmProperties.html#mapper">mapper</a></li></ul></li><li><a href="ComputeVmPropertiesFragment.html">ComputeVmPropertiesFragment</a><ul class='methods'><li data-type='method'><a href="ComputeVmPropertiesFragment.html#mapper">mapper</a></li></ul></li><li><a href="Costs.html">Costs</a><ul class='methods'><li data-type='method'><a href="Costs.html#createOrUpdate">createOrUpdate</a></li><li data-type='method'><a href="Costs.html#createOrUpdateWithHttpOperationResponse">createOrUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="Costs.html#get">get</a></li><li data-type='method'><a href="Costs.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li></ul></li><li><a href="CostThresholdProperties.html">CostThresholdProperties</a><ul class='methods'><li data-type='method'><a href="CostThresholdProperties.html#mapper">mapper</a></li></ul></li><li><a href="CustomImage.html">CustomImage</a><ul class='methods'><li data-type='method'><a href="CustomImage.html#mapper">mapper</a></li></ul></li><li><a href="CustomImagePropertiesCustom.html">CustomImagePropertiesCustom</a><ul class='methods'><li data-type='method'><a href="CustomImagePropertiesCustom.html#mapper">mapper</a></li></ul></li><li><a href="CustomImagePropertiesFromVm.html">CustomImagePropertiesFromVm</a><ul class='methods'><li data-type='method'><a href="CustomImagePropertiesFromVm.html#mapper">mapper</a></li></ul></li><li><a href="CustomImages.html">CustomImages</a><ul class='methods'><li data-type='method'><a href="CustomImages.html#beginCreateOrUpdate">beginCreateOrUpdate</a></li><li data-type='method'><a href="CustomImages.html#beginCreateOrUpdateWithHttpOperationResponse">beginCreateOrUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="CustomImages.html#beginDeleteMethod">beginDeleteMethod</a></li><li data-type='method'><a href="CustomImages.html#beginDeleteMethodWithHttpOperationResponse">beginDeleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="CustomImages.html#createOrUpdate">createOrUpdate</a></li><li data-type='method'><a href="CustomImages.html#createOrUpdateWithHttpOperationResponse">createOrUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="CustomImages.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="CustomImages.html#deleteMethodWithHttpOperationResponse">deleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="CustomImages.html#get">get</a></li><li data-type='method'><a href="CustomImages.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="CustomImages.html#list">list</a></li><li data-type='method'><a href="CustomImages.html#listNext">listNext</a></li><li data-type='method'><a href="CustomImages.html#listNextWithHttpOperationResponse">listNextWithHttpOperationResponse</a></li><li data-type='method'><a href="CustomImages.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li></ul></li><li><a href="DataDiskProperties.html">DataDiskProperties</a><ul class='methods'><li data-type='method'><a href="DataDiskProperties.html#mapper">mapper</a></li></ul></li><li><a href="DayDetails.html">DayDetails</a><ul class='methods'><li data-type='method'><a href="DayDetails.html#mapper">mapper</a></li></ul></li><li><a href="DayDetailsFragment.html">DayDetailsFragment</a><ul class='methods'><li data-type='method'><a href="DayDetailsFragment.html#mapper">mapper</a></li></ul></li><li><a href="DetachDataDiskProperties.html">DetachDataDiskProperties</a><ul class='methods'><li data-type='method'><a href="DetachDataDiskProperties.html#mapper">mapper</a></li></ul></li><li><a href="DetachDiskProperties.html">DetachDiskProperties</a><ul class='methods'><li data-type='method'><a href="DetachDiskProperties.html#mapper">mapper</a></li></ul></li><li><a href="DevTestLabsClient.html">DevTestLabsClient</a></li><li><a href="Disk.html">Disk</a><ul class='methods'><li data-type='method'><a href="Disk.html#mapper">mapper</a></li></ul></li><li><a href="Disks.html">Disks</a><ul class='methods'><li data-type='method'><a href="Disks.html#attach">attach</a></li><li data-type='method'><a href="Disks.html#attachWithHttpOperationResponse">attachWithHttpOperationResponse</a></li><li data-type='method'><a href="Disks.html#beginAttach">beginAttach</a></li><li data-type='method'><a href="Disks.html#beginAttachWithHttpOperationResponse">beginAttachWithHttpOperationResponse</a></li><li data-type='method'><a href="Disks.html#beginCreateOrUpdate">beginCreateOrUpdate</a></li><li data-type='method'><a href="Disks.html#beginCreateOrUpdateWithHttpOperationResponse">beginCreateOrUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="Disks.html#beginDeleteMethod">beginDeleteMethod</a></li><li data-type='method'><a href="Disks.html#beginDeleteMethodWithHttpOperationResponse">beginDeleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="Disks.html#beginDetach">beginDetach</a></li><li data-type='method'><a href="Disks.html#beginDetachWithHttpOperationResponse">beginDetachWithHttpOperationResponse</a></li><li data-type='method'><a href="Disks.html#createOrUpdate">createOrUpdate</a></li><li data-type='method'><a href="Disks.html#createOrUpdateWithHttpOperationResponse">createOrUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="Disks.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="Disks.html#deleteMethodWithHttpOperationResponse">deleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="Disks.html#detach">detach</a></li><li data-type='method'><a href="Disks.html#detachWithHttpOperationResponse">detachWithHttpOperationResponse</a></li><li data-type='method'><a href="Disks.html#get">get</a></li><li data-type='method'><a href="Disks.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="Disks.html#list">list</a></li><li data-type='method'><a href="Disks.html#listNext">listNext</a></li><li data-type='method'><a href="Disks.html#listNextWithHttpOperationResponse">listNextWithHttpOperationResponse</a></li><li data-type='method'><a href="Disks.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li></ul></li><li><a href="DtlEnvironment.html">DtlEnvironment</a><ul class='methods'><li data-type='method'><a href="DtlEnvironment.html#mapper">mapper</a></li></ul></li><li><a href="EnvironmentDeploymentProperties.html">EnvironmentDeploymentProperties</a><ul class='methods'><li data-type='method'><a href="EnvironmentDeploymentProperties.html#mapper">mapper</a></li></ul></li><li><a href="Environments.html">Environments</a><ul class='methods'><li data-type='method'><a href="Environments.html#beginCreateOrUpdate">beginCreateOrUpdate</a></li><li data-type='method'><a href="Environments.html#beginCreateOrUpdateWithHttpOperationResponse">beginCreateOrUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="Environments.html#beginDeleteMethod">beginDeleteMethod</a></li><li data-type='method'><a href="Environments.html#beginDeleteMethodWithHttpOperationResponse">beginDeleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="Environments.html#createOrUpdate">createOrUpdate</a></li><li data-type='method'><a href="Environments.html#createOrUpdateWithHttpOperationResponse">createOrUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="Environments.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="Environments.html#deleteMethodWithHttpOperationResponse">deleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="Environments.html#get">get</a></li><li data-type='method'><a href="Environments.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="Environments.html#list">list</a></li><li data-type='method'><a href="Environments.html#listNext">listNext</a></li><li data-type='method'><a href="Environments.html#listNextWithHttpOperationResponse">listNextWithHttpOperationResponse</a></li><li data-type='method'><a href="Environments.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li></ul></li><li><a href="EvaluatePoliciesProperties.html">EvaluatePoliciesProperties</a><ul class='methods'><li data-type='method'><a href="EvaluatePoliciesProperties.html#mapper">mapper</a></li></ul></li><li><a href="EvaluatePoliciesRequest.html">EvaluatePoliciesRequest</a><ul class='methods'><li data-type='method'><a href="EvaluatePoliciesRequest.html#mapper">mapper</a></li></ul></li><li><a href="EvaluatePoliciesResponse.html">EvaluatePoliciesResponse</a><ul class='methods'><li data-type='method'><a href="EvaluatePoliciesResponse.html#mapper">mapper</a></li></ul></li><li><a href="Event.html">Event</a><ul class='methods'><li data-type='method'><a href="Event.html#mapper">mapper</a></li></ul></li><li><a href="EventFragment.html">EventFragment</a><ul class='methods'><li data-type='method'><a href="EventFragment.html#mapper">mapper</a></li></ul></li><li><a href="ExportResourceUsageParameters.html">ExportResourceUsageParameters</a><ul class='methods'><li data-type='method'><a href="ExportResourceUsageParameters.html#mapper">mapper</a></li></ul></li><li><a href="ExternalSubnet.html">ExternalSubnet</a><ul class='methods'><li data-type='method'><a href="ExternalSubnet.html#mapper">mapper</a></li></ul></li><li><a href="ExternalSubnetFragment.html">ExternalSubnetFragment</a><ul class='methods'><li data-type='method'><a href="ExternalSubnetFragment.html#mapper">mapper</a></li></ul></li><li><a href="Formula.html">Formula</a><ul class='methods'><li data-type='method'><a href="Formula.html#mapper">mapper</a></li></ul></li><li><a href="FormulaPropertiesFromVm.html">FormulaPropertiesFromVm</a><ul class='methods'><li data-type='method'><a href="FormulaPropertiesFromVm.html#mapper">mapper</a></li></ul></li><li><a href="Formulas.html">Formulas</a><ul class='methods'><li data-type='method'><a href="Formulas.html#beginCreateOrUpdate">beginCreateOrUpdate</a></li><li data-type='method'><a href="Formulas.html#beginCreateOrUpdateWithHttpOperationResponse">beginCreateOrUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="Formulas.html#createOrUpdate">createOrUpdate</a></li><li data-type='method'><a href="Formulas.html#createOrUpdateWithHttpOperationResponse">createOrUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="Formulas.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="Formulas.html#deleteMethodWithHttpOperationResponse">deleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="Formulas.html#get">get</a></li><li data-type='method'><a href="Formulas.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="Formulas.html#list">list</a></li><li data-type='method'><a href="Formulas.html#listNext">listNext</a></li><li data-type='method'><a href="Formulas.html#listNextWithHttpOperationResponse">listNextWithHttpOperationResponse</a></li><li data-type='method'><a href="Formulas.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li></ul></li><li><a href="GalleryImage.html">GalleryImage</a><ul class='methods'><li data-type='method'><a href="GalleryImage.html#mapper">mapper</a></li></ul></li><li><a href="GalleryImageReference.html">GalleryImageReference</a><ul class='methods'><li data-type='method'><a href="GalleryImageReference.html#mapper">mapper</a></li></ul></li><li><a href="GalleryImageReferenceFragment.html">GalleryImageReferenceFragment</a><ul class='methods'><li data-type='method'><a href="GalleryImageReferenceFragment.html#mapper">mapper</a></li></ul></li><li><a href="GalleryImages.html">GalleryImages</a><ul class='methods'><li data-type='method'><a href="GalleryImages.html#list">list</a></li><li data-type='method'><a href="GalleryImages.html#listNext">listNext</a></li><li data-type='method'><a href="GalleryImages.html#listNextWithHttpOperationResponse">listNextWithHttpOperationResponse</a></li><li data-type='method'><a href="GalleryImages.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li></ul></li><li><a href="GenerateArmTemplateRequest.html">GenerateArmTemplateRequest</a><ul class='methods'><li data-type='method'><a href="GenerateArmTemplateRequest.html#mapper">mapper</a></li></ul></li><li><a href="GenerateUploadUriParameter.html">GenerateUploadUriParameter</a><ul class='methods'><li data-type='method'><a href="GenerateUploadUriParameter.html#mapper">mapper</a></li></ul></li><li><a href="GenerateUploadUriResponse.html">GenerateUploadUriResponse</a><ul class='methods'><li data-type='method'><a href="GenerateUploadUriResponse.html#mapper">mapper</a></li></ul></li><li><a href="GlobalSchedules.html">GlobalSchedules</a><ul class='methods'><li data-type='method'><a href="GlobalSchedules.html#beginExecute">beginExecute</a></li><li data-type='method'><a href="GlobalSchedules.html#beginExecuteWithHttpOperationResponse">beginExecuteWithHttpOperationResponse</a></li><li data-type='method'><a href="GlobalSchedules.html#beginRetarget">beginRetarget</a></li><li data-type='method'><a href="GlobalSchedules.html#beginRetargetWithHttpOperationResponse">beginRetargetWithHttpOperationResponse</a></li><li data-type='method'><a href="GlobalSchedules.html#createOrUpdate">createOrUpdate</a></li><li data-type='method'><a href="GlobalSchedules.html#createOrUpdateWithHttpOperationResponse">createOrUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="GlobalSchedules.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="GlobalSchedules.html#deleteMethodWithHttpOperationResponse">deleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="GlobalSchedules.html#execute">execute</a></li><li data-type='method'><a href="GlobalSchedules.html#executeWithHttpOperationResponse">executeWithHttpOperationResponse</a></li><li data-type='method'><a href="GlobalSchedules.html#get">get</a></li><li data-type='method'><a href="GlobalSchedules.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="GlobalSchedules.html#listByResourceGroup">listByResourceGroup</a></li><li data-type='method'><a href="GlobalSchedules.html#listByResourceGroupNext">listByResourceGroupNext</a></li><li data-type='method'><a href="GlobalSchedules.html#listByResourceGroupNextWithHttpOperationResponse">listByResourceGroupNextWithHttpOperationResponse</a></li><li data-type='method'><a href="GlobalSchedules.html#listByResourceGroupWithHttpOperationResponse">listByResourceGroupWithHttpOperationResponse</a></li><li data-type='method'><a href="GlobalSchedules.html#listBySubscription">listBySubscription</a></li><li data-type='method'><a href="GlobalSchedules.html#listBySubscriptionNext">listBySubscriptionNext</a></li><li data-type='method'><a href="GlobalSchedules.html#listBySubscriptionNextWithHttpOperationResponse">listBySubscriptionNextWithHttpOperationResponse</a></li><li data-type='method'><a href="GlobalSchedules.html#listBySubscriptionWithHttpOperationResponse">listBySubscriptionWithHttpOperationResponse</a></li><li data-type='method'><a href="GlobalSchedules.html#retarget">retarget</a></li><li data-type='method'><a href="GlobalSchedules.html#retargetWithHttpOperationResponse">retargetWithHttpOperationResponse</a></li><li data-type='method'><a href="GlobalSchedules.html#update">update</a></li><li data-type='method'><a href="GlobalSchedules.html#updateWithHttpOperationResponse">updateWithHttpOperationResponse</a></li></ul></li><li><a href="HourDetails.html">HourDetails</a><ul class='methods'><li data-type='method'><a href="HourDetails.html#mapper">mapper</a></li></ul></li><li><a href="HourDetailsFragment.html">HourDetailsFragment</a><ul class='methods'><li data-type='method'><a href="HourDetailsFragment.html#mapper">mapper</a></li></ul></li><li><a href="IdentityProperties.html">IdentityProperties</a><ul class='methods'><li data-type='method'><a href="IdentityProperties.html#mapper">mapper</a></li></ul></li><li><a href="InboundNatRule.html">InboundNatRule</a><ul class='methods'><li data-type='method'><a href="InboundNatRule.html#mapper">mapper</a></li></ul></li><li><a href="InboundNatRuleFragment.html">InboundNatRuleFragment</a><ul class='methods'><li data-type='method'><a href="InboundNatRuleFragment.html#mapper">mapper</a></li></ul></li><li><a href="Lab.html">Lab</a><ul class='methods'><li data-type='method'><a href="Lab.html#mapper">mapper</a></li></ul></li><li><a href="LabCost.html">LabCost</a><ul class='methods'><li data-type='method'><a href="LabCost.html#mapper">mapper</a></li></ul></li><li><a href="LabCostDetailsProperties.html">LabCostDetailsProperties</a><ul class='methods'><li data-type='method'><a href="LabCostDetailsProperties.html#mapper">mapper</a></li></ul></li><li><a href="LabCostSummaryProperties.html">LabCostSummaryProperties</a><ul class='methods'><li data-type='method'><a href="LabCostSummaryProperties.html#mapper">mapper</a></li></ul></li><li><a href="LabFragment.html">LabFragment</a><ul class='methods'><li data-type='method'><a href="LabFragment.html#mapper">mapper</a></li></ul></li><li><a href="LabResourceCostProperties.html">LabResourceCostProperties</a><ul class='methods'><li data-type='method'><a href="LabResourceCostProperties.html#mapper">mapper</a></li></ul></li><li><a href="Labs.html">Labs</a><ul class='methods'><li data-type='method'><a href="Labs.html#beginClaimAnyVm">beginClaimAnyVm</a></li><li data-type='method'><a href="Labs.html#beginClaimAnyVmWithHttpOperationResponse">beginClaimAnyVmWithHttpOperationResponse</a></li><li data-type='method'><a href="Labs.html#beginCreateEnvironment">beginCreateEnvironment</a></li><li data-type='method'><a href="Labs.html#beginCreateEnvironmentWithHttpOperationResponse">beginCreateEnvironmentWithHttpOperationResponse</a></li><li data-type='method'><a href="Labs.html#beginCreateOrUpdate">beginCreateOrUpdate</a></li><li data-type='method'><a href="Labs.html#beginCreateOrUpdateWithHttpOperationResponse">beginCreateOrUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="Labs.html#beginDeleteMethod">beginDeleteMethod</a></li><li data-type='method'><a href="Labs.html#beginDeleteMethodWithHttpOperationResponse">beginDeleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="Labs.html#beginExportResourceUsage">beginExportResourceUsage</a></li><li data-type='method'><a href="Labs.html#beginExportResourceUsageWithHttpOperationResponse">beginExportResourceUsageWithHttpOperationResponse</a></li><li data-type='method'><a href="Labs.html#claimAnyVm">claimAnyVm</a></li><li data-type='method'><a href="Labs.html#claimAnyVmWithHttpOperationResponse">claimAnyVmWithHttpOperationResponse</a></li><li data-type='method'><a href="Labs.html#createEnvironment">createEnvironment</a></li><li data-type='method'><a href="Labs.html#createEnvironmentWithHttpOperationResponse">createEnvironmentWithHttpOperationResponse</a></li><li data-type='method'><a href="Labs.html#createOrUpdate">createOrUpdate</a></li><li data-type='method'><a href="Labs.html#createOrUpdateWithHttpOperationResponse">createOrUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="Labs.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="Labs.html#deleteMethodWithHttpOperationResponse">deleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="Labs.html#exportResourceUsage">exportResourceUsage</a></li><li data-type='method'><a href="Labs.html#exportResourceUsageWithHttpOperationResponse">exportResourceUsageWithHttpOperationResponse</a></li><li data-type='method'><a href="Labs.html#generateUploadUri">generateUploadUri</a></li><li data-type='method'><a href="Labs.html#generateUploadUriWithHttpOperationResponse">generateUploadUriWithHttpOperationResponse</a></li><li data-type='method'><a href="Labs.html#get">get</a></li><li data-type='method'><a href="Labs.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="Labs.html#listByResourceGroup">listByResourceGroup</a></li><li data-type='method'><a href="Labs.html#listByResourceGroupNext">listByResourceGroupNext</a></li><li data-type='method'><a href="Labs.html#listByResourceGroupNextWithHttpOperationResponse">listByResourceGroupNextWithHttpOperationResponse</a></li><li data-type='method'><a href="Labs.html#listByResourceGroupWithHttpOperationResponse">listByResourceGroupWithHttpOperationResponse</a></li><li data-type='method'><a href="Labs.html#listBySubscription">listBySubscription</a></li><li data-type='method'><a href="Labs.html#listBySubscriptionNext">listBySubscriptionNext</a></li><li data-type='method'><a href="Labs.html#listBySubscriptionNextWithHttpOperationResponse">listBySubscriptionNextWithHttpOperationResponse</a></li><li data-type='method'><a href="Labs.html#listBySubscriptionWithHttpOperationResponse">listBySubscriptionWithHttpOperationResponse</a></li><li data-type='method'><a href="Labs.html#listVhds">listVhds</a></li><li data-type='method'><a href="Labs.html#listVhdsNext">listVhdsNext</a></li><li data-type='method'><a href="Labs.html#listVhdsNextWithHttpOperationResponse">listVhdsNextWithHttpOperationResponse</a></li><li data-type='method'><a href="Labs.html#listVhdsWithHttpOperationResponse">listVhdsWithHttpOperationResponse</a></li><li data-type='method'><a href="Labs.html#update">update</a></li><li data-type='method'><a href="Labs.html#updateWithHttpOperationResponse">updateWithHttpOperationResponse</a></li></ul></li><li><a href="LabVhd.html">LabVhd</a><ul class='methods'><li data-type='method'><a href="LabVhd.html#mapper">mapper</a></li></ul></li><li><a href="LabVirtualMachine.html">LabVirtualMachine</a><ul class='methods'><li data-type='method'><a href="LabVirtualMachine.html#mapper">mapper</a></li></ul></li><li><a href="LabVirtualMachineCreationParameter.html">LabVirtualMachineCreationParameter</a><ul class='methods'><li data-type='method'><a href="LabVirtualMachineCreationParameter.html#mapper">mapper</a></li></ul></li><li><a href="LabVirtualMachineFragment.html">LabVirtualMachineFragment</a><ul class='methods'><li data-type='method'><a href="LabVirtualMachineFragment.html#mapper">mapper</a></li></ul></li><li><a href="LinuxOsInfo.html">LinuxOsInfo</a><ul class='methods'><li data-type='method'><a href="LinuxOsInfo.html#mapper">mapper</a></li></ul></li><li><a href="NetworkInterfaceProperties.html">NetworkInterfaceProperties</a><ul class='methods'><li data-type='method'><a href="NetworkInterfaceProperties.html#mapper">mapper</a></li></ul></li><li><a href="NetworkInterfacePropertiesFragment.html">NetworkInterfacePropertiesFragment</a><ul class='methods'><li data-type='method'><a href="NetworkInterfacePropertiesFragment.html#mapper">mapper</a></li></ul></li><li><a href="NotificationChannel.html">NotificationChannel</a><ul class='methods'><li data-type='method'><a href="NotificationChannel.html#mapper">mapper</a></li></ul></li><li><a href="NotificationChannelFragment.html">NotificationChannelFragment</a><ul class='methods'><li data-type='method'><a href="NotificationChannelFragment.html#mapper">mapper</a></li></ul></li><li><a href="NotificationChannels.html">NotificationChannels</a><ul class='methods'><li data-type='method'><a href="NotificationChannels.html#createOrUpdate">createOrUpdate</a></li><li data-type='method'><a href="NotificationChannels.html#createOrUpdateWithHttpOperationResponse">createOrUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="NotificationChannels.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="NotificationChannels.html#deleteMethodWithHttpOperationResponse">deleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="NotificationChannels.html#get">get</a></li><li data-type='method'><a href="NotificationChannels.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="NotificationChannels.html#list">list</a></li><li data-type='method'><a href="NotificationChannels.html#listNext">listNext</a></li><li data-type='method'><a href="NotificationChannels.html#listNextWithHttpOperationResponse">listNextWithHttpOperationResponse</a></li><li data-type='method'><a href="NotificationChannels.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li><li data-type='method'><a href="NotificationChannels.html#notify">notify</a></li><li data-type='method'><a href="NotificationChannels.html#notifyWithHttpOperationResponse">notifyWithHttpOperationResponse</a></li><li data-type='method'><a href="NotificationChannels.html#update">update</a></li><li data-type='method'><a href="NotificationChannels.html#updateWithHttpOperationResponse">updateWithHttpOperationResponse</a></li></ul></li><li><a href="NotificationSettings.html">NotificationSettings</a><ul class='methods'><li data-type='method'><a href="NotificationSettings.html#mapper">mapper</a></li></ul></li><li><a href="NotificationSettingsFragment.html">NotificationSettingsFragment</a><ul class='methods'><li data-type='method'><a href="NotificationSettingsFragment.html#mapper">mapper</a></li></ul></li><li><a href="NotifyParameters.html">NotifyParameters</a><ul class='methods'><li data-type='method'><a href="NotifyParameters.html#mapper">mapper</a></li></ul></li><li><a href="ParameterInfo.html">ParameterInfo</a><ul class='methods'><li data-type='method'><a href="ParameterInfo.html#mapper">mapper</a></li></ul></li><li><a href="ParametersValueFileInfo.html">ParametersValueFileInfo</a><ul class='methods'><li data-type='method'><a href="ParametersValueFileInfo.html#mapper">mapper</a></li></ul></li><li><a href="PercentageCostThresholdProperties.html">PercentageCostThresholdProperties</a><ul class='methods'><li data-type='method'><a href="PercentageCostThresholdProperties.html#mapper">mapper</a></li></ul></li><li><a href="Policies.html">Policies</a><ul class='methods'><li data-type='method'><a href="Policies.html#createOrUpdate">createOrUpdate</a></li><li data-type='method'><a href="Policies.html#createOrUpdateWithHttpOperationResponse">createOrUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="Policies.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="Policies.html#deleteMethodWithHttpOperationResponse">deleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="Policies.html#get">get</a></li><li data-type='method'><a href="Policies.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="Policies.html#list">list</a></li><li data-type='method'><a href="Policies.html#listNext">listNext</a></li><li data-type='method'><a href="Policies.html#listNextWithHttpOperationResponse">listNextWithHttpOperationResponse</a></li><li data-type='method'><a href="Policies.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li><li data-type='method'><a href="Policies.html#update">update</a></li><li data-type='method'><a href="Policies.html#updateWithHttpOperationResponse">updateWithHttpOperationResponse</a></li></ul></li><li><a href="Policy.html">Policy</a><ul class='methods'><li data-type='method'><a href="Policy.html#mapper">mapper</a></li></ul></li><li><a href="PolicyFragment.html">PolicyFragment</a><ul class='methods'><li data-type='method'><a href="PolicyFragment.html#mapper">mapper</a></li></ul></li><li><a href="PolicySetResult.html">PolicySetResult</a><ul class='methods'><li data-type='method'><a href="PolicySetResult.html#mapper">mapper</a></li></ul></li><li><a href="PolicySets.html">PolicySets</a><ul class='methods'><li data-type='method'><a href="PolicySets.html#evaluatePolicies">evaluatePolicies</a></li><li data-type='method'><a href="PolicySets.html#evaluatePoliciesWithHttpOperationResponse">evaluatePoliciesWithHttpOperationResponse</a></li></ul></li><li><a href="PolicyViolation.html">PolicyViolation</a><ul class='methods'><li data-type='method'><a href="PolicyViolation.html#mapper">mapper</a></li></ul></li><li><a href="Port.html">Port</a><ul class='methods'><li data-type='method'><a href="Port.html#mapper">mapper</a></li></ul></li><li><a href="PortFragment.html">PortFragment</a><ul class='methods'><li data-type='method'><a href="PortFragment.html#mapper">mapper</a></li></ul></li><li><a href="Resource.html">Resource</a><ul class='methods'><li data-type='method'><a href="Resource.html#mapper">mapper</a></li></ul></li><li><a href="ResponseWithContinuationArmTemplate.html">ResponseWithContinuationArmTemplate</a><ul class='methods'><li data-type='method'><a href="ResponseWithContinuationArmTemplate.html#mapper">mapper</a></li></ul></li><li><a href="ResponseWithContinuationArtifact.html">ResponseWithContinuationArtifact</a><ul class='methods'><li data-type='method'><a href="ResponseWithContinuationArtifact.html#mapper">mapper</a></li></ul></li><li><a href="ResponseWithContinuationArtifactSource.html">ResponseWithContinuationArtifactSource</a><ul class='methods'><li data-type='method'><a href="ResponseWithContinuationArtifactSource.html#mapper">mapper</a></li></ul></li><li><a href="ResponseWithContinuationCustomImage.html">ResponseWithContinuationCustomImage</a><ul class='methods'><li data-type='method'><a href="ResponseWithContinuationCustomImage.html#mapper">mapper</a></li></ul></li><li><a href="ResponseWithContinuationDisk.html">ResponseWithContinuationDisk</a><ul class='methods'><li data-type='method'><a href="ResponseWithContinuationDisk.html#mapper">mapper</a></li></ul></li><li><a href="ResponseWithContinuationDtlEnvironment.html">ResponseWithContinuationDtlEnvironment</a><ul class='methods'><li data-type='method'><a href="ResponseWithContinuationDtlEnvironment.html#mapper">mapper</a></li></ul></li><li><a href="ResponseWithContinuationFormula.html">ResponseWithContinuationFormula</a><ul class='methods'><li data-type='method'><a href="ResponseWithContinuationFormula.html#mapper">mapper</a></li></ul></li><li><a href="ResponseWithContinuationGalleryImage.html">ResponseWithContinuationGalleryImage</a><ul class='methods'><li data-type='method'><a href="ResponseWithContinuationGalleryImage.html#mapper">mapper</a></li></ul></li><li><a href="ResponseWithContinuationLab.html">ResponseWithContinuationLab</a><ul class='methods'><li data-type='method'><a href="ResponseWithContinuationLab.html#mapper">mapper</a></li></ul></li><li><a href="ResponseWithContinuationLabVhd.html">ResponseWithContinuationLabVhd</a><ul class='methods'><li data-type='method'><a href="ResponseWithContinuationLabVhd.html#mapper">mapper</a></li></ul></li><li><a href="ResponseWithContinuationLabVirtualMachine.html">ResponseWithContinuationLabVirtualMachine</a><ul class='methods'><li data-type='method'><a href="ResponseWithContinuationLabVirtualMachine.html#mapper">mapper</a></li></ul></li><li><a href="ResponseWithContinuationNotificationChannel.html">ResponseWithContinuationNotificationChannel</a><ul class='methods'><li data-type='method'><a href="ResponseWithContinuationNotificationChannel.html#mapper">mapper</a></li></ul></li><li><a href="ResponseWithContinuationPolicy.html">ResponseWithContinuationPolicy</a><ul class='methods'><li data-type='method'><a href="ResponseWithContinuationPolicy.html#mapper">mapper</a></li></ul></li><li><a href="ResponseWithContinuationSchedule.html">ResponseWithContinuationSchedule</a><ul class='methods'><li data-type='method'><a href="ResponseWithContinuationSchedule.html#mapper">mapper</a></li></ul></li><li><a href="ResponseWithContinuationSecret.html">ResponseWithContinuationSecret</a><ul class='methods'><li data-type='method'><a href="ResponseWithContinuationSecret.html#mapper">mapper</a></li></ul></li><li><a href="ResponseWithContinuationServiceRunner.html">ResponseWithContinuationServiceRunner</a><ul class='methods'><li data-type='method'><a href="ResponseWithContinuationServiceRunner.html#mapper">mapper</a></li></ul></li><li><a href="ResponseWithContinuationUser.html">ResponseWithContinuationUser</a><ul class='methods'><li data-type='method'><a href="ResponseWithContinuationUser.html#mapper">mapper</a></li></ul></li><li><a href="ResponseWithContinuationVirtualNetwork.html">ResponseWithContinuationVirtualNetwork</a><ul class='methods'><li data-type='method'><a href="ResponseWithContinuationVirtualNetwork.html#mapper">mapper</a></li></ul></li><li><a href="RetargetScheduleProperties.html">RetargetScheduleProperties</a><ul class='methods'><li data-type='method'><a href="RetargetScheduleProperties.html#mapper">mapper</a></li></ul></li><li><a href="Schedule.html">Schedule</a><ul class='methods'><li data-type='method'><a href="Schedule.html#mapper">mapper</a></li></ul></li><li><a href="ScheduleFragment.html">ScheduleFragment</a><ul class='methods'><li data-type='method'><a href="ScheduleFragment.html#mapper">mapper</a></li></ul></li><li><a href="Schedules.html">Schedules</a><ul class='methods'><li data-type='method'><a href="Schedules.html#beginExecute">beginExecute</a></li><li data-type='method'><a href="Schedules.html#beginExecuteWithHttpOperationResponse">beginExecuteWithHttpOperationResponse</a></li><li data-type='method'><a href="Schedules.html#createOrUpdate">createOrUpdate</a></li><li data-type='method'><a href="Schedules.html#createOrUpdateWithHttpOperationResponse">createOrUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="Schedules.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="Schedules.html#deleteMethodWithHttpOperationResponse">deleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="Schedules.html#execute">execute</a></li><li data-type='method'><a href="Schedules.html#executeWithHttpOperationResponse">executeWithHttpOperationResponse</a></li><li data-type='method'><a href="Schedules.html#get">get</a></li><li data-type='method'><a href="Schedules.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="Schedules.html#list">list</a></li><li data-type='method'><a href="Schedules.html#listApplicable">listApplicable</a></li><li data-type='method'><a href="Schedules.html#listApplicableNext">listApplicableNext</a></li><li data-type='method'><a href="Schedules.html#listApplicableNextWithHttpOperationResponse">listApplicableNextWithHttpOperationResponse</a></li><li data-type='method'><a href="Schedules.html#listApplicableWithHttpOperationResponse">listApplicableWithHttpOperationResponse</a></li><li data-type='method'><a href="Schedules.html#listNext">listNext</a></li><li data-type='method'><a href="Schedules.html#listNextWithHttpOperationResponse">listNextWithHttpOperationResponse</a></li><li data-type='method'><a href="Schedules.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li><li data-type='method'><a href="Schedules.html#update">update</a></li><li data-type='method'><a href="Schedules.html#updateWithHttpOperationResponse">updateWithHttpOperationResponse</a></li></ul></li><li><a href="Secret.html">Secret</a><ul class='methods'><li data-type='method'><a href="Secret.html#mapper">mapper</a></li></ul></li><li><a href="Secrets.html">Secrets</a><ul class='methods'><li data-type='method'><a href="Secrets.html#createOrUpdate">createOrUpdate</a></li><li data-type='method'><a href="Secrets.html#createOrUpdateWithHttpOperationResponse">createOrUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="Secrets.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="Secrets.html#deleteMethodWithHttpOperationResponse">deleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="Secrets.html#get">get</a></li><li data-type='method'><a href="Secrets.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="Secrets.html#list">list</a></li><li data-type='method'><a href="Secrets.html#listNext">listNext</a></li><li data-type='method'><a href="Secrets.html#listNextWithHttpOperationResponse">listNextWithHttpOperationResponse</a></li><li data-type='method'><a href="Secrets.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li></ul></li><li><a href="ServiceRunner.html">ServiceRunner</a><ul class='methods'><li data-type='method'><a href="ServiceRunner.html#mapper">mapper</a></li></ul></li><li><a href="ServiceRunners.html">ServiceRunners</a><ul class='methods'><li data-type='method'><a href="ServiceRunners.html#createOrUpdate">createOrUpdate</a></li><li data-type='method'><a href="ServiceRunners.html#createOrUpdateWithHttpOperationResponse">createOrUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="ServiceRunners.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="ServiceRunners.html#deleteMethodWithHttpOperationResponse">deleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="ServiceRunners.html#get">get</a></li><li data-type='method'><a href="ServiceRunners.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="ServiceRunners.html#list">list</a></li><li data-type='method'><a href="ServiceRunners.html#listNext">listNext</a></li><li data-type='method'><a href="ServiceRunners.html#listNextWithHttpOperationResponse">listNextWithHttpOperationResponse</a></li><li data-type='method'><a href="ServiceRunners.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li></ul></li><li><a href="SharedPublicIpAddressConfiguration.html">SharedPublicIpAddressConfiguration</a><ul class='methods'><li data-type='method'><a href="SharedPublicIpAddressConfiguration.html#mapper">mapper</a></li></ul></li><li><a href="SharedPublicIpAddressConfigurationFragment.html">SharedPublicIpAddressConfigurationFragment</a><ul class='methods'><li data-type='method'><a href="SharedPublicIpAddressConfigurationFragment.html#mapper">mapper</a></li></ul></li><li><a href="ShutdownNotificationContent.html">ShutdownNotificationContent</a><ul class='methods'><li data-type='method'><a href="ShutdownNotificationContent.html#mapper">mapper</a></li></ul></li><li><a href="Subnet.html">Subnet</a><ul class='methods'><li data-type='method'><a href="Subnet.html#mapper">mapper</a></li></ul></li><li><a href="SubnetFragment.html">SubnetFragment</a><ul class='methods'><li data-type='method'><a href="SubnetFragment.html#mapper">mapper</a></li></ul></li><li><a href="SubnetOverride.html">SubnetOverride</a><ul class='methods'><li data-type='method'><a href="SubnetOverride.html#mapper">mapper</a></li></ul></li><li><a href="SubnetOverrideFragment.html">SubnetOverrideFragment</a><ul class='methods'><li data-type='method'><a href="SubnetOverrideFragment.html#mapper">mapper</a></li></ul></li><li><a href="SubnetSharedPublicIpAddressConfiguration.html">SubnetSharedPublicIpAddressConfiguration</a><ul class='methods'><li data-type='method'><a href="SubnetSharedPublicIpAddressConfiguration.html#mapper">mapper</a></li></ul></li><li><a href="SubnetSharedPublicIpAddressConfigurationFragment.html">SubnetSharedPublicIpAddressConfigurationFragment</a><ul class='methods'><li data-type='method'><a href="SubnetSharedPublicIpAddressConfigurationFragment.html#mapper">mapper</a></li></ul></li><li><a href="TargetCostProperties.html">TargetCostProperties</a><ul class='methods'><li data-type='method'><a href="TargetCostProperties.html#mapper">mapper</a></li></ul></li><li><a href="User.html">User</a><ul class='methods'><li data-type='method'><a href="User.html#mapper">mapper</a></li></ul></li><li><a href="UserFragment.html">UserFragment</a><ul class='methods'><li data-type='method'><a href="UserFragment.html#mapper">mapper</a></li></ul></li><li><a href="UserIdentity.html">UserIdentity</a><ul class='methods'><li data-type='method'><a href="UserIdentity.html#mapper">mapper</a></li></ul></li><li><a href="UserIdentityFragment.html">UserIdentityFragment</a><ul class='methods'><li data-type='method'><a href="UserIdentityFragment.html#mapper">mapper</a></li></ul></li><li><a href="Users.html">Users</a><ul class='methods'><li data-type='method'><a href="Users.html#beginDeleteMethod">beginDeleteMethod</a></li><li data-type='method'><a href="Users.html#beginDeleteMethodWithHttpOperationResponse">beginDeleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="Users.html#createOrUpdate">createOrUpdate</a></li><li data-type='method'><a href="Users.html#createOrUpdateWithHttpOperationResponse">createOrUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="Users.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="Users.html#deleteMethodWithHttpOperationResponse">deleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="Users.html#get">get</a></li><li data-type='method'><a href="Users.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="Users.html#list">list</a></li><li data-type='method'><a href="Users.html#listNext">listNext</a></li><li data-type='method'><a href="Users.html#listNextWithHttpOperationResponse">listNextWithHttpOperationResponse</a></li><li data-type='method'><a href="Users.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li><li data-type='method'><a href="Users.html#update">update</a></li><li data-type='method'><a href="Users.html#updateWithHttpOperationResponse">updateWithHttpOperationResponse</a></li></ul></li><li><a href="UserSecretStore.html">UserSecretStore</a><ul class='methods'><li data-type='method'><a href="UserSecretStore.html#mapper">mapper</a></li></ul></li><li><a href="UserSecretStoreFragment.html">UserSecretStoreFragment</a><ul class='methods'><li data-type='method'><a href="UserSecretStoreFragment.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachines.html">VirtualMachines</a><ul class='methods'><li data-type='method'><a href="VirtualMachines.html#addDataDisk">addDataDisk</a></li><li data-type='method'><a href="VirtualMachines.html#addDataDiskWithHttpOperationResponse">addDataDiskWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachines.html#applyArtifacts">applyArtifacts</a></li><li data-type='method'><a href="VirtualMachines.html#applyArtifactsWithHttpOperationResponse">applyArtifactsWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachines.html#beginAddDataDisk">beginAddDataDisk</a></li><li data-type='method'><a href="VirtualMachines.html#beginAddDataDiskWithHttpOperationResponse">beginAddDataDiskWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachines.html#beginApplyArtifacts">beginApplyArtifacts</a></li><li data-type='method'><a href="VirtualMachines.html#beginApplyArtifactsWithHttpOperationResponse">beginApplyArtifactsWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachines.html#beginClaim">beginClaim</a></li><li data-type='method'><a href="VirtualMachines.html#beginClaimWithHttpOperationResponse">beginClaimWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachines.html#beginCreateOrUpdate">beginCreateOrUpdate</a></li><li data-type='method'><a href="VirtualMachines.html#beginCreateOrUpdateWithHttpOperationResponse">beginCreateOrUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachines.html#beginDeleteMethod">beginDeleteMethod</a></li><li data-type='method'><a href="VirtualMachines.html#beginDeleteMethodWithHttpOperationResponse">beginDeleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachines.html#beginDetachDataDisk">beginDetachDataDisk</a></li><li data-type='method'><a href="VirtualMachines.html#beginDetachDataDiskWithHttpOperationResponse">beginDetachDataDiskWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachines.html#beginStart">beginStart</a></li><li data-type='method'><a href="VirtualMachines.html#beginStartWithHttpOperationResponse">beginStartWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachines.html#beginStop">beginStop</a></li><li data-type='method'><a href="VirtualMachines.html#beginStopWithHttpOperationResponse">beginStopWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachines.html#claim">claim</a></li><li data-type='method'><a href="VirtualMachines.html#claimWithHttpOperationResponse">claimWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachines.html#createOrUpdate">createOrUpdate</a></li><li data-type='method'><a href="VirtualMachines.html#createOrUpdateWithHttpOperationResponse">createOrUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachines.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="VirtualMachines.html#deleteMethodWithHttpOperationResponse">deleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachines.html#detachDataDisk">detachDataDisk</a></li><li data-type='method'><a href="VirtualMachines.html#detachDataDiskWithHttpOperationResponse">detachDataDiskWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachines.html#get">get</a></li><li data-type='method'><a href="VirtualMachines.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachines.html#list">list</a></li><li data-type='method'><a href="VirtualMachines.html#listApplicableSchedules">listApplicableSchedules</a></li><li data-type='method'><a href="VirtualMachines.html#listApplicableSchedulesWithHttpOperationResponse">listApplicableSchedulesWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachines.html#listNext">listNext</a></li><li data-type='method'><a href="VirtualMachines.html#listNextWithHttpOperationResponse">listNextWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachines.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachines.html#start">start</a></li><li data-type='method'><a href="VirtualMachines.html#startWithHttpOperationResponse">startWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachines.html#stop">stop</a></li><li data-type='method'><a href="VirtualMachines.html#stopWithHttpOperationResponse">stopWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachines.html#update">update</a></li><li data-type='method'><a href="VirtualMachines.html#updateWithHttpOperationResponse">updateWithHttpOperationResponse</a></li></ul></li><li><a href="VirtualMachineSchedules.html">VirtualMachineSchedules</a><ul class='methods'><li data-type='method'><a href="VirtualMachineSchedules.html#beginExecute">beginExecute</a></li><li data-type='method'><a href="VirtualMachineSchedules.html#beginExecuteWithHttpOperationResponse">beginExecuteWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineSchedules.html#createOrUpdate">createOrUpdate</a></li><li data-type='method'><a href="VirtualMachineSchedules.html#createOrUpdateWithHttpOperationResponse">createOrUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineSchedules.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="VirtualMachineSchedules.html#deleteMethodWithHttpOperationResponse">deleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineSchedules.html#execute">execute</a></li><li data-type='method'><a href="VirtualMachineSchedules.html#executeWithHttpOperationResponse">executeWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineSchedules.html#get">get</a></li><li data-type='method'><a href="VirtualMachineSchedules.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineSchedules.html#list">list</a></li><li data-type='method'><a href="VirtualMachineSchedules.html#listNext">listNext</a></li><li data-type='method'><a href="VirtualMachineSchedules.html#listNextWithHttpOperationResponse">listNextWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineSchedules.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineSchedules.html#update">update</a></li><li data-type='method'><a href="VirtualMachineSchedules.html#updateWithHttpOperationResponse">updateWithHttpOperationResponse</a></li></ul></li><li><a href="VirtualNetwork.html">VirtualNetwork</a><ul class='methods'><li data-type='method'><a href="VirtualNetwork.html#mapper">mapper</a></li></ul></li><li><a href="VirtualNetworkFragment.html">VirtualNetworkFragment</a><ul class='methods'><li data-type='method'><a href="VirtualNetworkFragment.html#mapper">mapper</a></li></ul></li><li><a href="VirtualNetworks.html">VirtualNetworks</a><ul class='methods'><li data-type='method'><a href="VirtualNetworks.html#beginCreateOrUpdate">beginCreateOrUpdate</a></li><li data-type='method'><a href="VirtualNetworks.html#beginCreateOrUpdateWithHttpOperationResponse">beginCreateOrUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualNetworks.html#beginDeleteMethod">beginDeleteMethod</a></li><li data-type='method'><a href="VirtualNetworks.html#beginDeleteMethodWithHttpOperationResponse">beginDeleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualNetworks.html#createOrUpdate">createOrUpdate</a></li><li data-type='method'><a href="VirtualNetworks.html#createOrUpdateWithHttpOperationResponse">createOrUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualNetworks.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="VirtualNetworks.html#deleteMethodWithHttpOperationResponse">deleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualNetworks.html#get">get</a></li><li data-type='method'><a href="VirtualNetworks.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualNetworks.html#list">list</a></li><li data-type='method'><a href="VirtualNetworks.html#listNext">listNext</a></li><li data-type='method'><a href="VirtualNetworks.html#listNextWithHttpOperationResponse">listNextWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualNetworks.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualNetworks.html#update">update</a></li><li data-type='method'><a href="VirtualNetworks.html#updateWithHttpOperationResponse">updateWithHttpOperationResponse</a></li></ul></li><li><a href="WeekDetails.html">WeekDetails</a><ul class='methods'><li data-type='method'><a href="WeekDetails.html#mapper">mapper</a></li></ul></li><li><a href="WeekDetailsFragment.html">WeekDetailsFragment</a><ul class='methods'><li data-type='method'><a href="WeekDetailsFragment.html#mapper">mapper</a></li></ul></li><li><a href="WindowsOsInfo.html">WindowsOsInfo</a><ul class='methods'><li data-type='method'><a href="WindowsOsInfo.html#mapper">mapper</a></li></ul></li></ul><h3>Global</h3><ul><li><a href="global.html#_addDataDisk">_addDataDisk</a></li><li><a href="global.html#_applyArtifacts">_applyArtifacts</a></li><li><a href="global.html#_attach">_attach</a></li><li><a href="global.html#_beginAddDataDisk">_beginAddDataDisk</a></li><li><a href="global.html#_beginApplyArtifacts">_beginApplyArtifacts</a></li><li><a href="global.html#_beginAttach">_beginAttach</a></li><li><a href="global.html#_beginClaim">_beginClaim</a></li><li><a href="global.html#_beginClaimAnyVm">_beginClaimAnyVm</a></li><li><a href="global.html#_beginCreateEnvironment">_beginCreateEnvironment</a></li><li><a href="global.html#_beginCreateOrUpdate">_beginCreateOrUpdate</a></li><li><a href="global.html#_beginDeleteMethod">_beginDeleteMethod</a></li><li><a href="global.html#_beginDetach">_beginDetach</a></li><li><a href="global.html#_beginDetachDataDisk">_beginDetachDataDisk</a></li><li><a href="global.html#_beginExecute">_beginExecute</a></li><li><a href="global.html#_beginExportResourceUsage">_beginExportResourceUsage</a></li><li><a href="global.html#_beginRetarget">_beginRetarget</a></li><li><a href="global.html#_beginStart">_beginStart</a></li><li><a href="global.html#_beginStop">_beginStop</a></li><li><a href="global.html#_claim">_claim</a></li><li><a href="global.html#_claimAnyVm">_claimAnyVm</a></li><li><a href="global.html#_createEnvironment">_createEnvironment</a></li><li><a href="global.html#_createOrUpdate">_createOrUpdate</a></li><li><a href="global.html#_deleteMethod">_deleteMethod</a></li><li><a href="global.html#_detach">_detach</a></li><li><a href="global.html#_detachDataDisk">_detachDataDisk</a></li><li><a href="global.html#_evaluatePolicies">_evaluatePolicies</a></li><li><a href="global.html#_execute">_execute</a></li><li><a href="global.html#_exportResourceUsage">_exportResourceUsage</a></li><li><a href="global.html#_generateArmTemplate">_generateArmTemplate</a></li><li><a href="global.html#_generateUploadUri">_generateUploadUri</a></li><li><a href="global.html#_get">_get</a></li><li><a href="global.html#_list">_list</a></li><li><a href="global.html#_listApplicable">_listApplicable</a></li><li><a href="global.html#_listApplicableNext">_listApplicableNext</a></li><li><a href="global.html#_listApplicableSchedules">_listApplicableSchedules</a></li><li><a href="global.html#_listByResourceGroup">_listByResourceGroup</a></li><li><a href="global.html#_listByResourceGroupNext">_listByResourceGroupNext</a></li><li><a href="global.html#_listBySubscription">_listBySubscription</a></li><li><a href="global.html#_listBySubscriptionNext">_listBySubscriptionNext</a></li><li><a href="global.html#_listNext">_listNext</a></li><li><a href="global.html#_listVhds">_listVhds</a></li><li><a href="global.html#_listVhdsNext">_listVhdsNext</a></li><li><a href="global.html#_notify">_notify</a></li><li><a href="global.html#_retarget">_retarget</a></li><li><a href="global.html#_start">_start</a></li><li><a href="global.html#_stop">_stop</a></li><li><a href="global.html#_update">_update</a></li><li><a href="global.html#allowedPorts">allowedPorts</a></li><li><a href="global.html#allowPublicIp">allowPublicIp</a></li><li><a href="global.html#appId">appId</a></li><li><a href="global.html#artifacts">artifacts</a></li><li><a href="global.html#backendPort">backendPort</a></li><li><a href="global.html#blobName">blobName</a></li><li><a href="global.html#clientSecretUrl">clientSecretUrl</a></li><li><a href="global.html#costType">costType</a></li><li><a href="global.html#createdDate">createdDate</a></li><li><a href="global.html#cycleType">cycleType</a></li><li><a href="global.html#dataDisks">dataDisks</a></li><li><a href="global.html#diskSizeGiB">diskSizeGiB</a></li><li><a href="global.html#diskType">diskType</a></li><li><a href="global.html#enabled">enabled</a></li><li><a href="global.html#estimatedLabCost">estimatedLabCost</a></li><li><a href="global.html#eventName">eventName</a></li><li><a href="global.html#existingLabDiskId">existingLabDiskId</a></li><li><a href="global.html#externalResourceId">externalResourceId</a></li><li><a href="global.html#fileUploadOptions">fileUploadOptions</a></li><li><a href="global.html#hostCaching">hostCaching</a></li><li><a href="global.html#id">id</a></li><li><a href="global.html#inboundNatRules">inboundNatRules</a></li><li><a href="global.html#installTime">installTime</a></li><li><a href="global.html#instanceCount">instanceCount</a></li><li><a href="global.html#jsonPayload">jsonPayload</a></li><li><a href="global.html#keyVaultId">keyVaultId</a></li><li><a href="global.html#labName">labName</a></li><li><a href="global.html#labVmId">labVmId</a></li><li><a href="global.html#leasedByLabVmId">leasedByLabVmId</a></li><li><a href="global.html#linuxOsState">linuxOsState</a></li><li><a href="global.html#message">message</a></li><li><a href="global.html#minute">minute</a></li><li><a href="global.html#name">name</a></li><li><a href="global.html#nextLink">nextLink</a></li><li><a href="global.html#notificationSent">notificationSent</a></li><li><a href="global.html#osType">osType</a></li><li><a href="global.html#parameters">parameters</a></li><li><a href="global.html#parametersValueFilesInfo">parametersValueFilesInfo</a></li><li><a href="global.html#parametersValueInfo">parametersValueInfo</a></li><li><a href="global.html#policies">policies</a></li><li><a href="global.html#policyViolations">policyViolations</a></li><li><a href="global.html#results">results</a></li><li><a href="global.html#tags">tags</a></li><li><a href="global.html#targetResourceId">targetResourceId</a></li><li><a href="global.html#thresholdValue">thresholdValue</a></li><li><a href="global.html#time">time</a></li><li><a href="global.html#totalArtifacts">totalArtifacts</a></li><li><a href="global.html#uniqueIdentifier">uniqueIdentifier</a></li><li><a href="global.html#uploadUri">uploadUri</a></li><li><a href="global.html#usageStartDate">usageStartDate</a></li><li><a href="global.html#value">value</a></li><li><a href="global.html#valueOffset">valueOffset</a></li><li><a href="global.html#version">version</a></li><li><a href="global.html#virtualNetworkPoolName">virtualNetworkPoolName</a></li><li><a href="global.html#webhookUrl">webhookUrl</a></li><li><a href="global.html#windowsOsState">windowsOsState</a></li></ul>
+</nav>
+
+<div id="main">
+    
+      <a class="github-banner" href="https://github.com/azure/azure-sdk-for-node.git"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+    
+    
+    <h1 class="page-title">operations/galleryImages.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/*
+ * Copyright (c) Microsoft Corporation. All rights reserved.
+ * Licensed under the MIT License. See License.txt in the project root for
+ * license information.
+ *
+ * Code generated by Microsoft (R) AutoRest Code Generator.
+ * Changes may cause incorrect behavior and will be lost if the code is
+ * regenerated.
+ */
+
+'use strict';
+
+const msRest = require('ms-rest');
+const msRestAzure = require('ms-rest-azure');
+const WebResource = msRest.WebResource;
+
+/**
+ * List gallery images in a given lab.
+ *
+ * @param {string} resourceGroupName The name of the resource group.
+ *
+ * @param {string} labName The name of the lab.
+ *
+ * @param {object} [options] Optional Parameters.
+ *
+ * @param {string} [options.expand] Specify the $expand query. Example:
+ * 'properties($select=author)'
+ *
+ * @param {string} [options.filter] The filter to apply to the operation.
+ *
+ * @param {number} [options.top] The maximum number of resources to return from
+ * the operation.
+ *
+ * @param {string} [options.orderby] The ordering expression for the results,
+ * using OData notation.
+ *
+ * @param {object} [options.customHeaders] Headers that will be added to the
+ * request
+ *
+ * @param {function} callback - The callback.
+ *
+ * @returns {function} callback(err, result, request, response)
+ *
+ *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+ *
+ *                      {object} [result]   - The deserialized result object if an error did not occur.
+ *                      See {@link ResponseWithContinuationGalleryImage} for
+ *                      more information.
+ *
+ *                      {object} [request]  - The HTTP Request object if an error did not occur.
+ *
+ *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+ */
+function _list(resourceGroupName, labName, options, callback) {
+   /* jshint validthis: true */
+  let client = this.client;
+  if(!callback &amp;&amp; typeof options === 'function') {
+    callback = options;
+    options = null;
+  }
+  if (!callback) {
+    throw new Error('callback cannot be null.');
+  }
+  let expand = (options &amp;&amp; options.expand !== undefined) ? options.expand : undefined;
+  let filter = (options &amp;&amp; options.filter !== undefined) ? options.filter : undefined;
+  let top = (options &amp;&amp; options.top !== undefined) ? options.top : undefined;
+  let orderby = (options &amp;&amp; options.orderby !== undefined) ? options.orderby : undefined;
+  // Validate
+  try {
+    if (this.client.subscriptionId === null || this.client.subscriptionId === undefined || typeof this.client.subscriptionId.valueOf() !== 'string') {
+      throw new Error('this.client.subscriptionId cannot be null or undefined and it must be of type string.');
+    }
+    if (resourceGroupName === null || resourceGroupName === undefined || typeof resourceGroupName.valueOf() !== 'string') {
+      throw new Error('resourceGroupName cannot be null or undefined and it must be of type string.');
+    }
+    if (labName === null || labName === undefined || typeof labName.valueOf() !== 'string') {
+      throw new Error('labName cannot be null or undefined and it must be of type string.');
+    }
+    if (expand !== null &amp;&amp; expand !== undefined &amp;&amp; typeof expand.valueOf() !== 'string') {
+      throw new Error('expand must be of type string.');
+    }
+    if (filter !== null &amp;&amp; filter !== undefined &amp;&amp; typeof filter.valueOf() !== 'string') {
+      throw new Error('filter must be of type string.');
+    }
+    if (top !== null &amp;&amp; top !== undefined &amp;&amp; typeof top !== 'number') {
+      throw new Error('top must be of type number.');
+    }
+    if (orderby !== null &amp;&amp; orderby !== undefined &amp;&amp; typeof orderby.valueOf() !== 'string') {
+      throw new Error('orderby must be of type string.');
+    }
+    if (this.client.apiVersion === null || this.client.apiVersion === undefined || typeof this.client.apiVersion.valueOf() !== 'string') {
+      throw new Error('this.client.apiVersion cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.acceptLanguage !== null &amp;&amp; this.client.acceptLanguage !== undefined &amp;&amp; typeof this.client.acceptLanguage.valueOf() !== 'string') {
+      throw new Error('this.client.acceptLanguage must be of type string.');
+    }
+  } catch (error) {
+    return callback(error);
+  }
+
+  // Construct URL
+  let baseUrl = this.client.baseUri;
+  let requestUrl = baseUrl + (baseUrl.endsWith('/') ? '' : '/') + 'subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DevTestLab/labs/{labName}/galleryimages';
+  requestUrl = requestUrl.replace('{subscriptionId}', encodeURIComponent(this.client.subscriptionId));
+  requestUrl = requestUrl.replace('{resourceGroupName}', encodeURIComponent(resourceGroupName));
+  requestUrl = requestUrl.replace('{labName}', encodeURIComponent(labName));
+  let queryParameters = [];
+  if (expand !== null &amp;&amp; expand !== undefined) {
+    queryParameters.push('$expand=' + encodeURIComponent(expand));
+  }
+  if (filter !== null &amp;&amp; filter !== undefined) {
+    queryParameters.push('$filter=' + encodeURIComponent(filter));
+  }
+  if (top !== null &amp;&amp; top !== undefined) {
+    queryParameters.push('$top=' + encodeURIComponent(top.toString()));
+  }
+  if (orderby !== null &amp;&amp; orderby !== undefined) {
+    queryParameters.push('$orderby=' + encodeURIComponent(orderby));
+  }
+  queryParameters.push('api-version=' + encodeURIComponent(this.client.apiVersion));
+  if (queryParameters.length > 0) {
+    requestUrl += '?' + queryParameters.join('&amp;');
+  }
+
+  // Create HTTP transport objects
+  let httpRequest = new WebResource();
+  httpRequest.method = 'GET';
+  httpRequest.url = requestUrl;
+  httpRequest.headers = {};
+  // Set Headers
+  httpRequest.headers['Content-Type'] = 'application/json; charset=utf-8';
+  if (this.client.generateClientRequestId) {
+      httpRequest.headers['x-ms-client-request-id'] = msRestAzure.generateUuid();
+  }
+  if (this.client.acceptLanguage !== undefined &amp;&amp; this.client.acceptLanguage !== null) {
+    httpRequest.headers['accept-language'] = this.client.acceptLanguage;
+  }
+  if(options) {
+    for(let headerName in options['customHeaders']) {
+      if (options['customHeaders'].hasOwnProperty(headerName)) {
+        httpRequest.headers[headerName] = options['customHeaders'][headerName];
+      }
+    }
+  }
+  httpRequest.body = null;
+  // Send Request
+  return client.pipeline(httpRequest, (err, response, responseBody) => {
+    if (err) {
+      return callback(err);
+    }
+    let statusCode = response.statusCode;
+    if (statusCode !== 200) {
+      let error = new Error(responseBody);
+      error.statusCode = response.statusCode;
+      error.request = msRest.stripRequest(httpRequest);
+      error.response = msRest.stripResponse(response);
+      if (responseBody === '') responseBody = null;
+      let parsedErrorResponse;
+      try {
+        parsedErrorResponse = JSON.parse(responseBody);
+        if (parsedErrorResponse) {
+          if (parsedErrorResponse.error) parsedErrorResponse = parsedErrorResponse.error;
+          if (parsedErrorResponse.code) error.code = parsedErrorResponse.code;
+          if (parsedErrorResponse.message) error.message = parsedErrorResponse.message;
+        }
+        if (parsedErrorResponse !== null &amp;&amp; parsedErrorResponse !== undefined) {
+          let resultMapper = new client.models['CloudError']().mapper();
+          error.body = client.deserialize(resultMapper, parsedErrorResponse, 'error.body');
+        }
+      } catch (defaultError) {
+        error.message = `Error "${defaultError.message}" occurred in deserializing the responseBody ` +
+                         `- "${responseBody}" for the default response.`;
+        return callback(error);
+      }
+      return callback(error);
+    }
+    // Create Result
+    let result = null;
+    if (responseBody === '') responseBody = null;
+    // Deserialize Response
+    if (statusCode === 200) {
+      let parsedResponse = null;
+      try {
+        parsedResponse = JSON.parse(responseBody);
+        result = JSON.parse(responseBody);
+        if (parsedResponse !== null &amp;&amp; parsedResponse !== undefined) {
+          let resultMapper = new client.models['ResponseWithContinuationGalleryImage']().mapper();
+          result = client.deserialize(resultMapper, parsedResponse, 'result');
+        }
+      } catch (error) {
+        let deserializationError = new Error(`Error ${error} occurred in deserializing the responseBody - ${responseBody}`);
+        deserializationError.request = msRest.stripRequest(httpRequest);
+        deserializationError.response = msRest.stripResponse(response);
+        return callback(deserializationError);
+      }
+    }
+
+    return callback(null, result, httpRequest, response);
+  });
+}
+
+/**
+ * List gallery images in a given lab.
+ *
+ * @param {string} nextPageLink The NextLink from the previous successful call
+ * to List operation.
+ *
+ * @param {object} [options] Optional Parameters.
+ *
+ * @param {object} [options.customHeaders] Headers that will be added to the
+ * request
+ *
+ * @param {function} callback - The callback.
+ *
+ * @returns {function} callback(err, result, request, response)
+ *
+ *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+ *
+ *                      {object} [result]   - The deserialized result object if an error did not occur.
+ *                      See {@link ResponseWithContinuationGalleryImage} for
+ *                      more information.
+ *
+ *                      {object} [request]  - The HTTP Request object if an error did not occur.
+ *
+ *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+ */
+function _listNext(nextPageLink, options, callback) {
+   /* jshint validthis: true */
+  let client = this.client;
+  if(!callback &amp;&amp; typeof options === 'function') {
+    callback = options;
+    options = null;
+  }
+  if (!callback) {
+    throw new Error('callback cannot be null.');
+  }
+  // Validate
+  try {
+    if (nextPageLink === null || nextPageLink === undefined || typeof nextPageLink.valueOf() !== 'string') {
+      throw new Error('nextPageLink cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.acceptLanguage !== null &amp;&amp; this.client.acceptLanguage !== undefined &amp;&amp; typeof this.client.acceptLanguage.valueOf() !== 'string') {
+      throw new Error('this.client.acceptLanguage must be of type string.');
+    }
+  } catch (error) {
+    return callback(error);
+  }
+
+  // Construct URL
+  let requestUrl = '{nextLink}';
+  requestUrl = requestUrl.replace('{nextLink}', nextPageLink);
+
+  // Create HTTP transport objects
+  let httpRequest = new WebResource();
+  httpRequest.method = 'GET';
+  httpRequest.url = requestUrl;
+  httpRequest.headers = {};
+  // Set Headers
+  httpRequest.headers['Content-Type'] = 'application/json; charset=utf-8';
+  if (this.client.generateClientRequestId) {
+      httpRequest.headers['x-ms-client-request-id'] = msRestAzure.generateUuid();
+  }
+  if (this.client.acceptLanguage !== undefined &amp;&amp; this.client.acceptLanguage !== null) {
+    httpRequest.headers['accept-language'] = this.client.acceptLanguage;
+  }
+  if(options) {
+    for(let headerName in options['customHeaders']) {
+      if (options['customHeaders'].hasOwnProperty(headerName)) {
+        httpRequest.headers[headerName] = options['customHeaders'][headerName];
+      }
+    }
+  }
+  httpRequest.body = null;
+  // Send Request
+  return client.pipeline(httpRequest, (err, response, responseBody) => {
+    if (err) {
+      return callback(err);
+    }
+    let statusCode = response.statusCode;
+    if (statusCode !== 200) {
+      let error = new Error(responseBody);
+      error.statusCode = response.statusCode;
+      error.request = msRest.stripRequest(httpRequest);
+      error.response = msRest.stripResponse(response);
+      if (responseBody === '') responseBody = null;
+      let parsedErrorResponse;
+      try {
+        parsedErrorResponse = JSON.parse(responseBody);
+        if (parsedErrorResponse) {
+          if (parsedErrorResponse.error) parsedErrorResponse = parsedErrorResponse.error;
+          if (parsedErrorResponse.code) error.code = parsedErrorResponse.code;
+          if (parsedErrorResponse.message) error.message = parsedErrorResponse.message;
+        }
+        if (parsedErrorResponse !== null &amp;&amp; parsedErrorResponse !== undefined) {
+          let resultMapper = new client.models['CloudError']().mapper();
+          error.body = client.deserialize(resultMapper, parsedErrorResponse, 'error.body');
+        }
+      } catch (defaultError) {
+        error.message = `Error "${defaultError.message}" occurred in deserializing the responseBody ` +
+                         `- "${responseBody}" for the default response.`;
+        return callback(error);
+      }
+      return callback(error);
+    }
+    // Create Result
+    let result = null;
+    if (responseBody === '') responseBody = null;
+    // Deserialize Response
+    if (statusCode === 200) {
+      let parsedResponse = null;
+      try {
+        parsedResponse = JSON.parse(responseBody);
+        result = JSON.parse(responseBody);
+        if (parsedResponse !== null &amp;&amp; parsedResponse !== undefined) {
+          let resultMapper = new client.models['ResponseWithContinuationGalleryImage']().mapper();
+          result = client.deserialize(resultMapper, parsedResponse, 'result');
+        }
+      } catch (error) {
+        let deserializationError = new Error(`Error ${error} occurred in deserializing the responseBody - ${responseBody}`);
+        deserializationError.request = msRest.stripRequest(httpRequest);
+        deserializationError.response = msRest.stripResponse(response);
+        return callback(deserializationError);
+      }
+    }
+
+    return callback(null, result, httpRequest, response);
+  });
+}
+
+/** Class representing a GalleryImages. */
+class GalleryImages {
+  /**
+   * Create a GalleryImages.
+   * @param {DevTestLabsClient} client Reference to the service client.
+   */
+  constructor(client) {
+    this.client = client;
+    this._list = _list;
+    this._listNext = _listNext;
+  }
+
+  /**
+   * List gallery images in a given lab.
+   *
+   * @param {string} resourceGroupName The name of the resource group.
+   *
+   * @param {string} labName The name of the lab.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {string} [options.expand] Specify the $expand query. Example:
+   * 'properties($select=author)'
+   *
+   * @param {string} [options.filter] The filter to apply to the operation.
+   *
+   * @param {number} [options.top] The maximum number of resources to return from
+   * the operation.
+   *
+   * @param {string} [options.orderby] The ordering expression for the results,
+   * using OData notation.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @returns {Promise} A promise is returned
+   *
+   * @resolve {HttpOperationResponse&lt;ResponseWithContinuationGalleryImage>} - The deserialized result object.
+   *
+   * @reject {Error} - The error object.
+   */
+  listWithHttpOperationResponse(resourceGroupName, labName, options) {
+    let client = this.client;
+    let self = this;
+    return new Promise((resolve, reject) => {
+      self._list(resourceGroupName, labName, options, (err, result, request, response) => {
+        let httpOperationResponse = new msRest.HttpOperationResponse(request, response);
+        httpOperationResponse.body = result;
+        if (err) { reject(err); }
+        else { resolve(httpOperationResponse); }
+        return;
+      });
+    });
+  }
+
+  /**
+   * List gallery images in a given lab.
+   *
+   * @param {string} resourceGroupName The name of the resource group.
+   *
+   * @param {string} labName The name of the lab.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {string} [options.expand] Specify the $expand query. Example:
+   * 'properties($select=author)'
+   *
+   * @param {string} [options.filter] The filter to apply to the operation.
+   *
+   * @param {number} [options.top] The maximum number of resources to return from
+   * the operation.
+   *
+   * @param {string} [options.orderby] The ordering expression for the results,
+   * using OData notation.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @param {function} [optionalCallback] - The optional callback.
+   *
+   * @returns {function|Promise} If a callback was passed as the last parameter
+   * then it returns the callback else returns a Promise.
+   *
+   * {Promise} A promise is returned
+   *
+   *                      @resolve {ResponseWithContinuationGalleryImage} - The deserialized result object.
+   *
+   *                      @reject {Error} - The error object.
+   *
+   * {function} optionalCallback(err, result, request, response)
+   *
+   *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+   *
+   *                      {object} [result]   - The deserialized result object if an error did not occur.
+   *                      See {@link ResponseWithContinuationGalleryImage} for
+   *                      more information.
+   *
+   *                      {object} [request]  - The HTTP Request object if an error did not occur.
+   *
+   *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+   */
+  list(resourceGroupName, labName, options, optionalCallback) {
+    let client = this.client;
+    let self = this;
+    if (!optionalCallback &amp;&amp; typeof options === 'function') {
+      optionalCallback = options;
+      options = null;
+    }
+    if (!optionalCallback) {
+      return new Promise((resolve, reject) => {
+        self._list(resourceGroupName, labName, options, (err, result, request, response) => {
+          if (err) { reject(err); }
+          else { resolve(result); }
+          return;
+        });
+      });
+    } else {
+      return self._list(resourceGroupName, labName, options, optionalCallback);
+    }
+  }
+
+  /**
+   * List gallery images in a given lab.
+   *
+   * @param {string} nextPageLink The NextLink from the previous successful call
+   * to List operation.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @returns {Promise} A promise is returned
+   *
+   * @resolve {HttpOperationResponse&lt;ResponseWithContinuationGalleryImage>} - The deserialized result object.
+   *
+   * @reject {Error} - The error object.
+   */
+  listNextWithHttpOperationResponse(nextPageLink, options) {
+    let client = this.client;
+    let self = this;
+    return new Promise((resolve, reject) => {
+      self._listNext(nextPageLink, options, (err, result, request, response) => {
+        let httpOperationResponse = new msRest.HttpOperationResponse(request, response);
+        httpOperationResponse.body = result;
+        if (err) { reject(err); }
+        else { resolve(httpOperationResponse); }
+        return;
+      });
+    });
+  }
+
+  /**
+   * List gallery images in a given lab.
+   *
+   * @param {string} nextPageLink The NextLink from the previous successful call
+   * to List operation.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @param {function} [optionalCallback] - The optional callback.
+   *
+   * @returns {function|Promise} If a callback was passed as the last parameter
+   * then it returns the callback else returns a Promise.
+   *
+   * {Promise} A promise is returned
+   *
+   *                      @resolve {ResponseWithContinuationGalleryImage} - The deserialized result object.
+   *
+   *                      @reject {Error} - The error object.
+   *
+   * {function} optionalCallback(err, result, request, response)
+   *
+   *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+   *
+   *                      {object} [result]   - The deserialized result object if an error did not occur.
+   *                      See {@link ResponseWithContinuationGalleryImage} for
+   *                      more information.
+   *
+   *                      {object} [request]  - The HTTP Request object if an error did not occur.
+   *
+   *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+   */
+  listNext(nextPageLink, options, optionalCallback) {
+    let client = this.client;
+    let self = this;
+    if (!optionalCallback &amp;&amp; typeof options === 'function') {
+      optionalCallback = options;
+      options = null;
+    }
+    if (!optionalCallback) {
+      return new Promise((resolve, reject) => {
+        self._listNext(nextPageLink, options, (err, result, request, response) => {
+          if (err) { reject(err); }
+          else { resolve(result); }
+          return;
+        });
+      });
+    } else {
+      return self._listNext(nextPageLink, options, optionalCallback);
+    }
+  }
+
+}
+
+module.exports = GalleryImages;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Thu Nov 09 2017 11:14:50 GMT-0800 (PST) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="../../scripts/linenumber.js"></script>
+</body>
+</html>

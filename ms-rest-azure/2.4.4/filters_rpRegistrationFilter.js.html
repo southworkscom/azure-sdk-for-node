@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>filters/rpRegistrationFilter.js - Documentation</title>
+    <meta name="viewport" content="initial-scale=.75">
+    <script src="../../scripts/prettify/prettify.js"></script>
+    <script src="../../scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="../../styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="../../styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><span><a href="../../index.html">Home</a> <span class="github-short">| <a href="https://github.com/azure/azure-sdk-for-node.git">GitHub</a></span></span></h2><h3>Classes</h3><ul><li><a href="ApplicationTokenCredentials.html">ApplicationTokenCredentials</a><ul class='methods'><li data-type='method'><a href="ApplicationTokenCredentials.html#getToken">getToken</a></li><li data-type='method'><a href="ApplicationTokenCredentials.html#signRequest">signRequest</a></li></ul></li><li><a href="AzureEnvironment.html">AzureEnvironment</a><ul class='methods'><li data-type='method'><a href="AzureEnvironment.html#add">add</a></li></ul></li><li><a href="AzureServiceClient.html">AzureServiceClient</a><ul class='methods'><li data-type='method'><a href="AzureServiceClient.html#getLongRunningOperationResult">getLongRunningOperationResult</a></li><li data-type='method'><a href="AzureServiceClient.html#getPostOrDeleteOperationResult">getPostOrDeleteOperationResult</a></li><li data-type='method'><a href="AzureServiceClient.html#getPutOrPatchOperationResult">getPutOrPatchOperationResult</a></li><li data-type='method'><a href="AzureServiceClient.html#sendLongRunningRequest">sendLongRunningRequest</a></li><li data-type='method'><a href="AzureServiceClient.html#sendLongRunningRequestWithHttpOperationResponse">sendLongRunningRequestWithHttpOperationResponse</a></li></ul></li><li><a href="BaseResource.html">BaseResource</a><ul class='methods'><li data-type='method'><a href="BaseResource.html#deserialize">deserialize</a></li><li data-type='method'><a href="BaseResource.html#mapper">mapper</a></li><li data-type='method'><a href="BaseResource.html#serialize">serialize</a></li></ul></li><li><a href="CognitiveServicesCredentials.html">CognitiveServicesCredentials</a></li><li><a href="DeviceTokenCredentials.html">DeviceTokenCredentials</a><ul class='methods'><li data-type='method'><a href="DeviceTokenCredentials.html#signRequest">signRequest</a></li></ul></li><li><a href="Location%2520list%2520operation%2520response..html">Location list operation response.</a></li><li><a href="MSIAppServiceTokenCredentials.html">MSIAppServiceTokenCredentials</a><ul class='methods'><li data-type='method'><a href="MSIAppServiceTokenCredentials.html#getToken">getToken</a></li></ul></li><li><a href="MSITokenCredentials.html">MSITokenCredentials</a><ul class='methods'><li data-type='method'><a href="MSITokenCredentials.html#getToken">getToken</a></li><li data-type='method'><a href="MSITokenCredentials.html#signRequest">signRequest</a></li></ul></li><li><a href="PollingState.html">PollingState</a><ul class='methods'><li data-type='method'><a href="PollingState.html#getCloudError">getCloudError</a></li><li data-type='method'><a href="PollingState.html#getOperationResponse">getOperationResponse</a></li><li data-type='method'><a href="PollingState.html#getTimeout">getTimeout</a></li><li data-type='method'><a href="PollingState.html#updateResponse">updateResponse</a></li></ul></li><li><a href="SubscriptionClient.html">SubscriptionClient</a></li><li><a href="Subscriptions.html">Subscriptions</a><ul class='methods'><li data-type='method'><a href="Subscriptions.html#get">get</a></li><li data-type='method'><a href="Subscriptions.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="Subscriptions.html#list">list</a></li><li data-type='method'><a href="Subscriptions.html#listLocations">listLocations</a></li><li data-type='method'><a href="Subscriptions.html#listLocationsWithHttpOperationResponse">listLocationsWithHttpOperationResponse</a></li><li data-type='method'><a href="Subscriptions.html#listNext">listNext</a></li><li data-type='method'><a href="Subscriptions.html#listNextWithHttpOperationResponse">listNextWithHttpOperationResponse</a></li><li data-type='method'><a href="Subscriptions.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li></ul></li><li><a href="Tenants.html">Tenants</a><ul class='methods'><li data-type='method'><a href="Tenants.html#list">list</a></li><li data-type='method'><a href="Tenants.html#listNext">listNext</a></li><li data-type='method'><a href="Tenants.html#listNextWithHttpOperationResponse">listNextWithHttpOperationResponse</a></li><li data-type='method'><a href="Tenants.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li></ul></li><li><a href="UserTokenCredentials.html">UserTokenCredentials</a><ul class='methods'><li data-type='method'><a href="UserTokenCredentials.html#getToken">getToken</a></li><li data-type='method'><a href="UserTokenCredentials.html#signRequest">signRequest</a></li></ul></li></ul><h3>Global</h3><ul><li><a href="global.html#_get">_get</a></li><li><a href="global.html#_getLongRunningOperationResult">_getLongRunningOperationResult</a></li><li><a href="global.html#_getStatus">_getStatus</a></li><li><a href="global.html#_list">_list</a></li><li><a href="global.html#_listLocations">_listLocations</a></li><li><a href="global.html#_listNext">_listNext</a></li><li><a href="global.html#_updateStateFromAzureAsyncOperationHeader">_updateStateFromAzureAsyncOperationHeader</a></li><li><a href="global.html#_updateStateFromGetResourceOperation">_updateStateFromGetResourceOperation</a></li><li><a href="global.html#_updateStateFromLocationHeader">_updateStateFromLocationHeader</a></li><li><a href="global.html#_withAppServiceMSI">_withAppServiceMSI</a></li><li><a href="global.html#_withAuthFile">_withAuthFile</a></li><li><a href="global.html#_withMSI">_withMSI</a></li><li><a href="global.html#authorizationSource">authorizationSource</a></li><li><a href="global.html#checkRPNotRegisteredError">checkRPNotRegisteredError</a></li><li><a href="global.html#create">create</a></li><li><a href="global.html#details">details</a></li><li><a href="global.html#extractSubscriptionUrl">extractSubscriptionUrl</a></li><li><a href="global.html#generateUuid">generateUuid</a></li><li><a href="global.html#getRegistrationStatus">getRegistrationStatus</a></li><li><a href="global.html#getRequestEssentials">getRequestEssentials</a></li><li><a href="global.html#interactive">interactive</a></li><li><a href="global.html#longitude">longitude</a></li><li><a href="global.html#nextLink">nextLink</a></li><li><a href="global.html#registerRP">registerRP</a></li><li><a href="global.html#spendingLimit">spendingLimit</a></li><li><a href="global.html#tenantId">tenantId</a></li><li><a href="global.html#withAppServiceMSI">withAppServiceMSI</a></li><li><a href="global.html#withAuthFile">withAuthFile</a></li><li><a href="global.html#withAuthFileWithAuthResponse">withAuthFileWithAuthResponse</a></li><li><a href="global.html#withMSI">withMSI</a></li><li><a href="global.html#withServicePrincipalSecret">withServicePrincipalSecret</a></li><li><a href="global.html#withUsernamePassword">withUsernamePassword</a></li></ul>
+</nav>
+
+<div id="main">
+    
+      <a class="github-banner" href="https://github.com/azure/azure-sdk-for-node.git"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+    
+    
+    <h1 class="page-title">filters/rpRegistrationFilter.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>// Copyright (c) Microsoft Corporation. All rights reserved.
+// Licensed under the MIT License. See License.txt in the project root for license information. 
+
+'use strict';
+
+var request = require('request');
+var utils = require('../utils');
+
+exports.retryTimeout = 30;
+
+/**
+ * Mostly all the filters are in the generic runtime 'ms-rest'. However this one ends up here because
+ * it is Azure specific. This filter is responsible for autoregistering an RP if the initial request failed.
+ * After successful registration of the RP it retries the initial request. Other filters play with other aspects
+ * of the request/response but the actual request on the wire is made from the sink. However, this filter 
+ * makes actual requests on the wire. It does not depend on the sink. This is done because it is tasked to register
+ * the RP, poll the registration status and the retry the initial request.
+ */
+
+/**
+ * Creates a filter that verifies whether the request failed due to RP not being registered.
+ * It tries to register the RP and after successful registration it retries the original request.
+ * @param {number} retryTimeoutInSec The retry timeout in seconds. Default is 30 seconds.
+ */
+exports.create = function create(retryTimeoutInSec) {
+
+  if (retryTimeoutInSec !== null &amp;&amp; retryTimeoutInSec !== undefined) {
+    exports.retryTimeout = retryTimeoutInSec;
+  }
+  return function handle(options, next, callback) {
+    return next(options, function (err, response, body) {
+      if (err) {
+        return callback(err);
+      }
+      let rpName, urlPrefix;
+      if (response.statusCode === 409) {
+        rpName = exports.checkRPNotRegisteredError(body);
+        if (rpName) {
+          urlPrefix = exports.extractSubscriptionUrl(options.url);
+          return exports.registerRP(urlPrefix, rpName, options, (registrationErr, result) => {
+            if (registrationErr) {
+              //Autoregistration of ${provider} failed for some reason. We will not return this error 
+              //instead will return the initial response with 409 status code back to the user.
+              return callback(err, response, body);
+            }
+            if (result) {
+              //Retry the original request. We have to change the x-ms-client-request-id 
+              //otherwise Azure endpoint will return the initial 409 (cached) response.
+              options.headers['x-ms-client-request-id'] = utils.generateUuid();
+              return request(options.url, options, (error, response) => {
+                return callback(error, response, response.body);
+              });
+            } else {
+              return callback(err, response, body);
+            }
+          });
+        }
+      }
+      return callback(err, response, body);
+    });
+  };
+};
+
+/**
+ * Reuses the headers of the original request and url (if specified).
+ * @param {object} originalRequest The original request
+ * @param {boolean} reuseUrlToo Should the url from the original request be reused as well. Default false.
+ * @returns {object} reqOptions - A new request object with desired headers.
+ */
+function getRequestEssentials(originalRequest, reuseUrlToo) {
+  let reqOptions = {
+    headers: {}
+  };
+  if (reuseUrlToo) {
+    reqOptions.url = originalRequest.url;
+  }
+
+  //Copy over the original request headers. This will get us the auth token and other useful stuff from
+  //the original request header. Thus making it easier to make requests from this filter.
+  for (let h in originalRequest.headers) {
+    reqOptions.headers[h] = originalRequest.headers[h];
+  }
+  //We have to change the x-ms-client-request-id otherwise Azure endpoint 
+  //will return the initial 409 (cached) response.
+  reqOptions.headers['x-ms-client-request-id'] = utils.generateUuid();
+
+  //Set content-type to application/json
+  reqOptions.headers['Content-Type'] = 'application/json; charset=utf-8';
+
+  return reqOptions;
+}
+
+/**
+ * Validates the error code and message associated with 409 response status code. If it matches to that of 
+ * RP not registered then it returns the name of the RP else returns undefined.
+ * @param {string} body - The response body received after making the original request.
+ * @returns {string} result The name of the RP if condition is satisfied else undefined.
+ */
+exports.checkRPNotRegisteredError = function checkRPNotRegisteredError(body) {
+  let result, responseBody;
+  if (body) {
+    try {
+      responseBody = JSON.parse(body);
+    } catch (err) {
+      //do nothing;
+    }
+    if (responseBody &amp;&amp; responseBody.error &amp;&amp; responseBody.error.message &amp;&amp;
+      responseBody.error.code &amp;&amp; responseBody.error.code === 'MissingSubscriptionRegistration') {
+      let matchRes = responseBody.error.message.match(/.*'(.*)'/i);
+      if (matchRes) {
+        result = matchRes.pop();
+      }
+    }
+  }
+  return result;
+};
+
+/**
+ * Extracts the first part of the URL, just after subscription: 
+ * https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/
+ * @param {string} url - The original request url
+ * @returns {string} urlPrefix The url prefix as explained above.
+ */
+exports.extractSubscriptionUrl = function extractSubscriptionUrl(url) {
+  let result;
+  let matchRes = url.match(/.*\/subscriptions\/[a-f0-9-]+\//ig);
+  if (matchRes &amp;&amp; matchRes[0]) {
+    result = matchRes[0];
+  } else {
+    throw new Error(`Unable to extract subscriptionId from the given url - ${url}.`);
+  }
+  return result;
+};
+
+/**
+ * Registers the given provider.
+ * @param {string} urlPrefix - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/
+ * @param {string} provider - The provider name to be registered.
+ * @param {object} originalRequest - The original request sent by the user that returned a 409 response
+ * with a message that the provider is not registered.
+ * @param {registrationCallback} callback - The callback that handles the RP registration
+ */
+exports.registerRP = function registerRP(urlPrefix, provider, originalRequest, callback) {
+  let postUrl = `${urlPrefix}providers/${provider}/register?api-version=2016-02-01`;
+  let getUrl = `${urlPrefix}providers/${provider}?api-version=2016-02-01`;
+  let reqOptions = getRequestEssentials(originalRequest);
+  return request.post(postUrl, reqOptions, (err, response) => {
+    if (response.statusCode !== 200) {
+      return callback(new Error(`Autoregistration of ${provider} failed. Please try registering manually.`));
+    }
+    return exports.getRegistrationStatus(getUrl, originalRequest, (err, result) => {
+      if (err) {
+        return callback(err, result);
+      }
+      return callback(null, result);
+    });
+  });
+};
+
+/**
+ * Polls the registration status of the provider that was registered. Polling happens at an interval of 30 seconds.
+ * Polling will happen till the registrationState property of the response body is 'Registered'.
+ * @param {string} url - The request url for polling
+ * @param {object} originalRequest - The original request sent by the user that returned a 409 response
+ * with a message that the provider is not registered.
+ * @param {registrationCallback} callback - The callback that handles the RP registration.
+ */
+exports.getRegistrationStatus = function getRegistrationStatus(url, originalRequest, callback) {
+  let reqOptions = getRequestEssentials(originalRequest);
+  return request.get(url, reqOptions, (err, response, body) => {
+    if (err) return callback(err);
+    let responseBody = {};
+    try {
+      responseBody = JSON.parse(body);
+    } catch (error) {
+      return callback(new Error(`An error occurred while parsing the response body for ` +
+        `getting registration status ${url}. The response body was ${body}.`));
+    }
+    if (responseBody.registrationState &amp;&amp; responseBody.registrationState === 'Registered') {
+      return callback(null, true);
+    } else {
+      setTimeout(() => {
+        return exports.getRegistrationStatus(url, originalRequest, callback);
+      }, exports.retryTimeout * 1000);
+
+    }
+  });
+};
+
+/**
+ * This callback handles the RP registration
+ * @callback registrationCallback
+ * @param {object} error - The Error object
+ * @param {boolean} result - true - provider is registered;  false - provider is not registered.
+ */</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Thu Nov 09 2017 11:16:39 GMT-0800 (PST) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="../../scripts/linenumber.js"></script>
+</body>
+</html>

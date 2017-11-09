@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>models/virtualMachine.js - Documentation</title>
+    <meta name="viewport" content="initial-scale=.75">
+    <script src="../../scripts/prettify/prettify.js"></script>
+    <script src="../../scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="../../styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="../../styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><span><a href="../../index.html">Home</a> <span class="github-short">| <a href="https://github.com/azure/azure-sdk-for-node.git">GitHub</a></span></span></h2><h3>Classes</h3><ul><li><a href="AccessUri.html">AccessUri</a><ul class='methods'><li data-type='method'><a href="AccessUri.html#mapper">mapper</a></li></ul></li><li><a href="AdditionalUnattendContent.html">AdditionalUnattendContent</a><ul class='methods'><li data-type='method'><a href="AdditionalUnattendContent.html#mapper">mapper</a></li></ul></li><li><a href="ApiEntityReference.html">ApiEntityReference</a><ul class='methods'><li data-type='method'><a href="ApiEntityReference.html#mapper">mapper</a></li></ul></li><li><a href="ApiError.html">ApiError</a><ul class='methods'><li data-type='method'><a href="ApiError.html#mapper">mapper</a></li></ul></li><li><a href="ApiErrorBase.html">ApiErrorBase</a><ul class='methods'><li data-type='method'><a href="ApiErrorBase.html#mapper">mapper</a></li></ul></li><li><a href="AvailabilitySet.html">AvailabilitySet</a><ul class='methods'><li data-type='method'><a href="AvailabilitySet.html#mapper">mapper</a></li></ul></li><li><a href="AvailabilitySetListResult.html">AvailabilitySetListResult</a><ul class='methods'><li data-type='method'><a href="AvailabilitySetListResult.html#mapper">mapper</a></li></ul></li><li><a href="AvailabilitySets.html">AvailabilitySets</a><ul class='methods'><li data-type='method'><a href="AvailabilitySets.html#createOrUpdate">createOrUpdate</a></li><li data-type='method'><a href="AvailabilitySets.html#createOrUpdateWithHttpOperationResponse">createOrUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="AvailabilitySets.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="AvailabilitySets.html#deleteMethodWithHttpOperationResponse">deleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="AvailabilitySets.html#get">get</a></li><li data-type='method'><a href="AvailabilitySets.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="AvailabilitySets.html#list">list</a></li><li data-type='method'><a href="AvailabilitySets.html#listAvailableSizes">listAvailableSizes</a></li><li data-type='method'><a href="AvailabilitySets.html#listAvailableSizesWithHttpOperationResponse">listAvailableSizesWithHttpOperationResponse</a></li><li data-type='method'><a href="AvailabilitySets.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li></ul></li><li><a href="BootDiagnostics.html">BootDiagnostics</a><ul class='methods'><li data-type='method'><a href="BootDiagnostics.html#mapper">mapper</a></li></ul></li><li><a href="BootDiagnosticsInstanceView.html">BootDiagnosticsInstanceView</a><ul class='methods'><li data-type='method'><a href="BootDiagnosticsInstanceView.html#mapper">mapper</a></li></ul></li><li><a href="ComputeLongRunningOperationProperties.html">ComputeLongRunningOperationProperties</a><ul class='methods'><li data-type='method'><a href="ComputeLongRunningOperationProperties.html#mapper">mapper</a></li></ul></li><li><a href="ComputeManagementClient.html">ComputeManagementClient</a></li><li><a href="ContainerService.html">ContainerService</a><ul class='methods'><li data-type='method'><a href="ContainerService.html#mapper">mapper</a></li></ul></li><li><a href="ContainerServiceAgentPoolProfile.html">ContainerServiceAgentPoolProfile</a><ul class='methods'><li data-type='method'><a href="ContainerServiceAgentPoolProfile.html#mapper">mapper</a></li></ul></li><li><a href="ContainerServiceCustomProfile.html">ContainerServiceCustomProfile</a><ul class='methods'><li data-type='method'><a href="ContainerServiceCustomProfile.html#mapper">mapper</a></li></ul></li><li><a href="ContainerServiceDiagnosticsProfile.html">ContainerServiceDiagnosticsProfile</a><ul class='methods'><li data-type='method'><a href="ContainerServiceDiagnosticsProfile.html#mapper">mapper</a></li></ul></li><li><a href="ContainerServiceLinuxProfile.html">ContainerServiceLinuxProfile</a><ul class='methods'><li data-type='method'><a href="ContainerServiceLinuxProfile.html#mapper">mapper</a></li></ul></li><li><a href="ContainerServiceListResult.html">ContainerServiceListResult</a><ul class='methods'><li data-type='method'><a href="ContainerServiceListResult.html#mapper">mapper</a></li></ul></li><li><a href="ContainerServiceMasterProfile.html">ContainerServiceMasterProfile</a><ul class='methods'><li data-type='method'><a href="ContainerServiceMasterProfile.html#mapper">mapper</a></li></ul></li><li><a href="ContainerServiceOrchestratorProfile.html">ContainerServiceOrchestratorProfile</a><ul class='methods'><li data-type='method'><a href="ContainerServiceOrchestratorProfile.html#mapper">mapper</a></li></ul></li><li><a href="ContainerServices.html">ContainerServices</a><ul class='methods'><li data-type='method'><a href="ContainerServices.html#beginCreateOrUpdate">beginCreateOrUpdate</a></li><li data-type='method'><a href="ContainerServices.html#beginCreateOrUpdateWithHttpOperationResponse">beginCreateOrUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="ContainerServices.html#beginDeleteMethod">beginDeleteMethod</a></li><li data-type='method'><a href="ContainerServices.html#beginDeleteMethodWithHttpOperationResponse">beginDeleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="ContainerServices.html#createOrUpdate">createOrUpdate</a></li><li data-type='method'><a href="ContainerServices.html#createOrUpdateWithHttpOperationResponse">createOrUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="ContainerServices.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="ContainerServices.html#deleteMethodWithHttpOperationResponse">deleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="ContainerServices.html#get">get</a></li><li data-type='method'><a href="ContainerServices.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="ContainerServices.html#list">list</a></li><li data-type='method'><a href="ContainerServices.html#listByResourceGroup">listByResourceGroup</a></li><li data-type='method'><a href="ContainerServices.html#listByResourceGroupNext">listByResourceGroupNext</a></li><li data-type='method'><a href="ContainerServices.html#listByResourceGroupNextWithHttpOperationResponse">listByResourceGroupNextWithHttpOperationResponse</a></li><li data-type='method'><a href="ContainerServices.html#listByResourceGroupWithHttpOperationResponse">listByResourceGroupWithHttpOperationResponse</a></li><li data-type='method'><a href="ContainerServices.html#listNext">listNext</a></li><li data-type='method'><a href="ContainerServices.html#listNextWithHttpOperationResponse">listNextWithHttpOperationResponse</a></li><li data-type='method'><a href="ContainerServices.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li></ul></li><li><a href="ContainerServiceServicePrincipalProfile.html">ContainerServiceServicePrincipalProfile</a><ul class='methods'><li data-type='method'><a href="ContainerServiceServicePrincipalProfile.html#mapper">mapper</a></li></ul></li><li><a href="ContainerServiceSshConfiguration.html">ContainerServiceSshConfiguration</a><ul class='methods'><li data-type='method'><a href="ContainerServiceSshConfiguration.html#mapper">mapper</a></li></ul></li><li><a href="ContainerServiceSshPublicKey.html">ContainerServiceSshPublicKey</a><ul class='methods'><li data-type='method'><a href="ContainerServiceSshPublicKey.html#mapper">mapper</a></li></ul></li><li><a href="ContainerServiceVMDiagnostics.html">ContainerServiceVMDiagnostics</a><ul class='methods'><li data-type='method'><a href="ContainerServiceVMDiagnostics.html#mapper">mapper</a></li></ul></li><li><a href="ContainerServiceWindowsProfile.html">ContainerServiceWindowsProfile</a><ul class='methods'><li data-type='method'><a href="ContainerServiceWindowsProfile.html#mapper">mapper</a></li></ul></li><li><a href="CreationData.html">CreationData</a><ul class='methods'><li data-type='method'><a href="CreationData.html#mapper">mapper</a></li></ul></li><li><a href="DataDisk.html">DataDisk</a><ul class='methods'><li data-type='method'><a href="DataDisk.html#mapper">mapper</a></li></ul></li><li><a href="DataDiskImage.html">DataDiskImage</a><ul class='methods'><li data-type='method'><a href="DataDiskImage.html#mapper">mapper</a></li></ul></li><li><a href="DiagnosticsProfile.html">DiagnosticsProfile</a><ul class='methods'><li data-type='method'><a href="DiagnosticsProfile.html#mapper">mapper</a></li></ul></li><li><a href="Disk.html">Disk</a><ul class='methods'><li data-type='method'><a href="Disk.html#mapper">mapper</a></li></ul></li><li><a href="DiskEncryptionSettings.html">DiskEncryptionSettings</a><ul class='methods'><li data-type='method'><a href="DiskEncryptionSettings.html#mapper">mapper</a></li></ul></li><li><a href="DiskInstanceView.html">DiskInstanceView</a><ul class='methods'><li data-type='method'><a href="DiskInstanceView.html#mapper">mapper</a></li></ul></li><li><a href="DiskList.html">DiskList</a><ul class='methods'><li data-type='method'><a href="DiskList.html#mapper">mapper</a></li></ul></li><li><a href="Disks.html">Disks</a><ul class='methods'><li data-type='method'><a href="Disks.html#beginCreateOrUpdate">beginCreateOrUpdate</a></li><li data-type='method'><a href="Disks.html#beginCreateOrUpdateWithHttpOperationResponse">beginCreateOrUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="Disks.html#beginDeleteMethod">beginDeleteMethod</a></li><li data-type='method'><a href="Disks.html#beginDeleteMethodWithHttpOperationResponse">beginDeleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="Disks.html#beginGrantAccess">beginGrantAccess</a></li><li data-type='method'><a href="Disks.html#beginGrantAccessWithHttpOperationResponse">beginGrantAccessWithHttpOperationResponse</a></li><li data-type='method'><a href="Disks.html#beginRevokeAccess">beginRevokeAccess</a></li><li data-type='method'><a href="Disks.html#beginRevokeAccessWithHttpOperationResponse">beginRevokeAccessWithHttpOperationResponse</a></li><li data-type='method'><a href="Disks.html#beginUpdate">beginUpdate</a></li><li data-type='method'><a href="Disks.html#beginUpdateWithHttpOperationResponse">beginUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="Disks.html#createOrUpdate">createOrUpdate</a></li><li data-type='method'><a href="Disks.html#createOrUpdateWithHttpOperationResponse">createOrUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="Disks.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="Disks.html#deleteMethodWithHttpOperationResponse">deleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="Disks.html#get">get</a></li><li data-type='method'><a href="Disks.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="Disks.html#grantAccess">grantAccess</a></li><li data-type='method'><a href="Disks.html#grantAccessWithHttpOperationResponse">grantAccessWithHttpOperationResponse</a></li><li data-type='method'><a href="Disks.html#list">list</a></li><li data-type='method'><a href="Disks.html#listByResourceGroup">listByResourceGroup</a></li><li data-type='method'><a href="Disks.html#listByResourceGroupNext">listByResourceGroupNext</a></li><li data-type='method'><a href="Disks.html#listByResourceGroupNextWithHttpOperationResponse">listByResourceGroupNextWithHttpOperationResponse</a></li><li data-type='method'><a href="Disks.html#listByResourceGroupWithHttpOperationResponse">listByResourceGroupWithHttpOperationResponse</a></li><li data-type='method'><a href="Disks.html#listNext">listNext</a></li><li data-type='method'><a href="Disks.html#listNextWithHttpOperationResponse">listNextWithHttpOperationResponse</a></li><li data-type='method'><a href="Disks.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li><li data-type='method'><a href="Disks.html#revokeAccess">revokeAccess</a></li><li data-type='method'><a href="Disks.html#revokeAccessWithHttpOperationResponse">revokeAccessWithHttpOperationResponse</a></li><li data-type='method'><a href="Disks.html#update">update</a></li><li data-type='method'><a href="Disks.html#updateWithHttpOperationResponse">updateWithHttpOperationResponse</a></li></ul></li><li><a href="DiskSku.html">DiskSku</a><ul class='methods'><li data-type='method'><a href="DiskSku.html#mapper">mapper</a></li></ul></li><li><a href="DiskUpdate.html">DiskUpdate</a><ul class='methods'><li data-type='method'><a href="DiskUpdate.html#mapper">mapper</a></li></ul></li><li><a href="EncryptionSettings.html">EncryptionSettings</a><ul class='methods'><li data-type='method'><a href="EncryptionSettings.html#mapper">mapper</a></li></ul></li><li><a href="GrantAccessData.html">GrantAccessData</a><ul class='methods'><li data-type='method'><a href="GrantAccessData.html#mapper">mapper</a></li></ul></li><li><a href="HardwareProfile.html">HardwareProfile</a><ul class='methods'><li data-type='method'><a href="HardwareProfile.html#mapper">mapper</a></li></ul></li><li><a href="Image.html">Image</a><ul class='methods'><li data-type='method'><a href="Image.html#mapper">mapper</a></li></ul></li><li><a href="ImageDataDisk.html">ImageDataDisk</a><ul class='methods'><li data-type='method'><a href="ImageDataDisk.html#mapper">mapper</a></li></ul></li><li><a href="ImageDiskReference.html">ImageDiskReference</a><ul class='methods'><li data-type='method'><a href="ImageDiskReference.html#mapper">mapper</a></li></ul></li><li><a href="ImageListResult.html">ImageListResult</a><ul class='methods'><li data-type='method'><a href="ImageListResult.html#mapper">mapper</a></li></ul></li><li><a href="ImageOSDisk.html">ImageOSDisk</a><ul class='methods'><li data-type='method'><a href="ImageOSDisk.html#mapper">mapper</a></li></ul></li><li><a href="ImageReference.html">ImageReference</a><ul class='methods'><li data-type='method'><a href="ImageReference.html#mapper">mapper</a></li></ul></li><li><a href="Images.html">Images</a><ul class='methods'><li data-type='method'><a href="Images.html#beginCreateOrUpdate">beginCreateOrUpdate</a></li><li data-type='method'><a href="Images.html#beginCreateOrUpdateWithHttpOperationResponse">beginCreateOrUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="Images.html#beginDeleteMethod">beginDeleteMethod</a></li><li data-type='method'><a href="Images.html#beginDeleteMethodWithHttpOperationResponse">beginDeleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="Images.html#createOrUpdate">createOrUpdate</a></li><li data-type='method'><a href="Images.html#createOrUpdateWithHttpOperationResponse">createOrUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="Images.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="Images.html#deleteMethodWithHttpOperationResponse">deleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="Images.html#get">get</a></li><li data-type='method'><a href="Images.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="Images.html#list">list</a></li><li data-type='method'><a href="Images.html#listByResourceGroup">listByResourceGroup</a></li><li data-type='method'><a href="Images.html#listByResourceGroupNext">listByResourceGroupNext</a></li><li data-type='method'><a href="Images.html#listByResourceGroupNextWithHttpOperationResponse">listByResourceGroupNextWithHttpOperationResponse</a></li><li data-type='method'><a href="Images.html#listByResourceGroupWithHttpOperationResponse">listByResourceGroupWithHttpOperationResponse</a></li><li data-type='method'><a href="Images.html#listNext">listNext</a></li><li data-type='method'><a href="Images.html#listNextWithHttpOperationResponse">listNextWithHttpOperationResponse</a></li><li data-type='method'><a href="Images.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li></ul></li><li><a href="ImageStorageProfile.html">ImageStorageProfile</a><ul class='methods'><li data-type='method'><a href="ImageStorageProfile.html#mapper">mapper</a></li></ul></li><li><a href="InnerError.html">InnerError</a><ul class='methods'><li data-type='method'><a href="InnerError.html#mapper">mapper</a></li></ul></li><li><a href="InstanceViewStatus.html">InstanceViewStatus</a><ul class='methods'><li data-type='method'><a href="InstanceViewStatus.html#mapper">mapper</a></li></ul></li><li><a href="KeyVaultAndKeyReference.html">KeyVaultAndKeyReference</a><ul class='methods'><li data-type='method'><a href="KeyVaultAndKeyReference.html#mapper">mapper</a></li></ul></li><li><a href="KeyVaultAndSecretReference.html">KeyVaultAndSecretReference</a><ul class='methods'><li data-type='method'><a href="KeyVaultAndSecretReference.html#mapper">mapper</a></li></ul></li><li><a href="KeyVaultKeyReference.html">KeyVaultKeyReference</a><ul class='methods'><li data-type='method'><a href="KeyVaultKeyReference.html#mapper">mapper</a></li></ul></li><li><a href="KeyVaultSecretReference.html">KeyVaultSecretReference</a><ul class='methods'><li data-type='method'><a href="KeyVaultSecretReference.html#mapper">mapper</a></li></ul></li><li><a href="LinuxConfiguration.html">LinuxConfiguration</a><ul class='methods'><li data-type='method'><a href="LinuxConfiguration.html#mapper">mapper</a></li></ul></li><li><a href="ListUsagesResult.html">ListUsagesResult</a><ul class='methods'><li data-type='method'><a href="ListUsagesResult.html#mapper">mapper</a></li></ul></li><li><a href="MaintenanceRedeployStatus.html">MaintenanceRedeployStatus</a><ul class='methods'><li data-type='method'><a href="MaintenanceRedeployStatus.html#mapper">mapper</a></li></ul></li><li><a href="ManagedDiskParameters.html">ManagedDiskParameters</a><ul class='methods'><li data-type='method'><a href="ManagedDiskParameters.html#mapper">mapper</a></li></ul></li><li><a href="NetworkInterfaceReference.html">NetworkInterfaceReference</a><ul class='methods'><li data-type='method'><a href="NetworkInterfaceReference.html#mapper">mapper</a></li></ul></li><li><a href="NetworkProfile.html">NetworkProfile</a><ul class='methods'><li data-type='method'><a href="NetworkProfile.html#mapper">mapper</a></li></ul></li><li><a href="OperationStatusResponse.html">OperationStatusResponse</a><ul class='methods'><li data-type='method'><a href="OperationStatusResponse.html#mapper">mapper</a></li></ul></li><li><a href="OSDisk.html">OSDisk</a><ul class='methods'><li data-type='method'><a href="OSDisk.html#mapper">mapper</a></li></ul></li><li><a href="OSDiskImage.html">OSDiskImage</a><ul class='methods'><li data-type='method'><a href="OSDiskImage.html#mapper">mapper</a></li></ul></li><li><a href="OSProfile.html">OSProfile</a><ul class='methods'><li data-type='method'><a href="OSProfile.html#mapper">mapper</a></li></ul></li><li><a href="Plan.html">Plan</a><ul class='methods'><li data-type='method'><a href="Plan.html#mapper">mapper</a></li></ul></li><li><a href="PurchasePlan.html">PurchasePlan</a><ul class='methods'><li data-type='method'><a href="PurchasePlan.html#mapper">mapper</a></li></ul></li><li><a href="Resource.html">Resource</a><ul class='methods'><li data-type='method'><a href="Resource.html#mapper">mapper</a></li></ul></li><li><a href="ResourceSku.html">ResourceSku</a><ul class='methods'><li data-type='method'><a href="ResourceSku.html#mapper">mapper</a></li></ul></li><li><a href="ResourceSkuCapabilities.html">ResourceSkuCapabilities</a><ul class='methods'><li data-type='method'><a href="ResourceSkuCapabilities.html#mapper">mapper</a></li></ul></li><li><a href="ResourceSkuCapacity.html">ResourceSkuCapacity</a><ul class='methods'><li data-type='method'><a href="ResourceSkuCapacity.html#mapper">mapper</a></li></ul></li><li><a href="ResourceSkuCosts.html">ResourceSkuCosts</a><ul class='methods'><li data-type='method'><a href="ResourceSkuCosts.html#mapper">mapper</a></li></ul></li><li><a href="ResourceSkuRestrictions.html">ResourceSkuRestrictions</a><ul class='methods'><li data-type='method'><a href="ResourceSkuRestrictions.html#mapper">mapper</a></li></ul></li><li><a href="ResourceSkus.html">ResourceSkus</a><ul class='methods'><li data-type='method'><a href="ResourceSkus.html#list">list</a></li><li data-type='method'><a href="ResourceSkus.html#listNext">listNext</a></li><li data-type='method'><a href="ResourceSkus.html#listNextWithHttpOperationResponse">listNextWithHttpOperationResponse</a></li><li data-type='method'><a href="ResourceSkus.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li></ul></li><li><a href="ResourceSkusResult.html">ResourceSkusResult</a><ul class='methods'><li data-type='method'><a href="ResourceSkusResult.html#mapper">mapper</a></li></ul></li><li><a href="ResourceUpdate.html">ResourceUpdate</a><ul class='methods'><li data-type='method'><a href="ResourceUpdate.html#mapper">mapper</a></li></ul></li><li><a href="RollingUpgradePolicy.html">RollingUpgradePolicy</a><ul class='methods'><li data-type='method'><a href="RollingUpgradePolicy.html#mapper">mapper</a></li></ul></li><li><a href="RollingUpgradeProgressInfo.html">RollingUpgradeProgressInfo</a><ul class='methods'><li data-type='method'><a href="RollingUpgradeProgressInfo.html#mapper">mapper</a></li></ul></li><li><a href="RollingUpgradeRunningStatus.html">RollingUpgradeRunningStatus</a><ul class='methods'><li data-type='method'><a href="RollingUpgradeRunningStatus.html#mapper">mapper</a></li></ul></li><li><a href="RollingUpgradeStatusInfo.html">RollingUpgradeStatusInfo</a><ul class='methods'><li data-type='method'><a href="RollingUpgradeStatusInfo.html#mapper">mapper</a></li></ul></li><li><a href="RunCommandDocument.html">RunCommandDocument</a><ul class='methods'><li data-type='method'><a href="RunCommandDocument.html#mapper">mapper</a></li></ul></li><li><a href="RunCommandDocumentBase.html">RunCommandDocumentBase</a><ul class='methods'><li data-type='method'><a href="RunCommandDocumentBase.html#mapper">mapper</a></li></ul></li><li><a href="RunCommandInput.html">RunCommandInput</a><ul class='methods'><li data-type='method'><a href="RunCommandInput.html#mapper">mapper</a></li></ul></li><li><a href="RunCommandInputParameter.html">RunCommandInputParameter</a><ul class='methods'><li data-type='method'><a href="RunCommandInputParameter.html#mapper">mapper</a></li></ul></li><li><a href="RunCommandListResult.html">RunCommandListResult</a><ul class='methods'><li data-type='method'><a href="RunCommandListResult.html#mapper">mapper</a></li></ul></li><li><a href="RunCommandParameterDefinition.html">RunCommandParameterDefinition</a><ul class='methods'><li data-type='method'><a href="RunCommandParameterDefinition.html#mapper">mapper</a></li></ul></li><li><a href="RunCommandResult.html">RunCommandResult</a><ul class='methods'><li data-type='method'><a href="RunCommandResult.html#mapper">mapper</a></li></ul></li><li><a href="Sku.html">Sku</a><ul class='methods'><li data-type='method'><a href="Sku.html#mapper">mapper</a></li></ul></li><li><a href="Snapshot.html">Snapshot</a><ul class='methods'><li data-type='method'><a href="Snapshot.html#mapper">mapper</a></li></ul></li><li><a href="SnapshotList.html">SnapshotList</a><ul class='methods'><li data-type='method'><a href="SnapshotList.html#mapper">mapper</a></li></ul></li><li><a href="Snapshots.html">Snapshots</a><ul class='methods'><li data-type='method'><a href="Snapshots.html#beginCreateOrUpdate">beginCreateOrUpdate</a></li><li data-type='method'><a href="Snapshots.html#beginCreateOrUpdateWithHttpOperationResponse">beginCreateOrUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="Snapshots.html#beginDeleteMethod">beginDeleteMethod</a></li><li data-type='method'><a href="Snapshots.html#beginDeleteMethodWithHttpOperationResponse">beginDeleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="Snapshots.html#beginGrantAccess">beginGrantAccess</a></li><li data-type='method'><a href="Snapshots.html#beginGrantAccessWithHttpOperationResponse">beginGrantAccessWithHttpOperationResponse</a></li><li data-type='method'><a href="Snapshots.html#beginRevokeAccess">beginRevokeAccess</a></li><li data-type='method'><a href="Snapshots.html#beginRevokeAccessWithHttpOperationResponse">beginRevokeAccessWithHttpOperationResponse</a></li><li data-type='method'><a href="Snapshots.html#beginUpdate">beginUpdate</a></li><li data-type='method'><a href="Snapshots.html#beginUpdateWithHttpOperationResponse">beginUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="Snapshots.html#createOrUpdate">createOrUpdate</a></li><li data-type='method'><a href="Snapshots.html#createOrUpdateWithHttpOperationResponse">createOrUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="Snapshots.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="Snapshots.html#deleteMethodWithHttpOperationResponse">deleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="Snapshots.html#get">get</a></li><li data-type='method'><a href="Snapshots.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="Snapshots.html#grantAccess">grantAccess</a></li><li data-type='method'><a href="Snapshots.html#grantAccessWithHttpOperationResponse">grantAccessWithHttpOperationResponse</a></li><li data-type='method'><a href="Snapshots.html#list">list</a></li><li data-type='method'><a href="Snapshots.html#listByResourceGroup">listByResourceGroup</a></li><li data-type='method'><a href="Snapshots.html#listByResourceGroupNext">listByResourceGroupNext</a></li><li data-type='method'><a href="Snapshots.html#listByResourceGroupNextWithHttpOperationResponse">listByResourceGroupNextWithHttpOperationResponse</a></li><li data-type='method'><a href="Snapshots.html#listByResourceGroupWithHttpOperationResponse">listByResourceGroupWithHttpOperationResponse</a></li><li data-type='method'><a href="Snapshots.html#listNext">listNext</a></li><li data-type='method'><a href="Snapshots.html#listNextWithHttpOperationResponse">listNextWithHttpOperationResponse</a></li><li data-type='method'><a href="Snapshots.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li><li data-type='method'><a href="Snapshots.html#revokeAccess">revokeAccess</a></li><li data-type='method'><a href="Snapshots.html#revokeAccessWithHttpOperationResponse">revokeAccessWithHttpOperationResponse</a></li><li data-type='method'><a href="Snapshots.html#update">update</a></li><li data-type='method'><a href="Snapshots.html#updateWithHttpOperationResponse">updateWithHttpOperationResponse</a></li></ul></li><li><a href="SnapshotUpdate.html">SnapshotUpdate</a><ul class='methods'><li data-type='method'><a href="SnapshotUpdate.html#mapper">mapper</a></li></ul></li><li><a href="SourceVault.html">SourceVault</a><ul class='methods'><li data-type='method'><a href="SourceVault.html#mapper">mapper</a></li></ul></li><li><a href="SshConfiguration.html">SshConfiguration</a><ul class='methods'><li data-type='method'><a href="SshConfiguration.html#mapper">mapper</a></li></ul></li><li><a href="SshPublicKey.html">SshPublicKey</a><ul class='methods'><li data-type='method'><a href="SshPublicKey.html#mapper">mapper</a></li></ul></li><li><a href="StorageProfile.html">StorageProfile</a><ul class='methods'><li data-type='method'><a href="StorageProfile.html#mapper">mapper</a></li></ul></li><li><a href="SubResource.html">SubResource</a><ul class='methods'><li data-type='method'><a href="SubResource.html#mapper">mapper</a></li></ul></li><li><a href="SubResourceReadOnly.html">SubResourceReadOnly</a><ul class='methods'><li data-type='method'><a href="SubResourceReadOnly.html#mapper">mapper</a></li></ul></li><li><a href="UpdateResource.html">UpdateResource</a><ul class='methods'><li data-type='method'><a href="UpdateResource.html#mapper">mapper</a></li></ul></li><li><a href="UpgradePolicy.html">UpgradePolicy</a><ul class='methods'><li data-type='method'><a href="UpgradePolicy.html#mapper">mapper</a></li></ul></li><li><a href="Usage.html">Usage</a><ul class='methods'><li data-type='method'><a href="Usage.html#mapper">mapper</a></li></ul></li><li><a href="UsageName.html">UsageName</a><ul class='methods'><li data-type='method'><a href="UsageName.html#mapper">mapper</a></li></ul></li><li><a href="UsageOperations.html">UsageOperations</a><ul class='methods'><li data-type='method'><a href="UsageOperations.html#list">list</a></li><li data-type='method'><a href="UsageOperations.html#listNext">listNext</a></li><li data-type='method'><a href="UsageOperations.html#listNextWithHttpOperationResponse">listNextWithHttpOperationResponse</a></li><li data-type='method'><a href="UsageOperations.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li></ul></li><li><a href="VaultCertificate.html">VaultCertificate</a><ul class='methods'><li data-type='method'><a href="VaultCertificate.html#mapper">mapper</a></li></ul></li><li><a href="VaultSecretGroup.html">VaultSecretGroup</a><ul class='methods'><li data-type='method'><a href="VaultSecretGroup.html#mapper">mapper</a></li></ul></li><li><a href="VirtualHardDisk.html">VirtualHardDisk</a><ul class='methods'><li data-type='method'><a href="VirtualHardDisk.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachine.html">VirtualMachine</a><ul class='methods'><li data-type='method'><a href="VirtualMachine.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachineAgentInstanceView.html">VirtualMachineAgentInstanceView</a><ul class='methods'><li data-type='method'><a href="VirtualMachineAgentInstanceView.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachineCaptureParameters.html">VirtualMachineCaptureParameters</a><ul class='methods'><li data-type='method'><a href="VirtualMachineCaptureParameters.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachineCaptureResult.html">VirtualMachineCaptureResult</a><ul class='methods'><li data-type='method'><a href="VirtualMachineCaptureResult.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachineExtension.html">VirtualMachineExtension</a><ul class='methods'><li data-type='method'><a href="VirtualMachineExtension.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachineExtensionHandlerInstanceView.html">VirtualMachineExtensionHandlerInstanceView</a><ul class='methods'><li data-type='method'><a href="VirtualMachineExtensionHandlerInstanceView.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachineExtensionImage.html">VirtualMachineExtensionImage</a><ul class='methods'><li data-type='method'><a href="VirtualMachineExtensionImage.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachineExtensionImages.html">VirtualMachineExtensionImages</a><ul class='methods'><li data-type='method'><a href="VirtualMachineExtensionImages.html#get">get</a></li><li data-type='method'><a href="VirtualMachineExtensionImages.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineExtensionImages.html#listTypes">listTypes</a></li><li data-type='method'><a href="VirtualMachineExtensionImages.html#listTypesWithHttpOperationResponse">listTypesWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineExtensionImages.html#listVersions">listVersions</a></li><li data-type='method'><a href="VirtualMachineExtensionImages.html#listVersionsWithHttpOperationResponse">listVersionsWithHttpOperationResponse</a></li></ul></li><li><a href="VirtualMachineExtensionInstanceView.html">VirtualMachineExtensionInstanceView</a><ul class='methods'><li data-type='method'><a href="VirtualMachineExtensionInstanceView.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachineExtensions.html">VirtualMachineExtensions</a><ul class='methods'><li data-type='method'><a href="VirtualMachineExtensions.html#beginCreateOrUpdate">beginCreateOrUpdate</a></li><li data-type='method'><a href="VirtualMachineExtensions.html#beginCreateOrUpdateWithHttpOperationResponse">beginCreateOrUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineExtensions.html#beginDeleteMethod">beginDeleteMethod</a></li><li data-type='method'><a href="VirtualMachineExtensions.html#beginDeleteMethodWithHttpOperationResponse">beginDeleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineExtensions.html#createOrUpdate">createOrUpdate</a></li><li data-type='method'><a href="VirtualMachineExtensions.html#createOrUpdateWithHttpOperationResponse">createOrUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineExtensions.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="VirtualMachineExtensions.html#deleteMethodWithHttpOperationResponse">deleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineExtensions.html#get">get</a></li><li data-type='method'><a href="VirtualMachineExtensions.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li></ul></li><li><a href="VirtualMachineHealthStatus.html">VirtualMachineHealthStatus</a><ul class='methods'><li data-type='method'><a href="VirtualMachineHealthStatus.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachineIdentity.html">VirtualMachineIdentity</a><ul class='methods'><li data-type='method'><a href="VirtualMachineIdentity.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachineImage.html">VirtualMachineImage</a><ul class='methods'><li data-type='method'><a href="VirtualMachineImage.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachineImageResource.html">VirtualMachineImageResource</a><ul class='methods'><li data-type='method'><a href="VirtualMachineImageResource.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachineImages.html">VirtualMachineImages</a><ul class='methods'><li data-type='method'><a href="VirtualMachineImages.html#get">get</a></li><li data-type='method'><a href="VirtualMachineImages.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineImages.html#list">list</a></li><li data-type='method'><a href="VirtualMachineImages.html#listOffers">listOffers</a></li><li data-type='method'><a href="VirtualMachineImages.html#listOffersWithHttpOperationResponse">listOffersWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineImages.html#listPublishers">listPublishers</a></li><li data-type='method'><a href="VirtualMachineImages.html#listPublishersWithHttpOperationResponse">listPublishersWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineImages.html#listSkus">listSkus</a></li><li data-type='method'><a href="VirtualMachineImages.html#listSkusWithHttpOperationResponse">listSkusWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineImages.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li></ul></li><li><a href="VirtualMachineInstanceView.html">VirtualMachineInstanceView</a><ul class='methods'><li data-type='method'><a href="VirtualMachineInstanceView.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachineListResult.html">VirtualMachineListResult</a><ul class='methods'><li data-type='method'><a href="VirtualMachineListResult.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachineRunCommands.html">VirtualMachineRunCommands</a><ul class='methods'><li data-type='method'><a href="VirtualMachineRunCommands.html#get">get</a></li><li data-type='method'><a href="VirtualMachineRunCommands.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineRunCommands.html#list">list</a></li><li data-type='method'><a href="VirtualMachineRunCommands.html#listNext">listNext</a></li><li data-type='method'><a href="VirtualMachineRunCommands.html#listNextWithHttpOperationResponse">listNextWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineRunCommands.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li></ul></li><li><a href="VirtualMachines.html">VirtualMachines</a><ul class='methods'><li data-type='method'><a href="VirtualMachines.html#beginCapture">beginCapture</a></li><li data-type='method'><a href="VirtualMachines.html#beginCaptureWithHttpOperationResponse">beginCaptureWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachines.html#beginConvertToManagedDisks">beginConvertToManagedDisks</a></li><li data-type='method'><a href="VirtualMachines.html#beginConvertToManagedDisksWithHttpOperationResponse">beginConvertToManagedDisksWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachines.html#beginCreateOrUpdate">beginCreateOrUpdate</a></li><li data-type='method'><a href="VirtualMachines.html#beginCreateOrUpdateWithHttpOperationResponse">beginCreateOrUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachines.html#beginDeallocate">beginDeallocate</a></li><li data-type='method'><a href="VirtualMachines.html#beginDeallocateWithHttpOperationResponse">beginDeallocateWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachines.html#beginDeleteMethod">beginDeleteMethod</a></li><li data-type='method'><a href="VirtualMachines.html#beginDeleteMethodWithHttpOperationResponse">beginDeleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachines.html#beginPerformMaintenance">beginPerformMaintenance</a></li><li data-type='method'><a href="VirtualMachines.html#beginPerformMaintenanceWithHttpOperationResponse">beginPerformMaintenanceWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachines.html#beginPowerOff">beginPowerOff</a></li><li data-type='method'><a href="VirtualMachines.html#beginPowerOffWithHttpOperationResponse">beginPowerOffWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachines.html#beginRedeploy">beginRedeploy</a></li><li data-type='method'><a href="VirtualMachines.html#beginRedeployWithHttpOperationResponse">beginRedeployWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachines.html#beginRestart">beginRestart</a></li><li data-type='method'><a href="VirtualMachines.html#beginRestartWithHttpOperationResponse">beginRestartWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachines.html#beginRunCommand">beginRunCommand</a></li><li data-type='method'><a href="VirtualMachines.html#beginRunCommandWithHttpOperationResponse">beginRunCommandWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachines.html#beginStart">beginStart</a></li><li data-type='method'><a href="VirtualMachines.html#beginStartWithHttpOperationResponse">beginStartWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachines.html#capture">capture</a></li><li data-type='method'><a href="VirtualMachines.html#captureWithHttpOperationResponse">captureWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachines.html#convertToManagedDisks">convertToManagedDisks</a></li><li data-type='method'><a href="VirtualMachines.html#convertToManagedDisksWithHttpOperationResponse">convertToManagedDisksWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachines.html#createOrUpdate">createOrUpdate</a></li><li data-type='method'><a href="VirtualMachines.html#createOrUpdateWithHttpOperationResponse">createOrUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachines.html#deallocate">deallocate</a></li><li data-type='method'><a href="VirtualMachines.html#deallocateWithHttpOperationResponse">deallocateWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachines.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="VirtualMachines.html#deleteMethodWithHttpOperationResponse">deleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachines.html#generalize">generalize</a></li><li data-type='method'><a href="VirtualMachines.html#generalizeWithHttpOperationResponse">generalizeWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachines.html#get">get</a></li><li data-type='method'><a href="VirtualMachines.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachines.html#instanceView">instanceView</a></li><li data-type='method'><a href="VirtualMachines.html#instanceViewWithHttpOperationResponse">instanceViewWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachines.html#list">list</a></li><li data-type='method'><a href="VirtualMachines.html#listAll">listAll</a></li><li data-type='method'><a href="VirtualMachines.html#listAllNext">listAllNext</a></li><li data-type='method'><a href="VirtualMachines.html#listAllNextWithHttpOperationResponse">listAllNextWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachines.html#listAllWithHttpOperationResponse">listAllWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachines.html#listAvailableSizes">listAvailableSizes</a></li><li data-type='method'><a href="VirtualMachines.html#listAvailableSizesWithHttpOperationResponse">listAvailableSizesWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachines.html#listNext">listNext</a></li><li data-type='method'><a href="VirtualMachines.html#listNextWithHttpOperationResponse">listNextWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachines.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachines.html#performMaintenance">performMaintenance</a></li><li data-type='method'><a href="VirtualMachines.html#performMaintenanceWithHttpOperationResponse">performMaintenanceWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachines.html#powerOff">powerOff</a></li><li data-type='method'><a href="VirtualMachines.html#powerOffWithHttpOperationResponse">powerOffWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachines.html#redeploy">redeploy</a></li><li data-type='method'><a href="VirtualMachines.html#redeployWithHttpOperationResponse">redeployWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachines.html#restart">restart</a></li><li data-type='method'><a href="VirtualMachines.html#restartWithHttpOperationResponse">restartWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachines.html#runCommand">runCommand</a></li><li data-type='method'><a href="VirtualMachines.html#runCommandWithHttpOperationResponse">runCommandWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachines.html#start">start</a></li><li data-type='method'><a href="VirtualMachines.html#startWithHttpOperationResponse">startWithHttpOperationResponse</a></li></ul></li><li><a href="VirtualMachineScaleSet.html">VirtualMachineScaleSet</a><ul class='methods'><li data-type='method'><a href="VirtualMachineScaleSet.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachineScaleSetDataDisk.html">VirtualMachineScaleSetDataDisk</a><ul class='methods'><li data-type='method'><a href="VirtualMachineScaleSetDataDisk.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachineScaleSetExtension.html">VirtualMachineScaleSetExtension</a><ul class='methods'><li data-type='method'><a href="VirtualMachineScaleSetExtension.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachineScaleSetExtensionListResult.html">VirtualMachineScaleSetExtensionListResult</a><ul class='methods'><li data-type='method'><a href="VirtualMachineScaleSetExtensionListResult.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachineScaleSetExtensionProfile.html">VirtualMachineScaleSetExtensionProfile</a><ul class='methods'><li data-type='method'><a href="VirtualMachineScaleSetExtensionProfile.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachineScaleSetExtensions.html">VirtualMachineScaleSetExtensions</a><ul class='methods'><li data-type='method'><a href="VirtualMachineScaleSetExtensions.html#beginCreateOrUpdate">beginCreateOrUpdate</a></li><li data-type='method'><a href="VirtualMachineScaleSetExtensions.html#beginCreateOrUpdateWithHttpOperationResponse">beginCreateOrUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineScaleSetExtensions.html#beginDeleteMethod">beginDeleteMethod</a></li><li data-type='method'><a href="VirtualMachineScaleSetExtensions.html#beginDeleteMethodWithHttpOperationResponse">beginDeleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineScaleSetExtensions.html#createOrUpdate">createOrUpdate</a></li><li data-type='method'><a href="VirtualMachineScaleSetExtensions.html#createOrUpdateWithHttpOperationResponse">createOrUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineScaleSetExtensions.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="VirtualMachineScaleSetExtensions.html#deleteMethodWithHttpOperationResponse">deleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineScaleSetExtensions.html#get">get</a></li><li data-type='method'><a href="VirtualMachineScaleSetExtensions.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineScaleSetExtensions.html#list">list</a></li><li data-type='method'><a href="VirtualMachineScaleSetExtensions.html#listNext">listNext</a></li><li data-type='method'><a href="VirtualMachineScaleSetExtensions.html#listNextWithHttpOperationResponse">listNextWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineScaleSetExtensions.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li></ul></li><li><a href="VirtualMachineScaleSetIdentity.html">VirtualMachineScaleSetIdentity</a><ul class='methods'><li data-type='method'><a href="VirtualMachineScaleSetIdentity.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachineScaleSetInstanceView.html">VirtualMachineScaleSetInstanceView</a><ul class='methods'><li data-type='method'><a href="VirtualMachineScaleSetInstanceView.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachineScaleSetInstanceViewStatusesSummary.html">VirtualMachineScaleSetInstanceViewStatusesSummary</a><ul class='methods'><li data-type='method'><a href="VirtualMachineScaleSetInstanceViewStatusesSummary.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachineScaleSetIPConfiguration.html">VirtualMachineScaleSetIPConfiguration</a><ul class='methods'><li data-type='method'><a href="VirtualMachineScaleSetIPConfiguration.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachineScaleSetListResult.html">VirtualMachineScaleSetListResult</a><ul class='methods'><li data-type='method'><a href="VirtualMachineScaleSetListResult.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachineScaleSetListSkusResult.html">VirtualMachineScaleSetListSkusResult</a><ul class='methods'><li data-type='method'><a href="VirtualMachineScaleSetListSkusResult.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachineScaleSetListWithLinkResult.html">VirtualMachineScaleSetListWithLinkResult</a><ul class='methods'><li data-type='method'><a href="VirtualMachineScaleSetListWithLinkResult.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachineScaleSetManagedDiskParameters.html">VirtualMachineScaleSetManagedDiskParameters</a><ul class='methods'><li data-type='method'><a href="VirtualMachineScaleSetManagedDiskParameters.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachineScaleSetNetworkConfiguration.html">VirtualMachineScaleSetNetworkConfiguration</a><ul class='methods'><li data-type='method'><a href="VirtualMachineScaleSetNetworkConfiguration.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachineScaleSetNetworkConfigurationDnsSettings.html">VirtualMachineScaleSetNetworkConfigurationDnsSettings</a><ul class='methods'><li data-type='method'><a href="VirtualMachineScaleSetNetworkConfigurationDnsSettings.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachineScaleSetNetworkProfile.html">VirtualMachineScaleSetNetworkProfile</a><ul class='methods'><li data-type='method'><a href="VirtualMachineScaleSetNetworkProfile.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachineScaleSetOSDisk.html">VirtualMachineScaleSetOSDisk</a><ul class='methods'><li data-type='method'><a href="VirtualMachineScaleSetOSDisk.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachineScaleSetOSProfile.html">VirtualMachineScaleSetOSProfile</a><ul class='methods'><li data-type='method'><a href="VirtualMachineScaleSetOSProfile.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachineScaleSetPublicIPAddressConfiguration.html">VirtualMachineScaleSetPublicIPAddressConfiguration</a><ul class='methods'><li data-type='method'><a href="VirtualMachineScaleSetPublicIPAddressConfiguration.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachineScaleSetPublicIPAddressConfigurationDnsSettings.html">VirtualMachineScaleSetPublicIPAddressConfigurationDnsSettings</a><ul class='methods'><li data-type='method'><a href="VirtualMachineScaleSetPublicIPAddressConfigurationDnsSettings.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachineScaleSetRollingUpgrades.html">VirtualMachineScaleSetRollingUpgrades</a><ul class='methods'><li data-type='method'><a href="VirtualMachineScaleSetRollingUpgrades.html#beginCancel">beginCancel</a></li><li data-type='method'><a href="VirtualMachineScaleSetRollingUpgrades.html#beginCancelWithHttpOperationResponse">beginCancelWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineScaleSetRollingUpgrades.html#beginStartOSUpgrade">beginStartOSUpgrade</a></li><li data-type='method'><a href="VirtualMachineScaleSetRollingUpgrades.html#beginStartOSUpgradeWithHttpOperationResponse">beginStartOSUpgradeWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineScaleSetRollingUpgrades.html#cancel">cancel</a></li><li data-type='method'><a href="VirtualMachineScaleSetRollingUpgrades.html#cancelWithHttpOperationResponse">cancelWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineScaleSetRollingUpgrades.html#getLatest">getLatest</a></li><li data-type='method'><a href="VirtualMachineScaleSetRollingUpgrades.html#getLatestWithHttpOperationResponse">getLatestWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineScaleSetRollingUpgrades.html#startOSUpgrade">startOSUpgrade</a></li><li data-type='method'><a href="VirtualMachineScaleSetRollingUpgrades.html#startOSUpgradeWithHttpOperationResponse">startOSUpgradeWithHttpOperationResponse</a></li></ul></li><li><a href="VirtualMachineScaleSets.html">VirtualMachineScaleSets</a><ul class='methods'><li data-type='method'><a href="VirtualMachineScaleSets.html#beginCreateOrUpdate">beginCreateOrUpdate</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#beginCreateOrUpdateWithHttpOperationResponse">beginCreateOrUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#beginDeallocate">beginDeallocate</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#beginDeallocateWithHttpOperationResponse">beginDeallocateWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#beginDeleteInstances">beginDeleteInstances</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#beginDeleteInstancesWithHttpOperationResponse">beginDeleteInstancesWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#beginDeleteMethod">beginDeleteMethod</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#beginDeleteMethodWithHttpOperationResponse">beginDeleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#beginPowerOff">beginPowerOff</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#beginPowerOffWithHttpOperationResponse">beginPowerOffWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#beginReimage">beginReimage</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#beginReimageAll">beginReimageAll</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#beginReimageAllWithHttpOperationResponse">beginReimageAllWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#beginReimageWithHttpOperationResponse">beginReimageWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#beginRestart">beginRestart</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#beginRestartWithHttpOperationResponse">beginRestartWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#beginStart">beginStart</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#beginStartWithHttpOperationResponse">beginStartWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#beginUpdate">beginUpdate</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#beginUpdateInstances">beginUpdateInstances</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#beginUpdateInstancesWithHttpOperationResponse">beginUpdateInstancesWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#beginUpdateWithHttpOperationResponse">beginUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#createOrUpdate">createOrUpdate</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#createOrUpdateWithHttpOperationResponse">createOrUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#deallocate">deallocate</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#deallocateWithHttpOperationResponse">deallocateWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#deleteInstances">deleteInstances</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#deleteInstancesWithHttpOperationResponse">deleteInstancesWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#deleteMethodWithHttpOperationResponse">deleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#get">get</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#getInstanceView">getInstanceView</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#getInstanceViewWithHttpOperationResponse">getInstanceViewWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#list">list</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#listAll">listAll</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#listAllNext">listAllNext</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#listAllNextWithHttpOperationResponse">listAllNextWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#listAllWithHttpOperationResponse">listAllWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#listNext">listNext</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#listNextWithHttpOperationResponse">listNextWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#listSkus">listSkus</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#listSkusNext">listSkusNext</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#listSkusNextWithHttpOperationResponse">listSkusNextWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#listSkusWithHttpOperationResponse">listSkusWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#powerOff">powerOff</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#powerOffWithHttpOperationResponse">powerOffWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#reimage">reimage</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#reimageAll">reimageAll</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#reimageAllWithHttpOperationResponse">reimageAllWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#reimageWithHttpOperationResponse">reimageWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#restart">restart</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#restartWithHttpOperationResponse">restartWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#start">start</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#startWithHttpOperationResponse">startWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#update">update</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#updateInstances">updateInstances</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#updateInstancesWithHttpOperationResponse">updateInstancesWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineScaleSets.html#updateWithHttpOperationResponse">updateWithHttpOperationResponse</a></li></ul></li><li><a href="VirtualMachineScaleSetSku.html">VirtualMachineScaleSetSku</a><ul class='methods'><li data-type='method'><a href="VirtualMachineScaleSetSku.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachineScaleSetSkuCapacity.html">VirtualMachineScaleSetSkuCapacity</a><ul class='methods'><li data-type='method'><a href="VirtualMachineScaleSetSkuCapacity.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachineScaleSetStorageProfile.html">VirtualMachineScaleSetStorageProfile</a><ul class='methods'><li data-type='method'><a href="VirtualMachineScaleSetStorageProfile.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachineScaleSetUpdate.html">VirtualMachineScaleSetUpdate</a><ul class='methods'><li data-type='method'><a href="VirtualMachineScaleSetUpdate.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachineScaleSetUpdateIPConfiguration.html">VirtualMachineScaleSetUpdateIPConfiguration</a><ul class='methods'><li data-type='method'><a href="VirtualMachineScaleSetUpdateIPConfiguration.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachineScaleSetUpdateNetworkConfiguration.html">VirtualMachineScaleSetUpdateNetworkConfiguration</a><ul class='methods'><li data-type='method'><a href="VirtualMachineScaleSetUpdateNetworkConfiguration.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachineScaleSetUpdateNetworkProfile.html">VirtualMachineScaleSetUpdateNetworkProfile</a><ul class='methods'><li data-type='method'><a href="VirtualMachineScaleSetUpdateNetworkProfile.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachineScaleSetUpdateOSDisk.html">VirtualMachineScaleSetUpdateOSDisk</a><ul class='methods'><li data-type='method'><a href="VirtualMachineScaleSetUpdateOSDisk.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachineScaleSetUpdateOSProfile.html">VirtualMachineScaleSetUpdateOSProfile</a><ul class='methods'><li data-type='method'><a href="VirtualMachineScaleSetUpdateOSProfile.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachineScaleSetUpdatePublicIPAddressConfiguration.html">VirtualMachineScaleSetUpdatePublicIPAddressConfiguration</a><ul class='methods'><li data-type='method'><a href="VirtualMachineScaleSetUpdatePublicIPAddressConfiguration.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachineScaleSetUpdateStorageProfile.html">VirtualMachineScaleSetUpdateStorageProfile</a><ul class='methods'><li data-type='method'><a href="VirtualMachineScaleSetUpdateStorageProfile.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachineScaleSetUpdateVMProfile.html">VirtualMachineScaleSetUpdateVMProfile</a><ul class='methods'><li data-type='method'><a href="VirtualMachineScaleSetUpdateVMProfile.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachineScaleSetVM.html">VirtualMachineScaleSetVM</a><ul class='methods'><li data-type='method'><a href="VirtualMachineScaleSetVM.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachineScaleSetVMExtensionsSummary.html">VirtualMachineScaleSetVMExtensionsSummary</a><ul class='methods'><li data-type='method'><a href="VirtualMachineScaleSetVMExtensionsSummary.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachineScaleSetVMInstanceIDs.html">VirtualMachineScaleSetVMInstanceIDs</a><ul class='methods'><li data-type='method'><a href="VirtualMachineScaleSetVMInstanceIDs.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachineScaleSetVMInstanceRequiredIDs.html">VirtualMachineScaleSetVMInstanceRequiredIDs</a><ul class='methods'><li data-type='method'><a href="VirtualMachineScaleSetVMInstanceRequiredIDs.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachineScaleSetVMInstanceView.html">VirtualMachineScaleSetVMInstanceView</a><ul class='methods'><li data-type='method'><a href="VirtualMachineScaleSetVMInstanceView.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachineScaleSetVMListResult.html">VirtualMachineScaleSetVMListResult</a><ul class='methods'><li data-type='method'><a href="VirtualMachineScaleSetVMListResult.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachineScaleSetVMProfile.html">VirtualMachineScaleSetVMProfile</a><ul class='methods'><li data-type='method'><a href="VirtualMachineScaleSetVMProfile.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachineScaleSetVMs.html">VirtualMachineScaleSetVMs</a><ul class='methods'><li data-type='method'><a href="VirtualMachineScaleSetVMs.html#beginDeallocate">beginDeallocate</a></li><li data-type='method'><a href="VirtualMachineScaleSetVMs.html#beginDeallocateWithHttpOperationResponse">beginDeallocateWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineScaleSetVMs.html#beginDeleteMethod">beginDeleteMethod</a></li><li data-type='method'><a href="VirtualMachineScaleSetVMs.html#beginDeleteMethodWithHttpOperationResponse">beginDeleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineScaleSetVMs.html#beginPowerOff">beginPowerOff</a></li><li data-type='method'><a href="VirtualMachineScaleSetVMs.html#beginPowerOffWithHttpOperationResponse">beginPowerOffWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineScaleSetVMs.html#beginReimage">beginReimage</a></li><li data-type='method'><a href="VirtualMachineScaleSetVMs.html#beginReimageAll">beginReimageAll</a></li><li data-type='method'><a href="VirtualMachineScaleSetVMs.html#beginReimageAllWithHttpOperationResponse">beginReimageAllWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineScaleSetVMs.html#beginReimageWithHttpOperationResponse">beginReimageWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineScaleSetVMs.html#beginRestart">beginRestart</a></li><li data-type='method'><a href="VirtualMachineScaleSetVMs.html#beginRestartWithHttpOperationResponse">beginRestartWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineScaleSetVMs.html#beginStart">beginStart</a></li><li data-type='method'><a href="VirtualMachineScaleSetVMs.html#beginStartWithHttpOperationResponse">beginStartWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineScaleSetVMs.html#deallocate">deallocate</a></li><li data-type='method'><a href="VirtualMachineScaleSetVMs.html#deallocateWithHttpOperationResponse">deallocateWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineScaleSetVMs.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="VirtualMachineScaleSetVMs.html#deleteMethodWithHttpOperationResponse">deleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineScaleSetVMs.html#get">get</a></li><li data-type='method'><a href="VirtualMachineScaleSetVMs.html#getInstanceView">getInstanceView</a></li><li data-type='method'><a href="VirtualMachineScaleSetVMs.html#getInstanceViewWithHttpOperationResponse">getInstanceViewWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineScaleSetVMs.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineScaleSetVMs.html#list">list</a></li><li data-type='method'><a href="VirtualMachineScaleSetVMs.html#listNext">listNext</a></li><li data-type='method'><a href="VirtualMachineScaleSetVMs.html#listNextWithHttpOperationResponse">listNextWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineScaleSetVMs.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineScaleSetVMs.html#powerOff">powerOff</a></li><li data-type='method'><a href="VirtualMachineScaleSetVMs.html#powerOffWithHttpOperationResponse">powerOffWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineScaleSetVMs.html#reimage">reimage</a></li><li data-type='method'><a href="VirtualMachineScaleSetVMs.html#reimageAll">reimageAll</a></li><li data-type='method'><a href="VirtualMachineScaleSetVMs.html#reimageAllWithHttpOperationResponse">reimageAllWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineScaleSetVMs.html#reimageWithHttpOperationResponse">reimageWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineScaleSetVMs.html#restart">restart</a></li><li data-type='method'><a href="VirtualMachineScaleSetVMs.html#restartWithHttpOperationResponse">restartWithHttpOperationResponse</a></li><li data-type='method'><a href="VirtualMachineScaleSetVMs.html#start">start</a></li><li data-type='method'><a href="VirtualMachineScaleSetVMs.html#startWithHttpOperationResponse">startWithHttpOperationResponse</a></li></ul></li><li><a href="VirtualMachineSize.html">VirtualMachineSize</a><ul class='methods'><li data-type='method'><a href="VirtualMachineSize.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachineSizeListResult.html">VirtualMachineSizeListResult</a><ul class='methods'><li data-type='method'><a href="VirtualMachineSizeListResult.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachineSizes.html">VirtualMachineSizes</a><ul class='methods'><li data-type='method'><a href="VirtualMachineSizes.html#list">list</a></li><li data-type='method'><a href="VirtualMachineSizes.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li></ul></li><li><a href="VirtualMachineStatusCodeCount.html">VirtualMachineStatusCodeCount</a><ul class='methods'><li data-type='method'><a href="VirtualMachineStatusCodeCount.html#mapper">mapper</a></li></ul></li><li><a href="WindowsConfiguration.html">WindowsConfiguration</a><ul class='methods'><li data-type='method'><a href="WindowsConfiguration.html#mapper">mapper</a></li></ul></li><li><a href="WinRMConfiguration.html">WinRMConfiguration</a><ul class='methods'><li data-type='method'><a href="WinRMConfiguration.html#mapper">mapper</a></li></ul></li><li><a href="WinRMListener.html">WinRMListener</a><ul class='methods'><li data-type='method'><a href="WinRMListener.html#mapper">mapper</a></li></ul></li></ul><h3>Global</h3><ul><li><a href="global.html#_beginCancel">_beginCancel</a></li><li><a href="global.html#_beginCapture">_beginCapture</a></li><li><a href="global.html#_beginConvertToManagedDisks">_beginConvertToManagedDisks</a></li><li><a href="global.html#_beginCreateOrUpdate">_beginCreateOrUpdate</a></li><li><a href="global.html#_beginDeallocate">_beginDeallocate</a></li><li><a href="global.html#_beginDeleteInstances">_beginDeleteInstances</a></li><li><a href="global.html#_beginDeleteMethod">_beginDeleteMethod</a></li><li><a href="global.html#_beginGrantAccess">_beginGrantAccess</a></li><li><a href="global.html#_beginPerformMaintenance">_beginPerformMaintenance</a></li><li><a href="global.html#_beginPowerOff">_beginPowerOff</a></li><li><a href="global.html#_beginRedeploy">_beginRedeploy</a></li><li><a href="global.html#_beginReimage">_beginReimage</a></li><li><a href="global.html#_beginReimageAll">_beginReimageAll</a></li><li><a href="global.html#_beginRestart">_beginRestart</a></li><li><a href="global.html#_beginRevokeAccess">_beginRevokeAccess</a></li><li><a href="global.html#_beginRunCommand">_beginRunCommand</a></li><li><a href="global.html#_beginStart">_beginStart</a></li><li><a href="global.html#_beginStartOSUpgrade">_beginStartOSUpgrade</a></li><li><a href="global.html#_beginUpdate">_beginUpdate</a></li><li><a href="global.html#_beginUpdateInstances">_beginUpdateInstances</a></li><li><a href="global.html#_cancel">_cancel</a></li><li><a href="global.html#_capture">_capture</a></li><li><a href="global.html#_convertToManagedDisks">_convertToManagedDisks</a></li><li><a href="global.html#_createOrUpdate">_createOrUpdate</a></li><li><a href="global.html#_deallocate">_deallocate</a></li><li><a href="global.html#_deleteInstances">_deleteInstances</a></li><li><a href="global.html#_deleteMethod">_deleteMethod</a></li><li><a href="global.html#_generalize">_generalize</a></li><li><a href="global.html#_get">_get</a></li><li><a href="global.html#_getInstanceView">_getInstanceView</a></li><li><a href="global.html#_getLatest">_getLatest</a></li><li><a href="global.html#_grantAccess">_grantAccess</a></li><li><a href="global.html#_instanceView">_instanceView</a></li><li><a href="global.html#_list">_list</a></li><li><a href="global.html#_listAll">_listAll</a></li><li><a href="global.html#_listAllNext">_listAllNext</a></li><li><a href="global.html#_listAvailableSizes">_listAvailableSizes</a></li><li><a href="global.html#_listByResourceGroup">_listByResourceGroup</a></li><li><a href="global.html#_listByResourceGroupNext">_listByResourceGroupNext</a></li><li><a href="global.html#_listNext">_listNext</a></li><li><a href="global.html#_listOffers">_listOffers</a></li><li><a href="global.html#_listPublishers">_listPublishers</a></li><li><a href="global.html#_listSkus">_listSkus</a></li><li><a href="global.html#_listSkusNext">_listSkusNext</a></li><li><a href="global.html#_listTypes">_listTypes</a></li><li><a href="global.html#_listVersions">_listVersions</a></li><li><a href="global.html#_performMaintenance">_performMaintenance</a></li><li><a href="global.html#_powerOff">_powerOff</a></li><li><a href="global.html#_redeploy">_redeploy</a></li><li><a href="global.html#_reimage">_reimage</a></li><li><a href="global.html#_reimageAll">_reimageAll</a></li><li><a href="global.html#_restart">_restart</a></li><li><a href="global.html#_revokeAccess">_revokeAccess</a></li><li><a href="global.html#_runCommand">_runCommand</a></li><li><a href="global.html#_start">_start</a></li><li><a href="global.html#_startOSUpgrade">_startOSUpgrade</a></li><li><a href="global.html#_update">_update</a></li><li><a href="global.html#_updateInstances">_updateInstances</a></li><li><a href="global.html#accessSAS">accessSAS</a></li><li><a href="global.html#adminPassword">adminPassword</a></li><li><a href="global.html#automaticOSUpgrade">automaticOSUpgrade</a></li><li><a href="global.html#capacity">capacity</a></li><li><a href="global.html#certificateStore">certificateStore</a></li><li><a href="global.html#certificateUrl">certificateUrl</a></li><li><a href="global.html#content">content</a></li><li><a href="global.html#count">count</a></li><li><a href="global.html#dataDiskImages">dataDiskImages</a></li><li><a href="global.html#dataDisks">dataDisks</a></li><li><a href="global.html#description">description</a></li><li><a href="global.html#dnsServers">dnsServers</a></li><li><a href="global.html#domainNameLabel">domainNameLabel</a></li><li><a href="global.html#durationInSeconds">durationInSeconds</a></li><li><a href="global.html#enabled">enabled</a></li><li><a href="global.html#errordetail">errordetail</a></li><li><a href="global.html#extendedUnit">extendedUnit</a></li><li><a href="global.html#extensions">extensions</a></li><li><a href="global.html#fqdn">fqdn</a></li><li><a href="global.html#id">id</a></li><li><a href="global.html#instanceIds">instanceIds</a></li><li><a href="global.html#ipConfigurations">ipConfigurations</a></li><li><a href="global.html#keyData">keyData</a></li><li><a href="global.html#keyUrl">keyUrl</a></li><li><a href="global.html#lastActionTime">lastActionTime</a></li><li><a href="global.html#lastOperationMessage">lastOperationMessage</a></li><li><a href="global.html#licenseType">licenseType</a></li><li><a href="global.html#listeners">listeners</a></li><li><a href="global.html#loadBalancerInboundNatPools">loadBalancerInboundNatPools</a></li><li><a href="global.html#localizedValue">localizedValue</a></li><li><a href="global.html#lun">lun</a></li><li><a href="global.html#maxDataDiskCount">maxDataDiskCount</a></li><li><a href="global.html#message">message</a></li><li><a href="global.html#networkInterfaceConfigurations">networkInterfaceConfigurations</a></li><li><a href="global.html#networkInterfaces">networkInterfaces</a></li><li><a href="global.html#nextLink">nextLink</a></li><li><a href="global.html#operatingSystem">operatingSystem</a></li><li><a href="global.html#orchestrator">orchestrator</a></li><li><a href="global.html#orchestratorType">orchestratorType</a></li><li><a href="global.html#output">output</a></li><li><a href="global.html#overwriteVhds">overwriteVhds</a></li><li><a href="global.html#parameters">parameters</a></li><li><a href="global.html#pauseTimeBetweenBatches">pauseTimeBetweenBatches</a></li><li><a href="global.html#pendingInstanceCount">pendingInstanceCount</a></li><li><a href="global.html#placementGroupId">placementGroupId</a></li><li><a href="global.html#primary">primary</a></li><li><a href="global.html#product">product</a></li><li><a href="global.html#promotionCode">promotionCode</a></li><li><a href="global.html#provisioningState">provisioningState</a></li><li><a href="global.html#publicKeys">publicKeys</a></li><li><a href="global.html#reasonCode">reasonCode</a></li><li><a href="global.html#required">required</a></li><li><a href="global.html#resources">resources</a></li><li><a href="global.html#restrictions">restrictions</a></li><li><a href="global.html#scaleType">scaleType</a></li><li><a href="global.html#secret">secret</a></li><li><a href="global.html#secrets">secrets</a></li><li><a href="global.html#secretUrl">secretUrl</a></li><li><a href="global.html#serialConsoleLogBlobUri">serialConsoleLogBlobUri</a></li><li><a href="global.html#sourceResourceId">sourceResourceId</a></li><li><a href="global.html#statuses">statuses</a></li><li><a href="global.html#statusesSummary">statusesSummary</a></li><li><a href="global.html#storageAccountType">storageAccountType</a></li><li><a href="global.html#storageUri">storageUri</a></li><li><a href="global.html#supportsMultipleExtensions">supportsMultipleExtensions</a></li><li><a href="global.html#tags">tags</a></li><li><a href="global.html#tier">tier</a></li><li><a href="global.html#time">time</a></li><li><a href="global.html#type">type</a></li><li><a href="global.html#uri">uri</a></li><li><a href="global.html#value">value</a></li><li><a href="global.html#vaultCertificates">vaultCertificates</a></li><li><a href="global.html#version">version</a></li><li><a href="global.html#vmSize">vmSize</a></li><li><a href="global.html#zones">zones</a></li></ul>
+</nav>
+
+<div id="main">
+    
+      <a class="github-banner" href="https://github.com/azure/azure-sdk-for-node.git"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+    
+    
+    <h1 class="page-title">models/virtualMachine.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/*
+ * Copyright (c) Microsoft Corporation. All rights reserved.
+ * Licensed under the MIT License. See License.txt in the project root for
+ * license information.
+ *
+ * Code generated by Microsoft (R) AutoRest Code Generator.
+ * Changes may cause incorrect behavior and will be lost if the code is
+ * regenerated.
+ */
+
+'use strict';
+
+const models = require('./index');
+
+/**
+ * Describes a Virtual Machine.
+ *
+ * @extends models['Resource']
+ */
+class VirtualMachine extends models['Resource'] {
+  /**
+   * Create a VirtualMachine.
+   * @member {object} [plan] Specifies information about the marketplace image
+   * used to create the virtual machine. This element is only used for
+   * marketplace images. Before you can use a marketplace image from an API,
+   * you must enable the image for programmatic use.  In the Azure portal, find
+   * the marketplace image that you want to use and then click **Want to deploy
+   * programmatically, Get Started ->**. Enter any required information and
+   * then click **Save**.
+   * @member {string} [plan.name] The plan ID.
+   * @member {string} [plan.publisher] The publisher ID.
+   * @member {string} [plan.product] Specifies the product of the image from
+   * the marketplace. This is the same value as Offer under the imageReference
+   * element.
+   * @member {string} [plan.promotionCode] The promotion code.
+   * @member {object} [hardwareProfile] Specifies the hardware settings for the
+   * virtual machine.
+   * @member {string} [hardwareProfile.vmSize] Specifies the size of the
+   * virtual machine. For more information about virtual machine sizes, see
+   * [Sizes for virtual
+   * machines](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-sizes?toc=%2fazure%2fvirtual-machines%2fwindows%2ftoc.json).
+   * &lt;br>&lt;br> The available VM sizes depend on region and availability set. For
+   * a list of available sizes use these APIs:  &lt;br>&lt;br> [List all available
+   * virtual machine sizes in an availability
+   * set](virtualmachines-list-sizes-availability-set.md) &lt;br>&lt;br> [List all
+   * available virtual machine sizes in a
+   * region](virtualmachines-list-sizes-region.md) &lt;br>&lt;br> [List all available
+   * virtual machine sizes for
+   * resizing](virtualmachines-list-sizes-for-resizing.md). Possible values
+   * include: 'Basic_A0', 'Basic_A1', 'Basic_A2', 'Basic_A3', 'Basic_A4',
+   * 'Standard_A0', 'Standard_A1', 'Standard_A2', 'Standard_A3', 'Standard_A4',
+   * 'Standard_A5', 'Standard_A6', 'Standard_A7', 'Standard_A8', 'Standard_A9',
+   * 'Standard_A10', 'Standard_A11', 'Standard_A1_v2', 'Standard_A2_v2',
+   * 'Standard_A4_v2', 'Standard_A8_v2', 'Standard_A2m_v2', 'Standard_A4m_v2',
+   * 'Standard_A8m_v2', 'Standard_D1', 'Standard_D2', 'Standard_D3',
+   * 'Standard_D4', 'Standard_D11', 'Standard_D12', 'Standard_D13',
+   * 'Standard_D14', 'Standard_D1_v2', 'Standard_D2_v2', 'Standard_D3_v2',
+   * 'Standard_D4_v2', 'Standard_D5_v2', 'Standard_D11_v2', 'Standard_D12_v2',
+   * 'Standard_D13_v2', 'Standard_D14_v2', 'Standard_D15_v2', 'Standard_DS1',
+   * 'Standard_DS2', 'Standard_DS3', 'Standard_DS4', 'Standard_DS11',
+   * 'Standard_DS12', 'Standard_DS13', 'Standard_DS14', 'Standard_DS1_v2',
+   * 'Standard_DS2_v2', 'Standard_DS3_v2', 'Standard_DS4_v2',
+   * 'Standard_DS5_v2', 'Standard_DS11_v2', 'Standard_DS12_v2',
+   * 'Standard_DS13_v2', 'Standard_DS14_v2', 'Standard_DS15_v2', 'Standard_F1',
+   * 'Standard_F2', 'Standard_F4', 'Standard_F8', 'Standard_F16',
+   * 'Standard_F1s', 'Standard_F2s', 'Standard_F4s', 'Standard_F8s',
+   * 'Standard_F16s', 'Standard_G1', 'Standard_G2', 'Standard_G3',
+   * 'Standard_G4', 'Standard_G5', 'Standard_GS1', 'Standard_GS2',
+   * 'Standard_GS3', 'Standard_GS4', 'Standard_GS5', 'Standard_H8',
+   * 'Standard_H16', 'Standard_H8m', 'Standard_H16m', 'Standard_H16r',
+   * 'Standard_H16mr', 'Standard_L4s', 'Standard_L8s', 'Standard_L16s',
+   * 'Standard_L32s', 'Standard_NC6', 'Standard_NC12', 'Standard_NC24',
+   * 'Standard_NC24r', 'Standard_NV6', 'Standard_NV12', 'Standard_NV24'
+   * @member {object} [storageProfile] Specifies the storage settings for the
+   * virtual machine disks.
+   * @member {object} [storageProfile.imageReference] Specifies information
+   * about the image to use. You can specify information about platform images,
+   * marketplace images, or virtual machine images. This element is required
+   * when you want to use a platform image, marketplace image, or virtual
+   * machine image, but is not used in other creation operations.
+   * @member {string} [storageProfile.imageReference.publisher] The image
+   * publisher.
+   * @member {string} [storageProfile.imageReference.offer] Specifies the offer
+   * of the platform image or marketplace image used to create the virtual
+   * machine.
+   * @member {string} [storageProfile.imageReference.sku] The image SKU.
+   * @member {string} [storageProfile.imageReference.version] Specifies the
+   * version of the platform image or marketplace image used to create the
+   * virtual machine. The allowed formats are Major.Minor.Build or 'latest'.
+   * Major, Minor, and Build are decimal numbers. Specify 'latest' to use the
+   * latest version of an image available at deploy time. Even if you use
+   * 'latest', the VM image will not automatically update after deploy time
+   * even if a new version becomes available.
+   * @member {object} [storageProfile.osDisk] Specifies information about the
+   * operating system disk used by the virtual machine. &lt;br>&lt;br> For more
+   * information about disks, see [About disks and VHDs for Azure virtual
+   * machines](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-about-disks-vhds?toc=%2fazure%2fvirtual-machines%2fwindows%2ftoc.json).
+   * @member {string} [storageProfile.osDisk.osType] This property allows you
+   * to specify the type of the OS that is included in the disk if creating a
+   * VM from user-image or a specialized VHD. &lt;br>&lt;br> Possible values are:
+   * &lt;br>&lt;br> **Windows** &lt;br>&lt;br> **Linux**. Possible values include:
+   * 'Windows', 'Linux'
+   * @member {object} [storageProfile.osDisk.encryptionSettings] Specifies the
+   * encryption settings for the OS Disk. &lt;br>&lt;br> Minimum api-version:
+   * 2015-06-15
+   * @member {object}
+   * [storageProfile.osDisk.encryptionSettings.diskEncryptionKey] Specifies the
+   * location of the disk encryption key, which is a Key Vault Secret.
+   * @member {string}
+   * [storageProfile.osDisk.encryptionSettings.diskEncryptionKey.secretUrl] The
+   * URL referencing a secret in a Key Vault.
+   * @member {object}
+   * [storageProfile.osDisk.encryptionSettings.diskEncryptionKey.sourceVault]
+   * The relative URL of the Key Vault containing the secret.
+   * @member {string}
+   * [storageProfile.osDisk.encryptionSettings.diskEncryptionKey.sourceVault.id]
+   * Resource Id
+   * @member {object}
+   * [storageProfile.osDisk.encryptionSettings.keyEncryptionKey] Specifies the
+   * location of the key encryption key in Key Vault.
+   * @member {string}
+   * [storageProfile.osDisk.encryptionSettings.keyEncryptionKey.keyUrl] The URL
+   * referencing a key encryption key in Key Vault.
+   * @member {object}
+   * [storageProfile.osDisk.encryptionSettings.keyEncryptionKey.sourceVault]
+   * The relative URL of the Key Vault containing the key.
+   * @member {string}
+   * [storageProfile.osDisk.encryptionSettings.keyEncryptionKey.sourceVault.id]
+   * Resource Id
+   * @member {boolean} [storageProfile.osDisk.encryptionSettings.enabled]
+   * Specifies whether disk encryption should be enabled on the virtual
+   * machine.
+   * @member {string} [storageProfile.osDisk.name] The disk name.
+   * @member {object} [storageProfile.osDisk.vhd] The virtual hard disk.
+   * @member {string} [storageProfile.osDisk.vhd.uri] Specifies the virtual
+   * hard disk's uri.
+   * @member {object} [storageProfile.osDisk.image] The source user image
+   * virtual hard disk. The virtual hard disk will be copied before being
+   * attached to the virtual machine. If SourceImage is provided, the
+   * destination virtual hard drive must not exist.
+   * @member {string} [storageProfile.osDisk.image.uri] Specifies the virtual
+   * hard disk's uri.
+   * @member {string} [storageProfile.osDisk.caching] Specifies the caching
+   * requirements. &lt;br>&lt;br> Possible values are: &lt;br>&lt;br> **None** &lt;br>&lt;br>
+   * **ReadOnly** &lt;br>&lt;br> **ReadWrite** &lt;br>&lt;br> Default: **None for Standard
+   * storage. ReadOnly for Premium storage**. Possible values include: 'None',
+   * 'ReadOnly', 'ReadWrite'
+   * @member {string} [storageProfile.osDisk.createOption] Specifies how the
+   * virtual machine should be created.&lt;br>&lt;br> Possible values are:&lt;br>&lt;br>
+   * **Attach** \u2013 This value is used when you are using a specialized disk
+   * to create the virtual machine.&lt;br>&lt;br> **FromImage** \u2013 This value is
+   * used when you are using an image to create the virtual machine. If you are
+   * using a platform image, you also use the imageReference element described
+   * above. If you are using a marketplace image, you  also use the plan
+   * element previously described. Possible values include: 'FromImage',
+   * 'Empty', 'Attach'
+   * @member {number} [storageProfile.osDisk.diskSizeGB] Specifies the size of
+   * an empty data disk in gigabytes. This element can be used to overwrite the
+   * name of the disk in a virtual machine image. &lt;br>&lt;br> This value cannot be
+   * larger than 1023 GB
+   * @member {object} [storageProfile.osDisk.managedDisk] The managed disk
+   * parameters.
+   * @member {string} [storageProfile.osDisk.managedDisk.storageAccountType]
+   * Specifies the storage account type for the managed disk. Possible values
+   * are: Standard_LRS or Premium_LRS. Possible values include: 'Standard_LRS',
+   * 'Premium_LRS'
+   * @member {array} [storageProfile.dataDisks] Specifies the parameters that
+   * are used to add a data disk to a virtual machine. &lt;br>&lt;br> For more
+   * information about disks, see [About disks and VHDs for Azure virtual
+   * machines](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-about-disks-vhds?toc=%2fazure%2fvirtual-machines%2fwindows%2ftoc.json).
+   * @member {object} [osProfile] Specifies the operating system settings for
+   * the virtual machine.
+   * @member {string} [osProfile.computerName] Specifies the host OS name of
+   * the virtual machine. &lt;br>&lt;br> **Max-length (Windows):** 15 characters
+   * &lt;br>&lt;br> **Max-length (Linux):** 64 characters. &lt;br>&lt;br> For naming
+   * conventions and restrictions see [Azure infrastructure services
+   * implementation
+   * guidelines](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-infrastructure-subscription-accounts-guidelines?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json#1-naming-conventions).
+   * @member {string} [osProfile.adminUsername] Specifies the name of the
+   * administrator account. &lt;br>&lt;br> **Windows-only restriction:** Cannot end
+   * in "." &lt;br>&lt;br> **Disallowed values:** "administrator", "admin", "user",
+   * "user1", "test", "user2", "test1", "user3", "admin1", "1", "123", "a",
+   * "actuser", "adm", "admin2", "aspnet", "backup", "console", "david",
+   * "guest", "john", "owner", "root", "server", "sql", "support",
+   * "support_388945a0", "sys", "test2", "test3", "user4", "user5". &lt;br>&lt;br>
+   * **Minimum-length (Linux):** 1  character &lt;br>&lt;br> **Max-length (Linux):**
+   * 64 characters &lt;br>&lt;br> **Max-length (Windows):** 20 characters
+   * &lt;br>&lt;br>&lt;li> For root access to the Linux VM, see [Using root privileges
+   * on Linux virtual machines in
+   * Azure](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-use-root-privileges?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)&lt;br>&lt;li>
+   * For a list of built-in system users on Linux that should not be used in
+   * this field, see [Selecting User Names for Linux on
+   * Azure](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-usernames?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)
+   * @member {string} [osProfile.adminPassword] Specifies the password of the
+   * administrator account. &lt;br>&lt;br> **Minimum-length (Windows):** 8 characters
+   * &lt;br>&lt;br> **Minimum-length (Linux):** 6 characters &lt;br>&lt;br> **Max-length
+   * (Windows):** 123 characters &lt;br>&lt;br> **Max-length (Linux):** 72 characters
+   * &lt;br>&lt;br> **Complexity requirements:** 3 out of 4 conditions below need to
+   * be fulfilled &lt;br> Has lower characters &lt;br>Has upper characters &lt;br> Has a
+   * digit &lt;br> Has a special character (Regex match [\W_]) &lt;br>&lt;br>
+   * **Disallowed values:** "abc@123", "P@$$w0rd", "P@ssw0rd", "P@ssword123",
+   * "Pa$$word", "pass@word1", "Password!", "Password1", "Password22",
+   * "iloveyou!" &lt;br>&lt;br> For resetting the password, see [How to reset the
+   * Remote Desktop service or its login password in a Windows
+   * VM](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-reset-rdp?toc=%2fazure%2fvirtual-machines%2fwindows%2ftoc.json)
+   * &lt;br>&lt;br> For resetting root password, see [Manage users, SSH, and check or
+   * repair disks on Azure Linux VMs using the VMAccess
+   * Extension](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-using-vmaccess-extension?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json#reset-root-password)
+   * @member {string} [osProfile.customData] Specifies a base-64 encoded string
+   * of custom data. The base-64 encoded string is decoded to a binary array
+   * that is saved as a file on the Virtual Machine. The maximum length of the
+   * binary array is 65535 bytes. &lt;br>&lt;br> For using cloud-init for your VM,
+   * see [Using cloud-init to customize a Linux VM during
+   * creation](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-using-cloud-init?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)
+   * @member {object} [osProfile.windowsConfiguration] Specifies Windows
+   * operating system settings on the virtual machine.
+   * @member {boolean} [osProfile.windowsConfiguration.provisionVMAgent]
+   * Indicates whether virtual machine agent should be provisioned on the
+   * virtual machine. &lt;br>&lt;br> When this property is not specified in the
+   * request body, default behavior is to set it to true.  This will ensure
+   * that VM Agent is installed on the VM so that extensions can be added to
+   * the VM later.
+   * @member {boolean} [osProfile.windowsConfiguration.enableAutomaticUpdates]
+   * Indicates whether virtual machine is enabled for automatic updates.
+   * @member {string} [osProfile.windowsConfiguration.timeZone] Specifies the
+   * time zone of the virtual machine. e.g. "Pacific Standard Time"
+   * @member {array} [osProfile.windowsConfiguration.additionalUnattendContent]
+   * Specifies additional base-64 encoded XML formatted information that can be
+   * included in the Unattend.xml file, which is used by Windows Setup.
+   * @member {object} [osProfile.windowsConfiguration.winRM] Specifies the
+   * Windows Remote Management listeners. This enables remote Windows
+   * PowerShell.
+   * @member {array} [osProfile.windowsConfiguration.winRM.listeners] The list
+   * of Windows Remote Management listeners
+   * @member {object} [osProfile.linuxConfiguration] Specifies the Linux
+   * operating system settings on the virtual machine. &lt;br>&lt;br>For a list of
+   * supported Linux distributions, see [Linux on Azure-Endorsed
+   * Distributions](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-endorsed-distros?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)
+   * &lt;br>&lt;br> For running non-endorsed distributions, see [Information for
+   * Non-Endorsed
+   * Distributions](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-create-upload-generic?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json).
+   * @member {boolean}
+   * [osProfile.linuxConfiguration.disablePasswordAuthentication] Specifies
+   * whether password authentication should be disabled.
+   * @member {object} [osProfile.linuxConfiguration.ssh] Specifies the ssh key
+   * configuration for a Linux OS.
+   * @member {array} [osProfile.linuxConfiguration.ssh.publicKeys] The list of
+   * SSH public keys used to authenticate with linux based VMs.
+   * @member {array} [osProfile.secrets] Specifies set of certificates that
+   * should be installed onto the virtual machine.
+   * @member {object} [networkProfile] Specifies the network interfaces of the
+   * virtual machine.
+   * @member {array} [networkProfile.networkInterfaces] Specifies the list of
+   * resource Ids for the network interfaces associated with the virtual
+   * machine.
+   * @member {object} [diagnosticsProfile] Specifies the boot diagnostic
+   * settings state. &lt;br>&lt;br>Minimum api-version: 2015-06-15.
+   * @member {object} [diagnosticsProfile.bootDiagnostics] Boot Diagnostics is
+   * a debugging feature which allows you to view Console Output and Screenshot
+   * to diagnose VM status. &lt;br>&lt;br> For Linux Virtual Machines, you can easily
+   * view the output of your console log. &lt;br>&lt;br> For both Windows and Linux
+   * virtual machines, Azure also enables you to see a screenshot of the VM
+   * from the hypervisor.
+   * @member {boolean} [diagnosticsProfile.bootDiagnostics.enabled] Whether
+   * boot diagnostics should be enabled on the Virtual Machine.
+   * @member {string} [diagnosticsProfile.bootDiagnostics.storageUri] Uri of
+   * the storage account to use for placing the console output and screenshot.
+   * @member {object} [availabilitySet] Specifies information about the
+   * availability set that the virtual machine should be assigned to. Virtual
+   * machines specified in the same availability set are allocated to different
+   * nodes to maximize availability. For more information about availability
+   * sets, see [Manage the availability of virtual
+   * machines](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-manage-availability?toc=%2fazure%2fvirtual-machines%2fwindows%2ftoc.json).
+   * &lt;br>&lt;br> For more information on Azure planned maintainance, see [Planned
+   * maintenance for virtual machines in
+   * Azure](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-planned-maintenance?toc=%2fazure%2fvirtual-machines%2fwindows%2ftoc.json)
+   * &lt;br>&lt;br> Currently, a VM can only be added to availability set at creation
+   * time. An existing VM cannot be added to an availability set.
+   * @member {string} [availabilitySet.id] Resource Id
+   * @member {string} [provisioningState] The provisioning state, which only
+   * appears in the response.
+   * @member {object} [instanceView] The virtual machine instance view.
+   * @member {number} [instanceView.platformUpdateDomain] Specifies the update
+   * domain of the virtual machine.
+   * @member {number} [instanceView.platformFaultDomain] Specifies the fault
+   * domain of the virtual machine.
+   * @member {string} [instanceView.rdpThumbPrint] The Remote desktop
+   * certificate thumbprint.
+   * @member {object} [instanceView.vmAgent] The VM Agent running on the
+   * virtual machine.
+   * @member {string} [instanceView.vmAgent.vmAgentVersion] The VM Agent full
+   * version.
+   * @member {array} [instanceView.vmAgent.extensionHandlers] The virtual
+   * machine extension handler instance view.
+   * @member {array} [instanceView.vmAgent.statuses] The resource status
+   * information.
+   * @member {object} [instanceView.maintenanceRedeployStatus] The Maintenance
+   * Operation status on the virtual machine.
+   * @member {boolean}
+   * [instanceView.maintenanceRedeployStatus.isCustomerInitiatedMaintenanceAllowed]
+   * True, if customer is allowed to perform Maintenance.
+   * @member {date}
+   * [instanceView.maintenanceRedeployStatus.preMaintenanceWindowStartTime]
+   * Start Time for the Pre Maintenance Window.
+   * @member {date}
+   * [instanceView.maintenanceRedeployStatus.preMaintenanceWindowEndTime] End
+   * Time for the Pre Maintenance Window.
+   * @member {date}
+   * [instanceView.maintenanceRedeployStatus.maintenanceWindowStartTime] Start
+   * Time for the Maintenance Window.
+   * @member {date}
+   * [instanceView.maintenanceRedeployStatus.maintenanceWindowEndTime] End Time
+   * for the Maintenance Window.
+   * @member {string}
+   * [instanceView.maintenanceRedeployStatus.lastOperationResultCode] The Last
+   * Maintenance Operation Result Code. Possible values include: 'None',
+   * 'RetryLater', 'MaintenanceAborted', 'MaintenanceCompleted'
+   * @member {string}
+   * [instanceView.maintenanceRedeployStatus.lastOperationMessage] Message
+   * returned for the last Maintenance Operation.
+   * @member {array} [instanceView.disks] The virtual machine disk information.
+   * @member {array} [instanceView.extensions] The extensions information.
+   * @member {object} [instanceView.bootDiagnostics] Boot Diagnostics is a
+   * debugging feature which allows you to view Console Output and Screenshot
+   * to diagnose VM status. &lt;br>&lt;br> For Linux Virtual Machines, you can easily
+   * view the output of your console log. &lt;br>&lt;br> For both Windows and Linux
+   * virtual machines, Azure also enables you to see a screenshot of the VM
+   * from the hypervisor.
+   * @member {string} [instanceView.bootDiagnostics.consoleScreenshotBlobUri]
+   * The console screenshot blob URI.
+   * @member {string} [instanceView.bootDiagnostics.serialConsoleLogBlobUri]
+   * The Linux serial console log blob Uri.
+   * @member {array} [instanceView.statuses] The resource status information.
+   * @member {string} [licenseType] Specifies that the image or disk that is
+   * being used was licensed on-premises. This element is only used for images
+   * that contain the Windows Server operating system. &lt;br>&lt;br> Possible values
+   * are: &lt;br>&lt;br> Windows_Client &lt;br>&lt;br> Windows_Server &lt;br>&lt;br> If this
+   * element is included in a request for an update, the value must match the
+   * initial value. This value cannot be updated. &lt;br>&lt;br> For more
+   * information, see [Azure Hybrid Use Benefit for Windows
+   * Server](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-hybrid-use-benefit-licensing?toc=%2fazure%2fvirtual-machines%2fwindows%2ftoc.json)
+   * &lt;br>&lt;br> Minimum api-version: 2015-06-15
+   * @member {string} [vmId] Specifies the VM unique ID which is a 128-bits
+   * identifier that is encoded and stored in all Azure IaaS VMs SMBIOS and can
+   * be read using platform BIOS commands.
+   * @member {array} [resources] The virtual machine child extension resources.
+   * @member {object} [identity] The identity of the virtual machine, if
+   * configured.
+   * @member {string} [identity.principalId] The principal id of virtual
+   * machine identity.
+   * @member {string} [identity.tenantId] The tenant id associated with the
+   * virtual machine.
+   * @member {string} [identity.type] The type of identity used for the virtual
+   * machine. Currently, the only supported type is 'SystemAssigned', which
+   * implicitly creates an identity. Possible values include: 'SystemAssigned'
+   * @member {array} [zones] The virtual machine zones.
+   */
+  constructor() {
+    super();
+  }
+
+  /**
+   * Defines the metadata of VirtualMachine
+   *
+   * @returns {object} metadata of VirtualMachine
+   *
+   */
+  mapper() {
+    return {
+      required: false,
+      serializedName: 'VirtualMachine',
+      type: {
+        name: 'Composite',
+        className: 'VirtualMachine',
+        modelProperties: {
+          id: {
+            required: false,
+            readOnly: true,
+            serializedName: 'id',
+            type: {
+              name: 'String'
+            }
+          },
+          name: {
+            required: false,
+            readOnly: true,
+            serializedName: 'name',
+            type: {
+              name: 'String'
+            }
+          },
+          type: {
+            required: false,
+            readOnly: true,
+            serializedName: 'type',
+            type: {
+              name: 'String'
+            }
+          },
+          location: {
+            required: true,
+            serializedName: 'location',
+            type: {
+              name: 'String'
+            }
+          },
+          tags: {
+            required: false,
+            serializedName: 'tags',
+            type: {
+              name: 'Dictionary',
+              value: {
+                  required: false,
+                  serializedName: 'StringElementType',
+                  type: {
+                    name: 'String'
+                  }
+              }
+            }
+          },
+          plan: {
+            required: false,
+            serializedName: 'plan',
+            type: {
+              name: 'Composite',
+              className: 'Plan'
+            }
+          },
+          hardwareProfile: {
+            required: false,
+            serializedName: 'properties.hardwareProfile',
+            type: {
+              name: 'Composite',
+              className: 'HardwareProfile'
+            }
+          },
+          storageProfile: {
+            required: false,
+            serializedName: 'properties.storageProfile',
+            type: {
+              name: 'Composite',
+              className: 'StorageProfile'
+            }
+          },
+          osProfile: {
+            required: false,
+            serializedName: 'properties.osProfile',
+            type: {
+              name: 'Composite',
+              className: 'OSProfile'
+            }
+          },
+          networkProfile: {
+            required: false,
+            serializedName: 'properties.networkProfile',
+            type: {
+              name: 'Composite',
+              className: 'NetworkProfile'
+            }
+          },
+          diagnosticsProfile: {
+            required: false,
+            serializedName: 'properties.diagnosticsProfile',
+            type: {
+              name: 'Composite',
+              className: 'DiagnosticsProfile'
+            }
+          },
+          availabilitySet: {
+            required: false,
+            serializedName: 'properties.availabilitySet',
+            type: {
+              name: 'Composite',
+              className: 'SubResource'
+            }
+          },
+          provisioningState: {
+            required: false,
+            readOnly: true,
+            serializedName: 'properties.provisioningState',
+            type: {
+              name: 'String'
+            }
+          },
+          instanceView: {
+            required: false,
+            readOnly: true,
+            serializedName: 'properties.instanceView',
+            type: {
+              name: 'Composite',
+              className: 'VirtualMachineInstanceView'
+            }
+          },
+          licenseType: {
+            required: false,
+            serializedName: 'properties.licenseType',
+            type: {
+              name: 'String'
+            }
+          },
+          vmId: {
+            required: false,
+            readOnly: true,
+            serializedName: 'properties.vmId',
+            type: {
+              name: 'String'
+            }
+          },
+          resources: {
+            required: false,
+            readOnly: true,
+            serializedName: 'resources',
+            type: {
+              name: 'Sequence',
+              element: {
+                  required: false,
+                  serializedName: 'VirtualMachineExtensionElementType',
+                  type: {
+                    name: 'Composite',
+                    className: 'VirtualMachineExtension'
+                  }
+              }
+            }
+          },
+          identity: {
+            required: false,
+            serializedName: 'identity',
+            type: {
+              name: 'Composite',
+              className: 'VirtualMachineIdentity'
+            }
+          },
+          zones: {
+            required: false,
+            serializedName: 'zones',
+            type: {
+              name: 'Sequence',
+              element: {
+                  required: false,
+                  serializedName: 'StringElementType',
+                  type: {
+                    name: 'String'
+                  }
+              }
+            }
+          }
+        }
+      }
+    };
+  }
+}
+
+module.exports = VirtualMachine;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Thu Nov 09 2017 11:14:21 GMT-0800 (PST) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="../../scripts/linenumber.js"></script>
+</body>
+</html>

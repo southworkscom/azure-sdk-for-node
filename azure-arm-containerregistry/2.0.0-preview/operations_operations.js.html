@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>operations/operations.js - Documentation</title>
+    <meta name="viewport" content="initial-scale=.75">
+    <script src="../../scripts/prettify/prettify.js"></script>
+    <script src="../../scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="../../styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="../../styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><span><a href="../../index.html">Home</a> <span class="github-short">| <a href="https://github.com/azure/azure-sdk-for-node.git">GitHub</a></span></span></h2><h3>Classes</h3><ul><li><a href="Actor.html">Actor</a><ul class='methods'><li data-type='method'><a href="Actor.html#mapper">mapper</a></li></ul></li><li><a href="CallbackConfig.html">CallbackConfig</a><ul class='methods'><li data-type='method'><a href="CallbackConfig.html#mapper">mapper</a></li></ul></li><li><a href="ContainerRegistryManagementClient.html">ContainerRegistryManagementClient</a></li><li><a href="Event.html">Event</a><ul class='methods'><li data-type='method'><a href="Event.html#mapper">mapper</a></li></ul></li><li><a href="EventContent.html">EventContent</a><ul class='methods'><li data-type='method'><a href="EventContent.html#mapper">mapper</a></li></ul></li><li><a href="EventInfo.html">EventInfo</a><ul class='methods'><li data-type='method'><a href="EventInfo.html#mapper">mapper</a></li></ul></li><li><a href="EventListResult.html">EventListResult</a><ul class='methods'><li data-type='method'><a href="EventListResult.html#mapper">mapper</a></li></ul></li><li><a href="EventRequestMessage.html">EventRequestMessage</a><ul class='methods'><li data-type='method'><a href="EventRequestMessage.html#mapper">mapper</a></li></ul></li><li><a href="EventResponseMessage.html">EventResponseMessage</a><ul class='methods'><li data-type='method'><a href="EventResponseMessage.html#mapper">mapper</a></li></ul></li><li><a href="OperationDefinition.html">OperationDefinition</a><ul class='methods'><li data-type='method'><a href="OperationDefinition.html#mapper">mapper</a></li></ul></li><li><a href="OperationDisplayDefinition.html">OperationDisplayDefinition</a><ul class='methods'><li data-type='method'><a href="OperationDisplayDefinition.html#mapper">mapper</a></li></ul></li><li><a href="OperationListResult.html">OperationListResult</a><ul class='methods'><li data-type='method'><a href="OperationListResult.html#mapper">mapper</a></li></ul></li><li><a href="Operations.html">Operations</a><ul class='methods'><li data-type='method'><a href="Operations.html#list">list</a></li><li data-type='method'><a href="Operations.html#listNext">listNext</a></li><li data-type='method'><a href="Operations.html#listNextWithHttpOperationResponse">listNextWithHttpOperationResponse</a></li><li data-type='method'><a href="Operations.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li></ul></li><li><a href="RegenerateCredentialParameters.html">RegenerateCredentialParameters</a><ul class='methods'><li data-type='method'><a href="RegenerateCredentialParameters.html#mapper">mapper</a></li></ul></li><li><a href="Registries.html">Registries</a><ul class='methods'><li data-type='method'><a href="Registries.html#beginCreate">beginCreate</a></li><li data-type='method'><a href="Registries.html#beginCreateWithHttpOperationResponse">beginCreateWithHttpOperationResponse</a></li><li data-type='method'><a href="Registries.html#beginDeleteMethod">beginDeleteMethod</a></li><li data-type='method'><a href="Registries.html#beginDeleteMethodWithHttpOperationResponse">beginDeleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="Registries.html#beginUpdate">beginUpdate</a></li><li data-type='method'><a href="Registries.html#beginUpdateWithHttpOperationResponse">beginUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="Registries.html#checkNameAvailability">checkNameAvailability</a></li><li data-type='method'><a href="Registries.html#checkNameAvailabilityWithHttpOperationResponse">checkNameAvailabilityWithHttpOperationResponse</a></li><li data-type='method'><a href="Registries.html#create">create</a></li><li data-type='method'><a href="Registries.html#createWithHttpOperationResponse">createWithHttpOperationResponse</a></li><li data-type='method'><a href="Registries.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="Registries.html#deleteMethodWithHttpOperationResponse">deleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="Registries.html#get">get</a></li><li data-type='method'><a href="Registries.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="Registries.html#list">list</a></li><li data-type='method'><a href="Registries.html#listByResourceGroup">listByResourceGroup</a></li><li data-type='method'><a href="Registries.html#listByResourceGroupNext">listByResourceGroupNext</a></li><li data-type='method'><a href="Registries.html#listByResourceGroupNextWithHttpOperationResponse">listByResourceGroupNextWithHttpOperationResponse</a></li><li data-type='method'><a href="Registries.html#listByResourceGroupWithHttpOperationResponse">listByResourceGroupWithHttpOperationResponse</a></li><li data-type='method'><a href="Registries.html#listCredentials">listCredentials</a></li><li data-type='method'><a href="Registries.html#listCredentialsWithHttpOperationResponse">listCredentialsWithHttpOperationResponse</a></li><li data-type='method'><a href="Registries.html#listNext">listNext</a></li><li data-type='method'><a href="Registries.html#listNextWithHttpOperationResponse">listNextWithHttpOperationResponse</a></li><li data-type='method'><a href="Registries.html#listUsages">listUsages</a></li><li data-type='method'><a href="Registries.html#listUsagesWithHttpOperationResponse">listUsagesWithHttpOperationResponse</a></li><li data-type='method'><a href="Registries.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li><li data-type='method'><a href="Registries.html#regenerateCredential">regenerateCredential</a></li><li data-type='method'><a href="Registries.html#regenerateCredentialWithHttpOperationResponse">regenerateCredentialWithHttpOperationResponse</a></li><li data-type='method'><a href="Registries.html#update">update</a></li><li data-type='method'><a href="Registries.html#updateWithHttpOperationResponse">updateWithHttpOperationResponse</a></li></ul></li><li><a href="Registry.html">Registry</a><ul class='methods'><li data-type='method'><a href="Registry.html#mapper">mapper</a></li></ul></li><li><a href="RegistryListCredentialsResult.html">RegistryListCredentialsResult</a><ul class='methods'><li data-type='method'><a href="RegistryListCredentialsResult.html#mapper">mapper</a></li></ul></li><li><a href="RegistryListResult.html">RegistryListResult</a><ul class='methods'><li data-type='method'><a href="RegistryListResult.html#mapper">mapper</a></li></ul></li><li><a href="RegistryNameCheckRequest.html">RegistryNameCheckRequest</a><ul class='methods'><li data-type='method'><a href="RegistryNameCheckRequest.html#mapper">mapper</a></li></ul></li><li><a href="RegistryNameStatus.html">RegistryNameStatus</a><ul class='methods'><li data-type='method'><a href="RegistryNameStatus.html#mapper">mapper</a></li></ul></li><li><a href="RegistryPassword.html">RegistryPassword</a><ul class='methods'><li data-type='method'><a href="RegistryPassword.html#mapper">mapper</a></li></ul></li><li><a href="RegistryUpdateParameters.html">RegistryUpdateParameters</a><ul class='methods'><li data-type='method'><a href="RegistryUpdateParameters.html#mapper">mapper</a></li></ul></li><li><a href="RegistryUsage.html">RegistryUsage</a><ul class='methods'><li data-type='method'><a href="RegistryUsage.html#mapper">mapper</a></li></ul></li><li><a href="RegistryUsageListResult.html">RegistryUsageListResult</a><ul class='methods'><li data-type='method'><a href="RegistryUsageListResult.html#mapper">mapper</a></li></ul></li><li><a href="Replication.html">Replication</a><ul class='methods'><li data-type='method'><a href="Replication.html#mapper">mapper</a></li></ul></li><li><a href="ReplicationListResult.html">ReplicationListResult</a><ul class='methods'><li data-type='method'><a href="ReplicationListResult.html#mapper">mapper</a></li></ul></li><li><a href="Replications.html">Replications</a><ul class='methods'><li data-type='method'><a href="Replications.html#beginCreate">beginCreate</a></li><li data-type='method'><a href="Replications.html#beginCreateWithHttpOperationResponse">beginCreateWithHttpOperationResponse</a></li><li data-type='method'><a href="Replications.html#beginDeleteMethod">beginDeleteMethod</a></li><li data-type='method'><a href="Replications.html#beginDeleteMethodWithHttpOperationResponse">beginDeleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="Replications.html#beginUpdate">beginUpdate</a></li><li data-type='method'><a href="Replications.html#beginUpdateWithHttpOperationResponse">beginUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="Replications.html#create">create</a></li><li data-type='method'><a href="Replications.html#createWithHttpOperationResponse">createWithHttpOperationResponse</a></li><li data-type='method'><a href="Replications.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="Replications.html#deleteMethodWithHttpOperationResponse">deleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="Replications.html#get">get</a></li><li data-type='method'><a href="Replications.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="Replications.html#list">list</a></li><li data-type='method'><a href="Replications.html#listNext">listNext</a></li><li data-type='method'><a href="Replications.html#listNextWithHttpOperationResponse">listNextWithHttpOperationResponse</a></li><li data-type='method'><a href="Replications.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li><li data-type='method'><a href="Replications.html#update">update</a></li><li data-type='method'><a href="Replications.html#updateWithHttpOperationResponse">updateWithHttpOperationResponse</a></li></ul></li><li><a href="ReplicationUpdateParameters.html">ReplicationUpdateParameters</a><ul class='methods'><li data-type='method'><a href="ReplicationUpdateParameters.html#mapper">mapper</a></li></ul></li><li><a href="Request.html">Request</a><ul class='methods'><li data-type='method'><a href="Request.html#mapper">mapper</a></li></ul></li><li><a href="Resource.html">Resource</a><ul class='methods'><li data-type='method'><a href="Resource.html#mapper">mapper</a></li></ul></li><li><a href="Sku.html">Sku</a><ul class='methods'><li data-type='method'><a href="Sku.html#mapper">mapper</a></li></ul></li><li><a href="Source.html">Source</a><ul class='methods'><li data-type='method'><a href="Source.html#mapper">mapper</a></li></ul></li><li><a href="Status.html">Status</a><ul class='methods'><li data-type='method'><a href="Status.html#mapper">mapper</a></li></ul></li><li><a href="StorageAccountProperties.html">StorageAccountProperties</a><ul class='methods'><li data-type='method'><a href="StorageAccountProperties.html#mapper">mapper</a></li></ul></li><li><a href="Target.html">Target</a><ul class='methods'><li data-type='method'><a href="Target.html#mapper">mapper</a></li></ul></li><li><a href="Webhook.html">Webhook</a><ul class='methods'><li data-type='method'><a href="Webhook.html#mapper">mapper</a></li></ul></li><li><a href="WebhookCreateParameters.html">WebhookCreateParameters</a><ul class='methods'><li data-type='method'><a href="WebhookCreateParameters.html#mapper">mapper</a></li></ul></li><li><a href="WebhookListResult.html">WebhookListResult</a><ul class='methods'><li data-type='method'><a href="WebhookListResult.html#mapper">mapper</a></li></ul></li><li><a href="Webhooks.html">Webhooks</a><ul class='methods'><li data-type='method'><a href="Webhooks.html#beginCreate">beginCreate</a></li><li data-type='method'><a href="Webhooks.html#beginCreateWithHttpOperationResponse">beginCreateWithHttpOperationResponse</a></li><li data-type='method'><a href="Webhooks.html#beginDeleteMethod">beginDeleteMethod</a></li><li data-type='method'><a href="Webhooks.html#beginDeleteMethodWithHttpOperationResponse">beginDeleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="Webhooks.html#beginUpdate">beginUpdate</a></li><li data-type='method'><a href="Webhooks.html#beginUpdateWithHttpOperationResponse">beginUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="Webhooks.html#create">create</a></li><li data-type='method'><a href="Webhooks.html#createWithHttpOperationResponse">createWithHttpOperationResponse</a></li><li data-type='method'><a href="Webhooks.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="Webhooks.html#deleteMethodWithHttpOperationResponse">deleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="Webhooks.html#get">get</a></li><li data-type='method'><a href="Webhooks.html#getCallbackConfig">getCallbackConfig</a></li><li data-type='method'><a href="Webhooks.html#getCallbackConfigWithHttpOperationResponse">getCallbackConfigWithHttpOperationResponse</a></li><li data-type='method'><a href="Webhooks.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="Webhooks.html#list">list</a></li><li data-type='method'><a href="Webhooks.html#listEvents">listEvents</a></li><li data-type='method'><a href="Webhooks.html#listEventsNext">listEventsNext</a></li><li data-type='method'><a href="Webhooks.html#listEventsNextWithHttpOperationResponse">listEventsNextWithHttpOperationResponse</a></li><li data-type='method'><a href="Webhooks.html#listEventsWithHttpOperationResponse">listEventsWithHttpOperationResponse</a></li><li data-type='method'><a href="Webhooks.html#listNext">listNext</a></li><li data-type='method'><a href="Webhooks.html#listNextWithHttpOperationResponse">listNextWithHttpOperationResponse</a></li><li data-type='method'><a href="Webhooks.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li><li data-type='method'><a href="Webhooks.html#ping">ping</a></li><li data-type='method'><a href="Webhooks.html#pingWithHttpOperationResponse">pingWithHttpOperationResponse</a></li><li data-type='method'><a href="Webhooks.html#update">update</a></li><li data-type='method'><a href="Webhooks.html#updateWithHttpOperationResponse">updateWithHttpOperationResponse</a></li></ul></li><li><a href="WebhookUpdateParameters.html">WebhookUpdateParameters</a><ul class='methods'><li data-type='method'><a href="WebhookUpdateParameters.html#mapper">mapper</a></li></ul></li></ul><h3>Global</h3><ul><li><a href="global.html#_beginCreate">_beginCreate</a></li><li><a href="global.html#_beginDeleteMethod">_beginDeleteMethod</a></li><li><a href="global.html#_beginUpdate">_beginUpdate</a></li><li><a href="global.html#_checkNameAvailability">_checkNameAvailability</a></li><li><a href="global.html#_create">_create</a></li><li><a href="global.html#_deleteMethod">_deleteMethod</a></li><li><a href="global.html#_get">_get</a></li><li><a href="global.html#_getCallbackConfig">_getCallbackConfig</a></li><li><a href="global.html#_list">_list</a></li><li><a href="global.html#_listByResourceGroup">_listByResourceGroup</a></li><li><a href="global.html#_listByResourceGroupNext">_listByResourceGroupNext</a></li><li><a href="global.html#_listCredentials">_listCredentials</a></li><li><a href="global.html#_listEvents">_listEvents</a></li><li><a href="global.html#_listEventsNext">_listEventsNext</a></li><li><a href="global.html#_listNext">_listNext</a></li><li><a href="global.html#_listUsages">_listUsages</a></li><li><a href="global.html#_ping">_ping</a></li><li><a href="global.html#_regenerateCredential">_regenerateCredential</a></li><li><a href="global.html#_update">_update</a></li><li><a href="global.html#actions">actions</a></li><li><a href="global.html#customHeaders">customHeaders</a></li><li><a href="global.html#description">description</a></li><li><a href="global.html#id">id</a></li><li><a href="global.html#instanceID">instanceID</a></li><li><a href="global.html#message">message</a></li><li><a href="global.html#name">name</a></li><li><a href="global.html#nextLink">nextLink</a></li><li><a href="global.html#passwords">passwords</a></li><li><a href="global.html#provisioningState">provisioningState</a></li><li><a href="global.html#tag">tag</a></li><li><a href="global.html#tags">tags</a></li><li><a href="global.html#tier">tier</a></li><li><a href="global.html#timestamp">timestamp</a></li><li><a href="global.html#unit">unit</a></li><li><a href="global.html#useragent">useragent</a></li><li><a href="global.html#value">value</a></li><li><a href="global.html#version">version</a></li></ul>
+</nav>
+
+<div id="main">
+    
+      <a class="github-banner" href="https://github.com/azure/azure-sdk-for-node.git"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+    
+    
+    <h1 class="page-title">operations/operations.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/*
+ * Copyright (c) Microsoft Corporation. All rights reserved.
+ * Licensed under the MIT License. See License.txt in the project root for
+ * license information.
+ *
+ * Code generated by Microsoft (R) AutoRest Code Generator.
+ * Changes may cause incorrect behavior and will be lost if the code is
+ * regenerated.
+ */
+
+'use strict';
+
+const msRest = require('ms-rest');
+const msRestAzure = require('ms-rest-azure');
+const WebResource = msRest.WebResource;
+
+/**
+ * Lists all of the available Azure Container Registry REST API operations.
+ *
+ * @param {object} [options] Optional Parameters.
+ *
+ * @param {object} [options.customHeaders] Headers that will be added to the
+ * request
+ *
+ * @param {function} callback - The callback.
+ *
+ * @returns {function} callback(err, result, request, response)
+ *
+ *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+ *
+ *                      {object} [result]   - The deserialized result object if an error did not occur.
+ *                      See {@link OperationListResult} for more information.
+ *
+ *                      {object} [request]  - The HTTP Request object if an error did not occur.
+ *
+ *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+ */
+function _list(options, callback) {
+   /* jshint validthis: true */
+  let client = this.client;
+  if(!callback &amp;&amp; typeof options === 'function') {
+    callback = options;
+    options = null;
+  }
+  if (!callback) {
+    throw new Error('callback cannot be null.');
+  }
+  // Validate
+  try {
+    if (this.client.apiVersion === null || this.client.apiVersion === undefined || typeof this.client.apiVersion.valueOf() !== 'string') {
+      throw new Error('this.client.apiVersion cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.acceptLanguage !== null &amp;&amp; this.client.acceptLanguage !== undefined &amp;&amp; typeof this.client.acceptLanguage.valueOf() !== 'string') {
+      throw new Error('this.client.acceptLanguage must be of type string.');
+    }
+  } catch (error) {
+    return callback(error);
+  }
+
+  // Construct URL
+  let baseUrl = this.client.baseUri;
+  let requestUrl = baseUrl + (baseUrl.endsWith('/') ? '' : '/') + 'providers/Microsoft.ContainerRegistry/operations';
+  let queryParameters = [];
+  queryParameters.push('api-version=' + encodeURIComponent(this.client.apiVersion));
+  if (queryParameters.length > 0) {
+    requestUrl += '?' + queryParameters.join('&amp;');
+  }
+
+  // Create HTTP transport objects
+  let httpRequest = new WebResource();
+  httpRequest.method = 'GET';
+  httpRequest.url = requestUrl;
+  httpRequest.headers = {};
+  // Set Headers
+  httpRequest.headers['Content-Type'] = 'application/json; charset=utf-8';
+  if (this.client.generateClientRequestId) {
+      httpRequest.headers['x-ms-client-request-id'] = msRestAzure.generateUuid();
+  }
+  if (this.client.acceptLanguage !== undefined &amp;&amp; this.client.acceptLanguage !== null) {
+    httpRequest.headers['accept-language'] = this.client.acceptLanguage;
+  }
+  if(options) {
+    for(let headerName in options['customHeaders']) {
+      if (options['customHeaders'].hasOwnProperty(headerName)) {
+        httpRequest.headers[headerName] = options['customHeaders'][headerName];
+      }
+    }
+  }
+  httpRequest.body = null;
+  // Send Request
+  return client.pipeline(httpRequest, (err, response, responseBody) => {
+    if (err) {
+      return callback(err);
+    }
+    let statusCode = response.statusCode;
+    if (statusCode !== 200) {
+      let error = new Error(responseBody);
+      error.statusCode = response.statusCode;
+      error.request = msRest.stripRequest(httpRequest);
+      error.response = msRest.stripResponse(response);
+      if (responseBody === '') responseBody = null;
+      let parsedErrorResponse;
+      try {
+        parsedErrorResponse = JSON.parse(responseBody);
+        if (parsedErrorResponse) {
+          if (parsedErrorResponse.error) parsedErrorResponse = parsedErrorResponse.error;
+          if (parsedErrorResponse.code) error.code = parsedErrorResponse.code;
+          if (parsedErrorResponse.message) error.message = parsedErrorResponse.message;
+        }
+        if (parsedErrorResponse !== null &amp;&amp; parsedErrorResponse !== undefined) {
+          let resultMapper = new client.models['CloudError']().mapper();
+          error.body = client.deserialize(resultMapper, parsedErrorResponse, 'error.body');
+        }
+      } catch (defaultError) {
+        error.message = `Error "${defaultError.message}" occurred in deserializing the responseBody ` +
+                         `- "${responseBody}" for the default response.`;
+        return callback(error);
+      }
+      return callback(error);
+    }
+    // Create Result
+    let result = null;
+    if (responseBody === '') responseBody = null;
+    // Deserialize Response
+    if (statusCode === 200) {
+      let parsedResponse = null;
+      try {
+        parsedResponse = JSON.parse(responseBody);
+        result = JSON.parse(responseBody);
+        if (parsedResponse !== null &amp;&amp; parsedResponse !== undefined) {
+          let resultMapper = new client.models['OperationListResult']().mapper();
+          result = client.deserialize(resultMapper, parsedResponse, 'result');
+        }
+      } catch (error) {
+        let deserializationError = new Error(`Error ${error} occurred in deserializing the responseBody - ${responseBody}`);
+        deserializationError.request = msRest.stripRequest(httpRequest);
+        deserializationError.response = msRest.stripResponse(response);
+        return callback(deserializationError);
+      }
+    }
+
+    return callback(null, result, httpRequest, response);
+  });
+}
+
+/**
+ * Lists all of the available Azure Container Registry REST API operations.
+ *
+ * @param {string} nextPageLink The NextLink from the previous successful call
+ * to List operation.
+ *
+ * @param {object} [options] Optional Parameters.
+ *
+ * @param {object} [options.customHeaders] Headers that will be added to the
+ * request
+ *
+ * @param {function} callback - The callback.
+ *
+ * @returns {function} callback(err, result, request, response)
+ *
+ *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+ *
+ *                      {object} [result]   - The deserialized result object if an error did not occur.
+ *                      See {@link OperationListResult} for more information.
+ *
+ *                      {object} [request]  - The HTTP Request object if an error did not occur.
+ *
+ *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+ */
+function _listNext(nextPageLink, options, callback) {
+   /* jshint validthis: true */
+  let client = this.client;
+  if(!callback &amp;&amp; typeof options === 'function') {
+    callback = options;
+    options = null;
+  }
+  if (!callback) {
+    throw new Error('callback cannot be null.');
+  }
+  // Validate
+  try {
+    if (nextPageLink === null || nextPageLink === undefined || typeof nextPageLink.valueOf() !== 'string') {
+      throw new Error('nextPageLink cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.acceptLanguage !== null &amp;&amp; this.client.acceptLanguage !== undefined &amp;&amp; typeof this.client.acceptLanguage.valueOf() !== 'string') {
+      throw new Error('this.client.acceptLanguage must be of type string.');
+    }
+  } catch (error) {
+    return callback(error);
+  }
+
+  // Construct URL
+  let requestUrl = '{nextLink}';
+  requestUrl = requestUrl.replace('{nextLink}', nextPageLink);
+
+  // Create HTTP transport objects
+  let httpRequest = new WebResource();
+  httpRequest.method = 'GET';
+  httpRequest.url = requestUrl;
+  httpRequest.headers = {};
+  // Set Headers
+  httpRequest.headers['Content-Type'] = 'application/json; charset=utf-8';
+  if (this.client.generateClientRequestId) {
+      httpRequest.headers['x-ms-client-request-id'] = msRestAzure.generateUuid();
+  }
+  if (this.client.acceptLanguage !== undefined &amp;&amp; this.client.acceptLanguage !== null) {
+    httpRequest.headers['accept-language'] = this.client.acceptLanguage;
+  }
+  if(options) {
+    for(let headerName in options['customHeaders']) {
+      if (options['customHeaders'].hasOwnProperty(headerName)) {
+        httpRequest.headers[headerName] = options['customHeaders'][headerName];
+      }
+    }
+  }
+  httpRequest.body = null;
+  // Send Request
+  return client.pipeline(httpRequest, (err, response, responseBody) => {
+    if (err) {
+      return callback(err);
+    }
+    let statusCode = response.statusCode;
+    if (statusCode !== 200) {
+      let error = new Error(responseBody);
+      error.statusCode = response.statusCode;
+      error.request = msRest.stripRequest(httpRequest);
+      error.response = msRest.stripResponse(response);
+      if (responseBody === '') responseBody = null;
+      let parsedErrorResponse;
+      try {
+        parsedErrorResponse = JSON.parse(responseBody);
+        if (parsedErrorResponse) {
+          if (parsedErrorResponse.error) parsedErrorResponse = parsedErrorResponse.error;
+          if (parsedErrorResponse.code) error.code = parsedErrorResponse.code;
+          if (parsedErrorResponse.message) error.message = parsedErrorResponse.message;
+        }
+        if (parsedErrorResponse !== null &amp;&amp; parsedErrorResponse !== undefined) {
+          let resultMapper = new client.models['CloudError']().mapper();
+          error.body = client.deserialize(resultMapper, parsedErrorResponse, 'error.body');
+        }
+      } catch (defaultError) {
+        error.message = `Error "${defaultError.message}" occurred in deserializing the responseBody ` +
+                         `- "${responseBody}" for the default response.`;
+        return callback(error);
+      }
+      return callback(error);
+    }
+    // Create Result
+    let result = null;
+    if (responseBody === '') responseBody = null;
+    // Deserialize Response
+    if (statusCode === 200) {
+      let parsedResponse = null;
+      try {
+        parsedResponse = JSON.parse(responseBody);
+        result = JSON.parse(responseBody);
+        if (parsedResponse !== null &amp;&amp; parsedResponse !== undefined) {
+          let resultMapper = new client.models['OperationListResult']().mapper();
+          result = client.deserialize(resultMapper, parsedResponse, 'result');
+        }
+      } catch (error) {
+        let deserializationError = new Error(`Error ${error} occurred in deserializing the responseBody - ${responseBody}`);
+        deserializationError.request = msRest.stripRequest(httpRequest);
+        deserializationError.response = msRest.stripResponse(response);
+        return callback(deserializationError);
+      }
+    }
+
+    return callback(null, result, httpRequest, response);
+  });
+}
+
+/** Class representing a Operations. */
+class Operations {
+  /**
+   * Create a Operations.
+   * @param {ContainerRegistryManagementClient} client Reference to the service client.
+   */
+  constructor(client) {
+    this.client = client;
+    this._list = _list;
+    this._listNext = _listNext;
+  }
+
+  /**
+   * Lists all of the available Azure Container Registry REST API operations.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @returns {Promise} A promise is returned
+   *
+   * @resolve {HttpOperationResponse&lt;OperationListResult>} - The deserialized result object.
+   *
+   * @reject {Error} - The error object.
+   */
+  listWithHttpOperationResponse(options) {
+    let client = this.client;
+    let self = this;
+    return new Promise((resolve, reject) => {
+      self._list(options, (err, result, request, response) => {
+        let httpOperationResponse = new msRest.HttpOperationResponse(request, response);
+        httpOperationResponse.body = result;
+        if (err) { reject(err); }
+        else { resolve(httpOperationResponse); }
+        return;
+      });
+    });
+  }
+
+  /**
+   * Lists all of the available Azure Container Registry REST API operations.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @param {function} [optionalCallback] - The optional callback.
+   *
+   * @returns {function|Promise} If a callback was passed as the last parameter
+   * then it returns the callback else returns a Promise.
+   *
+   * {Promise} A promise is returned
+   *
+   *                      @resolve {OperationListResult} - The deserialized result object.
+   *
+   *                      @reject {Error} - The error object.
+   *
+   * {function} optionalCallback(err, result, request, response)
+   *
+   *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+   *
+   *                      {object} [result]   - The deserialized result object if an error did not occur.
+   *                      See {@link OperationListResult} for more information.
+   *
+   *                      {object} [request]  - The HTTP Request object if an error did not occur.
+   *
+   *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+   */
+  list(options, optionalCallback) {
+    let client = this.client;
+    let self = this;
+    if (!optionalCallback &amp;&amp; typeof options === 'function') {
+      optionalCallback = options;
+      options = null;
+    }
+    if (!optionalCallback) {
+      return new Promise((resolve, reject) => {
+        self._list(options, (err, result, request, response) => {
+          if (err) { reject(err); }
+          else { resolve(result); }
+          return;
+        });
+      });
+    } else {
+      return self._list(options, optionalCallback);
+    }
+  }
+
+  /**
+   * Lists all of the available Azure Container Registry REST API operations.
+   *
+   * @param {string} nextPageLink The NextLink from the previous successful call
+   * to List operation.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @returns {Promise} A promise is returned
+   *
+   * @resolve {HttpOperationResponse&lt;OperationListResult>} - The deserialized result object.
+   *
+   * @reject {Error} - The error object.
+   */
+  listNextWithHttpOperationResponse(nextPageLink, options) {
+    let client = this.client;
+    let self = this;
+    return new Promise((resolve, reject) => {
+      self._listNext(nextPageLink, options, (err, result, request, response) => {
+        let httpOperationResponse = new msRest.HttpOperationResponse(request, response);
+        httpOperationResponse.body = result;
+        if (err) { reject(err); }
+        else { resolve(httpOperationResponse); }
+        return;
+      });
+    });
+  }
+
+  /**
+   * Lists all of the available Azure Container Registry REST API operations.
+   *
+   * @param {string} nextPageLink The NextLink from the previous successful call
+   * to List operation.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @param {function} [optionalCallback] - The optional callback.
+   *
+   * @returns {function|Promise} If a callback was passed as the last parameter
+   * then it returns the callback else returns a Promise.
+   *
+   * {Promise} A promise is returned
+   *
+   *                      @resolve {OperationListResult} - The deserialized result object.
+   *
+   *                      @reject {Error} - The error object.
+   *
+   * {function} optionalCallback(err, result, request, response)
+   *
+   *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+   *
+   *                      {object} [result]   - The deserialized result object if an error did not occur.
+   *                      See {@link OperationListResult} for more information.
+   *
+   *                      {object} [request]  - The HTTP Request object if an error did not occur.
+   *
+   *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+   */
+  listNext(nextPageLink, options, optionalCallback) {
+    let client = this.client;
+    let self = this;
+    if (!optionalCallback &amp;&amp; typeof options === 'function') {
+      optionalCallback = options;
+      options = null;
+    }
+    if (!optionalCallback) {
+      return new Promise((resolve, reject) => {
+        self._listNext(nextPageLink, options, (err, result, request, response) => {
+          if (err) { reject(err); }
+          else { resolve(result); }
+          return;
+        });
+      });
+    } else {
+      return self._listNext(nextPageLink, options, optionalCallback);
+    }
+  }
+
+}
+
+module.exports = Operations;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Thu Nov 09 2017 11:14:28 GMT-0800 (PST) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="../../scripts/linenumber.js"></script>
+</body>
+</html>

@@ -1,0 +1,1532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>operations/roleDefinitions.js - Documentation</title>
+    <meta name="viewport" content="initial-scale=.75">
+    <script src="../../scripts/prettify/prettify.js"></script>
+    <script src="../../scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="../../styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="../../styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><span><a href="../../index.html">Home</a> <span class="github-short">| <a href="https://github.com/azure/azure-sdk-for-node.git">GitHub</a></span></span></h2><h3>Classes</h3><ul><li><a href="AuthorizationManagementClient.html">AuthorizationManagementClient</a></li><li><a href="ClassicAdministrator.html">ClassicAdministrator</a><ul class='methods'><li data-type='method'><a href="ClassicAdministrator.html#mapper">mapper</a></li></ul></li><li><a href="ClassicAdministratorListResult.html">ClassicAdministratorListResult</a><ul class='methods'><li data-type='method'><a href="ClassicAdministratorListResult.html#mapper">mapper</a></li></ul></li><li><a href="ClassicAdministratorProperties.html">ClassicAdministratorProperties</a><ul class='methods'><li data-type='method'><a href="ClassicAdministratorProperties.html#mapper">mapper</a></li></ul></li><li><a href="ClassicAdministrators.html">ClassicAdministrators</a><ul class='methods'><li data-type='method'><a href="ClassicAdministrators.html#list">list</a></li><li data-type='method'><a href="ClassicAdministrators.html#listNext">listNext</a></li><li data-type='method'><a href="ClassicAdministrators.html#listNextWithHttpOperationResponse">listNextWithHttpOperationResponse</a></li><li data-type='method'><a href="ClassicAdministrators.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li></ul></li><li><a href="Permission.html">Permission</a><ul class='methods'><li data-type='method'><a href="Permission.html#mapper">mapper</a></li></ul></li><li><a href="PermissionGetResult.html">PermissionGetResult</a><ul class='methods'><li data-type='method'><a href="PermissionGetResult.html#mapper">mapper</a></li></ul></li><li><a href="Permissions.html">Permissions</a><ul class='methods'><li data-type='method'><a href="Permissions.html#listForResource">listForResource</a></li><li data-type='method'><a href="Permissions.html#listForResourceGroup">listForResourceGroup</a></li><li data-type='method'><a href="Permissions.html#listForResourceGroupNext">listForResourceGroupNext</a></li><li data-type='method'><a href="Permissions.html#listForResourceGroupNextWithHttpOperationResponse">listForResourceGroupNextWithHttpOperationResponse</a></li><li data-type='method'><a href="Permissions.html#listForResourceGroupWithHttpOperationResponse">listForResourceGroupWithHttpOperationResponse</a></li><li data-type='method'><a href="Permissions.html#listForResourceNext">listForResourceNext</a></li><li data-type='method'><a href="Permissions.html#listForResourceNextWithHttpOperationResponse">listForResourceNextWithHttpOperationResponse</a></li><li data-type='method'><a href="Permissions.html#listForResourceWithHttpOperationResponse">listForResourceWithHttpOperationResponse</a></li></ul></li><li><a href="ProviderOperation.html">ProviderOperation</a><ul class='methods'><li data-type='method'><a href="ProviderOperation.html#mapper">mapper</a></li></ul></li><li><a href="ProviderOperationsMetadata.html">ProviderOperationsMetadata</a><ul class='methods'><li data-type='method'><a href="ProviderOperationsMetadata.html#mapper">mapper</a></li></ul></li><li><a href="ProviderOperationsMetadataListResult.html">ProviderOperationsMetadataListResult</a><ul class='methods'><li data-type='method'><a href="ProviderOperationsMetadataListResult.html#mapper">mapper</a></li></ul></li><li><a href="ProviderOperationsMetadataOperations.html">ProviderOperationsMetadataOperations</a><ul class='methods'><li data-type='method'><a href="ProviderOperationsMetadataOperations.html#get">get</a></li><li data-type='method'><a href="ProviderOperationsMetadataOperations.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="ProviderOperationsMetadataOperations.html#list">list</a></li><li data-type='method'><a href="ProviderOperationsMetadataOperations.html#listNext">listNext</a></li><li data-type='method'><a href="ProviderOperationsMetadataOperations.html#listNextWithHttpOperationResponse">listNextWithHttpOperationResponse</a></li><li data-type='method'><a href="ProviderOperationsMetadataOperations.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li></ul></li><li><a href="ResourceType.html">ResourceType</a><ul class='methods'><li data-type='method'><a href="ResourceType.html#mapper">mapper</a></li></ul></li><li><a href="RoleAssignment.html">RoleAssignment</a><ul class='methods'><li data-type='method'><a href="RoleAssignment.html#mapper">mapper</a></li></ul></li><li><a href="RoleAssignmentCreateParameters.html">RoleAssignmentCreateParameters</a><ul class='methods'><li data-type='method'><a href="RoleAssignmentCreateParameters.html#mapper">mapper</a></li></ul></li><li><a href="RoleAssignmentFilter.html">RoleAssignmentFilter</a><ul class='methods'><li data-type='method'><a href="RoleAssignmentFilter.html#mapper">mapper</a></li></ul></li><li><a href="RoleAssignmentListResult.html">RoleAssignmentListResult</a><ul class='methods'><li data-type='method'><a href="RoleAssignmentListResult.html#mapper">mapper</a></li></ul></li><li><a href="RoleAssignmentProperties.html">RoleAssignmentProperties</a><ul class='methods'><li data-type='method'><a href="RoleAssignmentProperties.html#mapper">mapper</a></li></ul></li><li><a href="RoleAssignmentPropertiesWithScope.html">RoleAssignmentPropertiesWithScope</a><ul class='methods'><li data-type='method'><a href="RoleAssignmentPropertiesWithScope.html#mapper">mapper</a></li></ul></li><li><a href="RoleAssignments.html">RoleAssignments</a><ul class='methods'><li data-type='method'><a href="RoleAssignments.html#create">create</a></li><li data-type='method'><a href="RoleAssignments.html#createById">createById</a></li><li data-type='method'><a href="RoleAssignments.html#createByIdWithHttpOperationResponse">createByIdWithHttpOperationResponse</a></li><li data-type='method'><a href="RoleAssignments.html#createWithHttpOperationResponse">createWithHttpOperationResponse</a></li><li data-type='method'><a href="RoleAssignments.html#deleteById">deleteById</a></li><li data-type='method'><a href="RoleAssignments.html#deleteByIdWithHttpOperationResponse">deleteByIdWithHttpOperationResponse</a></li><li data-type='method'><a href="RoleAssignments.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="RoleAssignments.html#deleteMethodWithHttpOperationResponse">deleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="RoleAssignments.html#get">get</a></li><li data-type='method'><a href="RoleAssignments.html#getById">getById</a></li><li data-type='method'><a href="RoleAssignments.html#getByIdWithHttpOperationResponse">getByIdWithHttpOperationResponse</a></li><li data-type='method'><a href="RoleAssignments.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="RoleAssignments.html#list">list</a></li><li data-type='method'><a href="RoleAssignments.html#listForResource">listForResource</a></li><li data-type='method'><a href="RoleAssignments.html#listForResourceGroup">listForResourceGroup</a></li><li data-type='method'><a href="RoleAssignments.html#listForResourceGroupNext">listForResourceGroupNext</a></li><li data-type='method'><a href="RoleAssignments.html#listForResourceGroupNextWithHttpOperationResponse">listForResourceGroupNextWithHttpOperationResponse</a></li><li data-type='method'><a href="RoleAssignments.html#listForResourceGroupWithHttpOperationResponse">listForResourceGroupWithHttpOperationResponse</a></li><li data-type='method'><a href="RoleAssignments.html#listForResourceNext">listForResourceNext</a></li><li data-type='method'><a href="RoleAssignments.html#listForResourceNextWithHttpOperationResponse">listForResourceNextWithHttpOperationResponse</a></li><li data-type='method'><a href="RoleAssignments.html#listForResourceWithHttpOperationResponse">listForResourceWithHttpOperationResponse</a></li><li data-type='method'><a href="RoleAssignments.html#listForScope">listForScope</a></li><li data-type='method'><a href="RoleAssignments.html#listForScopeNext">listForScopeNext</a></li><li data-type='method'><a href="RoleAssignments.html#listForScopeNextWithHttpOperationResponse">listForScopeNextWithHttpOperationResponse</a></li><li data-type='method'><a href="RoleAssignments.html#listForScopeWithHttpOperationResponse">listForScopeWithHttpOperationResponse</a></li><li data-type='method'><a href="RoleAssignments.html#listNext">listNext</a></li><li data-type='method'><a href="RoleAssignments.html#listNextWithHttpOperationResponse">listNextWithHttpOperationResponse</a></li><li data-type='method'><a href="RoleAssignments.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li></ul></li><li><a href="RoleDefinition.html">RoleDefinition</a><ul class='methods'><li data-type='method'><a href="RoleDefinition.html#mapper">mapper</a></li></ul></li><li><a href="RoleDefinitionFilter.html">RoleDefinitionFilter</a><ul class='methods'><li data-type='method'><a href="RoleDefinitionFilter.html#mapper">mapper</a></li></ul></li><li><a href="RoleDefinitionListResult.html">RoleDefinitionListResult</a><ul class='methods'><li data-type='method'><a href="RoleDefinitionListResult.html#mapper">mapper</a></li></ul></li><li><a href="RoleDefinitionProperties.html">RoleDefinitionProperties</a><ul class='methods'><li data-type='method'><a href="RoleDefinitionProperties.html#mapper">mapper</a></li></ul></li><li><a href="RoleDefinitions.html">RoleDefinitions</a><ul class='methods'><li data-type='method'><a href="RoleDefinitions.html#createOrUpdate">createOrUpdate</a></li><li data-type='method'><a href="RoleDefinitions.html#createOrUpdateWithHttpOperationResponse">createOrUpdateWithHttpOperationResponse</a></li><li data-type='method'><a href="RoleDefinitions.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="RoleDefinitions.html#deleteMethodWithHttpOperationResponse">deleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="RoleDefinitions.html#get">get</a></li><li data-type='method'><a href="RoleDefinitions.html#getById">getById</a></li><li data-type='method'><a href="RoleDefinitions.html#getByIdWithHttpOperationResponse">getByIdWithHttpOperationResponse</a></li><li data-type='method'><a href="RoleDefinitions.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="RoleDefinitions.html#list">list</a></li><li data-type='method'><a href="RoleDefinitions.html#listNext">listNext</a></li><li data-type='method'><a href="RoleDefinitions.html#listNextWithHttpOperationResponse">listNextWithHttpOperationResponse</a></li><li data-type='method'><a href="RoleDefinitions.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li></ul></li></ul><h3>Global</h3><ul><li><a href="global.html#_create">_create</a></li><li><a href="global.html#_createById">_createById</a></li><li><a href="global.html#_createOrUpdate">_createOrUpdate</a></li><li><a href="global.html#_deleteById">_deleteById</a></li><li><a href="global.html#_deleteMethod">_deleteMethod</a></li><li><a href="global.html#_get">_get</a></li><li><a href="global.html#_getById">_getById</a></li><li><a href="global.html#_list">_list</a></li><li><a href="global.html#_listForResource">_listForResource</a></li><li><a href="global.html#_listForResourceGroup">_listForResourceGroup</a></li><li><a href="global.html#_listForResourceGroupNext">_listForResourceGroupNext</a></li><li><a href="global.html#_listForResourceNext">_listForResourceNext</a></li><li><a href="global.html#_listForScope">_listForScope</a></li><li><a href="global.html#_listForScopeNext">_listForScopeNext</a></li><li><a href="global.html#_listNext">_listNext</a></li><li><a href="global.html#assignableScopes">assignableScopes</a></li><li><a href="global.html#nextLink">nextLink</a></li><li><a href="global.html#notActions">notActions</a></li><li><a href="global.html#operations">operations</a></li><li><a href="global.html#principalId">principalId</a></li><li><a href="global.html#properties">properties</a></li><li><a href="global.html#role">role</a></li><li><a href="global.html#roleName">roleName</a></li></ul>
+</nav>
+
+<div id="main">
+    
+      <a class="github-banner" href="https://github.com/azure/azure-sdk-for-node.git"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+    
+    
+    <h1 class="page-title">operations/roleDefinitions.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/*
+ * Copyright (c) Microsoft Corporation. All rights reserved.
+ * Licensed under the MIT License. See License.txt in the project root for
+ * license information.
+ *
+ * Code generated by Microsoft (R) AutoRest Code Generator.
+ * Changes may cause incorrect behavior and will be lost if the code is
+ * regenerated.
+ */
+
+'use strict';
+
+const msRest = require('ms-rest');
+const msRestAzure = require('ms-rest-azure');
+const WebResource = msRest.WebResource;
+
+/**
+ * Deletes a role definition.
+ *
+ * @param {string} scope The scope of the role definition.
+ *
+ * @param {string} roleDefinitionId The ID of the role definition to delete.
+ *
+ * @param {object} [options] Optional Parameters.
+ *
+ * @param {object} [options.customHeaders] Headers that will be added to the
+ * request
+ *
+ * @param {function} callback - The callback.
+ *
+ * @returns {function} callback(err, result, request, response)
+ *
+ *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+ *
+ *                      {object} [result]   - The deserialized result object if an error did not occur.
+ *                      See {@link RoleDefinition} for more information.
+ *
+ *                      {object} [request]  - The HTTP Request object if an error did not occur.
+ *
+ *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+ */
+function _deleteMethod(scope, roleDefinitionId, options, callback) {
+   /* jshint validthis: true */
+  let client = this.client;
+  if(!callback &amp;&amp; typeof options === 'function') {
+    callback = options;
+    options = null;
+  }
+  if (!callback) {
+    throw new Error('callback cannot be null.');
+  }
+  // Validate
+  try {
+    if (scope === null || scope === undefined || typeof scope.valueOf() !== 'string') {
+      throw new Error('scope cannot be null or undefined and it must be of type string.');
+    }
+    if (roleDefinitionId === null || roleDefinitionId === undefined || typeof roleDefinitionId.valueOf() !== 'string') {
+      throw new Error('roleDefinitionId cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.apiVersion === null || this.client.apiVersion === undefined || typeof this.client.apiVersion.valueOf() !== 'string') {
+      throw new Error('this.client.apiVersion cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.acceptLanguage !== null &amp;&amp; this.client.acceptLanguage !== undefined &amp;&amp; typeof this.client.acceptLanguage.valueOf() !== 'string') {
+      throw new Error('this.client.acceptLanguage must be of type string.');
+    }
+  } catch (error) {
+    return callback(error);
+  }
+
+  // Construct URL
+  let baseUrl = this.client.baseUri;
+  let requestUrl = baseUrl + (baseUrl.endsWith('/') ? '' : '/') + '{scope}/providers/Microsoft.Authorization/roleDefinitions/{roleDefinitionId}';
+  requestUrl = requestUrl.replace('{scope}', scope);
+  requestUrl = requestUrl.replace('{roleDefinitionId}', encodeURIComponent(roleDefinitionId));
+  let queryParameters = [];
+  queryParameters.push('api-version=' + encodeURIComponent(this.client.apiVersion));
+  if (queryParameters.length > 0) {
+    requestUrl += '?' + queryParameters.join('&amp;');
+  }
+
+  // Create HTTP transport objects
+  let httpRequest = new WebResource();
+  httpRequest.method = 'DELETE';
+  httpRequest.url = requestUrl;
+  httpRequest.headers = {};
+  // Set Headers
+  httpRequest.headers['Content-Type'] = 'application/json; charset=utf-8';
+  if (this.client.generateClientRequestId) {
+      httpRequest.headers['x-ms-client-request-id'] = msRestAzure.generateUuid();
+  }
+  if (this.client.acceptLanguage !== undefined &amp;&amp; this.client.acceptLanguage !== null) {
+    httpRequest.headers['accept-language'] = this.client.acceptLanguage;
+  }
+  if(options) {
+    for(let headerName in options['customHeaders']) {
+      if (options['customHeaders'].hasOwnProperty(headerName)) {
+        httpRequest.headers[headerName] = options['customHeaders'][headerName];
+      }
+    }
+  }
+  httpRequest.body = null;
+  // Send Request
+  return client.pipeline(httpRequest, (err, response, responseBody) => {
+    if (err) {
+      return callback(err);
+    }
+    let statusCode = response.statusCode;
+    if (statusCode !== 200) {
+      let error = new Error(responseBody);
+      error.statusCode = response.statusCode;
+      error.request = msRest.stripRequest(httpRequest);
+      error.response = msRest.stripResponse(response);
+      if (responseBody === '') responseBody = null;
+      let parsedErrorResponse;
+      try {
+        parsedErrorResponse = JSON.parse(responseBody);
+        if (parsedErrorResponse) {
+          if (parsedErrorResponse.error) parsedErrorResponse = parsedErrorResponse.error;
+          if (parsedErrorResponse.code) error.code = parsedErrorResponse.code;
+          if (parsedErrorResponse.message) error.message = parsedErrorResponse.message;
+        }
+        if (parsedErrorResponse !== null &amp;&amp; parsedErrorResponse !== undefined) {
+          let resultMapper = new client.models['CloudError']().mapper();
+          error.body = client.deserialize(resultMapper, parsedErrorResponse, 'error.body');
+        }
+      } catch (defaultError) {
+        error.message = `Error "${defaultError.message}" occurred in deserializing the responseBody ` +
+                         `- "${responseBody}" for the default response.`;
+        return callback(error);
+      }
+      return callback(error);
+    }
+    // Create Result
+    let result = null;
+    if (responseBody === '') responseBody = null;
+    // Deserialize Response
+    if (statusCode === 200) {
+      let parsedResponse = null;
+      try {
+        parsedResponse = JSON.parse(responseBody);
+        result = JSON.parse(responseBody);
+        if (parsedResponse !== null &amp;&amp; parsedResponse !== undefined) {
+          let resultMapper = new client.models['RoleDefinition']().mapper();
+          result = client.deserialize(resultMapper, parsedResponse, 'result');
+        }
+      } catch (error) {
+        let deserializationError = new Error(`Error ${error} occurred in deserializing the responseBody - ${responseBody}`);
+        deserializationError.request = msRest.stripRequest(httpRequest);
+        deserializationError.response = msRest.stripResponse(response);
+        return callback(deserializationError);
+      }
+    }
+
+    return callback(null, result, httpRequest, response);
+  });
+}
+
+/**
+ * Get role definition by name (GUID).
+ *
+ * @param {string} scope The scope of the role definition.
+ *
+ * @param {string} roleDefinitionId The ID of the role definition.
+ *
+ * @param {object} [options] Optional Parameters.
+ *
+ * @param {object} [options.customHeaders] Headers that will be added to the
+ * request
+ *
+ * @param {function} callback - The callback.
+ *
+ * @returns {function} callback(err, result, request, response)
+ *
+ *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+ *
+ *                      {object} [result]   - The deserialized result object if an error did not occur.
+ *                      See {@link RoleDefinition} for more information.
+ *
+ *                      {object} [request]  - The HTTP Request object if an error did not occur.
+ *
+ *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+ */
+function _get(scope, roleDefinitionId, options, callback) {
+   /* jshint validthis: true */
+  let client = this.client;
+  if(!callback &amp;&amp; typeof options === 'function') {
+    callback = options;
+    options = null;
+  }
+  if (!callback) {
+    throw new Error('callback cannot be null.');
+  }
+  // Validate
+  try {
+    if (scope === null || scope === undefined || typeof scope.valueOf() !== 'string') {
+      throw new Error('scope cannot be null or undefined and it must be of type string.');
+    }
+    if (roleDefinitionId === null || roleDefinitionId === undefined || typeof roleDefinitionId.valueOf() !== 'string') {
+      throw new Error('roleDefinitionId cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.apiVersion === null || this.client.apiVersion === undefined || typeof this.client.apiVersion.valueOf() !== 'string') {
+      throw new Error('this.client.apiVersion cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.acceptLanguage !== null &amp;&amp; this.client.acceptLanguage !== undefined &amp;&amp; typeof this.client.acceptLanguage.valueOf() !== 'string') {
+      throw new Error('this.client.acceptLanguage must be of type string.');
+    }
+  } catch (error) {
+    return callback(error);
+  }
+
+  // Construct URL
+  let baseUrl = this.client.baseUri;
+  let requestUrl = baseUrl + (baseUrl.endsWith('/') ? '' : '/') + '{scope}/providers/Microsoft.Authorization/roleDefinitions/{roleDefinitionId}';
+  requestUrl = requestUrl.replace('{scope}', scope);
+  requestUrl = requestUrl.replace('{roleDefinitionId}', encodeURIComponent(roleDefinitionId));
+  let queryParameters = [];
+  queryParameters.push('api-version=' + encodeURIComponent(this.client.apiVersion));
+  if (queryParameters.length > 0) {
+    requestUrl += '?' + queryParameters.join('&amp;');
+  }
+
+  // Create HTTP transport objects
+  let httpRequest = new WebResource();
+  httpRequest.method = 'GET';
+  httpRequest.url = requestUrl;
+  httpRequest.headers = {};
+  // Set Headers
+  httpRequest.headers['Content-Type'] = 'application/json; charset=utf-8';
+  if (this.client.generateClientRequestId) {
+      httpRequest.headers['x-ms-client-request-id'] = msRestAzure.generateUuid();
+  }
+  if (this.client.acceptLanguage !== undefined &amp;&amp; this.client.acceptLanguage !== null) {
+    httpRequest.headers['accept-language'] = this.client.acceptLanguage;
+  }
+  if(options) {
+    for(let headerName in options['customHeaders']) {
+      if (options['customHeaders'].hasOwnProperty(headerName)) {
+        httpRequest.headers[headerName] = options['customHeaders'][headerName];
+      }
+    }
+  }
+  httpRequest.body = null;
+  // Send Request
+  return client.pipeline(httpRequest, (err, response, responseBody) => {
+    if (err) {
+      return callback(err);
+    }
+    let statusCode = response.statusCode;
+    if (statusCode !== 200) {
+      let error = new Error(responseBody);
+      error.statusCode = response.statusCode;
+      error.request = msRest.stripRequest(httpRequest);
+      error.response = msRest.stripResponse(response);
+      if (responseBody === '') responseBody = null;
+      let parsedErrorResponse;
+      try {
+        parsedErrorResponse = JSON.parse(responseBody);
+        if (parsedErrorResponse) {
+          if (parsedErrorResponse.error) parsedErrorResponse = parsedErrorResponse.error;
+          if (parsedErrorResponse.code) error.code = parsedErrorResponse.code;
+          if (parsedErrorResponse.message) error.message = parsedErrorResponse.message;
+        }
+        if (parsedErrorResponse !== null &amp;&amp; parsedErrorResponse !== undefined) {
+          let resultMapper = new client.models['CloudError']().mapper();
+          error.body = client.deserialize(resultMapper, parsedErrorResponse, 'error.body');
+        }
+      } catch (defaultError) {
+        error.message = `Error "${defaultError.message}" occurred in deserializing the responseBody ` +
+                         `- "${responseBody}" for the default response.`;
+        return callback(error);
+      }
+      return callback(error);
+    }
+    // Create Result
+    let result = null;
+    if (responseBody === '') responseBody = null;
+    // Deserialize Response
+    if (statusCode === 200) {
+      let parsedResponse = null;
+      try {
+        parsedResponse = JSON.parse(responseBody);
+        result = JSON.parse(responseBody);
+        if (parsedResponse !== null &amp;&amp; parsedResponse !== undefined) {
+          let resultMapper = new client.models['RoleDefinition']().mapper();
+          result = client.deserialize(resultMapper, parsedResponse, 'result');
+        }
+      } catch (error) {
+        let deserializationError = new Error(`Error ${error} occurred in deserializing the responseBody - ${responseBody}`);
+        deserializationError.request = msRest.stripRequest(httpRequest);
+        deserializationError.response = msRest.stripResponse(response);
+        return callback(deserializationError);
+      }
+    }
+
+    return callback(null, result, httpRequest, response);
+  });
+}
+
+/**
+ * Creates or updates a role definition.
+ *
+ * @param {string} scope The scope of the role definition.
+ *
+ * @param {string} roleDefinitionId The ID of the role definition.
+ *
+ * @param {object} roleDefinition The values for the role definition.
+ *
+ * @param {string} [roleDefinition.id] The role definition ID.
+ *
+ * @param {string} [roleDefinition.name] The role definition name.
+ *
+ * @param {string} [roleDefinition.type] The role definition type.
+ *
+ * @param {object} [roleDefinition.properties] Role definition properties.
+ *
+ * @param {string} [roleDefinition.properties.roleName] The role name.
+ *
+ * @param {string} [roleDefinition.properties.description] The role definition
+ * description.
+ *
+ * @param {string} [roleDefinition.properties.type] The role type.
+ *
+ * @param {array} [roleDefinition.properties.permissions] Role definition
+ * permissions.
+ *
+ * @param {array} [roleDefinition.properties.assignableScopes] Role definition
+ * assignable scopes.
+ *
+ * @param {object} [options] Optional Parameters.
+ *
+ * @param {object} [options.customHeaders] Headers that will be added to the
+ * request
+ *
+ * @param {function} callback - The callback.
+ *
+ * @returns {function} callback(err, result, request, response)
+ *
+ *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+ *
+ *                      {object} [result]   - The deserialized result object if an error did not occur.
+ *                      See {@link RoleDefinition} for more information.
+ *
+ *                      {object} [request]  - The HTTP Request object if an error did not occur.
+ *
+ *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+ */
+function _createOrUpdate(scope, roleDefinitionId, roleDefinition, options, callback) {
+   /* jshint validthis: true */
+  let client = this.client;
+  if(!callback &amp;&amp; typeof options === 'function') {
+    callback = options;
+    options = null;
+  }
+  if (!callback) {
+    throw new Error('callback cannot be null.');
+  }
+  // Validate
+  try {
+    if (scope === null || scope === undefined || typeof scope.valueOf() !== 'string') {
+      throw new Error('scope cannot be null or undefined and it must be of type string.');
+    }
+    if (roleDefinitionId === null || roleDefinitionId === undefined || typeof roleDefinitionId.valueOf() !== 'string') {
+      throw new Error('roleDefinitionId cannot be null or undefined and it must be of type string.');
+    }
+    if (roleDefinition === null || roleDefinition === undefined) {
+      throw new Error('roleDefinition cannot be null or undefined.');
+    }
+    if (this.client.apiVersion === null || this.client.apiVersion === undefined || typeof this.client.apiVersion.valueOf() !== 'string') {
+      throw new Error('this.client.apiVersion cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.acceptLanguage !== null &amp;&amp; this.client.acceptLanguage !== undefined &amp;&amp; typeof this.client.acceptLanguage.valueOf() !== 'string') {
+      throw new Error('this.client.acceptLanguage must be of type string.');
+    }
+  } catch (error) {
+    return callback(error);
+  }
+
+  // Construct URL
+  let baseUrl = this.client.baseUri;
+  let requestUrl = baseUrl + (baseUrl.endsWith('/') ? '' : '/') + '{scope}/providers/Microsoft.Authorization/roleDefinitions/{roleDefinitionId}';
+  requestUrl = requestUrl.replace('{scope}', scope);
+  requestUrl = requestUrl.replace('{roleDefinitionId}', encodeURIComponent(roleDefinitionId));
+  let queryParameters = [];
+  queryParameters.push('api-version=' + encodeURIComponent(this.client.apiVersion));
+  if (queryParameters.length > 0) {
+    requestUrl += '?' + queryParameters.join('&amp;');
+  }
+
+  // Create HTTP transport objects
+  let httpRequest = new WebResource();
+  httpRequest.method = 'PUT';
+  httpRequest.url = requestUrl;
+  httpRequest.headers = {};
+  // Set Headers
+  httpRequest.headers['Content-Type'] = 'application/json; charset=utf-8';
+  if (this.client.generateClientRequestId) {
+      httpRequest.headers['x-ms-client-request-id'] = msRestAzure.generateUuid();
+  }
+  if (this.client.acceptLanguage !== undefined &amp;&amp; this.client.acceptLanguage !== null) {
+    httpRequest.headers['accept-language'] = this.client.acceptLanguage;
+  }
+  if(options) {
+    for(let headerName in options['customHeaders']) {
+      if (options['customHeaders'].hasOwnProperty(headerName)) {
+        httpRequest.headers[headerName] = options['customHeaders'][headerName];
+      }
+    }
+  }
+  // Serialize Request
+  let requestContent = null;
+  let requestModel = null;
+  try {
+    if (roleDefinition !== null &amp;&amp; roleDefinition !== undefined) {
+      let requestModelMapper = new client.models['RoleDefinition']().mapper();
+      requestModel = client.serialize(requestModelMapper, roleDefinition, 'roleDefinition');
+      requestContent = JSON.stringify(requestModel);
+    }
+  } catch (error) {
+    let serializationError = new Error(`Error "${error.message}" occurred in serializing the ` +
+        `payload - ${JSON.stringify(roleDefinition, null, 2)}.`);
+    return callback(serializationError);
+  }
+  httpRequest.body = requestContent;
+  // Send Request
+  return client.pipeline(httpRequest, (err, response, responseBody) => {
+    if (err) {
+      return callback(err);
+    }
+    let statusCode = response.statusCode;
+    if (statusCode !== 201) {
+      let error = new Error(responseBody);
+      error.statusCode = response.statusCode;
+      error.request = msRest.stripRequest(httpRequest);
+      error.response = msRest.stripResponse(response);
+      if (responseBody === '') responseBody = null;
+      let parsedErrorResponse;
+      try {
+        parsedErrorResponse = JSON.parse(responseBody);
+        if (parsedErrorResponse) {
+          if (parsedErrorResponse.error) parsedErrorResponse = parsedErrorResponse.error;
+          if (parsedErrorResponse.code) error.code = parsedErrorResponse.code;
+          if (parsedErrorResponse.message) error.message = parsedErrorResponse.message;
+        }
+        if (parsedErrorResponse !== null &amp;&amp; parsedErrorResponse !== undefined) {
+          let resultMapper = new client.models['CloudError']().mapper();
+          error.body = client.deserialize(resultMapper, parsedErrorResponse, 'error.body');
+        }
+      } catch (defaultError) {
+        error.message = `Error "${defaultError.message}" occurred in deserializing the responseBody ` +
+                         `- "${responseBody}" for the default response.`;
+        return callback(error);
+      }
+      return callback(error);
+    }
+    // Create Result
+    let result = null;
+    if (responseBody === '') responseBody = null;
+    // Deserialize Response
+    if (statusCode === 201) {
+      let parsedResponse = null;
+      try {
+        parsedResponse = JSON.parse(responseBody);
+        result = JSON.parse(responseBody);
+        if (parsedResponse !== null &amp;&amp; parsedResponse !== undefined) {
+          let resultMapper = new client.models['RoleDefinition']().mapper();
+          result = client.deserialize(resultMapper, parsedResponse, 'result');
+        }
+      } catch (error) {
+        let deserializationError = new Error(`Error ${error} occurred in deserializing the responseBody - ${responseBody}`);
+        deserializationError.request = msRest.stripRequest(httpRequest);
+        deserializationError.response = msRest.stripResponse(response);
+        return callback(deserializationError);
+      }
+    }
+
+    return callback(null, result, httpRequest, response);
+  });
+}
+
+/**
+ * Gets a role definition by ID.
+ *
+ * @param {string} roleDefinitionId The fully qualified role definition ID to
+ * get.
+ *
+ * @param {object} [options] Optional Parameters.
+ *
+ * @param {object} [options.customHeaders] Headers that will be added to the
+ * request
+ *
+ * @param {function} callback - The callback.
+ *
+ * @returns {function} callback(err, result, request, response)
+ *
+ *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+ *
+ *                      {object} [result]   - The deserialized result object if an error did not occur.
+ *                      See {@link RoleDefinition} for more information.
+ *
+ *                      {object} [request]  - The HTTP Request object if an error did not occur.
+ *
+ *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+ */
+function _getById(roleDefinitionId, options, callback) {
+   /* jshint validthis: true */
+  let client = this.client;
+  if(!callback &amp;&amp; typeof options === 'function') {
+    callback = options;
+    options = null;
+  }
+  if (!callback) {
+    throw new Error('callback cannot be null.');
+  }
+  // Validate
+  try {
+    if (roleDefinitionId === null || roleDefinitionId === undefined || typeof roleDefinitionId.valueOf() !== 'string') {
+      throw new Error('roleDefinitionId cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.apiVersion === null || this.client.apiVersion === undefined || typeof this.client.apiVersion.valueOf() !== 'string') {
+      throw new Error('this.client.apiVersion cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.acceptLanguage !== null &amp;&amp; this.client.acceptLanguage !== undefined &amp;&amp; typeof this.client.acceptLanguage.valueOf() !== 'string') {
+      throw new Error('this.client.acceptLanguage must be of type string.');
+    }
+  } catch (error) {
+    return callback(error);
+  }
+
+  // Construct URL
+  let baseUrl = this.client.baseUri;
+  let requestUrl = baseUrl + (baseUrl.endsWith('/') ? '' : '/') + '{roleDefinitionId}';
+  requestUrl = requestUrl.replace('{roleDefinitionId}', roleDefinitionId);
+  let queryParameters = [];
+  queryParameters.push('api-version=' + encodeURIComponent(this.client.apiVersion));
+  if (queryParameters.length > 0) {
+    requestUrl += '?' + queryParameters.join('&amp;');
+  }
+
+  // Create HTTP transport objects
+  let httpRequest = new WebResource();
+  httpRequest.method = 'GET';
+  httpRequest.url = requestUrl;
+  httpRequest.headers = {};
+  // Set Headers
+  httpRequest.headers['Content-Type'] = 'application/json; charset=utf-8';
+  if (this.client.generateClientRequestId) {
+      httpRequest.headers['x-ms-client-request-id'] = msRestAzure.generateUuid();
+  }
+  if (this.client.acceptLanguage !== undefined &amp;&amp; this.client.acceptLanguage !== null) {
+    httpRequest.headers['accept-language'] = this.client.acceptLanguage;
+  }
+  if(options) {
+    for(let headerName in options['customHeaders']) {
+      if (options['customHeaders'].hasOwnProperty(headerName)) {
+        httpRequest.headers[headerName] = options['customHeaders'][headerName];
+      }
+    }
+  }
+  httpRequest.body = null;
+  // Send Request
+  return client.pipeline(httpRequest, (err, response, responseBody) => {
+    if (err) {
+      return callback(err);
+    }
+    let statusCode = response.statusCode;
+    if (statusCode !== 200) {
+      let error = new Error(responseBody);
+      error.statusCode = response.statusCode;
+      error.request = msRest.stripRequest(httpRequest);
+      error.response = msRest.stripResponse(response);
+      if (responseBody === '') responseBody = null;
+      let parsedErrorResponse;
+      try {
+        parsedErrorResponse = JSON.parse(responseBody);
+        if (parsedErrorResponse) {
+          if (parsedErrorResponse.error) parsedErrorResponse = parsedErrorResponse.error;
+          if (parsedErrorResponse.code) error.code = parsedErrorResponse.code;
+          if (parsedErrorResponse.message) error.message = parsedErrorResponse.message;
+        }
+        if (parsedErrorResponse !== null &amp;&amp; parsedErrorResponse !== undefined) {
+          let resultMapper = new client.models['CloudError']().mapper();
+          error.body = client.deserialize(resultMapper, parsedErrorResponse, 'error.body');
+        }
+      } catch (defaultError) {
+        error.message = `Error "${defaultError.message}" occurred in deserializing the responseBody ` +
+                         `- "${responseBody}" for the default response.`;
+        return callback(error);
+      }
+      return callback(error);
+    }
+    // Create Result
+    let result = null;
+    if (responseBody === '') responseBody = null;
+    // Deserialize Response
+    if (statusCode === 200) {
+      let parsedResponse = null;
+      try {
+        parsedResponse = JSON.parse(responseBody);
+        result = JSON.parse(responseBody);
+        if (parsedResponse !== null &amp;&amp; parsedResponse !== undefined) {
+          let resultMapper = new client.models['RoleDefinition']().mapper();
+          result = client.deserialize(resultMapper, parsedResponse, 'result');
+        }
+      } catch (error) {
+        let deserializationError = new Error(`Error ${error} occurred in deserializing the responseBody - ${responseBody}`);
+        deserializationError.request = msRest.stripRequest(httpRequest);
+        deserializationError.response = msRest.stripResponse(response);
+        return callback(deserializationError);
+      }
+    }
+
+    return callback(null, result, httpRequest, response);
+  });
+}
+
+/**
+ * Get all role definitions that are applicable at scope and above.
+ *
+ * @param {string} scope The scope of the role definition.
+ *
+ * @param {object} [options] Optional Parameters.
+ *
+ * @param {string} [options.filter] The filter to apply on the operation. Use
+ * atScopeAndBelow filter to search below the given scope as well.
+ *
+ * @param {object} [options.customHeaders] Headers that will be added to the
+ * request
+ *
+ * @param {function} callback - The callback.
+ *
+ * @returns {function} callback(err, result, request, response)
+ *
+ *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+ *
+ *                      {object} [result]   - The deserialized result object if an error did not occur.
+ *                      See {@link RoleDefinitionListResult} for more
+ *                      information.
+ *
+ *                      {object} [request]  - The HTTP Request object if an error did not occur.
+ *
+ *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+ */
+function _list(scope, options, callback) {
+   /* jshint validthis: true */
+  let client = this.client;
+  if(!callback &amp;&amp; typeof options === 'function') {
+    callback = options;
+    options = null;
+  }
+  if (!callback) {
+    throw new Error('callback cannot be null.');
+  }
+  let filter = (options &amp;&amp; options.filter !== undefined) ? options.filter : undefined;
+  // Validate
+  try {
+    if (scope === null || scope === undefined || typeof scope.valueOf() !== 'string') {
+      throw new Error('scope cannot be null or undefined and it must be of type string.');
+    }
+    if (filter !== null &amp;&amp; filter !== undefined &amp;&amp; typeof filter.valueOf() !== 'string') {
+      throw new Error('filter must be of type string.');
+    }
+    if (this.client.apiVersion === null || this.client.apiVersion === undefined || typeof this.client.apiVersion.valueOf() !== 'string') {
+      throw new Error('this.client.apiVersion cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.acceptLanguage !== null &amp;&amp; this.client.acceptLanguage !== undefined &amp;&amp; typeof this.client.acceptLanguage.valueOf() !== 'string') {
+      throw new Error('this.client.acceptLanguage must be of type string.');
+    }
+  } catch (error) {
+    return callback(error);
+  }
+
+  // Construct URL
+  let baseUrl = this.client.baseUri;
+  let requestUrl = baseUrl + (baseUrl.endsWith('/') ? '' : '/') + '{scope}/providers/Microsoft.Authorization/roleDefinitions';
+  requestUrl = requestUrl.replace('{scope}', scope);
+  let queryParameters = [];
+  if (filter !== null &amp;&amp; filter !== undefined) {
+    queryParameters.push('$filter=' + encodeURIComponent(filter));
+  }
+  queryParameters.push('api-version=' + encodeURIComponent(this.client.apiVersion));
+  if (queryParameters.length > 0) {
+    requestUrl += '?' + queryParameters.join('&amp;');
+  }
+
+  // Create HTTP transport objects
+  let httpRequest = new WebResource();
+  httpRequest.method = 'GET';
+  httpRequest.url = requestUrl;
+  httpRequest.headers = {};
+  // Set Headers
+  httpRequest.headers['Content-Type'] = 'application/json; charset=utf-8';
+  if (this.client.generateClientRequestId) {
+      httpRequest.headers['x-ms-client-request-id'] = msRestAzure.generateUuid();
+  }
+  if (this.client.acceptLanguage !== undefined &amp;&amp; this.client.acceptLanguage !== null) {
+    httpRequest.headers['accept-language'] = this.client.acceptLanguage;
+  }
+  if(options) {
+    for(let headerName in options['customHeaders']) {
+      if (options['customHeaders'].hasOwnProperty(headerName)) {
+        httpRequest.headers[headerName] = options['customHeaders'][headerName];
+      }
+    }
+  }
+  httpRequest.body = null;
+  // Send Request
+  return client.pipeline(httpRequest, (err, response, responseBody) => {
+    if (err) {
+      return callback(err);
+    }
+    let statusCode = response.statusCode;
+    if (statusCode !== 200) {
+      let error = new Error(responseBody);
+      error.statusCode = response.statusCode;
+      error.request = msRest.stripRequest(httpRequest);
+      error.response = msRest.stripResponse(response);
+      if (responseBody === '') responseBody = null;
+      let parsedErrorResponse;
+      try {
+        parsedErrorResponse = JSON.parse(responseBody);
+        if (parsedErrorResponse) {
+          if (parsedErrorResponse.error) parsedErrorResponse = parsedErrorResponse.error;
+          if (parsedErrorResponse.code) error.code = parsedErrorResponse.code;
+          if (parsedErrorResponse.message) error.message = parsedErrorResponse.message;
+        }
+        if (parsedErrorResponse !== null &amp;&amp; parsedErrorResponse !== undefined) {
+          let resultMapper = new client.models['CloudError']().mapper();
+          error.body = client.deserialize(resultMapper, parsedErrorResponse, 'error.body');
+        }
+      } catch (defaultError) {
+        error.message = `Error "${defaultError.message}" occurred in deserializing the responseBody ` +
+                         `- "${responseBody}" for the default response.`;
+        return callback(error);
+      }
+      return callback(error);
+    }
+    // Create Result
+    let result = null;
+    if (responseBody === '') responseBody = null;
+    // Deserialize Response
+    if (statusCode === 200) {
+      let parsedResponse = null;
+      try {
+        parsedResponse = JSON.parse(responseBody);
+        result = JSON.parse(responseBody);
+        if (parsedResponse !== null &amp;&amp; parsedResponse !== undefined) {
+          let resultMapper = new client.models['RoleDefinitionListResult']().mapper();
+          result = client.deserialize(resultMapper, parsedResponse, 'result');
+        }
+      } catch (error) {
+        let deserializationError = new Error(`Error ${error} occurred in deserializing the responseBody - ${responseBody}`);
+        deserializationError.request = msRest.stripRequest(httpRequest);
+        deserializationError.response = msRest.stripResponse(response);
+        return callback(deserializationError);
+      }
+    }
+
+    return callback(null, result, httpRequest, response);
+  });
+}
+
+/**
+ * Get all role definitions that are applicable at scope and above.
+ *
+ * @param {string} nextPageLink The NextLink from the previous successful call
+ * to List operation.
+ *
+ * @param {object} [options] Optional Parameters.
+ *
+ * @param {object} [options.customHeaders] Headers that will be added to the
+ * request
+ *
+ * @param {function} callback - The callback.
+ *
+ * @returns {function} callback(err, result, request, response)
+ *
+ *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+ *
+ *                      {object} [result]   - The deserialized result object if an error did not occur.
+ *                      See {@link RoleDefinitionListResult} for more
+ *                      information.
+ *
+ *                      {object} [request]  - The HTTP Request object if an error did not occur.
+ *
+ *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+ */
+function _listNext(nextPageLink, options, callback) {
+   /* jshint validthis: true */
+  let client = this.client;
+  if(!callback &amp;&amp; typeof options === 'function') {
+    callback = options;
+    options = null;
+  }
+  if (!callback) {
+    throw new Error('callback cannot be null.');
+  }
+  // Validate
+  try {
+    if (nextPageLink === null || nextPageLink === undefined || typeof nextPageLink.valueOf() !== 'string') {
+      throw new Error('nextPageLink cannot be null or undefined and it must be of type string.');
+    }
+    if (this.client.acceptLanguage !== null &amp;&amp; this.client.acceptLanguage !== undefined &amp;&amp; typeof this.client.acceptLanguage.valueOf() !== 'string') {
+      throw new Error('this.client.acceptLanguage must be of type string.');
+    }
+  } catch (error) {
+    return callback(error);
+  }
+
+  // Construct URL
+  let requestUrl = '{nextLink}';
+  requestUrl = requestUrl.replace('{nextLink}', nextPageLink);
+
+  // Create HTTP transport objects
+  let httpRequest = new WebResource();
+  httpRequest.method = 'GET';
+  httpRequest.url = requestUrl;
+  httpRequest.headers = {};
+  // Set Headers
+  httpRequest.headers['Content-Type'] = 'application/json; charset=utf-8';
+  if (this.client.generateClientRequestId) {
+      httpRequest.headers['x-ms-client-request-id'] = msRestAzure.generateUuid();
+  }
+  if (this.client.acceptLanguage !== undefined &amp;&amp; this.client.acceptLanguage !== null) {
+    httpRequest.headers['accept-language'] = this.client.acceptLanguage;
+  }
+  if(options) {
+    for(let headerName in options['customHeaders']) {
+      if (options['customHeaders'].hasOwnProperty(headerName)) {
+        httpRequest.headers[headerName] = options['customHeaders'][headerName];
+      }
+    }
+  }
+  httpRequest.body = null;
+  // Send Request
+  return client.pipeline(httpRequest, (err, response, responseBody) => {
+    if (err) {
+      return callback(err);
+    }
+    let statusCode = response.statusCode;
+    if (statusCode !== 200) {
+      let error = new Error(responseBody);
+      error.statusCode = response.statusCode;
+      error.request = msRest.stripRequest(httpRequest);
+      error.response = msRest.stripResponse(response);
+      if (responseBody === '') responseBody = null;
+      let parsedErrorResponse;
+      try {
+        parsedErrorResponse = JSON.parse(responseBody);
+        if (parsedErrorResponse) {
+          if (parsedErrorResponse.error) parsedErrorResponse = parsedErrorResponse.error;
+          if (parsedErrorResponse.code) error.code = parsedErrorResponse.code;
+          if (parsedErrorResponse.message) error.message = parsedErrorResponse.message;
+        }
+        if (parsedErrorResponse !== null &amp;&amp; parsedErrorResponse !== undefined) {
+          let resultMapper = new client.models['CloudError']().mapper();
+          error.body = client.deserialize(resultMapper, parsedErrorResponse, 'error.body');
+        }
+      } catch (defaultError) {
+        error.message = `Error "${defaultError.message}" occurred in deserializing the responseBody ` +
+                         `- "${responseBody}" for the default response.`;
+        return callback(error);
+      }
+      return callback(error);
+    }
+    // Create Result
+    let result = null;
+    if (responseBody === '') responseBody = null;
+    // Deserialize Response
+    if (statusCode === 200) {
+      let parsedResponse = null;
+      try {
+        parsedResponse = JSON.parse(responseBody);
+        result = JSON.parse(responseBody);
+        if (parsedResponse !== null &amp;&amp; parsedResponse !== undefined) {
+          let resultMapper = new client.models['RoleDefinitionListResult']().mapper();
+          result = client.deserialize(resultMapper, parsedResponse, 'result');
+        }
+      } catch (error) {
+        let deserializationError = new Error(`Error ${error} occurred in deserializing the responseBody - ${responseBody}`);
+        deserializationError.request = msRest.stripRequest(httpRequest);
+        deserializationError.response = msRest.stripResponse(response);
+        return callback(deserializationError);
+      }
+    }
+
+    return callback(null, result, httpRequest, response);
+  });
+}
+
+/** Class representing a RoleDefinitions. */
+class RoleDefinitions {
+  /**
+   * Create a RoleDefinitions.
+   * @param {AuthorizationManagementClient} client Reference to the service client.
+   */
+  constructor(client) {
+    this.client = client;
+    this._deleteMethod = _deleteMethod;
+    this._get = _get;
+    this._createOrUpdate = _createOrUpdate;
+    this._getById = _getById;
+    this._list = _list;
+    this._listNext = _listNext;
+  }
+
+  /**
+   * Deletes a role definition.
+   *
+   * @param {string} scope The scope of the role definition.
+   *
+   * @param {string} roleDefinitionId The ID of the role definition to delete.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @returns {Promise} A promise is returned
+   *
+   * @resolve {HttpOperationResponse&lt;RoleDefinition>} - The deserialized result object.
+   *
+   * @reject {Error} - The error object.
+   */
+  deleteMethodWithHttpOperationResponse(scope, roleDefinitionId, options) {
+    let client = this.client;
+    let self = this;
+    return new Promise((resolve, reject) => {
+      self._deleteMethod(scope, roleDefinitionId, options, (err, result, request, response) => {
+        let httpOperationResponse = new msRest.HttpOperationResponse(request, response);
+        httpOperationResponse.body = result;
+        if (err) { reject(err); }
+        else { resolve(httpOperationResponse); }
+        return;
+      });
+    });
+  }
+
+  /**
+   * Deletes a role definition.
+   *
+   * @param {string} scope The scope of the role definition.
+   *
+   * @param {string} roleDefinitionId The ID of the role definition to delete.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @param {function} [optionalCallback] - The optional callback.
+   *
+   * @returns {function|Promise} If a callback was passed as the last parameter
+   * then it returns the callback else returns a Promise.
+   *
+   * {Promise} A promise is returned
+   *
+   *                      @resolve {RoleDefinition} - The deserialized result object.
+   *
+   *                      @reject {Error} - The error object.
+   *
+   * {function} optionalCallback(err, result, request, response)
+   *
+   *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+   *
+   *                      {object} [result]   - The deserialized result object if an error did not occur.
+   *                      See {@link RoleDefinition} for more information.
+   *
+   *                      {object} [request]  - The HTTP Request object if an error did not occur.
+   *
+   *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+   */
+  deleteMethod(scope, roleDefinitionId, options, optionalCallback) {
+    let client = this.client;
+    let self = this;
+    if (!optionalCallback &amp;&amp; typeof options === 'function') {
+      optionalCallback = options;
+      options = null;
+    }
+    if (!optionalCallback) {
+      return new Promise((resolve, reject) => {
+        self._deleteMethod(scope, roleDefinitionId, options, (err, result, request, response) => {
+          if (err) { reject(err); }
+          else { resolve(result); }
+          return;
+        });
+      });
+    } else {
+      return self._deleteMethod(scope, roleDefinitionId, options, optionalCallback);
+    }
+  }
+
+  /**
+   * Get role definition by name (GUID).
+   *
+   * @param {string} scope The scope of the role definition.
+   *
+   * @param {string} roleDefinitionId The ID of the role definition.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @returns {Promise} A promise is returned
+   *
+   * @resolve {HttpOperationResponse&lt;RoleDefinition>} - The deserialized result object.
+   *
+   * @reject {Error} - The error object.
+   */
+  getWithHttpOperationResponse(scope, roleDefinitionId, options) {
+    let client = this.client;
+    let self = this;
+    return new Promise((resolve, reject) => {
+      self._get(scope, roleDefinitionId, options, (err, result, request, response) => {
+        let httpOperationResponse = new msRest.HttpOperationResponse(request, response);
+        httpOperationResponse.body = result;
+        if (err) { reject(err); }
+        else { resolve(httpOperationResponse); }
+        return;
+      });
+    });
+  }
+
+  /**
+   * Get role definition by name (GUID).
+   *
+   * @param {string} scope The scope of the role definition.
+   *
+   * @param {string} roleDefinitionId The ID of the role definition.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @param {function} [optionalCallback] - The optional callback.
+   *
+   * @returns {function|Promise} If a callback was passed as the last parameter
+   * then it returns the callback else returns a Promise.
+   *
+   * {Promise} A promise is returned
+   *
+   *                      @resolve {RoleDefinition} - The deserialized result object.
+   *
+   *                      @reject {Error} - The error object.
+   *
+   * {function} optionalCallback(err, result, request, response)
+   *
+   *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+   *
+   *                      {object} [result]   - The deserialized result object if an error did not occur.
+   *                      See {@link RoleDefinition} for more information.
+   *
+   *                      {object} [request]  - The HTTP Request object if an error did not occur.
+   *
+   *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+   */
+  get(scope, roleDefinitionId, options, optionalCallback) {
+    let client = this.client;
+    let self = this;
+    if (!optionalCallback &amp;&amp; typeof options === 'function') {
+      optionalCallback = options;
+      options = null;
+    }
+    if (!optionalCallback) {
+      return new Promise((resolve, reject) => {
+        self._get(scope, roleDefinitionId, options, (err, result, request, response) => {
+          if (err) { reject(err); }
+          else { resolve(result); }
+          return;
+        });
+      });
+    } else {
+      return self._get(scope, roleDefinitionId, options, optionalCallback);
+    }
+  }
+
+  /**
+   * Creates or updates a role definition.
+   *
+   * @param {string} scope The scope of the role definition.
+   *
+   * @param {string} roleDefinitionId The ID of the role definition.
+   *
+   * @param {object} roleDefinition The values for the role definition.
+   *
+   * @param {string} [roleDefinition.id] The role definition ID.
+   *
+   * @param {string} [roleDefinition.name] The role definition name.
+   *
+   * @param {string} [roleDefinition.type] The role definition type.
+   *
+   * @param {object} [roleDefinition.properties] Role definition properties.
+   *
+   * @param {string} [roleDefinition.properties.roleName] The role name.
+   *
+   * @param {string} [roleDefinition.properties.description] The role definition
+   * description.
+   *
+   * @param {string} [roleDefinition.properties.type] The role type.
+   *
+   * @param {array} [roleDefinition.properties.permissions] Role definition
+   * permissions.
+   *
+   * @param {array} [roleDefinition.properties.assignableScopes] Role definition
+   * assignable scopes.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @returns {Promise} A promise is returned
+   *
+   * @resolve {HttpOperationResponse&lt;RoleDefinition>} - The deserialized result object.
+   *
+   * @reject {Error} - The error object.
+   */
+  createOrUpdateWithHttpOperationResponse(scope, roleDefinitionId, roleDefinition, options) {
+    let client = this.client;
+    let self = this;
+    return new Promise((resolve, reject) => {
+      self._createOrUpdate(scope, roleDefinitionId, roleDefinition, options, (err, result, request, response) => {
+        let httpOperationResponse = new msRest.HttpOperationResponse(request, response);
+        httpOperationResponse.body = result;
+        if (err) { reject(err); }
+        else { resolve(httpOperationResponse); }
+        return;
+      });
+    });
+  }
+
+  /**
+   * Creates or updates a role definition.
+   *
+   * @param {string} scope The scope of the role definition.
+   *
+   * @param {string} roleDefinitionId The ID of the role definition.
+   *
+   * @param {object} roleDefinition The values for the role definition.
+   *
+   * @param {string} [roleDefinition.id] The role definition ID.
+   *
+   * @param {string} [roleDefinition.name] The role definition name.
+   *
+   * @param {string} [roleDefinition.type] The role definition type.
+   *
+   * @param {object} [roleDefinition.properties] Role definition properties.
+   *
+   * @param {string} [roleDefinition.properties.roleName] The role name.
+   *
+   * @param {string} [roleDefinition.properties.description] The role definition
+   * description.
+   *
+   * @param {string} [roleDefinition.properties.type] The role type.
+   *
+   * @param {array} [roleDefinition.properties.permissions] Role definition
+   * permissions.
+   *
+   * @param {array} [roleDefinition.properties.assignableScopes] Role definition
+   * assignable scopes.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @param {function} [optionalCallback] - The optional callback.
+   *
+   * @returns {function|Promise} If a callback was passed as the last parameter
+   * then it returns the callback else returns a Promise.
+   *
+   * {Promise} A promise is returned
+   *
+   *                      @resolve {RoleDefinition} - The deserialized result object.
+   *
+   *                      @reject {Error} - The error object.
+   *
+   * {function} optionalCallback(err, result, request, response)
+   *
+   *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+   *
+   *                      {object} [result]   - The deserialized result object if an error did not occur.
+   *                      See {@link RoleDefinition} for more information.
+   *
+   *                      {object} [request]  - The HTTP Request object if an error did not occur.
+   *
+   *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+   */
+  createOrUpdate(scope, roleDefinitionId, roleDefinition, options, optionalCallback) {
+    let client = this.client;
+    let self = this;
+    if (!optionalCallback &amp;&amp; typeof options === 'function') {
+      optionalCallback = options;
+      options = null;
+    }
+    if (!optionalCallback) {
+      return new Promise((resolve, reject) => {
+        self._createOrUpdate(scope, roleDefinitionId, roleDefinition, options, (err, result, request, response) => {
+          if (err) { reject(err); }
+          else { resolve(result); }
+          return;
+        });
+      });
+    } else {
+      return self._createOrUpdate(scope, roleDefinitionId, roleDefinition, options, optionalCallback);
+    }
+  }
+
+  /**
+   * Gets a role definition by ID.
+   *
+   * @param {string} roleDefinitionId The fully qualified role definition ID to
+   * get.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @returns {Promise} A promise is returned
+   *
+   * @resolve {HttpOperationResponse&lt;RoleDefinition>} - The deserialized result object.
+   *
+   * @reject {Error} - The error object.
+   */
+  getByIdWithHttpOperationResponse(roleDefinitionId, options) {
+    let client = this.client;
+    let self = this;
+    return new Promise((resolve, reject) => {
+      self._getById(roleDefinitionId, options, (err, result, request, response) => {
+        let httpOperationResponse = new msRest.HttpOperationResponse(request, response);
+        httpOperationResponse.body = result;
+        if (err) { reject(err); }
+        else { resolve(httpOperationResponse); }
+        return;
+      });
+    });
+  }
+
+  /**
+   * Gets a role definition by ID.
+   *
+   * @param {string} roleDefinitionId The fully qualified role definition ID to
+   * get.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @param {function} [optionalCallback] - The optional callback.
+   *
+   * @returns {function|Promise} If a callback was passed as the last parameter
+   * then it returns the callback else returns a Promise.
+   *
+   * {Promise} A promise is returned
+   *
+   *                      @resolve {RoleDefinition} - The deserialized result object.
+   *
+   *                      @reject {Error} - The error object.
+   *
+   * {function} optionalCallback(err, result, request, response)
+   *
+   *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+   *
+   *                      {object} [result]   - The deserialized result object if an error did not occur.
+   *                      See {@link RoleDefinition} for more information.
+   *
+   *                      {object} [request]  - The HTTP Request object if an error did not occur.
+   *
+   *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+   */
+  getById(roleDefinitionId, options, optionalCallback) {
+    let client = this.client;
+    let self = this;
+    if (!optionalCallback &amp;&amp; typeof options === 'function') {
+      optionalCallback = options;
+      options = null;
+    }
+    if (!optionalCallback) {
+      return new Promise((resolve, reject) => {
+        self._getById(roleDefinitionId, options, (err, result, request, response) => {
+          if (err) { reject(err); }
+          else { resolve(result); }
+          return;
+        });
+      });
+    } else {
+      return self._getById(roleDefinitionId, options, optionalCallback);
+    }
+  }
+
+  /**
+   * Get all role definitions that are applicable at scope and above.
+   *
+   * @param {string} scope The scope of the role definition.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {string} [options.filter] The filter to apply on the operation. Use
+   * atScopeAndBelow filter to search below the given scope as well.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @returns {Promise} A promise is returned
+   *
+   * @resolve {HttpOperationResponse&lt;RoleDefinitionListResult>} - The deserialized result object.
+   *
+   * @reject {Error} - The error object.
+   */
+  listWithHttpOperationResponse(scope, options) {
+    let client = this.client;
+    let self = this;
+    return new Promise((resolve, reject) => {
+      self._list(scope, options, (err, result, request, response) => {
+        let httpOperationResponse = new msRest.HttpOperationResponse(request, response);
+        httpOperationResponse.body = result;
+        if (err) { reject(err); }
+        else { resolve(httpOperationResponse); }
+        return;
+      });
+    });
+  }
+
+  /**
+   * Get all role definitions that are applicable at scope and above.
+   *
+   * @param {string} scope The scope of the role definition.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {string} [options.filter] The filter to apply on the operation. Use
+   * atScopeAndBelow filter to search below the given scope as well.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @param {function} [optionalCallback] - The optional callback.
+   *
+   * @returns {function|Promise} If a callback was passed as the last parameter
+   * then it returns the callback else returns a Promise.
+   *
+   * {Promise} A promise is returned
+   *
+   *                      @resolve {RoleDefinitionListResult} - The deserialized result object.
+   *
+   *                      @reject {Error} - The error object.
+   *
+   * {function} optionalCallback(err, result, request, response)
+   *
+   *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+   *
+   *                      {object} [result]   - The deserialized result object if an error did not occur.
+   *                      See {@link RoleDefinitionListResult} for more
+   *                      information.
+   *
+   *                      {object} [request]  - The HTTP Request object if an error did not occur.
+   *
+   *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+   */
+  list(scope, options, optionalCallback) {
+    let client = this.client;
+    let self = this;
+    if (!optionalCallback &amp;&amp; typeof options === 'function') {
+      optionalCallback = options;
+      options = null;
+    }
+    if (!optionalCallback) {
+      return new Promise((resolve, reject) => {
+        self._list(scope, options, (err, result, request, response) => {
+          if (err) { reject(err); }
+          else { resolve(result); }
+          return;
+        });
+      });
+    } else {
+      return self._list(scope, options, optionalCallback);
+    }
+  }
+
+  /**
+   * Get all role definitions that are applicable at scope and above.
+   *
+   * @param {string} nextPageLink The NextLink from the previous successful call
+   * to List operation.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @returns {Promise} A promise is returned
+   *
+   * @resolve {HttpOperationResponse&lt;RoleDefinitionListResult>} - The deserialized result object.
+   *
+   * @reject {Error} - The error object.
+   */
+  listNextWithHttpOperationResponse(nextPageLink, options) {
+    let client = this.client;
+    let self = this;
+    return new Promise((resolve, reject) => {
+      self._listNext(nextPageLink, options, (err, result, request, response) => {
+        let httpOperationResponse = new msRest.HttpOperationResponse(request, response);
+        httpOperationResponse.body = result;
+        if (err) { reject(err); }
+        else { resolve(httpOperationResponse); }
+        return;
+      });
+    });
+  }
+
+  /**
+   * Get all role definitions that are applicable at scope and above.
+   *
+   * @param {string} nextPageLink The NextLink from the previous successful call
+   * to List operation.
+   *
+   * @param {object} [options] Optional Parameters.
+   *
+   * @param {object} [options.customHeaders] Headers that will be added to the
+   * request
+   *
+   * @param {function} [optionalCallback] - The optional callback.
+   *
+   * @returns {function|Promise} If a callback was passed as the last parameter
+   * then it returns the callback else returns a Promise.
+   *
+   * {Promise} A promise is returned
+   *
+   *                      @resolve {RoleDefinitionListResult} - The deserialized result object.
+   *
+   *                      @reject {Error} - The error object.
+   *
+   * {function} optionalCallback(err, result, request, response)
+   *
+   *                      {Error}  err        - The Error object if an error occurred, null otherwise.
+   *
+   *                      {object} [result]   - The deserialized result object if an error did not occur.
+   *                      See {@link RoleDefinitionListResult} for more
+   *                      information.
+   *
+   *                      {object} [request]  - The HTTP Request object if an error did not occur.
+   *
+   *                      {stream} [response] - The HTTP Response stream if an error did not occur.
+   */
+  listNext(nextPageLink, options, optionalCallback) {
+    let client = this.client;
+    let self = this;
+    if (!optionalCallback &amp;&amp; typeof options === 'function') {
+      optionalCallback = options;
+      options = null;
+    }
+    if (!optionalCallback) {
+      return new Promise((resolve, reject) => {
+        self._listNext(nextPageLink, options, (err, result, request, response) => {
+          if (err) { reject(err); }
+          else { resolve(result); }
+          return;
+        });
+      });
+    } else {
+      return self._listNext(nextPageLink, options, optionalCallback);
+    }
+  }
+
+}
+
+module.exports = RoleDefinitions;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Thu Nov 09 2017 11:13:57 GMT-0800 (PST) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="../../scripts/linenumber.js"></script>
+</body>
+</html>

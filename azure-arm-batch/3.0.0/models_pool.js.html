@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>models/pool.js - Documentation</title>
+    <meta name="viewport" content="initial-scale=.75">
+    <script src="../../scripts/prettify/prettify.js"></script>
+    <script src="../../scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="../../styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="../../styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><span><a href="../../index.html">Home</a> <span class="github-short">| <a href="https://github.com/azure/azure-sdk-for-node.git">GitHub</a></span></span></h2><h3>Classes</h3><ul><li><a href="ActivateApplicationPackageParameters.html">ActivateApplicationPackageParameters</a><ul class='methods'><li data-type='method'><a href="ActivateApplicationPackageParameters.html#mapper">mapper</a></li></ul></li><li><a href="Application.html">Application</a><ul class='methods'><li data-type='method'><a href="Application.html#mapper">mapper</a></li></ul></li><li><a href="ApplicationCreateParameters.html">ApplicationCreateParameters</a><ul class='methods'><li data-type='method'><a href="ApplicationCreateParameters.html#mapper">mapper</a></li></ul></li><li><a href="ApplicationOperations.html">ApplicationOperations</a><ul class='methods'><li data-type='method'><a href="ApplicationOperations.html#create">create</a></li><li data-type='method'><a href="ApplicationOperations.html#createWithHttpOperationResponse">createWithHttpOperationResponse</a></li><li data-type='method'><a href="ApplicationOperations.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="ApplicationOperations.html#deleteMethodWithHttpOperationResponse">deleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="ApplicationOperations.html#get">get</a></li><li data-type='method'><a href="ApplicationOperations.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="ApplicationOperations.html#list">list</a></li><li data-type='method'><a href="ApplicationOperations.html#listNext">listNext</a></li><li data-type='method'><a href="ApplicationOperations.html#listNextWithHttpOperationResponse">listNextWithHttpOperationResponse</a></li><li data-type='method'><a href="ApplicationOperations.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li><li data-type='method'><a href="ApplicationOperations.html#update">update</a></li><li data-type='method'><a href="ApplicationOperations.html#updateWithHttpOperationResponse">updateWithHttpOperationResponse</a></li></ul></li><li><a href="ApplicationPackage.html">ApplicationPackage</a><ul class='methods'><li data-type='method'><a href="ApplicationPackage.html#mapper">mapper</a></li></ul></li><li><a href="ApplicationPackageOperations.html">ApplicationPackageOperations</a><ul class='methods'><li data-type='method'><a href="ApplicationPackageOperations.html#activate">activate</a></li><li data-type='method'><a href="ApplicationPackageOperations.html#activateWithHttpOperationResponse">activateWithHttpOperationResponse</a></li><li data-type='method'><a href="ApplicationPackageOperations.html#create">create</a></li><li data-type='method'><a href="ApplicationPackageOperations.html#createWithHttpOperationResponse">createWithHttpOperationResponse</a></li><li data-type='method'><a href="ApplicationPackageOperations.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="ApplicationPackageOperations.html#deleteMethodWithHttpOperationResponse">deleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="ApplicationPackageOperations.html#get">get</a></li><li data-type='method'><a href="ApplicationPackageOperations.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li></ul></li><li><a href="ApplicationPackageReference.html">ApplicationPackageReference</a><ul class='methods'><li data-type='method'><a href="ApplicationPackageReference.html#mapper">mapper</a></li></ul></li><li><a href="ApplicationUpdateParameters.html">ApplicationUpdateParameters</a><ul class='methods'><li data-type='method'><a href="ApplicationUpdateParameters.html#mapper">mapper</a></li></ul></li><li><a href="AutoScaleRun.html">AutoScaleRun</a><ul class='methods'><li data-type='method'><a href="AutoScaleRun.html#mapper">mapper</a></li></ul></li><li><a href="AutoScaleRunError.html">AutoScaleRunError</a><ul class='methods'><li data-type='method'><a href="AutoScaleRunError.html#mapper">mapper</a></li></ul></li><li><a href="AutoScaleSettings.html">AutoScaleSettings</a><ul class='methods'><li data-type='method'><a href="AutoScaleSettings.html#mapper">mapper</a></li></ul></li><li><a href="AutoStorageBaseProperties.html">AutoStorageBaseProperties</a><ul class='methods'><li data-type='method'><a href="AutoStorageBaseProperties.html#mapper">mapper</a></li></ul></li><li><a href="AutoStorageProperties.html">AutoStorageProperties</a><ul class='methods'><li data-type='method'><a href="AutoStorageProperties.html#mapper">mapper</a></li></ul></li><li><a href="AutoUserSpecification.html">AutoUserSpecification</a><ul class='methods'><li data-type='method'><a href="AutoUserSpecification.html#mapper">mapper</a></li></ul></li><li><a href="BatchAccount.html">BatchAccount</a><ul class='methods'><li data-type='method'><a href="BatchAccount.html#mapper">mapper</a></li></ul></li><li><a href="BatchAccountCreateParameters.html">BatchAccountCreateParameters</a><ul class='methods'><li data-type='method'><a href="BatchAccountCreateParameters.html#mapper">mapper</a></li></ul></li><li><a href="BatchAccountKeys.html">BatchAccountKeys</a><ul class='methods'><li data-type='method'><a href="BatchAccountKeys.html#mapper">mapper</a></li></ul></li><li><a href="BatchAccountListResult.html">BatchAccountListResult</a><ul class='methods'><li data-type='method'><a href="BatchAccountListResult.html#mapper">mapper</a></li></ul></li><li><a href="BatchAccountOperations.html">BatchAccountOperations</a><ul class='methods'><li data-type='method'><a href="BatchAccountOperations.html#beginCreate">beginCreate</a></li><li data-type='method'><a href="BatchAccountOperations.html#beginCreateWithHttpOperationResponse">beginCreateWithHttpOperationResponse</a></li><li data-type='method'><a href="BatchAccountOperations.html#beginDeleteMethod">beginDeleteMethod</a></li><li data-type='method'><a href="BatchAccountOperations.html#beginDeleteMethodWithHttpOperationResponse">beginDeleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="BatchAccountOperations.html#create">create</a></li><li data-type='method'><a href="BatchAccountOperations.html#createWithHttpOperationResponse">createWithHttpOperationResponse</a></li><li data-type='method'><a href="BatchAccountOperations.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="BatchAccountOperations.html#deleteMethodWithHttpOperationResponse">deleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="BatchAccountOperations.html#get">get</a></li><li data-type='method'><a href="BatchAccountOperations.html#getKeys">getKeys</a></li><li data-type='method'><a href="BatchAccountOperations.html#getKeysWithHttpOperationResponse">getKeysWithHttpOperationResponse</a></li><li data-type='method'><a href="BatchAccountOperations.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="BatchAccountOperations.html#list">list</a></li><li data-type='method'><a href="BatchAccountOperations.html#listByResourceGroup">listByResourceGroup</a></li><li data-type='method'><a href="BatchAccountOperations.html#listByResourceGroupNext">listByResourceGroupNext</a></li><li data-type='method'><a href="BatchAccountOperations.html#listByResourceGroupNextWithHttpOperationResponse">listByResourceGroupNextWithHttpOperationResponse</a></li><li data-type='method'><a href="BatchAccountOperations.html#listByResourceGroupWithHttpOperationResponse">listByResourceGroupWithHttpOperationResponse</a></li><li data-type='method'><a href="BatchAccountOperations.html#listNext">listNext</a></li><li data-type='method'><a href="BatchAccountOperations.html#listNextWithHttpOperationResponse">listNextWithHttpOperationResponse</a></li><li data-type='method'><a href="BatchAccountOperations.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li><li data-type='method'><a href="BatchAccountOperations.html#regenerateKey">regenerateKey</a></li><li data-type='method'><a href="BatchAccountOperations.html#regenerateKeyWithHttpOperationResponse">regenerateKeyWithHttpOperationResponse</a></li><li data-type='method'><a href="BatchAccountOperations.html#synchronizeAutoStorageKeys">synchronizeAutoStorageKeys</a></li><li data-type='method'><a href="BatchAccountOperations.html#synchronizeAutoStorageKeysWithHttpOperationResponse">synchronizeAutoStorageKeysWithHttpOperationResponse</a></li><li data-type='method'><a href="BatchAccountOperations.html#update">update</a></li><li data-type='method'><a href="BatchAccountOperations.html#updateWithHttpOperationResponse">updateWithHttpOperationResponse</a></li></ul></li><li><a href="BatchAccountRegenerateKeyParameters.html">BatchAccountRegenerateKeyParameters</a><ul class='methods'><li data-type='method'><a href="BatchAccountRegenerateKeyParameters.html#mapper">mapper</a></li></ul></li><li><a href="BatchAccountUpdateParameters.html">BatchAccountUpdateParameters</a><ul class='methods'><li data-type='method'><a href="BatchAccountUpdateParameters.html#mapper">mapper</a></li></ul></li><li><a href="BatchLocationQuota.html">BatchLocationQuota</a><ul class='methods'><li data-type='method'><a href="BatchLocationQuota.html#mapper">mapper</a></li></ul></li><li><a href="BatchManagementClient.html">BatchManagementClient</a></li><li><a href="Certificate.html">Certificate</a><ul class='methods'><li data-type='method'><a href="Certificate.html#mapper">mapper</a></li></ul></li><li><a href="CertificateBaseProperties.html">CertificateBaseProperties</a><ul class='methods'><li data-type='method'><a href="CertificateBaseProperties.html#mapper">mapper</a></li></ul></li><li><a href="CertificateCreateOrUpdateParameters.html">CertificateCreateOrUpdateParameters</a><ul class='methods'><li data-type='method'><a href="CertificateCreateOrUpdateParameters.html#mapper">mapper</a></li></ul></li><li><a href="CertificateOperations.html">CertificateOperations</a><ul class='methods'><li data-type='method'><a href="CertificateOperations.html#beginCreate">beginCreate</a></li><li data-type='method'><a href="CertificateOperations.html#beginCreateWithHttpOperationResponse">beginCreateWithHttpOperationResponse</a></li><li data-type='method'><a href="CertificateOperations.html#beginDeleteMethod">beginDeleteMethod</a></li><li data-type='method'><a href="CertificateOperations.html#beginDeleteMethodWithHttpOperationResponse">beginDeleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="CertificateOperations.html#cancelDeletion">cancelDeletion</a></li><li data-type='method'><a href="CertificateOperations.html#cancelDeletionWithHttpOperationResponse">cancelDeletionWithHttpOperationResponse</a></li><li data-type='method'><a href="CertificateOperations.html#create">create</a></li><li data-type='method'><a href="CertificateOperations.html#createWithHttpOperationResponse">createWithHttpOperationResponse</a></li><li data-type='method'><a href="CertificateOperations.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="CertificateOperations.html#deleteMethodWithHttpOperationResponse">deleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="CertificateOperations.html#get">get</a></li><li data-type='method'><a href="CertificateOperations.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="CertificateOperations.html#listByBatchAccount">listByBatchAccount</a></li><li data-type='method'><a href="CertificateOperations.html#listByBatchAccountNext">listByBatchAccountNext</a></li><li data-type='method'><a href="CertificateOperations.html#listByBatchAccountNextWithHttpOperationResponse">listByBatchAccountNextWithHttpOperationResponse</a></li><li data-type='method'><a href="CertificateOperations.html#listByBatchAccountWithHttpOperationResponse">listByBatchAccountWithHttpOperationResponse</a></li><li data-type='method'><a href="CertificateOperations.html#update">update</a></li><li data-type='method'><a href="CertificateOperations.html#updateWithHttpOperationResponse">updateWithHttpOperationResponse</a></li></ul></li><li><a href="CertificateReference.html">CertificateReference</a><ul class='methods'><li data-type='method'><a href="CertificateReference.html#mapper">mapper</a></li></ul></li><li><a href="CheckNameAvailabilityParameters.html">CheckNameAvailabilityParameters</a><ul class='methods'><li data-type='method'><a href="CheckNameAvailabilityParameters.html#mapper">mapper</a></li></ul></li><li><a href="CheckNameAvailabilityResult.html">CheckNameAvailabilityResult</a><ul class='methods'><li data-type='method'><a href="CheckNameAvailabilityResult.html#mapper">mapper</a></li></ul></li><li><a href="CloudServiceConfiguration.html">CloudServiceConfiguration</a><ul class='methods'><li data-type='method'><a href="CloudServiceConfiguration.html#mapper">mapper</a></li></ul></li><li><a href="DataDisk.html">DataDisk</a><ul class='methods'><li data-type='method'><a href="DataDisk.html#mapper">mapper</a></li></ul></li><li><a href="DeleteCertificateError.html">DeleteCertificateError</a><ul class='methods'><li data-type='method'><a href="DeleteCertificateError.html#mapper">mapper</a></li></ul></li><li><a href="DeploymentConfiguration.html">DeploymentConfiguration</a><ul class='methods'><li data-type='method'><a href="DeploymentConfiguration.html#mapper">mapper</a></li></ul></li><li><a href="EnvironmentSetting.html">EnvironmentSetting</a><ul class='methods'><li data-type='method'><a href="EnvironmentSetting.html#mapper">mapper</a></li></ul></li><li><a href="FixedScaleSettings.html">FixedScaleSettings</a><ul class='methods'><li data-type='method'><a href="FixedScaleSettings.html#mapper">mapper</a></li></ul></li><li><a href="ImageReference.html">ImageReference</a><ul class='methods'><li data-type='method'><a href="ImageReference.html#mapper">mapper</a></li></ul></li><li><a href="InboundNatPool.html">InboundNatPool</a><ul class='methods'><li data-type='method'><a href="InboundNatPool.html#mapper">mapper</a></li></ul></li><li><a href="KeyVaultReference.html">KeyVaultReference</a><ul class='methods'><li data-type='method'><a href="KeyVaultReference.html#mapper">mapper</a></li></ul></li><li><a href="LinuxUserConfiguration.html">LinuxUserConfiguration</a><ul class='methods'><li data-type='method'><a href="LinuxUserConfiguration.html#mapper">mapper</a></li></ul></li><li><a href="ListApplicationsResult.html">ListApplicationsResult</a><ul class='methods'><li data-type='method'><a href="ListApplicationsResult.html#mapper">mapper</a></li></ul></li><li><a href="ListCertificatesResult.html">ListCertificatesResult</a><ul class='methods'><li data-type='method'><a href="ListCertificatesResult.html#mapper">mapper</a></li></ul></li><li><a href="ListPoolsResult.html">ListPoolsResult</a><ul class='methods'><li data-type='method'><a href="ListPoolsResult.html#mapper">mapper</a></li></ul></li><li><a href="Location.html">Location</a><ul class='methods'><li data-type='method'><a href="Location.html#checkNameAvailability">checkNameAvailability</a></li><li data-type='method'><a href="Location.html#checkNameAvailabilityWithHttpOperationResponse">checkNameAvailabilityWithHttpOperationResponse</a></li><li data-type='method'><a href="Location.html#getQuotas">getQuotas</a></li><li data-type='method'><a href="Location.html#getQuotasWithHttpOperationResponse">getQuotasWithHttpOperationResponse</a></li></ul></li><li><a href="MetadataItem.html">MetadataItem</a><ul class='methods'><li data-type='method'><a href="MetadataItem.html#mapper">mapper</a></li></ul></li><li><a href="NetworkConfiguration.html">NetworkConfiguration</a><ul class='methods'><li data-type='method'><a href="NetworkConfiguration.html#mapper">mapper</a></li></ul></li><li><a href="NetworkSecurityGroupRule.html">NetworkSecurityGroupRule</a><ul class='methods'><li data-type='method'><a href="NetworkSecurityGroupRule.html#mapper">mapper</a></li></ul></li><li><a href="Operation.html">Operation</a><ul class='methods'><li data-type='method'><a href="Operation.html#mapper">mapper</a></li></ul></li><li><a href="OperationDisplay.html">OperationDisplay</a><ul class='methods'><li data-type='method'><a href="OperationDisplay.html#mapper">mapper</a></li></ul></li><li><a href="OperationListResult.html">OperationListResult</a><ul class='methods'><li data-type='method'><a href="OperationListResult.html#mapper">mapper</a></li></ul></li><li><a href="Operations.html">Operations</a><ul class='methods'><li data-type='method'><a href="Operations.html#list">list</a></li><li data-type='method'><a href="Operations.html#listNext">listNext</a></li><li data-type='method'><a href="Operations.html#listNextWithHttpOperationResponse">listNextWithHttpOperationResponse</a></li><li data-type='method'><a href="Operations.html#listWithHttpOperationResponse">listWithHttpOperationResponse</a></li></ul></li><li><a href="OSDisk.html">OSDisk</a><ul class='methods'><li data-type='method'><a href="OSDisk.html#mapper">mapper</a></li></ul></li><li><a href="Pool.html">Pool</a><ul class='methods'><li data-type='method'><a href="Pool.html#mapper">mapper</a></li></ul></li><li><a href="PoolEndpointConfiguration.html">PoolEndpointConfiguration</a><ul class='methods'><li data-type='method'><a href="PoolEndpointConfiguration.html#mapper">mapper</a></li></ul></li><li><a href="PoolOperations.html">PoolOperations</a><ul class='methods'><li data-type='method'><a href="PoolOperations.html#beginCreate">beginCreate</a></li><li data-type='method'><a href="PoolOperations.html#beginCreateWithHttpOperationResponse">beginCreateWithHttpOperationResponse</a></li><li data-type='method'><a href="PoolOperations.html#beginDeleteMethod">beginDeleteMethod</a></li><li data-type='method'><a href="PoolOperations.html#beginDeleteMethodWithHttpOperationResponse">beginDeleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="PoolOperations.html#create">create</a></li><li data-type='method'><a href="PoolOperations.html#createWithHttpOperationResponse">createWithHttpOperationResponse</a></li><li data-type='method'><a href="PoolOperations.html#deleteMethod">deleteMethod</a></li><li data-type='method'><a href="PoolOperations.html#deleteMethodWithHttpOperationResponse">deleteMethodWithHttpOperationResponse</a></li><li data-type='method'><a href="PoolOperations.html#disableAutoScale">disableAutoScale</a></li><li data-type='method'><a href="PoolOperations.html#disableAutoScaleWithHttpOperationResponse">disableAutoScaleWithHttpOperationResponse</a></li><li data-type='method'><a href="PoolOperations.html#get">get</a></li><li data-type='method'><a href="PoolOperations.html#getWithHttpOperationResponse">getWithHttpOperationResponse</a></li><li data-type='method'><a href="PoolOperations.html#listByBatchAccount">listByBatchAccount</a></li><li data-type='method'><a href="PoolOperations.html#listByBatchAccountNext">listByBatchAccountNext</a></li><li data-type='method'><a href="PoolOperations.html#listByBatchAccountNextWithHttpOperationResponse">listByBatchAccountNextWithHttpOperationResponse</a></li><li data-type='method'><a href="PoolOperations.html#listByBatchAccountWithHttpOperationResponse">listByBatchAccountWithHttpOperationResponse</a></li><li data-type='method'><a href="PoolOperations.html#stopResize">stopResize</a></li><li data-type='method'><a href="PoolOperations.html#stopResizeWithHttpOperationResponse">stopResizeWithHttpOperationResponse</a></li><li data-type='method'><a href="PoolOperations.html#update">update</a></li><li data-type='method'><a href="PoolOperations.html#updateWithHttpOperationResponse">updateWithHttpOperationResponse</a></li></ul></li><li><a href="ProxyResource.html">ProxyResource</a><ul class='methods'><li data-type='method'><a href="ProxyResource.html#mapper">mapper</a></li></ul></li><li><a href="ResizeError.html">ResizeError</a><ul class='methods'><li data-type='method'><a href="ResizeError.html#mapper">mapper</a></li></ul></li><li><a href="ResizeOperationStatus.html">ResizeOperationStatus</a><ul class='methods'><li data-type='method'><a href="ResizeOperationStatus.html#mapper">mapper</a></li></ul></li><li><a href="Resource.html">Resource</a><ul class='methods'><li data-type='method'><a href="Resource.html#mapper">mapper</a></li></ul></li><li><a href="ResourceFile.html">ResourceFile</a><ul class='methods'><li data-type='method'><a href="ResourceFile.html#mapper">mapper</a></li></ul></li><li><a href="ScaleSettings.html">ScaleSettings</a><ul class='methods'><li data-type='method'><a href="ScaleSettings.html#mapper">mapper</a></li></ul></li><li><a href="StartTask.html">StartTask</a><ul class='methods'><li data-type='method'><a href="StartTask.html#mapper">mapper</a></li></ul></li><li><a href="TaskSchedulingPolicy.html">TaskSchedulingPolicy</a><ul class='methods'><li data-type='method'><a href="TaskSchedulingPolicy.html#mapper">mapper</a></li></ul></li><li><a href="UserAccount.html">UserAccount</a><ul class='methods'><li data-type='method'><a href="UserAccount.html#mapper">mapper</a></li></ul></li><li><a href="UserIdentity.html">UserIdentity</a><ul class='methods'><li data-type='method'><a href="UserIdentity.html#mapper">mapper</a></li></ul></li><li><a href="VirtualMachineConfiguration.html">VirtualMachineConfiguration</a><ul class='methods'><li data-type='method'><a href="VirtualMachineConfiguration.html#mapper">mapper</a></li></ul></li><li><a href="WindowsConfiguration.html">WindowsConfiguration</a><ul class='methods'><li data-type='method'><a href="WindowsConfiguration.html#mapper">mapper</a></li></ul></li></ul><h3>Global</h3><ul><li><a href="global.html#_activate">_activate</a></li><li><a href="global.html#_beginCreate">_beginCreate</a></li><li><a href="global.html#_beginDeleteMethod">_beginDeleteMethod</a></li><li><a href="global.html#_cancelDeletion">_cancelDeletion</a></li><li><a href="global.html#_checkNameAvailability">_checkNameAvailability</a></li><li><a href="global.html#_create">_create</a></li><li><a href="global.html#_deleteMethod">_deleteMethod</a></li><li><a href="global.html#_disableAutoScale">_disableAutoScale</a></li><li><a href="global.html#_get">_get</a></li><li><a href="global.html#_getKeys">_getKeys</a></li><li><a href="global.html#_getQuotas">_getQuotas</a></li><li><a href="global.html#_list">_list</a></li><li><a href="global.html#_listByBatchAccount">_listByBatchAccount</a></li><li><a href="global.html#_listByBatchAccountNext">_listByBatchAccountNext</a></li><li><a href="global.html#_listByResourceGroup">_listByResourceGroup</a></li><li><a href="global.html#_listByResourceGroupNext">_listByResourceGroupNext</a></li><li><a href="global.html#_listNext">_listNext</a></li><li><a href="global.html#_regenerateKey">_regenerateKey</a></li><li><a href="global.html#_stopResize">_stopResize</a></li><li><a href="global.html#_synchronizeAutoStorageKeys">_synchronizeAutoStorageKeys</a></li><li><a href="global.html#_update">_update</a></li><li><a href="global.html#accountQuota">accountQuota</a></li><li><a href="global.html#activeJobAndJobScheduleQuota">activeJobAndJobScheduleQuota</a></li><li><a href="global.html#caching">caching</a></li><li><a href="global.html#currentOSVersion">currentOSVersion</a></li><li><a href="global.html#defaultVersion">defaultVersion</a></li><li><a href="global.html#description">description</a></li><li><a href="global.html#details">details</a></li><li><a href="global.html#displayName">displayName</a></li><li><a href="global.html#elevationLevel">elevationLevel</a></li><li><a href="global.html#enableAutomaticUpdates">enableAutomaticUpdates</a></li><li><a href="global.html#errors">errors</a></li><li><a href="global.html#etag">etag</a></li><li><a href="global.html#evaluationInterval">evaluationInterval</a></li><li><a href="global.html#fileMode">fileMode</a></li><li><a href="global.html#format">format</a></li><li><a href="global.html#id">id</a></li><li><a href="global.html#inboundNatPools">inboundNatPools</a></li><li><a href="global.html#keyName">keyName</a></li><li><a href="global.html#lastActivationTime">lastActivationTime</a></li><li><a href="global.html#lastKeySync">lastKeySync</a></li><li><a href="global.html#licenseType">licenseType</a></li><li><a href="global.html#message">message</a></li><li><a href="global.html#name">name</a></li><li><a href="global.html#networkSecurityGroupRules">networkSecurityGroupRules</a></li><li><a href="global.html#nextLink">nextLink</a></li><li><a href="global.html#nodeDeallocationOption">nodeDeallocationOption</a></li><li><a href="global.html#nodeFillType">nodeFillType</a></li><li><a href="global.html#password">password</a></li><li><a href="global.html#properties">properties</a></li><li><a href="global.html#secondary">secondary</a></li><li><a href="global.html#sourceAddressPrefix">sourceAddressPrefix</a></li><li><a href="global.html#sshPrivateKey">sshPrivateKey</a></li><li><a href="global.html#storageAccountId">storageAccountId</a></li><li><a href="global.html#storageAccountType">storageAccountType</a></li><li><a href="global.html#tags">tags</a></li><li><a href="global.html#url">url</a></li><li><a href="global.html#value">value</a></li><li><a href="global.html#version">version</a></li><li><a href="global.html#visibility">visibility</a></li><li><a href="global.html#waitForSuccess">waitForSuccess</a></li></ul>
+</nav>
+
+<div id="main">
+    
+      <a class="github-banner" href="https://github.com/azure/azure-sdk-for-node.git"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+    
+    
+    <h1 class="page-title">models/pool.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/*
+ * Copyright (c) Microsoft Corporation. All rights reserved.
+ * Licensed under the MIT License. See License.txt in the project root for
+ * license information.
+ *
+ * Code generated by Microsoft (R) AutoRest Code Generator.
+ * Changes may cause incorrect behavior and will be lost if the code is
+ * regenerated.
+ */
+
+'use strict';
+
+const models = require('./index');
+
+/**
+ * Contains information about a pool.
+ *
+ * @extends models['ProxyResource']
+ */
+class Pool extends models['ProxyResource'] {
+  /**
+   * Create a Pool.
+   * @member {string} [displayName] The display name for the pool. The display
+   * name need not be unique and can contain any Unicode characters up to a
+   * maximum length of 1024.
+   * @member {date} [lastModified] The last modified time of the pool. This is
+   * the last time at which the pool level data, such as the
+   * targetDedicatedNodes or autoScaleSettings, changed. It does not factor in
+   * node-level changes such as a compute node changing state.
+   * @member {date} [creationTime] The creation time of the pool.
+   * @member {string} [provisioningState] The current state of the pool. Values
+   * are:
+   *
+   * Succeeded - The pool is available to run tasks subject to the availability
+   * of compute nodes.
+   * Deleting - The user has requested that the pool be deleted, but the delete
+   * operation has not yet completed. Possible values include: 'Succeeded',
+   * 'Deleting'
+   * @member {date} [provisioningStateTransitionTime] The time at which the
+   * pool entered its current state.
+   * @member {string} [allocationState] Whether the pool is resizing. Values
+   * are:
+   *
+   * Steady - The pool is not resizing. There are no changes to the number of
+   * nodes in the pool in progress. A pool enters this state when it is created
+   * and when no operations are being performed on the pool to change the
+   * number of dedicated nodes.
+   * Resizing - The pool is resizing; that is, compute nodes are being added to
+   * or removed from the pool.
+   * Stopping - The pool was resizing, but the user has requested that the
+   * resize be stopped, but the stop request has not yet been completed.
+   * Possible values include: 'Steady', 'Resizing', 'Stopping'
+   * @member {date} [allocationStateTransitionTime] The time at which the pool
+   * entered its current allocation state.
+   * @member {string} [vmSize] The size of virtual machines in the pool. All
+   * VMs in a pool are the same size. For information about available sizes of
+   * virtual machines for Cloud Services pools (pools created with
+   * cloudServiceConfiguration), see Sizes for Cloud Services
+   * (http://azure.microsoft.com/documentation/articles/cloud-services-sizes-specs/).
+   * Batch supports all Cloud Services VM sizes except ExtraSmall. For
+   * information about available VM sizes for pools using images from the
+   * Virtual Machines Marketplace (pools created with
+   * virtualMachineConfiguration) see Sizes for Virtual Machines (Linux)
+   * (https://azure.microsoft.com/documentation/articles/virtual-machines-linux-sizes/)
+   * or Sizes for Virtual Machines (Windows)
+   * (https://azure.microsoft.com/documentation/articles/virtual-machines-windows-sizes/).
+   * Batch supports all Azure VM sizes except STANDARD_A0 and those with
+   * premium storage (STANDARD_GS, STANDARD_DS, and STANDARD_DSV2 series).
+   * @member {object} [deploymentConfiguration] This property describes how the
+   * pool nodes will be deployed - using Cloud Services or Virtual Machines.
+   * Using CloudServiceConfiguration specifies that the nodes should be
+   * creating using Azure Cloud Services (PaaS), while
+   * VirtualMachineConfiguration uses Azure Virtual Machines (IaaS).
+   * @member {object} [deploymentConfiguration.cloudServiceConfiguration] This
+   * property and virtualMachineConfiguration are mutually exclusive and one of
+   * the properties must be specified. This property cannot be specified if the
+   * Batch account was created with its poolAllocationMode property set to
+   * 'UserSubscription'.
+   * @member {string}
+   * [deploymentConfiguration.cloudServiceConfiguration.osFamily] Possible
+   * values are: 2 - OS Family 2, equivalent to Windows Server 2008 R2 SP1. 3 -
+   * OS Family 3, equivalent to Windows Server 2012. 4 - OS Family 4,
+   * equivalent to Windows Server 2012 R2. 5 - OS Family 5, equivalent to
+   * Windows Server 2016. For more information, see Azure Guest OS Releases
+   * (https://azure.microsoft.com/documentation/articles/cloud-services-guestos-update-matrix/#releases).
+   * @member {string}
+   * [deploymentConfiguration.cloudServiceConfiguration.targetOSVersion] The
+   * default value is * which specifies the latest operating system version for
+   * the specified OS family.
+   * @member {string}
+   * [deploymentConfiguration.cloudServiceConfiguration.currentOSVersion] This
+   * may differ from targetOSVersion if the pool state is Upgrading. In this
+   * case some virtual machines may be on the targetOSVersion and some may be
+   * on the currentOSVersion during the upgrade process. Once all virtual
+   * machines have upgraded, currentOSVersion is updated to be the same as
+   * targetOSVersion.
+   * @member {object} [deploymentConfiguration.virtualMachineConfiguration]
+   * This property and cloudServiceConfiguration are mutually exclusive and one
+   * of the properties must be specified.
+   * @member {object}
+   * [deploymentConfiguration.virtualMachineConfiguration.imageReference]
+   * @member {string}
+   * [deploymentConfiguration.virtualMachineConfiguration.imageReference.publisher]
+   * For example, Canonical or MicrosoftWindowsServer.
+   * @member {string}
+   * [deploymentConfiguration.virtualMachineConfiguration.imageReference.offer]
+   * For example, UbuntuServer or WindowsServer.
+   * @member {string}
+   * [deploymentConfiguration.virtualMachineConfiguration.imageReference.sku]
+   * For example, 14.04.0-LTS or 2012-R2-Datacenter.
+   * @member {string}
+   * [deploymentConfiguration.virtualMachineConfiguration.imageReference.version]
+   * A value of 'latest' can be specified to select the latest version of an
+   * image. If omitted, the default is 'latest'.
+   * @member {string}
+   * [deploymentConfiguration.virtualMachineConfiguration.imageReference.id]
+   * This property is mutually exclusive with other properties. The virtual
+   * machine image must be in the same region and subscription as the Azure
+   * Batch account. For information about the firewall settings for Batch node
+   * agent to communicate with Batch service see
+   * https://docs.microsoft.com/en-us/azure/batch/batch-api-basics#virtual-network-vnet-and-firewall-configuration
+   * .
+   * @member {object}
+   * [deploymentConfiguration.virtualMachineConfiguration.osDisk]
+   * @member {string}
+   * [deploymentConfiguration.virtualMachineConfiguration.osDisk.caching]
+   * Default value is none. Possible values include: 'None', 'ReadOnly',
+   * 'ReadWrite'
+   * @member {string}
+   * [deploymentConfiguration.virtualMachineConfiguration.nodeAgentSkuId] The
+   * Batch node agent is a program that runs on each node in the pool, and
+   * provides the command-and-control interface between the node and the Batch
+   * service. There are different implementations of the node agent, known as
+   * SKUs, for different operating systems. You must specify a node agent SKU
+   * which matches the selected image reference. To get the list of supported
+   * node agent SKUs along with their list of verified image references, see
+   * the 'List supported node agent SKUs' operation.
+   * @member {object}
+   * [deploymentConfiguration.virtualMachineConfiguration.windowsConfiguration]
+   * This property must not be specified if the imageReference specifies a
+   * Linux OS image.
+   * @member {boolean}
+   * [deploymentConfiguration.virtualMachineConfiguration.windowsConfiguration.enableAutomaticUpdates]
+   * If omitted, the default value is true.
+   * @member {array}
+   * [deploymentConfiguration.virtualMachineConfiguration.dataDisks] This
+   * property must be specified if the compute nodes in the pool need to have
+   * empty data disks attached to them.
+   * @member {string}
+   * [deploymentConfiguration.virtualMachineConfiguration.licenseType] This
+   * only applies to images that contain the Windows operating system, and
+   * should only be used when you hold valid on-premises licenses for the nodes
+   * which will be deployed. If omitted, no on-premises licensing discount is
+   * applied. Values are:
+   *
+   * Windows_Server - The on-premises license is for Windows Server.
+   * Windows_Client - The on-premises license is for Windows Client.
+   * @member {number} [currentDedicatedNodes] The number of compute nodes
+   * currently in the pool.
+   * @member {number} [currentLowPriorityNodes] The number of low priority
+   * compute nodes currently in the pool.
+   * @member {object} [scaleSettings] Settings which configure the number of
+   * nodes in the pool.
+   * @member {object} [scaleSettings.fixedScale] This property and autoScale
+   * are mutually exclusive and one of the properties must be specified.
+   * @member {moment.duration} [scaleSettings.fixedScale.resizeTimeout] The
+   * default value is 15 minutes. The minimum value is 5 minutes. If you
+   * specify a value less than 5 minutes, the Batch service rejects the request
+   * with an error; if you are calling the REST API directly, the HTTP status
+   * code is 400 (Bad Request).
+   * @member {number} [scaleSettings.fixedScale.targetDedicatedNodes] At least
+   * one of targetDedicatedNodes, targetLowPriority nodes must be set.
+   * @member {number} [scaleSettings.fixedScale.targetLowPriorityNodes] At
+   * least one of targetDedicatedNodes, targetLowPriority nodes must be set.
+   * @member {string} [scaleSettings.fixedScale.nodeDeallocationOption] If
+   * omitted, the default value is Requeue. Possible values include: 'Requeue',
+   * 'Terminate', 'TaskCompletion', 'RetainedData'
+   * @member {object} [scaleSettings.autoScale] This property and fixedScale
+   * are mutually exclusive and one of the properties must be specified.
+   * @member {string} [scaleSettings.autoScale.formula]
+   * @member {moment.duration} [scaleSettings.autoScale.evaluationInterval] If
+   * omitted, the default value is 15 minutes (PT15M).
+   * @member {object} [autoScaleRun] The results and errors from the last
+   * execution of the autoscale formula. This property is set only if the pool
+   * automatically scales, i.e. autoScaleSettings are used.
+   * @member {date} [autoScaleRun.evaluationTime]
+   * @member {string} [autoScaleRun.results] Each variable value is returned in
+   * the form $variable=value, and variables are separated by semicolons.
+   * @member {object} [autoScaleRun.error]
+   * @member {string} [autoScaleRun.error.code] An identifier for the error.
+   * Codes are invariant and are intended to be consumed programmatically.
+   * @member {string} [autoScaleRun.error.message] A message describing the
+   * error, intended to be suitable for display in a user interface.
+   * @member {array} [autoScaleRun.error.details]
+   * @member {string} [interNodeCommunication] Whether the pool permits direct
+   * communication between nodes. This imposes restrictions on which nodes can
+   * be assigned to the pool. Enabling this value can reduce the chance of the
+   * requested number of nodes to be allocated in the pool. If not specified,
+   * this value defaults to 'Disabled'. Possible values include: 'Enabled',
+   * 'Disabled'
+   * @member {object} [networkConfiguration] The network configuration for the
+   * pool.
+   * @member {string} [networkConfiguration.subnetId] The virtual network must
+   * be in the same region and subscription as the Azure Batch account. The
+   * specified subnet should have enough free IP addresses to accommodate the
+   * number of nodes in the pool. If the subnet doesn't have enough free IP
+   * addresses, the pool will partially allocate compute nodes, and a resize
+   * error will occur. The 'MicrosoftAzureBatch' service principal must have
+   * the 'Classic Virtual Machine Contributor' Role-Based Access Control (RBAC)
+   * role for the specified VNet. The specified subnet must allow communication
+   * from the Azure Batch service to be able to schedule tasks on the compute
+   * nodes. This can be verified by checking if the specified VNet has any
+   * associated Network Security Groups (NSG). If communication to the compute
+   * nodes in the specified subnet is denied by an NSG, then the Batch service
+   * will set the state of the compute nodes to unusable. For pools created via
+   * virtualMachineConfiguration the Batch account must have poolAllocationMode
+   * userSubscription in order to use a VNet. If the specified VNet has any
+   * associated Network Security Groups (NSG), then a few reserved system ports
+   * must be enabled for inbound communication. For pools created with a
+   * virtual machine configuration, enable ports 29876 and 29877, as well as
+   * port 22 for Linux and port 3389 for Windows. For pools created with a
+   * cloud service configuration, enable ports 10100, 20100, and 30100. Also
+   * enable outbound connections to Azure Storage on port 443. For more details
+   * see:
+   * https://docs.microsoft.com/en-us/azure/batch/batch-api-basics#virtual-network-vnet-and-firewall-configuration
+   * @member {object} [networkConfiguration.endpointConfiguration] Pool
+   * endpoint configuration is only supported on pools with the
+   * virtualMachineConfiguration property.
+   * @member {array}
+   * [networkConfiguration.endpointConfiguration.inboundNatPools] The maximum
+   * number of inbound NAT pools per Batch pool is 5. If the maximum number of
+   * inbound NAT pools is exceeded the request fails with HTTP status code 400.
+   * @member {number} [maxTasksPerNode] The maximum number of tasks that can
+   * run concurrently on a single compute node in the pool.
+   * @member {object} [taskSchedulingPolicy] How tasks are distributed across
+   * compute nodes in a pool.
+   * @member {string} [taskSchedulingPolicy.nodeFillType] Possible values
+   * include: 'Spread', 'Pack'
+   * @member {array} [userAccounts] The list of user accounts to be created on
+   * each node in the pool.
+   * @member {array} [metadata] A list of name-value pairs associated with the
+   * pool as metadata. The Batch service does not assign any meaning to
+   * metadata; it is solely for the use of user code.
+   * @member {object} [startTask] A task specified to run on each compute node
+   * as it joins the pool. In an PATCH (update) operation, this property can be
+   * set to an empty object to remove the start task from the pool.
+   * @member {string} [startTask.commandLine] The command line does not run
+   * under a shell, and therefore cannot take advantage of shell features such
+   * as environment variable expansion. If you want to take advantage of such
+   * features, you should invoke the shell in the command line, for example
+   * using "cmd /c MyCommand" in Windows or "/bin/sh -c MyCommand" in Linux.
+   * Required if any other properties of the startTask are specified.
+   * @member {array} [startTask.resourceFiles]
+   * @member {array} [startTask.environmentSettings]
+   * @member {object} [startTask.userIdentity] If omitted, the task runs as a
+   * non-administrative user unique to the task.
+   * @member {string} [startTask.userIdentity.userName] The userName and
+   * autoUser properties are mutually exclusive; you must specify one but not
+   * both.
+   * @member {object} [startTask.userIdentity.autoUser] The userName and
+   * autoUser properties are mutually exclusive; you must specify one but not
+   * both.
+   * @member {string} [startTask.userIdentity.autoUser.scope] pool - specifies
+   * that the task runs as the common auto user account which is created on
+   * every node in a pool. task - specifies that the service should create a
+   * new user for the task. The default value is task. Possible values include:
+   * 'Task', 'Pool'
+   * @member {string} [startTask.userIdentity.autoUser.elevationLevel] nonAdmin
+   * - The auto user is a standard user without elevated access. admin - The
+   * auto user is a user with elevated access and operates with full
+   * Administrator permissions. The default value is nonAdmin. Possible values
+   * include: 'NonAdmin', 'Admin'
+   * @member {number} [startTask.maxTaskRetryCount] The Batch service retries a
+   * task if its exit code is nonzero. Note that this value specifically
+   * controls the number of retries. The Batch service will try the task once,
+   * and may then retry up to this limit. For example, if the maximum retry
+   * count is 3, Batch tries the task up to 4 times (one initial try and 3
+   * retries). If the maximum retry count is 0, the Batch service does not
+   * retry the task. If the maximum retry count is -1, the Batch service
+   * retries the task without limit.
+   * @member {boolean} [startTask.waitForSuccess] If true and the start task
+   * fails on a compute node, the Batch service retries the start task up to
+   * its maximum retry count (maxTaskRetryCount). If the task has still not
+   * completed successfully after all retries, then the Batch service marks the
+   * compute node unusable, and will not schedule tasks to it. This condition
+   * can be detected via the node state and scheduling error detail. If false,
+   * the Batch service will not wait for the start task to complete. In this
+   * case, other tasks can start executing on the compute node while the start
+   * task is still running; and even if the start task fails, new tasks will
+   * continue to be scheduled on the node. The default is false.
+   * @member {array} [certificates] The list of certificates to be installed on
+   * each compute node in the pool. For Windows compute nodes, the Batch
+   * service installs the certificates to the specified certificate store and
+   * location. For Linux compute nodes, the certificates are stored in a
+   * directory inside the task working directory and an environment variable
+   * AZ_BATCH_CERTIFICATES_DIR is supplied to the task to query for this
+   * location. For certificates with visibility of 'remoteUser', a 'certs'
+   * directory is created in the user's home directory (e.g.,
+   * /home/{user-name}/certs) and certificates are placed in that directory.
+   * @member {array} [applicationPackages] The list of application packages to
+   * be installed on each compute node in the pool. Changes to application
+   * packages affect all new compute nodes joining the pool, but do not affect
+   * compute nodes that are already in the pool until they are rebooted or
+   * reimaged.
+   * @member {array} [applicationLicenses] The list of application licenses the
+   * Batch service will make available on each compute node in the pool. The
+   * list of application licenses must be a subset of available Batch service
+   * application licenses. If a license is requested which is not supported,
+   * pool creation will fail.
+   * @member {object} [resizeOperationStatus] Contains details about the
+   * current or last completed resize operation.
+   * @member {number} [resizeOperationStatus.targetDedicatedNodes]
+   * @member {number} [resizeOperationStatus.targetLowPriorityNodes]
+   * @member {moment.duration} [resizeOperationStatus.resizeTimeout] The
+   * default value is 15 minutes. The minimum value is 5 minutes. If you
+   * specify a value less than 5 minutes, the Batch service returns an error;
+   * if you are calling the REST API directly, the HTTP status code is 400 (Bad
+   * Request).
+   * @member {string} [resizeOperationStatus.nodeDeallocationOption] The
+   * default value is requeue. Possible values include: 'Requeue', 'Terminate',
+   * 'TaskCompletion', 'RetainedData'
+   * @member {date} [resizeOperationStatus.startTime]
+   * @member {array} [resizeOperationStatus.errors] This property is set only
+   * if an error occurred during the last pool resize, and only when the pool
+   * allocationState is Steady.
+   */
+  constructor() {
+    super();
+  }
+
+  /**
+   * Defines the metadata of Pool
+   *
+   * @returns {object} metadata of Pool
+   *
+   */
+  mapper() {
+    return {
+      required: false,
+      serializedName: 'Pool',
+      type: {
+        name: 'Composite',
+        className: 'Pool',
+        modelProperties: {
+          id: {
+            required: false,
+            readOnly: true,
+            serializedName: 'id',
+            type: {
+              name: 'String'
+            }
+          },
+          name: {
+            required: false,
+            readOnly: true,
+            serializedName: 'name',
+            type: {
+              name: 'String'
+            }
+          },
+          type: {
+            required: false,
+            readOnly: true,
+            serializedName: 'type',
+            type: {
+              name: 'String'
+            }
+          },
+          etag: {
+            required: false,
+            readOnly: true,
+            serializedName: 'etag',
+            type: {
+              name: 'String'
+            }
+          },
+          displayName: {
+            required: false,
+            serializedName: 'properties.displayName',
+            type: {
+              name: 'String'
+            }
+          },
+          lastModified: {
+            required: false,
+            readOnly: true,
+            serializedName: 'properties.lastModified',
+            type: {
+              name: 'DateTime'
+            }
+          },
+          creationTime: {
+            required: false,
+            readOnly: true,
+            serializedName: 'properties.creationTime',
+            type: {
+              name: 'DateTime'
+            }
+          },
+          provisioningState: {
+            required: false,
+            readOnly: true,
+            serializedName: 'properties.provisioningState',
+            type: {
+              name: 'Enum',
+              allowedValues: [ 'Succeeded', 'Deleting' ]
+            }
+          },
+          provisioningStateTransitionTime: {
+            required: false,
+            readOnly: true,
+            serializedName: 'properties.provisioningStateTransitionTime',
+            type: {
+              name: 'DateTime'
+            }
+          },
+          allocationState: {
+            required: false,
+            readOnly: true,
+            serializedName: 'properties.allocationState',
+            type: {
+              name: 'Enum',
+              allowedValues: [ 'Steady', 'Resizing', 'Stopping' ]
+            }
+          },
+          allocationStateTransitionTime: {
+            required: false,
+            readOnly: true,
+            serializedName: 'properties.allocationStateTransitionTime',
+            type: {
+              name: 'DateTime'
+            }
+          },
+          vmSize: {
+            required: false,
+            serializedName: 'properties.vmSize',
+            type: {
+              name: 'String'
+            }
+          },
+          deploymentConfiguration: {
+            required: false,
+            serializedName: 'properties.deploymentConfiguration',
+            type: {
+              name: 'Composite',
+              className: 'DeploymentConfiguration'
+            }
+          },
+          currentDedicatedNodes: {
+            required: false,
+            readOnly: true,
+            serializedName: 'properties.currentDedicatedNodes',
+            type: {
+              name: 'Number'
+            }
+          },
+          currentLowPriorityNodes: {
+            required: false,
+            readOnly: true,
+            serializedName: 'properties.currentLowPriorityNodes',
+            type: {
+              name: 'Number'
+            }
+          },
+          scaleSettings: {
+            required: false,
+            serializedName: 'properties.scaleSettings',
+            type: {
+              name: 'Composite',
+              className: 'ScaleSettings'
+            }
+          },
+          autoScaleRun: {
+            required: false,
+            readOnly: true,
+            serializedName: 'properties.autoScaleRun',
+            type: {
+              name: 'Composite',
+              className: 'AutoScaleRun'
+            }
+          },
+          interNodeCommunication: {
+            required: false,
+            serializedName: 'properties.interNodeCommunication',
+            type: {
+              name: 'Enum',
+              allowedValues: [ 'Enabled', 'Disabled' ]
+            }
+          },
+          networkConfiguration: {
+            required: false,
+            serializedName: 'properties.networkConfiguration',
+            type: {
+              name: 'Composite',
+              className: 'NetworkConfiguration'
+            }
+          },
+          maxTasksPerNode: {
+            required: false,
+            serializedName: 'properties.maxTasksPerNode',
+            type: {
+              name: 'Number'
+            }
+          },
+          taskSchedulingPolicy: {
+            required: false,
+            serializedName: 'properties.taskSchedulingPolicy',
+            type: {
+              name: 'Composite',
+              className: 'TaskSchedulingPolicy'
+            }
+          },
+          userAccounts: {
+            required: false,
+            serializedName: 'properties.userAccounts',
+            type: {
+              name: 'Sequence',
+              element: {
+                  required: false,
+                  serializedName: 'UserAccountElementType',
+                  type: {
+                    name: 'Composite',
+                    className: 'UserAccount'
+                  }
+              }
+            }
+          },
+          metadata: {
+            required: false,
+            serializedName: 'properties.metadata',
+            type: {
+              name: 'Sequence',
+              element: {
+                  required: false,
+                  serializedName: 'MetadataItemElementType',
+                  type: {
+                    name: 'Composite',
+                    className: 'MetadataItem'
+                  }
+              }
+            }
+          },
+          startTask: {
+            required: false,
+            serializedName: 'properties.startTask',
+            type: {
+              name: 'Composite',
+              className: 'StartTask'
+            }
+          },
+          certificates: {
+            required: false,
+            serializedName: 'properties.certificates',
+            type: {
+              name: 'Sequence',
+              element: {
+                  required: false,
+                  serializedName: 'CertificateReferenceElementType',
+                  type: {
+                    name: 'Composite',
+                    className: 'CertificateReference'
+                  }
+              }
+            }
+          },
+          applicationPackages: {
+            required: false,
+            serializedName: 'properties.applicationPackages',
+            type: {
+              name: 'Sequence',
+              element: {
+                  required: false,
+                  serializedName: 'ApplicationPackageReferenceElementType',
+                  type: {
+                    name: 'Composite',
+                    className: 'ApplicationPackageReference'
+                  }
+              }
+            }
+          },
+          applicationLicenses: {
+            required: false,
+            serializedName: 'properties.applicationLicenses',
+            type: {
+              name: 'Sequence',
+              element: {
+                  required: false,
+                  serializedName: 'StringElementType',
+                  type: {
+                    name: 'String'
+                  }
+              }
+            }
+          },
+          resizeOperationStatus: {
+            required: false,
+            readOnly: true,
+            serializedName: 'properties.resizeOperationStatus',
+            type: {
+              name: 'Composite',
+              className: 'ResizeOperationStatus'
+            }
+          }
+        }
+      }
+    };
+  }
+}
+
+module.exports = Pool;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Thu Nov 09 2017 11:14:10 GMT-0800 (PST) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="../../scripts/linenumber.js"></script>
+</body>
+</html>
