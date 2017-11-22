@@ -1,9 +1,10 @@
 import * as stream from 'stream';
 import * as http from 'http';
+export { IncomingMessage } from 'http';
 
 /**
  * REST request options
- *  
+ *
  * @property {object.<string, string>} customHeaders - Any additional HTTP headers to be added to the request
  * @proprerty {boolean} [jar] - If true, remember cookies for future use
  */
@@ -17,22 +18,22 @@ export interface ClientRequestOptions extends RequestOptions {
 
 /**
  * HttpOperationResponse wrapper that provides the raw request, raw response and the deserialized response body.
- * 
+ *
  * @property {WebResource} request  - The raw request object
- * @property {stream} response - The response stream
+ * @property {http.IncomingMessage} response - The response from the http call
  * @property {T} body - The deserialized response body of the expected type.
  */
 export interface HttpOperationResponse<T> {
   request: WebResource;
-  response: stream;
+  response: http.IncomingMessage;
   body: T;
 }
 
 /**
  * Service client options, used for all REST requests initiated by the service client.
- * 
+ *
  * @property {Array} [filters]                  - Filters to be added to the request pipeline
- * @property {ClientRequestOptions} requestOptions    - Default ClientRequestOptions to use for requests 
+ * @property {ClientRequestOptions} requestOptions    - Default ClientRequestOptions to use for requests
  * @property {boolean}  noRetryPolicy           - If set to true, turn off default retry policy
  */
 export interface ServiceClientOptions {
@@ -45,8 +46,8 @@ export class ServiceClient {
   /**
    * Initializes a new instance of the ServiceClient class.
    *
-   * @param {ServiceClientCredentials} [credentials]    - BasicAuthenticationCredentials or 
-   * TokenCredentials object used for authentication. 
+   * @param {ServiceClientCredentials} [credentials]    - BasicAuthenticationCredentials or
+   * TokenCredentials object used for authentication.
    * @param {ServiceClientOptions} [options] The parameter options
    */
   constructor(credentials?: ServiceClientCredentials, options?: ServiceClientOptions);
@@ -73,10 +74,10 @@ export class ServiceClient {
 
 /**
  * Service Error that is returned when an error occurrs in executing the REST request initiated by the service client.
- * 
+ *
  * @property {number} [statusCode]             - The response status code received from the server as a result of making the request.
  * @property {WebResource} request             - The raw/actual request sent to the server.
- * @property {http.IncomingMessage}  response  - The raw/actual response from the server.
+ * @property {http.IncomingMessage} response   - The raw/actual response from the server.
  * @property {any}  body                       - The response body.
  */
 export interface ServiceError extends Error {
@@ -88,7 +89,7 @@ export interface ServiceError extends Error {
 
 /**
  * Service callback that is returned for REST requests initiated by the service client.
- * 
+ *
  * @property {Error|ServiceError} err         - The error occurred if any, while executing the request; otherwise null
  * @property {TResult} result                 - The deserialized response body if an error did not occur.
  * @property {WebResource}  request           - The raw/actual request sent to the server if an error did not occur.
@@ -163,7 +164,7 @@ export interface SequenceType extends Mapper {
 }
 
 export interface UrlParameterValue {
-  value: string,
+  value: any,
   skipUrlEncoding: boolean;
 }
 
@@ -172,34 +173,38 @@ export interface UrlParameterValue {
  *
  * @property {string} method The HTTP request method. Valid values are 'GET', 'PUT', 'HEAD', 'DELETE', 'OPTIONS', 'POST', 'PATCH'.
  *
- * @property {string} [url] The request url. It may or may not have query parameters in it. 
+ * @property {string} [url] The request url. It may or may not have query parameters in it.
  * Either provide the 'url' or provide the 'pathTemplate' in the options object. Both the options are mutually exclusive.
  *
- * @property {object} [queryParameters] A dictionary of query parameters to be appended to the url, where 
- * the 'key' is the 'query-parameter-name' and the 'value' is the 'query-parameter-value'. 
- * The 'query-parameter-value' can be of type 'string' or it can be of type 'object'. 
- * The 'object' format should be used when you want to skip url encoding. While using the object format, 
+ * @property {object} [queryParameters] A dictionary of query parameters to be appended to the url, where
+ * the 'key' is the 'query-parameter-name' and the 'value' is the 'query-parameter-value'.
+ * The 'query-parameter-value' can be of type 'string' or it can be of type 'object'.
+ * The 'object' format should be used when you want to skip url encoding. While using the object format,
  * the object must have a property named value which provides the 'query-parameter-value'.
- * Example: 
+ * Example:
  *    - query-parameter-value in 'object' format: { 'query-parameter-name': { value: 'query-parameter-value', skipUrlEncoding: true } }
  *    - query-parameter-value in 'string' format: { 'query-parameter-name': 'query-parameter-value'}.
  * Note: 'If url already has some query parameters, then the value provided in queryParameters will be appended to the url.
  *
- * @property {string} [pathTemplate] The path template of the request url. Either provide the 'url' or provide the 'pathTemplate' 
+ * @property {string} [pathTemplate] The path template of the request url. Either provide the 'url' or provide the 'pathTemplate'
  * in the options object. Both the options are mutually exclusive.
  * Example: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Storage/storageAccounts/{accountName}'
  *
- * @property {string} [baseUrl] The base url of the request. Default value is: 'https://management.azure.com'. This is applicable only with 
+ * @property {string} [baseUrl] The base url of the request. Default value is: 'https://management.azure.com'. This is applicable only with
  * pathTemplate. If you are providing url then it is expected that you provide the complete url.
  *
  * @property {object} [pathParameters] A dictionary of path parameters that need to be replaced with actual values in the pathTemplate.
- * Here the key is the 'path-parameter-name' and the value is the 'path-parameter-value'. 
+ * Here the key is the 'path-parameter-name' and the value is the 'path-parameter-value'.
  * The 'path-parameter-value' can be of type 'string'  or it can be of type 'object'.
- * The 'object' format should be used when you want to skip url encoding. While using the object format, 
+ * The 'object' format should be used when you want to skip url encoding. While using the object format,
  * the object must have a property named value which provides the 'path-parameter-value'.
- * Example: 
+ * Example:
  *    - path-parameter-value in 'object' format: { 'path-parameter-name': { value: 'path-parameter-value', skipUrlEncoding: true } }
  *    - path-parameter-value in 'string' format: { 'path-parameter-name': 'path-parameter-value' }.
+ *
+ * @param {object} [options.formData] A dictionary of key-value pairs for the formData object.
+ * If the expected 'Content-Type' to be set is 'application/x-www-form-urlencoded' then please set it in the options.headers object else the
+ * 'Content-Type' header will be set to 'multipart/form-data'.
  *
  * @property {object} [headers] A dictionary of request headers that need to be applied to the request.
  * Here the key is the 'header-name' and the value is the 'header-value'. The header-value MUST be of type string.
@@ -216,19 +221,20 @@ export interface UrlParameterValue {
  * @property {object|string|boolean|array|number|null|undefined} [options.body] - The request body. It can be of any type. This method will JSON.stringify() the request body.
  *
  * @property {object} [options.serializationMapper] - Provides information on how to serialize the request body.
- * 
+ *
  * @property {object} [options.deserializationMapper] - Provides information on how to deserialize the response body.
- * 
+ *
  * @property {boolean} [disableJsonStringifyOnBody] - Indicates whether this method should JSON.stringify() the request body. Default value: false.
  *
  * @property {boolean} [bodyIsStream] - Indicates whether the request body is a stream (useful for file upload scenarios).
  */
 export interface RequestPrepareOptions {
   method: string;
-  queryParameters?: { [propertyName: string]: string | UrlParameterValue };
+  queryParameters?: { [propertyName: string]: any | UrlParameterValue };
   baseUrl?: string;
-  pathParameters?: { [propertyName: string]: string | UrlParameterValue };
-  headers?: { [propertyName: string]: string };
+  pathParameters?: { [propertyName: string]: any | UrlParameterValue };
+  formData?: { [propertyName: string]: any };
+  headers?: { [propertyName: string]: any };
   disableClientRequestId?: boolean;
   body?: any;
   disableJsonStringifyOnBody?: boolean;
@@ -251,6 +257,13 @@ export interface UrlBasedRequestPrepareOptions extends RequestPrepareOptions {
  */
 export class WebResource {
   /**
+   * Access to raw request headers for requests. Useful when you need to set a header
+   * on every request (like in a credential object) where the prepare method does
+   * far too much work.
+   */
+  public headers: { [key: string]: string; };
+
+  /**
    * Hook up the given input stream to a destination output stream if the WebResource method
    * requires a request body and a body is not already set.
    *
@@ -260,8 +273,9 @@ export class WebResource {
    * @return destStream
    */
   pipeInput(inputStream: stream.Readable, destStream: stream.Writable): stream.Writable;
+
   /**
-   * Validates that the required properties such as method, url, headers['Content-Type'], 
+   * Validates that the required properties such as method, url, headers['Content-Type'],
    * headers['accept-language'] are defined. It will throw an error if one of the above
    * mentioned properties are not defined.
    */
@@ -274,32 +288,32 @@ export class WebResource {
    *
    * @param {string} options.method The HTTP request method. Valid values are 'GET', 'PUT', 'HEAD', 'DELETE', 'OPTIONS', 'POST', 'PATCH'.
    *
-   * @param {string} [options.url] The request url. It may or may not have query parameters in it. 
+   * @param {string} [options.url] The request url. It may or may not have query parameters in it.
    * Either provide the 'url' or provide the 'pathTemplate' in the options object. Both the options are mutually exclusive.
    *
-   * @param {object} [options.queryParameters] A dictionary of query parameters to be appended to the url, where 
-   * the 'key' is the 'query-parameter-name' and the 'value' is the 'query-parameter-value'. 
-   * The 'query-parameter-value' can be of type 'string' or it can be of type 'object'. 
-   * The 'object' format should be used when you want to skip url encoding. While using the object format, 
+   * @param {object} [options.queryParameters] A dictionary of query parameters to be appended to the url, where
+   * the 'key' is the 'query-parameter-name' and the 'value' is the 'query-parameter-value'.
+   * The 'query-parameter-value' can be of type 'string' or it can be of type 'object'.
+   * The 'object' format should be used when you want to skip url encoding. While using the object format,
    * the object must have a property named value which provides the 'query-parameter-value'.
-   * Example: 
+   * Example:
    *    - query-parameter-value in 'object' format: { 'query-parameter-name': { value: 'query-parameter-value', skipUrlEncoding: true } }
    *    - query-parameter-value in 'string' format: { 'query-parameter-name': 'query-parameter-value'}.
    * Note: 'If options.url already has some query parameters, then the value provided in options.queryParameters will be appended to the url.
    *
-   * @param {string} [options.pathTemplate] The path template of the request url. Either provide the 'url' or provide the 'pathTemplate' 
+   * @param {string} [options.pathTemplate] The path template of the request url. Either provide the 'url' or provide the 'pathTemplate'
    * in the options object. Both the options are mutually exclusive.
    * Example: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Storage/storageAccounts/{accountName}'
    *
-   * @param {string} [options.baseUrl] The base url of the request. Default value is: 'https://management.azure.com'. This is applicable only with 
+   * @param {string} [options.baseUrl] The base url of the request. Default value is: 'https://management.azure.com'. This is applicable only with
    * options.pathTemplate. If you are providing options.url then it is expected that you provide the complete url.
    *
    * @param {object} [options.pathParameters] A dictionary of path parameters that need to be replaced with actual values in the pathTemplate.
-   * Here the key is the 'path-parameter-name' and the value is the 'path-parameter-value'. 
+   * Here the key is the 'path-parameter-name' and the value is the 'path-parameter-value'.
    * The 'path-parameter-value' can be of type 'string'  or it can be of type 'object'.
-   * The 'object' format should be used when you want to skip url encoding. While using the object format, 
+   * The 'object' format should be used when you want to skip url encoding. While using the object format,
    * the object must have a property named value which provides the 'path-parameter-value'.
-   * Example: 
+   * Example:
    *    - path-parameter-value in 'object' format: { 'path-parameter-name': { value: 'path-parameter-value', skipUrlEncoding: true } }
    *    - path-parameter-value in 'string' format: { 'path-parameter-name': 'path-parameter-value' }.
    *
@@ -360,5 +374,34 @@ export class TokenCredentials implements ServiceClientCredentials {
  */
 export class BasicAuthenticationCredentials implements ServiceClientCredentials {
   constructor(userName: string, password: string, authorizationScheme?: string);
+  signRequest(webResource: WebResource, callback: { (err: Error): void }): void;
+}
+
+/**
+ * @interface ApiKeyCredentialOptions
+ * Describes the options to be provided while creating an instance of ApiKeyCredentials
+ */
+export interface ApiKeyCredentialOptions {
+  /**
+   * @property {object} [inHeader]  A key value pair of the header parameters that need to be applied to the request.
+   */
+  inHeader?: { [x: string]: any };
+  /**
+   * @property {object} [inQuery]   A key value pair of the query parameters that need to be applied to the request.
+   */
+  inQuery?: { [x: string]: any };
+}
+
+/**
+ * Creates a new ApiKeyCredentials instance.
+ */
+export class ApiKeyCredentials implements ServiceClientCredentials {
+  /**
+   * @constructor
+   * @param {object} options   Specifies the options to be provided for auth. Either header or query needs to be provided.
+   * @param {object} [inHeader]  A key value pair of the header parameters that need to be applied to the request.
+   * @param {object} [inQuery]   A key value pair of the query parameters that need to be applied to the request.
+   */
+  constructor(options?: ApiKeyCredentialOptions);
   signRequest(webResource: WebResource, callback: { (err: Error): void }): void;
 }

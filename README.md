@@ -4,6 +4,10 @@
 
 This project provides a Node.js package that makes it easy to consume and manage
 Microsoft Azure Services.
+It supports sdks for:
+- old ASM services (packages with the naming convention of `azure-asm-*`)
+- new ARM services (packages with the naming convention of `azure-arm-*`)
+- data plane of some Azure services (packages with the naming convention of `azure-<servicename>`).
 
 ## Usage
 
@@ -19,17 +23,28 @@ $ npm install azure
 This will allow you access to some helper methods as well as all of the
 individual modules. For example, by installing the `azure` module, you can
 directly require and use the `ms-rest-azure` common module. This organization
-method allows for submodules (and peer dependant modules) to always be in sync
+method allows for submodules (and peer dependent modules) to always be in sync
 with each other.
 
-**Note**: we haven't provided fine-grained modules for every supported Microsoft
-Azure services yet. This will come soon. If there is a module that you find is
+**Note**: We haven't provided fine-grained modules for every supported Microsoft
+Azure service yet. This will come soon. If there is a module that you find is
 missing, [open an issue](https://github.com/Azure/azure-sdk-for-node/issues)
 so that we may prioritize it in the backlog.
 
+## Documentation
+
+Documentation of the supported sdks can be found at two places:
+- https://azure.github.io/azure-sdk-for-node - This website primarily provides sdk documentation for 
+  - ASM based services (azure-**asm**-*)
+  - some old data plane sdks like `azure-sb`, `azure-scheduler`, `azure-storage-legacy`, `azure-monitoring`, etc.
+  - runtime sdks like `ms-rest`, `ms-rest-azure`, `azure-common`
+- https://aka.ms/azure-node-sdk - This website primarily provides sdk documentation for
+  - ARM based services (azure-**arm**-*)
+  - newer data plane sdks like `azure-batch`, `azure-graph`, `azure-monitor`, etc.
+
 ## Authenticating
 
-There are three ways to authenticate using this module, use
+There are three ways to authenticate against Azure while using the management plane (azure-**arm**-*) sdks and the `azure-graph` sdk, use
 [this guide](./Documentation/Authentication.md) to determine which method to use.
 
 ## AzureNodeEssentials VSCode extension
@@ -63,6 +78,7 @@ Please feel free to provide feedback for the extension by opening github issues 
 | [Automation](https://docs.microsoft.com/en-us/azure/automation/) | `npm install azure-arm-automation`    |
 | [Authorization](https://azure.microsoft.com/en-us/documentation/articles/role-based-access-control-configure/) | `npm install azure-arm-authorization`    |
 | [Batch](https://azure.microsoft.com/en-us/services/batch/)                        | `npm install azure-arm-batch`     |
+| [BatchAI](https://docs.microsoft.com/en-us/azure/batch-ai/)                       | `npm install azure-arm-batchai`   |
 | [Billing](https://docs.microsoft.com/en-us/azure/billing/billing-usage-rate-card-overview) | `npm install azure-arm-billing`    |
 | [CDN](https://azure.microsoft.com/en-us/services/cdn/)                            | `npm install azure-arm-cdn`|
 | [CognitiveServices](https://azure.microsoft.com/en-us/services/cognitive-services/) | `npm install azure-arm-cognitiveservices`    |
@@ -100,8 +116,8 @@ Please feel free to provide feedback for the extension by opening github issues 
 | [RecoveryServices SiteRecovery](https://docs.microsoft.com/en-us/rest/api/site-recovery/)           | `npm install azure-arm-recoveryservices-siterecovery`       |
 | [Redis Cache](https://azure.microsoft.com/en-us/services/cache/)                  | `npm install azure-arm-rediscache`   |
 | [Relay](https://docs.microsoft.com/en-us/azure/service-bus-relay/relay-what-is-it)                  | `npm install azure-arm-relay`   |
-| [Resource Health](https://docs.microsoft.com/en-us/rest/api/resourcehealth/)                  | `npm install azure-arm-rediscache`   |
-| [Resource Manager](https://azure.microsoft.com/en-us/documentation/articles/resource-group-overview/)    | `npm install azure-arm-resourcehealth`  |
+| [Resource Health](https://docs.microsoft.com/en-us/rest/api/resourcehealth/)                  | `npm install azure-arm-resourcehealth `   |
+| [Resource Manager](https://azure.microsoft.com/en-us/documentation/articles/resource-group-overview/)    | `npm install azure-arm-resource`  |
 | [Scheduler](https://azure.microsoft.com/en-us/documentation/articles/resource-group-overview/)    | `npm install azure-arm-scheduler`  |
 | [Search](https://azure.microsoft.com/en-us/services/search/)    | `npm install azure-arm-search`  |
 | [ServerManagement](https://azure.microsoft.com/en-us/documentation/articles/resource-group-overview/)    | `npm install azure-arm-servermanagement`  |
@@ -136,7 +152,7 @@ Please feel free to provide feedback for the extension by opening github issues 
 
 ## Need Help?
 
-* [Read the docs](https://docs.microsoft.com/en-us/nodejs/api/overview/azure/?view=azure-node-2.0.0)
+* [Read the docs](https://aka.ms/azure-node-sdk)
 * [Open an issue in GitHub](http://github.com/azure/azure-sdk-for-node)
 * [Microsoft Azure Forums on MSDN and Stack Overflow](http://go.microsoft.com/fwlink/?LinkId=234489)
 

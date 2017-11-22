@@ -20,11 +20,11 @@
       "source": "apimanagement/resource-manager/readme.md"
     }
   },
-  "appinsights": {
+  "applicationinsights": {
     "resource-manager": {
       "packageName": "azure-arm-appinsights",
-      "dir": "appinsights/lib",
-      "source": "appinsights/resource-manager/readme.md"
+      "dir": "applicationinsights/lib",
+      "source": "applicationinsights/resource-manager/readme.md"
     }
   },
   "authorization": {
@@ -53,6 +53,14 @@
       "packageName": "azure-batch",
       "dir": "batch/lib",
       "source": "batch/data-plane/readme.md",
+      "ft": 1
+    }
+  },
+  "batchai": {
+    "resource-manager": {
+      "packageName": "azure-arm-batchai",
+      "dir": "batchaiManagement/lib",
+      "source": "batchai/resource-manager/readme.md",
       "ft": 1
     }
   },
