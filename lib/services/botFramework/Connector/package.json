@@ -1,0 +1,35 @@
+{
+  "name": "bot-connector",
+  "author": "Microsoft Corporation",
+  "contributors": [
+  ],
+  "version": "3.0.0",
+  "description": "The Bot Connector REST API allows your bot to send and receive messages to channels configured in the\r\n[Bot Framework Developer Portal](https://dev.botframework.com). The Connector service uses industry-standard REST\r\nand JSON over HTTPS.\r\n\r\nClient libraries for this REST API are available. See below for a list.\r\n\r\nMany bots will use both the Bot Connector REST API and the associated [Bot State REST API](/en-us/restapi/state). The\r\nBot State REST API allows a bot to store and retrieve state associated with users and conversations.\r\n\r\nAuthentication for both the Bot Connector and Bot State REST APIs is accomplished with JWT Bearer tokens, and is\r\ndescribed in detail in the [Connector Authentication](/en-us/restapi/authentication) document.\r\n\r\n# Client Libraries for the Bot Connector REST API\r\n\r\n* [Bot Builder for C#](/en-us/csharp/builder/sdkreference/)\r\n* [Bot Builder for Node.js](/en-us/node/builder/overview/)\r\n* Generate your own from the [Connector API Swagger file](https://raw.githubusercontent.com/Microsoft/BotBuilder/master/CSharp/Library/Microsoft.Bot.Connector.Shared/Swagger/ConnectorAPI.json)\r\n\r\n© 2016 Microsoft",
+  "tags": [
+    "botbuilder",
+    "sdk"
+  ],
+  "keywords": [
+    "node",
+    "botbuilder",
+    "bot connector"
+  ],
+  "main": "./lib/botConnector.js",
+  "types": "./lib/botConnector.d.ts",
+  "license": "MIT",
+  "dependencies": {
+    "ms-rest": "^2.2.2",
+    "ms-rest-azure": "^2.3.3"
+  },
+  "homepage": "http://github.com/Azure/azure-sdk-for-node",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Azure/azure-sdk-for-node.git"
+  },
+  "bugs": {
+    "url": "http://github.com/Azure/azure-sdk-for-node/issues"
+  },
+  "scripts": {
+    "test": "npm -s run-script jshint"
+  }
+}
