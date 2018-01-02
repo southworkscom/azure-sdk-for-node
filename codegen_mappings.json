@@ -72,6 +72,13 @@
       "ft": 1
     }
   },
+  "botframework-connector": {
+    "resource-manager": {
+      "packageName": "botframework-connector",
+      "dir": "botFramework/Connector/lib",
+      "source": "botframework/data-plane/connector/readme.md"
+    }
+  },
   "cdn": {
     "resource-manager": {
       "packageName": "azure-arm-cdn",
