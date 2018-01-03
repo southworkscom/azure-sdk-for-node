@@ -1,8 +1,8 @@
 /*
- * Copyright (c) Microsoft Corporation. All rights reserved.
- * Licensed under the MIT License. See License.txt in the project root for
- * license information.
- */
+* Copyright (c) Microsoft Corporation. All rights reserved.
+* Licensed under the MIT License. See License.txt in the project root for
+* license information.
+*/
 
 require('dotenv').config({path:'test/services/botFramework/.env'});
 
@@ -40,24 +40,24 @@ describe('Bot Framework Connector', function() {
   before(function (done) {
     suite = new SuiteBase(this, testPrefix, requiredEnvironment);
     suite.setupSuite(function () {
-      credentials = new Credentials('eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ing0Nzh4eU9wbHNNMUg3TlhrN1N4MTd4MXVwYyIsImtpZCI6Ing0Nzh4eU9wbHNNMUg3TlhrN1N4MTd4MXVwYyJ9.eyJhdWQiOiJodHRwczovL2FwaS5ib3RmcmFtZXdvcmsuY29tIiwiaXNzIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvZDZkNDk0MjAtZjM5Yi00ZGY3LWExZGMtZDU5YTkzNTg3MWRiLyIsImlhdCI6MTUxNDkyNzE0NiwibmJmIjoxNTE0OTI3MTQ2LCJleHAiOjE1MTQ5MzEwNDYsImFpbyI6IlkyTmdZTWhjKzUzcGxLZjhTNU4xQnA5ZXZPeVdCd0E9IiwiYXBwaWQiOiJiZTVhOGM2Ny03NWRkLTQyNGEtYjdkYS03NDYxNDFlMTFmN2YiLCJhcHBpZGFjciI6IjEiLCJpZHAiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9kNmQ0OTQyMC1mMzliLTRkZjctYTFkYy1kNTlhOTM1ODcxZGIvIiwidGlkIjoiZDZkNDk0MjAtZjM5Yi00ZGY3LWExZGMtZDU5YTkzNTg3MWRiIiwidXRpIjoiTXVuM19DbjNNMHFLWHphRlJ0RmpBQSIsInZlciI6IjEuMCJ9.B4l6J1FVZp5_gNG26bjB3p5Djxpb7G2jgHtbm5B1wpdvqK0RwWqtpv4An6wO1j7SUG0SAKh0XFIAJ-UNBFm0xw_GIDRJiLhMapVVL_Fg-2Xk_R0Wcwitpp9zm3iZJeLhP1mtg0CI-6-7QUf_0nk_Za2_XIWLPDRce-x1IPPsLXCRTgmwP161wKdq9GHnh_xyoQRBS9PPEhcK_juiWRTHSB-Raryr7XwoGkGg_-scXRNYvigWLeEu7UMw424XSXZ19b4P16aH94NTllSjyKYnWo5YcpPsBlpZQ4ymGUCRSMkXVAaY6mXcb5FMRQAPja9OA1UuiClkQ72aLAgRKXPjzQ');
+      credentials = new Credentials('eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ing0Nzh4eU9wbHNNMUg3TlhrN1N4MTd4MXVwYyIsImtpZCI6Ing0Nzh4eU9wbHNNMUg3TlhrN1N4MTd4MXVwYyJ9.eyJhdWQiOiJodHRwczovL2FwaS5ib3RmcmFtZXdvcmsuY29tIiwiaXNzIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvZDZkNDk0MjAtZjM5Yi00ZGY3LWExZGMtZDU5YTkzNTg3MWRiLyIsImlhdCI6MTUxNTAwODM3NCwibmJmIjoxNTE1MDA4Mzc0LCJleHAiOjE1MTUwMTIyNzQsImFpbyI6IlkyTmdZTmpZMzhFK1ZTaU8rOXFPZ25jQko5Y3RCUUE9IiwiYXBwaWQiOiJiZTVhOGM2Ny03NWRkLTQyNGEtYjdkYS03NDYxNDFlMTFmN2YiLCJhcHBpZGFjciI6IjEiLCJpZHAiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9kNmQ0OTQyMC1mMzliLTRkZjctYTFkYy1kNTlhOTM1ODcxZGIvIiwidGlkIjoiZDZkNDk0MjAtZjM5Yi00ZGY3LWExZGMtZDU5YTkzNTg3MWRiIiwidXRpIjoiUG9mSG50bXhfa3FWQ00zT3pGSUFBQSIsInZlciI6IjEuMCJ9.SZI1tRZiexPsGiGVAcZyOM7ccmkXmdUVJyaMrQgUjP4-yTZz4_ON1k_wgALo8ZpQStYctSOe4kE6DGqUzYEZcla8tA5ISt3iT8r6dlnc8dD3gnwYx5iKVqzmHJmVNo4gs5wTGe0HsnDt7gO9s4O90RA6fA_lj-uh7xIQ-vxEnN-OB9kXuud7jgqH3krLQHaRCzrZY1_1a9H18owFNJf7u-7LDZ_iU6a25VZS9Xl1IT-mqeQ2vtc2HtGgnGlzWpEgWNuDWWziZT9o2QFybzsHNRt1PzU3a57GhP1UNWF67oK8AvwK_sh6hLJTLZtausKd60124IQwPpqJgdtS01zOaQ');
       client = new Connector(credentials, hostURL);
     });
     done();
   });
-
+  
   after(function (done) {
     suite.teardownSuite(done);
   });
-
+  
   beforeEach(function (done) {
     suite.setupTest(done);
   });
-
+  
   afterEach(function (done) {
     suite.baseTeardownTest(done);
   });
-
+  
   describe('Connector SDK', function() {
     it('should return a valid conversation ID', function(done) {
       let params = {
@@ -70,10 +70,9 @@ describe('Bot Framework Connector', function() {
           recipient: user
         }
       }
-      client.conversations.createConversation(params, function(err, result, request, response){
+      client.conversations.createConversation(params).then((result) => {
         should.exist(result.id);
-        done();
-      });
+      }).then(done, done);
     });
   });
 });
