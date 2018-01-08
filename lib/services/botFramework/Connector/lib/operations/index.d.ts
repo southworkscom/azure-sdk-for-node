@@ -9,6 +9,7 @@
 */
 
 import { ServiceClientOptions, RequestOptions, ServiceCallback, HttpOperationResponse } from 'ms-rest';
+import * as stream from 'stream';
 import * as models from '../models';
 
 
@@ -98,11 +99,11 @@ export interface Attachments {
      *
      * @returns {Promise} A promise is returned
      *
-     * @resolve {HttpOperationResponse<Buffer>} - The deserialized result object.
+     * @resolve {HttpOperationResponse<Object>} - The deserialized result object.
      *
      * @reject {Error|ServiceError} - The error object.
      */
-    getAttachmentWithHttpOperationResponse(attachmentId: string, viewId: string, options?: { customHeaders? : { [headerName: string]: string; } }): Promise<HttpOperationResponse<Buffer>>;
+    getAttachmentWithHttpOperationResponse(attachmentId: string, viewId: string, options?: { customHeaders? : { [headerName: string]: string; } }): Promise<HttpOperationResponse<stream.Readable>>;
 
     /**
      * @summary GetAttachment
@@ -125,7 +126,7 @@ export interface Attachments {
      *
      * {Promise} A promise is returned.
      *
-     *                      @resolve {Buffer} - The deserialized result object.
+     *                      @resolve {Object} - The deserialized result object.
      *
      *                      @reject {Error|ServiceError} - The error object.
      *
@@ -133,15 +134,15 @@ export interface Attachments {
      *
      *                      {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
      *
-     *                      {Buffer} [result]   - The deserialized result object if an error did not occur.
+     *                      {Object} [result]   - The deserialized result object if an error did not occur.
      *
      *                      {WebResource} [request]  - The HTTP Request object if an error did not occur.
      *
      *                      {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
      */
-    getAttachment(attachmentId: string, viewId: string, options?: { customHeaders? : { [headerName: string]: string; } }): Promise<Buffer>;
-    getAttachment(attachmentId: string, viewId: string, callback: ServiceCallback<Buffer>): void;
-    getAttachment(attachmentId: string, viewId: string, options: { customHeaders? : { [headerName: string]: string; } }, callback: ServiceCallback<Buffer>): void;
+    getAttachment(attachmentId: string, viewId: string, options?: { customHeaders? : { [headerName: string]: string; } }): Promise<stream.Readable>;
+    getAttachment(attachmentId: string, viewId: string, callback: ServiceCallback<stream.Readable>): void;
+    getAttachment(attachmentId: string, viewId: string, options: { customHeaders? : { [headerName: string]: string; } }, callback: ServiceCallback<stream.Readable>): void;
 }
 
 /**
