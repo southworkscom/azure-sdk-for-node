@@ -22,8 +22,6 @@ var SuiteBase = require('../../framework/suite-base');
 var should = require('should');
 
 var requiredEnvironment = [
-  'CLIENT_ID',
-  'CLIENT_SECRET',
   'USER_ID',
   'BOT_ID',
   'HOST_URL'
