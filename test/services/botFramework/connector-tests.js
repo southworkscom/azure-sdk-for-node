@@ -15,7 +15,7 @@ function base64_encode(file) {
   return new Buffer(bitmap);
 }
 
-const Connector = require('../../../lib/services/botFramework/Connector/lib/botConnector');
+const Connector = require('../../../lib/services/botFramework/Connector');
 const Credentials = require('../../../lib/services/botFramework/Connector/lib/customs/microsoftAppCredentials');
 
 var SuiteBase = require('../../framework/suite-base');
