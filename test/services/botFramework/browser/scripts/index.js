@@ -5,7 +5,8 @@ require.config({
     'mocha': 'node_modules/mocha/mocha',
     'chai': 'node_modules/chai/chai',
     'token-credentials': 'lib/token-credentials',
-    'botframework-connector': 'lib/botframework-connector'
+    'botframework-connector': 'lib/botframework-connector',
+    'buffer': 'lib/buffer'
   },
   shim: {
     'mocha': { exports: 'mocha' }
