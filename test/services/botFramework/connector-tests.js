@@ -394,7 +394,7 @@ describe('Bot Framework Connector SDK', function() {
           });
         }))
         .then((result) => {
-          result.toString('base64').should.be.exactly(attachment.originalBase64.toString('base64'));
+          result.toString().should.be.exactly(attachment.originalBase64.toString());
         })
         .then(done, done);
       });
