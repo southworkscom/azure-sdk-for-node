@@ -14,8 +14,8 @@
     "botbuilder",
     "bot connector"
   ],
-  "main": "./lib/botConnector.js",
-  "types": "./lib/botConnector.d.ts",
+  "main": "./lib/generated/botConnector.js",
+  "types": "./lib/generated/botConnector.d.ts",
   "license": "MIT",
   "dependencies": {
     "ms-rest": "^2.2.2",

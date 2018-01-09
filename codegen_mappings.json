@@ -75,7 +75,7 @@
   "botframework-connector": {
     "resource-manager": {
       "packageName": "botframework-connector",
-      "dir": "botFramework/Connector/lib",
+      "dir": "botFramework/Connector/lib/generated",
       "source": "botframework/data-plane/connector/readme.md"
     }
   },
