@@ -15,8 +15,10 @@ function base64_encode(file) {
   return new Buffer(bitmap);
 }
 
-const Connector = require('../../../lib/services/botFramework/Connector');
-const Credentials = require('../../../lib/services/botFramework/Connector/lib/customs/microsoftAppCredentials');
+const BotConnector = require('../../../lib/services/botFramework/Connector');
+
+const Connector = BotConnector.BotConnector;
+const Credentials = BotConnector.MicrosoftAppCredentials;
 
 var SuiteBase = require('../../framework/suite-base');
 var should = require('should');
@@ -72,7 +74,7 @@ describe('Bot Framework Connector SDK', function() {
   before(function (done) {
     suite = new SuiteBase(this, testPrefix, requiredEnvironment);
     suite.setupSuite(function () {
-      credentials = new Credentials.MicrosoftAppCredentials({
+      credentials = new Credentials({
         appId: clientId,
         appPassword: clientSecret
       });

@@ -1,6 +1,7 @@
-import * as msrest from 'ms-rest';
+import * as msRest from 'ms-rest';
 import { BotCredentials } from './settings';
-export declare class MicrosoftAppCredentials implements msrest.ServiceClientCredentials {
+
+export declare class MicrosoftAppCredentials implements msRest.ServiceClientCredentials {
     private accessToken;
     private accessTokenExpires;
     private appId;
@@ -8,8 +9,6 @@ export declare class MicrosoftAppCredentials implements msrest.ServiceClientCred
     private static refreshEndpoint;
     private static refreshScope;
     constructor(credentials: BotCredentials);
-    signRequest(webResource: msrest.WebResource, cb: {
-        (err: Error): void;
-    }): void;
-    private getAccessToken(cb);
+    signRequest(webResource: msRest.WebResource, callback: {(err: Error): void;}): void;
+    private getAccessToken(callback);
 }
